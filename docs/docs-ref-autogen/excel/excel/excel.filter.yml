@@ -1,0 +1,393 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Filter:class'
+    summary: Управляет фильтрацией столбца таблицы.
+    name: Excel.Filter
+    fullName: Excel.Filter
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.Filter#apply:member(1)'
+      - 'excel!Excel.Filter#applyBottomItemsFilter:member(1)'
+      - 'excel!Excel.Filter#applyBottomPercentFilter:member(1)'
+      - 'excel!Excel.Filter#applyCellColorFilter:member(1)'
+      - 'excel!Excel.Filter#applyCustomFilter:member(1)'
+      - 'excel!Excel.Filter#applyCustomFilter:member(2)'
+      - 'excel!Excel.Filter#applyDynamicFilter:member(1)'
+      - 'excel!Excel.Filter#applyDynamicFilter:member(2)'
+      - 'excel!Excel.Filter#applyFontColorFilter:member(1)'
+      - 'excel!Excel.Filter#applyIconFilter:member(1)'
+      - 'excel!Excel.Filter#applyTopItemsFilter:member(1)'
+      - 'excel!Excel.Filter#applyTopPercentFilter:member(1)'
+      - 'excel!Excel.Filter#applyValuesFilter:member(1)'
+      - 'excel!Excel.Filter#clear:member(1)'
+      - 'excel!Excel.Filter#context:member'
+      - 'excel!Excel.Filter#criteria:member'
+      - 'excel!Excel.Filter#load:member(1)'
+      - 'excel!Excel.Filter#load:member(2)'
+  - uid: 'excel!Excel.Filter#apply:member(1)'
+    summary: Применяет заданные условия фильтра для определенного столбца.
+    name: apply(criteria)
+    fullName: apply(criteria)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'apply(criteria: Excel.FilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria
+          description: Применяемые условия.
+          type:
+            - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.Filter#applyBottomItemsFilter:member(1)'
+    summary: Применяет к столбцу фильтр по количеству элементов снизу.
+    name: applyBottomItemsFilter(count)
+    fullName: applyBottomItemsFilter(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyBottomItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: 'Количество элементов снизу, которые должны отображаться.'
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyBottomPercentFilter:member(1)'
+    summary: Применяет к столбцу фильтр по проценту элементов снизу.
+    name: applyBottomPercentFilter(percent)
+    fullName: applyBottomPercentFilter(percent)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyBottomPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: percent
+          description: 'Процент элементов снизу, которые должны отображаться.'
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyCellColorFilter:member(1)'
+    summary: Применяет к столбцу фильтр по цвету ячеек.
+    name: applyCellColorFilter(color)
+    fullName: applyCellColorFilter(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyCellColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'Цвет фона ячеек, которые должны отображаться.'
+          type:
+            - string
+  - uid: 'excel!Excel.Filter#applyCustomFilter:member(1)'
+    summary: Примените к столбцу фильтр "Icon" для заданной строки условий.
+    name: 'applyCustomFilter(criteria1, criteria2, oper)'
+    fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: Excel.FilterOperator): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria1
+          description: Строка первого условия.
+          type:
+            - string
+        - id: criteria2
+          description: Необязательное свойство. Строка второго условия.
+          type:
+            - string
+        - id: oper
+          description: 'Необязательный. Оператор, который описывает способ объединения двух условий.'
+          type:
+            - 'excel!Excel.FilterOperator:enum'
+  - uid: 'excel!Excel.Filter#applyCustomFilter:member(2)'
+    summary: Примените к столбцу фильтр "Icon" для заданной строки условий.
+    name: 'applyCustomFilter(criteria1, criteria2, operString)'
+    fullName: 'applyCustomFilter(criteria1, criteria2, operString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria1
+          description: Строка первого условия.
+          type:
+            - string
+        - id: criteria2
+          description: Необязательное свойство. Строка второго условия.
+          type:
+            - string
+        - id: operString
+          description: 'Необязательный. Оператор, который описывает способ объединения двух условий.'
+          type:
+            - '"And" | "Or"'
+  - uid: 'excel!Excel.Filter#applyDynamicFilter:member(1)'
+    summary: Применяет к столбцу динамический фильтр.
+    name: applyDynamicFilter(criteria)
+    fullName: applyDynamicFilter(criteria)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyDynamicFilter(criteria: Excel.DynamicFilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria
+          description: 'Динамические условия, которые необходимо применить.'
+          type:
+            - 'excel!Excel.DynamicFilterCriteria:enum'
+  - uid: 'excel!Excel.Filter#applyDynamicFilter:member(2)'
+    summary: Применяет к столбцу динамический фильтр.
+    name: applyDynamicFilter(criteriaString)
+    fullName: applyDynamicFilter(criteriaString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteriaString
+          description: 'Динамические условия, которые необходимо применить.'
+          type:
+            - '"Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"'
+  - uid: 'excel!Excel.Filter#applyFontColorFilter:member(1)'
+    summary: Применяет к столбцу фильтр по цвету шрифта.
+    name: applyFontColorFilter(color)
+    fullName: applyFontColorFilter(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyFontColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'Цвет шрифта ячеек, которые должны отображаться.'
+          type:
+            - string
+  - uid: 'excel!Excel.Filter#applyIconFilter:member(1)'
+    summary: Примените к столбцу фильтр "Icon" для данного значка.
+    name: applyIconFilter(icon)
+    fullName: applyIconFilter(icon)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyIconFilter(icon: Excel.Icon): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: icon
+          description: 'Значки ячеек, которые должны отображаться.'
+          type:
+            - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.Filter#applyTopItemsFilter:member(1)'
+    summary: Применяет к столбцу фильтр по количеству элементов сверху.
+    name: applyTopItemsFilter(count)
+    fullName: applyTopItemsFilter(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyTopItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: 'Количество элементов сверху, которые должны отображаться.'
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyTopPercentFilter:member(1)'
+    summary: Применяет к столбцу фильтр по проценту элементов сверху.
+    name: applyTopPercentFilter(percent)
+    fullName: applyTopPercentFilter(percent)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyTopPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: percent
+          description: 'Процент элементов сверху, которые должны отображаться.'
+          type:
+            - number
+  - uid: 'excel!Excel.Filter#applyValuesFilter:member(1)'
+    summary: Применяет к столбцу фильтр по значениям.
+    name: applyValuesFilter(values)
+    fullName: applyValuesFilter(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: values
+          description: 'Список значений, которые должны отображаться. Это должен быть массив строк или массив объектов Excel. FilterDateTime.'
+          type:
+            - 'excel!Excel.Filter#applyValuesFilter~0:complex'
+  - uid: 'excel!Excel.Filter#clear:member(1)'
+    summary: Сбрасывает фильтр для определенного столбца.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Filter#context:member'
+    summary: 'Контекст запроса, связанный с объектом. Это подсоединяет процесс надстройки к процессу ведущего приложения Office.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Filter#criteria:member'
+    summary: 'Текущий фильтр, заданный для определенного столбца. Только для чтения.'
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly criteria: Excel.FilterCriteria;'
+      return:
+        type:
+          - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.Filter#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств `context.sync()` необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Filter;'
+      return:
+        type:
+          - 'excel!Excel.Filter:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Filter#load:member(2)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств `context.sync()` необходимо вызвать метод.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Filter;
+      return:
+        type:
+          - 'excel!Excel.Filter:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`— Это строка с разделителями-запятыми, задающая свойства для `propertyNamesAndPaths.expand` загрузки и которая представляет собой строку с разделителями-запятыми, указывающую свойства навигации для загрузки.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+references:
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    name: FilterCriteria
+    fullName: Excel.FilterCriteria
+  - uid: 'excel!Excel.FilterOperator:enum'
+    name: FilterOperator
+    fullName: Excel.FilterOperator
+  - uid: 'excel!Excel.DynamicFilterCriteria:enum'
+    name: DynamicFilterCriteria
+    fullName: Excel.DynamicFilterCriteria
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon
+    fullName: Excel.Icon
+  - uid: 'excel!Excel.Filter#applyValuesFilter~0:complex'
+    name: Array<string | FilterDatetime>
+    fullName: Array<string | Excel.FilterDatetime>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'excel!Excel.FilterDatetime:interface'
+        name: FilterDatetime
+        fullName: Excel.FilterDatetime
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Filter:class'
+    name: Filter
+    fullName: Excel.Filter

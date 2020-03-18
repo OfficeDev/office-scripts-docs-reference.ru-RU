@@ -1,0 +1,148 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+    summary: Представляет формат гистограмма условного форматирования для отрицательной стороны панели данных.
+    name: Excel.ConditionalDataBarNegativeFormat
+    fullName: Excel.ConditionalDataBarNegativeFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#context:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(2)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#set:member(1)'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
+    summary: 'Код цвета HTML, представляющий цвет линии границы для формы \#RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин"). "Пустая строка", если граница отсутствует или не задана.'
+    name: borderColor
+    fullName: borderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#context:member'
+    summary: 'Контекст запроса, связанный с объектом. Это подсоединяет процесс надстройки к процессу ведущего приложения Office.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
+    summary: 'HTML-код цвета, представляющий цвет заливки для формы \#RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
+    name: fillColor
+    fullName: fillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fillColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств `context.sync()` необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalDataBarNegativeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(2)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств `context.sync()` необходимо вызвать метод.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalDataBarNegativeFormat;
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`— Это строка с разделителями-запятыми, задающая свойства для `propertyNamesAndPaths.expand` загрузки и которая представляет собой строку с разделителями-запятыми, указывающую свойства навигации для загрузки.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
+    summary: 'Указывает, имеет ли отрицательная гистограмма тот же цвет границы, что и положительная.'
+    name: matchPositiveBorderColor
+    fullName: matchPositiveBorderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPositiveBorderColor: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
+    summary: 'Указывает, имеет ли отрицательная гистограмма тот же цвет заливки, что и положительная.'
+    name: matchPositiveFillColor
+    fullName: matchPositiveFillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPositiveFillColor: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#set:member(1)'
+    summary: Задает одновременно несколько свойств объекта на основе существующего загруженного объекта.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ConditionalDataBarNegativeFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+    name: ConditionalDataBarNegativeFormat
+    fullName: Excel.ConditionalDataBarNegativeFormat

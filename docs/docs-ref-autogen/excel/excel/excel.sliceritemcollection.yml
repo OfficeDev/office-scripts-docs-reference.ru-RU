@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerItemCollection:class'
+    summary: Представляет коллекцию всех объектов элементов среза в срезе.
+    name: Excel.SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerItemCollection#context:member'
+      - 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerItemCollection#items:member'
+      - 'excel!Excel.SlicerItemCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#context:member'
+    summary: 'Контекст запроса, связанный с объектом. Это подсоединяет процесс надстройки к процессу ведущего приложения Office.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+    summary: Возвращает количество элементов в срезе.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItemCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+    summary: Получает объект элемента среза по ключу или имени.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:class'
+        description: ''
+      parameters:
+        - id: key
+          description: Ключ или имя элемента среза.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
+    summary: Получает элемент среза на основе его позиции в коллекции.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:class'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса получаемого объекта. Используется нулевой индекс.
+          type:
+            - number
+  - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает элемент среза по ключу или имени. Если элемент среза не существует, возвращает пустой объект.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:class'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Ключ или имя среза, который требуется получить.'
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#items:member'
+    summary: Получает загруженные дочерние элементы в этой коллекции.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.SlicerItem[];'
+      return:
+        type:
+          - 'excel!Excel.SlicerItemCollection#items~0:complex'
+  - uid: 'excel!Excel.SlicerItemCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств `context.sync()` необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SlicerItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItemCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.SlicerItemCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.SlicerItem:class'
+    name: SlicerItem
+    fullName: Excel.SlicerItem
+  - uid: 'excel!Excel.SlicerItemCollection#items~0:complex'
+    name: 'Excel.SlicerItem[]'
+    fullName: 'Excel.SlicerItem[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerItem:class'
+        name: Excel.SlicerItem
+        fullName: Excel.SlicerItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SlicerItemCollection:class'
+    name: SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
