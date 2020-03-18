@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
+    summary: Представляет форматирование для названий осей диаграммы.
+    name: Excel.ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisTitleFormat#border:member'
+      - 'excel!Excel.ChartAxisTitleFormat#context:member'
+      - 'excel!Excel.ChartAxisTitleFormat#fill:member'
+      - 'excel!Excel.ChartAxisTitleFormat#font:member'
+      - 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+      - 'excel!Excel.ChartAxisTitleFormat#load:member(2)'
+      - 'excel!Excel.ChartAxisTitleFormat#set:member(1)'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#border:member'
+    summary: 'Представляет формат границы, включающий цвет, тип линии и толщину.'
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#context:member'
+    summary: 'Контекст запроса, связанный с объектом. Это подсоединяет процесс надстройки к процессу ведущего приложения Office.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#fill:member'
+    summary: Представляет форматирование заливки диаграммы.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#font:member'
+    summary: 'Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д. объект заголовка оси диаграммы. Только для чтения.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств `context.sync()` необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxisTitleFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitleFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#load:member(2)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств `context.sync()` необходимо вызвать метод.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxisTitleFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitleFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`— Это строка с разделителями-запятыми, задающая свойства для `propertyNamesAndPaths.expand` загрузки и которая представляет собой строку с разделителями-запятыми, указывающую свойства навигации для загрузки.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartAxisTitleFormat#set:member(1)'
+    summary: Задает одновременно несколько свойств объекта на основе существующего загруженного объекта.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxisTitleFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartAxisTitleFormat:class'
+references:
+  - uid: 'excel!Excel.ChartBorder:class'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:class'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
+    name: ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
