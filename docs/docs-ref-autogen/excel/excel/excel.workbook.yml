@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Workbook:class'
-    summary: 'Workbook — это объект верхнего уровня, содержащий связанные объекты книг, такие как листы, таблицы, диапазоны и т. д. Чтобы узнать больше об объектной модели книги, читайте [работу с книгами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    summary: "Workbook\_— это объект верхнего уровня, содержащий связанные объекты книг, например листы, таблицы, диапазоны и т.\_д."
     name: Excel.Workbook
     fullName: Excel.Workbook
     langs:

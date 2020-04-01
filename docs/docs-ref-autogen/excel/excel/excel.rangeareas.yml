@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.RangeAreas:class'
-    summary: 'RangeAreas представляет коллекцию из одного или нескольких прямоугольных диапазонов на одном листе. Чтобы узнать, как использовать диапазоны дисконтингуаус, прочтите [Работа с несколькими диапазонами одновременно в](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges) надстройках Excel<!-- -->.'
+    summary: RangeAreas представляет коллекцию из одного или нескольких прямоугольных диапазонов на одном листе.
     name: Excel.RangeAreas
     fullName: Excel.RangeAreas
     langs:
