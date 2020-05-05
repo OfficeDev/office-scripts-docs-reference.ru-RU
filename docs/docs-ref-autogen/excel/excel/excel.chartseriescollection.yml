@@ -31,11 +31,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Необязательное свойство. Имя ряда.
+          description: Необязательный параметр. Имя ряда.
           type:
             - string
         - id: index
-          description: Необязательное свойство. Значение индекса добавляемого ряда. Используется нулевой индекс.
+          description: Необязательный параметр. Значение индекса добавляемого ряда. Используется нулевой индекс.
           type:
             - number
   - uid: 'excel!Excel.ChartSeriesCollection#context:member'
