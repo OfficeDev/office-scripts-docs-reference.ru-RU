@@ -118,7 +118,7 @@ items:
           type:
             - string
         - id: criteria2
-          description: Необязательное свойство. Строка второго условия.
+          description: Необязательный параметр. Строка второго условия.
           type:
             - string
         - id: oper
@@ -144,7 +144,7 @@ items:
           type:
             - string
         - id: criteria2
-          description: Необязательное свойство. Строка второго условия.
+          description: Необязательный параметр. Строка второго условия.
           type:
             - string
         - id: operString
