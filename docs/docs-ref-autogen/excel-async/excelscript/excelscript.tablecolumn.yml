@@ -1,0 +1,159 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumn:interface'
+    summary: Представляет столбец в таблице.
+    name: Excel.TableColumn
+    fullName: Excel.TableColumn
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableColumn#delete:member(1)'
+      - 'excel!Excel.TableColumn#filter:member'
+      - 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+      - 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+      - 'excel!Excel.TableColumn#getRange:member(1)'
+      - 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+      - 'excel!Excel.TableColumn#id:member'
+      - 'excel!Excel.TableColumn#index:member'
+      - 'excel!Excel.TableColumn#load:member(1)'
+      - 'excel!Excel.TableColumn#name:member'
+  - uid: 'excel!Excel.TableColumn#delete:member(1)'
+    summary: Удаляет столбец из таблицы.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableColumn#filter:member'
+    summary: 'Возвращает фильтр, применяемый к столбцу.'
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filter: Filter;'
+      return:
+        type:
+          - 'excel!Excel.Filter:interface'
+  - uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+    summary: 'Получает объект диапазона, связанный с текстом данных столбца.'
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+    summary: 'Получает объект диапазона, связанный со строкой заголовков столбца.'
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getRange:member(1)'
+    summary: 'Получает объект диапазона, связанный со всем столбцом.'
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+    summary: 'Получает объект диапазона, связанный со строкой итогов столбца.'
+    name: getTotalRowRange()
+    fullName: getTotalRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#id:member'
+    summary: 'Возвращает уникальный ключ, идентифицирующий столбец в таблице.'
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumn#index:member'
+    summary: Возвращает номер индекса столбца в коллекции столбцов таблицы. Используется нулевой индекс.
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumn#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableColumn#name:member'
+    summary: Задает имя столбца таблицы.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.Filter:interface'
+    name: Filter
+    fullName: Excel.Filter
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

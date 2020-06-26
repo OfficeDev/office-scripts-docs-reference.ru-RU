@@ -1,0 +1,822 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Shape:interface'
+    summary: 'Представляет объект универсальной фигуры на листе. Фигурой может быть геометрическая фигура, линия, Группа фигур и т. д. Чтобы узнать больше об объектной модели фигур, прочтите [Работа с фигурами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    name: ExcelScript.Shape
+    fullName: ExcelScript.Shape
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Shape#copyTo:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#delete:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getGeometricShape:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getGroup:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getId:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getImage:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLevel:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLine:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLineFormat:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getName:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getPlacement:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getRotation:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getTextFrame:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getType:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getZOrderPosition:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#incrementLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#incrementRotation:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#incrementTop:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#scaleHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#scaleWidth:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setName:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setPlacement:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setRotation:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setTop:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setVisible:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setWidth:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setZOrder:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Shape#copyTo:member(1)'
+    summary: 'Копирует и вставляет объект Shape. Вставленная фигура копируется в то же расположение пикселя, что и эта фигура.'
+    name: copyTo(destinationSheet)
+    fullName: copyTo(destinationSheet)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Shape:interface'
+        description: ''
+      parameters:
+        - id: destinationSheet
+          description: 'Лист, на который будет вставлен объект фигуры. Значение по умолчанию — лист скопированной фигуры.'
+          type:
+            - 'ExcelScript!ExcelScript.Shape#copyTo~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Shape#delete:member(1)'
+    summary: Удаляет фигуру с листа.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)'
+    summary: Задает текст альтернативного описания для объекта Shape.
+    name: getAltTextDescription()
+    fullName: getAltTextDescription()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAltTextDescription(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)'
+    summary: Указывает альтернативный текст заголовка для объекта Shape.
+    name: getAltTextTitle()
+    fullName: getAltTextTitle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAltTextTitle(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
+    summary: 'Преобразует фигуру в изображение и возвращает изображение в виде строки в кодировке base64. Число точек на дюйм: 96. Поддерживаются только форматы`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->, а`Excel.PictureFormat.GIF`<!-- -->.'
+    name: getAsImage(format)
+    fullName: getAsImage(format)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsImage(format: PictureFormat): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: format
+          description: Задает формат изображения.
+          type:
+            - 'ExcelScript!ExcelScript.PictureFormat:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)'
+    summary: Возвращает количество точек соединения на фигуре.
+    name: getConnectionSiteCount()
+    fullName: getConnectionSiteCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConnectionSiteCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getFill:member(1)'
+    summary: Возвращает формат заливки фигуры.
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ShapeFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShape:member(1)'
+    summary: 'Возвращает геометрическую фигуру, связанную с линией. Если тип фигуры отличается от GeometricShape, возникает ошибка.'
+    name: getGeometricShape()
+    fullName: getGeometricShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGeometricShape(): GeometricShape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.GeometricShape:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
+    summary: 'Указывает тип геометрической фигуры для этой геометрической фигуры. Дополнительные сведения см. в статье Excel.GeometricShapeType. Возвращает значение null, если тип фигуры отличается от GeometricShape.'
+    name: getGeometricShapeType()
+    fullName: getGeometricShapeType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGeometricShapeType(): GeometricShapeType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getGroup:member(1)'
+    summary: 'Возвращает группу фигур, связанную с фигурой. Если тип фигуры отличается от GroupShape, возникает ошибка.'
+    name: getGroup()
+    fullName: getGroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGroup(): ShapeGroup;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeGroup:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getHeight:member(1)'
+    summary: Задает высоту фигуры в пунктах. При задании с отрицательным значением или нулем в качестве входных данных создается исключение недопустимого аргумента.
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getId:member(1)'
+    summary: Задает идентификатор фигуры.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getImage:member(1)'
+    summary: 'Возвращает изображение, связанное с фигурой. Если тип фигуры отличается от Image, возникает ошибка.'
+    name: getImage()
+    fullName: getImage()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getImage(): Image;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Image:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLeft:member(1)'
+    summary: Расстояние в пунктах от левого края фигуры до левого края листа. При задании с отрицательным значением в качестве входных данных создается исключение недопустимого аргумента.
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLevel:member(1)'
+    summary: 'Задает уровень указанной фигуры. Например, уровень 0 означает, что фигура не является частью групп; уровень 1 означает, что фигура является частью группы верхнего уровня; уровень 2 означает, что фигура является частью подгруппы верхнего уровня.'
+    name: getLevel()
+    fullName: getLevel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLevel(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLine:member(1)'
+    summary: 'Возвращает линию, связанную с фигурой. Если тип фигуры отличается от Line, возникает ошибка.'
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): Line;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Line:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLineFormat:member(1)'
+    summary: Возвращает формат линии для фигуры.
+    name: getLineFormat()
+    fullName: getLineFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLineFormat(): ShapeLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)'
+    summary: 'Указывает, заблокировано ли пропорции данной фигуры.'
+    name: getLockAspectRatio()
+    fullName: getLockAspectRatio()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLockAspectRatio(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getName:member(1)'
+    summary: Задает имя фигуры.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getPlacement:member(1)'
+    summary: Представляет способ прикрепления объекта к ячейкам под ним.
+    name: getPlacement()
+    fullName: getPlacement()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPlacement(): Placement;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Placement:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getRotation:member(1)'
+    summary: Задает поворот фигуры в градусах.
+    name: getRotation()
+    fullName: getRotation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRotation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getTextFrame:member(1)'
+    summary: Возвращает объект рамки с текстом для фигуры. Только для чтения.
+    name: getTextFrame()
+    fullName: getTextFrame()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextFrame(): TextFrame;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TextFrame:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getTop:member(1)'
+    summary: Расстояние в пунктах от верхнего края фигуры до верхнего края листа. При задании с отрицательным значением в качестве входных данных создается исключение недопустимого аргумента.
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
+    summary: Возвращает тип фигуры. Дополнительные сведения см. в статье Excel.ShapeType.
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): ShapeType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getVisible:member(1)'
+    summary: 'Указывает, отображается ли фигура.'
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getWidth:member(1)'
+    summary: Задает ширину фигуры в пунктах. При задании с отрицательным значением или нулем в качестве входных данных создается исключение недопустимого аргумента.
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getZOrderPosition:member(1)'
+    summary: Возвращает положение указанной фигуры по оси Z. Значение 0 представляет нижнее положение по оси.
+    name: getZOrderPosition()
+    fullName: getZOrderPosition()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getZOrderPosition(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#incrementLeft:member(1)'
+    summary: Перемещает фигуру по горизонтали на указанное число пунктов.
+    name: incrementLeft(increment)
+    fullName: incrementLeft(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementLeft(increment: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: increment
+          description: 'Приращение фигуры будет горизонтально перемещено в пункт точки. Положительное значение перемещает фигуру вправо, а отрицательное значение — влево. Если лист ориентирован справа налево, это значение изменяется на противоположный: положительные значения перемещают фигуру влево, а отрицательные — вправо.'
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#incrementRotation:member(1)'
+    summary: 'Поворачивает фигуру по часовой стрелке относительно оси Z на указанное число градусов. Используйте `rotation` свойство, чтобы задать абсолютный поворот фигуры.'
+    name: incrementRotation(increment)
+    fullName: incrementRotation(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementRotation(increment: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: increment
+          description: 'Количество градусов, на котором будет вращаться фигура. Положительное значение поворачивает фигуру по часовой стрелке; отрицательное значение поворачивает его против часовой стрелки.'
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#incrementTop:member(1)'
+    summary: Перемещает фигуру по вертикали на указанное число пунктов.
+    name: incrementTop(increment)
+    fullName: incrementTop(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementTop(increment: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: increment
+          description: Увеличение (в пунктах) фигура будет перемещена по вертикали. в пунктах. Положительное значение перемещает фигуру вниз и отрицательное значение перемещается вверх.
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#scaleHeight:member(1)'
+    summary: 'Масштабирует высоту фигуры с применением указанного коэффициента. Для изображений можно указать изменение масштаба фигуры относительно исходного или текущего размера. Фигуры, не являющиеся изображениями, всегда масштабируются относительно их текущей высоты.'
+    name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        scaleHeight(
+                    scaleFactor: number,
+                    scaleType: ShapeScaleType,
+                    scaleFrom?: ShapeScaleFrom
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: Задает отношение высоты фигуры после изменения ее размера и текущей или исходной высоты.
+          type:
+            - number
+        - id: scaleType
+          description: 'Указывает, масштабируется ли фигура относительно исходного или текущего размера. Параметр масштабирование исходного размера работает только для изображений.'
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 'Необязательный параметр. Указывает, какая часть фигуры сохраняет свое положение при масштабировании фигуры. Если этот параметр опущен, то он представляет свое положение в левом верхнем углу фигуры.'
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#scaleWidth:member(1)'
+    summary: 'Масштабирует ширину фигуры с применением указанного коэффициента. Для изображений можно указать изменение масштаба фигуры относительно исходного или текущего размера. Фигуры, не являющиеся изображениями, всегда масштабируются относительно их текущей ширины.'
+    name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        scaleWidth(
+                    scaleFactor: number,
+                    scaleType: ShapeScaleType,
+                    scaleFrom?: ShapeScaleFrom
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: Задает отношение ширины фигуры после изменения ее размера и текущей или исходной ширины.
+          type:
+            - number
+        - id: scaleType
+          description: 'Указывает, масштабируется ли фигура относительно исходного или текущего размера. Параметр масштабирование исходного размера работает только для изображений.'
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 'Необязательный параметр. Указывает, какая часть фигуры сохраняет свое положение при масштабировании фигуры. Если этот параметр опущен, то он представляет свое положение в левом верхнем углу фигуры.'
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)'
+    summary: Задает текст альтернативного описания для объекта Shape.
+    name: setAltTextDescription(altTextDescription)
+    fullName: setAltTextDescription(altTextDescription)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAltTextDescription(altTextDescription: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: altTextDescription
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)'
+    summary: Указывает альтернативный текст заголовка для объекта Shape.
+    name: setAltTextTitle(altTextTitle)
+    fullName: setAltTextTitle(altTextTitle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAltTextTitle(altTextTitle: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: altTextTitle
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
+    summary: 'Указывает тип геометрической фигуры для этой геометрической фигуры. Дополнительные сведения см. в статье Excel.GeometricShapeType. Возвращает значение null, если тип фигуры отличается от GeometricShape.'
+    name: setGeometricShapeType(geometricShapeType)
+    fullName: setGeometricShapeType(geometricShapeType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setGeometricShapeType(geometricShapeType: GeometricShapeType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: geometricShapeType
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#setHeight:member(1)'
+    summary: Задает высоту фигуры в пунктах. При задании с отрицательным значением или нулем в качестве входных данных создается исключение недопустимого аргумента.
+    name: setHeight(height)
+    fullName: setHeight(height)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setHeight(height: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: height
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setLeft:member(1)'
+    summary: Расстояние в пунктах от левого края фигуры до левого края листа. При задании с отрицательным значением в качестве входных данных создается исключение недопустимого аргумента.
+    name: setLeft(left)
+    fullName: setLeft(left)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLeft(left: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: left
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)'
+    summary: 'Указывает, заблокировано ли пропорции данной фигуры.'
+    name: setLockAspectRatio(lockAspectRatio)
+    fullName: setLockAspectRatio(lockAspectRatio)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLockAspectRatio(lockAspectRatio: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: lockAspectRatio
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Shape#setName:member(1)'
+    summary: Задает имя фигуры.
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Shape#setPlacement:member(1)'
+    summary: Представляет способ прикрепления объекта к ячейкам под ним.
+    name: setPlacement(placement)
+    fullName: setPlacement(placement)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPlacement(placement: Placement): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: placement
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.Placement:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#setRotation:member(1)'
+    summary: Задает поворот фигуры в градусах.
+    name: setRotation(rotation)
+    fullName: setRotation(rotation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRotation(rotation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rotation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setTop:member(1)'
+    summary: Расстояние в пунктах от верхнего края фигуры до верхнего края листа. При задании с отрицательным значением в качестве входных данных создается исключение недопустимого аргумента.
+    name: setTop(top)
+    fullName: setTop(top)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTop(top: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: top
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setVisible:member(1)'
+    summary: 'Указывает, отображается ли фигура.'
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Shape#setWidth:member(1)'
+    summary: Задает ширину фигуры в пунктах. При задании с отрицательным значением или нулем в качестве входных данных создается исключение недопустимого аргумента.
+    name: setWidth(width)
+    fullName: setWidth(width)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWidth(width: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: width
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setZOrder:member(1)'
+    summary: 'Перемещает указанную фигуру вверх или вниз по оси Z в коллекции, что переносит ее вперед или назад относительно других фигур.'
+    name: setZOrder(position)
+    fullName: setZOrder(position)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setZOrder(position: ShapeZOrder): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: position
+          description: Место перемещения фигуры в стеке z по отношению к другим фигурам. Дополнительные сведения см. в статье Excel. Шапезордер.
+          type:
+            - 'ExcelScript!ExcelScript.ShapeZOrder:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.Shape:interface'
+    name: Shape
+    fullName: ExcelScript.Shape
+  - uid: 'ExcelScript!ExcelScript.Shape#copyTo~0:complex'
+    name: Worksheet | string
+    fullName: ExcelScript.Worksheet | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
+    name: PictureFormat
+    fullName: ExcelScript.PictureFormat
+  - uid: 'ExcelScript!ExcelScript.ShapeFill:interface'
+    name: ShapeFill
+    fullName: ExcelScript.ShapeFill
+  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
+    name: GeometricShape
+    fullName: ExcelScript.GeometricShape
+  - uid: 'ExcelScript!ExcelScript.GeometricShapeType:enum'
+    name: GeometricShapeType
+    fullName: ExcelScript.GeometricShapeType
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup:interface'
+    name: ShapeGroup
+    fullName: ExcelScript.ShapeGroup
+  - uid: 'ExcelScript!ExcelScript.Image:interface'
+    name: Image
+    fullName: ExcelScript.Image
+  - uid: 'ExcelScript!ExcelScript.Line:interface'
+    name: Line
+    fullName: ExcelScript.Line
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
+    name: ShapeLineFormat
+    fullName: ExcelScript.ShapeLineFormat
+  - uid: 'ExcelScript!ExcelScript.Placement:enum'
+    name: Placement
+    fullName: ExcelScript.Placement
+  - uid: 'ExcelScript!ExcelScript.TextFrame:interface'
+    name: TextFrame
+    fullName: ExcelScript.TextFrame
+  - uid: 'ExcelScript!ExcelScript.ShapeType:enum'
+    name: ShapeType
+    fullName: ExcelScript.ShapeType
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleType:enum'
+    name: ShapeScaleType
+    fullName: ExcelScript.ShapeScaleType
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
+    name: ShapeScaleFrom
+    fullName: ExcelScript.ShapeScaleFrom
+  - uid: 'ExcelScript!ExcelScript.ShapeZOrder:enum'
+    name: ShapeZOrder
+    fullName: ExcelScript.ShapeZOrder

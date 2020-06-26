@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
+    summary: 'Представляет критерии поиска листа, которые необходимо использовать.'
+    name: ExcelScript.WorksheetSearchCriteria
+    fullName: ExcelScript.WorksheetSearchCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+    summary: 'Указывает, должно ли соответствие быть полным или частичным. Полное совпадение соответствует всему содержимому ячейки. Частичное совпадение соответствует подстроке в пределах содержимого ячейки (например, `cat` частичное совпадение `caterpillar` и`scatter`<!-- -->). Значение по умолчанию: false (частичное).'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+    summary: 'Указывает, учитывается ли регистр в выражении. Значение по умолчанию: false (без учета регистра).'
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
+    summary: 'Набор настраиваемых XML-частей с ограниченной областью действия. Набор с ограниченной областью является результатом некоторой операции (например, фильтрации по пространству имен). Коллекция с ограниченной областью действия не может быть задана.'
+    name: Excel.CustomXmlPartScopedCollection
+    fullName: Excel.CustomXmlPartScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает пользовательскую XML-часть по идентификатору. Если CustomXmlPart не существует, свойство isNull возвращаемого объекта будет иметь значение true.'
+    name: getItemOrNullObject(id)
+    fullName: getItemOrNullObject(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+              await context.sync();
+
+              if (xmlPartIDSetting.value) {   
+                  let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+                  let xmlBlob = customXmlPart.getXml();
+                  customXmlPart.delete();
+                  customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
+
+                  await context.sync();
+
+                  if (customXmlPart.isNullObject) {
+                      $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
+
+                      // Delete the unneeded setting too.
+                      xmlPartIDSetting.delete();            
+                  } else {
+                      let readableXml = addLineBreaksToXML(xmlBlob.value);
+                      let strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
+                      $("#display-xml").text(strangeMessage);
+                  }
+
+                  await context.sync();
+              }
+          }
+          ```
+      parameters:
+        - id: id
+          description: ИДЕНТИФИКАТОР получаемого объекта.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
+    summary: 'Если коллекция содержит ровно один элемент, этот метод возвращает его. В противном случае этот метод возвращает значение null.'
+    name: getOnlyItemOrNullObject()
+    fullName: getOnlyItemOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOnlyItemOrNullObject(): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CustomXmlPart:interface'
+    name: CustomXmlPart
+    fullName: Excel.CustomXmlPart

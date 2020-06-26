@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
+    summary: Представляет результаты метода removeDuplicates в диапазоне
+    name: ExcelScript.RemoveDuplicatesResult
+    fullName: ExcelScript.RemoveDuplicatesResult
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+    summary: 'Количество повторяющихся строк, удаленных операцией.'
+    name: getRemoved()
+    fullName: getRemoved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRemoved(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+    summary: 'Количество оставшихся уникальных строк, присутствующих в получившемся диапазоне.'
+    name: getUniqueRemaining()
+    fullName: getUniqueRemaining()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUniqueRemaining(): number;'
+      return:
+        type:
+          - number
+        description: ''

@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection:interface'
+    summary: 'Представляет `format.protection` свойства объекта`getCellProperties`<!-- -->, `getRowProperties`<!-- -->, а `getColumnProperties` также `format.protection` входной параметр`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, а`setColumnProperties`<!-- -->.'
+    name: ExcelScript.CellPropertiesProtection
+    fullName: ExcelScript.CellPropertiesProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesProtection#locked:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+    summary: Представляет свойство `format.protection.formulaHidden`.
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection#locked:member'
+    summary: Представляет свойство `format.protection.locked`.
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type:
+          - boolean

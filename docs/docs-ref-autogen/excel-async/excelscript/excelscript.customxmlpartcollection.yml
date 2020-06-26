@@ -1,0 +1,97 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomXmlPartCollection:interface'
+    summary: Коллекция настраиваемых XML-частей.
+    name: Excel.CustomXmlPartCollection
+    fullName: Excel.CustomXmlPartCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomXmlPartCollection#add:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
+    summary: Добавляет новую пользовательскую XML-часть в книгу.
+    name: add(xml)
+    fullName: add(xml)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(xml: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              // You must have the xmlns attribute to populate the 
+              // CustomXml.namespaceUri property.
+              let originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+              let customXmlPart = context.workbook.customXmlParts.add(originalXml);
+              customXmlPart.load("id");
+              let xmlBlob = customXmlPart.getXml();
+
+              await context.sync();
+
+              let readableXml = addLineBreaksToXML(xmlBlob.value);
+              $("#display-xml").text(readableXml);
+
+              // Store the XML part's ID in a setting.
+              let settings = context.workbook.settings;
+              settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: xml
+          description: XML-контент. Должен быть допустимым фрагментом XML.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает пользовательскую XML-часть по идентификатору. Если CustomXmlPart не существует, свойство isNull возвращаемого объекта будет иметь значение true.'
+    name: getItemOrNullObject(id)
+    fullName: getItemOrNullObject(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: ИДЕНТИФИКАТОР получаемого объекта.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CustomXmlPart:interface'
+    name: CustomXmlPart
+    fullName: Excel.CustomXmlPart

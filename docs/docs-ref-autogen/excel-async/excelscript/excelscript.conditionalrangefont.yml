@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFont:interface'
+    summary: 'Этот объект представляет атрибуты шрифта (начертание, цвет и т. д.) для объекта.'
+    name: Excel.ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFont#bold:member'
+      - 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#color:member'
+      - 'excel!Excel.ConditionalRangeFont#italic:member'
+      - 'excel!Excel.ConditionalRangeFont#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+      - 'excel!Excel.ConditionalRangeFont#underline:member'
+  - uid: 'excel!Excel.ConditionalRangeFont#bold:member'
+    summary: 'Указывает, является ли шрифт полужирным.'
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+    summary: Удаляет форматирование шрифтов.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalRangeFont#color:member'
+    summary: 'Код цвета HTML цвета текста (например, \# FF0000 представляет собой красный цвет).'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeFont#italic:member'
+    summary: 'Указывает, является ли шрифт курсивом.'
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+    summary: Указывает состояние зачеркивания шрифта.
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#underline:member'
+    summary: 'Тип подчеркивания, примененный к шрифту. Дополнительные сведения см. в статье Excel. Кондитионалранжефонтундерлинестиле.'
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: ConditionalRangeFontUnderlineStyle;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+references:
+  - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+    name: ConditionalRangeFontUnderlineStyle
+    fullName: Excel.ConditionalRangeFontUnderlineStyle

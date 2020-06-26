@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:interface'
+    summary: 'Представляет коллекцию элементов DataPivotHierarchy, связанных со сводной таблицей.'
+    name: Excel.DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+    summary: Добавляет PivotHierarchy к текущей оси.
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: PivotHierarchy): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает DataPivotHierarchy по имени. Если DataPivotHierarchy не существует, возвращает пустой объект.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого DataPivotHierarchy.
+          type:
+            - string
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
+    summary: Удаляет PivotHierarchy из текущей оси.
+    name: remove(DataPivotHierarchy)
+    fullName: remove(DataPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(DataPivotHierarchy: DataPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: DataPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.DataPivotHierarchy:interface'
+references:
+  - uid: 'excel!Excel.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy

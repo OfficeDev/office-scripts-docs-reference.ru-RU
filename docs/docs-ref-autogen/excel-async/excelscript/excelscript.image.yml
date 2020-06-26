@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Image:interface'
+    summary: 'Представляет изображение на листе. Чтобы получить соответствующий объект Shape, используйте Image. Shape.'
+    name: Excel.Image
+    fullName: Excel.Image
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Image#format:member'
+      - 'excel!Excel.Image#id:member'
+      - 'excel!Excel.Image#load:member(1)'
+  - uid: 'excel!Excel.Image#format:member'
+    summary: Возвращает формат изображения.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: PictureFormat;'
+      return:
+        type:
+          - 'excel!Excel.PictureFormat:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let image = sheet.shapes.getItem("Image").image;
+              image.load("format");
+              await context.sync();
+
+              console.log("The image's format is: " + image.format);
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Image#id:member'
+    summary: Задает идентификатор фигуры для объекта Image.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Image#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PictureFormat:enum'
+    name: PictureFormat
+    fullName: Excel.PictureFormat

@@ -1,0 +1,439 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Style:interface'
+    summary: 'Объект, инкапсулирующий формат стиля и другие свойства.'
+    name: Excel.Style
+    fullName: Excel.Style
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Style#autoIndent:member'
+      - 'excel!Excel.Style#borders:member'
+      - 'excel!Excel.Style#builtIn:member'
+      - 'excel!Excel.Style#delete:member(1)'
+      - 'excel!Excel.Style#fill:member'
+      - 'excel!Excel.Style#font:member'
+      - 'excel!Excel.Style#formulaHidden:member'
+      - 'excel!Excel.Style#horizontalAlignment:member'
+      - 'excel!Excel.Style#includeAlignment:member'
+      - 'excel!Excel.Style#includeBorder:member'
+      - 'excel!Excel.Style#includeFont:member'
+      - 'excel!Excel.Style#includeNumber:member'
+      - 'excel!Excel.Style#includePatterns:member'
+      - 'excel!Excel.Style#includeProtection:member'
+      - 'excel!Excel.Style#indentLevel:member'
+      - 'excel!Excel.Style#load:member(1)'
+      - 'excel!Excel.Style#locked:member'
+      - 'excel!Excel.Style#name:member'
+      - 'excel!Excel.Style#numberFormat:member'
+      - 'excel!Excel.Style#numberFormatLocal:member'
+      - 'excel!Excel.Style#readingOrder:member'
+      - 'excel!Excel.Style#shrinkToFit:member'
+      - 'excel!Excel.Style#textOrientation:member'
+      - 'excel!Excel.Style#verticalAlignment:member'
+      - 'excel!Excel.Style#wrapText:member'
+  - uid: 'excel!Excel.Style#autoIndent:member'
+    summary: 'Указывает, отображается ли отступ текста автоматически, если для выравнивания текста в ячейке задано равное равномерное распределение.'
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#borders:member'
+    summary: 'Коллекция Border из четырех объектов Border, представляющих стиль четырех границ.'
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly borders: RangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorderCollection:interface'
+  - uid: 'excel!Excel.Style#builtIn:member'
+    summary: 'Указывает, является ли этот стиль встроенным.'
+    name: builtIn
+    fullName: builtIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly builtIn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#delete:member(1)'
+    summary: Удаляет этот стиль.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let style = context.workbook.styles.getItem("Diagonal Orientation Style");
+
+              // Delete the diagonal orientation style from the style collection.
+              // Styles are in the Home tab ribbon.
+              style.delete();
+
+              await context.sync();
+
+              console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
+          }
+          ```
+  - uid: 'excel!Excel.Style#fill:member'
+    summary: Заливка стиля.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: RangeFill;'
+      return:
+        type:
+          - 'excel!Excel.RangeFill:interface'
+  - uid: 'excel!Excel.Style#font:member'
+    summary: 'Объект Font, представляющий шрифт стиля.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: RangeFont;'
+      return:
+        type:
+          - 'excel!Excel.RangeFont:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let style = context.workbook.styles.getItem("Normal");
+              style.font.load("bold, color, italic, name, size");
+              style.fill.load("color");
+
+              await context.sync();
+
+              console.log("Bold: " + style.font.bold);
+              console.log("Font color: " + style.font.color);
+              console.log("Italic: " + style.font.italic);
+              console.log("Name: " + style.font.name);
+              console.log("Size: " + style.font.size);
+              console.log("Fill color: " + style.fill.color);
+          }
+          ```
+  - uid: 'excel!Excel.Style#formulaHidden:member'
+    summary: 'Указывает, будет ли скрыта формула при защите листа.'
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#horizontalAlignment:member'
+    summary: Представляет горизонтальное выравнивание для стиля. Дополнительные сведения см. в статье Excel. HorizontalAlignment.
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: HorizontalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.HorizontalAlignment:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let worksheet = context.workbook.worksheets.getItem("Sample");
+              let range = worksheet.getRange("A1:E1");
+
+              // Apply built-in style. 
+              // Styles are in the Home tab ribbon.
+              range.style = Excel.BuiltInStyle.neutral;
+              range.format.horizontalAlignment = "Right";
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Style#includeAlignment:member'
+    summary: 'Указывает, содержит ли стиль свойства Indent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel и TextOrientation.'
+    name: includeAlignment
+    fullName: includeAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeAlignment: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeBorder:member'
+    summary: 'Указывает, включают ли стиль свойства границы цвета, ColorIndex, LineStyle и Weight.'
+    name: includeBorder
+    fullName: includeBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeBorder: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeFont:member'
+    summary: 'Указывает, содержит ли стиль фон, полужирный, цвет, ColorIndex, FontStyle, курсив, имя, размер, зачеркивание, подстрочный знак, Надстрочный знак и подчеркивание шрифта.'
+    name: includeFont
+    fullName: includeFont
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeFont: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeNumber:member'
+    summary: 'Указывает, содержит ли стиль свойство NumberFormat.'
+    name: includeNumber
+    fullName: includeNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeNumber: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includePatterns:member'
+    summary: 'Указывает, включены ли в стиль внутренние свойства Color, ColorIndex, InvertIfNegative, pattern, PatternColor и PatternColorIndex.'
+    name: includePatterns
+    fullName: includePatterns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includePatterns: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeProtection:member'
+    summary: 'Указывает, содержит ли стиль свойства FormulaHidden и locked Protection.'
+    name: includeProtection
+    fullName: includeProtection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeProtection: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#indentLevel:member'
+    summary: 'Целое число от 0 до 250, указывающее уровень отступа для стиля.'
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Style#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
+              style.load("textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked");
+
+              await context.sync();
+
+              console.log("Orientation: " + style.textOrientation);
+              console.log("Horizontal alignment: " + style.horizontalAlignment);
+              console.log("Add indent: " + style.autoIndent);
+              console.log("Reading order: " + style.readingOrder);
+              console.log("Wrap text: " + style.wrapText);
+              console.log("Include protection: " + style.includeProtection);
+              console.log("Shrink to fit: " + style.shrinkToFit);
+              console.log("Style locked: " + style.locked);
+          }
+          ```
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Style#locked:member'
+    summary: 'Указывает, блокируется ли объект, когда лист защищен.'
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#name:member'
+    summary: Имя стиля.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Style#numberFormat:member'
+    summary: Код числового формата для стиля.
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Style#numberFormatLocal:member'
+    summary: Локализованный код числового формата для стиля.
+    name: numberFormatLocal
+    fullName: numberFormatLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatLocal: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Style#readingOrder:member'
+    summary: Направление чтения для стиля.
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder: ReadingOrder;'
+      return:
+        type:
+          - 'excel!Excel.ReadingOrder:enum'
+  - uid: 'excel!Excel.Style#shrinkToFit:member'
+    summary: 'Указывает, сжимается ли текст автоматически в соответствии с шириной доступной ширины столбца.'
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#textOrientation:member'
+    summary: Ориентация текста для стиля.
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Style#verticalAlignment:member'
+    summary: Задает вертикальное выравнивание для стиля. Дополнительные сведения см. в статье Excel. VerticalAlignment.
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: VerticalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.VerticalAlignment:enum'
+  - uid: 'excel!Excel.Style#wrapText:member'
+    summary: 'Указывает, переносит ли Excel текст в объекте.'
+    name: wrapText
+    fullName: wrapText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wrapText: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.RangeBorderCollection:interface'
+    name: RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
+  - uid: 'excel!Excel.RangeFill:interface'
+    name: RangeFill
+    fullName: Excel.RangeFill
+  - uid: 'excel!Excel.RangeFont:interface'
+    name: RangeFont
+    fullName: Excel.RangeFont
+  - uid: 'excel!Excel.HorizontalAlignment:enum'
+    name: HorizontalAlignment
+    fullName: Excel.HorizontalAlignment
+  - uid: 'excel!Excel.ReadingOrder:enum'
+    name: ReadingOrder
+    fullName: Excel.ReadingOrder
+  - uid: 'excel!Excel.VerticalAlignment:enum'
+    name: VerticalAlignment
+    fullName: Excel.VerticalAlignment

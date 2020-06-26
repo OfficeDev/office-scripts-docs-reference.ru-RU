@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Placement:enum'
+    summary: Указывает способ присоединения объекта к базовым ячейкам.
+    name: ExcelScript.Placement
+    fullName: ExcelScript.Placement
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Placement.absolute:member'
+      - 'ExcelScript!ExcelScript.Placement.oneCell:member'
+      - 'ExcelScript!ExcelScript.Placement.twoCell:member'
+  - uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
+    summary: Объект находится в свободном плавающем виде.
+    name: absolute
+    fullName: absolute
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
+    summary: Объект перемещается и задается по размеру ячейкам.
+    name: oneCell
+    fullName: oneCell
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
+    summary: Объект перемещается вместе с ячейками.
+    name: twoCell
+    fullName: twoCell
+    langs:
+      - typeScript
+    type: field

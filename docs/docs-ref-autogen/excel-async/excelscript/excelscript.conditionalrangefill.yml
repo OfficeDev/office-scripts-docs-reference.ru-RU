@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFill:interface'
+    summary: Представляет фон объекта условного диапазона.
+    name: Excel.ConditionalRangeFill
+    fullName: Excel.ConditionalRangeFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFill#clear:member(1)'
+      - 'excel!Excel.ConditionalRangeFill#color:member'
+      - 'excel!Excel.ConditionalRangeFill#load:member(1)'
+  - uid: 'excel!Excel.ConditionalRangeFill#clear:member(1)'
+    summary: Удаляет заливку.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalRangeFill#color:member'
+    summary: 'HTML-код цвета, представляющий цвет заливки для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeFill#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
