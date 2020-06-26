@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
+    summary: 'Представляет объект, который упоминается в комментариях.'
+    name: ExcelScript.CommentMention
+    fullName: ExcelScript.CommentMention
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CommentMention#email:member'
+      - 'ExcelScript!ExcelScript.CommentMention#id:member'
+      - 'ExcelScript!ExcelScript.CommentMention#name:member'
+  - uid: 'ExcelScript!ExcelScript.CommentMention#email:member'
+    summary: 'Адрес электронной почты объекта, который упоминается в примечании.'
+    name: email
+    fullName: email
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'email: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.CommentMention#id:member'
+    summary: Идентификатор объекта. Идентификатор соответствует одному из идентификаторов в`CommentRichContent.richContent`<!-- -->.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.CommentMention#name:member'
+    summary: 'Имя объекта, который упоминается в примечании.'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string

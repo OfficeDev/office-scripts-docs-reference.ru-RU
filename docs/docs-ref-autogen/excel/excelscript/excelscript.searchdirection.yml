@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
+    summary: Указывает направление поиска.
+    name: ExcelScript.SearchDirection
+    fullName: ExcelScript.SearchDirection
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SearchDirection.backwards:member'
+      - 'ExcelScript!ExcelScript.SearchDirection.forward:member'
+  - uid: 'ExcelScript!ExcelScript.SearchDirection.backwards:member'
+    summary: Поиск в обратном порядке.
+    name: backwards
+    fullName: backwards
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SearchDirection.forward:member'
+    summary: Поиск в порядке "вперед".
+    name: forward
+    fullName: forward
+    langs:
+      - typeScript
+    type: field
