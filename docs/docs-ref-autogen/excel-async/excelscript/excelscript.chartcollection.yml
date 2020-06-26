@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartCollection:interface'
+    summary: Коллекция всех объектов диаграмм на листе.
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
+    summary: Создает диаграмму.
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    type: ChartType,
+                    sourceData: Range,
+                    seriesBy?: ChartSeriesBy
+                ): Chart;
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Представляет тип диаграммы. Дополнительные сведения см. в статье Excel. ChartType.
+          type:
+            - 'excel!Excel.ChartType:enum'
+        - id: sourceData
+          description: 'Объект Range, соответствующий исходным данным.'
+          type:
+            - 'excel!Excel.Range:interface'
+        - id: seriesBy
+          description: Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Дополнительные сведения см. в статье Excel. Чартсериесби.
+          type:
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+    summary: 'Возвращает диаграмму по ее имени. Если одно и то же имя принадлежит нескольким диаграммам, будет возвращена первая из них. Если диаграмма не существует, вернет пустой объект.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя получаемой диаграммы.
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Chart:interface'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: ChartType
+    fullName: Excel.ChartType
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: ChartSeriesBy
+    fullName: Excel.ChartSeriesBy

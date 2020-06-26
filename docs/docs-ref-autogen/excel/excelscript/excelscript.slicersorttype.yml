@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
+    summary: Задает поведение при сортировке среза для API среза. sortBy.
+    name: ExcelScript.SlicerSortType
+    fullName: ExcelScript.SlicerSortType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+    summary: Сортировка элементов срезов в порядке возрастания подписей элементов.
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+    summary: 'Сортировка элементов среза в порядке, указанном в источнике данных.'
+    name: dataSourceOrder
+    fullName: dataSourceOrder
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+    summary: Сортировка элементов среза в убывающем порядке по заголовкам элементов.
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field

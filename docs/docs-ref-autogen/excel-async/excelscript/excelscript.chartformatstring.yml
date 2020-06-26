@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartFormatString:interface'
+    summary: 'Представляет подстроку в связанных с диаграмме объектах, которая содержит текст, например, объект ChartTitle, ChartAxisTitle и т. д.'
+    name: Excel.ChartFormatString
+    fullName: Excel.ChartFormatString
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartFormatString#font:member'
+      - 'excel!Excel.ChartFormatString#load:member(1)'
+  - uid: 'excel!Excel.ChartFormatString#font:member'
+    summary: 'Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д. для объекта "символы диаграммы".'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartFormatString#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

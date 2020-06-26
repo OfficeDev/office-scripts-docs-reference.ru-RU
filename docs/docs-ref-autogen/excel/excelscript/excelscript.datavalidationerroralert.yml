@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
+    summary: Представляет свойства оповещения об ошибках для проверки данных.
+    name: ExcelScript.DataValidationErrorAlert
+    fullName: ExcelScript.DataValidationErrorAlert
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+    summary: Представляет предупреждающее сообщение об ошибке.
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    summary: 'Указывает, следует ли отображать диалоговое окно с сообщением об ошибке, когда пользователь вводит недопустимые данные. Значение по умолчанию: true.'
+    name: showAlert
+    fullName: showAlert
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+    summary: Тип оповещения для проверки данных. Дополнительные сведения см. в Excel. Датавалидатионалертстиле.
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: DataValidationAlertStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+    summary: Представляет заголовок диалогового окна предупреждения об ошибке.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+    name: DataValidationAlertStyle
+    fullName: ExcelScript.DataValidationAlertStyle

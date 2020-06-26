@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
+    summary: Представляет границу объекта.
+    name: Excel.ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeBorder#color:member'
+      - 'excel!Excel.ConditionalRangeBorder#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
+      - 'excel!Excel.ConditionalRangeBorder#style:member'
+  - uid: 'excel!Excel.ConditionalRangeBorder#color:member'
+    summary: 'HTML-код цвета, представляющий цвет линии границы для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeBorder#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
+    summary: 'Постоянное значение, указывающее определенную сторону границы. Дополнительные сведения см. в статье Excel. Кондитионалранжебордериндекс.'
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: ConditionalRangeBorderIndex;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorder#style:member'
+    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Дополнительные сведения см. в статье Excel. Бордерлинестиле.'
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: ConditionalRangeBorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex
+  - uid: 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
+    name: ConditionalRangeBorderLineStyle
+    fullName: Excel.ConditionalRangeBorderLineStyle

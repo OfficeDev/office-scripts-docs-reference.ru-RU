@@ -1,0 +1,209 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendlineLabel:interface'
+    summary: Этот объект представляет атрибуты для объекта метка линии тренда диаграммы.
+    name: Excel.ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendlineLabel#autoText:member'
+      - 'excel!Excel.ChartTrendlineLabel#format:member'
+      - 'excel!Excel.ChartTrendlineLabel#formula:member'
+      - 'excel!Excel.ChartTrendlineLabel#height:member'
+      - 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
+      - 'excel!Excel.ChartTrendlineLabel#left:member'
+      - 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
+      - 'excel!Excel.ChartTrendlineLabel#load:member(1)'
+      - 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
+      - 'excel!Excel.ChartTrendlineLabel#text:member'
+      - 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
+      - 'excel!Excel.ChartTrendlineLabel#top:member'
+      - 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
+      - 'excel!Excel.ChartTrendlineLabel#width:member'
+  - uid: 'excel!Excel.ChartTrendlineLabel#autoText:member'
+    summary: 'Указывает, будет ли метка линии тренда автоматически создавать соответствующий текст на основе контекста.'
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendlineLabel#format:member'
+    summary: Формат метки линии тренда диаграммы.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartTrendlineLabelFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineLabelFormat:interface'
+  - uid: 'excel!Excel.ChartTrendlineLabel#formula:member'
+    summary: 'Строковое значение, представляющее формулу подписи линии тренда диаграммы с использованием нотации стиля A1.'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#height:member'
+    summary: 'Возвращает высоту подписи линии тренда диаграммы (в пунктах). Значение NULL, если подпись линии тренда диаграммы не отображается.'
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
+    summary: 'Представляет горизонтальное выравнивание для подписи линии тренда диаграммы. Дополнительные сведения см. в статье Excel. Чарттекссоризонталалигнмент. Это свойство является допустимым только в том случае, если TextOrientation метки аппроксимации — 90, 90 или 180.'
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: ChartTextHorizontalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextHorizontalAlignment:enum'
+  - uid: 'excel!Excel.ChartTrendlineLabel#left:member'
+    summary: 'Представляет расстояние от левого края подписи линии тренда диаграммы до левого края области диаграммы (в пунктах). Значение NULL, если подпись линии тренда диаграммы не отображается.'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
+    summary: 'Указывает, связан ли числовой формат с ячейками (поэтому формат чисел изменяется в метках при изменении в ячейках).'
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendlineLabel#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
+    summary: 'Строковое значение, представляющее код формата для подписи линии тренда.'
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#text:member'
+    summary: 'Строка, представляющая текст подписи линии тренда на диаграмме.'
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
+    summary: 'Представляет угол, на который ориентирован текст для подписи линии тренда диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.'
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#top:member'
+    summary: 'Представляет расстояние от верхнего края подписи линии тренда диаграммы до верха области диаграммы (в пунктах). Значение NULL, если подпись линии тренда диаграммы не отображается.'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
+    summary: 'Представляет вертикальное выравнивание для подписи линии тренда диаграммы. Дополнительные сведения см. в статье Excel. Чарттекствертикалалигнмент. Это свойство является допустимым, только если TextOrientation метки линии тренда равно 0.'
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: ChartTextVerticalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextVerticalAlignment:enum'
+  - uid: 'excel!Excel.ChartTrendlineLabel#width:member'
+    summary: 'Возвращает ширину подписи линии тренда диаграммы (в пунктах). Значение NULL, если подпись линии тренда диаграммы не отображается.'
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
+    name: ChartTrendlineLabelFormat
+    fullName: Excel.ChartTrendlineLabelFormat
+  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+    name: ChartTextHorizontalAlignment
+    fullName: Excel.ChartTextHorizontalAlignment
+  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+    name: ChartTextVerticalAlignment
+    fullName: Excel.ChartTextVerticalAlignment

@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorderCollection:interface'
+    summary: 'Представляет объекты границ, из которых состоит граница диапазона.'
+    name: Excel.RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#load:member(1)'
+      - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+    summary: Возвращает объект границы по его имени.
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: BorderIndex): RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса получаемого объекта границы. Дополнительные сведения см. в статье Excel. Бордериндекс.
+          type:
+            - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет границ диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RangeBorder:interface'
+    name: RangeBorder
+    fullName: Excel.RangeBorder
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: BorderIndex
+    fullName: Excel.BorderIndex

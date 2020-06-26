@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SettingCollection:interface'
+    summary: 'Представляет коллекцию объектов параметров, которые являются частью рабочей книги. Область ограничена для каждого файла и надстройки (область задач или контент).'
+    name: Excel.SettingCollection
+    fullName: Excel.SettingCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SettingCollection#add:member(1)'
+      - 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SettingCollection#load:member(1)'
+  - uid: 'excel!Excel.SettingCollection#add:member(1)'
+    summary: Задает или добавляет указанный параметр в книгу.
+    name: 'add(key, value)'
+    fullName: 'add(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    key: string,
+                    value: string | number | boolean | Date | Array<any> | any
+                ): Setting;
+      return:
+        type:
+          - 'excel!Excel.Setting:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Ключ нового параметра.
+          type:
+            - string
+        - id: value
+          description: Значение нового параметра.
+          type:
+            - 'excel!Excel.SettingCollection#add~0:complex'
+  - uid: 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+    summary: 'Возвращает объект Setting по ключу. Если параметр не существует, возвращает пустой объект.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: key
+          description: Ключ параметра.
+          type:
+            - string
+  - uid: 'excel!Excel.SettingCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Setting:interface'
+    name: Setting
+    fullName: Excel.Setting
+  - uid: 'excel!Excel.SettingCollection#add~0:complex'
+    name: string | number | boolean | Date | Array<any> | any
+    fullName: string | number | boolean | Date | Array<any> | any
+    spec.typeScript:
+      - name: 'string | number | boolean | '
+        fullName: 'string | number | boolean | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <any> | any
+                  
+        fullName: |-
+          <any> | any

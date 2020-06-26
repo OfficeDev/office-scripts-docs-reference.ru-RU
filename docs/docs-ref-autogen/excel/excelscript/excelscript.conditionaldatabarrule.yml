@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+    summary: Представляет тип правила для панели данных.
+    name: ExcelScript.ConditionalDataBarRule
+    fullName: ExcelScript.ConditionalDataBarRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarRule#type:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member'
+    summary: 'Формула, с помощью которой при необходимости оценивается правило гистограммы.'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule#type:member'
+    summary: Тип правила для гистограмма.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ConditionalFormatRuleType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalFormatRuleType:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRuleType:enum'
+    name: ConditionalFormatRuleType
+    fullName: ExcelScript.ConditionalFormatRuleType

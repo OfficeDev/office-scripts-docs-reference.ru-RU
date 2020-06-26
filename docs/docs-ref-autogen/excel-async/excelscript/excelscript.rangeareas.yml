@@ -1,0 +1,515 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeAreas:interface'
+    summary: 'RangeAreas представляет коллекцию из одного или нескольких прямоугольных диапазонов на одном листе. Чтобы узнать, как использовать диапазоны дисконтингуаус, прочтите [Работа с несколькими диапазонами одновременно в](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges) надстройках Excel<!-- -->.'
+    name: Excel.RangeAreas
+    fullName: Excel.RangeAreas
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeAreas#address:member'
+      - 'excel!Excel.RangeAreas#addressLocal:member'
+      - 'excel!Excel.RangeAreas#areaCount:member'
+      - 'excel!Excel.RangeAreas#areas:member'
+      - 'excel!Excel.RangeAreas#calculate:member(1)'
+      - 'excel!Excel.RangeAreas#cellCount:member'
+      - 'excel!Excel.RangeAreas#clear:member(1)'
+      - 'excel!Excel.RangeAreas#conditionalFormats:member'
+      - 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
+      - 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
+      - 'excel!Excel.RangeAreas#copyFrom:member(1)'
+      - 'excel!Excel.RangeAreas#dataValidation:member'
+      - 'excel!Excel.RangeAreas#format:member'
+      - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
+      - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+      - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+      - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#isEntireColumn:member'
+      - 'excel!Excel.RangeAreas#isEntireRow:member'
+      - 'excel!Excel.RangeAreas#load:member(1)'
+      - 'excel!Excel.RangeAreas#setDirty:member(1)'
+      - 'excel!Excel.RangeAreas#style:member'
+      - 'excel!Excel.RangeAreas#worksheet:member'
+  - uid: 'excel!Excel.RangeAreas#address:member'
+    summary: 'Возвращает ссылку RangeAreas в стиле a1. Значение Address будет содержать имя листа для каждого прямоугольного блока ячеек (например, "Лист1! A1: B4, Лист1! D1: D4 ").'
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly address: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeAreas#addressLocal:member'
+    summary: Возвращает ссылку на RangeAreas в языковом стандарте пользователя.
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly addressLocal: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeAreas#areaCount:member'
+    summary: 'Возвращает количество прямоугольных диапазонов, составляющих этот объект RangeAreas.'
+    name: areaCount
+    fullName: areaCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly areaCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeAreas#areas:member'
+    summary: 'Возвращает коллекцию прямоугольных диапазонов, составляющих этот объект RangeAreas.'
+    name: areas
+    fullName: areas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly areas: RangeCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeCollection:interface'
+  - uid: 'excel!Excel.RangeAreas#calculate:member(1)'
+    summary: Вычисляет все ячейки в объекте RangeAreas.
+    name: calculate()
+    fullName: calculate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#cellCount:member'
+    summary: 'Возвращает число ячеек в объекте RangeAreas с суммированием количества ячеек всех отдельных прямоугольных диапазонов. Возвращает значение -1, если количество ячеек превышает 2^31-1 (2 147 483 647).'
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeAreas#clear:member(1)'
+    summary: 'Удаляет значения, формат, заливку, границу и т. д. для каждой области, входящей в этот объект RangeAreas.'
+    name: clear(applyTo)
+    fullName: clear(applyTo)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(applyTo?: ClearApplyTo): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: applyTo
+          description: Необязательный параметр. Определяет тип действия очистки. Дополнительные сведения см. в статье Excel. Клеарапплито. Значение по умолчанию — "ALL".
+          type:
+            - 'excel!Excel.ClearApplyTo:enum'
+  - uid: 'excel!Excel.RangeAreas#conditionalFormats:member'
+    summary: 'Возвращает коллекцию объектов ConditionalFormat, пересекающихся с любыми ячейками в этом объекте RangeAreas.'
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly conditionalFormats: ConditionalFormatCollection;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatCollection:interface'
+  - uid: 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
+    summary: Преобразует все ячейки в объекте RangeAreas с типами данных в текст.
+    name: convertDataTypeToText()
+    fullName: convertDataTypeToText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertDataTypeToText(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
+    summary: Преобразует все ячейки в объекте RangeAreas в связанный тип данных.
+    name: 'convertToLinkedDataType(serviceID, languageCulture)'
+    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        convertToLinkedDataType(
+                    serviceID: number,
+                    languageCulture: string
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: serviceID
+          description: 'Идентификатор службы, который будет использоваться для запроса данных.'
+          type:
+            - number
+        - id: languageCulture
+          description: Язык и региональные параметры для запроса службы.
+          type:
+            - string
+  - uid: 'excel!Excel.RangeAreas#copyFrom:member(1)'
+    summary: 'Копирует данные ячейки или форматирование из исходного диапазона или объекта RangeAreas в текущий объект RangeAreas. Целевой rangeAreas может иметь другой размер, чем исходный диапазон или RangeAreas. Назначение будет автоматически развернуто, если оно меньше исходного.'
+    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        copyFrom(
+                    sourceRange: Range | RangeAreas | string,
+                    copyType?: RangeCopyType,
+                    skipBlanks?: boolean,
+                    transpose?: boolean
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceRange
+          description: 'Исходный диапазон или RangeAreas, из которого производится копирование. Если исходный RangeAreas имеет несколько диапазонов, их форма должна быть создана путем удаления полных строк или столбцов из прямоугольного диапазона.'
+          type:
+            - 'excel!Excel.RangeAreas#copyFrom~0:complex'
+        - id: copyType
+          description: 'Тип данных или форматирования ячеек, которые необходимо скопировать. Значение по умолчанию — "ALL".'
+          type:
+            - 'excel!Excel.RangeCopyType:enum'
+        - id: skipBlanks
+          description: 'Значение true, если необходимо пропускать пустые ячейки в исходном диапазоне или RangeAreas. Значение по умолчанию: false.'
+          type:
+            - boolean
+        - id: transpose
+          description: 'Значение true, если необходимо переставить ячейки в целевом RangeAreas. Значение по умолчанию: false.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#dataValidation:member'
+    summary: Возвращает объект dataValidation для всех диапазонов в объекте RangeAreas.
+    name: dataValidation
+    fullName: dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataValidation: DataValidation;'
+      return:
+        type:
+          - 'excel!Excel.DataValidation:interface'
+  - uid: 'excel!Excel.RangeAreas#format:member'
+    summary: 'Возвращает объект RangeFormat, который инкапсулирует шрифт, заливку, границы, выравнивание и другие свойства для всех диапазонов в объекте RangeAreas.'
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: RangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.RangeFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+
+              let sheet = context.workbook.worksheets.getActiveWorksheet();
+              let usedRange = sheet.getUsedRange();
+
+              // Find the ranges with formulas.
+              let formulaRanges = usedRange.getSpecialCells("Formulas");
+              formulaRanges.format.fill.color = "lightgreen";
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
+    summary: 'Возвращает объект RangeAreas, представляющий все столбцы объекта RangeAreas (например, если текущий объект RangeAreas представляет ячейки "B4:E11, H2", возвращается объект RangeAreas, представляющий столбцы "B:E, H:H").'
+    name: getEntireColumn()
+    fullName: getEntireColumn()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireColumn(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+    summary: 'Возвращает объект RangeAreas, представляющий все строки объекта RangeAreas (например, если текущий объект RangeAreas представляет ячейки "B4:E11", возвращается объект RangeAreas, представляющий строки "4:11").'
+    name: getEntireRow()
+    fullName: getEntireRow()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireRow(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
+    summary: 'Возвращает объект RangeAreas, представляющий пересечение заданных диапазонов или RangeAreas. Если пересечение не найдено, возвращается пустой объект.'
+    name: getIntersectionOrNullObject(anotherRange)
+    fullName: getIntersectionOrNullObject(anotherRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getIntersectionOrNullObject(
+                    anotherRange: Range | RangeAreas | string
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: 'Диапазон, RangeAreas или адрес, который будет использоваться для определения пересечения.'
+          type:
+            - 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
+  - uid: 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+    summary: 'Возвращает объект RangeAreas, смещенный на определенное количество строк и столбцов. Измерение возвращаемого объекта RangeAreas будет соответствовать исходному объекту. Если результирующий объект RangeAreas выходит за пределы таблицы листа, возникнет ошибка.'
+    name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getOffsetRangeAreas(
+                    rowOffset: number,
+                    columnOffset: number
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: rowOffset
+          description: 'Количество строк (положительное, отрицательное или равное 0), на которое должно быть смещено значение RangeAreas. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.'
+          type:
+            - number
+        - id: columnOffset
+          description: 'Количество столбцов (положительное, отрицательное или 0), на которое должно быть смещено значение RangeAreas. Положительные значения соответствуют смещению вправо, а отрицательные — влево.'
+          type:
+            - number
+  - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+    summary: 'Возвращает объект RangeAreas, представляющий все ячейки, которые соответствуют указанному типу и значению. Возвращает пустой объект, если не найдено специальных ячеек, соответствующих условиям. '
+    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getSpecialCellsOrNullObject(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: cellType
+          description: 'Тип ячеек, которые необходимо включить в список.'
+          type:
+            - 'excel!Excel.SpecialCellType:enum'
+        - id: cellValueType
+          description: 'Если cellType является константами или формулами, этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединять, чтобы возвратить более одного типа. По умолчанию выбираются все константы или формулы независимо от типа.'
+          type:
+            - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
+    summary: 'Возвращает использованный объект RangeAreas, включающий все использованные области отдельных прямоугольных диапазонов в объекте RangeAreas. Если в RangeAreas нет используемых ячеек, возвращается пустой объект.'
+    name: getUsedRangeAreasOrNullObject(valuesOnly)
+    fullName: getUsedRangeAreasOrNullObject(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeAreasOrNullObject(valuesOnly?: boolean): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: Следует ли рассматривать только ячейки со значениями в качестве используемых ячеек.
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#isEntireColumn:member'
+    summary: 'Указывает, являются ли все диапазоны этого объекта RangeAreas целыми столбцами (например, "А:К, К:З").'
+    name: isEntireColumn
+    fullName: isEntireColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEntireColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeAreas#isEntireRow:member'
+    summary: 'Указывает, являются ли все диапазоны этого объекта RangeAreas целыми строками (например, "1:3, 5:7").'
+    name: isEntireRow
+    fullName: isEntireRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEntireRow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeAreas#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeAreas#setDirty:member(1)'
+    summary: 'Устанавливает объект RangeAreas, предназначенный для пересчета при выполнении следующего пересчета.'
+    name: setDirty()
+    fullName: setDirty()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDirty(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#style:member'
+    summary: 'Представляет стиль всех диапазонов в этом объекте RangeAreas. Если стили ячеек противоречивы, возвращается значение null. Для пользовательских стилей будет возвращено имя стиля. Для встроенных стилей возвращается строка, представляющая значение в перечислении Буилтинстиле.'
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeAreas#worksheet:member'
+    summary: Возвращает лист для текущего объекта RangeAreas.
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.RangeCollection:interface'
+    name: RangeCollection
+    fullName: Excel.RangeCollection
+  - uid: 'excel!Excel.ClearApplyTo:enum'
+    name: ClearApplyTo
+    fullName: Excel.ClearApplyTo
+  - uid: 'excel!Excel.ConditionalFormatCollection:interface'
+    name: ConditionalFormatCollection
+    fullName: Excel.ConditionalFormatCollection
+  - uid: 'excel!Excel.RangeAreas#copyFrom~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RangeCopyType:enum'
+    name: RangeCopyType
+    fullName: Excel.RangeCopyType
+  - uid: 'excel!Excel.DataValidation:interface'
+    name: DataValidation
+    fullName: Excel.DataValidation
+  - uid: 'excel!Excel.RangeFormat:interface'
+    name: RangeFormat
+    fullName: Excel.RangeFormat
+  - uid: 'excel!Excel.RangeAreas:interface'
+    name: RangeAreas
+    fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'excel!Excel.SpecialCellType:enum'
+    name: SpecialCellType
+    fullName: Excel.SpecialCellType
+  - uid: 'excel!Excel.SpecialCellValueType:enum'
+    name: SpecialCellValueType
+    fullName: Excel.SpecialCellValueType
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TimelineStyleCollection:interface'
+    summary: Представляет коллекцию Тимелинестилес.
+    name: Excel.TimelineStyleCollection
+    fullName: Excel.TimelineStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TimelineStyleCollection#add:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#load:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.TimelineStyleCollection#add:member(1)'
+    summary: Создает пустой объект TimelineStyle с указанным именем.
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Уникальное имя нового Тимелинестиле. Если имя уже используется, будет выдаваться исключение недопустимого аргумента.'
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Необязательный параметр, по умолчанию — false. Если этот параметр имеет значение true, то в случае необходимости можно присоединить номера к имени, чтобы сделать его уникальным.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+    summary: Получает используемый по умолчанию объект TimelineStyle для области родительского объекта.
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает объект TimelineStyle по имени. Если объект TimelineStyle не существует, возвращает пустой объект.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого Тимелинестиле.
+          type:
+            - string
+  - uid: 'excel!Excel.TimelineStyleCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+    summary: 'Задает объект TimelineStyle, используемый по умолчанию в области родительского объекта.'
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 'Объект Тимелинестиле или имя объекта Тимелинестиле, который должен быть новым значением по умолчанию.'
+          type:
+            - 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: Excel.TimelineStyle
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+    name: TimelineStyle | string
+    fullName: Excel.TimelineStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: Excel.TimelineStyle
+      - name: ' | string'
+        fullName: ' | string'

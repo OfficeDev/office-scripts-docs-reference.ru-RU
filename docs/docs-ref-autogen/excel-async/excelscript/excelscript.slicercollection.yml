@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerCollection:interface'
+    summary: Представляет коллекцию всех объектов срезов в книге или листе.
+    name: Excel.SlicerCollection
+    fullName: Excel.SlicerCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
+    summary: Добавляет новый срез в книгу.
+    name: 'add(slicerSource, sourceField, slicerDestination)'
+    fullName: 'add(slicerSource, sourceField, slicerDestination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Pivot");
+              let slicer = sheet.slicers.add(
+                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
+                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
+              );
+              slicer.name = "Fruit Slicer";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: slicerSource
+          description: 'Источник данных, на котором будет основан новый срез. Это может быть объект PivotTable, объект Table или строка. Когда объект сводной таблицы передается, источником данных является источник объекта сводной таблицы. Когда передается объект Table, источником данных является объект Table. Когда строка передается, она интерпретируется как имя/идентификатор сводной таблицы или таблицы.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~0:complex'
+        - id: sourceField
+          description: 'Поле в источнике данных, по которому выполняется фильтрация. Это может быть объект PivotField, объект TableColumn, идентификатор PivotField или идентификатор и имя TableColumn.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~1:complex'
+        - id: slicerDestination
+          description: 'Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Имя или идентификатор среза, который требуется получить.'
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Slicer:interface'
+    name: Slicer
+    fullName: Excel.Slicer
+  - uid: 'excel!Excel.SlicerCollection#add~0:complex'
+    name: string | PivotTable | Table
+    fullName: string | Excel.PivotTable | Excel.Table
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotTable:interface'
+        name: PivotTable
+        fullName: Excel.PivotTable
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.Table:interface'
+        name: Table
+        fullName: Excel.Table
+  - uid: 'excel!Excel.SlicerCollection#add~1:complex'
+    name: string | PivotField | number | TableColumn
+    fullName: string | Excel.PivotField | number | Excel.TableColumn
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotField:interface'
+        name: PivotField
+        fullName: Excel.PivotField
+      - name: ' | number | '
+        fullName: ' | number | '
+      - uid: 'excel!Excel.TableColumn:interface'
+        name: TableColumn
+        fullName: Excel.TableColumn
+  - uid: 'excel!Excel.SlicerCollection#add~2:complex'
+    name: string | Worksheet
+    fullName: string | Excel.Worksheet
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.Worksheet:interface'
+        name: Worksheet
+        fullName: Excel.Worksheet
