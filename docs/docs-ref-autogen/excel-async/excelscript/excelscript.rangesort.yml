@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeSort:interface'
+    summary: Управляет операциями сортировки для объектов Range.
+    name: Excel.RangeSort
+    fullName: Excel.RangeSort
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeSort#apply:member(1)'
+      - 'excel!Excel.RangeSort#load:member(1)'
+  - uid: 'excel!Excel.RangeSort#apply:member(1)'
+    summary: Выполняет сортировку.
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: Список условий для сортировки.
+          type:
+            - 'excel!Excel.RangeSort#apply~0:complex'
+        - id: matchCase
+          description: 'Необязательный параметр. Указывает, необходимо ли учитывать регистр при сортировке строк.'
+          type:
+            - boolean
+        - id: hasHeaders
+          description: 'Необязательный параметр. Указывает, есть ли у диапазона заголовок.'
+          type:
+            - boolean
+        - id: orientation
+          description: 'Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.'
+          type:
+            - 'excel!Excel.SortOrientation:enum'
+        - id: method
+          description: 'Необязательный параметр. Метод сортировки, используемый для китайских символов.'
+          type:
+            - 'excel!Excel.SortMethod:enum'
+  - uid: 'excel!Excel.RangeSort#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RangeSort#apply~0:complex'
+    name: 'SortField[]'
+    fullName: 'Excel.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SortField:interface'
+        name: SortField
+        fullName: Excel.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SortOrientation:enum'
+    name: SortOrientation
+    fullName: Excel.SortOrientation
+  - uid: 'excel!Excel.SortMethod:enum'
+    name: SortMethod
+    fullName: Excel.SortMethod

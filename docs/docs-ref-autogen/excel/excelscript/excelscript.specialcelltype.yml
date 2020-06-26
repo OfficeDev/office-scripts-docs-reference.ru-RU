@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
+    name: ExcelScript.SpecialCellType
+    fullName: ExcelScript.SpecialCellType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
+    summary: Ячейки без содержимого.
+    name: blanks
+    fullName: blanks
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
+    summary: Все ячейки с условным форматированием
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
+    summary: 'Ячейки, содержащие константы.'
+    name: constants
+    fullName: constants
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
+    summary: 'Ячейки, имеющие условия проверки.'
+    name: dataValidations
+    fullName: dataValidations
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
+    summary: 'Ячейки, содержащие формулы.'
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+    summary: 'Ячейки с одинаковым условным форматированием, что и первая ячейка в диапазоне.'
+    name: sameConditionalFormat
+    fullName: sameConditionalFormat
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
+    summary: 'Ячейки, имеющие те же условия проверки данных, что и первая ячейка в диапазоне.'
+    name: sameDataValidation
+    fullName: sameDataValidation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
+    summary: Видимые ячейки.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: field

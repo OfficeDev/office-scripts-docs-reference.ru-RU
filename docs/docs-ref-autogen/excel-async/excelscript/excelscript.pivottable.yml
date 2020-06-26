@@ -1,0 +1,314 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTable:interface'
+    summary: 'Представляет сводную таблицу Excel. Чтобы узнать больше об объектной модели сводной таблицы, читайте [работу со сводными таблицами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    name: Excel.PivotTable
+    fullName: Excel.PivotTable
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTable#columnHierarchies:member'
+      - 'excel!Excel.PivotTable#dataHierarchies:member'
+      - 'excel!Excel.PivotTable#delete:member(1)'
+      - 'excel!Excel.PivotTable#enableDataValueEditing:member'
+      - 'excel!Excel.PivotTable#filterHierarchies:member'
+      - 'excel!Excel.PivotTable#hierarchies:member'
+      - 'excel!Excel.PivotTable#id:member'
+      - 'excel!Excel.PivotTable#layout:member'
+      - 'excel!Excel.PivotTable#load:member(1)'
+      - 'excel!Excel.PivotTable#name:member'
+      - 'excel!Excel.PivotTable#refresh:member(1)'
+      - 'excel!Excel.PivotTable#rowHierarchies:member'
+      - 'excel!Excel.PivotTable#useCustomSortLists:member'
+      - 'excel!Excel.PivotTable#worksheet:member'
+  - uid: 'excel!Excel.PivotTable#columnHierarchies:member'
+    summary: Иерархии сводных столбцов сводной таблицы.
+    name: columnHierarchies
+    fullName: columnHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnHierarchies: RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
+
+              // check if the PivotTable already has a column
+              let column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
+              column.load("id");
+              await context.sync();
+
+              if (column.isNullObject) {
+                  // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
+                  pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
+              } else {
+                  pivotTable.columnHierarchies.remove(column);
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#dataHierarchies:member'
+    summary: Иерархии сводных данных сводной таблицы.
+    name: dataHierarchies
+    fullName: dataHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataHierarchies: DataPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#delete:member(1)'
+    summary: Удаляет сводную таблицу.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#enableDataValueEditing:member'
+    summary: 'Указывает, позволяет ли Сводная таблица изменять значения в основном тексте данных пользователем.'
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotTable#filterHierarchies:member'
+    summary: Иерархии сводных фильтров сводной таблицы.
+    name: filterHierarchies
+    fullName: filterHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filterHierarchies: FilterPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function filter(functionType: Excel.AggregationFunction) {
+              async function main(context: Excel.RequestContext) {
+                  let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+                  let filters = pivotTable.filterHierarchies;
+                  let filter = filters.getItemOrNullObject("Classification");
+                  filter.load();
+                  await context.sync();
+
+                  // add the Classification hierarchy to the filter, if it's not already there
+                  if (filter.isNullObject) {
+                      filters.add(pivotTable.hierarchies.getItem("Classification"));
+                      await context.sync();
+                  }
+              }
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#hierarchies:member'
+    summary: Иерархии сводного документа сводной таблицы.
+    name: hierarchies
+    fullName: hierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hierarchies: PivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchyCollection:interface'
+  - uid: 'excel!Excel.PivotTable#id:member'
+    summary: Идентификатор сводной таблицы.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTable#layout:member'
+    summary: 'PivotLayout, описывающий макет и визуальную структуру сводной таблицы.'
+    name: layout
+    fullName: layout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly layout: PivotLayout;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.layout.load("layoutType");
+              await context.sync();
+
+              // cycle between the three layout types
+              if (pivotTable.layout.layoutType === "Compact") {
+                  pivotTable.layout.layoutType = "Outline";
+              } else if (pivotTable.layout.layoutType === "Outline") {
+                  pivotTable.layout.layoutType = "Tabular";
+              } else {
+                  pivotTable.layout.layoutType = "Compact";
+              }
+              await context.sync();
+              console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTable#name:member'
+    summary: Имя сводной таблицы.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTable#refresh:member(1)'
+    summary: Обновляет сводную таблицу.
+    name: refresh()
+    fullName: refresh()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refresh(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PivotTable#rowHierarchies:member'
+    summary: Иерархии сводных строк сводной таблицы.
+    name: rowHierarchies
+    fullName: rowHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowHierarchies: RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+  - uid: 'excel!Excel.PivotTable#useCustomSortLists:member'
+    summary: 'Указывает, используются ли в сводной таблице настраиваемые списки при сортировке.'
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotTable#worksheet:member'
+    summary: 'Лист, содержащий текущую сводную таблицу.'
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+    name: RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:interface'
+    name: DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection:interface'
+    name: FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
+  - uid: 'excel!Excel.PivotHierarchyCollection:interface'
+    name: PivotHierarchyCollection
+    fullName: Excel.PivotHierarchyCollection
+  - uid: 'excel!Excel.PivotLayout:interface'
+    name: PivotLayout
+    fullName: Excel.PivotLayout
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerStyle:interface'
+    summary: 'Представляет стиль среза, который определяет элементы стиля по региону среза.'
+    name: Excel.SlicerStyle
+    fullName: Excel.SlicerStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerStyle#delete:member(1)'
+      - 'excel!Excel.SlicerStyle#duplicate:member(1)'
+      - 'excel!Excel.SlicerStyle#load:member(1)'
+      - 'excel!Excel.SlicerStyle#name:member'
+      - 'excel!Excel.SlicerStyle#readOnly:member'
+  - uid: 'excel!Excel.SlicerStyle#delete:member(1)'
+    summary: Удаляет объект SlicerStyle.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.SlicerStyle#duplicate:member(1)'
+    summary: Создает дубликат объекта SlicerStyle с копиями всех элементов стиля.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.SlicerStyle#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerStyle#name:member'
+    summary: Получает имя объекта SlicerStyle.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.SlicerStyle#readOnly:member'
+    summary: 'Указывает, предназначен ли объект SlicerStyle только для чтения.'
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: Excel.SlicerStyle

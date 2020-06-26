@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ReadingOrder:enum'
+    name: Excel.ReadingOrder
+    fullName: Excel.ReadingOrder
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ReadingOrder.context:member'
+      - 'excel!Excel.ReadingOrder.leftToRight:member'
+      - 'excel!Excel.ReadingOrder.rightToLeft:member'
+  - uid: 'excel!Excel.ReadingOrder.context:member'
+    summary: 'Порядок чтения определяется языком первого введенного знака. Если сначала вводится символ языка с письмом справа налево, порядок чтения справа налево. Если сначала вводится символ языка с письмом слева направо, порядок чтения слева направо.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"context"'
+  - uid: 'excel!Excel.ReadingOrder.leftToRight:member'
+    summary: Порядок чтения слева направо
+    name: leftToRight
+    fullName: leftToRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"leftToRight"'
+  - uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
+    summary: Порядок чтения справа налево
+    name: rightToLeft
+    fullName: rightToLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"rightToLeft"'

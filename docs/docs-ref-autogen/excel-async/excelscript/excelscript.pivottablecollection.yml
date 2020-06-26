@@ -1,0 +1,136 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableCollection:interface'
+    summary: 'Представляет коллекцию всех объектов PivotTable, входящих в состав книги или листа.'
+    name: Excel.PivotTableCollection
+    fullName: Excel.PivotTableCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableCollection#add:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableCollection#load:member(1)'
+      - 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
+  - uid: 'excel!Excel.PivotTableCollection#add:member(1)'
+    summary: Добавьте сводную таблицу на основе указанных исходных данных и вставьте ее в верхнюю левую ячейку конечного диапазона.
+    name: 'add(name, source, destination)'
+    fullName: 'add(name, source, destination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    name: string,
+                    source: Range | string | Table,
+                    destination: Range | string
+                ): PivotTable;
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
+              let rangeToPlacePivot = context.workbook.worksheets.getItem("Pivot").getRange("A2");
+              context.workbook.worksheets.getItem("Pivot").pivotTables.add("Farm Sales", rangeToAnalyze, rangeToPlacePivot);
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: name
+          description: Имя новой сводной таблицы.
+          type:
+            - string
+        - id: source
+          description: 'Исходные данные для новой сводной таблицы, может быть диапазоном (или строковым адресом, включая имя листа) или таблицей.'
+          type:
+            - 'excel!Excel.PivotTableCollection#add~0:complex'
+        - id: destination
+          description: 'Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы (диапазон на листе, на котором будет помещен итоговый отчет).'
+          type:
+            - 'excel!Excel.PivotTableCollection#add~1:complex'
+  - uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает сводную таблицу по имени. Если сводная таблица не существует, возвращает пустой объект.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя получаемой сводной таблицы.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
+    summary: Обновляет все сводные таблицы в коллекции.
+    name: refreshAll()
+    fullName: refreshAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.PivotTable:interface'
+    name: PivotTable
+    fullName: Excel.PivotTable
+  - uid: 'excel!Excel.PivotTableCollection#add~0:complex'
+    name: Range | string | Table
+    fullName: Excel.Range | string | Excel.Table
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string | '
+        fullName: ' | string | '
+      - uid: 'excel!Excel.Table:interface'
+        name: Table
+        fullName: Excel.Table
+  - uid: 'excel!Excel.PivotTableCollection#add~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
