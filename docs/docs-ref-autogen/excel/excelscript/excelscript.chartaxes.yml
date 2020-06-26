@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
+    summary: Представляет оси диаграммы.
+    name: ExcelScript.ChartAxes
+    fullName: ExcelScript.ChartAxes
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+    summary: Представляет ось категорий на диаграмме.
+    name: getCategoryAxis()
+    fullName: getCategoryAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCategoryAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+    summary: 'Возвращает указанную ось, определенную по типу и группе.'
+    name: 'getChartAxis(type, group)'
+    fullName: 'getChartAxis(type, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Указывает тип оси. Дополнительные сведения см. в статье Excel. Чартаксистипе.
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisType:enum'
+        - id: group
+          description: Необязательный параметр. Указывает группу осей. Дополнительные сведения см. в статье Excel. Чартаксисграуп.
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+    summary: Представляет ось ряда данных для объемной диаграммы.
+    name: getSeriesAxis()
+    fullName: getSeriesAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSeriesAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+    summary: Представляет ось значений для оси.
+    name: getValueAxis()
+    fullName: getValueAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValueAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
+    name: ChartAxis
+    fullName: ExcelScript.ChartAxis
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: ExcelScript.ChartAxisType
+  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: ExcelScript.ChartAxisGroup

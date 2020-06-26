@@ -1,0 +1,221 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+    summary: 'Представляет определенное имя для диапазона ячеек или значения. Имена могут быть примитивными именами Objects (как показано в приведенном ниже типе), объектом Range или ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.'
+    name: ExcelScript.NamedItem
+    fullName: ExcelScript.NamedItem
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
+    summary: Удаляет заданное имя.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
+    summary: 'Возвращает объект, содержащий значения и типы именованного элемента.'
+    name: getArrayValues()
+    fullName: getArrayValues()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getArrayValues(): NamedItemArrayValues;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
+    summary: 'Задает комментарий, связанный с этим именем.'
+    name: getComment()
+    fullName: getComment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComment(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
+    summary: Формула именованного элемента. Формула всегда начинается со знака "=".
+    name: getFormula()
+    fullName: getFormula()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
+    summary: Имя объекта.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
+    summary: 'Возвращает объект диапазона, связанный с именем. Возвращает пустой объект, если именованный элемент не является диапазоном.'
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
+    summary: 'Указывает, ограничивается ли имя книгой или определенным листом. Возможные значения: лист, книга.'
+    name: getScope()
+    fullName: getScope()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getScope(): NamedItemScope;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItemScope:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
+    summary: 'Указывает тип значения, возвращаемого формулой имени. Дополнительные сведения см. в статье Excel. Намедитемтипе.'
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): NamedItemType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItemType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
+    summary: 'Представляет значение, вычисленное по формуле имени. Если задан именованный диапазон, возвращается адрес диапазона.'
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): string | number;'
+      return:
+        type:
+          - string | number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
+    summary: 'Указывает, является ли объект видимым.'
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
+    summary: 'Задает комментарий, связанный с этим именем.'
+    name: setComment(comment)
+    fullName: setComment(comment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setComment(comment: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: comment
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
+    summary: Формула именованного элемента. Формула всегда начинается со знака "=".
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
+    summary: 'Указывает, является ли объект видимым.'
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
+    name: NamedItemArrayValues
+    fullName: ExcelScript.NamedItemArrayValues
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.NamedItemScope:enum'
+    name: NamedItemScope
+    fullName: ExcelScript.NamedItemScope
+  - uid: 'ExcelScript!ExcelScript.NamedItemType:enum'
+    name: NamedItemType
+    fullName: ExcelScript.NamedItemType
