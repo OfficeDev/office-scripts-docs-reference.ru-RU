@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartFill:interface'
+    summary: Представляет форматирование заливки для элемента диаграммы.
+    name: Excel.ChartFill
+    fullName: Excel.ChartFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartFill#clear:member(1)'
+      - 'excel!Excel.ChartFill#load:member(1)'
+      - 'excel!Excel.ChartFill#setSolidColor:member(1)'
+  - uid: 'excel!Excel.ChartFill#clear:member(1)'
+    summary: Очищает цвет заливки элемента диаграммы.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ChartFill#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
+    summary: Устанавливает форматирование заливки элемента диаграммы на единый цвет.
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
+              let point = pointsCollection.getItemAt(2);
+
+              // Set color for chart point.
+              point.format.fill.setSolidColor('red');
+
+              await context.sync();        
+          }
+          ```
+      parameters:
+        - id: color
+          description: 'HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
+          type:
+            - string

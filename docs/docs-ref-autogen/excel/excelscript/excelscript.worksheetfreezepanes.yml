@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
+    name: ExcelScript.WorksheetFreezePanes
+    fullName: ExcelScript.WorksheetFreezePanes
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+    summary: 'Задает закрепленные ячейки в представлении активного листа. Указанный диапазон соответствует ячейкам, которые будут заморожены в верхней и левой области.'
+    name: freezeAt(frozenRange)
+    fullName: freezeAt(frozenRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeAt(frozenRange: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: frozenRange
+          description: 'Диапазон, представляющий ячейки, которые должны быть заморожены, или значение NULL для удаления всех замороженных областей.'
+          type:
+            - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+    summary: Закрепляет первый столбец (или столбцы) листа на месте.
+    name: freezeColumns(count)
+    fullName: freezeColumns(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeColumns(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: Необязательное количество столбцов для закрепления или ноль для освобождения всех столбцов
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+    summary: Закрепляет верхнюю строку (или строки) листа на месте.
+    name: freezeRows(count)
+    fullName: freezeRows(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeRows(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: Необязательное количество строк для закрепления или ноль для разморозки всех строк
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+    summary: 'Получает диапазон, описывающий закрепленные ячейки в представлении активного листа. Замороженный диапазон соответствует ячейкам, замороженным в верхней и левой области. Если нет замороженной области, возвращается пустой объект.'
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+    summary: Удаляет все закрепленные области в листе.
+    name: unfreeze()
+    fullName: unfreeze()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unfreeze(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range

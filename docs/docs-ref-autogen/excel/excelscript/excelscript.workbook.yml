@@ -1,0 +1,1949 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Workbook:interface'
+    summary: 'Workbook — это объект верхнего уровня, содержащий связанные объекты книг, такие как листы, таблицы, диапазоны и т. д. Чтобы узнать больше об объектной модели книги, читайте [работу с книгами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    name: ExcelScript.Workbook
+    fullName: ExcelScript.Workbook
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Workbook#addBinding:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addComment:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addNamedItem:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addSetting:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getApplication:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getBinding:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getBindings:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getComment:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCommentByCell:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getFirstWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getLastWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getNames:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTables:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getProperties:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getProtection:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSetting:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSettings:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicers:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicerStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTables:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTableStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTimelineStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBinding:member(1)'
+    summary: Добавляет привязку к определенному объекту Range.
+    name: 'addBinding(range, bindingType, id)'
+    fullName: 'addBinding(range, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addBinding(
+                    range: Range | string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: range
+          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
+        - id: bindingType
+          description: Тип привязки. Обратитесь к разделу Excel. BindingType.
+          type:
+            - 'ExcelScript!ExcelScript.BindingType:enum'
+        - id: id
+          description: Имя привязки.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
+    summary: 'Добавляет новую привязку с учетом именованного элемента в книге. Если именованный элемент ссылается на несколько областей, возвращается ошибка "Инвалидреференце".'
+    name: 'addBindingFromNamedItem(name, bindingType, id)'
+    fullName: 'addBindingFromNamedItem(name, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addBindingFromNamedItem(
+                    name: string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Имя элемента, на основе которого создается привязка.'
+          type:
+            - string
+        - id: bindingType
+          description: Тип привязки. Обратитесь к разделу Excel. BindingType.
+          type:
+            - 'ExcelScript!ExcelScript.BindingType:enum'
+        - id: id
+          description: Имя привязки.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)'
+    summary: 'Добавляет новую привязку с учетом выделенного в настоящий момент фрагмента. Если выделенный фрагмент содержит несколько областей, возвращается ошибка "Инвалидреференце".'
+    name: 'addBindingFromSelection(bindingType, id)'
+    fullName: 'addBindingFromSelection(bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addBindingFromSelection(bindingType: BindingType, id: string): Binding;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: bindingType
+          description: Тип привязки. Обратитесь к разделу Excel. BindingType.
+          type:
+            - 'ExcelScript!ExcelScript.BindingType:enum'
+        - id: id
+          description: Имя привязки.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addComment:member(1)'
+    summary: 'Создает новое примечание с указанным содержимым в определенной ячейке. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.'
+    name: 'addComment(cellAddress, content, contentType)'
+    fullName: 'addComment(cellAddress, content, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addComment(
+                    cellAddress: Range | string,
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): Comment;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: 'Ячейка, к которой добавляется комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addComment~0:complex'
+        - id: content
+          description: 'Содержимое комментария. Это может быть объект String или Комментричконтент. Строки используются для обычного текста. Объекты Комментричконтент позволяют использовать другие функции комментариев, например упоминания.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
+        - id: contentType
+          description: 'Необязательный параметр. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
+          type:
+            - 'ExcelScript!ExcelScript.ContentType:enum'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
+    summary: Добавляет новую пользовательскую XML-часть в книгу.
+    name: addCustomXmlPart(xml)
+    fullName: addCustomXmlPart(xml)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addCustomXmlPart(xml: string): CustomXmlPart;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: xml
+          description: XML-контент. Должен быть допустимым фрагментом XML.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItem:member(1)'
+    summary: Добавляет новое имя в определенную коллекцию.
+    name: 'addNamedItem(name, reference, comment)'
+    fullName: 'addNamedItem(name, reference, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addNamedItem(
+                    name: string,
+                    reference: Range | string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя именованного элемента.
+          type:
+            - string
+        - id: reference
+          description: 'Формула или диапазон, на который будет ссылаться имя.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
+        - id: comment
+          description: 'Необязательный параметр. Комментарий, связанный с именованным элементом.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
+    summary: 'Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.'
+    name: 'addNamedItemFormulaLocal(name, formula, comment)'
+    fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addNamedItemFormulaLocal(
+                    name: string,
+                    formula: string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя именованного элемента.
+          type:
+            - string
+        - id: formula
+          description: 'Формула на языке пользователя, на которую будет ссылаться имя.'
+          type:
+            - string
+        - id: comment
+          description: 'Необязательный параметр. Комментарий, связанный с именованным элементом.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
+    summary: Добавьте сводную таблицу на основе указанных исходных данных и вставьте ее в верхнюю левую ячейку конечного диапазона.
+    name: 'addPivotTable(name, source, destination)'
+    fullName: 'addPivotTable(name, source, destination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addPivotTable(
+                    name: string,
+                    source: Range | string | Table,
+                    destination: Range | string
+                ): PivotTable;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя новой сводной таблицы.
+          type:
+            - string
+        - id: source
+          description: 'Исходные данные для новой сводной таблицы, может быть диапазоном (или строковым адресом, включая имя листа) или таблицей.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addPivotTable~0:complex'
+        - id: destination
+          description: 'Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы (диапазон на листе, на котором будет помещен итоговый отчет).'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addPivotTable~1:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)'
+    summary: Создает пустой объект PivotTableStyle с указанным именем.
+    name: 'addPivotTableStyle(name, makeUniqueName)'
+    fullName: 'addPivotTableStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addPivotTableStyle(
+                    name: string,
+                    makeUniqueName?: boolean
+                ): PivotTableStyle;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Уникальное имя нового Пивоттаблестиле. Если имя уже используется, будет выдаваться исключение недопустимого аргумента.'
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Необязательный параметр, по умолчанию — false. Если этот параметр имеет значение true, то в случае необходимости можно присоединить номера к имени, чтобы сделать его уникальным.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)'
+    summary: Добавляет новый стиль в коллекцию.
+    name: addPredefinedCellStyle(name)
+    fullName: addPredefinedCellStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addPredefinedCellStyle(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: Имя добавляемого стиля.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSetting:member(1)'
+    summary: Задает или добавляет указанный параметр в книгу.
+    name: 'addSetting(key, value)'
+    fullName: 'addSetting(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addSetting(
+                    key: string,
+                    value: string | number | boolean | Date | Array<any> | any
+                ): Setting;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Setting:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Ключ нового параметра.
+          type:
+            - string
+        - id: value
+          description: Значение нового параметра.
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSetting~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
+    summary: Добавляет новый срез в книгу.
+    name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addSlicer(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Slicer:interface'
+        description: ''
+      parameters:
+        - id: slicerSource
+          description: 'Источник данных, на котором будет основан новый срез. Это может быть объект PivotTable, объект Table или строка. Когда объект сводной таблицы передается, источником данных является источник объекта сводной таблицы. Когда передается объект Table, источником данных является объект Table. Когда строка передается, она интерпретируется как имя/идентификатор сводной таблицы или таблицы.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSlicer~0:complex'
+        - id: sourceField
+          description: 'Поле в источнике данных, по которому выполняется фильтрация. Это может быть объект PivotField, объект TableColumn, идентификатор PivotField или идентификатор и имя TableColumn.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
+        - id: slicerDestination
+          description: 'Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
+    summary: Создает пустой объект SlicerStyle с указанным именем.
+    name: 'addSlicerStyle(name, makeUniqueName)'
+    fullName: 'addSlicerStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Уникальное имя нового Слицерстиле. Если имя уже используется, будет выдаваться исключение недопустимого аргумента.'
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Необязательный параметр, по умолчанию — false. Если этот параметр имеет значение true, то в случае необходимости можно присоединить номера к имени, чтобы сделать его уникальным.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
+    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    name: 'addTable(address, hasHeaders)'
+    fullName: 'addTable(address, hasHeaders)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Table:interface'
+        description: ''
+      parameters:
+        - id: address
+          description: 'Объект Range, строковый адрес или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
+        - id: hasHeaders
+          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
+    summary: Создает пустой объект TableStyle с указанным именем.
+    name: 'addTableStyle(name, makeUniqueName)'
+    fullName: 'addTableStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Уникальное имя нового TableStyle. Если имя уже используется, будет выдаваться исключение недопустимого аргумента.'
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Необязательный параметр, по умолчанию — false. Если этот параметр имеет значение true, то в случае необходимости можно присоединить номера к имени, чтобы сделать его уникальным.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)'
+    summary: Создает пустой объект TimelineStyle с указанным именем.
+    name: 'addTimelineStyle(name, makeUniqueName)'
+    fullName: 'addTimelineStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Уникальное имя нового Тимелинестиле. Если имя уже используется, будет выдаваться исключение недопустимого аргумента.'
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Необязательный параметр, по умолчанию — false. Если этот параметр имеет значение true, то в случае необходимости можно присоединить номера к имени, чтобы сделать его уникальным.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
+    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    name: addWorksheet(name)
+    fullName: addWorksheet(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addWorksheet(name?: string): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'
+    summary: Получает текущую активную ячейку из книги.
+    name: getActiveCell()
+    fullName: getActiveCell()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveCell(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```javascript
+          /**
+           * This script logs the value of the current active cell. 
+           * If multiple cells are selected, the top-leftmost cell will be logged.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current active cell in the workbook.
+            let cell = workbook.getActiveCell();
+            console.log(`The current cell's value is ${cell.getValue()}`);
+          }
+          ```
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)'
+    summary: 'Получает текущую активную диаграмму в книге. Если нет активной диаграммы, возвращается нулевой объект.'
+    name: getActiveChart()
+    fullName: getActiveChart()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChart(): Chart;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Chart:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)'
+    summary: 'Получает текущий активный срез в книге. Если активный срез отсутствует, возвращается пустой объект.'
+    name: getActiveSlicer()
+    fullName: getActiveSlicer()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicer(): Slicer;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Slicer:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveWorksheet:member(1)'
+    summary: Получает текущий активный лист в книге.
+    name: getActiveWorksheet()
+    fullName: getActiveWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveWorksheet(): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getApplication:member(1)'
+    summary: 'Представляет экземпляр приложения Excel, который содержит эту книгу.'
+    name: getApplication()
+    fullName: getApplication()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getApplication(): Application;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Application:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)'
+    summary: 'Указывает, находится ли книга в режиме автосохранения.'
+    name: getAutoSave()
+    fullName: getAutoSave()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAutoSave(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBinding:member(1)'
+    summary: 'Получает объект привязки по идентификатору. Если объект привязки не существует, возвращает пустой объект.'
+    name: getBinding(id)
+    fullName: getBinding(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBinding(id: string): Binding | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getBinding~0:complex'
+        description: ''
+      parameters:
+        - id: id
+          description: Идентификатор получаемого объекта привязки.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBindings:member(1)'
+    summary: 'Представляет коллекцию привязок, включенных в книгу.'
+    name: getBindings()
+    fullName: getBindings()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBindings(): Binding[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getBindings~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
+    summary: Возвращает номер версии модуля вычислений Excel.
+    name: getCalculationEngineVersion()
+    fullName: getCalculationEngineVersion()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCalculationEngineVersion(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
+    summary: 'Значение true, если все диаграммы в книге отслеживают точки фактических данных, с которыми они связаны. False, если диаграммы отслеживают индекс точек данных.'
+    name: getChartDataPointTrack()
+    fullName: getChartDataPointTrack()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getChartDataPointTrack(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getComment:member(1)'
+    summary: Получает примечание из коллекции на основе его идентификатора.
+    name: getComment(commentId)
+    fullName: getComment(commentId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComment(commentId: string): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: commentId
+          description: Идентификатор комментария.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByCell:member(1)'
+    summary: Получает примечание из указанной ячейки.
+    name: getCommentByCell(cellAddress)
+    fullName: getCommentByCell(cellAddress)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCommentByCell(cellAddress: Range | string): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: 'Ячейка, в которой находится комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#getCommentByCell~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)'
+    summary: 'Получает комментарий, к которому подключен данный ответ.'
+    name: getCommentByReplyId(replyId)
+    fullName: getCommentByReplyId(replyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCommentByReplyId(replyId: string): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: replyId
+          description: Идентификатор ответа на комментарий.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getComments:member(1)'
+    summary: 'Представляет коллекцию примечаний, связанных с книгой.'
+    name: getComments()
+    fullName: getComments()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComments(): Comment[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getComments~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+    summary: 'Получает пользовательскую XML-часть по идентификатору. Если CustomXmlPart не существует, свойство isNull возвращаемого объекта будет иметь значение true.'
+    name: getCustomXmlPart(id)
+    fullName: getCustomXmlPart(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomXmlPart(id: string): CustomXmlPart | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart~0:complex'
+        description: ''
+      parameters:
+        - id: id
+          description: ИДЕНТИФИКАТОР получаемого объекта.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
+    summary: 'Представляет коллекцию настраиваемых XML-частей, которые содержит эта книга.'
+    name: getCustomXmlParts()
+    fullName: getCustomXmlParts()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomXmlParts(): CustomXmlPart[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
+    summary: Получает используемый по умолчанию объект PivotTableStyle для области родительского объекта.
+    name: getDefaultPivotTableStyle()
+    fullName: getDefaultPivotTableStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultPivotTableStyle(): PivotTableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
+    summary: Получает используемый по умолчанию объект SlicerStyle для области родительского объекта.
+    name: getDefaultSlicerStyle()
+    fullName: getDefaultSlicerStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultSlicerStyle(): SlicerStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
+    summary: Получает используемый по умолчанию объект TableStyle для области родительского объекта.
+    name: getDefaultTableStyle()
+    fullName: getDefaultTableStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultTableStyle(): TableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
+    summary: Получает используемый по умолчанию объект TimelineStyle для области родительского объекта.
+    name: getDefaultTimelineStyle()
+    fullName: getDefaultTimelineStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultTimelineStyle(): TimelineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getFirstWorksheet:member(1)'
+    summary: Получает первый лист в коллекции.
+    name: getFirstWorksheet(visibleOnly)
+    fullName: getFirstWorksheet(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
+    summary: 'Указывает, были ли внесены изменения с момента последнего сохранения книги. Для этого свойства можно задать значение true, если нужно закрыть измененную книгу без сохранения или выдачи запроса на сохранение.'
+    name: getIsDirty()
+    fullName: getIsDirty()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsDirty(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getLastWorksheet:member(1)'
+    summary: Получает последний лист в коллекции.
+    name: getLastWorksheet(visibleOnly)
+    fullName: getLastWorksheet(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
+    summary: Получает имя книги.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)'
+    summary: 'Возвращает объект NamedItem, используя его имя. Если объект nameditem не существует, возвращает пустой объект.'
+    name: getNamedItem(name)
+    fullName: getNamedItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNamedItem(name: string): NamedItem | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getNamedItem~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя NamedItem.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNames:member(1)'
+    summary: Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы).
+    name: getNames()
+    fullName: getNames()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNames(): NamedItem[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getNames~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)'
+    summary: 'Получает сводную таблицу по имени. Если сводная таблица не существует, возвращает пустой объект.'
+    name: getPivotTable(name)
+    fullName: getPivotTable(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTable(name: string): PivotTable | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTable~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя получаемой сводной таблицы.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTables:member(1)'
+    summary: 'Представляет коллекцию сводных таблиц, сопоставленных с книгой.'
+    name: getPivotTables()
+    fullName: getPivotTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTables(): PivotTable[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTables~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)'
+    summary: 'Получает объект PivotTableStyle по имени. Если объект PivotTableStyle не существует, возвращает пустой объект.'
+    name: getPivotTableStyle(name)
+    fullName: getPivotTableStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTableStyle(name: string): PivotTableStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого Пивоттаблестиле.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles:member(1)'
+    summary: 'Представляет коллекцию объектов PivotTableStyles, связанных с книгой.'
+    name: getPivotTableStyles()
+    fullName: getPivotTableStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTableStyles(): PivotTableStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)'
+    summary: Получает стиль по имени.
+    name: getPredefinedCellStyle(name)
+    fullName: getPredefinedCellStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPredefinedCellStyle(name: string): PredefinedCellStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого стиля.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles:member(1)'
+    summary: 'Представляет коллекцию стилей, связанных с книгой.'
+    name: getPredefinedCellStyles()
+    fullName: getPredefinedCellStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPredefinedCellStyles(): PredefinedCellStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)'
+    summary: 'Указывает, была ли книга ранее сохранена локально или в сети.'
+    name: getPreviouslySaved()
+    fullName: getPreviouslySaved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPreviouslySaved(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getProperties:member(1)'
+    summary: Получает свойства книги.
+    name: getProperties()
+    fullName: getProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProperties(): DocumentProperties;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getProtection:member(1)'
+    summary: Возвращает объект защиты для книги.
+    name: getProtection()
+    fullName: getProtection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtection(): WorkbookProtection;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookProtection:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)'
+    summary: 'Значение true, если книга открыта в режиме только для чтения.'
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)'
+    summary: 'Получает текущий выделенный диапазон из книги. Если выбрано несколько диапазонов, этот метод выдаст ошибку.'
+    name: getSelectedRange()
+    fullName: getSelectedRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)'
+    summary: 'Получает текущий выделенный диапазон (один или несколько) в книге. В отличие от getSelectedRange() этот метод возвращает объект RangeAreas, представляющий все выделенные диапазоны.'
+    name: getSelectedRanges()
+    fullName: getSelectedRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRanges(): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSetting:member(1)'
+    summary: 'Возвращает объект Setting по ключу. Если параметр не существует, возвращает пустой объект.'
+    name: getSetting(key)
+    fullName: getSetting(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSetting(key: string): Setting | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSetting~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: Ключ параметра.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSettings:member(1)'
+    summary: 'Представляет коллекцию параметров, сопоставленных с книгой.'
+    name: getSettings()
+    fullName: getSettings()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSettings(): Setting[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSettings~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
+    summary: 'Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.'
+    name: getSlicer(key)
+    fullName: getSlicer(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicer(key: string): Slicer | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicer~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Имя или идентификатор среза, который требуется получить.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicers:member(1)'
+    summary: 'Представляет коллекцию срезов, связанных с книгой.'
+    name: getSlicers()
+    fullName: getSlicers()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicers(): Slicer[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicers~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)'
+    summary: 'Получает объект SlicerStyle по имени. Если объект SlicerStyle не существует, возвращает пустой объект.'
+    name: getSlicerStyle(name)
+    fullName: getSlicerStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerStyle(name: string): SlicerStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicerStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого Слицерстиле.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyles:member(1)'
+    summary: 'Представляет коллекцию объектов SlicerStyles, связанных с книгой.'
+    name: getSlicerStyles()
+    fullName: getSlicerStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerStyles(): SlicerStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicerStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTable:member(1)'
+    summary: 'Получает таблицу по имени или ИД. Если таблица не существует, возвращает пустой объект.'
+    name: getTable(key)
+    fullName: getTable(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(key: string): Table | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTable~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: Имя или ИД получаемой таблицы.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTables:member(1)'
+    summary: 'Представляет коллекцию таблиц, сопоставленных с книгой.'
+    name: getTables()
+    fullName: getTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(): Table[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTables~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)'
+    summary: 'Получает объект TableStyle по имени. Если объект TableStyle не существует, возвращает пустой объект.'
+    name: getTableStyle(name)
+    fullName: getTableStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTableStyle(name: string): TableStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTableStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого TableStyle.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyles:member(1)'
+    summary: 'Представляет коллекцию объектов TableStyles, связанных с книгой.'
+    name: getTableStyles()
+    fullName: getTableStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTableStyles(): TableStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTableStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)'
+    summary: 'Получает объект TimelineStyle по имени. Если объект TimelineStyle не существует, возвращает пустой объект.'
+    name: getTimelineStyle(name)
+    fullName: getTimelineStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimelineStyle(name: string): TimelineStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTimelineStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого Тимелинестиле.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyles:member(1)'
+    summary: 'Представляет коллекцию объектов TimelineStyles, связанных с книгой.'
+    name: getTimelineStyles()
+    fullName: getTimelineStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimelineStyles(): TimelineStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTimelineStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
+    summary: 'Значение true, если вычисления в книге выполняются только с той точностью чисел, с которой они отображаются. При переключении этого свойства с false на true данные будут безвозвратно потеряны.'
+    name: getUsePrecisionAsDisplayed()
+    fullName: getUsePrecisionAsDisplayed()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsePrecisionAsDisplayed(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)'
+    summary: 'Получает объект листа по его имени или ИД. Если лист не существует, возвращает пустой объект.'
+    name: getWorksheet(key)
+    fullName: getWorksheet(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheet(key: string): Worksheet | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getWorksheet~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: Имя или ИД листа.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)'
+    summary: 'Представляет коллекцию листов, сопоставленных с книгой.'
+    name: getWorksheets()
+    fullName: getWorksheets()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheets(): Worksheet[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
+    summary: Обновляет все подключения к данным.
+    name: refreshAllDataConnections()
+    fullName: refreshAllDataConnections()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAllDataConnections(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
+    summary: Обновляет все сводные таблицы в коллекции.
+    name: refreshAllPivotTables()
+    fullName: refreshAllPivotTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAllPivotTables(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
+    summary: 'Значение true, если все диаграммы в книге отслеживают точки фактических данных, с которыми они связаны. False, если диаграммы отслеживают индекс точек данных.'
+    name: setChartDataPointTrack(chartDataPointTrack)
+    fullName: setChartDataPointTrack(chartDataPointTrack)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setChartDataPointTrack(chartDataPointTrack: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: chartDataPointTrack
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
+    summary: 'Задает объект PivotTableStyle, используемый по умолчанию в области родительского объекта.'
+    name: setDefaultPivotTableStyle(newDefaultStyle)
+    fullName: setDefaultPivotTableStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setDefaultPivotTableStyle(
+                    newDefaultStyle: PivotTableStyle | string
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 'Объект Пивоттаблестиле или имя объекта Пивоттаблестиле, который должен быть новым значением по умолчанию.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
+    summary: 'Задает объект SlicerStyle, используемый по умолчанию в области родительского объекта.'
+    name: setDefaultSlicerStyle(newDefaultStyle)
+    fullName: setDefaultSlicerStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 'Объект Слицерстиле или имя объекта Слицерстиле, который должен быть новым значением по умолчанию.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
+    summary: 'Задает объект TableStyle, используемый по умолчанию в области родительского объекта.'
+    name: setDefaultTableStyle(newDefaultStyle)
+    fullName: setDefaultTableStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 'Объект TableStyle или имя объекта TableStyle, который должен быть новым значением по умолчанию.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
+    summary: 'Задает объект TimelineStyle, используемый по умолчанию в области родительского объекта.'
+    name: setDefaultTimelineStyle(newDefaultStyle)
+    fullName: setDefaultTimelineStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 'Объект Тимелинестиле или имя объекта Тимелинестиле, который должен быть новым значением по умолчанию.'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)'
+    summary: 'Указывает, были ли внесены изменения с момента последнего сохранения книги. Для этого свойства можно задать значение true, если нужно закрыть измененную книгу без сохранения или выдачи запроса на сохранение.'
+    name: setIsDirty(isDirty)
+    fullName: setIsDirty(isDirty)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIsDirty(isDirty: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isDirty
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
+    summary: 'Значение true, если вычисления в книге выполняются только с той точностью чисел, с которой они отображаются. При переключении этого свойства с false на true данные будут безвозвратно потеряны.'
+    name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+    fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUsePrecisionAsDisplayed(usePrecisionAsDisplayed: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: usePrecisionAsDisplayed
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.Binding:interface'
+    name: Binding
+    fullName: ExcelScript.Binding
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.BindingType:enum'
+    name: BindingType
+    fullName: ExcelScript.BindingType
+  - uid: 'ExcelScript!ExcelScript.Comment:interface'
+    name: Comment
+    fullName: ExcelScript.Comment
+  - uid: 'ExcelScript!ExcelScript.Workbook#addComment~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
+    name: CommentRichContent | string
+    fullName: ExcelScript.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: ExcelScript.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
+    name: ContentType
+    fullName: ExcelScript.ContentType
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+    name: CustomXmlPart
+    fullName: ExcelScript.CustomXmlPart
+  - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+    name: NamedItem
+    fullName: ExcelScript.NamedItem
+  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+    name: PivotTable
+    fullName: ExcelScript.PivotTable
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable~0:complex'
+    name: Range | string | Table
+    fullName: ExcelScript.Range | string | ExcelScript.Table
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string | '
+        fullName: ' | string | '
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable~1:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+    name: PivotTableStyle
+    fullName: ExcelScript.PivotTableStyle
+  - uid: 'ExcelScript!ExcelScript.Setting:interface'
+    name: Setting
+    fullName: ExcelScript.Setting
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSetting~0:complex'
+    name: string | number | boolean | Date | Array<any> | any
+    fullName: string | number | boolean | Date | Array<any> | any
+    spec.typeScript:
+      - name: 'string | number | boolean | '
+        fullName: 'string | number | boolean | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <any> | any
+                  
+        fullName: |-
+          <any> | any
+                  
+  - uid: 'ExcelScript!ExcelScript.Slicer:interface'
+    name: Slicer
+    fullName: ExcelScript.Slicer
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~0:complex'
+    name: string | PivotTable | Table
+    fullName: string | ExcelScript.PivotTable | ExcelScript.Table
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
+    name: string | PivotField | number | TableColumn
+    fullName: string | ExcelScript.PivotField | number | ExcelScript.TableColumn
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: ' | number | '
+        fullName: ' | number | '
+      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
+        name: TableColumn
+        fullName: ExcelScript.TableColumn
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
+    name: string | Worksheet
+    fullName: string | ExcelScript.Worksheet
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: ExcelScript.SlicerStyle
+  - uid: 'ExcelScript!ExcelScript.Table:interface'
+    name: Table
+    fullName: ExcelScript.Table
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    name: TableStyle
+    fullName: ExcelScript.TableStyle
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: ExcelScript.TimelineStyle
+  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+    name: Worksheet
+    fullName: ExcelScript.Worksheet
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.Chart:interface'
+    name: Chart
+    fullName: ExcelScript.Chart
+  - uid: 'ExcelScript!ExcelScript.Application:interface'
+    name: Application
+    fullName: ExcelScript.Application
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBinding~0:complex'
+    name: Binding | undefined
+    fullName: ExcelScript.Binding | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Binding:interface'
+        name: Binding
+        fullName: ExcelScript.Binding
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBindings~0:complex'
+    name: 'Binding[]'
+    fullName: 'ExcelScript.Binding[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Binding:interface'
+        name: Binding
+        fullName: ExcelScript.Binding
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByCell~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getComments~0:complex'
+    name: 'Comment[]'
+    fullName: 'ExcelScript.Comment[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Comment:interface'
+        name: Comment
+        fullName: ExcelScript.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart~0:complex'
+    name: CustomXmlPart | undefined
+    fullName: ExcelScript.CustomXmlPart | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+        name: CustomXmlPart
+        fullName: ExcelScript.CustomXmlPart
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts~0:complex'
+    name: 'CustomXmlPart[]'
+    fullName: 'ExcelScript.CustomXmlPart[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+        name: CustomXmlPart
+        fullName: ExcelScript.CustomXmlPart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNamedItem~0:complex'
+    name: NamedItem | undefined
+    fullName: ExcelScript.NamedItem | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+        name: NamedItem
+        fullName: ExcelScript.NamedItem
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNames~0:complex'
+    name: 'NamedItem[]'
+    fullName: 'ExcelScript.NamedItem[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+        name: NamedItem
+        fullName: ExcelScript.NamedItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTable~0:complex'
+    name: PivotTable | undefined
+    fullName: ExcelScript.PivotTable | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTables~0:complex'
+    name: 'PivotTable[]'
+    fullName: 'ExcelScript.PivotTable[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle~0:complex'
+    name: PivotTableStyle | undefined
+    fullName: ExcelScript.PivotTableStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles~0:complex'
+    name: 'PivotTableStyle[]'
+    fullName: 'ExcelScript.PivotTableStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+    name: PredefinedCellStyle
+    fullName: ExcelScript.PredefinedCellStyle
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles~0:complex'
+    name: 'PredefinedCellStyle[]'
+    fullName: 'ExcelScript.PredefinedCellStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+        name: PredefinedCellStyle
+        fullName: ExcelScript.PredefinedCellStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties:interface'
+    name: DocumentProperties
+    fullName: ExcelScript.DocumentProperties
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
+    name: WorkbookProtection
+    fullName: ExcelScript.WorkbookProtection
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSetting~0:complex'
+    name: Setting | undefined
+    fullName: ExcelScript.Setting | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Setting:interface'
+        name: Setting
+        fullName: ExcelScript.Setting
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSettings~0:complex'
+    name: 'Setting[]'
+    fullName: 'ExcelScript.Setting[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Setting:interface'
+        name: Setting
+        fullName: ExcelScript.Setting
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer~0:complex'
+    name: Slicer | undefined
+    fullName: ExcelScript.Slicer | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
+        name: Slicer
+        fullName: ExcelScript.Slicer
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicers~0:complex'
+    name: 'Slicer[]'
+    fullName: 'ExcelScript.Slicer[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
+        name: Slicer
+        fullName: ExcelScript.Slicer
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyle~0:complex'
+    name: SlicerStyle | undefined
+    fullName: ExcelScript.SlicerStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyles~0:complex'
+    name: 'SlicerStyle[]'
+    fullName: 'ExcelScript.SlicerStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTable~0:complex'
+    name: Table | undefined
+    fullName: ExcelScript.Table | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyle~0:complex'
+    name: TableStyle | undefined
+    fullName: ExcelScript.TableStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyles~0:complex'
+    name: 'TableStyle[]'
+    fullName: 'ExcelScript.TableStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyle~0:complex'
+    name: TimelineStyle | undefined
+    fullName: ExcelScript.TimelineStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyles~0:complex'
+    name: 'TimelineStyle[]'
+    fullName: 'ExcelScript.TimelineStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheet~0:complex'
+    name: Worksheet | undefined
+    fullName: ExcelScript.Worksheet | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
+    name: 'Worksheet[]'
+    fullName: 'ExcelScript.Worksheet[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
+    name: PivotTableStyle | string
+    fullName: ExcelScript.PivotTableStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
+    name: SlicerStyle | string
+    fullName: ExcelScript.SlicerStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
+    name: TableStyle | string
+    fullName: ExcelScript.TableStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
+    name: TimelineStyle | string
+    fullName: ExcelScript.TimelineStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: ' | string'
+        fullName: ' | string'

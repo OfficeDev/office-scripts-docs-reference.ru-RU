@@ -1,0 +1,316 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartDataLabel:interface'
+    summary: Представляет метку данных точки диаграммы.
+    name: Excel.ChartDataLabel
+    fullName: Excel.ChartDataLabel
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartDataLabel#autoText:member'
+      - 'excel!Excel.ChartDataLabel#format:member'
+      - 'excel!Excel.ChartDataLabel#formula:member'
+      - 'excel!Excel.ChartDataLabel#height:member'
+      - 'excel!Excel.ChartDataLabel#horizontalAlignment:member'
+      - 'excel!Excel.ChartDataLabel#left:member'
+      - 'excel!Excel.ChartDataLabel#linkNumberFormat:member'
+      - 'excel!Excel.ChartDataLabel#load:member(1)'
+      - 'excel!Excel.ChartDataLabel#numberFormat:member'
+      - 'excel!Excel.ChartDataLabel#position:member'
+      - 'excel!Excel.ChartDataLabel#separator:member'
+      - 'excel!Excel.ChartDataLabel#showBubbleSize:member'
+      - 'excel!Excel.ChartDataLabel#showCategoryName:member'
+      - 'excel!Excel.ChartDataLabel#showLegendKey:member'
+      - 'excel!Excel.ChartDataLabel#showPercentage:member'
+      - 'excel!Excel.ChartDataLabel#showSeriesName:member'
+      - 'excel!Excel.ChartDataLabel#showValue:member'
+      - 'excel!Excel.ChartDataLabel#text:member'
+      - 'excel!Excel.ChartDataLabel#textOrientation:member'
+      - 'excel!Excel.ChartDataLabel#top:member'
+      - 'excel!Excel.ChartDataLabel#verticalAlignment:member'
+      - 'excel!Excel.ChartDataLabel#width:member'
+  - uid: 'excel!Excel.ChartDataLabel#autoText:member'
+    summary: 'Указывает, будет ли метка данных автоматически создавать соответствующий текст на основе контекста.'
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#format:member'
+    summary: Представляет формат метки данных диаграммы.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartDataLabelFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabelFormat:interface'
+  - uid: 'excel!Excel.ChartDataLabel#formula:member'
+    summary: 'Строковое значение, представляющее формулу метки данных диаграммы с использованием нотации стиля A1.'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartDataLabel#height:member'
+    summary: 'Возвращает высоту метки данных диаграммы (в пунктах). Значение NULL, если метка данных диаграммы не отображается.'
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartDataLabel#horizontalAlignment:member'
+    summary: 'Представляет горизонтальное выравнивание для метки данных диаграммы. Дополнительные сведения см. в статье Excel. Чарттекссоризонталалигнмент. Это свойство является допустимым только в том случае, если TextOrientation имеет значение-90, 90 или 180.'
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: ChartTextHorizontalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextHorizontalAlignment:enum'
+  - uid: 'excel!Excel.ChartDataLabel#left:member'
+    summary: 'Представляет расстояние от левого края метки данных диаграммы до левого края области диаграммы (в пунктах).  Значение NULL, если метка данных диаграммы не отображается.'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartDataLabel#linkNumberFormat:member'
+    summary: 'Указывает, связан ли числовой формат с ячейками (поэтому формат чисел изменяется в метках при изменении в ячейках).'
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartDataLabel#numberFormat:member'
+    summary: 'Строковое значение, представляющее код формата для метки данных.'
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartDataLabel#position:member'
+    summary: 'Значение DataLabelPosition, которое представляет положение метки данных. Дополнительные сведения см. в статье Excel. Чартдаталабелпоситион.'
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: ChartDataLabelPosition;'
+      return:
+        type:
+          - 'excel!Excel.ChartDataLabelPosition:enum'
+  - uid: 'excel!Excel.ChartDataLabel#separator:member'
+    summary: 'Строка, представляющая разделитель для метки данных на диаграмме.'
+    name: separator
+    fullName: separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartDataLabel#showBubbleSize:member'
+    summary: 'Указывает, отображается ли размер пузырька метки данных.'
+    name: showBubbleSize
+    fullName: showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#showCategoryName:member'
+    summary: 'Указывает, отображается ли имя категории меток данных.'
+    name: showCategoryName
+    fullName: showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#showLegendKey:member'
+    summary: 'Указывает, является ли ключ условных обозначений метки данных видимым.'
+    name: showLegendKey
+    fullName: showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#showPercentage:member'
+    summary: 'Указывает, отображается ли процент меток данных.'
+    name: showPercentage
+    fullName: showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#showSeriesName:member'
+    summary: 'Указывает, отображается ли имя ряда подписей данных.'
+    name: showSeriesName
+    fullName: showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#showValue:member'
+    summary: 'Указывает, отображается ли значение метки данных.'
+    name: showValue
+    fullName: showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartDataLabel#text:member'
+    summary: 'Строка, представляющая текст метки данных на диаграмме.'
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartDataLabel#textOrientation:member'
+    summary: 'Представляет угол, на который ориентирован текст для метки данных диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.'
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartDataLabel#top:member'
+    summary: 'Представляет расстояние от верхнего края метки данных диаграммы до верха области диаграммы (в пунктах). Значение NULL, если метка данных диаграммы не отображается.'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartDataLabel#verticalAlignment:member'
+    summary: 'Представляет вертикальное выравнивание для метки данных диаграммы. Дополнительные сведения см. в статье Excel. Чарттекствертикалалигнмент. Это свойство является допустимым, только если значение параметра TextOrientation метки данных равно 0.'
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: ChartTextVerticalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextVerticalAlignment:enum'
+  - uid: 'excel!Excel.ChartDataLabel#width:member'
+    summary: 'Возвращает ширину метки данных диаграммы (в пунктах). Значение NULL, если метка данных диаграммы не отображается.'
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartDataLabelFormat:interface'
+    name: ChartDataLabelFormat
+    fullName: Excel.ChartDataLabelFormat
+  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+    name: ChartTextHorizontalAlignment
+    fullName: Excel.ChartTextHorizontalAlignment
+  - uid: 'excel!Excel.ChartDataLabelPosition:enum'
+    name: ChartDataLabelPosition
+    fullName: Excel.ChartDataLabelPosition
+  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+    name: ChartTextVerticalAlignment
+    fullName: Excel.ChartTextVerticalAlignment

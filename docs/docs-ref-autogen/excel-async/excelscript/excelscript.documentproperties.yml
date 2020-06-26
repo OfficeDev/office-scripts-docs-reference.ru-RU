@@ -1,0 +1,192 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DocumentProperties:interface'
+    summary: Представляет свойства книги.
+    name: Excel.DocumentProperties
+    fullName: Excel.DocumentProperties
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.DocumentProperties#author:member'
+      - 'excel!Excel.DocumentProperties#category:member'
+      - 'excel!Excel.DocumentProperties#comments:member'
+      - 'excel!Excel.DocumentProperties#company:member'
+      - 'excel!Excel.DocumentProperties#creationDate:member'
+      - 'excel!Excel.DocumentProperties#custom:member'
+      - 'excel!Excel.DocumentProperties#keywords:member'
+      - 'excel!Excel.DocumentProperties#lastAuthor:member'
+      - 'excel!Excel.DocumentProperties#load:member(1)'
+      - 'excel!Excel.DocumentProperties#manager:member'
+      - 'excel!Excel.DocumentProperties#revisionNumber:member'
+      - 'excel!Excel.DocumentProperties#subject:member'
+      - 'excel!Excel.DocumentProperties#title:member'
+  - uid: 'excel!Excel.DocumentProperties#author:member'
+    summary: Автор книги.
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#category:member'
+    summary: Категория книги.
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#comments:member'
+    summary: Комментарии к книге.
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#company:member'
+    summary: Фирма книги.
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#creationDate:member'
+    summary: Получает дату создания книги. Только для чтения.
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.DocumentProperties#custom:member'
+    summary: Получает коллекцию настраиваемых свойств книги. Только для чтения.
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly custom: CustomPropertyCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomPropertyCollection:interface'
+  - uid: 'excel!Excel.DocumentProperties#keywords:member'
+    summary: Ключевые слова книги.
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#lastAuthor:member'
+    summary: Получает последнего автора книги. Только для чтения.
+    name: lastAuthor
+    fullName: lastAuthor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lastAuthor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DocumentProperties#manager:member'
+    summary: Руководитель книги.
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#revisionNumber:member'
+    summary: Получает номер редакции книги. Только для чтения.
+    name: revisionNumber
+    fullName: revisionNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'revisionNumber: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.DocumentProperties#subject:member'
+    summary: Тема книги.
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.DocumentProperties#title:member'
+    summary: Название книги.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.CustomPropertyCollection:interface'
+    name: CustomPropertyCollection
+    fullName: Excel.CustomPropertyCollection

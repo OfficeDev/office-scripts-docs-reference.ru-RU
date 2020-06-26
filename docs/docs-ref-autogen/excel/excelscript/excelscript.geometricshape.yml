@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
+    summary: 'Представляет геометрическую фигуру внутри листа. Геометрический фигурой может быть прямоугольник, блок-стрелка, символ формулы, элемент блок-схемы, звезда, баннер, выноска или любая другая базовая фигура в Excel.'
+    name: ExcelScript.GeometricShape
+    fullName: ExcelScript.GeometricShape
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+  - uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+    summary: Возвращает идентификатор фигуры.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''

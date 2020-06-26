@@ -1,0 +1,289 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotLayout:interface'
+    summary: Представляет визуальную структуру сводной таблицы.
+    name: Excel.PivotLayout
+    fullName: Excel.PivotLayout
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotLayout#autoFormat:member'
+      - 'excel!Excel.PivotLayout#enableFieldList:member'
+      - 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+      - 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+      - 'excel!Excel.PivotLayout#getRange:member(1)'
+      - 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#layoutType:member'
+      - 'excel!Excel.PivotLayout#load:member(1)'
+      - 'excel!Excel.PivotLayout#preserveFormatting:member'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+      - 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+      - 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+      - 'excel!Excel.PivotLayout#subtotalLocation:member'
+  - uid: 'excel!Excel.PivotLayout#autoFormat:member'
+    summary: 'Указывает, будет ли форматирование автоматически форматироваться при его обновлении или при перемещении полей.'
+    name: autoFormat
+    fullName: autoFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#enableFieldList:member'
+    summary: 'Указывает, можно ли отображать список полей в пользовательском интерфейсе.'
+    name: enableFieldList
+    fullName: enableFieldList
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableFieldList: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+    summary: 'Возвращает диапазон, где находятся названия столбцов сводной таблицы.'
+    name: getColumnLabelRange()
+    fullName: getColumnLabelRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnLabelRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+    summary: 'Возвращает диапазон, где находятся значения данных сводной таблицы.'
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+              // the layout controls the ranges used by the PivotTable
+              let range = pivotTable.layout.getDataBodyRange();
+
+              // get all the data hierarchy totals
+              let grandTotalRange = range.getLastRow();
+              grandTotalRange.load("address");
+              await context.sync();
+              
+              // use the wholesale and farm sale totals to make a final sum
+              let masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+              masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+    summary: 'Получает объект DataHierarchy, использующийся для вычисления значения в указанном диапазоне сводной таблицы.'
+    name: getDataHierarchy(cell)
+    fullName: getDataHierarchy(cell)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: cell
+          description: Отдельная ячейка в теле данных сводной таблицы.
+          type:
+            - 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+  - uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+    summary: Возвращает диапазон области фильтра сводной таблицы.
+    name: getFilterAxisRange()
+    fullName: getFilterAxisRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilterAxisRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getRange:member(1)'
+    summary: 'Возвращает диапазон, в котором существует сводная таблица, за исключением области фильтра.'
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+    summary: 'Возвращает диапазон, где находятся названия строк сводной таблицы.'
+    name: getRowLabelRange()
+    fullName: getRowLabelRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowLabelRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#layoutType:member'
+    summary: 'Это свойство указывает PivotLayoutType всех полей в сводной таблице. Если поля имеют различные состояния, оно будет иметь значение NULL.'
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layoutType: PivotLayoutType;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayoutType:enum'
+  - uid: 'excel!Excel.PivotLayout#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
+    summary: 'Указывает, сохраняется ли форматирование при обновлении или пересчете отчета с помощью таких операций, как сведение, сортировка или изменение элементов поля страницы.'
+    name: preserveFormatting
+    fullName: preserveFormatting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preserveFormatting: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+    summary: 'Задает для сводной таблицы автоматическую сортировку, используя указанную ячейку, чтобы автоматически выбрать все необходимые условия и контекст. Это работает аналогично применению автоматической сортировки из пользовательского интерфейса.'
+    name: 'setAutoSortOnCell(cell, sortBy)'
+    fullName: 'setAutoSortOnCell(cell, sortBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cell
+          description: 'Одна ячейка, используемая для получения условий для применения автосортировки.'
+          type:
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+        - id: sortBy
+          description: Направление сортировки.
+          type:
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+    summary: 'Указывает, отображаются ли в отчете сводной таблицы общие итоги для столбцов.'
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showColumnGrandTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+    summary: 'Указывает, отображаются ли в отчете сводной таблицы общие итоги для строк.'
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRowGrandTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
+    summary: 'Это свойство указывает SubtotalLocationType всех полей в сводной таблице. Если поля имеют различные состояния, оно будет иметь значение NULL.'
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotalLocation: SubtotalLocationType;'
+      return:
+        type:
+          - 'excel!Excel.SubtotalLocationType:enum'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayoutType:enum'
+    name: PivotLayoutType
+    fullName: Excel.PivotLayoutType
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.SortBy:enum'
+    name: SortBy
+    fullName: Excel.SortBy
+  - uid: 'excel!Excel.SubtotalLocationType:enum'
+    name: SubtotalLocationType
+    fullName: Excel.SubtotalLocationType

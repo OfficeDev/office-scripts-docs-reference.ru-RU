@@ -1,0 +1,169 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Application:interface'
+    summary: 'Представляет приложение Excel, которое управляет книгой.'
+    name: Excel.Application
+    fullName: Excel.Application
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Application#calculate:member(1)'
+      - 'excel!Excel.Application#calculationEngineVersion:member'
+      - 'excel!Excel.Application#calculationMode:member'
+      - 'excel!Excel.Application#calculationState:member'
+      - 'excel!Excel.Application#cultureInfo:member'
+      - 'excel!Excel.Application#decimalSeparator:member'
+      - 'excel!Excel.Application#iterativeCalculation:member'
+      - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#thousandsSeparator:member'
+      - 'excel!Excel.Application#useSystemSeparators:member'
+  - uid: 'excel!Excel.Application#calculate:member(1)'
+    summary: Пересчитывает данные во всех открытых в текущий момент книгах Excel.
+    name: calculate(calculationType)
+    fullName: calculate(calculationType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(calculationType: CalculationType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationType
+          description: 'Определяет тип расчета, который нужно использовать. Дополнительные сведения см. в статье Excel. Калкулатионтипе.'
+          type:
+            - 'excel!Excel.CalculationType:enum'
+  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
+    summary: 'Возвращает версию модуля вычислений Excel, использованного для последнего полного пересчета.'
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Application#calculationMode:member'
+    summary: 'Возвращает режим вычислений, используемый в книге в соответствии с константами в Excel. Калкулатионмоде. Возможные значения:`Automatic`<!-- -->, где Excel управляет пересчетом;`AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах;`Manual`<!-- -->, где выполняется расчет, когда пользователь запрашивает его.'
+    name: calculationMode
+    fullName: calculationMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationMode: CalculationMode;'
+      return:
+        type:
+          - 'excel!Excel.CalculationMode:enum'
+  - uid: 'excel!Excel.Application#calculationState:member'
+    summary: Возвращает состояние вычисления приложения. Дополнительные сведения см. в статье Excel.CalculationState.
+    name: calculationState
+    fullName: calculationState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationState: CalculationState;'
+      return:
+        type:
+          - 'excel!Excel.CalculationState:enum'
+  - uid: 'excel!Excel.Application#cultureInfo:member'
+    summary: 'Предоставляет сведения, основанные на текущих параметрах языковых параметров системы. Сюда входят имена культур, форматирование чисел и другие параметры, зависящие от культуры.'
+    name: cultureInfo
+    fullName: cultureInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cultureInfo: CultureInfo;'
+      return:
+        type:
+          - 'excel!Excel.CultureInfo:interface'
+  - uid: 'excel!Excel.Application#decimalSeparator:member'
+    summary: 'Получает строку, используемую в качестве десятичного разделителя для числовых значений. Это основано на локальных параметрах Excel.'
+    name: decimalSeparator
+    fullName: decimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly decimalSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Application#iterativeCalculation:member'
+    summary: Возвращает параметры итеративных вычислений. В Excel для Windows и Mac параметры будут применены к приложению Excel. В Excel на веб-сайте и других платформах параметры будут применены к активной книге.
+    name: iterativeCalculation
+    fullName: iterativeCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iterativeCalculation: IterativeCalculation;'
+      return:
+        type:
+          - 'excel!Excel.IterativeCalculation:interface'
+  - uid: 'excel!Excel.Application#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Application#thousandsSeparator:member'
+    summary: 'Получает строку, используемую для разделения групп цифр слева от десятичного разделителя для числовых значений. Это основано на локальных параметрах Excel.'
+    name: thousandsSeparator
+    fullName: thousandsSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly thousandsSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Application#useSystemSeparators:member'
+    summary: 'Указывает, включены ли системные разделители Excel. К системным разделителям относятся разделитель целой и дробной части, а также разделитель групп разрядов.'
+    name: useSystemSeparators
+    fullName: useSystemSeparators
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly useSystemSeparators: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.CalculationType:enum'
+    name: CalculationType
+    fullName: Excel.CalculationType
+  - uid: 'excel!Excel.CalculationMode:enum'
+    name: CalculationMode
+    fullName: Excel.CalculationMode
+  - uid: 'excel!Excel.CalculationState:enum'
+    name: CalculationState
+    fullName: Excel.CalculationState
+  - uid: 'excel!Excel.CultureInfo:interface'
+    name: CultureInfo
+    fullName: Excel.CultureInfo
+  - uid: 'excel!Excel.IterativeCalculation:interface'
+    name: IterativeCalculation
+    fullName: Excel.IterativeCalculation

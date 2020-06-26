@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions:interface'
+    summary: Представляет параметры полей макета страницы.
+    name: ExcelScript.PageLayoutMarginOptions
+    fullName: ExcelScript.PageLayoutMarginOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
+    summary: 'Задает нижнее поле макета страницы в единицах, используемых для печати.'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
+    summary: 'Задает поле нижнего колонтитула макета страницы в единицах, используемых для печати.'
+    name: footer
+    fullName: footer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'footer?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
+    summary: 'Задает поле заголовка макета страницы в единицах, используемых для печати.'
+    name: header
+    fullName: header
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'header?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
+    summary: 'Задает левое поле макета страницы в единице измерения, используемой для печати.'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
+    summary: 'Задает правое поле макета страницы в единице измерения, используемой для печати.'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
+    summary: 'Задает верхнее поле макета страницы в единицах, используемых для печати.'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number

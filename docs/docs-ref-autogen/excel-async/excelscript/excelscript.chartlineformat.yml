@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLineFormat:interface'
+    summary: Инкапсулирует параметры форматирования для элементов Line.
+    name: Excel.ChartLineFormat
+    fullName: Excel.ChartLineFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLineFormat#clear:member(1)'
+      - 'excel!Excel.ChartLineFormat#color:member'
+      - 'excel!Excel.ChartLineFormat#lineStyle:member'
+      - 'excel!Excel.ChartLineFormat#load:member(1)'
+      - 'excel!Excel.ChartLineFormat#weight:member'
+  - uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
+    summary: Очищает формат линий элемента диаграммы.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ChartLineFormat#color:member'
+    summary: 'HTML-код цвета, представляющий цвет линий в диаграмме.'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartLineFormat#lineStyle:member'
+    summary: Представляет стиль линии. Дополнительные сведения см. в статье Excel. Чартлинестиле.
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineStyle: ChartLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineStyle:enum'
+  - uid: 'excel!Excel.ChartLineFormat#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLineFormat#weight:member'
+    summary: Представляет толщину линии (в пунктах).
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartLineStyle:enum'
+    name: ChartLineStyle
+    fullName: Excel.ChartLineStyle

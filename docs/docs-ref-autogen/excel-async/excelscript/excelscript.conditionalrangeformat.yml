@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    summary: 'Объект Format, который инкапсулирует шрифт, заливку, границы и другие свойства диапазона условного форматирования.'
+    name: Excel.ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFormat#borders:member'
+      - 'excel!Excel.ConditionalRangeFormat#fill:member'
+      - 'excel!Excel.ConditionalRangeFormat#font:member'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
+  - uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
+    summary: 'Коллекция объектов Border, которые применяются к общему диапазону условного форматирования.'
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly borders: ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderCollection:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
+    summary: 'Возвращает объект Fill, определенный в общем диапазоне условного форматирования.'
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ConditionalRangeFill;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFill:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#font:member'
+    summary: 'Возвращает объект Font, определенный в общем диапазоне условного форматирования.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ConditionalRangeFont;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
+    summary: 'Представляет код числового формата Excel для заданного диапазона. Очищается, если передается значение null.'
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: any;'
+      return:
+        type:
+          - any
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
+    name: ConditionalRangeBorderCollection
+    fullName: Excel.ConditionalRangeBorderCollection
+  - uid: 'excel!Excel.ConditionalRangeFill:interface'
+    name: ConditionalRangeFill
+    fullName: Excel.ConditionalRangeFill
+  - uid: 'excel!Excel.ConditionalRangeFont:interface'
+    name: ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont

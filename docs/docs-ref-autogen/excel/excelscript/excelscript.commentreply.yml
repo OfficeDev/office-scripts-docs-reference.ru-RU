@@ -1,0 +1,224 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CommentReply:interface'
+    summary: Представляет ответ на комментарий в книге.
+    name: ExcelScript.CommentReply
+    fullName: ExcelScript.CommentReply
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CommentReply#delete:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getAuthorEmail:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getAuthorName:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getContent:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getCreationDate:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getId:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getLocation:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getMentions:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getParentComment:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getResolved:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#setContent:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#updateMentions:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CommentReply#delete:member(1)'
+    summary: Удаляет ответ на примечание.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getAuthorEmail:member(1)'
+    summary: Получает электронную почту автора ответа на примечание.
+    name: getAuthorEmail()
+    fullName: getAuthorEmail()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAuthorEmail(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getAuthorName:member(1)'
+    summary: Получает имя автора ответа на примечание.
+    name: getAuthorName()
+    fullName: getAuthorName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAuthorName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getContent:member(1)'
+    summary: Содержимое ответа на комментарий. Строка является обычным текстом.
+    name: getContent()
+    fullName: getContent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getContent(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getCreationDate:member(1)'
+    summary: Получает время создания ответа на примечание.
+    name: getCreationDate()
+    fullName: getCreationDate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCreationDate(): Date;'
+      return:
+        type:
+          - '!Date:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getId:member(1)'
+    summary: Задает идентификатор ответа на комментарий.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getLocation:member(1)'
+    summary: 'Получает ячейку, в которой находится этот ответ на комментарий.'
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getMentions:member(1)'
+    summary: 'Сущности (например, люди), которые упоминаются в комментариях.'
+    name: getMentions()
+    fullName: getMentions()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMentions(): CommentMention[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CommentReply#getMentions~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getParentComment:member(1)'
+    summary: Получает родительский комментарий для этого ответа.
+    name: getParentComment()
+    fullName: getParentComment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getParentComment(): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getResolved:member(1)'
+    summary: 'Состояние ответа на комментарий. Значение "true" означает, что ответ находится в состоянии "разрешено".'
+    name: getResolved()
+    fullName: getResolved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getResolved(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)'
+    summary: 'Содержимое форматированного комментария (например, упоминание в комментариях). Эта строка не предназначена для отображения конечным пользователям. Надстройка должна использовать эту надстройку только для анализа форматированного содержимого комментариев.'
+    name: getRichContent()
+    fullName: getRichContent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRichContent(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#setContent:member(1)'
+    summary: Содержимое ответа на комментарий. Строка является обычным текстом.
+    name: setContent(content)
+    fullName: setContent(content)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setContent(content: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: content
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.CommentReply#updateMentions:member(1)'
+    summary: Обновляет содержимое комментария с помощью специально отформатированной строки и списка упоминаний.
+    name: updateMentions(contentWithMentions)
+    fullName: updateMentions(contentWithMentions)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: contentWithMentions
+          description: 'Содержимое комментария. Содержит особую отформатированную строку и список упоминаний, которые будут проанализированы в строку при их отображении в Excel.'
+          type:
+            - 'ExcelScript!ExcelScript.CommentRichContent:interface'
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getMentions~0:complex'
+    name: 'CommentMention[]'
+    fullName: 'ExcelScript.CommentMention[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
+        name: CommentMention
+        fullName: ExcelScript.CommentMention
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Comment:interface'
+    name: Comment
+    fullName: ExcelScript.Comment
+  - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
+    name: CommentRichContent
+    fullName: ExcelScript.CommentRichContent

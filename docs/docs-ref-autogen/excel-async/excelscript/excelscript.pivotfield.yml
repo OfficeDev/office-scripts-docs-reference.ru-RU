@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotField:interface'
+    summary: Представляет PivotField Excel.
+    name: Excel.PivotField
+    fullName: Excel.PivotField
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotField#id:member'
+      - 'excel!Excel.PivotField#items:member'
+      - 'excel!Excel.PivotField#load:member(1)'
+      - 'excel!Excel.PivotField#name:member'
+      - 'excel!Excel.PivotField#showAllItems:member'
+      - 'excel!Excel.PivotField#sortByLabels:member(1)'
+      - 'excel!Excel.PivotField#sortByValues:member(1)'
+      - 'excel!Excel.PivotField#subtotals:member'
+  - uid: 'excel!Excel.PivotField#id:member'
+    summary: Идентификатор сводного поля.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotField#items:member'
+    summary: 'Возвращает сводные поля, связанные со сводным полем.'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: PivotItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection:interface'
+  - uid: 'excel!Excel.PivotField#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotField#name:member'
+    summary: Имя сводного поля.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotField#showAllItems:member'
+    summary: 'Определяет, следует ли отображать все элементы сводного поля.'
+    name: showAllItems
+    fullName: showAllItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllItems: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotField#sortByLabels:member(1)'
+    summary: 'Сортирует сводное поле. Если указан параметр DataPivotHierarchy, то сортировка будет применяться на его основе, в ином случае сортировка будет основана на самом сводном поле.'
+    name: sortByLabels(sortBy)
+    fullName: sortByLabels(sortBy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByLabels(sortBy: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: 'Указывает, выполняется ли сортировка в возрастающем или убывающем порядке.'
+          type:
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
+    summary: 'Сортирует сводную таблицу по указанным значениям в определенной области. Область определяет, какие конкретные значения будут использоваться для сортировки при наличии нескольких значений из одного и того же DataPivotHierarchy.'
+    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        sortByValues(
+                    sortBy: SortBy,
+                    valuesHierarchy: DataPivotHierarchy,
+                    pivotItemScope?: Array<PivotItem | string>
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: 'Указывает, выполняется ли сортировка в возрастающем или убывающем порядке.'
+          type:
+            - 'excel!Excel.SortBy:enum'
+        - id: valuesHierarchy
+          description: 'Указывает иерархию значений на оси данных, которая будет использоваться для сортировки.'
+          type:
+            - 'excel!Excel.DataPivotHierarchy:interface'
+        - id: pivotItemScope
+          description: 'Элементы, которые следует использовать для области сортировки. Это будут элементы, составляющие строку или столбец, по которым необходимо выполнить сортировку. Если вместо объекта PivotItem используется строка, строка представляет идентификатор PivotItem. Если на оси, для которой необходимо выполнить сортировку, нет элементов, отличных от иерархии данных, это значение может быть пустым.'
+          type:
+            - 'excel!Excel.PivotField#sortByValues~0:complex'
+  - uid: 'excel!Excel.PivotField#subtotals:member'
+    summary: Промежуточные итоги сводного поля.
+    name: subtotals
+    fullName: subtotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotals: Subtotals;'
+      return:
+        type:
+          - 'excel!Excel.Subtotals:interface'
+references:
+  - uid: 'excel!Excel.PivotItemCollection:interface'
+    name: PivotItemCollection
+    fullName: Excel.PivotItemCollection
+  - uid: 'excel!Excel.SortBy:enum'
+    name: SortBy
+    fullName: Excel.SortBy
+  - uid: 'excel!Excel.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<Excel.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:interface'
+        name: PivotItem
+        fullName: Excel.PivotItem
+      - name: |2-
+           | string>
+                  
+        fullName: |2-
+           | string>
+                  
+  - uid: 'excel!Excel.Subtotals:interface'
+    name: Subtotals
+    fullName: Excel.Subtotals

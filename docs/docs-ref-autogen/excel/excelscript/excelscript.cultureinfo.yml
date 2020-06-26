@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
+    summary: 'Предоставляет сведения, основанные на текущих параметрах языковых параметров системы. Сюда входят имена культур, форматирование чисел и другие параметры, зависящие от культуры.'
+    name: ExcelScript.CultureInfo
+    fullName: ExcelScript.CultureInfo
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+      - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+    summary: 'Получает имя языка и региональных параметров в формате languagecode2-Country/regioncode2 (например, "zh-CN" или "en-US"). Это основано на текущих параметрах системы.'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+    summary: 'Определяет формат отображения чисел, соответствующий культуре. Это основано на текущих параметрах языковых параметров системы.'
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): NumberFormatInfo;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+    name: NumberFormatInfo
+    fullName: ExcelScript.NumberFormatInfo

@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
+    summary: Статистическая функция для поля сводной данных.
+    name: ExcelScript.AggregationFunction
+    fullName: ExcelScript.AggregationFunction
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+    summary: Excel автоматически выберет агрегирование на основе элементов данных.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+    summary: 'Статистическое вычисление с использованием среднего значения данных, эквивалентного функции СРЗНАЧ.'
+    name: average
+    fullName: average
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+    summary: 'Статистическое вычисление с использованием числа элементов в данных, эквивалентного функции COUNT.'
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+    summary: 'Статистическое вычисление с использованием числа чисел в данных, эквивалентного функции COUNT.'
+    name: countNumbers
+    fullName: countNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+    summary: 'Статистическое вычисление с использованием максимального значения данных, эквивалентного функции MAX.'
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+    summary: 'Статистическая функция, использующая минимальное значение данных, эквивалентное функции MIN.'
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+    summary: 'Статистическая функция, использующая продукт данных, эквивалент функции PRODUCT.'
+    name: product
+    fullName: product
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+    summary: 'Статистическое вычисление с использованием стандартного отклонения данных, эквивалентного функции СТАНДОТКЛОН.'
+    name: standardDeviation
+    fullName: standardDeviation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+    summary: 'Статистическое вычисление с использованием стандартного отклонения данных, эквивалентного функции СТАНДОТКЛОНП.'
+    name: standardDeviationP
+    fullName: standardDeviationP
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+    summary: 'Статистическое вычисление с использованием суммы данных, эквивалентной функции SUM.'
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+    summary: Статистическая функция неизвестна или не поддерживается.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+    summary: 'Статистическое вычисление с использованием дисперсии данных, эквивалентной функции ДИСП.'
+    name: variance
+    fullName: variance
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+    summary: 'Статистическая функция, использующая дисперсию данных, эквивалентную функции ДИСПР.'
+    name: varianceP
+    fullName: varianceP
+    langs:
+      - typeScript
+    type: field

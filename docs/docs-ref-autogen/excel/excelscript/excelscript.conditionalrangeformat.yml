@@ -1,0 +1,186 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
+    summary: 'Объект Format, который инкапсулирует шрифт, заливку, границы и другие свойства диапазона условного форматирования.'
+    name: ExcelScript.ConditionalRangeFormat
+    fullName: ExcelScript.ConditionalRangeFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)'
+    summary: 'Коллекция объектов Border, которые применяются к общему диапазону условного форматирования.'
+    name: getBorders()
+    fullName: getBorders()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorders(): ConditionalRangeBorder[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)'
+    summary: Возвращает объект границы по его имени.
+    name: getConditionalRangeBorder(index)
+    fullName: getConditionalRangeBorder(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getConditionalRangeBorder(
+                    index: ConditionalRangeBorderIndex
+                ): ConditionalRangeBorder;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса получаемого объекта границы. Дополнительные сведения см. в статье Excel. Кондитионалранжебордериндекс.
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'
+    summary: Получает нижнюю границу.
+    name: getConditionalRangeBorderBottom()
+    fullName: getConditionalRangeBorderBottom()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)'
+    summary: Получает левую границу.
+    name: getConditionalRangeBorderLeft()
+    fullName: getConditionalRangeBorderLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)'
+    summary: Получает правую границу.
+    name: getConditionalRangeBorderRight()
+    fullName: getConditionalRangeBorderRight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)'
+    summary: Получает верхнюю границу.
+    name: getConditionalRangeBorderTop()
+    fullName: getConditionalRangeBorderTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)'
+    summary: 'Возвращает объект Fill, определенный в общем диапазоне условного форматирования.'
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ConditionalRangeFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)'
+    summary: 'Возвращает объект Font, определенный в общем диапазоне условного форматирования.'
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ConditionalRangeFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeFont:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)'
+    summary: 'Представляет код числового формата Excel для заданного диапазона. Очищается, если передается значение null.'
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)'
+    summary: 'Представляет код числового формата Excel для заданного диапазона. Очищается, если передается значение null.'
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders~0:complex'
+    name: 'ConditionalRangeBorder[]'
+    fullName: 'ExcelScript.ConditionalRangeBorder[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+        name: ConditionalRangeBorder
+        fullName: ExcelScript.ConditionalRangeBorder
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
+    name: ConditionalRangeBorder
+    fullName: ExcelScript.ConditionalRangeBorder
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: ExcelScript.ConditionalRangeBorderIndex
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill:interface'
+    name: ConditionalRangeFill
+    fullName: ExcelScript.ConditionalRangeFill
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont:interface'
+    name: ConditionalRangeFont
+    fullName: ExcelScript.ConditionalRangeFont

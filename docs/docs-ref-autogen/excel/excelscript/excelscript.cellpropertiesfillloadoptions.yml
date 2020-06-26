@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions:interface'
+    summary: 'Указывает, какие свойства следует загружать для `format.fill` объекта.'
+    name: ExcelScript.CellPropertiesFillLoadOptions
+    fullName: ExcelScript.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+    summary: 'Указывает, следует ли загружать `color` свойство.'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+    summary: 'Указывает, следует ли загружать `pattern` свойство.'
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+    summary: 'Указывает, следует ли загружать `patternColor` свойство.'
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+    summary: 'Указывает, следует ли загружать `patternTintAndShade` свойство.'
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+    summary: 'Указывает, следует ли загружать `tintAndShade` свойство.'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

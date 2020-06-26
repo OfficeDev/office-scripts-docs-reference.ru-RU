@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    summary: Представляет форматирование заливки для элемента диаграммы.
+    name: ExcelScript.ChartFill
+    fullName: ExcelScript.ChartFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+    summary: Очищает цвет заливки элемента диаграммы.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+    summary: Устанавливает форматирование заливки элемента диаграммы на единый цвет.
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
+          type:
+            - string

@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Icon:interface'
+    summary: Представляет значок ячейки.
+    name: ExcelScript.Icon
+    fullName: ExcelScript.Icon
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Icon#index:member'
+      - 'ExcelScript!ExcelScript.Icon#set:member'
+  - uid: 'ExcelScript!ExcelScript.Icon#index:member'
+    summary: Задает индекс значка в заданном наборе.
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.Icon#set:member'
+    summary: 'Задает набор, в состав которого входит значок.'
+    name: set
+    fullName: set
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'set: IconSet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.IconSet:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.IconSet:enum'
+    name: IconSet
+    fullName: ExcelScript.IconSet

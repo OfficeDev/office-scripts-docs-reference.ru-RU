@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerItemCollection:interface'
+    summary: Представляет коллекцию всех объектов элементов среза в срезе.
+    name: Excel.SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerItemCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Получает элемент среза по ключу или имени. Если элемент среза не существует, возвращает пустой объект.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Ключ или имя среза, который требуется получить.'
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.SlicerItem:interface'
+    name: SlicerItem
+    fullName: Excel.SlicerItem

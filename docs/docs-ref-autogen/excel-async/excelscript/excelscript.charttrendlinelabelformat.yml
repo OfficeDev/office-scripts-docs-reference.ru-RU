@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
+    summary: Инкапсулирует свойства формата для подписи линии тренда диаграммы.
+    name: Excel.ChartTrendlineLabelFormat
+    fullName: Excel.ChartTrendlineLabelFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendlineLabelFormat#border:member'
+      - 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
+      - 'excel!Excel.ChartTrendlineLabelFormat#font:member'
+      - 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#border:member'
+    summary: 'Задает формат границы, включающий цвет, lineStyle и толщину.'
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:interface'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
+    summary: Задает формат заливки для текущей подписи линии тренда диаграммы.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#font:member'
+    summary: 'Задает атрибуты шрифта (имя, размер шрифта, цвет и т. д.) для подписи линии тренда диаграммы.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartBorder:interface'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont
