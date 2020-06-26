@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
+    summary: 'Указывает, расположены ли ряды по строкам или по столбцам. На рабочем столе при выборе параметра "Авто" будет проверяться форма источника данных, чтобы автоматически определить, являются ли данные строками или столбцами; в Excel в Интернете "Auto" просто по умолчанию принимает значение "Columns".'
+    name: ExcelScript.ChartSeriesBy
+    fullName: ExcelScript.ChartSeriesBy
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+    summary: 'На рабочем столе при выборе параметра "Авто" будет проверяться форма источника данных, чтобы автоматически определить, являются ли данные строками или столбцами; в Excel в Интернете "Auto" просто по умолчанию принимает значение "Columns".'
+    name: auto
+    fullName: auto
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: field

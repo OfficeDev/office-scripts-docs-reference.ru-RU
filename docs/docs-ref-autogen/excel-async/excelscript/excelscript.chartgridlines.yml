@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartGridlines:interface'
+    summary: Представляет основные или вспомогательные линии сетки на оси диаграммы.
+    name: Excel.ChartGridlines
+    fullName: Excel.ChartGridlines
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartGridlines#format:member'
+      - 'excel!Excel.ChartGridlines#load:member(1)'
+      - 'excel!Excel.ChartGridlines#visible:member'
+  - uid: 'excel!Excel.ChartGridlines#format:member'
+    summary: Представляет форматирование линий сетки диаграммы.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartGridlinesFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartGridlinesFormat:interface'
+  - uid: 'excel!Excel.ChartGridlines#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartGridlines#visible:member'
+    summary: 'Указывает, отображаются ли линии сетки оси.'
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartGridlinesFormat:interface'
+    name: ChartGridlinesFormat
+    fullName: Excel.ChartGridlinesFormat

@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+    summary: Представляет способ фильтрации даты при фильтрации по значениям.
+    name: ExcelScript.FilterDatetime
+    fullName: ExcelScript.FilterDatetime
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+      - 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+    summary: 'Дата в формате ISO8601, используемая для фильтрации данных.'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+    summary: "Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009\_г."
+    name: specificity
+    fullName: specificity
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'specificity: FilterDatetimeSpecificity;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+    name: FilterDatetimeSpecificity
+    fullName: ExcelScript.FilterDatetimeSpecificity
