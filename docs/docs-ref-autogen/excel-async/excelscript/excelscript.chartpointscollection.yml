@@ -9,7 +9,53 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ChartPointsCollection#count:member'
+      - 'excel!Excel.ChartPointsCollection#getCount:member(1)'
+      - 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartPointsCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartPointsCollection#count:member'
+    summary: Возвращает количество точек диаграммы в ряду.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPointsCollection#getCount:member(1)'
+    summary: Возвращает количество точек диаграммы в ряду.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
+    summary: Получение точки на основании ее положения в ряду.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ChartPoint;'
+      return:
+        type:
+          - 'excel!Excel.ChartPoint:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса получаемого объекта. Используется нулевой индекс.
+          type:
+            - number
   - uid: 'excel!Excel.ChartPointsCollection#load:member(1)'
     summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
     name: load(propertyNames)
@@ -28,3 +74,7 @@ items:
           description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartPoint:interface'
+    name: ChartPoint
+    fullName: Excel.ChartPoint

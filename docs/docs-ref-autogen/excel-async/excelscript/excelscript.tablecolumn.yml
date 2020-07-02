@@ -19,6 +19,7 @@ items:
       - 'excel!Excel.TableColumn#index:member'
       - 'excel!Excel.TableColumn#load:member(1)'
       - 'excel!Excel.TableColumn#name:member'
+      - 'excel!Excel.TableColumn#values:member'
   - uid: 'excel!Excel.TableColumn#delete:member(1)'
     summary: Удаляет столбец из таблицы.
     name: delete()
@@ -150,6 +151,18 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.TableColumn#values:member'
+    summary: 'Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейки, содержащие ошибку, вернут строку ошибки.'
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
 references:
   - uid: 'excel!Excel.Filter:interface'
     name: Filter

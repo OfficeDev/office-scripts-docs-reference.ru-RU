@@ -24,9 +24,13 @@ items:
       - 'excel!Excel.RangeAreas#format:member'
       - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
       - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+      - 'excel!Excel.RangeAreas#getIntersection:member(1)'
       - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+      - 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
       - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getTables:member(1)'
+      - 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
       - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#isEntireColumn:member'
       - 'excel!Excel.RangeAreas#isEntireRow:member'
@@ -280,6 +284,24 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
+    summary: 'Возвращает объект RangeAreas, представляющий пересечение заданных диапазонов или RangeAreas. Если пересечение не найдено, возвращается сообщение об ошибке ItemNotFound.'
+    name: getIntersection(anotherRange)
+    fullName: getIntersection(anotherRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: 'Диапазон, объект RangeAreas или адрес диапазона, который будет использоваться для определения пересечения.'
+          type:
+            - 'excel!Excel.RangeAreas#getIntersection~0:complex'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
     summary: 'Возвращает объект RangeAreas, представляющий пересечение заданных диапазонов или RangeAreas. Если пересечение не найдено, возвращается пустой объект.'
     name: getIntersectionOrNullObject(anotherRange)
@@ -327,6 +349,32 @@ items:
           description: 'Количество столбцов (положительное, отрицательное или 0), на которое должно быть смещено значение RangeAreas. Положительные значения соответствуют смещению вправо, а отрицательные — влево.'
           type:
             - number
+  - uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
+    summary: 'Возвращает объект RangeAreas, представляющий все ячейки, которые соответствуют указанному типу и значению. Выдает ошибку, если не найдено специальных ячеек, соответствующих условиям. '
+    name: 'getSpecialCells(cellType, cellValueType)'
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getSpecialCells(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: cellType
+          description: 'Тип ячеек, которые необходимо включить в список.'
+          type:
+            - 'excel!Excel.SpecialCellType:enum'
+        - id: cellValueType
+          description: 'Если cellType является константами или формулами, этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединять, чтобы возвратить более одного типа. По умолчанию выбираются все константы или формулы независимо от типа.'
+          type:
+            - 'excel!Excel.SpecialCellValueType:enum'
   - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
     summary: 'Возвращает объект RangeAreas, представляющий все ячейки, которые соответствуют указанному типу и значению. Возвращает пустой объект, если не найдено специальных ячеек, соответствующих условиям. '
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
@@ -353,6 +401,42 @@ items:
           description: 'Если cellType является константами или формулами, этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединять, чтобы возвратить более одного типа. По умолчанию выбираются все константы или формулы независимо от типа.'
           type:
             - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.RangeAreas#getTables:member(1)'
+    summary: 'Возвращает коллекцию таблиц с заданной областью, перекрывающую любой диапазон в объекте RangeAreas.'
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableScopedCollection:interface'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 'Если этот параметр имеет значение true, возвращаются только таблицы, полностью содержащиеся в границах диапазона. Значение по умолчанию: false.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
+    summary: 'Возвращает использованный объект RangeAreas, включающий все использованные области отдельных прямоугольных диапазонов в объекте RangeAreas. Если в RangeAreas отсутствуют ячейки, будет выдано сообщение об ошибке ItemNotFound.'
+    name: getUsedRangeAreas(valuesOnly)
+    fullName: getUsedRangeAreas(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 'Следует ли рассматривать только ячейки со значениями в качестве используемых ячеек. Значение по умолчанию: false.'
+          type:
+            - boolean
   - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
     summary: 'Возвращает использованный объект RangeAreas, включающий все использованные области отдельных прямоугольных диапазонов в объекте RangeAreas. Если в RangeAreas нет используемых ячеек, возвращается пустой объект.'
     name: getUsedRangeAreasOrNullObject(valuesOnly)
@@ -486,6 +570,20 @@ references:
   - uid: 'excel!Excel.RangeAreas:interface'
     name: RangeAreas
     fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreas#getIntersection~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -510,6 +608,9 @@ references:
   - uid: 'excel!Excel.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: Excel.SpecialCellValueType
+  - uid: 'excel!Excel.TableScopedCollection:interface'
+    name: TableScopedCollection
+    fullName: Excel.TableScopedCollection
   - uid: 'excel!Excel.Worksheet:interface'
     name: Worksheet
     fullName: Excel.Worksheet

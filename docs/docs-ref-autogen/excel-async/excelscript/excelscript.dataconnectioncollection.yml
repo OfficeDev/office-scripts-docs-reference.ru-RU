@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataConnectionCollection:interface'
+    summary: 'Представляет коллекцию всех подключений к данным, которые являются частью книги или листа.'
+    name: Excel.DataConnectionCollection
+    fullName: Excel.DataConnectionCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.DataConnectionCollection#load:member(1)'
+      - 'excel!Excel.DataConnectionCollection#refreshAll:member(1)'
+  - uid: 'excel!Excel.DataConnectionCollection#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DataConnectionCollection#refreshAll:member(1)'
+    summary: Обновляет все подключения к данным в коллекции.
+    name: refreshAll()
+    fullName: refreshAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAll(): void;'
+      return:
+        type:
+          - void
+        description: ''

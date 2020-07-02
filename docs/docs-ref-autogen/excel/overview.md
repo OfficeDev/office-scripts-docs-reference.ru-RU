@@ -1,13 +1,13 @@
 ---
 title: Справочник API для сценариев Office
 description: Общие сведения о сценариях API JavaScript для Office.
-ms.date: 06/17/2020
-ms.openlocfilehash: 5634d0e5f68464655054ad1c09eb7931e0da62d4
-ms.sourcegitcommit: 163b26a43411ad7f13a01237efe9b8d6de656b47
+ms.date: 06/29/2020
+ms.openlocfilehash: 7c4fe97ca35cfb442ebbf9db2e0b03b389185ae8
+ms.sourcegitcommit: 9c4c4c213a203e58c55eb3d84d7d92fa527f3eb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44884837"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45004733"
 ---
 # <a name="office-scripts-api-reference"></a>Справочник API для сценариев Office
 
@@ -20,12 +20,12 @@ API сценариев Office позволяет автоматизироват�
 
 Приведенный ниже список разделяет основные принципы объектной модели сценариев Office. Здесь показаны общие классы и их связь друг с другом.
 
-- [Рабочая книга](/javascript/api/office-scripts/excel/excelscript.workbook) содержит одну или несколько [рабочих листов](/javascript/api/office-scripts/excel/excelscript.worksheet).
-- [Рабочий лист](/javascript/api/office-scripts/excel/excelscript.worksheet) предоставляет доступ к ячейкам через объекты [Range](/javascript/api/office-scripts/excel/excelscript.range).
-- [Range](/javascript/api/office-scripts/excel/excelscript.range) представляет группу смежных клеток.
-- [Диапазоны](/javascript/api/office-scripts/excel/excelscript.range) используются для создания и размещения [таблиц](/javascript/api/office-scripts/excel/excelscript.table), [диаграмм](/javascript/api/office-scripts/excel/excelscript.chart), [фигур](/javascript/api/office-scripts/excel/excelscript.shape) и других объектов визуализации данных или организации.
-- [Лист](/javascript/api/office-scripts/excel/excelscript.worksheet) содержит массивы, заполненные объектами, присутствующими на отдельном листе.
-- [Книга](/javascript/api/office-scripts/excel/excelscript.workbook) содержит массивы некоторых из этих объектов данных для всей книги.
+- [Рабочая книга](/javascript/api/office-scripts/excelscript/excelscript.workbook) содержит одну или несколько [рабочих листов](/javascript/api/office-scripts/excelscript/excelscript.worksheet).
+- [Рабочий лист](/javascript/api/office-scripts/excelscript/excelscript.worksheet) предоставляет доступ к ячейкам через объекты [Range](/javascript/api/office-scripts/excelscript/excelscript.range).
+- [Range](/javascript/api/office-scripts/excelscript/excelscript.range) представляет группу смежных клеток.
+- [Диапазоны](/javascript/api/office-scripts/excelscript/excelscript.range) используются для создания и размещения [таблиц](/javascript/api/office-scripts/excelscript/excelscript.table), [диаграмм](/javascript/api/office-scripts/excelscript/excelscript.chart), [фигур](/javascript/api/office-scripts/excelscript/excelscript.shape) и других объектов визуализации данных или организации.
+- [Лист](/javascript/api/office-scripts/excelscript/excelscript.worksheet) содержит массивы, заполненные объектами, присутствующими на отдельном листе.
+- [Книга](/javascript/api/office-scripts/excelscript/excelscript.workbook) содержит массивы некоторых из этих объектов данных для всей книги.
 
 Дополнительные сведения об объектной модели сценариев Office можно найти [в разделе Основные сведения о сценариях для сценариев Office в Excel в Интернете](/office/dev/scripts/develop/scripting-fundamentals)
 

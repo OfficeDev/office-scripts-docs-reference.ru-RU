@@ -9,13 +9,34 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ShapeCollection#_GetItem:member(1)'
       - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
       - 'excel!Excel.ShapeCollection#addGroup:member(1)'
       - 'excel!Excel.ShapeCollection#addImage:member(1)'
       - 'excel!Excel.ShapeCollection#addLine:member(1)'
       - 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+      - 'excel!Excel.ShapeCollection#getCount:member(1)'
       - 'excel!Excel.ShapeCollection#getItem:member(1)'
+      - 'excel!Excel.ShapeCollection#getItemAt:member(1)'
       - 'excel!Excel.ShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.ShapeCollection#_GetItem:member(1)'
+    summary: 'Возвращает фигуру, определяемую идентификатором фигуры.'
+    name: _GetItem(shapeId)
+    fullName: _GetItem(shapeId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '_GetItem(shapeId: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: shapeId
+          description: Идентификатор фигуры.
+          type:
+            - string
   - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
     summary: 'Добавляет геометрическую фигуру на лист. Возвращает объект Shape, представляющий новую фигуру.'
     name: addGeometricShape(geometricShapeType)
@@ -212,6 +233,19 @@ items:
           description: 'Представляет текст, который будет отображаться в созданном текстовом поле.'
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getCount:member(1)'
+    summary: Возвращает количество фигур на листе.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
     summary: Получает фигуру по имени или идентификатору.
     name: getItem(key)
@@ -230,6 +264,24 @@ items:
           description: Имя или Идентификатор извлекаемой фигуры.
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getItemAt:member(1)'
+    summary: Получает фигуру с помощью ее позиции в коллекции.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Отсчитываемый от нуля индекс извлекаемой фигуры.
+          type:
+            - number
   - uid: 'excel!Excel.ShapeCollection#load:member(1)'
     summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
     name: load(propertyNames)

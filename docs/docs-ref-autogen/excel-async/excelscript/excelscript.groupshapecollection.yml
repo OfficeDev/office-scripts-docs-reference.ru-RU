@@ -9,8 +9,42 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.GroupShapeCollection#_GetItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#getCount:member(1)'
       - 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#getItemAt:member(1)'
       - 'excel!Excel.GroupShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.GroupShapeCollection#_GetItem:member(1)'
+    summary: 'Возвращает фигуру, определяемую идентификатором фигуры.'
+    name: _GetItem(shapeId)
+    fullName: _GetItem(shapeId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '_GetItem(shapeId: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: shapeId
+          description: Идентификатор фигуры.
+          type:
+            - string
+  - uid: 'excel!Excel.GroupShapeCollection#getCount:member(1)'
+    summary: Возвращает количество фигур в группе фигур.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.GroupShapeCollection#getItem:member(1)'
     summary: Получает фигуру по имени или идентификатору.
     name: getItem(key)
@@ -29,6 +63,24 @@ items:
           description: Имя или Идентификатор извлекаемой фигуры.
           type:
             - string
+  - uid: 'excel!Excel.GroupShapeCollection#getItemAt:member(1)'
+    summary: Получает фигуру на основе ее позиции в коллекции.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса (с отсчетом от нуля) для извлекаемого объекта.
+          type:
+            - number
   - uid: 'excel!Excel.GroupShapeCollection#load:member(1)'
     summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
     name: load(propertyNames)

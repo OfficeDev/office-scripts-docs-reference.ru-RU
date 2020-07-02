@@ -9,8 +9,41 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.PivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.PivotHierarchyCollection#getItem:member(1)'
       - 'excel!Excel.PivotHierarchyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotHierarchyCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotHierarchyCollection#getCount:member(1)'
+    summary: Получает количество иерархий сводного объекта в коллекции.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotHierarchyCollection#getItem:member(1)'
+    summary: Получает PivotHierarchy по имени или идентификатору.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Имя извлекаемого PivotHierarchy.
+          type:
+            - string
   - uid: 'excel!Excel.PivotHierarchyCollection#getItemOrNullObject:member(1)'
     summary: 'Получает PivotHierarchy по имени. Если PivotHierarchy не существует, возвращает пустой объект.'
     name: getItemOrNullObject(name)

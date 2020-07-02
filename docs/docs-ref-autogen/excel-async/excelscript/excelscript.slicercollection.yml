@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerCollection#load:member(1)'
   - uid: 'excel!Excel.SlicerCollection#add:member(1)'
@@ -58,6 +61,55 @@ items:
           description: 'Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
           type:
             - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
+    summary: Возвращает количество срезов в коллекции.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
+    summary: Получает объект slicer по его имени или ИД.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Имя или идентификатор среза.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
+    summary: Получает срез на основе его позиции в коллекции.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса получаемого объекта. Используется нулевой индекс.
+          type:
+            - number
   - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
     summary: 'Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.'
     name: getItemOrNullObject(key)
