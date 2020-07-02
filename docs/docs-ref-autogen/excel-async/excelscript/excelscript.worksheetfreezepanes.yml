@@ -11,6 +11,7 @@ items:
       - 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#load:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
@@ -110,6 +111,19 @@ items:
           description: Необязательное количество строк для закрепления или ноль для разморозки всех строк
           type:
             - number
+  - uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
+    summary: 'Получает диапазон, описывающий закрепленные ячейки в представлении активного листа. Замороженный диапазон соответствует ячейкам, замороженным в верхней и левой области.'
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
     summary: 'Получает диапазон, описывающий закрепленные ячейки в представлении активного листа. Замороженный диапазон соответствует ячейкам, замороженным в верхней и левой области. Если нет замороженной области, возвращается пустой объект.'
     name: getLocationOrNullObject()

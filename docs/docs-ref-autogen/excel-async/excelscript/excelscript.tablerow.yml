@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableRow:interface'
+    summary: |-
+      Представляет строку в таблице.
+
+      Обратите внимание, что в отличие от диапазонов или столбцов, которые будут подстраиваться при добавлении новых строк и столбцов перед ними, объект TableRow представляет физическое расположение строки таблицы, но не данные. То есть, если данные сортируются или добавляются новые строки, строка таблицы по-прежнему будет направляться на индекс, для которого она была создана.
+    name: Excel.TableRow
+    fullName: Excel.TableRow
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableRow#delete:member(1)'
+      - 'excel!Excel.TableRow#getRange:member(1)'
+      - 'excel!Excel.TableRow#load:member(1)'
+      - 'excel!Excel.TableRow#values:member'
+  - uid: 'excel!Excel.TableRow#delete:member(1)'
+    summary: Удаляет строку из таблицы.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableRow#getRange:member(1)'
+    summary: 'Получает объект диапазона, связанный со всей строкой.'
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.TableRow#load:member(1)'
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableRow#values:member'
+    summary: 'Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейки, содержащие ошибку, вернут строку ошибки.'
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

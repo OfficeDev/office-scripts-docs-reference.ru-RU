@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CommentReplyCollection#add:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getCount:member(1)'
       - 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
       - 'excel!Excel.CommentReplyCollection#load:member(1)'
   - uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
     summary: Создает ответ на примечание.
@@ -51,6 +53,19 @@ items:
           description: 'Необязательный параметр. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
           type:
             - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
+    summary: Получает количество ответов на примечания в коллекции.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
     summary: 'Возвращает ответ на примечание, определенное по идентификатору.'
     name: getItem(commentReplyId)
@@ -69,6 +84,24 @@ items:
           description: Идентификатор ответа на комментарий.
           type:
             - string
+  - uid: 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
+    summary: Возвращает ответ на примечание на основе его позиции в коллекции.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса получаемого ответа на комментарий. Коллекция использует индексацию от нуля.
+          type:
+            - number
   - uid: 'excel!Excel.CommentReplyCollection#load:member(1)'
     summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
     name: load(propertyNames)

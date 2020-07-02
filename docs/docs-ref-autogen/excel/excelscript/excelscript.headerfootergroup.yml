@@ -71,7 +71,7 @@ items:
           - 'ExcelScript!ExcelScript.HeaderFooter:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: Какие колонтитулы задаются. Дополнительные сведения см. в статье Excel.HeaderFooterState.
+    summary: 'Состояние, в котором задаются верхние и нижние колонтитулы. Дополнительные сведения см. в статье Excel.HeaderFooterState.'
     name: getState()
     fullName: getState()
     langs:
@@ -110,7 +110,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: Какие колонтитулы задаются. Дополнительные сведения см. в статье Excel.HeaderFooterState.
+    summary: 'Состояние, в котором задаются верхние и нижние колонтитулы. Дополнительные сведения см. в статье Excel.HeaderFooterState.'
     name: setState(state)
     fullName: setState(state)
     langs:

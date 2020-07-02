@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.StyleCollection#add:member(1)'
+      - 'excel!Excel.StyleCollection#getCount:member(1)'
       - 'excel!Excel.StyleCollection#getItem:member(1)'
+      - 'excel!Excel.StyleCollection#getItemAt:member(1)'
       - 'excel!Excel.StyleCollection#load:member(1)'
   - uid: 'excel!Excel.StyleCollection#add:member(1)'
     summary: Добавляет новый стиль в коллекцию.
@@ -56,6 +58,19 @@ items:
           description: Имя добавляемого стиля.
           type:
             - string
+  - uid: 'excel!Excel.StyleCollection#getCount:member(1)'
+    summary: Получает количество стилей в коллекции.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.StyleCollection#getItem:member(1)'
     summary: Получает стиль по имени.
     name: getItem(name)
@@ -100,6 +115,24 @@ items:
           description: Имя извлекаемого стиля.
           type:
             - string
+  - uid: 'excel!Excel.StyleCollection#getItemAt:member(1)'
+    summary: Получает стиль на основе его позиции в коллекции.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 'Значение индекса объекта Style, который требуется получить. Используется нулевой индекс.'
+          type:
+            - number
   - uid: 'excel!Excel.StyleCollection#load:member(1)'
     summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
     name: load(propertyNames)

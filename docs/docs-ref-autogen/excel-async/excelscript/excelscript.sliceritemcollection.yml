@@ -9,8 +9,60 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerItemCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+    summary: Возвращает количество элементов в срезе.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+    summary: Получает объект элемента среза по ключу или имени.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Ключ или имя элемента среза.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
+    summary: Получает элемент среза на основе его позиции в коллекции.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Значение индекса получаемого объекта. Используется нулевой индекс.
+          type:
+            - number
   - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
     summary: 'Получает элемент среза по ключу или имени. Если элемент среза не существует, возвращает пустой объект.'
     name: getItemOrNullObject(key)

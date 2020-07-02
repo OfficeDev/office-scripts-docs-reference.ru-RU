@@ -9,6 +9,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PageBreakCollection#add:member(1)'
+      - 'excel!Excel.PageBreakCollection#getCount:member(1)'
+      - 'excel!Excel.PageBreakCollection#getItem:member(1)'
       - 'excel!Excel.PageBreakCollection#load:member(1)'
       - 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
   - uid: 'excel!Excel.PageBreakCollection#add:member(1)'
@@ -40,6 +42,37 @@ items:
           description: 'Диапазон, непосредственно после добавления разрыва страницы.'
           type:
             - 'excel!Excel.PageBreakCollection#add~0:complex'
+  - uid: 'excel!Excel.PageBreakCollection#getCount:member(1)'
+    summary: Получает количество разрывов страниц в коллекции.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PageBreakCollection#getItem:member(1)'
+    summary: Получает объект разрыва страницы по индексу.
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Индекс разрыва страницы.
+          type:
+            - number
   - uid: 'excel!Excel.PageBreakCollection#load:member(1)'
     summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
     name: load(propertyNames)

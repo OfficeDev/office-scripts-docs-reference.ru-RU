@@ -11,6 +11,8 @@ items:
     children:
       - 'excel!Excel.CustomPropertyCollection#add:member(1)'
       - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
       - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.CustomPropertyCollection#load:member(1)'
   - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
@@ -28,11 +30,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: 'Обязательный элемент. Ключ настраиваемого свойства, в котором регистр не учитывается. Ключ ограничен 255 символами за пределом Excel в Интернете (крупные ключи автоматически обрезаются до 255 символов на других платформах).'
+          description: 'Обязательный. Ключ настраиваемого свойства, в котором регистр не учитывается. Ключ ограничен 255 символами за пределом Excel в Интернете (крупные ключи автоматически обрезаются до 255 символов на других платформах).'
           type:
             - string
         - id: value
-          description: Обязательный элемент. Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
+          description: Обязательный. Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
           type:
             - any
   - uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
@@ -48,6 +50,37 @@ items:
         type:
           - void
         description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+    summary: Получает количество настраиваемых свойств.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
+    summary: 'Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Вызывается, если настраиваемое свойство не существует.'
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Ключ, который определяет объект настраиваемого свойства.'
+          type:
+            - string
   - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
     summary: 'Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Возвращает нулевой объект, если настраиваемое свойство не существует.'
     name: getItemOrNullObject(key)
@@ -63,7 +96,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: 'Обязательный элемент. Ключ, который определяет объект настраиваемого свойства.'
+          description: 'Обязательный. Ключ, который определяет объект настраиваемого свойства.'
           type:
             - string
   - uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'
