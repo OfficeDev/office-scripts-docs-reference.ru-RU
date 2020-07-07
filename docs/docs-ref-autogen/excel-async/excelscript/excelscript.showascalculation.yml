@@ -32,7 +32,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"differenceFrom"'
+    numericValue: '"DifferenceFrom"'
   - uid: 'excel!Excel.ShowAsCalculation.index:member'
     summary: 'Вычисляет значения следующим образом: ((значение в ячейке) x (общий итог по общим итогам))/((итог по суммарным строкам) x (итог по итоговому столбцу))'
     name: index
@@ -40,7 +40,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"index"'
+    numericValue: '"Index"'
   - uid: 'excel!Excel.ShowAsCalculation.none:member'
     summary: Расчет не применяется.
     name: none
@@ -48,7 +48,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
     summary: Разница между заданным базовым полем и базовым элементом.
     name: percentDifferenceFrom
@@ -56,7 +56,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentDifferenceFrom"'
+    numericValue: '"PercentDifferenceFrom"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOf:member'
     summary: Процент от указанного базового поля и базового элемента.
     name: percentOf
@@ -64,7 +64,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOf"'
+    numericValue: '"PercentOf"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
     summary: Процент от суммы по столбцу.
     name: percentOfColumnTotal
@@ -72,7 +72,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfColumnTotal"'
+    numericValue: '"PercentOfColumnTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfGrandTotal:member'
     summary: Процент от общего итога.
     name: percentOfGrandTotal
@@ -80,7 +80,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfGrandTotal"'
+    numericValue: '"PercentOfGrandTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
     summary: Процент от суммы по столбцу для указанного базового поля.
     name: percentOfParentColumnTotal
@@ -88,7 +88,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentColumnTotal"'
+    numericValue: '"PercentOfParentColumnTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
     summary: Процент от суммы по строке для указанного базового поля.
     name: percentOfParentRowTotal
@@ -96,7 +96,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentRowTotal"'
+    numericValue: '"PercentOfParentRowTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
     summary: Процент от общего итога для указанного базового поля.
     name: percentOfParentTotal
@@ -104,7 +104,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentTotal"'
+    numericValue: '"PercentOfParentTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
     summary: Процент от общего числа строк.
     name: percentOfRowTotal
@@ -112,7 +112,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfRowTotal"'
+    numericValue: '"PercentOfRowTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
     summary: Итоговый процент с указанным базовым полем.
     name: percentRunningTotal
@@ -120,7 +120,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentRunningTotal"'
+    numericValue: '"PercentRunningTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.rankAscending:member'
     summary: Ранжирование указанного базового поля по возрастанию.
     name: rankAscending
@@ -128,7 +128,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"rankAscending"'
+    numericValue: '"RankAscending"'
   - uid: 'excel!Excel.ShowAsCalculation.rankDecending:member'
     summary: Ранг по убыванию указанного базового поля.
     name: rankDecending
@@ -136,7 +136,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"rankDecending"'
+    numericValue: '"RankDecending"'
   - uid: 'excel!Excel.ShowAsCalculation.runningTotal:member'
     summary: Итоговое значение указанного базового поля.
     name: runningTotal
@@ -144,7 +144,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"runningTotal"'
+    numericValue: '"RunningTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.unknown:member'
     summary: Вычисления неизвестны или не поддерживаются.
     name: unknown
@@ -152,4 +152,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'

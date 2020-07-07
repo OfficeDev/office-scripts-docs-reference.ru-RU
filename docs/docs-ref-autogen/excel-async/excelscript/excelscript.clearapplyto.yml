@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.ClearApplyTo.contents:member'
     summary: Очищает содержимое диапазона.
     name: contents
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"contents"'
+    numericValue: '"Contents"'
   - uid: 'excel!Excel.ClearApplyTo.formats:member'
     summary: Удаляет все параметры форматирования для диапазона.
     name: formats
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"formats"'
+    numericValue: '"Formats"'
   - uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
     summary: 'Удаляет все гиперссылки, но оставляет все содержимое и форматирование без изменений.'
     name: hyperlinks
@@ -43,7 +43,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hyperlinks"'
+    numericValue: '"Hyperlinks"'
   - uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
     summary: 'Удаляет гиперссылки и форматирование ячейки, но оставляет содержимое, условные форматы и проверку данных без изменений.'
     name: removeHyperlinks
@@ -51,4 +51,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"removeHyperlinks"'
+    numericValue: '"RemoveHyperlinks"'

@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"default"'
+    numericValue: '"Default"'
   - uid: 'excel!Excel.HeaderFooterState.firstAndDefault:member'
     summary: 'Существует отдельная первая страница верхнего или нижнего колонтитула, а также общий заголовок и нижний колонтитул для всех остальных страниц.'
     name: firstAndDefault
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"firstAndDefault"'
+    numericValue: '"FirstAndDefault"'
   - uid: 'excel!Excel.HeaderFooterState.firstOddAndEven:member'
     summary: 'Существует отдельная первая страница верхнего и нижнего колонтитула, а для четных и нечетных страниц — отдельные колонтитулы.'
     name: firstOddAndEven
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"firstOddAndEven"'
+    numericValue: '"FirstOddAndEven"'
   - uid: 'excel!Excel.HeaderFooterState.oddAndEven:member'
     summary: Для четных и нечетных страниц существует другой колонтитул.
     name: oddAndEven
@@ -43,4 +43,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"oddAndEven"'
+    numericValue: '"OddAndEven"'
