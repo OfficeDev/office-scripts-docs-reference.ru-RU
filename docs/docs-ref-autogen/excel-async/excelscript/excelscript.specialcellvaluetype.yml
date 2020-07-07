@@ -30,7 +30,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.SpecialCellValueType.errors:member'
     summary: 'Ячейки, содержащие ошибки.'
     name: errors
@@ -38,7 +38,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errors"'
+    numericValue: '"Errors"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogical:member'
     summary: 'Ячейки, содержащие ошибки, или значение true/false.'
     name: errorsLogical
@@ -46,7 +46,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogical"'
+    numericValue: '"ErrorsLogical"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogicalNumber:member'
     summary: 'Ячейки, содержащие ошибки, true/false или числовое значение.'
     name: errorsLogicalNumber
@@ -54,7 +54,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogicalNumber"'
+    numericValue: '"ErrorsLogicalNumber"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogicalText:member'
     summary: 'Ячейки с ошибками, true/false или строковым значением.'
     name: errorsLogicalText
@@ -62,7 +62,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogicalText"'
+    numericValue: '"ErrorsLogicalText"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsNumbers:member'
     summary: 'Ячейки, содержащие ошибки, или числовое значение.'
     name: errorsNumbers
@@ -70,7 +70,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsNumbers"'
+    numericValue: '"ErrorsNumbers"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsNumberText:member'
     summary: 'Ячейки, содержащие ошибки, числовые значения или строковые значения.'
     name: errorsNumberText
@@ -78,7 +78,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsNumberText"'
+    numericValue: '"ErrorsNumberText"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsText:member'
     summary: 'Ячейки, содержащие ошибки, или строковое значение.'
     name: errorsText
@@ -86,7 +86,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsText"'
+    numericValue: '"ErrorsText"'
   - uid: 'excel!Excel.SpecialCellValueType.logical:member'
     summary: 'Ячейки, которые имеют значение true/false.'
     name: logical
@@ -94,7 +94,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logical"'
+    numericValue: '"Logical"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalNumbers:member'
     summary: 'Ячейки, которые имеют значение true/false или числовое значение.'
     name: logicalNumbers
@@ -102,7 +102,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalNumbers"'
+    numericValue: '"LogicalNumbers"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalNumbersText:member'
     summary: 'Ячейки, которые имеют значение true/false, числовое или строковое значение.'
     name: logicalNumbersText
@@ -110,7 +110,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalNumbersText"'
+    numericValue: '"LogicalNumbersText"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalText:member'
     summary: 'Ячейки, которые имеют значение true/false, или строковое значение.'
     name: logicalText
@@ -118,7 +118,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalText"'
+    numericValue: '"LogicalText"'
   - uid: 'excel!Excel.SpecialCellValueType.numbers:member'
     summary: 'Ячейки, которые имеют числовое значение.'
     name: numbers
@@ -126,7 +126,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"numbers"'
+    numericValue: '"Numbers"'
   - uid: 'excel!Excel.SpecialCellValueType.numbersText:member'
     summary: 'Ячейки, которые содержат числовое значение или строковое значение.'
     name: numbersText
@@ -134,7 +134,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"numbersText"'
+    numericValue: '"NumbersText"'
   - uid: 'excel!Excel.SpecialCellValueType.text:member'
     summary: 'Ячейки, содержащие строковое значение.'
     name: text
@@ -142,4 +142,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"text"'
+    numericValue: '"Text"'

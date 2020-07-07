@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"compact"'
+    numericValue: '"Compact"'
   - uid: 'excel!Excel.PivotLayoutType.outline:member'
     summary: 'Внутренние поля элементы находятся в той же строке, что и внешние поля, в нижней части всегда есть элементы и промежуточные итоги.'
     name: outline
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"outline"'
+    numericValue: '"Outline"'
   - uid: 'excel!Excel.PivotLayoutType.tabular:member'
     summary: Элементы Fields всегда расположены на новой строке относительно элементов внешних полей.
     name: tabular
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tabular"'
+    numericValue: '"Tabular"'

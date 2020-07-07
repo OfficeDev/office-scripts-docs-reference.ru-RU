@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.DataValidationType.date:member'
     summary: Тип проверки данных даты
     name: date
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"date"'
+    numericValue: '"Date"'
   - uid: 'excel!Excel.DataValidationType.decimal:member'
     summary: Тип проверки данных Decimal
     name: decimal
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"decimal"'
+    numericValue: '"Decimal"'
   - uid: 'excel!Excel.DataValidationType.inconsistent:member'
     summary: 'Несогласованность означает, что диапазон содержит несогласованную проверку данных (в разных ячейках существуют разные правила)'
     name: inconsistent
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inconsistent"'
+    numericValue: '"Inconsistent"'
   - uid: 'excel!Excel.DataValidationType.list:member'
     summary: Тип проверки данных списка
     name: list
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"list"'
+    numericValue: '"List"'
   - uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
     summary: 'Микседкритериа означает, что диапазон содержит проверку данных в некоторых ячейках, но не во всех ячейках'
     name: mixedCriteria
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"mixedCriteria"'
+    numericValue: '"MixedCriteria"'
   - uid: 'excel!Excel.DataValidationType.none:member'
     summary: 'None означает, что допускается любое значение, и в диапазоне не выполняется проверка данных.'
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.DataValidationType.textLength:member'
     summary: Тип проверки данных длины текста
     name: textLength
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"textLength"'
+    numericValue: '"TextLength"'
   - uid: 'excel!Excel.DataValidationType.time:member'
     summary: Тип проверки данных времени
     name: time
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"time"'
+    numericValue: '"Time"'
   - uid: 'excel!Excel.DataValidationType.wholeNumber:member'
     summary: Тип проверки данных для целого числа
     name: wholeNumber
@@ -98,4 +98,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"wholeNumber"'
+    numericValue: '"WholeNumber"'

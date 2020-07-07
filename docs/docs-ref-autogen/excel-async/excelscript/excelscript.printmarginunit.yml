@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"centimeters"'
+    numericValue: '"Centimeters"'
   - uid: 'excel!Excel.PrintMarginUnit.inches:member'
     summary: Назначьте поля страницы в дюймах.
     name: inches
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inches"'
+    numericValue: '"Inches"'
   - uid: 'excel!Excel.PrintMarginUnit.points:member'
     summary: Назначьте поля страницы в пунктах. Точка составляет 1/72 дюйма.
     name: points
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"points"'
+    numericValue: '"Points"'
