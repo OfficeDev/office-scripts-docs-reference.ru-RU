@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
     summary: Выбор разрешен для всех ячеек.
     name: normal
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"normal"'
+    numericValue: '"Normal"'
   - uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
     summary: Выбор допускается только для незаблокированных ячеек.
     name: unlocked
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unlocked"'
+    numericValue: '"Unlocked"'

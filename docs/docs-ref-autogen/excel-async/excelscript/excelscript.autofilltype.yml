@@ -28,7 +28,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillCopy"'
+    numericValue: '"FillCopy"'
   - uid: 'excel!Excel.AutoFillType.fillDays:member'
     summary: 'Версия "Филлсериес" для дат, основанных на шаблоне в день месяца или день недели, в зависимости от контекста.'
     name: fillDays
@@ -36,7 +36,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDays"'
+    numericValue: '"FillDays"'
   - uid: 'excel!Excel.AutoFillType.fillDefault:member'
     summary: Заполняет смежные ячейки данными выбранных данных.
     name: fillDefault
@@ -44,7 +44,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDefault"'
+    numericValue: '"FillDefault"'
   - uid: 'excel!Excel.AutoFillType.fillFormats:member'
     summary: Заполняет смежные ячейки выбранными формулами.
     name: fillFormats
@@ -52,7 +52,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillFormats"'
+    numericValue: '"FillFormats"'
   - uid: 'excel!Excel.AutoFillType.fillMonths:member'
     summary: 'Версия "Филлсериес" для дат, основанных на шаблоне в месяц.'
     name: fillMonths
@@ -60,7 +60,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillMonths"'
+    numericValue: '"FillMonths"'
   - uid: 'excel!Excel.AutoFillType.fillSeries:member'
     summary: 'Заполняет смежные ячейки данными, которые следуют шаблону в скопированных ячейках.'
     name: fillSeries
@@ -68,7 +68,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillSeries"'
+    numericValue: '"FillSeries"'
   - uid: 'excel!Excel.AutoFillType.fillValues:member'
     summary: Заполняет смежные ячейки выбранными значениями.
     name: fillValues
@@ -76,7 +76,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillValues"'
+    numericValue: '"FillValues"'
   - uid: 'excel!Excel.AutoFillType.fillWeekdays:member'
     summary: 'Версия "Филлсериес" для дат, основанных на шаблоне дня недели и включающая в себя рабочие дни.'
     name: fillWeekdays
@@ -84,7 +84,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillWeekdays"'
+    numericValue: '"FillWeekdays"'
   - uid: 'excel!Excel.AutoFillType.fillYears:member'
     summary: 'Версия "Филлсериес" для дат, основанных на шаблоне в году.'
     name: fillYears
@@ -92,7 +92,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillYears"'
+    numericValue: '"FillYears"'
   - uid: 'excel!Excel.AutoFillType.flashFill:member'
     summary: Заполняет смежные ячейки с помощью функции Excel FlashFill.
     name: flashFill
@@ -100,7 +100,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"flashFill"'
+    numericValue: '"FlashFill"'
   - uid: 'excel!Excel.AutoFillType.growthTrend:member'
     summary: 'Версия "Филлсериес" для номеров, которые заполняют значения в смежных ячейках в соответствии с моделью тренда роста.'
     name: growthTrend
@@ -108,7 +108,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"growthTrend"'
+    numericValue: '"GrowthTrend"'
   - uid: 'excel!Excel.AutoFillType.linearTrend:member'
     summary: 'Версия "Филлсериес" для номеров, которые заполняют значения в смежных ячейках в соответствии с моделью линейной тенденции.'
     name: linearTrend
@@ -116,4 +116,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"linearTrend"'
+    numericValue: '"LinearTrend"'
