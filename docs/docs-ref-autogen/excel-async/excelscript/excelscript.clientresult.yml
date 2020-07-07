@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ClientResult:interface'
+    summary: 'Содержит результат для методов, которые возвращают простые типы. Свойство Value объекта извлекается из документа после `context.sync()` вызова.'
+    name: Excel.ClientResult
+    fullName: Excel.ClientResult
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
+    package: excel!
+    children:
+      - 'excel!Excel.ClientResult#value:member'
+  - uid: 'excel!Excel.ClientResult#value:member'
+    summary: 'Значение результата, получаемого из документа после `context.sync()` вызова.'
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: T;'
+      return:
+        type:
+          - T
