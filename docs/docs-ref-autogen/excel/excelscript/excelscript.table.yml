@@ -68,7 +68,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.'
+          description: 'Необязательный. Определяет относительную позицию нового столбца. Если задано значение null или -1, столбец добавляется в конце. Столбцы с более высокими значениями индекса смещаются в сторону. Используется нулевой индекс.'
           type:
             - number
         - id: values
@@ -94,7 +94,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          description: 'Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.'
           type:
             - number
         - id: values
@@ -116,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          description: 'Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.'
           type:
             - number
         - id: values

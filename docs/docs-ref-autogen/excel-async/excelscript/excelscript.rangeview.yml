@@ -60,7 +60,7 @@ items:
         type:
           - 'any[][]'
   - uid: 'excel!Excel.RangeView#formulasLocal:member'
-    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    summary: 'Представляет формулу в формате A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула "=SUM(A1, 1.5)" превратится в "=СУММ(A1;1,5)" на русском языке.'
     name: formulasLocal
     fullName: formulasLocal
     langs:

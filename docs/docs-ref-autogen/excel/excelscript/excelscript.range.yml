@@ -566,7 +566,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Необязательный. Количество столбцов, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)'
@@ -584,7 +584,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Необязательный. Количество столбцов, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
@@ -723,7 +723,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    summary: 'Представляет формулу в формате A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула "=SUM(A1, 1.5)" превратится в "=СУММ(A1;1,5)" на русском языке.'
     name: getFormulasLocal()
     fullName: getFormulasLocal()
     langs:
@@ -975,7 +975,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
-    summary: 'Gets an object which represents a range that''s offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.'
+    summary: 'Возвращает объект, представляющий диапазон, который смещен от указанного диапазона. Измерение возвращаемого диапазона будет соответствовать этому диапазону. Если результирующий диапазон выходит за пределы таблицы листа, возникнет ошибка.'
     name: 'getOffsetRange(rowOffset, columnOffset)'
     fullName: 'getOffsetRange(rowOffset, columnOffset)'
     langs:
@@ -1020,11 +1020,11 @@ items:
           ```
       parameters:
         - id: rowOffset
-          description: 'The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.'
+          description: 'Количество строк (положительное, отрицательное или нулевое), на которое необходимо сместить диапазон. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.'
           type:
             - number
         - id: columnOffset
-          description: 'The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.'
+          description: 'Количество столбцов (положительное, отрицательное или 0), на который нужно сместить диапазон. Положительные значения соответствуют смещению вправо, а отрицательные — влево.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
@@ -1099,7 +1099,7 @@ items:
           ```
       parameters:
         - id: deltaRows
-          description: 'The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.'
+          description: 'Количество строк, добавляемых в правый нижний угол, относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.'
           type:
             - number
         - id: deltaColumns
@@ -1212,7 +1212,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Необязательный. Количество строк, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
@@ -1230,7 +1230,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: 'Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.'
+          description: 'Необязательный. Количество строк, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.'
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
@@ -1343,7 +1343,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getUsedRange:member(1)'
-    summary: 'Returns the used range of the given range object. If there are no used cells within the range, this function will return a null object.'
+    summary: 'Возвращает используемый диапазон заданного объекта диапазона. Если в диапазоне нет используемых ячеек, эта функция возвращает пустой объект.'
     name: getUsedRange(valuesOnly)
     fullName: getUsedRange(valuesOnly)
     langs:
@@ -1507,7 +1507,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.GroupOption:enum'
   - uid: 'ExcelScript!ExcelScript.Range#insert:member(1)'
-    summary: 'Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.'
+    summary: 'Вставляет ячейку или диапазон ячеек на лист вместо этого диапазона, а также сдвигает другие ячейки, чтобы освободить место. Возвращает новый объект Range в пустом месте.'
     name: insert(shift)
     fullName: insert(shift)
     langs:
@@ -1734,7 +1734,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    summary: 'Представляет формулу в формате A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула "=SUM(A1, 1.5)" превратится в "=СУММ(A1;1,5)" на русском языке.'
     name: setFormulasLocal(formulasLocal)
     fullName: setFormulasLocal(formulasLocal)
     langs:
