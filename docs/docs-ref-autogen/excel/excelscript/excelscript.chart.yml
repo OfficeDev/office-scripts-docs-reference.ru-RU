@@ -625,7 +625,7 @@ items:
         description: ''
       parameters:
         - id: startCell
-          description: 'The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user''s right-to-left display settings.'
+          description: "Начальная ячейка. Место, куда будет перемещена диаграмма. Начальная ячейка\_— это верхняя левая или верхняя правая ячейка (это зависит от того, использует ли пользователь параметры отображения справа налево)."
           type:
             - 'ExcelScript!ExcelScript.Chart#setPosition~0:complex'
         - id: endCell

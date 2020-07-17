@@ -393,7 +393,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: 'Создание таблицы. Объект или исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если добавить таблицу не удается (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.'
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -431,7 +431,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addTable~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: 'Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
@@ -1172,7 +1172,7 @@ items:
           - 'ExcelScript!ExcelScript.Worksheet#getTables~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
-    summary: 'The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.'
+    summary: "Используемый диапазон\_— это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если весь лист пустой, эта функция возвращает пустой объект."
     name: getUsedRange(valuesOnly)
     fullName: getUsedRange(valuesOnly)
     langs:

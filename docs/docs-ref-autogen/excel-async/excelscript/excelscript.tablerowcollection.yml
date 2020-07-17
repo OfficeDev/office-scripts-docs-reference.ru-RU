@@ -43,7 +43,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          description: 'Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.'
           type:
             - number
         - id: values
