@@ -198,7 +198,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: 'Необязательный параметр. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
+          description: 'Необязательно. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
@@ -247,7 +247,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
         - id: comment
-          description: 'Необязательный параметр. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
@@ -278,7 +278,7 @@ items:
           type:
             - string
         - id: comment
-          description: 'Необязательный параметр. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
@@ -384,7 +384,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
         - id: slicerDestination
-          description: 'Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
+          description: 'Необязательно. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
           type:
             - 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
@@ -826,7 +826,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
@@ -857,7 +857,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
@@ -1273,7 +1273,27 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```javascript
+          /**
+           * This script logs the names of all the worksheets in the workbook.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get all the worksheets in the workbook. 
+            let sheets = workbook.getWorksheets();
+
+            // Get a list of all the worksheet names.
+            let names = sheets.map ((sheet) => sheet.getName());
+
+            // Write in the console all the worksheet names and the total count.
+            console.log(names);
+            console.log(`Total worksheets inside of this workbook: ${sheets.length}`);
+          }
+          ```
   - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
     summary: Обновляет все подключения к данным.
     name: refreshAllDataConnections()
