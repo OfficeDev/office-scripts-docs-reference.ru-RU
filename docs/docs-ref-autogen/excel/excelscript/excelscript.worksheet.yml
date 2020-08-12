@@ -152,7 +152,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addComment~1:complex'
         - id: contentType
-          description: 'Необязательный параметр. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
+          description: 'Необязательно. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
@@ -296,7 +296,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addNamedItem~0:complex'
         - id: comment
-          description: 'Необязательный параметр. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)'
@@ -327,7 +327,7 @@ items:
           type:
             - string
         - id: comment
-          description: 'Необязательный параметр. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)'
@@ -389,7 +389,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addSlicer~1:complex'
         - id: slicerDestination
-          description: 'Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
+          description: 'Необязательно. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
@@ -831,7 +831,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)'
@@ -906,7 +906,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#getProtection:member(1)'
@@ -956,7 +956,7 @@ items:
           ```
       parameters:
         - id: address
-          description: 'Необязательный параметр. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
+          description: 'Необязательно. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)'
@@ -1010,7 +1010,7 @@ items:
         description: ''
       parameters:
         - id: address
-          description: 'Необязательный параметр. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
+          description: 'Необязательно. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#getShape:member(1)'
@@ -1405,7 +1405,26 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>Примеры
+
+          ```javascript
+          /**
+           * This script sets the tab color of every worksheet in the workbook to red.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get all the worksheets in the workbook. 
+            let sheets = workbook.getWorksheets();
+            
+            // Set the tab color of each worksheet to a random color.
+            for (let sheet of sheets) {    
+              // Set the color of the current worksheet's tab to red.
+              sheet.setTabColor("red");
+            }
+          }
+          ```
       parameters:
         - id: tabColor
           description: ''
