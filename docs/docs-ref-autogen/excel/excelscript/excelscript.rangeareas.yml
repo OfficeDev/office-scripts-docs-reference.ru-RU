@@ -14,7 +14,6 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
@@ -113,32 +112,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
-    summary: Преобразует все ячейки в объекте RangeAreas в связанный тип данных.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: 'Идентификатор службы, который будет использоваться для запроса данных.'
-          type:
-            - number
-        - id: languageCulture
-          description: Язык и региональные параметры для запроса службы.
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
     summary: 'Копирует данные ячейки или форматирование из исходного диапазона или объекта RangeAreas в текущий объект RangeAreas. Целевой rangeAreas может иметь другой размер, чем исходный диапазон или RangeAreas. Назначение будет автоматически развернуто, если оно меньше исходного.'
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'

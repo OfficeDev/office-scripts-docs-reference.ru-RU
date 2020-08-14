@@ -15,7 +15,6 @@ items:
       - 'ExcelScript!ExcelScript.Range#clear:member(1)'
       - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.Range#delete:member(1)'
       - 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -260,32 +259,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
-    summary: Преобразует ячейки диапазона в связанный тип данных на листе.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: 'Идентификатор службы, который будет использоваться для запроса данных.'
-          type:
-            - number
-        - id: languageCulture
-          description: Язык и региональные параметры для запроса службы.
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
     summary: 'Копирует данные ячейки или форматирование из исходного диапазона или объекта RangeAreas в текущий диапазон. Конечный диапазон может отличаться от размера исходного диапазона или RangeAreas. Назначение будет автоматически развернуто, если оно меньше исходного.'
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -1991,7 +1964,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 'Задает необработанное значение указанного диапазона. Заданные значения могут иметь тип String, number или Boolean. `null`значение будет игнорироваться (не задано или перезаписано в Excel). Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.'
+    summary: 'Задает необработанное значение указанного диапазона. Заданные значения могут иметь тип String, number или Boolean. `null` значение будет игнорироваться (не задано или перезаписано в Excel). Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.'
     name: setValue(value)
     fullName: setValue(value)
     langs:

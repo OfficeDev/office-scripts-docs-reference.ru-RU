@@ -15,7 +15,7 @@ items:
       - 'excel!Excel.WorksheetProtection#protected:member'
       - 'excel!Excel.WorksheetProtection#unprotect:member(1)'
   - uid: 'excel!Excel.WorksheetProtection#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -75,11 +75,11 @@ items:
           ```
       parameters:
         - id: options
-          description: Необязательный параметр. Параметры защиты листа.
+          description: Необязательно. Параметры защиты листа.
           type:
             - 'excel!Excel.WorksheetProtectionOptions:interface'
         - id: password
-          description: Необязательный параметр. Пароль защиты листа.
+          description: Необязательно. Пароль защиты листа.
           type:
             - string
   - uid: 'excel!Excel.WorksheetProtection#protected:member'

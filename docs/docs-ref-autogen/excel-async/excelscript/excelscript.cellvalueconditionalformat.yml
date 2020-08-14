@@ -42,7 +42,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.CellValueConditionalFormat#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
+    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
