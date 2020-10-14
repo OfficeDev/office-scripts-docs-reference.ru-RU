@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    summary: 'Представляет объект универсальной фигуры на листе. Фигурой может быть геометрическая фигура, линия, Группа фигур и т. д. Чтобы узнать больше об объектной модели фигур, прочтите [Работа с фигурами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    summary: 'Представляет объект универсальной фигуры на листе. Фигурой может быть геометрическая фигура, линия, Группа фигур и т. д.'
     name: ExcelScript.Shape
     fullName: ExcelScript.Shape
     langs:
@@ -113,7 +113,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
-    summary: 'Преобразует фигуру в изображение и возвращает изображение в виде строки в кодировке base64. Число точек на дюйм: 96. Поддерживаются только форматы`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->, а`Excel.PictureFormat.GIF`<!-- -->.'
+    summary: 'Преобразует фигуру в изображение и возвращает изображение в виде строки в кодировке base64. Число точек на дюйм: 96. Поддерживаются только форматы `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->, а `ExcelScript.PictureFormat.GIF`<!-- -->.'
     name: getAsImage(format)
     fullName: getAsImage(format)
     langs:
@@ -170,7 +170,7 @@ items:
           - 'ExcelScript!ExcelScript.GeometricShape:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
-    summary: 'Указывает тип геометрической фигуры для этой геометрической фигуры. Дополнительные сведения см. в статье Excel.GeometricShapeType. Возвращает значение null, если тип фигуры отличается от GeometricShape.'
+    summary: 'Указывает тип геометрической фигуры для этой геометрической фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Жеометрикшапетипе. Возвращает значение null, если тип фигуры отличается от GeometricShape.'
     name: getGeometricShapeType()
     fullName: getGeometricShapeType()
     langs:
@@ -378,7 +378,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
-    summary: Возвращает тип фигуры. Дополнительные сведения см. в статье Excel.ShapeType.
+    summary: Возвращает тип фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Шапетипе.
     name: getType()
     fullName: getType()
     langs:
@@ -511,7 +511,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
         - id: scaleFrom
-          description: 'Необязательный параметр. Указывает, какая часть фигуры сохраняет свое положение при масштабировании фигуры. Если этот параметр опущен, то он представляет свое положение в левом верхнем углу фигуры.'
+          description: 'Необязательное свойство. Указывает, какая часть фигуры сохраняет свое положение при масштабировании фигуры. Если этот параметр опущен, то он представляет свое положение в левом верхнем углу фигуры.'
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
   - uid: 'ExcelScript!ExcelScript.Shape#scaleWidth:member(1)'
@@ -542,7 +542,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
         - id: scaleFrom
-          description: 'Необязательный параметр. Указывает, какая часть фигуры сохраняет свое положение при масштабировании фигуры. Если этот параметр опущен, то он представляет свое положение в левом верхнем углу фигуры.'
+          description: 'Необязательное свойство. Указывает, какая часть фигуры сохраняет свое положение при масштабировании фигуры. Если этот параметр опущен, то он представляет свое положение в левом верхнем углу фигуры.'
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
   - uid: 'ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)'
@@ -582,7 +582,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
-    summary: 'Указывает тип геометрической фигуры для этой геометрической фигуры. Дополнительные сведения см. в статье Excel.GeometricShapeType. Возвращает значение null, если тип фигуры отличается от GeometricShape.'
+    summary: 'Указывает тип геометрической фигуры для этой геометрической фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Жеометрикшапетипе. Возвращает значение null, если тип фигуры отличается от GeometricShape.'
     name: setGeometricShapeType(geometricShapeType)
     fullName: setGeometricShapeType(geometricShapeType)
     langs:
@@ -776,7 +776,7 @@ items:
         description: ''
       parameters:
         - id: position
-          description: Место перемещения фигуры в стеке z по отношению к другим фигурам. Дополнительные сведения см. в статье Excel. Шапезордер.
+          description: Место перемещения фигуры в стеке z по отношению к другим фигурам. Для получения дополнительных сведений см. Ексцелскрипт. Шапезордер.
           type:
             - 'ExcelScript!ExcelScript.ShapeZOrder:enum'
 references:

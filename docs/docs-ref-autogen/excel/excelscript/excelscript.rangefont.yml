@@ -69,7 +69,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
-    summary: 'Имя шрифта (например, "Calibri")'
+    summary: 'Имя шрифта (например, "Calibri"). Длина имени не должна превышать 31 символ.'
     name: getName()
     fullName: getName()
     langs:
@@ -134,7 +134,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет шрифта диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шрифта Тинтандшаде.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет шрифта диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шрифта Тинтандшаде.'
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -147,7 +147,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
-    summary: 'Тип подчеркивания, применяемый для шрифта. Дополнительные сведения см. в статье Excel. Ранжеундерлинестиле.'
+    summary: 'Тип подчеркивания, применяемый для шрифта. Для получения дополнительных сведений см. Ексцелскрипт. Ранжеундерлинестиле.'
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -214,7 +214,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
-    summary: 'Имя шрифта (например, "Calibri")'
+    summary: 'Имя шрифта (например, "Calibri"). Длина имени не должна превышать 31 символ.'
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -304,7 +304,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет шрифта диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шрифта Тинтандшаде.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет шрифта диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шрифта Тинтандшаде.'
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -322,7 +322,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
-    summary: 'Тип подчеркивания, применяемый для шрифта. Дополнительные сведения см. в статье Excel. Ранжеундерлинестиле.'
+    summary: 'Тип подчеркивания, применяемый для шрифта. Для получения дополнительных сведений см. Ексцелскрипт. Ранжеундерлинестиле.'
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

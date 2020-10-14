@@ -93,7 +93,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)'
-    summary: Указывает положение условных обозначений на диаграмме. Дополнительные сведения см. в статье Excel. Чартлежендпоситион.
+    summary: Указывает положение условных обозначений на диаграмме. Для получения дополнительных сведений см. Ексцелскрипт. Чартлежендпоситион.
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -212,7 +212,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)'
-    summary: Указывает положение условных обозначений на диаграмме. Дополнительные сведения см. в статье Excel. Чартлежендпоситион.
+    summary: Указывает положение условных обозначений на диаграмме. Для получения дополнительных сведений см. Ексцелскрипт. Чартлежендпоситион.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:

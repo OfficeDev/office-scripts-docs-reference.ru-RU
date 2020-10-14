@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    summary: 'RangeAreas представляет коллекцию из одного или нескольких прямоугольных диапазонов на одном листе. Чтобы узнать, как использовать диапазоны дисконтингуаус, прочтите [Работа с несколькими диапазонами одновременно в](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges) надстройках Excel<!-- -->.'
+    summary: RangeAreas представляет коллекцию из одного или нескольких прямоугольных диапазонов на одном листе.
     name: ExcelScript.RangeAreas
     fullName: ExcelScript.RangeAreas
     langs:
@@ -52,7 +52,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: Тип добавляемого условного форматирования. Дополнительные сведения см. в статье Excel. Кондитионалформаттипе.
+          description: Тип добавляемого условного форматирования. Для получения дополнительных сведений см. Ексцелскрипт. Кондитионалформаттипе.
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
@@ -83,7 +83,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: Необязательный параметр. Определяет тип действия очистки. Дополнительные сведения см. в статье Excel. Клеарапплито. Значение по умолчанию — "ALL".
+          description: Необязательный параметр. Определяет тип действия очистки. Для получения дополнительных сведений см. Ексцелскрипт. Клеарапплито. Значение по умолчанию — "ALL".
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'

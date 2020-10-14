@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
+    summary: 'Простое перечисление для фильтров верхнего и нижнего уровня, чтобы выбрать, следует ли выполнять фильтрацию по верхнему или нижнему N-проценту, числу или сумме значений.'
+    name: ExcelScript.TopBottomSelectionType
+    fullName: ExcelScript.TopBottomSelectionType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    summary: 'Фильтрация верхнего и нижнего N-числа элементов, измеренного по выбранному значению.'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    summary: 'Фильтрация верхнего или нижнего N-процента элементов, измеренных по выбранному значению.'
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    summary: 'Фильтрация суммы Top/Bottom N, измеряемой выбранным значением.'
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field

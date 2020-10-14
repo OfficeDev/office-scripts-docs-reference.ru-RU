@@ -41,11 +41,11 @@ items:
         description: ''
       parameters:
         - id: type
-          description: Указывает тип оси. Дополнительные сведения см. в статье Excel. Чартаксистипе.
+          description: Указывает тип оси. Для получения дополнительных сведений см. Ексцелскрипт. Чартаксистипе.
           type:
             - 'ExcelScript!ExcelScript.ChartAxisType:enum'
         - id: group
-          description: Необязательный параметр. Указывает группу осей. Дополнительные сведения см. в статье Excel. Чартаксисграуп.
+          description: Необязательное свойство. Указывает группу осей. Для получения дополнительных сведений см. Ексцелскрипт. Чартаксисграуп.
           type:
             - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
-    summary: Правило проверки данных содержит различные типы проверки данных. С помощью Excel. Датавалидатионтипе можно использовать только один из них в каждый момент времени.
+    summary: Правило проверки данных содержит различные типы проверки данных. В соответствии с параметром Ексцелскрипт. Датавалидатионтипе можно использовать только один из них.
     name: ExcelScript.DataValidationRule
     fullName: ExcelScript.DataValidationRule
     langs:

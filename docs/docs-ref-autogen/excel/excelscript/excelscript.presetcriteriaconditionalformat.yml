@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
       - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
   - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
-    summary: 'Возвращает объект Format, инкапсулирующий шрифт, заливку, границы и другие свойства условного форматирования.'
+    summary: 'Возвращает объект Format, который инкапсулирует шрифты условного форматирования, заливки, границы и другие свойства.'
     name: getFormat()
     fullName: getFormat()
     langs:

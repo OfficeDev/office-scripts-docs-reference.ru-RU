@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
+    summary: Представляет размеры при извлечении значений из ряда диаграммы.
+    name: ExcelScript.ChartSeriesDimension
+    fullName: ExcelScript.ChartSeriesDimension
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+    summary: Ось ряда диаграммы для размера пузырьков в пузырьковых диаграммах.
+    name: bubbleSizes
+    fullName: bubbleSizes
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+    summary: Ось ряда диаграммы для категорий.
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+    summary: Ось ряда диаграммы для значений.
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+    summary: Ось ряда диаграммы для значений оси x в точечных и пузырьковых диаграммах.
+    name: xvalues
+    fullName: xvalues
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+    summary: Ось ряда диаграммы для значений оси y в точечных и пузырьковых диаграммах.
+    name: yvalues
+    fullName: yvalues
+    langs:
+      - typeScript
+    type: field

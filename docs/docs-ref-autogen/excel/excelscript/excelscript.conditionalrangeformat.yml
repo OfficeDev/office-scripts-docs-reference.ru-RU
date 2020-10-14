@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Значение индекса получаемого объекта границы. Дополнительные сведения см. в статье Excel. Кондитионалранжебордериндекс.
+          description: Значение индекса получаемого объекта границы. Для получения дополнительных сведений см. Ексцелскрипт. Кондитионалранжебордериндекс.
           type:
             - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'

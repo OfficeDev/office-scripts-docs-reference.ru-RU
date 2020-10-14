@@ -28,7 +28,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
-    summary: 'Постоянное значение, указывающее определенную сторону границы. Дополнительные сведения см. в статье Excel. Кондитионалранжебордериндекс.'
+    summary: 'Постоянное значение, указывающее определенную сторону границы. Для получения дополнительных сведений см. Ексцелскрипт. Кондитионалранжебордериндекс.'
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -41,7 +41,7 @@ items:
           - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
-    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Дополнительные сведения см. в статье Excel. Бордерлинестиле.'
+    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордерлинестиле.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -72,7 +72,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
-    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Дополнительные сведения см. в статье Excel. Бордерлинестиле.'
+    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордерлинестиле.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

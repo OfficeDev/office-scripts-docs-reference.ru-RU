@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    summary: 'Лист Excel представляет собой сетку ячеек. Она может содержать данные, таблицы, диаграммы и т. д. Чтобы узнать больше об объектной модели листа, прочтите [Работа с листами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.'
+    summary: "Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т.\_д."
     name: ExcelScript.Worksheet
     fullName: ExcelScript.Worksheet
     langs:
@@ -24,6 +24,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#copy:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#delete:member(1)'
@@ -36,6 +37,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)'
@@ -67,6 +69,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)'
@@ -113,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: Представляет тип диаграммы. Дополнительные сведения см. в статье Excel. ChartType.
+          description: Представляет тип диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
           type:
             - 'ExcelScript!ExcelScript.ChartType:enum'
         - id: sourceData
@@ -121,7 +124,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Дополнительные сведения см. в статье Excel. Чартсериесби.
+          description: Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Для получения дополнительных сведений см. Ексцелскрипт. Чартсериесби.
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addComment:member(1)'
@@ -152,7 +155,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addComment~1:complex'
         - id: contentType
-          description: 'Необязательно. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
+          description: 'Необязательное свойство. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.'
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
@@ -170,7 +173,7 @@ items:
         description: ''
       parameters:
         - id: geometricShapeType
-          description: Представляет тип геометрической фигуры. Дополнительные сведения см. в статье Excel.GeometricShapeType.
+          description: Представляет тип геометрической фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Жеометрикшапетипе.
           type:
             - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGroup:member(1)'
@@ -265,7 +268,7 @@ items:
           type:
             - number
         - id: connectorType
-          description: Представляет тип соединителя. Дополнительные сведения см. в статье Excel. Коннектортипе.
+          description: Представляет тип соединителя. Для получения дополнительных сведений см. Ексцелскрипт. Коннектортипе.
           type:
             - 'ExcelScript!ExcelScript.ConnectorType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)'
@@ -296,7 +299,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addNamedItem~0:complex'
         - id: comment
-          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательное свойство. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)'
@@ -327,7 +330,7 @@ items:
           type:
             - string
         - id: comment
-          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательное свойство. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)'
@@ -389,7 +392,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addSlicer~1:complex'
         - id: slicerDestination
-          description: 'Необязательно. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
+          description: 'Необязательное свойство. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
@@ -470,6 +473,32 @@ items:
           description: 'Диапазон, непосредственно после добавления разрыва страницы.'
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
+    summary: 'Добавляет новое настраиваемое свойство, которое сопоставляется с предоставленным ключом. При этом существующие настраиваемые свойства перезаписываются с помощью этого раздела.'
+    name: 'addWorksheetCustomProperty(key, value)'
+    fullName: 'addWorksheetCustomProperty(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addWorksheetCustomProperty(
+                    key: string,
+                    value: string
+                ): WorksheetCustomProperty;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр. Ключ имеет ограничение в 255 символов (большие значения приведут к возникновению ошибки "InvalidArgument").'
+          type:
+            - string
+        - id: value
+          description: Значение этого настраиваемого свойства.
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
     summary: Вычисляет все ячейки на листе.
     name: calculate(markAllDirty)
@@ -698,6 +727,19 @@ items:
         type:
           - 'ExcelScript!ExcelScript.Worksheet#getComments~0:complex'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
+    summary: Возвращает коллекцию настраиваемых свойств на уровне листа.
+    name: getCustomProperties()
+    fullName: getCustomProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomProperties(): WorksheetCustomProperty[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
     summary: 'Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.'
     name: getEnableCalculation()
@@ -831,7 +873,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательное свойство. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)'
@@ -906,7 +948,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательное свойство. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#getProtection:member(1)'
@@ -956,7 +998,7 @@ items:
           ```
       parameters:
         - id: address
-          description: 'Необязательно. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
+          description: 'Необязательное свойство. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)'
@@ -1010,7 +1052,7 @@ items:
         description: ''
       parameters:
         - id: address
-          description: 'Необязательно. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
+          description: 'Необязательное свойство. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#getShape:member(1)'
@@ -1215,6 +1257,27 @@ items:
         type:
           - 'ExcelScript!ExcelScript.SheetVisibility:enum'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
+    summary: 'Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Возвращает нулевой объект, если настраиваемое свойство не существует.'
+    name: getWorksheetCustomProperty(key)
+    fullName: getWorksheetCustomProperty(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getWorksheetCustomProperty(
+                    key: string
+                ): WorksheetCustomProperty | undefined;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр.'
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
     summary: Обновляет все сводные таблицы в коллекции.
     name: refreshAllPivotTables()
@@ -1643,6 +1706,9 @@ references:
         fullName: ExcelScript.Range
       - name: ' | string'
         fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    name: WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet
@@ -1692,6 +1758,15 @@ references:
       - uid: 'ExcelScript!ExcelScript.Comment:interface'
         name: Comment
         fullName: ExcelScript.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
+    name: 'WorksheetCustomProperty[]'
+    fullName: 'ExcelScript.WorksheetCustomProperty[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
       - name: '[]'
         fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
@@ -1805,6 +1880,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
     name: SheetVisibility
     fullName: ExcelScript.SheetVisibility
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+    name: WorksheetCustomProperty | undefined
+    fullName: ExcelScript.WorksheetCustomProperty | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
+      - name: ' | undefined'
+        fullName: ' | undefined'
   - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
     name: ReplaceCriteria
     fullName: ExcelScript.ReplaceCriteria

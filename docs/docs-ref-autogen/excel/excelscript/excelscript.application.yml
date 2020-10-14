@@ -34,7 +34,7 @@ items:
         description: ''
       parameters:
         - id: calculationType
-          description: 'Определяет тип расчета, который нужно использовать. Дополнительные сведения см. в статье Excel. Калкулатионтипе.'
+          description: 'Определяет тип расчета, который нужно использовать. Для получения дополнительных сведений см. Ексцелскрипт. Калкулатионтипе.'
           type:
             - 'ExcelScript!ExcelScript.CalculationType:enum'
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
@@ -51,7 +51,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-    summary: 'Возвращает режим вычислений, используемый в книге в соответствии с константами в Excel. Калкулатионмоде. Возможные значения:`Automatic`<!-- -->, где Excel управляет пересчетом;`AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах;`Manual`<!-- -->, где выполняется расчет, когда пользователь запрашивает его.'
+    summary: 'Возвращает режим вычислений, используемый в книге в соответствии с константами в Ексцелскрипт. Калкулатионмоде. Возможные значения: `Automatic`<!-- -->, где Excel управляет пересчетом; `AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах; `Manual`<!-- -->, где выполняется расчет, когда пользователь запрашивает его.'
     name: getCalculationMode()
     fullName: getCalculationMode()
     langs:
@@ -64,7 +64,7 @@ items:
           - 'ExcelScript!ExcelScript.CalculationMode:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-    summary: Возвращает состояние вычисления приложения. Дополнительные сведения см. в статье Excel.CalculationState.
+    summary: Возвращает состояние вычисления приложения. Для получения дополнительных сведений см. Ексцелскрипт. Калкулатионстате.
     name: getCalculationState()
     fullName: getCalculationState()
     langs:
@@ -142,7 +142,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-    summary: 'Возвращает режим вычислений, используемый в книге в соответствии с константами в Excel. Калкулатионмоде. Возможные значения:`Automatic`<!-- -->, где Excel управляет пересчетом;`AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах;`Manual`<!-- -->, где выполняется расчет, когда пользователь запрашивает его.'
+    summary: 'Возвращает режим вычислений, используемый в книге в соответствии с константами в Ексцелскрипт. Калкулатионмоде. Возможные значения: `Automatic`<!-- -->, где Excel управляет пересчетом; `AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах; `Manual`<!-- -->, где выполняется расчет, когда пользователь запрашивает его.'
     name: setCalculationMode(calculationMode)
     fullName: setCalculationMode(calculationMode)
     langs:

@@ -101,7 +101,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-    summary: Представляет стиль маркера точки данных диаграммы. Дополнительные сведения см. в статье Excel. Чартмаркерстиле.
+    summary: Представляет стиль маркера точки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чартмаркерстиле.
     name: getMarkerStyle()
     fullName: getMarkerStyle()
     langs:
@@ -199,7 +199,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-    summary: Представляет стиль маркера точки данных диаграммы. Дополнительные сведения см. в статье Excel. Чартмаркерстиле.
+    summary: Представляет стиль маркера точки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чартмаркерстиле.
     name: setMarkerStyle(markerStyle)
     fullName: setMarkerStyle(markerStyle)
     langs:

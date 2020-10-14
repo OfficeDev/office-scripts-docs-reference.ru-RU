@@ -43,7 +43,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartLineFormat#getLineStyle:member(1)'
-    summary: Представляет стиль линии. Дополнительные сведения см. в статье Excel. Чартлинестиле.
+    summary: Представляет стиль линии. Для получения дополнительных сведений см. Ексцелскрипт. Чартлинестиле.
     name: getLineStyle()
     fullName: getLineStyle()
     langs:
@@ -87,7 +87,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartLineFormat#setLineStyle:member(1)'
-    summary: Представляет стиль линии. Дополнительные сведения см. в статье Excel. Чартлинестиле.
+    summary: Представляет стиль линии. Для получения дополнительных сведений см. Ексцелскрипт. Чартлинестиле.
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:

@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    summary: Представляет настраиваемое свойство на уровне листа.
+    name: ExcelScript.WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+    summary: Удаляет настраиваемое свойство.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+    summary: Возвращает ключ настраиваемого свойства. В настраиваемых ключах свойств не учитывается регистр. Ключ имеет ограничение в 255 символов (большие значения приведут к возникновению ошибки "InvalidArgument").
+    name: getKey()
+    fullName: getKey()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+    summary: Получает или задает значение настраиваемого свойства.
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+    summary: Получает или задает значение настраиваемого свойства.
+    name: setValue(value)
+    fullName: setValue(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setValue(value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: ''
+          type:
+            - string

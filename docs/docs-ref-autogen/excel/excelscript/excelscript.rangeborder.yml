@@ -32,7 +32,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
-    summary: 'Постоянное значение, указывающее определенную сторону границы. Дополнительные сведения см. в статье Excel. Бордериндекс.'
+    summary: 'Постоянное значение, указывающее определенную сторону границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордериндекс.'
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -45,7 +45,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
-    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Дополнительные сведения см. в статье Excel. Бордерлинестиле.'
+    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордерлинестиле.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -58,7 +58,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
-    summary: 'Задает значение Double, которое осветляет или затемняет цвет границы диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что граница не имеет универсального параметра Тинтандшаде.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет границы диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что граница не имеет универсального параметра Тинтандшаде.'
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -71,7 +71,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
-    summary: Определяет толщину границы вокруг диапазона. Дополнительные сведения см. в статье Excel. Бордервеигхт.
+    summary: Определяет толщину границы вокруг диапазона. Для получения дополнительных сведений см. Ексцелскрипт. Бордервеигхт.
     name: getWeight()
     fullName: getWeight()
     langs:
@@ -102,7 +102,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
-    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Дополнительные сведения см. в статье Excel. Бордерлинестиле.'
+    summary: 'Одна из констант стиля линии, определяющая стиль линии границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордерлинестиле.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -120,7 +120,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
-    summary: 'Задает значение Double, которое осветляет или затемняет цвет границы диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что граница не имеет универсального параметра Тинтандшаде.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет границы диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что граница не имеет универсального параметра Тинтандшаде.'
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -138,7 +138,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
-    summary: Определяет толщину границы вокруг диапазона. Дополнительные сведения см. в статье Excel. Бордервеигхт.
+    summary: Определяет толщину границы вокруг диапазона. Для получения дополнительных сведений см. Ексцелскрипт. Бордервеигхт.
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

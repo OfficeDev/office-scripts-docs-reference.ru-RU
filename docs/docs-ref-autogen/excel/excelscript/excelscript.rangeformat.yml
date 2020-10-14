@@ -153,7 +153,7 @@ items:
           - 'ExcelScript!ExcelScript.RangeFont:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)'
-    summary: Представляет выравнивание по горизонтали для указанного объекта. Дополнительные сведения см. в статье Excel. HorizontalAlignment.
+    summary: Представляет выравнивание по горизонтали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. HorizontalAlignment.
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -206,11 +206,11 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Значение индекса получаемого объекта границы. Дополнительные сведения см. в статье Excel. Бордериндекс.
+          description: Значение индекса получаемого объекта границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордериндекс.
           type:
             - 'ExcelScript!ExcelScript.BorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет границ диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет границ диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.'
     name: getRangeBorderTintAndShade()
     fullName: getRangeBorderTintAndShade()
     langs:
@@ -301,7 +301,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)'
-    summary: Представляет выравнивание по вертикали для указанного объекта. Дополнительные сведения см. в статье Excel. VerticalAlignment.
+    summary: Представляет выравнивание по вертикали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. VerticalAlignment.
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -363,7 +363,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
-    summary: Представляет выравнивание по горизонтали для указанного объекта. Дополнительные сведения см. в статье Excel. HorizontalAlignment.
+    summary: Представляет выравнивание по горизонтали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. HorizontalAlignment.
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -399,7 +399,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет границ диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет границ диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.'
     name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     langs:
@@ -525,7 +525,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
-    summary: Представляет выравнивание по вертикали для указанного объекта. Дополнительные сведения см. в статье Excel. VerticalAlignment.
+    summary: Представляет выравнивание по вертикали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. VerticalAlignment.
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:
