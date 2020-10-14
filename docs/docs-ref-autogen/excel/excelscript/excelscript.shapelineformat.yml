@@ -35,7 +35,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Дополнительные сведения см. в статье Excel.ShapeLineStyle.'
+    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
     name: getDashStyle()
     fullName: getDashStyle()
     langs:
@@ -48,7 +48,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Дополнительные сведения см. в статье Excel.ShapeLineStyle.'
+    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Дополнительные сведения см. в статье Excel.ShapeLineStyle.'
+    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
     name: setDashStyle(dashStyle)
     fullName: setDashStyle(dashStyle)
     langs:
@@ -136,7 +136,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Дополнительные сведения см. в статье Excel.ShapeLineStyle.'
+    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

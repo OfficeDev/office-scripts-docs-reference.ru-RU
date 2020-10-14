@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    summary: 'Представляет проверку данных, применяемую к текущему диапазону. Чтобы узнать больше об объектной модели проверки данных, прочтите статью [Добавление проверки данных в диапазоны Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.'
+    summary: 'Представляет проверку данных, применяемую к текущему диапазону.'
     name: ExcelScript.DataValidation
     fullName: ExcelScript.DataValidation
     langs:
@@ -100,7 +100,7 @@ items:
           - 'ExcelScript!ExcelScript.DataValidationRule:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
-    summary: 'Тип проверки данных, подробные сведения см. в статье Excel.DataValidationType.'
+    summary: Тип проверки данных в разделе Ексцелскрипт. Датавалидатионтипе (Дополнительные сведения).
     name: getType()
     fullName: getType()
     langs:

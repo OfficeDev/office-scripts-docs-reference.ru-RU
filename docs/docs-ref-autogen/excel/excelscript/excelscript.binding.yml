@@ -81,7 +81,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: Возвращает тип привязки. Дополнительные сведения см. в статье Excel. BindingType.
+    summary: Возвращает тип привязки. Для получения дополнительных сведений см. Ексцелскрипт. BindingType.
     name: getType()
     fullName: getType()
     langs:

@@ -38,7 +38,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    summary: Тип оповещения для проверки данных. Дополнительные сведения см. в Excel. Датавалидатионалертстиле.
+    summary: 'Тип оповещения для проверки данных. Дополнительные сведения: Ексцелскрипт. Датавалидатионалертстиле.'
     name: style
     fullName: style
     langs:

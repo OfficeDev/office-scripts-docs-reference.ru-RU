@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-    summary: 'Тип подчеркивания, применяемый для шрифта. Дополнительные сведения см. в статье Excel. Чартундерлинестиле.'
+    summary: 'Тип подчеркивания, применяемый для шрифта. Для получения дополнительных сведений см. Ексцелскрипт. Чартундерлинестиле.'
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-    summary: 'Тип подчеркивания, применяемый для шрифта. Дополнительные сведения см. в статье Excel. Чартундерлинестиле.'
+    summary: 'Тип подчеркивания, применяемый для шрифта. Для получения дополнительных сведений см. Ексцелскрипт. Чартундерлинестиле.'
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

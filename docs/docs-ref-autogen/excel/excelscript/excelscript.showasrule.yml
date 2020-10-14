@@ -36,7 +36,7 @@ items:
         type:
           - 'ExcelScript!ExcelScript.PivotItem:interface'
   - uid: 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
-    summary: Расчет ShowAs для использования в сводном поле данных. Дополнительные сведения см. в статье Excel. ShowAsCalculation.
+    summary: Расчет ShowAs для использования в сводном поле данных. Для получения дополнительных сведений см. Ексцелскрипт. ShowAsCalculation.
     name: calculation
     fullName: calculation
     langs:

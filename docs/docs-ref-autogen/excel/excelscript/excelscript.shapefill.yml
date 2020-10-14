@@ -56,7 +56,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-    summary: Возвращает тип заливки фигуры. Дополнительные сведения см. в статье Excel.ShapeFillType.
+    summary: Возвращает тип заливки фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Шапефиллтипе.
     name: getType()
     fullName: getType()
     langs:

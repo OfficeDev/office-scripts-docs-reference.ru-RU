@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Table:interface'
-    summary: 'Представляет таблицу Excel. Чтобы узнать больше об объектной модели таблиц, прочтите [работу с таблицами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.'
+    summary: Представляет таблицу Excel.
     name: ExcelScript.Table
     fullName: ExcelScript.Table
     langs:
@@ -30,6 +30,7 @@ items:
       - 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
       - 'ExcelScript!ExcelScript.Table#getRange:member(1)'
       - 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
+      - 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
@@ -330,10 +331,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Table#getName:member(1)'
-    summary: |-
-      Имя таблицы.
-
-      Имя набора таблицы должно соответствовать рекомендациям, указанным в статье [Переименование статьи таблицы Excel](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) .
+    summary: Имя таблицы.
     name: getName()
     fullName: getName()
     langs:
@@ -383,6 +381,19 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
+    summary: Получает количество строк в таблице.
+    name: getRowCount()
+    fullName: getRowCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type:
+          - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
     summary: 'Указывает, будут ли в столбцах отображаться чередующиеся форматирование, в котором четные столбцы выделяются не так, как в четном, чтобы упростить чтение таблицы.'
@@ -538,10 +549,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Table#setName:member(1)'
-    summary: |-
-      Имя таблицы.
-
-      Имя набора таблицы должно соответствовать рекомендациям, указанным в статье [Переименование статьи таблицы Excel](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) .
+    summary: Имя таблицы.
     name: setName(name)
     fullName: setName(name)
     langs:

@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
       - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    summary: 'Указывает, должно ли соответствие быть полным или частичным. Полное совпадение соответствует всему содержимому ячейки. Частичное совпадение соответствует подстроке в пределах содержимого ячейки (например, `cat` частичное совпадение `caterpillar` и`scatter`<!-- -->). Значение по умолчанию: false (частичное).'
+    summary: 'Указывает, должно ли соответствие быть полным или частичным. Полное совпадение соответствует всему содержимому ячейки. Частичное совпадение соответствует подстроке в пределах содержимого ячейки (например, `cat` частичное совпадение `caterpillar` и `scatter`<!-- -->). Значение по умолчанию: false (частичное).'
     name: completeMatch
     fullName: completeMatch
     langs:
@@ -37,7 +37,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    summary: 'Указывает направление поиска. Значение по умолчанию: вперед. См. статью Excel.SearchDirection.'
+    summary: 'Указывает направление поиска. Значение по умолчанию: вперед. Обратитесь к разделу Ексцелскрипт. Сеарчдиректион.'
     name: searchDirection
     fullName: searchDirection
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: 'Объект, инкапсулирующий диапазон, формат, правило и другие свойства условного форматирования. Чтобы узнать больше об объектной модели условного форматирования, прочтите [Применение условного форматирования к диапазонам Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.'
+    summary: 'Объект, инкапсулирующий диапазон, формат, правило и другие свойства условного форматирования.'
     name: ExcelScript.ConditionalFormat
     fullName: ExcelScript.ConditionalFormat
     langs:
@@ -118,7 +118,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: Возвращает условное форматирование предварительно установленных условий. Дополнительные сведения см. в статье Excel. Пресеткритериакондитионалформат.
+    summary: Возвращает условное форматирование предварительно установленных условий. Для получения дополнительных сведений см. Ексцелскрипт. Пресеткритериакондитионалформат.
     name: getPreset()
     fullName: getPreset()
     langs:

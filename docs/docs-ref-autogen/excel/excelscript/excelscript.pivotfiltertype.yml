@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
+    summary: 'Простое перечисление, представляющее тип фильтра для объекта PivotField.'
+    name: ExcelScript.PivotFilterType
+    fullName: ExcelScript.PivotFilterType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    summary: 'Фильтрует PivotItems с датой вместо метки. Note: PivotField не может одновременно иметь фильтр меток и применить фильтр даты.'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    summary: 'Фильтрует PivotItems на основе их меток. Note: PivotField не может одновременно иметь фильтр меток и применить фильтр даты.'
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    summary: Фильтрует определенные вручную выбранные PivotItems из сводной таблицы.
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    summary: Пивотфилтертипе неизвестен или не поддерживается.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    summary: Фильтры на основе значения PivotItem в соответствии с DataPivotHierarchy.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field

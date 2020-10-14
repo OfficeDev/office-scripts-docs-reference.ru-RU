@@ -47,7 +47,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-    summary: 'Шаблон диапазона. Дополнительные сведения см. в статье Excel.FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.'
+    summary: 'Шаблон диапазона. Для получения дополнительных сведений см. Ексцелскрипт. FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.'
     name: getPattern()
     fullName: getPattern()
     langs:
@@ -73,7 +73,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет узора для заливки диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.'
     name: getPatternTintAndShade()
     fullName: getPatternTintAndShade()
     langs:
@@ -117,7 +117,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-    summary: 'Шаблон диапазона. Дополнительные сведения см. в статье Excel.FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.'
+    summary: 'Шаблон диапазона. Для получения дополнительных сведений см. Ексцелскрипт. FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.'
     name: setPattern(pattern)
     fullName: setPattern(pattern)
     langs:
@@ -153,7 +153,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет узора для заливки диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.'
+    summary: 'Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.'
     name: setPatternTintAndShade(patternTintAndShade)
     fullName: setPatternTintAndShade(patternTintAndShade)
     langs:

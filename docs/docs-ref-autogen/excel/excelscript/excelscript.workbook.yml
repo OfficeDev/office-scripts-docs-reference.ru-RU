@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Workbook:interface'
-    summary: 'Workbook — это объект верхнего уровня, содержащий связанные объекты книг, такие как листы, таблицы, диапазоны и т. д. Чтобы узнать больше об объектной модели книги, читайте [работу с книгами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    summary: "Workbook\_— это объект верхнего уровня, содержащий связанные объекты книг, например листы, таблицы, диапазоны и т.\_д."
     name: ExcelScript.Workbook
     fullName: ExcelScript.Workbook
     langs:
@@ -110,7 +110,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
-          description: Тип привязки. Обратитесь к разделу Excel. BindingType.
+          description: Тип привязки. Обратитесь к разделу Ексцелскрипт. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -141,7 +141,7 @@ items:
           type:
             - string
         - id: bindingType
-          description: Тип привязки. Обратитесь к разделу Excel. BindingType.
+          description: Тип привязки. Обратитесь к разделу Ексцелскрипт. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -163,7 +163,7 @@ items:
         description: ''
       parameters:
         - id: bindingType
-          description: Тип привязки. Обратитесь к разделу Excel. BindingType.
+          description: Тип привязки. Обратитесь к разделу Ексцелскрипт. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -198,7 +198,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: 'Необязательно. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum`ContentType.Plain`<!-- -->.'
+          description: 'Необязательное свойство. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.'
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
@@ -247,7 +247,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
         - id: comment
-          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательное свойство. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
@@ -278,7 +278,7 @@ items:
           type:
             - string
         - id: comment
-          description: 'Необязательно. Комментарий, связанный с именованным элементом.'
+          description: 'Необязательное свойство. Комментарий, связанный с именованным элементом.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
@@ -384,7 +384,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
         - id: slicerDestination
-          description: 'Необязательно. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
+          description: 'Необязательное свойство. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
           type:
             - 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
@@ -826,7 +826,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательное свойство. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
@@ -857,7 +857,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'Необязательно. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
+          description: 'Необязательное свойство. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
