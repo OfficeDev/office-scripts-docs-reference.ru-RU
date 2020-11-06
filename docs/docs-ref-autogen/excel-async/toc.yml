@@ -1,5 +1,5 @@
 items:
-  - name: Справочные материалы по API
+  - name: Справочник по API
     items:
       - name: Обзор справочника по API
         href: overview.md
@@ -10,244 +10,244 @@ items:
             uid: ''
             items:
               - &ref_0
-                name: аггрегатионфунктион
+                name: AggregationFunction
                 uid: 'excel!Excel.AggregationFunction:enum'
               - &ref_1
-                name: арровхеадленгс
+                name: ArrowheadLength
                 uid: 'excel!Excel.ArrowheadLength:enum'
               - &ref_2
-                name: арровхеадстиле
+                name: ArrowheadStyle
                 uid: 'excel!Excel.ArrowheadStyle:enum'
               - &ref_3
-                name: арровхеадвидс
+                name: ArrowheadWidth
                 uid: 'excel!Excel.ArrowheadWidth:enum'
               - &ref_4
-                name: аутофиллтипе
+                name: AutoFillType
                 uid: 'excel!Excel.AutoFillType:enum'
               - &ref_5
                 name: BindingType
                 uid: 'excel!Excel.BindingType:enum'
               - &ref_6
-                name: бордериндекс
+                name: BorderIndex
                 uid: 'excel!Excel.BorderIndex:enum'
               - &ref_7
-                name: бордерлинестиле
+                name: BorderLineStyle
                 uid: 'excel!Excel.BorderLineStyle:enum'
               - &ref_8
-                name: бордервеигхт
+                name: BorderWeight
                 uid: 'excel!Excel.BorderWeight:enum'
               - &ref_9
-                name: буилтинстиле
+                name: BuiltInStyle
                 uid: 'excel!Excel.BuiltInStyle:enum'
               - &ref_10
-                name: калкулатионмоде
+                name: CalculationMode
                 uid: 'excel!Excel.CalculationMode:enum'
               - &ref_11
                 name: CalculationState
                 uid: 'excel!Excel.CalculationState:enum'
               - &ref_12
-                name: калкулатионтипе
+                name: CalculationType
                 uid: 'excel!Excel.CalculationType:enum'
               - &ref_13
-                name: чартаксискатегоритипе
+                name: ChartAxisCategoryType
                 uid: 'excel!Excel.ChartAxisCategoryType:enum'
               - &ref_14
-                name: чартаксисдисплайунит
+                name: ChartAxisDisplayUnit
                 uid: 'excel!Excel.ChartAxisDisplayUnit:enum'
               - &ref_15
-                name: чартаксисграуп
+                name: ChartAxisGroup
                 uid: 'excel!Excel.ChartAxisGroup:enum'
               - &ref_16
-                name: чартаксиспоситион
+                name: ChartAxisPosition
                 uid: 'excel!Excel.ChartAxisPosition:enum'
               - &ref_17
-                name: чартаксисскалетипе
+                name: ChartAxisScaleType
                 uid: 'excel!Excel.ChartAxisScaleType:enum'
               - &ref_18
-                name: чартаксистикклабелпоситион
+                name: ChartAxisTickLabelPosition
                 uid: 'excel!Excel.ChartAxisTickLabelPosition:enum'
               - &ref_19
-                name: чартаксистиккмарк
+                name: ChartAxisTickMark
                 uid: 'excel!Excel.ChartAxisTickMark:enum'
               - &ref_20
-                name: чартаксистимеунит
+                name: ChartAxisTimeUnit
                 uid: 'excel!Excel.ChartAxisTimeUnit:enum'
               - &ref_21
-                name: чартаксистипе
+                name: ChartAxisType
                 uid: 'excel!Excel.ChartAxisType:enum'
               - &ref_22
-                name: чартбинтипе
+                name: ChartBinType
                 uid: 'excel!Excel.ChartBinType:enum'
               - &ref_23
-                name: чартбокскуартилекалкулатион
+                name: ChartBoxQuartileCalculation
                 uid: 'excel!Excel.ChartBoxQuartileCalculation:enum'
               - &ref_24
-                name: чартколорсчеме
+                name: ChartColorScheme
                 uid: 'excel!Excel.ChartColorScheme:enum'
               - &ref_25
-                name: чартдаталабелпоситион
+                name: ChartDataLabelPosition
                 uid: 'excel!Excel.ChartDataLabelPosition:enum'
               - &ref_26
-                name: чартдисплайбланксас
+                name: ChartDisplayBlanksAs
                 uid: 'excel!Excel.ChartDisplayBlanksAs:enum'
               - &ref_27
-                name: чартеррорбарсинклуде
+                name: ChartErrorBarsInclude
                 uid: 'excel!Excel.ChartErrorBarsInclude:enum'
               - &ref_28
-                name: чартеррорбарстипе
+                name: ChartErrorBarsType
                 uid: 'excel!Excel.ChartErrorBarsType:enum'
               - &ref_29
-                name: чартградиентстиле
+                name: ChartGradientStyle
                 uid: 'excel!Excel.ChartGradientStyle:enum'
               - &ref_30
-                name: чартградиентстилетипе
+                name: ChartGradientStyleType
                 uid: 'excel!Excel.ChartGradientStyleType:enum'
               - &ref_31
-                name: чартлежендпоситион
+                name: ChartLegendPosition
                 uid: 'excel!Excel.ChartLegendPosition:enum'
               - &ref_32
-                name: чартлинестиле
+                name: ChartLineStyle
                 uid: 'excel!Excel.ChartLineStyle:enum'
               - &ref_33
-                name: чартмапареалевел
+                name: ChartMapAreaLevel
                 uid: 'excel!Excel.ChartMapAreaLevel:enum'
               - &ref_34
-                name: чартмаплабелстратеги
+                name: ChartMapLabelStrategy
                 uid: 'excel!Excel.ChartMapLabelStrategy:enum'
               - &ref_35
-                name: чартмаппрожектионтипе
+                name: ChartMapProjectionType
                 uid: 'excel!Excel.ChartMapProjectionType:enum'
               - &ref_36
-                name: чартмаркерстиле
+                name: ChartMarkerStyle
                 uid: 'excel!Excel.ChartMarkerStyle:enum'
               - &ref_37
-                name: чартпарентлабелстратеги
+                name: ChartParentLabelStrategy
                 uid: 'excel!Excel.ChartParentLabelStrategy:enum'
               - &ref_38
-                name: чартплотареапоситион
+                name: ChartPlotAreaPosition
                 uid: 'excel!Excel.ChartPlotAreaPosition:enum'
               - &ref_39
-                name: чартплотби
+                name: ChartPlotBy
                 uid: 'excel!Excel.ChartPlotBy:enum'
               - &ref_40
-                name: чартсериесби
+                name: ChartSeriesBy
                 uid: 'excel!Excel.ChartSeriesBy:enum'
               - &ref_41
-                name: чартсплиттипе
+                name: ChartSplitType
                 uid: 'excel!Excel.ChartSplitType:enum'
               - &ref_42
-                name: чарттекссоризонталалигнмент
+                name: ChartTextHorizontalAlignment
                 uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
               - &ref_43
-                name: чарттекствертикалалигнмент
+                name: ChartTextVerticalAlignment
                 uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
               - &ref_44
-                name: чарттикклабелалигнмент
+                name: ChartTickLabelAlignment
                 uid: 'excel!Excel.ChartTickLabelAlignment:enum'
               - &ref_45
-                name: чарттитлепоситион
+                name: ChartTitlePosition
                 uid: 'excel!Excel.ChartTitlePosition:enum'
               - &ref_46
-                name: чарттрендлинетипе
+                name: ChartTrendlineType
                 uid: 'excel!Excel.ChartTrendlineType:enum'
               - &ref_47
                 name: ChartType
                 uid: 'excel!Excel.ChartType:enum'
               - &ref_48
-                name: чартундерлинестиле
+                name: ChartUnderlineStyle
                 uid: 'excel!Excel.ChartUnderlineStyle:enum'
               - &ref_49
-                name: клеарапплито
+                name: ClearApplyTo
                 uid: 'excel!Excel.ClearApplyTo:enum'
               - &ref_50
-                name: кондитионалцеллвалуеоператор
+                name: ConditionalCellValueOperator
                 uid: 'excel!Excel.ConditionalCellValueOperator:enum'
               - &ref_51
-                name: кондитионалдатабараксисформат
+                name: ConditionalDataBarAxisFormat
                 uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
               - &ref_52
-                name: кондитионалдатабардиректион
+                name: ConditionalDataBarDirection
                 uid: 'excel!Excel.ConditionalDataBarDirection:enum'
               - &ref_53
-                name: кондитионалформатколоркритерионтипе
+                name: ConditionalFormatColorCriterionType
                 uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
               - &ref_54
-                name: кондитионалформатдиректион
+                name: ConditionalFormatDirection
                 uid: 'excel!Excel.ConditionalFormatDirection:enum'
               - &ref_55
-                name: кондитионалформатиконрулетипе
+                name: ConditionalFormatIconRuleType
                 uid: 'excel!Excel.ConditionalFormatIconRuleType:enum'
               - &ref_56
-                name: кондитионалформатпресеткритерион
+                name: ConditionalFormatPresetCriterion
                 uid: 'excel!Excel.ConditionalFormatPresetCriterion:enum'
               - &ref_57
-                name: кондитионалформатрулетипе
+                name: ConditionalFormatRuleType
                 uid: 'excel!Excel.ConditionalFormatRuleType:enum'
               - &ref_58
-                name: кондитионалформаттипе
+                name: ConditionalFormatType
                 uid: 'excel!Excel.ConditionalFormatType:enum'
               - &ref_59
-                name: кондитионаликонкритерионоператор
+                name: ConditionalIconCriterionOperator
                 uid: 'excel!Excel.ConditionalIconCriterionOperator:enum'
               - &ref_60
-                name: кондитионалранжебордериндекс
+                name: ConditionalRangeBorderIndex
                 uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
               - &ref_61
-                name: кондитионалранжебордерлинестиле
+                name: ConditionalRangeBorderLineStyle
                 uid: 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
               - &ref_62
-                name: кондитионалранжефонтундерлинестиле
+                name: ConditionalRangeFontUnderlineStyle
                 uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
               - &ref_63
-                name: кондитионалтекстоператор
+                name: ConditionalTextOperator
                 uid: 'excel!Excel.ConditionalTextOperator:enum'
               - &ref_64
-                name: кондитионалтопботтомкритерионтипе
+                name: ConditionalTopBottomCriterionType
                 uid: 'excel!Excel.ConditionalTopBottomCriterionType:enum'
               - &ref_65
-                name: коннектортипе
+                name: ConnectorType
                 uid: 'excel!Excel.ConnectorType:enum'
               - &ref_66
                 name: ContentType
                 uid: 'excel!Excel.ContentType:enum'
               - &ref_67
-                name: датавалидатионалертстиле
+                name: DataValidationAlertStyle
                 uid: 'excel!Excel.DataValidationAlertStyle:enum'
               - &ref_68
-                name: датавалидатионоператор
+                name: DataValidationOperator
                 uid: 'excel!Excel.DataValidationOperator:enum'
               - &ref_69
-                name: датавалидатионтипе
+                name: DataValidationType
                 uid: 'excel!Excel.DataValidationType:enum'
               - &ref_70
-                name: делетешифтдиректион
+                name: DeleteShiftDirection
                 uid: 'excel!Excel.DeleteShiftDirection:enum'
               - &ref_71
-                name: документпропертитипе
+                name: DocumentPropertyType
                 uid: 'excel!Excel.DocumentPropertyType:enum'
               - &ref_72
-                name: динамикфилтеркритериа
+                name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
               - &ref_73
                 name: FillPattern
                 uid: 'excel!Excel.FillPattern:enum'
               - &ref_74
-                name: филтердатетимеспеЦифиЦити
+                name: FilterDatetimeSpecificity
                 uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
               - &ref_75
                 name: FilterOn
                 uid: 'excel!Excel.FilterOn:enum'
               - &ref_76
-                name: филтероператор
+                name: FilterOperator
                 uid: 'excel!Excel.FilterOperator:enum'
               - &ref_77
-                name: жеометрикшапетипе
+                name: GeometricShapeType
                 uid: 'excel!Excel.GeometricShapeType:enum'
               - &ref_78
-                name: граупоптион
+                name: GroupOption
                 uid: 'excel!Excel.GroupOption:enum'
               - &ref_79
-                name: хеадерфутерстате
+                name: HeaderFooterState
                 uid: 'excel!Excel.HeaderFooterState:enum'
               - &ref_80
                 name: HorizontalAlignment
@@ -256,25 +256,25 @@ items:
                 name: IconSet
                 uid: 'excel!Excel.IconSet:enum'
               - &ref_82
-                name: имажефиттингмоде
+                name: ImageFittingMode
                 uid: 'excel!Excel.ImageFittingMode:enum'
               - &ref_83
-                name: инсертшифтдиректион
+                name: InsertShiftDirection
                 uid: 'excel!Excel.InsertShiftDirection:enum'
               - &ref_84
                 name: LinkedDataTypeState
                 uid: 'excel!Excel.LinkedDataTypeState:enum'
               - &ref_85
-                name: намедитемскопе
+                name: NamedItemScope
                 uid: 'excel!Excel.NamedItemScope:enum'
               - &ref_86
-                name: намедитемтипе
+                name: NamedItemType
                 uid: 'excel!Excel.NamedItemType:enum'
               - &ref_87
-                name: пажеориентатион
+                name: PageOrientation
                 uid: 'excel!Excel.PageOrientation:enum'
               - &ref_88
-                name: папертипе
+                name: PaperType
                 uid: 'excel!Excel.PaperType:enum'
               - &ref_89
                 name: PictureFormat
@@ -283,37 +283,37 @@ items:
                 name: PivotAxis
                 uid: 'excel!Excel.PivotAxis:enum'
               - &ref_91
-                name: пивотфилтертопботтомкритерион
+                name: PivotFilterTopBottomCriterion
                 uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
               - &ref_92
-                name: пивотлайауттипе
+                name: PivotLayoutType
                 uid: 'excel!Excel.PivotLayoutType:enum'
               - &ref_93
-                name: Размещение
+                name: Placement
                 uid: 'excel!Excel.Placement:enum'
               - &ref_94
                 name: PrintComments
                 uid: 'excel!Excel.PrintComments:enum'
               - &ref_95
-                name: принтеррортипе
+                name: PrintErrorType
                 uid: 'excel!Excel.PrintErrorType:enum'
               - &ref_96
-                name: принтмаргинунит
+                name: PrintMarginUnit
                 uid: 'excel!Excel.PrintMarginUnit:enum'
               - &ref_97
-                name: принтордер
+                name: PrintOrder
                 uid: 'excel!Excel.PrintOrder:enum'
               - &ref_98
-                name: протектионселектионмоде
+                name: ProtectionSelectionMode
                 uid: 'excel!Excel.ProtectionSelectionMode:enum'
               - &ref_99
-                name: ранжекопитипе
+                name: RangeCopyType
                 uid: 'excel!Excel.RangeCopyType:enum'
               - &ref_100
-                name: ранжеундерлинестиле
+                name: RangeUnderlineStyle
                 uid: 'excel!Excel.RangeUnderlineStyle:enum'
               - &ref_101
-                name: ранжевалуетипе
+                name: RangeValueType
                 uid: 'excel!Excel.RangeValueType:enum'
               - &ref_102
                 name: ReadingOrder
@@ -322,64 +322,64 @@ items:
                 name: SearchDirection
                 uid: 'excel!Excel.SearchDirection:enum'
               - &ref_104
-                name: шапеаутосизе
+                name: ShapeAutoSize
                 uid: 'excel!Excel.ShapeAutoSize:enum'
               - &ref_105
-                name: шапефиллтипе
+                name: ShapeFillType
                 uid: 'excel!Excel.ShapeFillType:enum'
               - &ref_106
-                name: шапефонтундерлинестиле
+                name: ShapeFontUnderlineStyle
                 uid: 'excel!Excel.ShapeFontUnderlineStyle:enum'
               - &ref_107
-                name: шапелинедашстиле
+                name: ShapeLineDashStyle
                 uid: 'excel!Excel.ShapeLineDashStyle:enum'
               - &ref_108
-                name: шапелинестиле
+                name: ShapeLineStyle
                 uid: 'excel!Excel.ShapeLineStyle:enum'
               - &ref_109
-                name: шапескалефром
+                name: ShapeScaleFrom
                 uid: 'excel!Excel.ShapeScaleFrom:enum'
               - &ref_110
-                name: шапескалетипе
+                name: ShapeScaleType
                 uid: 'excel!Excel.ShapeScaleType:enum'
               - &ref_111
-                name: шапетекссоризонталалигнмент
+                name: ShapeTextHorizontalAlignment
                 uid: 'excel!Excel.ShapeTextHorizontalAlignment:enum'
               - &ref_112
-                name: шапетекссоризонталоверфлов
+                name: ShapeTextHorizontalOverflow
                 uid: 'excel!Excel.ShapeTextHorizontalOverflow:enum'
               - &ref_113
-                name: шапетексториентатион
+                name: ShapeTextOrientation
                 uid: 'excel!Excel.ShapeTextOrientation:enum'
               - &ref_114
-                name: шапетекстреадингордер
+                name: ShapeTextReadingOrder
                 uid: 'excel!Excel.ShapeTextReadingOrder:enum'
               - &ref_115
-                name: шапетекствертикалалигнмент
+                name: ShapeTextVerticalAlignment
                 uid: 'excel!Excel.ShapeTextVerticalAlignment:enum'
               - &ref_116
-                name: шапетекствертикаловерфлов
+                name: ShapeTextVerticalOverflow
                 uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
               - &ref_117
-                name: шапетипе
+                name: ShapeType
                 uid: 'excel!Excel.ShapeType:enum'
               - &ref_118
-                name: шапезордер
+                name: ShapeZOrder
                 uid: 'excel!Excel.ShapeZOrder:enum'
               - &ref_119
-                name: шитвисибилити
+                name: SheetVisibility
                 uid: 'excel!Excel.SheetVisibility:enum'
               - &ref_120
                 name: ShowAsCalculation
                 uid: 'excel!Excel.ShowAsCalculation:enum'
               - &ref_121
-                name: слицерсорттипе
+                name: SlicerSortType
                 uid: 'excel!Excel.SlicerSortType:enum'
               - &ref_122
                 name: SortBy
                 uid: 'excel!Excel.SortBy:enum'
               - &ref_123
-                name: сортдатаоптион
+                name: SortDataOption
                 uid: 'excel!Excel.SortDataOption:enum'
               - &ref_124
                 name: SortMethod
@@ -388,25 +388,25 @@ items:
                 name: SortOn
                 uid: 'excel!Excel.SortOn:enum'
               - &ref_126
-                name: сорториентатион
+                name: SortOrientation
                 uid: 'excel!Excel.SortOrientation:enum'
               - &ref_127
-                name: спеЦиалцеллтипе
+                name: SpecialCellType
                 uid: 'excel!Excel.SpecialCellType:enum'
               - &ref_128
-                name: спеЦиалцеллвалуетипе
+                name: SpecialCellValueType
                 uid: 'excel!Excel.SpecialCellValueType:enum'
               - &ref_129
-                name: субтоталлокатионтипе
+                name: SubtotalLocationType
                 uid: 'excel!Excel.SubtotalLocationType:enum'
               - &ref_130
                 name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
               - &ref_131
-                name: воркшитпоситионтипе
+                name: WorksheetPositionType
                 uid: 'excel!Excel.WorksheetPositionType:enum'
           - *ref_0
-          - name: Приложение
+          - name: Application
             uid: 'excel!Excel.Application:interface'
           - *ref_1
           - *ref_2
@@ -414,7 +414,7 @@ items:
           - *ref_4
           - name: AutoFilter
             uid: 'excel!Excel.AutoFilter:interface'
-          - name: басикдатавалидатион
+          - name: BasicDataValidation
             uid: 'excel!Excel.BasicDataValidation:interface'
           - name: Binding
             uid: 'excel!Excel.Binding:interface'
@@ -432,21 +432,21 @@ items:
             uid: 'excel!Excel.CellBorder:interface'
           - name: CellBorderCollection
             uid: 'excel!Excel.CellBorderCollection:interface'
-          - name: целлпропертиесбордерлоадоптионс
+          - name: CellPropertiesBorderLoadOptions
             uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
           - name: CellPropertiesFill
             uid: 'excel!Excel.CellPropertiesFill:interface'
-          - name: целлпропертиесфилллоадоптионс
+          - name: CellPropertiesFillLoadOptions
             uid: 'excel!Excel.CellPropertiesFillLoadOptions:interface'
           - name: CellPropertiesFont
             uid: 'excel!Excel.CellPropertiesFont:interface'
-          - name: целлпропертиесфонтлоадоптионс
+          - name: CellPropertiesFontLoadOptions
             uid: 'excel!Excel.CellPropertiesFontLoadOptions:interface'
           - name: CellPropertiesProtection
             uid: 'excel!Excel.CellPropertiesProtection:interface'
-          - name: целлвалуекондитионалформат
+          - name: CellValueConditionalFormat
             uid: 'excel!Excel.CellValueConditionalFormat:interface'
-          - name: Диаграмма
+          - name: Chart
             uid: 'excel!Excel.Chart:interface'
           - name: ChartAreaFormat
             uid: 'excel!Excel.ChartAreaFormat:interface'
@@ -480,7 +480,7 @@ items:
           - name: ChartCollection
             uid: 'excel!Excel.ChartCollection:interface'
           - *ref_24
-          - name: чартдаталабел
+          - name: ChartDataLabel
             uid: 'excel!Excel.ChartDataLabel:interface'
           - name: ChartDataLabelFormat
             uid: 'excel!Excel.ChartDataLabelFormat:interface'
@@ -498,7 +498,7 @@ items:
             uid: 'excel!Excel.ChartFill:interface'
           - name: ChartFont
             uid: 'excel!Excel.ChartFont:interface'
-          - name: чартформатстринг
+          - name: ChartFormatString
             uid: 'excel!Excel.ChartFormatString:interface'
           - *ref_29
           - *ref_30
@@ -508,9 +508,9 @@ items:
             uid: 'excel!Excel.ChartGridlinesFormat:interface'
           - name: ChartLegend
             uid: 'excel!Excel.ChartLegend:interface'
-          - name: чартлежендентри
+          - name: ChartLegendEntry
             uid: 'excel!Excel.ChartLegendEntry:interface'
-          - name: чартлежендентриколлектион
+          - name: ChartLegendEntryCollection
             uid: 'excel!Excel.ChartLegendEntryCollection:interface'
           - name: ChartLegendFormat
             uid: 'excel!Excel.ChartLegendFormat:interface'
@@ -527,9 +527,9 @@ items:
           - *ref_37
           - name: ChartPivotOptions
             uid: 'excel!Excel.ChartPivotOptions:interface'
-          - name: чартплотареа
+          - name: ChartPlotArea
             uid: 'excel!Excel.ChartPlotArea:interface'
-          - name: чартплотареаформат
+          - name: ChartPlotAreaFormat
             uid: 'excel!Excel.ChartPlotAreaFormat:interface'
           - *ref_38
           - *ref_39
@@ -555,15 +555,15 @@ items:
           - name: ChartTitleFormat
             uid: 'excel!Excel.ChartTitleFormat:interface'
           - *ref_45
-          - name: чарттрендлине
+          - name: ChartTrendline
             uid: 'excel!Excel.ChartTrendline:interface'
-          - name: чарттрендлинеколлектион
+          - name: ChartTrendlineCollection
             uid: 'excel!Excel.ChartTrendlineCollection:interface'
-          - name: чарттрендлинеформат
+          - name: ChartTrendlineFormat
             uid: 'excel!Excel.ChartTrendlineFormat:interface'
-          - name: чарттрендлинелабел
+          - name: ChartTrendlineLabel
             uid: 'excel!Excel.ChartTrendlineLabel:interface'
-          - name: чарттрендлинелабелформат
+          - name: ChartTrendlineLabelFormat
             uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
           - *ref_46
           - *ref_47
@@ -571,38 +571,38 @@ items:
           - *ref_49
           - name: ClientResult
             uid: 'excel!Excel.ClientResult:interface'
-          - name: колорскалекондитионалформат
+          - name: ColorScaleConditionalFormat
             uid: 'excel!Excel.ColorScaleConditionalFormat:interface'
           - name: Comment
             uid: 'excel!Excel.Comment:interface'
           - name: CommentCollection
             uid: 'excel!Excel.CommentCollection:interface'
-          - name: комментментион
+          - name: CommentMention
             uid: 'excel!Excel.CommentMention:interface'
           - name: CommentReply
             uid: 'excel!Excel.CommentReply:interface'
           - name: CommentReplyCollection
             uid: 'excel!Excel.CommentReplyCollection:interface'
-          - name: комментричконтент
+          - name: CommentRichContent
             uid: 'excel!Excel.CommentRichContent:interface'
           - *ref_50
           - name: ConditionalCellValueRule
             uid: 'excel!Excel.ConditionalCellValueRule:interface'
-          - name: кондитионалколорскалекритериа
+          - name: ConditionalColorScaleCriteria
             uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-          - name: кондитионалколорскалекритерион
+          - name: ConditionalColorScaleCriterion
             uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
           - *ref_51
           - *ref_52
-          - name: кондитионалдатабарнегативеформат
+          - name: ConditionalDataBarNegativeFormat
             uid: 'excel!Excel.ConditionalDataBarNegativeFormat:interface'
-          - name: кондитионалдатабарпоситивеформат
+          - name: ConditionalDataBarPositiveFormat
             uid: 'excel!Excel.ConditionalDataBarPositiveFormat:interface'
-          - name: кондитионалдатабарруле
+          - name: ConditionalDataBarRule
             uid: 'excel!Excel.ConditionalDataBarRule:interface'
           - name: ConditionalFormat
             uid: 'excel!Excel.ConditionalFormat:interface'
-          - name: кондитионалформатколлектион
+          - name: ConditionalFormatCollection
             uid: 'excel!Excel.ConditionalFormatCollection:interface'
           - *ref_53
           - *ref_54
@@ -617,20 +617,20 @@ items:
           - *ref_59
           - name: ConditionalPresetCriteriaRule
             uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
-          - name: кондитионалранжебордер
+          - name: ConditionalRangeBorder
             uid: 'excel!Excel.ConditionalRangeBorder:interface'
-          - name: кондитионалранжебордерколлектион
+          - name: ConditionalRangeBorderCollection
             uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
           - *ref_60
           - *ref_61
-          - name: кондитионалранжефилл
+          - name: ConditionalRangeFill
             uid: 'excel!Excel.ConditionalRangeFill:interface'
-          - name: кондитионалранжефонт
+          - name: ConditionalRangeFont
             uid: 'excel!Excel.ConditionalRangeFont:interface'
           - *ref_62
-          - name: кондитионалранжеформат
+          - name: ConditionalRangeFormat
             uid: 'excel!Excel.ConditionalRangeFormat:interface'
-          - name: кондитионалтексткомпарисонруле
+          - name: ConditionalTextComparisonRule
             uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
           - *ref_63
           - *ref_64
@@ -640,40 +640,40 @@ items:
           - *ref_66
           - name: CultureInfo
             uid: 'excel!Excel.CultureInfo:interface'
-          - name: кустомкондитионалформат
+          - name: CustomConditionalFormat
             uid: 'excel!Excel.CustomConditionalFormat:interface'
-          - name: кустомдатавалидатион
+          - name: CustomDataValidation
             uid: 'excel!Excel.CustomDataValidation:interface'
           - name: CustomProperty
             uid: 'excel!Excel.CustomProperty:interface'
-          - name: кустомпропертиколлектион
+          - name: CustomPropertyCollection
             uid: 'excel!Excel.CustomPropertyCollection:interface'
           - name: CustomXmlPart
             uid: 'excel!Excel.CustomXmlPart:interface'
           - name: CustomXmlPartCollection
             uid: 'excel!Excel.CustomXmlPartCollection:interface'
-          - name: кустомксмлпартскопедколлектион
+          - name: CustomXmlPartScopedCollection
             uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
-          - name: датабаркондитионалформат
+          - name: DataBarConditionalFormat
             uid: 'excel!Excel.DataBarConditionalFormat:interface'
           - name: DataConnectionCollection
             uid: 'excel!Excel.DataConnectionCollection:interface'
           - name: DataPivotHierarchy
             uid: 'excel!Excel.DataPivotHierarchy:interface'
-          - name: датапивосиерарчиколлектион
+          - name: DataPivotHierarchyCollection
             uid: 'excel!Excel.DataPivotHierarchyCollection:interface'
           - name: DataValidation
             uid: 'excel!Excel.DataValidation:interface'
           - *ref_67
-          - name: датавалидатионерроралерт
+          - name: DataValidationErrorAlert
             uid: 'excel!Excel.DataValidationErrorAlert:interface'
           - *ref_68
-          - name: датавалидатионпромпт
+          - name: DataValidationPrompt
             uid: 'excel!Excel.DataValidationPrompt:interface'
-          - name: датавалидатионруле
+          - name: DataValidationRule
             uid: 'excel!Excel.DataValidationRule:interface'
           - *ref_69
-          - name: датетимедатавалидатион
+          - name: DateTimeDataValidation
             uid: 'excel!Excel.DateTimeDataValidation:interface'
           - *ref_70
           - name: DocumentProperties
@@ -681,7 +681,7 @@ items:
           - *ref_71
           - *ref_72
           - *ref_73
-          - name: Фильтр
+          - name: Filter
             uid: 'excel!Excel.Filter:interface'
           - name: FilterCriteria
             uid: 'excel!Excel.FilterCriteria:interface'
@@ -692,11 +692,11 @@ items:
           - *ref_76
           - name: FilterPivotHierarchy
             uid: 'excel!Excel.FilterPivotHierarchy:interface'
-          - name: филтерпивосиерарчиколлектион
+          - name: FilterPivotHierarchyCollection
             uid: 'excel!Excel.FilterPivotHierarchyCollection:interface'
           - name: FormatProtection
             uid: 'excel!Excel.FormatProtection:interface'
-          - name: жеометрикшапе
+          - name: GeometricShape
             uid: 'excel!Excel.GeometricShape:interface'
           - *ref_77
           - *ref_78
@@ -708,25 +708,25 @@ items:
             uid: 'excel!Excel.HeaderFooterGroup:interface'
           - *ref_79
           - *ref_80
-          - name: Значок
+          - name: Icon
             uid: 'excel!Excel.Icon:interface'
           - *ref_81
-          - name: иконсеткондитионалформат
+          - name: IconSetConditionalFormat
             uid: 'excel!Excel.IconSetConditionalFormat:interface'
-          - name: Изображение
+          - name: Image
             uid: 'excel!Excel.Image:interface'
           - *ref_82
           - *ref_83
           - name: IterativeCalculation
             uid: 'excel!Excel.IterativeCalculation:interface'
-          - name: Линия
+          - name: Line
             uid: 'excel!Excel.Line:interface'
           - *ref_84
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:interface'
-          - name: намедитемаррайвалуес
+          - name: NamedItemArrayValues
             uid: 'excel!Excel.NamedItemArrayValues:interface'
           - name: NamedItemCollection
             uid: 'excel!Excel.NamedItemCollection:interface'
@@ -750,32 +750,32 @@ items:
           - *ref_90
           - name: PivotField
             uid: 'excel!Excel.PivotField:interface'
-          - name: пивотфиелдколлектион
+          - name: PivotFieldCollection
             uid: 'excel!Excel.PivotFieldCollection:interface'
           - *ref_91
           - name: PivotHierarchy
             uid: 'excel!Excel.PivotHierarchy:interface'
-          - name: пивосиерарчиколлектион
+          - name: PivotHierarchyCollection
             uid: 'excel!Excel.PivotHierarchyCollection:interface'
           - name: PivotItem
             uid: 'excel!Excel.PivotItem:interface'
-          - name: пивотитемколлектион
+          - name: PivotItemCollection
             uid: 'excel!Excel.PivotItemCollection:interface'
           - name: PivotLayout
             uid: 'excel!Excel.PivotLayout:interface'
           - *ref_92
-          - name: Сводная таблица
+          - name: PivotTable
             uid: 'excel!Excel.PivotTable:interface'
           - name: PivotTableCollection
             uid: 'excel!Excel.PivotTableCollection:interface'
-          - name: пивоттаблескопедколлектион
+          - name: PivotTableScopedCollection
             uid: 'excel!Excel.PivotTableScopedCollection:interface'
           - name: PivotTableStyle
             uid: 'excel!Excel.PivotTableStyle:interface'
           - name: PivotTableStyleCollection
             uid: 'excel!Excel.PivotTableStyleCollection:interface'
           - *ref_93
-          - name: пресеткритериакондитионалформат
+          - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:interface'
           - *ref_94
           - *ref_95
@@ -797,9 +797,9 @@ items:
             uid: 'excel!Excel.RangeFill:interface'
           - name: RangeFont
             uid: 'excel!Excel.RangeFont:interface'
-          - name: Формат диапазона
+          - name: RangeFormat
             uid: 'excel!Excel.RangeFormat:interface'
-          - name: ранжехиперлинк
+          - name: RangeHyperlink
             uid: 'excel!Excel.RangeHyperlink:interface'
           - name: RangeReference
             uid: 'excel!Excel.RangeReference:interface'
@@ -820,12 +820,12 @@ items:
             uid: 'excel!Excel.RequestContext:interface'
           - name: RowColumnPivotHierarchy
             uid: 'excel!Excel.RowColumnPivotHierarchy:interface'
-          - name: ровколумнпивосиерарчиколлектион
+          - name: RowColumnPivotHierarchyCollection
             uid: 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
           - name: SearchCriteria
             uid: 'excel!Excel.SearchCriteria:interface'
           - *ref_103
-          - name: Параметр
+          - name: Setting
             uid: 'excel!Excel.Setting:interface'
           - name: SettingCollection
             uid: 'excel!Excel.SettingCollection:interface'
@@ -858,9 +858,9 @@ items:
           - *ref_118
           - *ref_119
           - *ref_120
-          - name: шовасруле
+          - name: ShowAsRule
             uid: 'excel!Excel.ShowAsRule:interface'
-          - name: Срез
+          - name: Slicer
             uid: 'excel!Excel.Slicer:interface'
           - name: SlicerCollection
             uid: 'excel!Excel.SlicerCollection:interface'
@@ -882,12 +882,12 @@ items:
           - *ref_126
           - *ref_127
           - *ref_128
-          - name: Стиль
+          - name: Style
             uid: 'excel!Excel.Style:interface'
-          - name: стилеколлектион
+          - name: StyleCollection
             uid: 'excel!Excel.StyleCollection:interface'
           - *ref_129
-          - name: Промежуточные итоги
+          - name: Subtotals
             uid: 'excel!Excel.Subtotals:interface'
           - name: Table
             uid: 'excel!Excel.Table:interface'
@@ -897,7 +897,7 @@ items:
             uid: 'excel!Excel.TableColumn:interface'
           - name: TableColumnCollection
             uid: 'excel!Excel.TableColumnCollection:interface'
-          - name: Cell
+          - name: TableRow
             uid: 'excel!Excel.TableRow:interface'
           - name: TableRowCollection
             uid: 'excel!Excel.TableRowCollection:interface'
@@ -909,7 +909,7 @@ items:
             uid: 'excel!Excel.TableStyle:interface'
           - name: TableStyleCollection
             uid: 'excel!Excel.TableStyleCollection:interface'
-          - name: тексткондитионалформат
+          - name: TextConditionalFormat
             uid: 'excel!Excel.TextConditionalFormat:interface'
           - name: TextFrame
             uid: 'excel!Excel.TextFrame:interface'
@@ -919,18 +919,18 @@ items:
             uid: 'excel!Excel.TimelineStyle:interface'
           - name: TimelineStyleCollection
             uid: 'excel!Excel.TimelineStyleCollection:interface'
-          - name: топботтомкондитионалформат
+          - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:interface'
           - *ref_130
-          - name: Рабочая книга
+          - name: Workbook
             uid: 'excel!Excel.Workbook:interface'
-          - name: воркбукпротектион
+          - name: WorkbookProtection
             uid: 'excel!Excel.WorkbookProtection:interface'
-          - name: Лист
+          - name: Worksheet
             uid: 'excel!Excel.Worksheet:interface'
           - name: WorksheetCollection
             uid: 'excel!Excel.WorksheetCollection:interface'
-          - name: воркшитфризепанес
+          - name: WorksheetFreezePanes
             uid: 'excel!Excel.WorksheetFreezePanes:interface'
           - *ref_131
           - name: WorksheetProtection
