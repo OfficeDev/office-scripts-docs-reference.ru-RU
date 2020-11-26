@@ -1,43 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize:enum'
-    summary: Определяет тип разрешенного автоматического изменения размера.
-    name: ExcelScript.ShapeAutoSize
-    fullName: ExcelScript.ShapeAutoSize
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
-      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
-    summary: Используется комбинация схем автоматического изменения размера.
-    name: autoSizeMixed
-    fullName: autoSizeMixed
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
-    summary: Без автоподбора размера.
-    name: autoSizeNone
-    fullName: autoSizeNone
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
-    summary: Фигура корректируется по размеру текста.
-    name: autoSizeShapeToFitText
-    fullName: autoSizeShapeToFitText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
-    summary: Текст изменяется в соответствии с фигурой.
-    name: autoSizeTextToFitShape
-    fullName: autoSizeTextToFitShape
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeAutoSize
+uid: ExcelScript!ExcelScript.ShapeAutoSize:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeAutoSize
+summary: Определяет тип разрешенного автоматического изменения размера.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: autoSizeMixed
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member
+  package: ExcelScript!
+  summary: Используется комбинация схем автоматического изменения размера.
+- name: autoSizeNone
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member
+  package: ExcelScript!
+  summary: Без автоподбора размера.
+- name: autoSizeShapeToFitText
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member
+  package: ExcelScript!
+  summary: Фигура корректируется по размеру текста.
+- name: autoSizeTextToFitShape
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member
+  package: ExcelScript!
+  summary: Текст изменяется в соответствии с фигурой.
+metadata:
+  ms.openlocfilehash: 0157f57366a64fa30466de86e56cfcd69ba2e3be
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411868"

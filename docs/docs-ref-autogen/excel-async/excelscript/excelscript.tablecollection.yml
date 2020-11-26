@@ -1,159 +1,132 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableCollection:interface'
-    summary: 'Представляет коллекцию всех таблиц, входящих в состав книги или листа, в зависимости от способа доступа.'
-    name: Excel.TableCollection
-    fullName: Excel.TableCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableCollection#add:member(1)'
-      - 'excel!Excel.TableCollection#count:member'
-      - 'excel!Excel.TableCollection#getCount:member(1)'
-      - 'excel!Excel.TableCollection#getItem:member(1)'
-      - 'excel!Excel.TableCollection#getItemAt:member(1)'
-      - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.TableCollection#load:member(1)'
-  - uid: 'excel!Excel.TableCollection#add:member(1)'
-    summary: 'Создание таблицы. Объект или исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если добавить таблицу не удается (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.'
-    name: 'add(address, hasHeaders)'
-    fullName: 'add(address, hasHeaders)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(address: Range | string, hasHeaders: boolean): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: address
-          description: 'Объект Range, строковый адрес или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.'
-          type:
-            - 'excel!Excel.TableCollection#add~0:complex'
-        - id: hasHeaders
-          description: 'Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.TableCollection#count:member'
-    summary: Возвращает количество таблиц в книге.
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableCollection#getCount:member(1)'
-    summary: Получает количество таблиц в коллекции.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.TableCollection#getItem:member(1)'
-    summary: Получает таблицу по имени или идентификатору.
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Имя или ИД получаемой таблицы.
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
-    summary: Получает таблицу на основании ее позиции в коллекции.
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Значение индекса получаемого объекта. Используется нулевой индекс.
-          type:
-            - number
-  - uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-    summary: 'Получает таблицу по имени или ИД. Если таблица не существует, возвращает пустой объект.'
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Имя или ИД получаемой таблицы.
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Table:interface'
-    name: Table
-    fullName: Excel.Table
-  - uid: 'excel!Excel.TableCollection#add~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.TableCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.TableCollection
+uid: excel!Excel.TableCollection:interface
+package: excel!
+fullName: Excel.TableCollection
+summary: Представляет коллекцию всех таблиц, входящих в состав книги или листа, в зависимости от способа доступа.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: count
+  uid: excel!Excel.TableCollection#count:member
+  package: excel!
+  fullName: count
+  summary: Возвращает количество таблиц в книге.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+methods:
+- name: add(address, hasHeaders)
+  uid: excel!Excel.TableCollection#add:member(1)
+  package: excel!
+  fullName: add(address, hasHeaders)
+  summary: Создание таблицы. Объект или исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если добавить таблицу не удается (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(address: Range | string, hasHeaders: boolean): Table;'
+    parameters:
+    - id: address
+      description: Объект Range, строковый адрес или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: hasHeaders
+      description: Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.TableCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Получает количество таблиц в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.TableCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: Получает таблицу по имени или идентификатору.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): Table;'
+    parameters:
+    - id: key
+      description: Имя или ИД получаемой таблицы.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.TableCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: Получает таблицу на основании ее позиции в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Table;'
+    parameters:
+    - id: index
+      description: Значение индекса получаемого объекта. Используется нулевой индекс.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.TableCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: Получает таблицу по имени или ИД. Если таблица не существует, возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): Table;'
+    parameters:
+    - id: key
+      description: Имя или ИД получаемой таблицы.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: aac3d225eae7ec797fd01e903cc32f635f9a1912
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412750"

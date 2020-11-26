@@ -1,42 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-    name: ExcelScript.HeaderFooterState
-    fullName: ExcelScript.HeaderFooterState
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
-    summary: Для всех печатаемых страниц используется только один общий заголовок и нижний колонтитул.
-    name: default
-    fullName: default
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
-    summary: 'Существует отдельная первая страница верхнего или нижнего колонтитула, а также общий заголовок и нижний колонтитул для всех остальных страниц.'
-    name: firstAndDefault
-    fullName: firstAndDefault
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
-    summary: 'Существует отдельная первая страница верхнего и нижнего колонтитула, а для четных и нечетных страниц — отдельные колонтитулы.'
-    name: firstOddAndEven
-    fullName: firstOddAndEven
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
-    summary: Для четных и нечетных страниц существует другой колонтитул.
-    name: oddAndEven
-    fullName: oddAndEven
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.HeaderFooterState
+uid: ExcelScript!ExcelScript.HeaderFooterState:enum
+package: ExcelScript!
+fullName: ExcelScript.HeaderFooterState
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: default
+  uid: ExcelScript!ExcelScript.HeaderFooterState.default:member
+  package: ExcelScript!
+  summary: Для всех печатаемых страниц используется только один общий заголовок и нижний колонтитул.
+- name: firstAndDefault
+  uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
+  package: ExcelScript!
+  summary: Существует отдельная первая страница верхнего или нижнего колонтитула, а также общий заголовок и нижний колонтитул для всех остальных страниц.
+- name: firstOddAndEven
+  uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
+  package: ExcelScript!
+  summary: Существует отдельная первая страница верхнего и нижнего колонтитула, а для четных и нечетных страниц — отдельные колонтитулы.
+- name: oddAndEven
+  uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
+  package: ExcelScript!
+  summary: Для четных и нечетных страниц существует другой колонтитул.
+metadata:
+  ms.openlocfilehash: c8340881b74c9fb1761bbe3721c6031136668e3b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412346"

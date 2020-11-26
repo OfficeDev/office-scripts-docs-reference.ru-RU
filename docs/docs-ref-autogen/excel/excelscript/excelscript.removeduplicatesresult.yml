@@ -1,39 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-    summary: Представляет результаты метода removeDuplicates в диапазоне
-    name: ExcelScript.RemoveDuplicatesResult
-    fullName: ExcelScript.RemoveDuplicatesResult
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-    summary: 'Количество повторяющихся строк, удаленных операцией.'
-    name: getRemoved()
-    fullName: getRemoved()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRemoved(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-    summary: 'Количество оставшихся уникальных строк, присутствующих в получившемся диапазоне.'
-    name: getUniqueRemaining()
-    fullName: getUniqueRemaining()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUniqueRemaining(): number;'
-      return:
-        type:
-          - number
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.RemoveDuplicatesResult
+uid: ExcelScript!ExcelScript.RemoveDuplicatesResult:interface
+package: ExcelScript!
+fullName: ExcelScript.RemoveDuplicatesResult
+summary: Представляет результаты метода removeDuplicates в диапазоне
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getRemoved()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)
+  package: ExcelScript!
+  fullName: getRemoved()
+  summary: Количество повторяющихся строк, удаленных операцией.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRemoved(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUniqueRemaining()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)
+  package: ExcelScript!
+  fullName: getUniqueRemaining()
+  summary: Количество оставшихся уникальных строк, присутствующих в получившемся диапазоне.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUniqueRemaining(): number;'
+    return:
+      type: number
+      description: ''
+metadata:
+  ms.openlocfilehash: 1b7a861288171b4c69d9ed8f0cc1089cabf14c16
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411889"

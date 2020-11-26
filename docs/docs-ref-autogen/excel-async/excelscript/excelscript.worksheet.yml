@@ -1,963 +1,675 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Worksheet:interface'
-    summary: 'Лист Excel представляет собой сетку ячеек. Она может содержать данные, таблицы, диаграммы и т. д. Чтобы узнать больше об объектной модели листа, прочтите [Работа с листами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.'
-    name: Excel.Worksheet
-    fullName: Excel.Worksheet
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Worksheet#activate:member(1)'
-      - 'excel!Excel.Worksheet#autoFilter:member'
-      - 'excel!Excel.Worksheet#calculate:member(1)'
-      - 'excel!Excel.Worksheet#charts:member'
-      - 'excel!Excel.Worksheet#comments:member'
-      - 'excel!Excel.Worksheet#copy:member(1)'
-      - 'excel!Excel.Worksheet#delete:member(1)'
-      - 'excel!Excel.Worksheet#enableCalculation:member'
-      - 'excel!Excel.Worksheet#findAll:member(1)'
-      - 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#freezePanes:member'
-      - 'excel!Excel.Worksheet#getCell:member(1)'
-      - 'excel!Excel.Worksheet#getNext:member(1)'
-      - 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#getPrevious:member(1)'
-      - 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#getRange:member(1)'
-      - 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
-      - 'excel!Excel.Worksheet#getRanges:member(1)'
-      - 'excel!Excel.Worksheet#getUsedRange:member(1)'
-      - 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#horizontalPageBreaks:member'
-      - 'excel!Excel.Worksheet#id:member'
-      - 'excel!Excel.Worksheet#load:member(1)'
-      - 'excel!Excel.Worksheet#name:member'
-      - 'excel!Excel.Worksheet#names:member'
-      - 'excel!Excel.Worksheet#pageLayout:member'
-      - 'excel!Excel.Worksheet#pivotTables:member'
-      - 'excel!Excel.Worksheet#position:member'
-      - 'excel!Excel.Worksheet#protection:member'
-      - 'excel!Excel.Worksheet#replaceAll:member(1)'
-      - 'excel!Excel.Worksheet#shapes:member'
-      - 'excel!Excel.Worksheet#showGridlines:member'
-      - 'excel!Excel.Worksheet#showHeadings:member'
-      - 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
-      - 'excel!Excel.Worksheet#slicers:member'
-      - 'excel!Excel.Worksheet#standardHeight:member'
-      - 'excel!Excel.Worksheet#standardWidth:member'
-      - 'excel!Excel.Worksheet#tabColor:member'
-      - 'excel!Excel.Worksheet#tables:member'
-      - 'excel!Excel.Worksheet#verticalPageBreaks:member'
-      - 'excel!Excel.Worksheet#visibility:member'
-  - uid: 'excel!Excel.Worksheet#activate:member(1)'
-    summary: Активация листа в пользовательском интерфейсе Excel.
-    name: activate()
-    fullName: activate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'activate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Worksheet#autoFilter:member'
-    summary: Представляет объект AutoFilter листа.
-    name: autoFilter
-    fullName: autoFilter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly autoFilter: AutoFilter;'
-      return:
-        type:
-          - 'excel!Excel.AutoFilter:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              let farmData = sheet.getUsedRange();
-
-              // This filter will only show the rows with the top 25% of values in column 3.
-              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#calculate:member(1)'
-    summary: Вычисляет все ячейки на листе.
-    name: calculate(markAllDirty)
-    fullName: calculate(markAllDirty)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(markAllDirty: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markAllDirty
-          description: 'Значение true, чтобы пометить все как "грязный".'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#charts:member'
-    summary: 'Возвращает коллекцию диаграмм, которые являются частью листа.'
-    name: charts
-    fullName: charts
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly charts: ChartCollection;'
-      return:
-        type:
-          - 'excel!Excel.ChartCollection:interface'
-  - uid: 'excel!Excel.Worksheet#comments:member'
-    summary: Возвращает коллекцию всех объектов Comments на листе.
-    name: comments
-    fullName: comments
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly comments: CommentCollection;'
-      return:
-        type:
-          - 'excel!Excel.CommentCollection:interface'
-  - uid: 'excel!Excel.Worksheet#copy:member(1)'
-    summary: Копирует лист и размещает его в указанной позиции.
-    name: 'copy(positionType, relativeTo)'
-    fullName: 'copy(positionType, relativeTo)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copy(
-                    positionType?:
-                        | WorksheetPositionType
+### YamlMime:TSType
+name: Excel.Worksheet
+uid: excel!Excel.Worksheet:interface
+package: excel!
+fullName: Excel.Worksheet
+summary: Лист Excel представляет собой сетку ячеек. Она может содержать данные, таблицы, диаграммы и т. д. Чтобы узнать больше об объектной модели листа, прочтите [Работа с листами с помощью API JavaScript для Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: autoFilter
+  uid: excel!Excel.Worksheet#autoFilter:member
+  package: excel!
+  fullName: autoFilter
+  summary: Представляет объект AutoFilter листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly autoFilter: AutoFilter;'
+    return:
+      type: <xref uid="excel!Excel.AutoFilter:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    let farmData = sheet.getUsedRange();\n\n    // This filter will only show the rows with the top 25% of values in column 3.\n    sheet.autoFilter.apply(farmData, 3, { criterion1: \"25\", filterOn: Excel.FilterOn.topPercent });\n    await context.sync();\n}\n```"
+- name: charts
+  uid: excel!Excel.Worksheet#charts:member
+  package: excel!
+  fullName: charts
+  summary: Возвращает коллекцию диаграмм, которые являются частью листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly charts: ChartCollection;'
+    return:
+      type: <xref uid="excel!Excel.ChartCollection:interface" />
+- name: comments
+  uid: excel!Excel.Worksheet#comments:member
+  package: excel!
+  fullName: comments
+  summary: Возвращает коллекцию всех объектов Comments на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly comments: CommentCollection;'
+    return:
+      type: <xref uid="excel!Excel.CommentCollection:interface" />
+- name: enableCalculation
+  uid: excel!Excel.Worksheet#enableCalculation:member
+  package: excel!
+  fullName: enableCalculation
+  summary: Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enableCalculation: boolean;'
+    return:
+      type: boolean
+- name: freezePanes
+  uid: excel!Excel.Worksheet#freezePanes:member
+  package: excel!
+  fullName: freezePanes
+  summary: Получает объект, который можно использовать для работы с замороженными областями на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly freezePanes: WorksheetFreezePanes;'
+    return:
+      type: <xref uid="excel!Excel.WorksheetFreezePanes:interface" />
+- name: horizontalPageBreaks
+  uid: excel!Excel.Worksheet#horizontalPageBreaks:member
+  package: excel!
+  fullName: horizontalPageBreaks
+  summary: Получает коллекцию горизонтальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly horizontalPageBreaks: PageBreakCollection;'
+    return:
+      type: <xref uid="excel!Excel.PageBreakCollection:interface" />
+- name: id
+  uid: excel!Excel.Worksheet#id:member
+  package: excel!
+  fullName: id
+  summary: Возвращает значение, однозначно идентифицирующее лист в данной книге. Значение идентификатора остается прежним, даже если переименовать или переместить лист.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.Worksheet#name:member
+  package: excel!
+  fullName: name
+  summary: Отображаемое имя листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: names
+  uid: excel!Excel.Worksheet#names:member
+  package: excel!
+  fullName: names
+  summary: Коллекция имен, относящих к текущему листу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly names: NamedItemCollection;'
+    return:
+      type: <xref uid="excel!Excel.NamedItemCollection:interface" />
+- name: pageLayout
+  uid: excel!Excel.Worksheet#pageLayout:member
+  package: excel!
+  fullName: pageLayout
+  summary: Получает объект PageLayout листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly pageLayout: PageLayout;'
+    return:
+      type: <xref uid="excel!Excel.PageLayout:interface" />
+- name: pivotTables
+  uid: excel!Excel.Worksheet#pivotTables:member
+  package: excel!
+  fullName: pivotTables
+  summary: Коллекция сводных таблиц на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly pivotTables: PivotTableCollection;'
+    return:
+      type: <xref uid="excel!Excel.PivotTableCollection:interface" />
+- name: position
+  uid: excel!Excel.Worksheet#position:member
+  package: excel!
+  fullName: position
+  summary: Положение листа (начиная с нуля) в книге.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'position: number;'
+    return:
+      type: number
+- name: protection
+  uid: excel!Excel.Worksheet#protection:member
+  package: excel!
+  fullName: protection
+  summary: Возвращает объект защиты листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly protection: WorksheetProtection;'
+    return:
+      type: <xref uid="excel!Excel.WorksheetProtection:interface" />
+- name: shapes
+  uid: excel!Excel.Worksheet#shapes:member
+  package: excel!
+  fullName: shapes
+  summary: Возвращает коллекцию всех объектов Shape на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly shapes: ShapeCollection;'
+    return:
+      type: <xref uid="excel!Excel.ShapeCollection:interface" />
+- name: showGridlines
+  uid: excel!Excel.Worksheet#showGridlines:member
+  package: excel!
+  fullName: showGridlines
+  summary: Указывает, видимы ли линии сетки для пользователя.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showGridlines: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    sheet.showGridlines = true;\n\n    await context.sync();\n}\n```"
+- name: showHeadings
+  uid: excel!Excel.Worksheet#showHeadings:member
+  package: excel!
+  fullName: showHeadings
+  summary: Указывает, видимы ли заголовки для пользователя.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showHeadings: boolean;'
+    return:
+      type: boolean
+- name: slicers
+  uid: excel!Excel.Worksheet#slicers:member
+  package: excel!
+  fullName: slicers
+  summary: Возвращает коллекцию срезов, которые входят в состав рабочего листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly slicers: SlicerCollection;'
+    return:
+      type: <xref uid="excel!Excel.SlicerCollection:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Pivot\");\n    let slicer = sheet.slicers.add(\n        \"Farm Sales\", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */\n        \"Type\" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */\n    );\n    slicer.name = \"Fruit Slicer\";\n    await context.sync();\n}\n```"
+- name: standardHeight
+  uid: excel!Excel.Worksheet#standardHeight:member
+  package: excel!
+  fullName: standardHeight
+  summary: Возвращает стандартную (по умолчанию) высоту всех строк на листе (в пунктах).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly standardHeight: number;'
+    return:
+      type: number
+- name: standardWidth
+  uid: excel!Excel.Worksheet#standardWidth:member
+  package: excel!
+  fullName: standardWidth
+  summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'standardWidth: number;'
+    return:
+      type: number
+- name: tabColor
+  uid: excel!Excel.Worksheet#tabColor:member
+  package: excel!
+  fullName: tabColor
+  summary: Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tabColor: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let activeSheet = context.workbook.worksheets.getActiveWorksheet();\n    activeSheet.tabColor = \"#FF0000\";\n\n    await context.sync();\n}\n```"
+- name: tables
+  uid: excel!Excel.Worksheet#tables:member
+  package: excel!
+  fullName: tables
+  summary: Коллекция таблиц, имеющихся на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly tables: TableCollection;'
+    return:
+      type: <xref uid="excel!Excel.TableCollection:interface" />
+- name: verticalPageBreaks
+  uid: excel!Excel.Worksheet#verticalPageBreaks:member
+  package: excel!
+  fullName: verticalPageBreaks
+  summary: Получает коллекцию вертикальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly verticalPageBreaks: PageBreakCollection;'
+    return:
+      type: <xref uid="excel!Excel.PageBreakCollection:interface" />
+- name: visibility
+  uid: excel!Excel.Worksheet#visibility:member
+  package: excel!
+  fullName: visibility
+  summary: Видимость листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'visibility: SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
+    return:
+      type: <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden" | "VeryHidden"
+methods:
+- name: activate()
+  uid: excel!Excel.Worksheet#activate:member(1)
+  package: excel!
+  fullName: activate()
+  summary: Активация листа в пользовательском интерфейсе Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: calculate(markAllDirty)
+  uid: excel!Excel.Worksheet#calculate:member(1)
+  package: excel!
+  fullName: calculate(markAllDirty)
+  summary: Вычисляет все ячейки на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(markAllDirty: boolean): void;'
+    parameters:
+    - id: markAllDirty
+      description: Значение true, чтобы пометить все как "грязный".
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: copy(positionType, relativeTo)
+  uid: excel!Excel.Worksheet#copy:member(1)
+  package: excel!
+  fullName: copy(positionType, relativeTo)
+  summary: Копирует лист и размещает его в указанной позиции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copy(
+                  positionType?:
+                      | WorksheetPositionType
+                      | "None"
+                      | "Before"
+                      | "After"
+                      | "Beginning"
+                      | "End",
+                  relativeTo?: Worksheet
+              ): Worksheet;
+    parameters:
+    - id: positionType
+      description: Расположение в книге, в которое будет помещен созданный лист. Значение по умолчанию — "None", которое вставляет лист в начало листа.
+      type: >-
+        | <xref uid="excel!Excel.WorksheetPositionType:enum" />
                         | "None"
                         | "Before"
                         | "After"
                         | "Beginning"
-                        | "End",
-                    relativeTo?: Worksheet
-                ): Worksheet;
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let myWorkbook = context.workbook;
-              let sampleSheet = myWorkbook.worksheets.getActiveWorksheet();
-              let copiedSheet = sampleSheet.copy("End")
-
-              sampleSheet.load("name");
-              copiedSheet.load("name");
-
-              await context.sync();
-
-              console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
-          }
-          ```
-      parameters:
-        - id: positionType
-          description: 'Расположение в книге, в которое будет помещен созданный лист. Значение по умолчанию — "None", которое вставляет лист в начало листа.'
-          type:
-            - 'excel!Excel.Worksheet#copy~0:complex'
-        - id: relativeTo
-          description: 'Существующий лист, который определяет положение вновь созданного листа. Это необходимо, только если `positionType` это "до" или "после".'
-          type:
-            - 'excel!Excel.Worksheet:interface'
-  - uid: 'excel!Excel.Worksheet#delete:member(1)'
-    summary: 'Удаляет лист из книги. Обратите внимание, что если для отображения листа задано значение "Верихидден", операция удаления завершится с `InvalidOperation` исключением. Прежде чем удалять его, необходимо сначала изменить его видимость на скрытую или видимую.'
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Worksheet#enableCalculation:member'
-    summary: 'Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.'
-    name: enableCalculation
-    fullName: enableCalculation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableCalculation: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Worksheet#findAll:member(1)'
-    summary: 'Находит все вхождения определенной строки на основе указанных условий и возвращает их в виде объекта RangeAreas, состоящего из одного или нескольких прямоугольных диапазонов.'
-    name: 'findAll(text, criteria)'
-    fullName: 'findAll(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: text
-          description: Строка для поиска.
-          type:
-            - string
-        - id: criteria
-          description: 'Дополнительные условия поиска, в том числе поиск соответствия требованиям к ячейкам целиком или с учетом регистра.'
-          type:
-            - 'excel!Excel.WorksheetSearchCriteria:interface'
-  - uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
-    summary: 'Находит все вхождения определенной строки на основе указанных условий и возвращает их в виде объекта RangeAreas, состоящего из одного или нескольких прямоугольных диапазонов.'
-    name: 'findAllOrNullObject(text, criteria)'
-    fullName: 'findAllOrNullObject(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        findAllOrNullObject(
-                    text: string,
-                    criteria: WorksheetSearchCriteria
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let foundRanges = sheet.findAllOrNullObject("Complete", {
-                  completeMatch: true,
-                  matchCase: false
-              });
-
-              await context.sync();
-
-              if (foundRanges.isNullObject) {
-                  console.log("No complete projects");
-              } else {
-                  foundRanges.format.fill.color = "green"
-              }
-          }
-          ```
-      parameters:
-        - id: text
-          description: Строка для поиска.
-          type:
-            - string
-        - id: criteria
-          description: 'Дополнительные условия поиска, в том числе поиск соответствия требованиям к ячейкам целиком или с учетом регистра.'
-          type:
-            - 'excel!Excel.WorksheetSearchCriteria:interface'
-  - uid: 'excel!Excel.Worksheet#freezePanes:member'
-    summary: 'Получает объект, который можно использовать для работы с замороженными областями на листе.'
-    name: freezePanes
-    fullName: freezePanes
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly freezePanes: WorksheetFreezePanes;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetFreezePanes:interface'
-  - uid: 'excel!Excel.Worksheet#getCell:member(1)'
-    summary: 'Получает объект диапазона, содержащий одну ячейку, по номеру строки и столбца. Ячейка может находиться вне границ родительского диапазона, пока она остается в сетке листа.'
-    name: 'getCell(row, column)'
-    fullName: 'getCell(row, column)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCell(row: number, column: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: 'Номер строки ячейки, которую требуется извлечь. Используется нулевой индекс.'
-          type:
-            - number
-        - id: column
-          description: 'Номер столбца ячейки, которую требуется извлечь. Используется нулевой индекс.'
-          type:
-            - number
-  - uid: 'excel!Excel.Worksheet#getNext:member(1)'
-    summary: 'Получает лист, следующий по отношению к элементу. При отсутствии листов, указанных ниже, этот метод вызовет ошибку.'
-    name: getNext(visibleOnly)
-    fullName: getNext(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNext(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
-    summary: 'Получает лист, следующий по отношению к элементу. Если после этого листа нет ни одного листа, этот метод возвратит нулевой объект.'
-    name: getNextOrNullObject(visibleOnly)
-    fullName: getNextOrNullObject(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNextOrNullObject(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
-    summary: 'Получает лист, который предшествует этому. Если нет предыдущих листов, этот метод выдаст ошибку.'
-    name: getPrevious(visibleOnly)
-    fullName: getPrevious(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
-    summary: 'Получает лист, который предшествует этому. Если нет предыдущих листов, этот метод возвратит значение NULL обжет.'
-    name: getPreviousOrNullObject(visibleOnly)
-    fullName: getPreviousOrNullObject(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPreviousOrNullObject(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getRange:member(1)'
-    summary: 'Получает объект Range, представляющий отдельный прямоугольный блок ячеек, заданный по адресу или имени.'
-    name: getRange(address)
-    fullName: getRange(address)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(address?: string): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: address
-          description: 'Необязательный параметр. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
-          type:
-            - string
-  - uid: 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
-    summary: 'Получает объект диапазона, начинающегося с определенных строки и столбца и занимающего определенное количество строк и столбцов.'
-    name: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getRangeByIndexes(
-                    startRow: number,
-                    startColumn: number,
-                    rowCount: number,
-                    columnCount: number
-                ): Range;
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: startRow
-          description: Строка начала (с нулевым индексированием).
-          type:
-            - number
-        - id: startColumn
-          description: Столбец "начало" (с нулевым индексом).
-          type:
-            - number
-        - id: rowCount
-          description: 'Количество строк, включаемых в диапазон.'
-          type:
-            - number
-        - id: columnCount
-          description: 'Число столбцов, включаемых в диапазон.'
-          type:
-            - number
-  - uid: 'excel!Excel.Worksheet#getRanges:member(1)'
-    summary: 'Получает объект RangeAreas, представляющий один или несколько блоков прямоугольных диапазонов, указанных по адресу или имени.'
-    name: getRanges(address)
-    fullName: getRanges(address)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRanges(address?: string): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              let specifiedRanges = sheet.getRanges("D3:D5, G3:G5");
-              specifiedRanges.format.fill.color = "pink";
-
-              await context.sync();
-          })
-          ```
-      parameters:
-        - id: address
-          description: 'Необязательный параметр. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
-          type:
-            - string
-  - uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
-    summary: 'Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки с определенным значением или форматированием. Если лист пуст, эта функция возвратит верхнюю левую ячейку (то есть *не* выдает ошибку).'
-    name: getUsedRange(valuesOnly)
-    fullName: getUsedRange(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRange(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: 'Необязательный параметр. Если этот параметр имеет значение true, учитываются только ячейки со значениями в качестве используемых ячеек (игнорируя форматирование).'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
-    summary: "Используемый диапазон\_— это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если весь лист пустой, эта функция возвращает пустой объект."
-    name: getUsedRangeOrNullObject(valuesOnly)
-    fullName: getUsedRangeOrNullObject(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: Необязательный параметр. Учитывает только ячейки со значениями.
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#horizontalPageBreaks:member'
-    summary: Получает коллекцию горизонтальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
-    name: horizontalPageBreaks
-    fullName: horizontalPageBreaks
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly horizontalPageBreaks: PageBreakCollection;'
-      return:
-        type:
-          - 'excel!Excel.PageBreakCollection:interface'
-  - uid: 'excel!Excel.Worksheet#id:member'
-    summary: 'Возвращает значение, однозначно идентифицирующее лист в данной книге. Значение идентификатора остается прежним, даже если переименовать или переместить лист.'
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Worksheet#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Worksheet#name:member'
-    summary: Отображаемое имя листа.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Worksheet#names:member'
-    summary: 'Коллекция имен, относящих к текущему листу.'
-    name: names
-    fullName: names
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly names: NamedItemCollection;'
-      return:
-        type:
-          - 'excel!Excel.NamedItemCollection:interface'
-  - uid: 'excel!Excel.Worksheet#pageLayout:member'
-    summary: Получает объект PageLayout листа.
-    name: pageLayout
-    fullName: pageLayout
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly pageLayout: PageLayout;'
-      return:
-        type:
-          - 'excel!Excel.PageLayout:interface'
-  - uid: 'excel!Excel.Worksheet#pivotTables:member'
-    summary: Коллекция сводных таблиц на листе.
-    name: pivotTables
-    fullName: pivotTables
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly pivotTables: PivotTableCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotTableCollection:interface'
-  - uid: 'excel!Excel.Worksheet#position:member'
-    summary: Положение листа (начиная с нуля) в книге.
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'position: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Worksheet#protection:member'
-    summary: Возвращает объект защиты листа.
-    name: protection
-    fullName: protection
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly protection: WorksheetProtection;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetProtection:interface'
-  - uid: 'excel!Excel.Worksheet#replaceAll:member(1)'
-    summary: 'Находит и заменяет определенную строку на основе условий, указанных в текущем листе.'
-    name: 'replaceAll(text, replacement, criteria)'
-    fullName: 'replaceAll(text, replacement, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        replaceAll(
-                    text: string,
-                    replacement: string,
-                    criteria: ReplaceCriteria
-                ): ClientResult<number>;
-      return:
-        type:
-          - 'excel!Excel.Worksheet#replaceAll~0:complex'
-        description: ''
-      parameters:
-        - id: text
-          description: Строка для поиска.
-          type:
-            - string
-        - id: replacement
-          description: Строка для замены оригинала на.
-          type:
-            - string
-        - id: criteria
-          description: Дополнительные условия замены.
-          type:
-            - 'excel!Excel.ReplaceCriteria:interface'
-  - uid: 'excel!Excel.Worksheet#shapes:member'
-    summary: Возвращает коллекцию всех объектов Shape на листе.
-    name: shapes
-    fullName: shapes
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly shapes: ShapeCollection;'
-      return:
-        type:
-          - 'excel!Excel.ShapeCollection:interface'
-  - uid: 'excel!Excel.Worksheet#showGridlines:member'
-    summary: 'Указывает, видимы ли линии сетки для пользователя.'
-    name: showGridlines
-    fullName: showGridlines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showGridlines: boolean;'
-      return:
-        type:
-          - boolean
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.showGridlines = true;
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#showHeadings:member'
-    summary: 'Указывает, видимы ли заголовки для пользователя.'
-    name: showHeadings
-    fullName: showHeadings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showHeadings: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
-    summary: 'Отображает группы строк или столбцов по их уровням структуры. Группирование и суммирование списка данных на листе. `rowLevels`Параметры и `columnLevels` определяют, сколько уровней структуры будет отображаться. Допустимый диапазон аргументов находится в пределах от 0 до 8. Значение 0 не изменяет текущее отображение. Значение, превышающее текущее число уровней, отображает все уровни.'
-    name: 'showOutlineLevels(rowLevels, columnLevels)'
-    fullName: 'showOutlineLevels(rowLevels, columnLevels)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // This collapses the entire outline.
-              sheet.showOutlineLevels(1, 1);
-              await context.sync();
-          }
-          ```
-          ```typescript
-          Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // This shows the top 3 outline levels; collapsing any additional sublevels.
-              sheet.showOutlineLevels(3, 3);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: rowLevels
-          description: Количество отображаемых уровней строк в структуре.
-          type:
-            - number
-        - id: columnLevels
-          description: Число уровней столбцов структуры для отображения.
-          type:
-            - number
-  - uid: 'excel!Excel.Worksheet#slicers:member'
-    summary: 'Возвращает коллекцию срезов, которые входят в состав рабочего листа.'
-    name: slicers
-    fullName: slicers
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly slicers: SlicerCollection;'
-      return:
-        type:
-          - 'excel!Excel.SlicerCollection:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Pivot");
-              let slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#standardHeight:member'
-    summary: Возвращает стандартную (по умолчанию) высоту всех строк на листе (в пунктах).
-    name: standardHeight
-    fullName: standardHeight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly standardHeight: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Worksheet#standardWidth:member'
-    summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
-    name: standardWidth
-    fullName: standardWidth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'standardWidth: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Worksheet#tabColor:member'
-    summary: 'Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.'
-    name: tabColor
-    fullName: tabColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tabColor: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.tabColor = "#FF0000";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#tables:member'
-    summary: 'Коллекция таблиц, имеющихся на листе.'
-    name: tables
-    fullName: tables
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly tables: TableCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection:interface'
-  - uid: 'excel!Excel.Worksheet#verticalPageBreaks:member'
-    summary: Получает коллекцию вертикальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
-    name: verticalPageBreaks
-    fullName: verticalPageBreaks
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly verticalPageBreaks: PageBreakCollection;'
-      return:
-        type:
-          - 'excel!Excel.PageBreakCollection:interface'
-  - uid: 'excel!Excel.Worksheet#visibility:member'
-    summary: Видимость листа.
-    name: visibility
-    fullName: visibility
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visibility: SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
-      return:
-        type:
-          - 'excel!Excel.Worksheet#visibility~0:complex'
-references:
-  - uid: 'excel!Excel.AutoFilter:interface'
-    name: AutoFilter
-    fullName: Excel.AutoFilter
-  - uid: 'excel!Excel.ChartCollection:interface'
-    name: ChartCollection
-    fullName: Excel.ChartCollection
-  - uid: 'excel!Excel.CommentCollection:interface'
-    name: CommentCollection
-    fullName: Excel.CommentCollection
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
-  - uid: 'excel!Excel.Worksheet#copy~0:complex'
-    name: |-
-      | WorksheetPositionType
-                      | "None"
-                      | "Before"
-                      | "After"
-                      | "Beginning"
-                      | "End"
-    fullName: |-
-      | Excel.WorksheetPositionType
-                      | "None"
-                      | "Before"
-                      | "After"
-                      | "Beginning"
-                      | "End"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.WorksheetPositionType:enum'
-        name: WorksheetPositionType
-        fullName: Excel.WorksheetPositionType
-      - name: |2-
-
-                          | "None"
-                          | "Before"
-                          | "After"
-                          | "Beginning"
-                          | "End"
-        fullName: |2-
-
-                          | "None"
-                          | "Before"
-                          | "After"
-                          | "Beginning"
-                          | "End"
-  - uid: 'excel!Excel.RangeAreas:interface'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
-  - uid: 'excel!Excel.WorksheetSearchCriteria:interface'
-    name: WorksheetSearchCriteria
-    fullName: Excel.WorksheetSearchCriteria
-  - uid: 'excel!Excel.WorksheetFreezePanes:interface'
-    name: WorksheetFreezePanes
-    fullName: Excel.WorksheetFreezePanes
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.PageBreakCollection:interface'
-    name: PageBreakCollection
-    fullName: Excel.PageBreakCollection
-  - uid: 'excel!Excel.NamedItemCollection:interface'
-    name: NamedItemCollection
-    fullName: Excel.NamedItemCollection
-  - uid: 'excel!Excel.PageLayout:interface'
-    name: PageLayout
-    fullName: Excel.PageLayout
-  - uid: 'excel!Excel.PivotTableCollection:interface'
-    name: PivotTableCollection
-    fullName: Excel.PivotTableCollection
-  - uid: 'excel!Excel.WorksheetProtection:interface'
-    name: WorksheetProtection
-    fullName: Excel.WorksheetProtection
-  - uid: 'excel!Excel.Worksheet#replaceAll~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: Excel.ReplaceCriteria
-  - uid: 'excel!Excel.ShapeCollection:interface'
-    name: ShapeCollection
-    fullName: Excel.ShapeCollection
-  - uid: 'excel!Excel.SlicerCollection:interface'
-    name: SlicerCollection
-    fullName: Excel.SlicerCollection
-  - uid: 'excel!Excel.TableCollection:interface'
-    name: TableCollection
-    fullName: Excel.TableCollection
-  - uid: 'excel!Excel.Worksheet#visibility~0:complex'
-    name: SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
-    fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
-    spec.typeScript:
-      - uid: 'excel!Excel.SheetVisibility:enum'
-        name: SheetVisibility
-        fullName: Excel.SheetVisibility
-      - name: ' | "Visible" | "Hidden" | "VeryHidden"'
-        fullName: ' | "Visible" | "Hidden" | "VeryHidden"'
+                        | "End"
+    - id: relativeTo
+      description: Существующий лист, который определяет положение вновь созданного листа. Это необходимо, только если `positionType` это "до" или "после".
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let myWorkbook = context.workbook;\n    let sampleSheet = myWorkbook.worksheets.getActiveWorksheet();\n    let copiedSheet = sampleSheet.copy(\"End\")\n\n    sampleSheet.load(\"name\");\n    copiedSheet.load(\"name\");\n\n    await context.sync();\n\n    console.log(\"'\" + sampleSheet.name + \"' was copied to '\" + copiedSheet.name + \"'\")\n}\n```"
+- name: delete()
+  uid: excel!Excel.Worksheet#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Удаляет лист из книги. Обратите внимание, что если для отображения листа задано значение "Верихидден", операция удаления завершится с `InvalidOperation` исключением. Прежде чем удалять его, необходимо сначала изменить его видимость на скрытую или видимую.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: findAll(text, criteria)
+  uid: excel!Excel.Worksheet#findAll:member(1)
+  package: excel!
+  fullName: findAll(text, criteria)
+  summary: Находит все вхождения определенной строки на основе указанных условий и возвращает их в виде объекта RangeAreas, состоящего из одного или нескольких прямоугольных диапазонов.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
+    parameters:
+    - id: text
+      description: Строка для поиска.
+      type: string
+    - id: criteria
+      description: Дополнительные условия поиска, в том числе поиск соответствия требованиям к ячейкам целиком или с учетом регистра.
+      type: <xref uid="excel!Excel.WorksheetSearchCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: findAllOrNullObject(text, criteria)
+  uid: excel!Excel.Worksheet#findAllOrNullObject:member(1)
+  package: excel!
+  fullName: findAllOrNullObject(text, criteria)
+  summary: Находит все вхождения определенной строки на основе указанных условий и возвращает их в виде объекта RangeAreas, состоящего из одного или нескольких прямоугольных диапазонов.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      findAllOrNullObject(
+                  text: string,
+                  criteria: WorksheetSearchCriteria
+              ): RangeAreas;
+    parameters:
+    - id: text
+      description: Строка для поиска.
+      type: string
+    - id: criteria
+      description: Дополнительные условия поиска, в том числе поиск соответствия требованиям к ячейкам целиком или с учетом регистра.
+      type: <xref uid="excel!Excel.WorksheetSearchCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let foundRanges = sheet.findAllOrNullObject(\"Complete\", {\n        completeMatch: true,\n        matchCase: false\n    });\n\n    await context.sync();\n\n    if (foundRanges.isNullObject) {\n        console.log(\"No complete projects\");\n    } else {\n        foundRanges.format.fill.color = \"green\"\n    }\n}\n```"
+- name: getCell(row, column)
+  uid: excel!Excel.Worksheet#getCell:member(1)
+  package: excel!
+  fullName: getCell(row, column)
+  summary: Получает объект диапазона, содержащий одну ячейку, по номеру строки и столбца. Ячейка может находиться вне границ родительского диапазона, пока она остается в сетке листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCell(row: number, column: number): Range;'
+    parameters:
+    - id: row
+      description: Номер строки ячейки, которую требуется извлечь. Используется нулевой индекс.
+      type: number
+    - id: column
+      description: Номер столбца ячейки, которую требуется извлечь. Используется нулевой индекс.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getNext(visibleOnly)
+  uid: excel!Excel.Worksheet#getNext:member(1)
+  package: excel!
+  fullName: getNext(visibleOnly)
+  summary: Получает лист, следующий по отношению к элементу. При отсутствии листов, указанных ниже, этот метод вызовет ошибку.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNext(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getNextOrNullObject(visibleOnly)
+  uid: excel!Excel.Worksheet#getNextOrNullObject:member(1)
+  package: excel!
+  fullName: getNextOrNullObject(visibleOnly)
+  summary: Получает лист, следующий по отношению к элементу. Если после этого листа нет ни одного листа, этот метод возвратит нулевой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNextOrNullObject(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getPrevious(visibleOnly)
+  uid: excel!Excel.Worksheet#getPrevious:member(1)
+  package: excel!
+  fullName: getPrevious(visibleOnly)
+  summary: Получает лист, который предшествует этому. Если нет предыдущих листов, этот метод выдаст ошибку.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getPreviousOrNullObject(visibleOnly)
+  uid: excel!Excel.Worksheet#getPreviousOrNullObject:member(1)
+  package: excel!
+  fullName: getPreviousOrNullObject(visibleOnly)
+  summary: Получает лист, который предшествует этому. Если нет предыдущих листов, этот метод возвратит значение NULL обжет.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPreviousOrNullObject(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getRange(address)
+  uid: excel!Excel.Worksheet#getRange:member(1)
+  package: excel!
+  fullName: getRange(address)
+  summary: Получает объект Range, представляющий отдельный прямоугольный блок ячеек, заданный по адресу или имени.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(address?: string): Range;'
+    parameters:
+    - id: address
+      description: 'Необязательный параметр. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
+  uid: excel!Excel.Worksheet#getRangeByIndexes:member(1)
+  package: excel!
+  fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
+  summary: Получает объект диапазона, начинающегося с определенных строки и столбца и занимающего определенное количество строк и столбцов.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeByIndexes(
+                  startRow: number,
+                  startColumn: number,
+                  rowCount: number,
+                  columnCount: number
+              ): Range;
+    parameters:
+    - id: startRow
+      description: Строка начала (с нулевым индексированием).
+      type: number
+    - id: startColumn
+      description: Столбец "начало" (с нулевым индексом).
+      type: number
+    - id: rowCount
+      description: Количество строк, включаемых в диапазон.
+      type: number
+    - id: columnCount
+      description: Число столбцов, включаемых в диапазон.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRanges(address)
+  uid: excel!Excel.Worksheet#getRanges:member(1)
+  package: excel!
+  fullName: getRanges(address)
+  summary: Получает объект RangeAreas, представляющий один или несколько блоков прямоугольных диапазонов, указанных по адресу или имени.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRanges(address?: string): RangeAreas;'
+    parameters:
+    - id: address
+      description: 'Необязательный параметр. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
+      type: string
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    let specifiedRanges = sheet.getRanges(\"D3:D5, G3:G5\");\n    specifiedRanges.format.fill.color = \"pink\";\n\n    await context.sync();\n})\n```"
+- name: getUsedRange(valuesOnly)
+  uid: excel!Excel.Worksheet#getUsedRange:member(1)
+  package: excel!
+  fullName: getUsedRange(valuesOnly)
+  summary: Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки с определенным значением или форматированием. Если лист пуст, эта функция возвратит верхнюю левую ячейку (то есть *не* выдает ошибку).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: Необязательный параметр. Если этот параметр имеет значение true, учитываются только ячейки со значениями в качестве используемых ячеек (игнорируя форматирование).
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getUsedRangeOrNullObject(valuesOnly)
+  uid: excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)
+  package: excel!
+  fullName: getUsedRangeOrNullObject(valuesOnly)
+  summary: Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если весь лист пустой, эта функция возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: Необязательный параметр. Учитывает только ячейки со значениями.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Worksheet#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: replaceAll(text, replacement, criteria)
+  uid: excel!Excel.Worksheet#replaceAll:member(1)
+  package: excel!
+  fullName: replaceAll(text, replacement, criteria)
+  summary: Находит и заменяет определенную строку на основе условий, указанных в текущем листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      replaceAll(
+                  text: string,
+                  replacement: string,
+                  criteria: ReplaceCriteria
+              ): ClientResult<number>;
+    parameters:
+    - id: text
+      description: Строка для поиска.
+      type: string
+    - id: replacement
+      description: Строка для замены оригинала на.
+      type: string
+    - id: criteria
+      description: Дополнительные условия замены.
+      type: <xref uid="excel!Excel.ReplaceCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: showOutlineLevels(rowLevels, columnLevels)
+  uid: excel!Excel.Worksheet#showOutlineLevels:member(1)
+  package: excel!
+  fullName: showOutlineLevels(rowLevels, columnLevels)
+  summary: Отображает группы строк или столбцов по их уровням структуры. Группирование и суммирование списка данных на листе. `rowLevels`Параметры и `columnLevels` определяют, сколько уровней структуры будет отображаться. Допустимый диапазон аргументов находится в пределах от 0 до 8. Значение 0 не изменяет текущее отображение. Значение, превышающее текущее число уровней, отображает все уровни.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
+    parameters:
+    - id: rowLevels
+      description: Количество отображаемых уровней строк в структуре.
+      type: number
+    - id: columnLevels
+      description: Число уровней столбцов структуры для отображения.
+      type: number
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nExcel.run(async (context) => {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n\n    // This collapses the entire outline.\n    sheet.showOutlineLevels(1, 1);\n    await context.sync();\n}\n```\n```typescript\nExcel.run(async (context) => {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n\n    // This shows the top 3 outline levels; collapsing any additional sublevels.\n    sheet.showOutlineLevels(3, 3);\n    await context.sync();\n}\n```"
+metadata:
+  ms.openlocfilehash: 3827291e11b2d99290067ce2143a928083276d38
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412645"

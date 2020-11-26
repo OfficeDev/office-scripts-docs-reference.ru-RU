@@ -1,198 +1,127 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SlicerCollection:interface'
-    summary: Представляет коллекцию всех объектов срезов в книге или листе.
-    name: Excel.SlicerCollection
-    fullName: Excel.SlicerCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.SlicerCollection#add:member(1)'
-      - 'excel!Excel.SlicerCollection#getCount:member(1)'
-      - 'excel!Excel.SlicerCollection#getItem:member(1)'
-      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
-      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.SlicerCollection#load:member(1)'
-  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
-    summary: Добавляет новый срез в книгу.
-    name: 'add(slicerSource, sourceField, slicerDestination)'
-    fullName: 'add(slicerSource, sourceField, slicerDestination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        add(
-                    slicerSource: string | PivotTable | Table,
-                    sourceField: string | PivotField | number | TableColumn,
-                    slicerDestination?: string | Worksheet
-                ): Slicer;
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Pivot");
-              let slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: slicerSource
-          description: 'Источник данных, на котором будет основан новый срез. Это может быть объект PivotTable, объект Table или строка. Когда объект сводной таблицы передается, источником данных является источник объекта сводной таблицы. Когда передается объект Table, источником данных является объект Table. Когда строка передается, она интерпретируется как имя/идентификатор сводной таблицы или таблицы.'
-          type:
-            - 'excel!Excel.SlicerCollection#add~0:complex'
-        - id: sourceField
-          description: 'Поле в источнике данных, по которому выполняется фильтрация. Это может быть объект PivotField, объект TableColumn, идентификатор PivotField или идентификатор и имя TableColumn.'
-          type:
-            - 'excel!Excel.SlicerCollection#add~1:complex'
-        - id: slicerDestination
-          description: 'Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
-          type:
-            - 'excel!Excel.SlicerCollection#add~2:complex'
-  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
-    summary: Возвращает количество срезов в коллекции.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.SlicerCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
-    summary: Получает объект slicer по его имени или ИД.
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Имя или идентификатор среза.
-          type:
-            - string
-  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
-    summary: Получает срез на основе его позиции в коллекции.
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Значение индекса получаемого объекта. Используется нулевой индекс.
-          type:
-            - number
-  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
-    summary: 'Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.'
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 'Имя или идентификатор среза, который требуется получить.'
-          type:
-            - string
-  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Slicer:interface'
-    name: Slicer
-    fullName: Excel.Slicer
-  - uid: 'excel!Excel.SlicerCollection#add~0:complex'
-    name: string | PivotTable | Table
-    fullName: string | Excel.PivotTable | Excel.Table
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.PivotTable:interface'
-        name: PivotTable
-        fullName: Excel.PivotTable
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.Table:interface'
-        name: Table
-        fullName: Excel.Table
-  - uid: 'excel!Excel.SlicerCollection#add~1:complex'
-    name: string | PivotField | number | TableColumn
-    fullName: string | Excel.PivotField | number | Excel.TableColumn
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.PivotField:interface'
-        name: PivotField
-        fullName: Excel.PivotField
-      - name: ' | number | '
-        fullName: ' | number | '
-      - uid: 'excel!Excel.TableColumn:interface'
-        name: TableColumn
-        fullName: Excel.TableColumn
-  - uid: 'excel!Excel.SlicerCollection#add~2:complex'
-    name: string | Worksheet
-    fullName: string | Excel.Worksheet
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.Worksheet:interface'
-        name: Worksheet
-        fullName: Excel.Worksheet
-  - uid: 'excel!Excel.SlicerCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.SlicerCollection
+uid: excel!Excel.SlicerCollection:interface
+package: excel!
+fullName: Excel.SlicerCollection
+summary: Представляет коллекцию всех объектов срезов в книге или листе.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(slicerSource, sourceField, slicerDestination)
+  uid: excel!Excel.SlicerCollection#add:member(1)
+  package: excel!
+  fullName: add(slicerSource, sourceField, slicerDestination)
+  summary: Добавляет новый срез в книгу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      add(
+                  slicerSource: string | PivotTable | Table,
+                  sourceField: string | PivotField | number | TableColumn,
+                  slicerDestination?: string | Worksheet
+              ): Slicer;
+    parameters:
+    - id: slicerSource
+      description: Источник данных, на котором будет основан новый срез. Это может быть объект PivotTable, объект Table или строка. Когда объект сводной таблицы передается, источником данных является источник объекта сводной таблицы. Когда передается объект Table, источником данных является объект Table. Когда строка передается, она интерпретируется как имя/идентификатор сводной таблицы или таблицы.
+      type: string | <xref uid="excel!Excel.PivotTable:interface" /> | <xref uid="excel!Excel.Table:interface" />
+    - id: sourceField
+      description: Поле в источнике данных, по которому выполняется фильтрация. Это может быть объект PivotField, объект TableColumn, идентификатор PivotField или идентификатор и имя TableColumn.
+      type: string | <xref uid="excel!Excel.PivotField:interface" /> | number | <xref uid="excel!Excel.TableColumn:interface" />
+    - id: slicerDestination
+      description: Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.
+      type: string | <xref uid="excel!Excel.Worksheet:interface" />
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Pivot\");\n    let slicer = sheet.slicers.add(\n        \"Farm Sales\", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */\n        \"Type\" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */\n    );\n    slicer.name = \"Fruit Slicer\";\n    await context.sync();\n}\n```"
+- name: getCount()
+  uid: excel!Excel.SlicerCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Возвращает количество срезов в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.SlicerCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: Получает объект slicer по его имени или ИД.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): Slicer;'
+    parameters:
+    - id: key
+      description: Имя или идентификатор среза.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.SlicerCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: Получает срез на основе его позиции в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Slicer;'
+    parameters:
+    - id: index
+      description: Значение индекса получаемого объекта. Используется нулевой индекс.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.SlicerCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): Slicer;'
+    parameters:
+    - id: key
+      description: Имя или идентификатор среза, который требуется получить.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.SlicerCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 16f0f2674a5c30a3563a7c7ea618d2917d4525f5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412883"
