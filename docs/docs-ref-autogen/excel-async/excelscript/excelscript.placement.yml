@@ -1,38 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Placement:enum'
-    summary: Указывает способ присоединения объекта к базовым ячейкам.
-    name: Excel.Placement
-    fullName: Excel.Placement
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.Placement.absolute:member'
-      - 'excel!Excel.Placement.oneCell:member'
-      - 'excel!Excel.Placement.twoCell:member'
-  - uid: 'excel!Excel.Placement.absolute:member'
-    summary: Объект находится в свободном плавающем виде.
-    name: absolute
-    fullName: absolute
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Absolute"'
-  - uid: 'excel!Excel.Placement.oneCell:member'
-    summary: Объект перемещается и задается по размеру ячейкам.
-    name: oneCell
-    fullName: oneCell
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"OneCell"'
-  - uid: 'excel!Excel.Placement.twoCell:member'
-    summary: Объект перемещается вместе с ячейками.
-    name: twoCell
-    fullName: twoCell
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TwoCell"'
+### YamlMime:TSEnum
+name: Excel.Placement
+uid: excel!Excel.Placement:enum
+package: excel!
+fullName: Excel.Placement
+summary: Указывает способ присоединения объекта к базовым ячейкам.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: absolute
+  uid: excel!Excel.Placement.absolute:member
+  package: excel!
+  summary: Объект находится в свободном плавающем виде.
+- name: oneCell
+  uid: excel!Excel.Placement.oneCell:member
+  package: excel!
+  summary: Объект перемещается и задается по размеру ячейкам.
+- name: twoCell
+  uid: excel!Excel.Placement.twoCell:member
+  package: excel!
+  summary: Объект перемещается вместе с ячейками.
+metadata:
+  ms.openlocfilehash: 7eb3e236a015e7b6daf96f755dbba063c7823bfc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418809"

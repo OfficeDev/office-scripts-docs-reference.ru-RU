@@ -1,128 +1,97 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetProtection:interface'
-    summary: Представляет защиту объекта листа.
-    name: Excel.WorksheetProtection
-    fullName: Excel.WorksheetProtection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.WorksheetProtection#load:member(1)'
-      - 'excel!Excel.WorksheetProtection#options:member'
-      - 'excel!Excel.WorksheetProtection#protect:member(1)'
-      - 'excel!Excel.WorksheetProtection#protected:member'
-      - 'excel!Excel.WorksheetProtection#unprotect:member(1)'
-  - uid: 'excel!Excel.WorksheetProtection#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.WorksheetProtection#options:member'
-    summary: Задает параметры защиты для листа.
-    name: options
-    fullName: options
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly options: WorksheetProtectionOptions;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetProtectionOptions:interface'
-  - uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
-    summary: 'Защищает лист. Завершается с ошибкой, если лист уже защищен.'
-    name: 'protect(options, password)'
-    fullName: 'protect(options, password)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.load("protection/protected");
-
-              await context.sync();
-
-              if (!activeSheet.protection.protected) {
-                  activeSheet.protection.protect();
-              }
-          }
-          ```
-      parameters:
-        - id: options
-          description: Необязательно. Параметры защиты листа.
-          type:
-            - 'excel!Excel.WorksheetProtectionOptions:interface'
-        - id: password
-          description: Необязательно. Пароль защиты листа.
-          type:
-            - string
-  - uid: 'excel!Excel.WorksheetProtection#protected:member'
-    summary: 'Указывает, защищен ли лист.'
-    name: protected
-    fullName: protected
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly protected: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.WorksheetProtection#unprotect:member(1)'
-    summary: Снимает защиту с листа.
-    name: unprotect(password)
-    fullName: unprotect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unprotect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```javascript
-          async function main(context: Excel.RequestContext) {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.protection.unprotect();
-          }
-          ```
-      parameters:
-        - id: password
-          description: пароль защиты листа.
-          type:
-            - string
-references:
-  - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
-    name: WorksheetProtectionOptions
-    fullName: Excel.WorksheetProtectionOptions
+### YamlMime:TSType
+name: Excel.WorksheetProtection
+uid: excel!Excel.WorksheetProtection:interface
+package: excel!
+fullName: Excel.WorksheetProtection
+summary: Представляет защиту объекта листа.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: options
+  uid: excel!Excel.WorksheetProtection#options:member
+  package: excel!
+  fullName: options
+  summary: Задает параметры защиты для листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly options: WorksheetProtectionOptions;'
+    return:
+      type: <xref uid="excel!Excel.WorksheetProtectionOptions:interface" />
+- name: protected
+  uid: excel!Excel.WorksheetProtection#protected:member
+  package: excel!
+  fullName: protected
+  summary: Указывает, защищен ли лист.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly protected: boolean;'
+    return:
+      type: boolean
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.WorksheetProtection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: protect(options, password)
+  uid: excel!Excel.WorksheetProtection#protect:member(1)
+  package: excel!
+  fullName: protect(options, password)
+  summary: Защищает лист. Завершается с ошибкой, если лист уже защищен.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+    parameters:
+    - id: options
+      description: Необязательный параметр. Параметры защиты листа.
+      type: <xref uid="excel!Excel.WorksheetProtectionOptions:interface" />
+    - id: password
+      description: Необязательный параметр. Пароль защиты листа.
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let activeSheet = context.workbook.worksheets.getActiveWorksheet();\n    activeSheet.load(\"protection/protected\");\n\n    await context.sync();\n\n    if (!activeSheet.protection.protected) {\n        activeSheet.protection.protect();\n    }\n}\n```"
+- name: unprotect(password)
+  uid: excel!Excel.WorksheetProtection#unprotect:member(1)
+  package: excel!
+  fullName: unprotect(password)
+  summary: Снимает защиту с листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unprotect(password?: string): void;'
+    parameters:
+    - id: password
+      description: пароль защиты листа.
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\nasync function main(context: Excel.RequestContext) {\n    let activeSheet = context.workbook.worksheets.getActiveWorksheet();\n    activeSheet.protection.unprotect();\n}\n```"
+metadata:
+  ms.openlocfilehash: 21c640e7dff12cda054af4591bec3d79116ca0e4
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419833"

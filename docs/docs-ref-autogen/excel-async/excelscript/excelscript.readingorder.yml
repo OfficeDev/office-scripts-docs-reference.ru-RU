@@ -1,37 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ReadingOrder:enum'
-    name: Excel.ReadingOrder
-    fullName: Excel.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ReadingOrder.context:member'
-      - 'excel!Excel.ReadingOrder.leftToRight:member'
-      - 'excel!Excel.ReadingOrder.rightToLeft:member'
-  - uid: 'excel!Excel.ReadingOrder.context:member'
-    summary: 'Порядок чтения определяется языком первого введенного знака. Если сначала вводится символ языка с письмом справа налево, порядок чтения справа налево. Если сначала вводится символ языка с письмом слева направо, порядок чтения слева направо.'
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Context"'
-  - uid: 'excel!Excel.ReadingOrder.leftToRight:member'
-    summary: Порядок чтения слева направо
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LeftToRight"'
-  - uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
-    summary: Порядок чтения справа налево
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RightToLeft"'
+### YamlMime:TSEnum
+name: Excel.ReadingOrder
+uid: excel!Excel.ReadingOrder:enum
+package: excel!
+fullName: Excel.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: excel!Excel.ReadingOrder.context:member
+  package: excel!
+  summary: Порядок чтения определяется языком первого введенного знака. Если сначала вводится символ языка с письмом справа налево, порядок чтения справа налево. Если сначала вводится символ языка с письмом слева направо, порядок чтения слева направо.
+- name: leftToRight
+  uid: excel!Excel.ReadingOrder.leftToRight:member
+  package: excel!
+  summary: Порядок чтения слева направо
+- name: rightToLeft
+  uid: excel!Excel.ReadingOrder.rightToLeft:member
+  package: excel!
+  summary: Порядок чтения справа налево
+metadata:
+  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418669"
