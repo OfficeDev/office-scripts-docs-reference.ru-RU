@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CalculationType:enum'
-    name: ExcelScript.CalculationType
-    fullName: ExcelScript.CalculationType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CalculationType.full:member'
-      - 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
-      - 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
-  - uid: 'ExcelScript!ExcelScript.CalculationType.full:member'
-    summary: ' Пометка всех ячеек как "грязных" и их пересчет.'
-    name: full
-    fullName: full
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
-    summary: 'Это приведет к перестроению полной цепочки зависимостей, пометить все ячейки как измененные и затем пересчитать их.'
-    name: fullRebuild
-    fullName: fullRebuild
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
-    summary: 'Пересчитывает все ячейки, которые Excel отметил как "грязные", то есть зависящие от переменных или измененных данных, и ячейки, программно отмеченные как "грязные".'
-    name: recalculate
-    fullName: recalculate
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.CalculationType
+uid: ExcelScript!ExcelScript.CalculationType:enum
+package: ExcelScript!
+fullName: ExcelScript.CalculationType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: full
+  uid: ExcelScript!ExcelScript.CalculationType.full:member
+  package: ExcelScript!
+  summary: " Пометка всех ячеек как \"грязных\" и их пересчет."
+- name: fullRebuild
+  uid: ExcelScript!ExcelScript.CalculationType.fullRebuild:member
+  package: ExcelScript!
+  summary: Это приведет к перестроению полной цепочки зависимостей, пометить все ячейки как измененные и затем пересчитать их.
+- name: recalculate
+  uid: ExcelScript!ExcelScript.CalculationType.recalculate:member
+  package: ExcelScript!
+  summary: Пересчитывает все ячейки, которые Excel отметил как "грязные", то есть зависящие от переменных или измененных данных, и ячейки, программно отмеченные как "грязные".
+metadata:
+  ms.openlocfilehash: 8e772f6bfbf855d21f480d9a024c4e6c73eee2c8
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417214"

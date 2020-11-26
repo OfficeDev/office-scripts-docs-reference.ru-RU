@@ -1,33 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
-    summary: 'Указывает, расположены ли ряды по строкам или по столбцам. На рабочем столе при выборе параметра "Авто" будет проверяться форма источника данных, чтобы автоматически определить, являются ли данные строками или столбцами; в Excel в Интернете "Auto" просто по умолчанию принимает значение "Columns".'
-    name: ExcelScript.ChartSeriesBy
-    fullName: ExcelScript.ChartSeriesBy
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
-    summary: 'На рабочем столе при выборе параметра "Авто" будет проверяться форма источника данных, чтобы автоматически определить, являются ли данные строками или столбцами; в Excel в Интернете "Auto" просто по умолчанию принимает значение "Columns".'
-    name: auto
-    fullName: auto
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
-    name: columns
-    fullName: columns
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
-    name: rows
-    fullName: rows
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartSeriesBy
+uid: ExcelScript!ExcelScript.ChartSeriesBy:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartSeriesBy
+summary: Указывает, расположены ли ряды по строкам или по столбцам. На рабочем столе при выборе параметра "Авто" будет проверяться форма источника данных, чтобы автоматически определить, являются ли данные строками или столбцами; в Excel в Интернете "Auto" просто по умолчанию принимает значение "Columns".
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: auto
+  uid: ExcelScript!ExcelScript.ChartSeriesBy.auto:member
+  package: ExcelScript!
+  summary: На рабочем столе при выборе параметра "Авто" будет проверяться форма источника данных, чтобы автоматически определить, являются ли данные строками или столбцами; в Excel в Интернете "Auto" просто по умолчанию принимает значение "Columns".
+- name: columns
+  uid: ExcelScript!ExcelScript.ChartSeriesBy.columns:member
+  package: ExcelScript!
+  summary: ''
+- name: rows
+  uid: ExcelScript!ExcelScript.ChartSeriesBy.rows:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: f238e90af515a6bea1ddaf405d08fa645ce353f3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416059"

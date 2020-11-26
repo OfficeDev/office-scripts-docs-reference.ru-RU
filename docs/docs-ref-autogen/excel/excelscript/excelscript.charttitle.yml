@@ -1,447 +1,400 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartTitle:interface'
-    summary: Представляет объект заголовка диаграммы.
-    name: ExcelScript.ChartTitle
-    fullName: ExcelScript.ChartTitle
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)'
-    summary: 'Представляет форматирование названия диаграммы, включая формат заливки и шрифта.'
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartTitleFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)'
-    summary: 'Возвращает высоту заголовка диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.'
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)'
-    summary: Задает горизонтальное выравнивание для заголовка диаграммы.
-    name: getHorizontalAlignment()
-    fullName: getHorizontalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)'
-    summary: 'Задает расстояние от левого края заголовка диаграммы до левого края области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.'
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)'
-    summary: 'Указывает, будет ли название диаграммы накладываться на диаграмму.'
-    name: getOverlay()
-    fullName: getOverlay()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOverlay(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
-    summary: Представляет положение заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттитлепоситион.
-    name: getPosition()
-    fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPosition(): ChartTitlePosition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)'
-    summary: 'Представляет логическое значение, которое определяет, имеет ли заголовок диаграммы тень.'
-    name: getShowShadow()
-    fullName: getShowShadow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowShadow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)'
-    summary: Получение подстроки заголовка диаграммы. Разрыв строки '<!-- -->\\<!-- -->n также подсчитывает один символ.
-    name: 'getSubstring(start, length)'
-    fullName: 'getSubstring(start, length)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSubstring(start: number, length: number): ChartFormatString;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFormatString:interface'
-        description: ''
-      parameters:
-        - id: start
-          description: 'Начальное положение подстроки, которую необходимо получить. Позиция начинается с 0.'
-          type:
-            - number
-        - id: length
-          description: Длина извлекаемой подстроки.
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getText:member(1)'
-    summary: Задает текст заголовка диаграммы.
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)'
-    summary: 'Задает угол, на который будет ориентирован текст для заголовка диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.'
-    name: getTextOrientation()
-    fullName: getTextOrientation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getTop:member(1)'
-    summary: 'Задает расстояние от верхнего края заголовка диаграммы до верха области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.'
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
-    summary: Задает вертикальное выравнивание заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент.
-    name: getVerticalAlignment()
-    fullName: getVerticalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)'
-    summary: 'Указывает, является ли название диаграммы Visible.'
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)'
-    summary: 'Задает ширину заголовка диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.'
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)'
-    summary: 'Задает строковое значение, представляющее формулу заголовка диаграммы с использованием нотации стиля A1.'
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formula
-          description: 'Строка, представляющая формулу, которую требуется задать.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)'
-    summary: Задает горизонтальное выравнивание для заголовка диаграммы.
-    name: setHorizontalAlignment(horizontalAlignment)
-    fullName: setHorizontalAlignment(horizontalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setHorizontalAlignment(
-                    horizontalAlignment: ChartTextHorizontalAlignment
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: horizontalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)'
-    summary: 'Задает расстояние от левого края заголовка диаграммы до левого края области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.'
-    name: setLeft(left)
-    fullName: setLeft(left)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLeft(left: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: left
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)'
-    summary: 'Указывает, будет ли название диаграммы накладываться на диаграмму.'
-    name: setOverlay(overlay)
-    fullName: setOverlay(overlay)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setOverlay(overlay: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: overlay
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
-    summary: Представляет положение заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттитлепоситион.
-    name: setPosition(position)
-    fullName: setPosition(position)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(position: ChartTitlePosition): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: position
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)'
-    summary: 'Представляет логическое значение, которое определяет, имеет ли заголовок диаграммы тень.'
-    name: setShowShadow(showShadow)
-    fullName: setShowShadow(showShadow)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowShadow(showShadow: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showShadow
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setText:member(1)'
-    summary: Задает текст заголовка диаграммы.
-    name: setText(text)
-    fullName: setText(text)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setText(text: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: text
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)'
-    summary: 'Задает угол, на который будет ориентирован текст для заголовка диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.'
-    name: setTextOrientation(textOrientation)
-    fullName: setTextOrientation(textOrientation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: textOrientation
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setTop:member(1)'
-    summary: 'Задает расстояние от верхнего края заголовка диаграммы до верха области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.'
-    name: setTop(top)
-    fullName: setTop(top)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTop(top: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: top
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
-    summary: Задает вертикальное выравнивание заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент.
-    name: setVerticalAlignment(verticalAlignment)
-    fullName: setVerticalAlignment(verticalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setVerticalAlignment(
-                    verticalAlignment: ChartTextVerticalAlignment
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: verticalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)'
-    summary: 'Указывает, является ли название диаграммы Visible.'
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
-    name: ChartTitleFormat
-    fullName: ExcelScript.ChartTitleFormat
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-    name: ChartTextHorizontalAlignment
-    fullName: ExcelScript.ChartTextHorizontalAlignment
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
-    name: ChartTitlePosition
-    fullName: ExcelScript.ChartTitlePosition
-  - uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
-    name: ChartFormatString
-    fullName: ExcelScript.ChartFormatString
-  - uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-    name: ChartTextVerticalAlignment
-    fullName: ExcelScript.ChartTextVerticalAlignment
+### YamlMime:TSType
+name: ExcelScript.ChartTitle
+uid: ExcelScript!ExcelScript.ChartTitle:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartTitle
+summary: Представляет объект заголовка диаграммы.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Представляет форматирование названия диаграммы, включая формат заливки и шрифта.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartTitleFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTitleFormat:interface" />
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: Возвращает высоту заголовка диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getHorizontalAlignment()
+  uid: ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalAlignment()
+  summary: Задает горизонтальное выравнивание для заголовка диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: Задает расстояние от левого края заголовка диаграммы до левого края области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getOverlay()
+  uid: ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)
+  package: ExcelScript!
+  fullName: getOverlay()
+  summary: Указывает, будет ли название диаграммы накладываться на диаграмму.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOverlay(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: Представляет положение заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттитлепоситион.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): ChartTitlePosition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />
+      description: ''
+- name: getShowShadow()
+  uid: ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)
+  package: ExcelScript!
+  fullName: getShowShadow()
+  summary: Представляет логическое значение, которое определяет, имеет ли заголовок диаграммы тень.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowShadow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSubstring(start, length)
+  uid: ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)
+  package: ExcelScript!
+  fullName: getSubstring(start, length)
+  summary: Получение подстроки заголовка диаграммы. Разрыв строки '<!-- -->\\<!-- -->n также подсчитывает один символ.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubstring(start: number, length: number): ChartFormatString;'
+    parameters:
+    - id: start
+      description: Начальное положение подстроки, которую необходимо получить. Позиция начинается с 0.
+      type: number
+    - id: length
+      description: Длина извлекаемой подстроки.
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFormatString:interface" />
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.ChartTitle#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: Задает текст заголовка диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: Задает угол, на который будет ориентирован текст для заголовка диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.ChartTitle#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: Задает расстояние от верхнего края заголовка диаграммы до верха области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVerticalAlignment()
+  uid: ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getVerticalAlignment()
+  summary: Задает вертикальное выравнивание заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Указывает, является ли название диаграммы Visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: Задает ширину заголовка диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: Задает строковое значение, представляющее формулу заголовка диаграммы с использованием нотации стиля A1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: Строка, представляющая формулу, которую требуется задать.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setHorizontalAlignment(horizontalAlignment)
+  uid: ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setHorizontalAlignment(horizontalAlignment)
+  summary: Задает горизонтальное выравнивание для заголовка диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setHorizontalAlignment(
+                  horizontalAlignment: ChartTextHorizontalAlignment
+              ): void;
+    parameters:
+    - id: horizontalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setLeft(left)
+  uid: ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)
+  package: ExcelScript!
+  fullName: setLeft(left)
+  summary: Задает расстояние от левого края заголовка диаграммы до левого края области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeft(left: number): void;'
+    parameters:
+    - id: left
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setOverlay(overlay)
+  uid: ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)
+  package: ExcelScript!
+  fullName: setOverlay(overlay)
+  summary: Указывает, будет ли название диаграммы накладываться на диаграмму.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setOverlay(overlay: boolean): void;'
+    parameters:
+    - id: overlay
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: Представляет положение заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттитлепоситион.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: ChartTitlePosition): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />
+    return:
+      type: void
+      description: ''
+- name: setShowShadow(showShadow)
+  uid: ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)
+  package: ExcelScript!
+  fullName: setShowShadow(showShadow)
+  summary: Представляет логическое значение, которое определяет, имеет ли заголовок диаграммы тень.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowShadow(showShadow: boolean): void;'
+    parameters:
+    - id: showShadow
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setText(text)
+  uid: ExcelScript!ExcelScript.ChartTitle#setText:member(1)
+  package: ExcelScript!
+  fullName: setText(text)
+  summary: Задает текст заголовка диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setText(text: string): void;'
+    parameters:
+    - id: text
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: Задает угол, на который будет ориентирован текст для заголовка диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTop(top)
+  uid: ExcelScript!ExcelScript.ChartTitle#setTop:member(1)
+  package: ExcelScript!
+  fullName: setTop(top)
+  summary: Задает расстояние от верхнего края заголовка диаграммы до верха области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTop(top: number): void;'
+    parameters:
+    - id: top
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVerticalAlignment(verticalAlignment)
+  uid: ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setVerticalAlignment(verticalAlignment)
+  summary: Задает вертикальное выравнивание заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setVerticalAlignment(
+                  verticalAlignment: ChartTextVerticalAlignment
+              ): void;
+    parameters:
+    - id: verticalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Указывает, является ли название диаграммы Visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 068cdd5d4997a8dcbd9b8aa9c66996f10ec1078f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416864"

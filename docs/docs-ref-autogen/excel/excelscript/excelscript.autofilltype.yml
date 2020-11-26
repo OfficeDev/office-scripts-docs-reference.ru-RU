@@ -1,107 +1,65 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
-    summary: Типы поведения при использовании автозаполнения для диапазона в книге.
-    name: ExcelScript.AutoFillType
-    fullName: ExcelScript.AutoFillType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
-      - 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
-    summary: Заполняет смежные ячейки данными с учетом выбранных данных.
-    name: fillCopy
-    fullName: fillCopy
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
-    summary: 'Версия "Филлсериес" для дат, основанных на шаблоне в день месяца или день недели, в зависимости от контекста.'
-    name: fillDays
-    fullName: fillDays
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
-    summary: 'Заполняет смежные ячейки, основываясь на окружающих данных (стандартное поведение автозаполнения).'
-    name: fillDefault
-    fullName: fillDefault
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
-    summary: Заполняет смежные ячейки выбранными формулами.
-    name: fillFormats
-    fullName: fillFormats
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
-    summary: 'Версия "Филлсериес" для дат, основанных на шаблоне в месяц.'
-    name: fillMonths
-    fullName: fillMonths
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
-    summary: 'Заполняет смежные ячейки данными, которые следуют шаблону в скопированных ячейках.'
-    name: fillSeries
-    fullName: fillSeries
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
-    summary: Заполняет смежные ячейки выбранными значениями.
-    name: fillValues
-    fullName: fillValues
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
-    summary: 'Версия "Филлсериес" для дат, основанных на шаблоне дня недели и включающая в себя рабочие дни.'
-    name: fillWeekdays
-    fullName: fillWeekdays
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
-    summary: 'Версия "Филлсериес" для дат, основанных на шаблоне в году.'
-    name: fillYears
-    fullName: fillYears
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
-    summary: Заполняет смежные ячейки с помощью функции Excel FlashFill.
-    name: flashFill
-    fullName: flashFill
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
-    summary: 'Версия "Филлсериес" для номеров, которые заполняют значения в смежных ячейках в соответствии с моделью тренда роста.'
-    name: growthTrend
-    fullName: growthTrend
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
-    summary: 'Версия "Филлсериес" для номеров, которые заполняют значения в смежных ячейках в соответствии с моделью линейной тенденции.'
-    name: linearTrend
-    fullName: linearTrend
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.AutoFillType
+uid: ExcelScript!ExcelScript.AutoFillType:enum
+package: ExcelScript!
+fullName: ExcelScript.AutoFillType
+summary: Типы поведения при использовании автозаполнения для диапазона в книге.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: fillCopy
+  uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
+  package: ExcelScript!
+  summary: Заполняет смежные ячейки данными с учетом выбранных данных.
+- name: fillDays
+  uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
+  package: ExcelScript!
+  summary: Версия "Филлсериес" для дат, основанных на шаблоне в день месяца или день недели, в зависимости от контекста.
+- name: fillDefault
+  uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
+  package: ExcelScript!
+  summary: Заполняет смежные ячейки, основываясь на окружающих данных (стандартное поведение автозаполнения).
+- name: fillFormats
+  uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
+  package: ExcelScript!
+  summary: Заполняет смежные ячейки выбранными формулами.
+- name: fillMonths
+  uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
+  package: ExcelScript!
+  summary: Версия "Филлсериес" для дат, основанных на шаблоне в месяц.
+- name: fillSeries
+  uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
+  package: ExcelScript!
+  summary: Заполняет смежные ячейки данными, которые следуют шаблону в скопированных ячейках.
+- name: fillValues
+  uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
+  package: ExcelScript!
+  summary: Заполняет смежные ячейки выбранными значениями.
+- name: fillWeekdays
+  uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
+  package: ExcelScript!
+  summary: Версия "Филлсериес" для дат, основанных на шаблоне дня недели и включающая в себя рабочие дни.
+- name: fillYears
+  uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
+  package: ExcelScript!
+  summary: Версия "Филлсериес" для дат, основанных на шаблоне в году.
+- name: flashFill
+  uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
+  package: ExcelScript!
+  summary: Заполняет смежные ячейки с помощью функции Excel FlashFill.
+- name: growthTrend
+  uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
+  package: ExcelScript!
+  summary: Версия "Филлсериес" для номеров, которые заполняют значения в смежных ячейках в соответствии с моделью тренда роста.
+- name: linearTrend
+  uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
+  package: ExcelScript!
+  summary: Версия "Филлсериес" для номеров, которые заполняют значения в смежных ячейках в соответствии с моделью линейной тенденции.
+metadata:
+  ms.openlocfilehash: d9d6e6a7f8b28503a3c39ab71c66cbcbf5581dec
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417315"

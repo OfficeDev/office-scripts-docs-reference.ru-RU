@@ -1,60 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CultureInfo:interface'
-    summary: 'Предоставляет сведения, основанные на текущих параметрах языковых параметров системы. Сюда входят имена культур, форматирование чисел и другие параметры, зависящие от культуры.'
-    name: Excel.CultureInfo
-    fullName: Excel.CultureInfo
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CultureInfo#load:member(1)'
-      - 'excel!Excel.CultureInfo#name:member'
-      - 'excel!Excel.CultureInfo#numberFormat:member'
-  - uid: 'excel!Excel.CultureInfo#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.CultureInfo#name:member'
-    summary: 'Получает имя языка и региональных параметров в формате languagecode2-Country/regioncode2 (например, "zh-CN" или "en-US"). Это основано на текущих параметрах системы.'
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.CultureInfo#numberFormat:member'
-    summary: 'Определяет формат отображения чисел, соответствующий культуре. Это основано на текущих параметрах языковых параметров системы.'
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly numberFormat: NumberFormatInfo;'
-      return:
-        type:
-          - 'excel!Excel.NumberFormatInfo:interface'
-references:
-  - uid: 'excel!Excel.NumberFormatInfo:interface'
-    name: NumberFormatInfo
-    fullName: Excel.NumberFormatInfo
+### YamlMime:TSType
+name: Excel.CultureInfo
+uid: excel!Excel.CultureInfo:interface
+package: excel!
+fullName: Excel.CultureInfo
+summary: Предоставляет сведения, основанные на текущих параметрах языковых параметров системы. Сюда входят имена культур, форматирование чисел и другие параметры, зависящие от культуры.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: name
+  uid: excel!Excel.CultureInfo#name:member
+  package: excel!
+  fullName: name
+  summary: Получает имя языка и региональных параметров в формате languagecode2-Country/regioncode2 (например, "zh-CN" или "en-US"). Это основано на текущих параметрах системы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly name: string;'
+    return:
+      type: string
+- name: numberFormat
+  uid: excel!Excel.CultureInfo#numberFormat:member
+  package: excel!
+  fullName: numberFormat
+  summary: Определяет формат отображения чисел, соответствующий культуре. Это основано на текущих параметрах языковых параметров системы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly numberFormat: NumberFormatInfo;'
+    return:
+      type: <xref uid="excel!Excel.NumberFormatInfo:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.CultureInfo#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 354b6d459d085f26f599a4d0067f23e1c4e815ee
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416416"

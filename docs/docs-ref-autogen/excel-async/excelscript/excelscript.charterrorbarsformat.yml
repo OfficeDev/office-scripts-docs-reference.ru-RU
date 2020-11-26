@@ -1,47 +1,48 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartErrorBarsFormat:interface'
-    summary: Инкапсулирует свойства формата для планок погрешностей диаграммы.
-    name: Excel.ChartErrorBarsFormat
-    fullName: Excel.ChartErrorBarsFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartErrorBarsFormat#line:member'
-      - 'excel!Excel.ChartErrorBarsFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartErrorBarsFormat#line:member'
-    summary: Представляет форматирование линий диаграммы.
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly line: ChartLineFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartLineFormat:interface'
-  - uid: 'excel!Excel.ChartErrorBarsFormat#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartLineFormat:interface'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+### YamlMime:TSType
+name: Excel.ChartErrorBarsFormat
+uid: excel!Excel.ChartErrorBarsFormat:interface
+package: excel!
+fullName: Excel.ChartErrorBarsFormat
+summary: Инкапсулирует свойства формата для планок погрешностей диаграммы.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: line
+  uid: excel!Excel.ChartErrorBarsFormat#line:member
+  package: excel!
+  fullName: line
+  summary: Представляет форматирование линий диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly line: ChartLineFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartLineFormat:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartErrorBarsFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: a9fab07a1438734cb9cfa8b2c5682979de1bdd7f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417619"
