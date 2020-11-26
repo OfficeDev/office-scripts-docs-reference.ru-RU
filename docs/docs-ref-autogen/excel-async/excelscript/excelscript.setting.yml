@@ -1,92 +1,73 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Setting:interface'
-    summary: 'Представляет собой значение, заданное параметром "ключ-значение" для параметра, хранимого в документе (на файл в надстройке). Эти дополнительные сведения о состоянии и жизненном цикле могут использоваться для хранения сведений о состоянии или жизненном цикле, необходимых для надстройки контент или область задач. Обратите внимание, что параметры сохраняются в документе и поэтому не хранят конфиденциальные или защищенные сведения, такие как сведения о пользователе и пароль.'
-    name: Excel.Setting
-    fullName: Excel.Setting
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Setting#delete:member(1)'
-      - 'excel!Excel.Setting#key:member'
-      - 'excel!Excel.Setting#load:member(1)'
-      - 'excel!Excel.Setting#value:member'
-  - uid: 'excel!Excel.Setting#delete:member(1)'
-    summary: Удаляет параметр.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let settings = context.workbook.settings;
-              let needsReview = settings.getItem("NeedsReview");
-              needsReview.delete();
-              needsReview = settings.getItemOrNullObject("NeedsReview");
-
-              await context.sync();
-
-              if (needsReview.isNullObject) {
-                  console.log("The setting has been deleted");
-              } else {
-                  console.log("The setting was not deleted");
-              }
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Setting#key:member'
-    summary: 'Ключ, представляющий идентификатор параметра.'
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly key: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Setting#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Setting#value:member'
-    summary: 'Представляет значение, сохраненное для этого параметра.'
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'value: any;'
-      return:
-        type:
-          - any
+### YamlMime:TSType
+name: Excel.Setting
+uid: excel!Excel.Setting:interface
+package: excel!
+fullName: Excel.Setting
+summary: Представляет собой значение, заданное параметром "ключ-значение" для параметра, хранимого в документе (на файл в надстройке). Эти дополнительные сведения о состоянии и жизненном цикле могут использоваться для хранения сведений о состоянии или жизненном цикле, необходимых для надстройки контент или область задач. Обратите внимание, что параметры сохраняются в документе и поэтому не хранят конфиденциальные или защищенные сведения, такие как сведения о пользователе и пароль.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: key
+  uid: excel!Excel.Setting#key:member
+  package: excel!
+  fullName: key
+  summary: Ключ, представляющий идентификатор параметра.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly key: string;'
+    return:
+      type: string
+- name: value
+  uid: excel!Excel.Setting#value:member
+  package: excel!
+  fullName: value
+  summary: Представляет значение, сохраненное для этого параметра.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'value: any;'
+    return:
+      type: any
+methods:
+- name: delete()
+  uid: excel!Excel.Setting#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Удаляет параметр.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let settings = context.workbook.settings;\n    let needsReview = settings.getItem(\"NeedsReview\");\n    needsReview.delete();\n    needsReview = settings.getItemOrNullObject(\"NeedsReview\");\n\n    await context.sync();\n\n    if (needsReview.isNullObject) {\n        console.log(\"The setting has been deleted\");\n    } else {\n        console.log(\"The setting was not deleted\");\n    }\n\n    await context.sync();\n}\n```"
+- name: load(propertyNames)
+  uid: excel!Excel.Setting#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 17ed929a92515909deef248b1e608997fc1e8153
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418613"

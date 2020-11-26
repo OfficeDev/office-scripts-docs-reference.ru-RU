@@ -1,107 +1,85 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
-    summary: 'Перечисление, представляющее все принятые условия, к которым можно применить фильтр значений. Используется для настройки типа PivotFilter, применяемого к полю. `PivotFilter.exclusive` можно задать значение true, чтобы инвертировать многие из этих условий.'
-    name: ExcelScript.ValueFilterCondition
-    fullName: ExcelScript.ValueFilterCondition
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
-    summary: |-
-      Между `lowerBound` и `upperBound` условиями.
+### YamlMime:TSEnum
+name: ExcelScript.ValueFilterCondition
+uid: ExcelScript!ExcelScript.ValueFilterCondition:enum
+package: ExcelScript!
+fullName: ExcelScript.ValueFilterCondition
+summary: Перечисление, представляющее все принятые условия, к которым можно применить фильтр значений. Используется для настройки типа PivotFilter, применяемого к полю. `PivotFilter.exclusive` можно задать значение true, чтобы инвертировать многие из этих условий.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: between
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    Между `lowerBound` и `upperBound` условиями.
 
-      Обязательные условия: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные условия: {`exclusive`<!-- -->}<!-- -->.
-    name: between
-    fullName: between
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
-    summary: |-
-      Внизу N (`threshold`<!-- -->) \[ элементы, процент, сумма \] категории значений.
 
-      Обязательные условия: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-    name: bottomN
-    fullName: bottomN
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
-    summary: |-
-      Критерий сравнения Equals.
+    Обязательные условия: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные условия: {`exclusive`<!-- -->}<!-- -->.
+- name: bottomN
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member
+  package: ExcelScript!
+  summary: >-
+    Внизу N (`threshold`<!-- -->) \[ элементы, процент, сумма \] категории значений.
 
-      Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Необязательные условия: {`exclusive`<!-- -->}<!-- -->.
-    name: equals
-    fullName: equals
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
-    summary: |-
-      Условие превышает критерий сравнения.
 
-      Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: greaterThan
-    fullName: greaterThan
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
-    summary: |-
-      Больше или равно критерию сравнения.
+    Обязательные условия: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    Критерий сравнения Equals.
 
-      Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: greaterThanOrEqualTo
-    fullName: greaterThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
-    summary: |-
-      Меньше критерия сравнения.
 
-      Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: lessThan
-    fullName: lessThan
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
-    summary: |-
-      Меньше или равно критерию сравнения.
+    Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Необязательные условия: {`exclusive`<!-- -->}<!-- -->.
+- name: greaterThan
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member
+  package: ExcelScript!
+  summary: >-
+    Условие превышает критерий сравнения.
 
-      Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: lessThanOrEqualTo
-    fullName: lessThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
-    summary: |-
-      Первые N (`threshold`<!-- -->) \[ элементы, процент, сумма \] категории значений.
 
-      Обязательные условия: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-    name: topN
-    fullName: topN
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
-    summary: Валуефилтеркондитион неизвестен или не поддерживается.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
+    Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: greaterThanOrEqualTo
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Больше или равно критерию сравнения.
+
+
+    Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: lessThan
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member
+  package: ExcelScript!
+  summary: >-
+    Меньше критерия сравнения.
+
+
+    Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: lessThanOrEqualTo
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Меньше или равно критерию сравнения.
+
+
+    Обязательные условия: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: topN
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.topN:member
+  package: ExcelScript!
+  summary: >-
+    Первые N (`threshold`<!-- -->) \[ элементы, процент, сумма \] категории значений.
+
+
+    Обязательные условия: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+- name: unknown
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: Валуефилтеркондитион неизвестен или не поддерживается.
+metadata:
+  ms.openlocfilehash: 86a91b203d9222e4d89e13fa526d86faa06c1c84
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419245"

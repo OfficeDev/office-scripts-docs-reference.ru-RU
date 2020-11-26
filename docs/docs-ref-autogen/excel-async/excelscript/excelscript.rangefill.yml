@@ -1,75 +1,62 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeFill:interface'
-    summary: Представляет фон объекта диапазона.
-    name: Excel.RangeFill
-    fullName: Excel.RangeFill
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RangeFill#clear:member(1)'
-      - 'excel!Excel.RangeFill#color:member'
-      - 'excel!Excel.RangeFill#load:member(1)'
-      - 'excel!Excel.RangeFill#pattern:member'
-      - 'excel!Excel.RangeFill#patternColor:member'
-      - 'excel!Excel.RangeFill#patternTintAndShade:member'
-      - 'excel!Excel.RangeFill#tintAndShade:member'
-  - uid: 'excel!Excel.RangeFill#clear:member(1)'
-    summary: Сброс фона диапазона.
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.RangeFill#color:member'
-    summary: 'HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин")'
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeFill#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RangeFill#pattern:member'
-    summary: 'Шаблон диапазона. Дополнительные сведения см. в статье Excel.FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.'
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        pattern:
-                    | FillPattern
+### YamlMime:TSType
+name: Excel.RangeFill
+uid: excel!Excel.RangeFill:interface
+package: excel!
+fullName: Excel.RangeFill
+summary: Представляет фон объекта диапазона.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.RangeFill#color:member
+  package: excel!
+  fullName: color
+  summary: HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин")
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: pattern
+  uid: excel!Excel.RangeFill#pattern:member
+  package: excel!
+  fullName: pattern
+  summary: Шаблон диапазона. Дополнительные сведения см. в статье Excel.FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      pattern:
+                  | FillPattern
+                  | "None"
+                  | "Solid"
+                  | "Gray50"
+                  | "Gray75"
+                  | "Gray25"
+                  | "Horizontal"
+                  | "Vertical"
+                  | "Down"
+                  | "Up"
+                  | "Checker"
+                  | "SemiGray75"
+                  | "LightHorizontal"
+                  | "LightVertical"
+                  | "LightDown"
+                  | "LightUp"
+                  | "Grid"
+                  | "CrissCross"
+                  | "Gray16"
+                  | "Gray8"
+                  | "LinearGradient"
+                  | "RectangularGradient";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.FillPattern:enum" />
                     | "None"
                     | "Solid"
                     | "Gray50"
@@ -90,143 +77,78 @@ items:
                     | "Gray16"
                     | "Gray8"
                     | "LinearGradient"
-                    | "RectangularGradient";
-      return:
-        type:
-          - 'excel!Excel.RangeFill#pattern~0:complex'
-  - uid: 'excel!Excel.RangeFill#patternColor:member'
-    summary: 'HTML-код цвета, представляющий цвет шаблона диапазона, для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
-    name: patternColor
-    fullName: patternColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeFill#patternTintAndShade:member'
-    summary: 'Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.'
-    name: patternTintAndShade
-    fullName: patternTintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternTintAndShade: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeFill#tintAndShade:member'
-    summary: 'Задает двойное значение, которое осветляет или затемняет цвет заливки диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес являются неравномерными, возвращается значение null.'
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.RangeFill#pattern~0:complex'
-    name: |-
-      | FillPattern
-                  | "None"
-                  | "Solid"
-                  | "Gray50"
-                  | "Gray75"
-                  | "Gray25"
-                  | "Horizontal"
-                  | "Vertical"
-                  | "Down"
-                  | "Up"
-                  | "Checker"
-                  | "SemiGray75"
-                  | "LightHorizontal"
-                  | "LightVertical"
-                  | "LightDown"
-                  | "LightUp"
-                  | "Grid"
-                  | "CrissCross"
-                  | "Gray16"
-                  | "Gray8"
-                  | "LinearGradient"
-                  | "RectangularGradient"
-    fullName: |-
-      | Excel.FillPattern
-                  | "None"
-                  | "Solid"
-                  | "Gray50"
-                  | "Gray75"
-                  | "Gray25"
-                  | "Horizontal"
-                  | "Vertical"
-                  | "Down"
-                  | "Up"
-                  | "Checker"
-                  | "SemiGray75"
-                  | "LightHorizontal"
-                  | "LightVertical"
-                  | "LightDown"
-                  | "LightUp"
-                  | "Grid"
-                  | "CrissCross"
-                  | "Gray16"
-                  | "Gray8"
-                  | "LinearGradient"
-                  | "RectangularGradient"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.FillPattern:enum'
-        name: FillPattern
-        fullName: Excel.FillPattern
-      - name: |2-
-
-                      | "None"
-                      | "Solid"
-                      | "Gray50"
-                      | "Gray75"
-                      | "Gray25"
-                      | "Horizontal"
-                      | "Vertical"
-                      | "Down"
-                      | "Up"
-                      | "Checker"
-                      | "SemiGray75"
-                      | "LightHorizontal"
-                      | "LightVertical"
-                      | "LightDown"
-                      | "LightUp"
-                      | "Grid"
-                      | "CrissCross"
-                      | "Gray16"
-                      | "Gray8"
-                      | "LinearGradient"
-                      | "RectangularGradient"
-        fullName: |2-
-
-                      | "None"
-                      | "Solid"
-                      | "Gray50"
-                      | "Gray75"
-                      | "Gray25"
-                      | "Horizontal"
-                      | "Vertical"
-                      | "Down"
-                      | "Up"
-                      | "Checker"
-                      | "SemiGray75"
-                      | "LightHorizontal"
-                      | "LightVertical"
-                      | "LightDown"
-                      | "LightUp"
-                      | "Grid"
-                      | "CrissCross"
-                      | "Gray16"
-                      | "Gray8"
-                      | "LinearGradient"
-                      | "RectangularGradient"
+                    | "RectangularGradient"
+- name: patternColor
+  uid: excel!Excel.RangeFill#patternColor:member
+  package: excel!
+  fullName: patternColor
+  summary: HTML-код цвета, представляющий цвет шаблона диапазона, для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'patternColor: string;'
+    return:
+      type: string
+- name: patternTintAndShade
+  uid: excel!Excel.RangeFill#patternTintAndShade:member
+  package: excel!
+  fullName: patternTintAndShade
+  summary: Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'patternTintAndShade: number;'
+    return:
+      type: number
+- name: tintAndShade
+  uid: excel!Excel.RangeFill#tintAndShade:member
+  package: excel!
+  fullName: tintAndShade
+  summary: Задает двойное значение, которое осветляет или затемняет цвет заливки диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес являются неравномерными, возвращается значение null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade: number;'
+    return:
+      type: number
+methods:
+- name: clear()
+  uid: excel!Excel.RangeFill#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: Сброс фона диапазона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.RangeFill#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e7bb03a72346b625694fa29bc5324a79ba3a3c44
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418704"
