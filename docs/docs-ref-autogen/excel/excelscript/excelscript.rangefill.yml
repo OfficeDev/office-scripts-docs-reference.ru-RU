@@ -1,194 +1,181 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RangeFill:interface'
-    summary: Представляет фон объекта диапазона.
-    name: ExcelScript.RangeFill
-    fullName: ExcelScript.RangeFill
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RangeFill#clear:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RangeFill#clear:member(1)'
-    summary: Сброс фона диапазона.
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
-    summary: 'HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин")'
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-    summary: 'Шаблон диапазона. Для получения дополнительных сведений см. Ексцелскрипт. FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.'
-    name: getPattern()
-    fullName: getPattern()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPattern(): FillPattern;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FillPattern:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
-    summary: 'HTML-код цвета, представляющий цвет шаблона диапазона, для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
-    name: getPatternColor()
-    fullName: getPatternColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPatternColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 'Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.'
-    name: getPatternTintAndShade()
-    fullName: getPatternTintAndShade()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPatternTintAndShade(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет заливки диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес являются неравномерными, возвращается значение null.'
-    name: getTintAndShade()
-    fullName: getTintAndShade()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTintAndShade(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
-    summary: 'HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин")'
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-    summary: 'Шаблон диапазона. Для получения дополнительных сведений см. Ексцелскрипт. FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.'
-    name: setPattern(pattern)
-    fullName: setPattern(pattern)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPattern(pattern: FillPattern): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: pattern
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.FillPattern:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
-    summary: 'HTML-код цвета, представляющий цвет шаблона диапазона, для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
-    name: setPatternColor(patternColor)
-    fullName: setPatternColor(patternColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPatternColor(patternColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: patternColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 'Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.'
-    name: setPatternTintAndShade(patternTintAndShade)
-    fullName: setPatternTintAndShade(patternTintAndShade)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: patternTintAndShade
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
-    summary: 'Задает значение типа Double, которое осветляет или затемняет цвет заливки диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес являются неравномерными, возвращается значение null.'
-    name: setTintAndShade(tintAndShade)
-    fullName: setTintAndShade(tintAndShade)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTintAndShade(tintAndShade: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: tintAndShade
-          description: ''
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.FillPattern:enum'
-    name: FillPattern
-    fullName: ExcelScript.FillPattern
+### YamlMime:TSType
+name: ExcelScript.RangeFill
+uid: ExcelScript!ExcelScript.RangeFill:interface
+package: ExcelScript!
+fullName: ExcelScript.RangeFill
+summary: Представляет фон объекта диапазона.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: ExcelScript!ExcelScript.RangeFill#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: Сброс фона диапазона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин")
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPattern()
+  uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
+  package: ExcelScript!
+  fullName: getPattern()
+  summary: Шаблон диапазона. Для получения дополнительных сведений см. Ексцелскрипт. FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPattern(): FillPattern;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
+      description: ''
+- name: getPatternColor()
+  uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
+  package: ExcelScript!
+  fullName: getPatternColor()
+  summary: HTML-код цвета, представляющий цвет шаблона диапазона, для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPatternColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPatternTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getPatternTintAndShade()
+  summary: Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPatternTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getTintAndShade()
+  summary: Задает значение типа Double, которое осветляет или затемняет цвет заливки диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес являются неравномерными, возвращается значение null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин")
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPattern(pattern)
+  uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
+  package: ExcelScript!
+  fullName: setPattern(pattern)
+  summary: Шаблон диапазона. Для получения дополнительных сведений см. Ексцелскрипт. FillPattern. LinearGradient и RectangularGradient не поддерживаются. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шаблона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPattern(pattern: FillPattern): void;'
+    parameters:
+    - id: pattern
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPatternColor(patternColor)
+  uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
+  package: ExcelScript!
+  fullName: setPatternColor(patternColor)
+  summary: HTML-код цвета, представляющий цвет шаблона диапазона, для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPatternColor(patternColor: string): void;'
+    parameters:
+    - id: patternColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPatternTintAndShade(patternTintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setPatternTintAndShade(patternTintAndShade)
+  summary: Задает двойное значение, которое осветляет или затемняет цвет узора для заливки диапазона, значение находится в пределах от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес шаблона являются неравномерными, возвращается значение null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
+    parameters:
+    - id: patternTintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTintAndShade(tintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setTintAndShade(tintAndShade)
+  summary: Задает значение типа Double, которое осветляет или затемняет цвет заливки диапазона. Значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Если Тинтандшадес являются неравномерными, возвращается значение null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTintAndShade(tintAndShade: number): void;'
+    parameters:
+    - id: tintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b9076fea426531db99f583e031e3474e5b30e5e7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411938"

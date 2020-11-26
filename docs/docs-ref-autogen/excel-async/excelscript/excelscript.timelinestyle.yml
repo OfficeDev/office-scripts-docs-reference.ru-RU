@@ -1,88 +1,86 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TimelineStyle:interface'
-    summary: 'Представляет стиль временной шкалы, который определяет элементы стиля по регионам на временной шкале.'
-    name: Excel.TimelineStyle
-    fullName: Excel.TimelineStyle
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TimelineStyle#delete:member(1)'
-      - 'excel!Excel.TimelineStyle#duplicate:member(1)'
-      - 'excel!Excel.TimelineStyle#load:member(1)'
-      - 'excel!Excel.TimelineStyle#name:member'
-      - 'excel!Excel.TimelineStyle#readOnly:member'
-  - uid: 'excel!Excel.TimelineStyle#delete:member(1)'
-    summary: Удаляет объект TableStyle.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.TimelineStyle#duplicate:member(1)'
-    summary: Создает дубликат объекта TimelineStyle с копиями всех элементов стиля.
-    name: duplicate()
-    fullName: duplicate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'duplicate(): TimelineStyle;'
-      return:
-        type:
-          - 'excel!Excel.TimelineStyle:interface'
-        description: ''
-  - uid: 'excel!Excel.TimelineStyle#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TimelineStyle#name:member'
-    summary: Получает имя объекта TimelineStyle.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.TimelineStyle#readOnly:member'
-    summary: 'Указывает, предназначен ли объект TimelineStyle только для чтения.'
-    name: readOnly
-    fullName: readOnly
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly readOnly: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.TimelineStyle:interface'
-    name: TimelineStyle
-    fullName: Excel.TimelineStyle
+### YamlMime:TSType
+name: Excel.TimelineStyle
+uid: excel!Excel.TimelineStyle:interface
+package: excel!
+fullName: Excel.TimelineStyle
+summary: Представляет стиль временной шкалы, который определяет элементы стиля по регионам на временной шкале.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: name
+  uid: excel!Excel.TimelineStyle#name:member
+  package: excel!
+  fullName: name
+  summary: Получает имя объекта TimelineStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: readOnly
+  uid: excel!Excel.TimelineStyle#readOnly:member
+  package: excel!
+  fullName: readOnly
+  summary: Указывает, предназначен ли объект TimelineStyle только для чтения.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly readOnly: boolean;'
+    return:
+      type: boolean
+methods:
+- name: delete()
+  uid: excel!Excel.TimelineStyle#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Удаляет объект TableStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: excel!Excel.TimelineStyle#duplicate:member(1)
+  package: excel!
+  fullName: duplicate()
+  summary: Создает дубликат объекта TimelineStyle с копиями всех элементов стиля.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): TimelineStyle;'
+    return:
+      type: <xref uid="excel!Excel.TimelineStyle:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TimelineStyle#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: aacf450a05c054d37e6d81f802c005b382bbca15
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412715"
