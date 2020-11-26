@@ -1,128 +1,121 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeFill:interface'
-    summary: Представляет форматирование заливки объекта Shape.
-    name: ExcelScript.ShapeFill
-    fullName: ExcelScript.ShapeFill
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeFill#clear:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ShapeFill#clear:member(1)'
-    summary: Очищает формат заливки фигуры.
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
-    summary: 'Представляет цвет переднего плана заливки фигуры в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного HTML-цвета (например, "Апельсин")'
-    name: getForegroundColor()
-    fullName: getForegroundColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getForegroundColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
-    summary: 'Задает процент прозрачности заливки в виде значения от 0,0 (непрозрачный) до 1,0 (Clear). Возвращает значение null, если тип фигуры не поддерживает прозрачность или заливка фигуры имеет несогласованную прозрачность, например при использовании градиентной заливки.'
-    name: getTransparency()
-    fullName: getTransparency()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTransparency(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-    summary: Возвращает тип заливки фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Шапефиллтипе.
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): ShapeFillType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShapeFillType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
-    summary: 'Представляет цвет переднего плана заливки фигуры в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного HTML-цвета (например, "Апельсин")'
-    name: setForegroundColor(foregroundColor)
-    fullName: setForegroundColor(foregroundColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setForegroundColor(foregroundColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: foregroundColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)'
-    summary: Задает заливку одним цветом для фигуры. При этом тип заливки изменяется на сплошную.
-    name: setSolidColor(color)
-    fullName: setSolidColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSolidColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: 'Строка, представляющая цвет заливки в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
-    summary: 'Задает процент прозрачности заливки в виде значения от 0,0 (непрозрачный) до 1,0 (Clear). Возвращает значение null, если тип фигуры не поддерживает прозрачность или заливка фигуры имеет несогласованную прозрачность, например при использовании градиентной заливки.'
-    name: setTransparency(transparency)
-    fullName: setTransparency(transparency)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTransparency(transparency: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: transparency
-          description: ''
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
-    name: ShapeFillType
-    fullName: ExcelScript.ShapeFillType
+### YamlMime:TSType
+name: ExcelScript.ShapeFill
+uid: ExcelScript!ExcelScript.ShapeFill:interface
+package: ExcelScript!
+fullName: ExcelScript.ShapeFill
+summary: Представляет форматирование заливки объекта Shape.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: ExcelScript!ExcelScript.ShapeFill#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: Очищает формат заливки фигуры.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getForegroundColor()
+  uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
+  package: ExcelScript!
+  fullName: getForegroundColor()
+  summary: Представляет цвет переднего плана заливки фигуры в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного HTML-цвета (например, "Апельсин")
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getForegroundColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTransparency()
+  uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
+  package: ExcelScript!
+  fullName: getTransparency()
+  summary: Задает процент прозрачности заливки в виде значения от 0,0 (непрозрачный) до 1,0 (Clear). Возвращает значение null, если тип фигуры не поддерживает прозрачность или заливка фигуры имеет несогласованную прозрачность, например при использовании градиентной заливки.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTransparency(): number;'
+    return:
+      type: number
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Возвращает тип заливки фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Шапефиллтипе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ShapeFillType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeFillType:enum" />
+      description: ''
+- name: setForegroundColor(foregroundColor)
+  uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
+  package: ExcelScript!
+  fullName: setForegroundColor(foregroundColor)
+  summary: Представляет цвет переднего плана заливки фигуры в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного HTML-цвета (например, "Апельсин")
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setForegroundColor(foregroundColor: string): void;'
+    parameters:
+    - id: foregroundColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setSolidColor(color)
+  uid: ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)
+  package: ExcelScript!
+  fullName: setSolidColor(color)
+  summary: Задает заливку одним цветом для фигуры. При этом тип заливки изменяется на сплошную.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSolidColor(color: string): void;'
+    parameters:
+    - id: color
+      description: Строка, представляющая цвет заливки в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setTransparency(transparency)
+  uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
+  package: ExcelScript!
+  fullName: setTransparency(transparency)
+  summary: Задает процент прозрачности заливки в виде значения от 0,0 (непрозрачный) до 1,0 (Clear). Возвращает значение null, если тип фигуры не поддерживает прозрачность или заливка фигуры имеет несогласованную прозрачность, например при использовании градиентной заливки.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTransparency(transparency: number): void;'
+    parameters:
+    - id: transparency
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 48b38d153693b4ffc41e670286c67f362dd83c89
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420659"

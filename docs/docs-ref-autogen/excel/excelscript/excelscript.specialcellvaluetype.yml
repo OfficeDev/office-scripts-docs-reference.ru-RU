@@ -1,130 +1,77 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-    name: ExcelScript.SpecialCellValueType
-    fullName: ExcelScript.SpecialCellValueType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
-    summary: 'Ячейки, содержащие ошибки, истина/ложь, числовые значения или строковые значения.'
-    name: all
-    fullName: all
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
-    summary: 'Ячейки, содержащие ошибки.'
-    name: errors
-    fullName: errors
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
-    summary: 'Ячейки, содержащие ошибки, или значение true/false.'
-    name: errorsLogical
-    fullName: errorsLogical
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
-    summary: 'Ячейки, содержащие ошибки, true/false или числовое значение.'
-    name: errorsLogicalNumber
-    fullName: errorsLogicalNumber
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
-    summary: 'Ячейки с ошибками, true/false или строковым значением.'
-    name: errorsLogicalText
-    fullName: errorsLogicalText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
-    summary: 'Ячейки, содержащие ошибки, или числовое значение.'
-    name: errorsNumbers
-    fullName: errorsNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
-    summary: 'Ячейки, содержащие ошибки, числовые значения или строковые значения.'
-    name: errorsNumberText
-    fullName: errorsNumberText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
-    summary: 'Ячейки, содержащие ошибки, или строковое значение.'
-    name: errorsText
-    fullName: errorsText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
-    summary: 'Ячейки, которые имеют значение true/false.'
-    name: logical
-    fullName: logical
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
-    summary: 'Ячейки, которые имеют значение true/false или числовое значение.'
-    name: logicalNumbers
-    fullName: logicalNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
-    summary: 'Ячейки, которые имеют значение true/false, числовое или строковое значение.'
-    name: logicalNumbersText
-    fullName: logicalNumbersText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
-    summary: 'Ячейки, которые имеют значение true/false, или строковое значение.'
-    name: logicalText
-    fullName: logicalText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
-    summary: 'Ячейки, которые имеют числовое значение.'
-    name: numbers
-    fullName: numbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
-    summary: 'Ячейки, которые содержат числовое значение или строковое значение.'
-    name: numbersText
-    fullName: numbersText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
-    summary: 'Ячейки, содержащие строковое значение.'
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SpecialCellValueType
+uid: ExcelScript!ExcelScript.SpecialCellValueType:enum
+package: ExcelScript!
+fullName: ExcelScript.SpecialCellValueType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: all
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие ошибки, истина/ложь, числовые значения или строковые значения.
+- name: errors
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие ошибки.
+- name: errorsLogical
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие ошибки, или значение true/false.
+- name: errorsLogicalNumber
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие ошибки, true/false или числовое значение.
+- name: errorsLogicalText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
+  package: ExcelScript!
+  summary: Ячейки с ошибками, true/false или строковым значением.
+- name: errorsNumbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие ошибки, или числовое значение.
+- name: errorsNumberText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие ошибки, числовые значения или строковые значения.
+- name: errorsText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие ошибки, или строковое значение.
+- name: logical
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
+  package: ExcelScript!
+  summary: Ячейки, которые имеют значение true/false.
+- name: logicalNumbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
+  package: ExcelScript!
+  summary: Ячейки, которые имеют значение true/false или числовое значение.
+- name: logicalNumbersText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
+  package: ExcelScript!
+  summary: Ячейки, которые имеют значение true/false, числовое или строковое значение.
+- name: logicalText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
+  package: ExcelScript!
+  summary: Ячейки, которые имеют значение true/false, или строковое значение.
+- name: numbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
+  package: ExcelScript!
+  summary: Ячейки, которые имеют числовое значение.
+- name: numbersText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member
+  package: ExcelScript!
+  summary: Ячейки, которые содержат числовое значение или строковое значение.
+- name: text
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.text:member
+  package: ExcelScript!
+  summary: Ячейки, содержащие строковое значение.
+metadata:
+  ms.openlocfilehash: 904bfc40ae83c845e58f566d41db47e05e38af4a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420344"

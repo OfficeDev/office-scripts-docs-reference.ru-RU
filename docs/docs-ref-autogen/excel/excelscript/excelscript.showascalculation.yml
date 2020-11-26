@@ -1,139 +1,81 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
-    summary: Функция вычисления ShowAs для поля Pivot Data.
-    name: ExcelScript.ShowAsCalculation
-    fullName: ExcelScript.ShowAsCalculation
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
-    summary: Разница между заданным базовым полем и базовым элементом.
-    name: differenceFrom
-    fullName: differenceFrom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
-    summary: 'Вычисляет значения следующим образом: ((значение в ячейке) x (общий итог по общим итогам))/((итог по суммарным строкам) x (итог по итоговому столбцу))'
-    name: index
-    fullName: index
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
-    summary: Расчет не применяется.
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
-    summary: Разница между заданным базовым полем и базовым элементом.
-    name: percentDifferenceFrom
-    fullName: percentDifferenceFrom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
-    summary: Процент от указанного базового поля и базового элемента.
-    name: percentOf
-    fullName: percentOf
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
-    summary: Процент от суммы по столбцу.
-    name: percentOfColumnTotal
-    fullName: percentOfColumnTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
-    summary: Процент от общего итога.
-    name: percentOfGrandTotal
-    fullName: percentOfGrandTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
-    summary: Процент от суммы по столбцу для указанного базового поля.
-    name: percentOfParentColumnTotal
-    fullName: percentOfParentColumnTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
-    summary: Процент от суммы по строке для указанного базового поля.
-    name: percentOfParentRowTotal
-    fullName: percentOfParentRowTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
-    summary: Процент от общего итога для указанного базового поля.
-    name: percentOfParentTotal
-    fullName: percentOfParentTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
-    summary: Процент от общего числа строк.
-    name: percentOfRowTotal
-    fullName: percentOfRowTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
-    summary: Итоговый процент с указанным базовым полем.
-    name: percentRunningTotal
-    fullName: percentRunningTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
-    summary: Ранжирование указанного базового поля по возрастанию.
-    name: rankAscending
-    fullName: rankAscending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
-    summary: Ранг по убыванию указанного базового поля.
-    name: rankDecending
-    fullName: rankDecending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
-    summary: Итоговое значение указанного базового поля.
-    name: runningTotal
-    fullName: runningTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
-    summary: Вычисления неизвестны или не поддерживаются.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShowAsCalculation
+uid: ExcelScript!ExcelScript.ShowAsCalculation:enum
+package: ExcelScript!
+fullName: ExcelScript.ShowAsCalculation
+summary: Функция вычисления ShowAs для поля Pivot Data.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: differenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member
+  package: ExcelScript!
+  summary: Разница между заданным базовым полем и базовым элементом.
+- name: index
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.index:member
+  package: ExcelScript!
+  summary: 'Вычисляет значения следующим образом: ((значение в ячейке) x (общий итог по общим итогам))/((итог по суммарным строкам) x (итог по итоговому столбцу))'
+- name: none
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.none:member
+  package: ExcelScript!
+  summary: Расчет не применяется.
+- name: percentDifferenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member
+  package: ExcelScript!
+  summary: Разница между заданным базовым полем и базовым элементом.
+- name: percentOf
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member
+  package: ExcelScript!
+  summary: Процент от указанного базового поля и базового элемента.
+- name: percentOfColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member
+  package: ExcelScript!
+  summary: Процент от суммы по столбцу.
+- name: percentOfGrandTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member
+  package: ExcelScript!
+  summary: Процент от общего итога.
+- name: percentOfParentColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member
+  package: ExcelScript!
+  summary: Процент от суммы по столбцу для указанного базового поля.
+- name: percentOfParentRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member
+  package: ExcelScript!
+  summary: Процент от суммы по строке для указанного базового поля.
+- name: percentOfParentTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member
+  package: ExcelScript!
+  summary: Процент от общего итога для указанного базового поля.
+- name: percentOfRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member
+  package: ExcelScript!
+  summary: Процент от общего числа строк.
+- name: percentRunningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member
+  package: ExcelScript!
+  summary: Итоговый процент с указанным базовым полем.
+- name: rankAscending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member
+  package: ExcelScript!
+  summary: Ранжирование указанного базового поля по возрастанию.
+- name: rankDecending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member
+  package: ExcelScript!
+  summary: Ранг по убыванию указанного базового поля.
+- name: runningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member
+  package: ExcelScript!
+  summary: Итоговое значение указанного базового поля.
+- name: unknown
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.unknown:member
+  package: ExcelScript!
+  summary: Вычисления неизвестны или не поддерживаются.
+metadata:
+  ms.openlocfilehash: d9b3d7c1f2c5e31154f2b54de141a37ff1afead0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420498"
