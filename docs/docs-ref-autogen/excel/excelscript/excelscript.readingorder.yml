@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
-    name: ExcelScript.ReadingOrder
-    fullName: ExcelScript.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-    summary: 'Порядок чтения определяется языком первого введенного знака. Если сначала вводится символ языка с письмом справа налево, порядок чтения справа налево. Если сначала вводится символ языка с письмом слева направо, порядок чтения слева направо.'
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-    summary: Порядок чтения слева направо
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-    summary: Порядок чтения справа налево
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ReadingOrder
+uid: ExcelScript!ExcelScript.ReadingOrder:enum
+package: ExcelScript!
+fullName: ExcelScript.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
+  package: ExcelScript!
+  summary: Порядок чтения определяется языком первого введенного знака. Если сначала вводится символ языка с письмом справа налево, порядок чтения справа налево. Если сначала вводится символ языка с письмом слева направо, порядок чтения слева направо.
+- name: leftToRight
+  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
+  package: ExcelScript!
+  summary: Порядок чтения слева направо
+- name: rightToLeft
+  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
+  package: ExcelScript!
+  summary: Порядок чтения справа налево
+metadata:
+  ms.openlocfilehash: 391ae0ad91303544e478b18cf04e6fcfbee4cec3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416563"

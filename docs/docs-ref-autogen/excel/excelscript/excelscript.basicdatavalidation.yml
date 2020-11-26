@@ -1,72 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-    summary: Представляет критерии проверки данных базового типа.
-    name: ExcelScript.BasicDataValidation
-    fullName: ExcelScript.BasicDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
-      - 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
-      - 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
-    summary: 'Задает правый операнд, если для свойства operator задан бинарный оператор, такой как GreaterThan (левый операнд — это значение, которое пользователь пытается ввести в ячейку). С помощью операторов тернарного между и Нотбетвин задает нижнюю границу операнда. Например, если задать для параметра Formula1 значение 10, а для оператора GreaterThan — допустимые данные для этого диапазона должны быть больше 10. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
-    name: formula1
-    fullName: formula1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula1: string | number | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation#formula1~0:complex'
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
-    summary: 'С помощью операторов тернарного между и Нотбетвин указывает верхнюю границу операнда. Не используется с двоичными операторами, например GreaterThan. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
-    name: formula2
-    fullName: formula2
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula2?: string | number | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation#formula2~0:complex'
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
-    summary: 'Оператор, используемый для проверки данных.'
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'operator: DataValidationOperator;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1~0:complex'
-    name: string | number | Range
-    fullName: string | number | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | number | '
-        fullName: 'string | number | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2~0:complex'
-    name: string | number | Range
-    fullName: string | number | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | number | '
-        fullName: 'string | number | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-    name: DataValidationOperator
-    fullName: ExcelScript.DataValidationOperator
+### YamlMime:TSType
+name: ExcelScript.BasicDataValidation
+uid: ExcelScript!ExcelScript.BasicDataValidation:interface
+package: ExcelScript!
+fullName: ExcelScript.BasicDataValidation
+summary: Представляет критерии проверки данных базового типа.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula1
+  uid: ExcelScript!ExcelScript.BasicDataValidation#formula1:member
+  package: ExcelScript!
+  fullName: formula1
+  summary: 'Задает правый операнд, если для свойства operator задан бинарный оператор, такой как GreaterThan (левый операнд — это значение, которое пользователь пытается ввести в ячейку). С помощью операторов тернарного между и Нотбетвин задает нижнюю границу операнда. Например, если задать для параметра Formula1 значение 10, а для оператора GreaterThan — допустимые данные для этого диапазона должны быть больше 10. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string | number | Range;'
+    return:
+      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: formula2
+  uid: ExcelScript!ExcelScript.BasicDataValidation#formula2:member
+  package: ExcelScript!
+  fullName: formula2
+  summary: 'С помощью операторов тернарного между и Нотбетвин указывает верхнюю границу операнда. Не используется с двоичными операторами, например GreaterThan. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string | number | Range;'
+    return:
+      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: operator
+  uid: ExcelScript!ExcelScript.BasicDataValidation#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: Оператор, используемый для проверки данных.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator: DataValidationOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
+metadata:
+  ms.openlocfilehash: 2838d9862880de654555b397ba920d1eb4f30619
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417294"

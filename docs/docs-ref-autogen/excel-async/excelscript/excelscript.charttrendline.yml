@@ -1,261 +1,197 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTrendline:interface'
-    summary: Этот объект представляет атрибуты объекта линии тренда диаграммы.
-    name: Excel.ChartTrendline
-    fullName: Excel.ChartTrendline
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartTrendline#backwardPeriod:member'
-      - 'excel!Excel.ChartTrendline#delete:member(1)'
-      - 'excel!Excel.ChartTrendline#format:member'
-      - 'excel!Excel.ChartTrendline#forwardPeriod:member'
-      - 'excel!Excel.ChartTrendline#intercept:member'
-      - 'excel!Excel.ChartTrendline#label:member'
-      - 'excel!Excel.ChartTrendline#load:member(1)'
-      - 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
-      - 'excel!Excel.ChartTrendline#name:member'
-      - 'excel!Excel.ChartTrendline#polynomialOrder:member'
-      - 'excel!Excel.ChartTrendline#showEquation:member'
-      - 'excel!Excel.ChartTrendline#showRSquared:member'
-      - 'excel!Excel.ChartTrendline#type:member'
-  - uid: 'excel!Excel.ChartTrendline#backwardPeriod:member'
-    summary: 'Представляет число периодов, на которые линия тренда расширяется назад.'
-    name: backwardPeriod
-    fullName: backwardPeriod
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'backwardPeriod: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendline#delete:member(1)'
-    summary: Удаляет объект линии тренда.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.ChartTrendline#format:member'
-    summary: Представляет форматирование линии тренда диаграммы.
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ChartTrendlineFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineFormat:interface'
-  - uid: 'excel!Excel.ChartTrendline#forwardPeriod:member'
-    summary: 'Представляет число периодов, на которые линия тренда расширяется вперед.'
-    name: forwardPeriod
-    fullName: forwardPeriod
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'forwardPeriod: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendline#intercept:member'
-    summary: Представляет значение отсекаемого отрезка линии тренда. Можно указать в виде числового значения или пустой строки (для автоматически заданных значений). Возвращаемое значение всегда является числом.
-    name: intercept
-    fullName: intercept
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'intercept: any;'
-      return:
-        type:
-          - any
-  - uid: 'excel!Excel.ChartTrendline#label:member'
-    summary: Представляет метку линии тренда диаграммы.
-    name: label
-    fullName: label
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly label: ChartTrendlineLabel;'
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineLabel:interface'
-  - uid: 'excel!Excel.ChartTrendline#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
-    summary: Представляет период линии тренда диаграммы. Применяется только для линии тренда с типом MovingAverage.
-    name: movingAveragePeriod
-    fullName: movingAveragePeriod
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'movingAveragePeriod: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendline#name:member'
-    summary: Представляет имя линии тренда. Можно указать в виде строкового значения или присвоить значение NULL для автоматических значений. Возвращаемое значение всегда является строковым
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartTrendline#polynomialOrder:member'
-    summary: Представляет порядок линии тренда диаграммы. Применяется только для линии тренда с типом полинома.
-    name: polynomialOrder
-    fullName: polynomialOrder
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'polynomialOrder: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendline#showEquation:member'
-    summary: 'Значение true, если формула для линии тренда отображается на диаграмме.'
-    name: showEquation
-    fullName: showEquation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showEquation: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartTrendline#showRSquared:member'
-    summary: 'Значение true, если величина достоверности аппроксимации для линии тренда отображается на диаграмме.'
-    name: showRSquared
-    fullName: showRSquared
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showRSquared: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartTrendline#type:member'
-    summary: Представляет тип линии тренда диаграммы.
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        type:
-                    | ChartTrendlineType
+### YamlMime:TSType
+name: Excel.ChartTrendline
+uid: excel!Excel.ChartTrendline:interface
+package: excel!
+fullName: Excel.ChartTrendline
+summary: Этот объект представляет атрибуты объекта линии тренда диаграммы.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: backwardPeriod
+  uid: excel!Excel.ChartTrendline#backwardPeriod:member
+  package: excel!
+  fullName: backwardPeriod
+  summary: Представляет число периодов, на которые линия тренда расширяется назад.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'backwardPeriod: number;'
+    return:
+      type: number
+- name: format
+  uid: excel!Excel.ChartTrendline#format:member
+  package: excel!
+  fullName: format
+  summary: Представляет форматирование линии тренда диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ChartTrendlineFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartTrendlineFormat:interface" />
+- name: forwardPeriod
+  uid: excel!Excel.ChartTrendline#forwardPeriod:member
+  package: excel!
+  fullName: forwardPeriod
+  summary: Представляет число периодов, на которые линия тренда расширяется вперед.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'forwardPeriod: number;'
+    return:
+      type: number
+- name: intercept
+  uid: excel!Excel.ChartTrendline#intercept:member
+  package: excel!
+  fullName: intercept
+  summary: Представляет значение отсекаемого отрезка линии тренда. Можно указать в виде числового значения или пустой строки (для автоматически заданных значений). Возвращаемое значение всегда является числом.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'intercept: any;'
+    return:
+      type: any
+- name: label
+  uid: excel!Excel.ChartTrendline#label:member
+  package: excel!
+  fullName: label
+  summary: Представляет метку линии тренда диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly label: ChartTrendlineLabel;'
+    return:
+      type: <xref uid="excel!Excel.ChartTrendlineLabel:interface" />
+- name: movingAveragePeriod
+  uid: excel!Excel.ChartTrendline#movingAveragePeriod:member
+  package: excel!
+  fullName: movingAveragePeriod
+  summary: Представляет период линии тренда диаграммы. Применяется только для линии тренда с типом MovingAverage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'movingAveragePeriod: number;'
+    return:
+      type: number
+- name: name
+  uid: excel!Excel.ChartTrendline#name:member
+  package: excel!
+  fullName: name
+  summary: Представляет имя линии тренда. Можно указать в виде строкового значения или присвоить значение NULL для автоматических значений. Возвращаемое значение всегда является строковым
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: polynomialOrder
+  uid: excel!Excel.ChartTrendline#polynomialOrder:member
+  package: excel!
+  fullName: polynomialOrder
+  summary: Представляет порядок линии тренда диаграммы. Применяется только для линии тренда с типом полинома.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'polynomialOrder: number;'
+    return:
+      type: number
+- name: showEquation
+  uid: excel!Excel.ChartTrendline#showEquation:member
+  package: excel!
+  fullName: showEquation
+  summary: Значение true, если формула для линии тренда отображается на диаграмме.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showEquation: boolean;'
+    return:
+      type: boolean
+- name: showRSquared
+  uid: excel!Excel.ChartTrendline#showRSquared:member
+  package: excel!
+  fullName: showRSquared
+  summary: Значение true, если величина достоверности аппроксимации для линии тренда отображается на диаграмме.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showRSquared: boolean;'
+    return:
+      type: boolean
+- name: type
+  uid: excel!Excel.ChartTrendline#type:member
+  package: excel!
+  fullName: type
+  summary: Представляет тип линии тренда диаграммы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      type:
+                  | ChartTrendlineType
+                  | "Linear"
+                  | "Exponential"
+                  | "Logarithmic"
+                  | "MovingAverage"
+                  | "Polynomial"
+                  | "Power";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartTrendlineType:enum" />
                     | "Linear"
                     | "Exponential"
                     | "Logarithmic"
                     | "MovingAverage"
                     | "Polynomial"
-                    | "Power";
-      return:
-        type:
-          - 'excel!Excel.ChartTrendline#type~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series;
-
-              // Get the trendline for series 1 and load its type property.  
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-              trendline.load("type");
-
-              await context.sync();
-
-              console.log("The trendline type is:" + trendline.type);  
-          }
-          ```
-references:
-  - uid: 'excel!Excel.ChartTrendlineFormat:interface'
-    name: ChartTrendlineFormat
-    fullName: Excel.ChartTrendlineFormat
-  - uid: 'excel!Excel.ChartTrendlineLabel:interface'
-    name: ChartTrendlineLabel
-    fullName: Excel.ChartTrendlineLabel
-  - uid: 'excel!Excel.ChartTrendline#type~0:complex'
-    name: |-
-      | ChartTrendlineType
-                  | "Linear"
-                  | "Exponential"
-                  | "Logarithmic"
-                  | "MovingAverage"
-                  | "Polynomial"
-                  | "Power"
-    fullName: |-
-      | Excel.ChartTrendlineType
-                  | "Linear"
-                  | "Exponential"
-                  | "Logarithmic"
-                  | "MovingAverage"
-                  | "Polynomial"
-                  | "Power"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartTrendlineType:enum'
-        name: ChartTrendlineType
-        fullName: Excel.ChartTrendlineType
-      - name: |2-
-
-                      | "Linear"
-                      | "Exponential"
-                      | "Logarithmic"
-                      | "MovingAverage"
-                      | "Polynomial"
-                      | "Power"
-        fullName: |2-
-
-                      | "Linear"
-                      | "Exponential"
-                      | "Logarithmic"
-                      | "MovingAverage"
-                      | "Polynomial"
-                      | "Power"
+                    | "Power"
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    let seriesCollection = sheet.charts.getItemAt(0).series;\n\n    // Get the trendline for series 1 and load its type property.  \n    let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);\n    trendline.load(\"type\");\n\n    await context.sync();\n\n    console.log(\"The trendline type is:\" + trendline.type);  \n}\n```"
+methods:
+- name: delete()
+  uid: excel!Excel.ChartTrendline#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Удаляет объект линии тренда.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartTrendline#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: ea5eec1fb8f1976ee6a5ca1123bcab611341928d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416542"
