@@ -1,216 +1,198 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
-    summary: Представляет форматирование линий для объекта Shape. Для изображений и геометрических фигур форматирование линий представляет границу фигуры.
-    name: ExcelScript.ShapeLineFormat
-    fullName: ExcelScript.ShapeLineFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
-    summary: 'Представляет цвет линии в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
-    name: getDashStyle()
-    fullName: getDashStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDashStyle(): ShapeLineDashStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
-    name: getStyle()
-    fullName: getStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStyle(): ShapeLineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
-    summary: 'Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). Возвращает значение null, если в фигуре используются несогласованные параметры прозрачности.'
-    name: getTransparency()
-    fullName: getTransparency()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTransparency(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
-    summary: 'Указывает, отображается ли форматирование линии элемента фигуры. Возвращает значение null, если в фигуре используются несогласованные параметры видимости.'
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
-    summary: 'Представляет толщину линии (в пунктах). Возвращает значение null, если линия является невидимой или используются линии с несогласованной толщиной.'
-    name: getWeight()
-    fullName: getWeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
-    summary: 'Представляет цвет линии в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").'
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
-    name: setDashStyle(dashStyle)
-    fullName: setDashStyle(dashStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDashStyle(dashStyle: ShapeLineDashStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: dashStyle
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-    summary: 'Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.'
-    name: setStyle(style)
-    fullName: setStyle(style)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStyle(style: ShapeLineStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: style
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
-    summary: 'Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). Возвращает значение null, если в фигуре используются несогласованные параметры прозрачности.'
-    name: setTransparency(transparency)
-    fullName: setTransparency(transparency)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTransparency(transparency: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: transparency
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
-    summary: 'Указывает, отображается ли форматирование линии элемента фигуры. Возвращает значение null, если в фигуре используются несогласованные параметры видимости.'
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
-    summary: 'Представляет толщину линии (в пунктах). Возвращает значение null, если линия является невидимой или используются линии с несогласованной толщиной.'
-    name: setWeight(weight)
-    fullName: setWeight(weight)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setWeight(weight: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: weight
-          description: ''
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
-    name: ShapeLineDashStyle
-    fullName: ExcelScript.ShapeLineDashStyle
-  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
-    name: ShapeLineStyle
-    fullName: ExcelScript.ShapeLineStyle
+### YamlMime:TSType
+name: ExcelScript.ShapeLineFormat
+uid: ExcelScript!ExcelScript.ShapeLineFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ShapeLineFormat
+summary: Представляет форматирование линий для объекта Shape. Для изображений и геометрических фигур форматирование линий представляет границу фигуры.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getColor()
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: Представляет цвет линии в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getDashStyle()
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)
+  package: ExcelScript!
+  fullName: getDashStyle()
+  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDashStyle(): ShapeLineDashStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeLineDashStyle:enum" />
+      description: ''
+- name: getStyle()
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)
+  package: ExcelScript!
+  fullName: getStyle()
+  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStyle(): ShapeLineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeLineStyle:enum" />
+      description: ''
+- name: getTransparency()
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)
+  package: ExcelScript!
+  fullName: getTransparency()
+  summary: Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). Возвращает значение null, если в фигуре используются несогласованные параметры прозрачности.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTransparency(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Указывает, отображается ли форматирование линии элемента фигуры. Возвращает значение null, если в фигуре используются несогласованные параметры видимости.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWeight()
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)
+  package: ExcelScript!
+  fullName: getWeight()
+  summary: Представляет толщину линии (в пунктах). Возвращает значение null, если линия является невидимой или используются линии с несогласованной толщиной.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: Представляет цвет линии в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setDashStyle(dashStyle)
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)
+  package: ExcelScript!
+  fullName: setDashStyle(dashStyle)
+  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDashStyle(dashStyle: ShapeLineDashStyle): void;'
+    parameters:
+    - id: dashStyle
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ShapeLineDashStyle:enum" />
+    return:
+      type: void
+      description: ''
+- name: setStyle(style)
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)
+  package: ExcelScript!
+  fullName: setStyle(style)
+  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStyle(style: ShapeLineStyle): void;'
+    parameters:
+    - id: style
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ShapeLineStyle:enum" />
+    return:
+      type: void
+      description: ''
+- name: setTransparency(transparency)
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)
+  package: ExcelScript!
+  fullName: setTransparency(transparency)
+  summary: Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). Возвращает значение null, если в фигуре используются несогласованные параметры прозрачности.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTransparency(transparency: number): void;'
+    parameters:
+    - id: transparency
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Указывает, отображается ли форматирование линии элемента фигуры. Возвращает значение null, если в фигуре используются несогласованные параметры видимости.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setWeight(weight)
+  uid: ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)
+  package: ExcelScript!
+  fullName: setWeight(weight)
+  summary: Представляет толщину линии (в пунктах). Возвращает значение null, если линия является невидимой или используются линии с несогласованной толщиной.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWeight(weight: number): void;'
+    parameters:
+    - id: weight
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: bad1df9e2238ca401ec4f8ca3d3e30198db219d8
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420631"

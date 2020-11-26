@@ -1,145 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont:interface'
-    summary: 'Представляет `format.font` свойства объекта`getCellProperties`<!-- -->, `getRowProperties`<!-- -->, а `getColumnProperties` также `format.font` входной параметр`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, а`setColumnProperties`<!-- -->.'
-    name: ExcelScript.CellPropertiesFont
-    fullName: ExcelScript.CellPropertiesFont
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#bold:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#color:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#italic:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#name:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#size:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#strikethrough:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#subscript:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#superscript:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#tintAndShade:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFont#underline:member'
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#bold:member'
-    summary: Представляет свойство `format.font.bold`.
-    name: bold
-    fullName: bold
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bold?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#color:member'
-    summary: Представляет свойство `format.font.color`.
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#italic:member'
-    summary: Представляет свойство `format.font.italic`.
-    name: italic
-    fullName: italic
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'italic?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#name:member'
-    summary: Представляет свойство `format.font.name`.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#size:member'
-    summary: Представляет свойство `format.font.size`.
-    name: size
-    fullName: size
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'size?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#strikethrough:member'
-    summary: Представляет свойство `format.font.strikethrough`.
-    name: strikethrough
-    fullName: strikethrough
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'strikethrough?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#subscript:member'
-    summary: Представляет свойство `format.font.subscript`.
-    name: subscript
-    fullName: subscript
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'subscript?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#superscript:member'
-    summary: Представляет свойство `format.font.superscript`.
-    name: superscript
-    fullName: superscript
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'superscript?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#tintAndShade:member'
-    summary: Представляет свойство `format.font.tintAndShade`.
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFont#underline:member'
-    summary: Представляет свойство `format.font.underline`.
-    name: underline
-    fullName: underline
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'underline?: RangeUnderlineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
-    name: RangeUnderlineStyle
-    fullName: ExcelScript.RangeUnderlineStyle
+### YamlMime:TSType
+name: ExcelScript.CellPropertiesFont
+uid: ExcelScript!ExcelScript.CellPropertiesFont:interface
+package: ExcelScript!
+fullName: ExcelScript.CellPropertiesFont
+summary: Представляет `format.font` свойства объекта `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, а `getColumnProperties` также `format.font` входной параметр `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, а `setColumnProperties`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bold
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#bold:member
+  package: ExcelScript!
+  fullName: bold
+  summary: Представляет свойство `format.font.bold`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bold?: boolean;'
+    return:
+      type: boolean
+- name: color
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: Представляет свойство `format.font.color`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: italic
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#italic:member
+  package: ExcelScript!
+  fullName: italic
+  summary: Представляет свойство `format.font.italic`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'italic?: boolean;'
+    return:
+      type: boolean
+- name: name
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#name:member
+  package: ExcelScript!
+  fullName: name
+  summary: Представляет свойство `format.font.name`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name?: string;'
+    return:
+      type: string
+- name: size
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#size:member
+  package: ExcelScript!
+  fullName: size
+  summary: Представляет свойство `format.font.size`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'size?: number;'
+    return:
+      type: number
+- name: strikethrough
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#strikethrough:member
+  package: ExcelScript!
+  fullName: strikethrough
+  summary: Представляет свойство `format.font.strikethrough`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'strikethrough?: boolean;'
+    return:
+      type: boolean
+- name: subscript
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#subscript:member
+  package: ExcelScript!
+  fullName: subscript
+  summary: Представляет свойство `format.font.subscript`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subscript?: boolean;'
+    return:
+      type: boolean
+- name: superscript
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#superscript:member
+  package: ExcelScript!
+  fullName: superscript
+  summary: Представляет свойство `format.font.superscript`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'superscript?: boolean;'
+    return:
+      type: boolean
+- name: tintAndShade
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#tintAndShade:member
+  package: ExcelScript!
+  fullName: tintAndShade
+  summary: Представляет свойство `format.font.tintAndShade`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade?: number;'
+    return:
+      type: number
+- name: underline
+  uid: ExcelScript!ExcelScript.CellPropertiesFont#underline:member
+  package: ExcelScript!
+  fullName: underline
+  summary: Представляет свойство `format.font.underline`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'underline?: RangeUnderlineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />
+metadata:
+  ms.openlocfilehash: 6b5104aa2edf2fa0ab56abf4c59524697299d81a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420197"
