@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
-    name: ExcelScript.PivotLayoutType
-    fullName: ExcelScript.PivotLayoutType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
-      - 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
-      - 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
-    summary: Горизонтально сжатая форма с подписями из следующего поля в том же столбце.
-    name: compact
-    fullName: compact
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
-    summary: 'Внутренние поля элементы находятся в той же строке, что и внешние поля, в нижней части всегда есть элементы и промежуточные итоги.'
-    name: outline
-    fullName: outline
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
-    summary: Элементы Fields всегда расположены на новой строке относительно элементов внешних полей.
-    name: tabular
-    fullName: tabular
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PivotLayoutType
+uid: ExcelScript!ExcelScript.PivotLayoutType:enum
+package: ExcelScript!
+fullName: ExcelScript.PivotLayoutType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: compact
+  uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
+  package: ExcelScript!
+  summary: Горизонтально сжатая форма с подписями из следующего поля в том же столбце.
+- name: outline
+  uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
+  package: ExcelScript!
+  summary: Внутренние поля элементы находятся в той же строке, что и внешние поля, в нижней части всегда есть элементы и промежуточные итоги.
+- name: tabular
+  uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
+  package: ExcelScript!
+  summary: Элементы Fields всегда расположены на новой строке относительно элементов внешних полей.
+metadata:
+  ms.openlocfilehash: 2c698c1cea3b728857723dbdd00474d8723b9569
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415178"

@@ -1,177 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
-    summary: 'Представляет объекты границ, из которых состоит граница диапазона.'
-    name: Excel.ConditionalRangeBorderCollection
-    fullName: Excel.ConditionalRangeBorderCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
-      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
-      - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
-      - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
-    summary: Получает нижнюю границу.
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly bottom: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
-    summary: Количество объектов границы в коллекции.
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
-    summary: Возвращает объект границы по его имени.
-    name: getItem(index)
-    fullName: getItem(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getItem(
-                    index:
-                        | ConditionalRangeBorderIndex
-                        | "EdgeTop"
-                        | "EdgeBottom"
-                        | "EdgeLeft"
-                        | "EdgeRight"
-                ): ConditionalRangeBorder;
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Значение индекса получаемого объекта границы. Дополнительные сведения см. в статье Excel. Кондитионалранжебордериндекс.
-          type:
-            - 'excel!Excel.ConditionalRangeBorderCollection#getItem~0:complex'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
-    summary: Возвращает объект границы по его индексу.
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Значение индекса получаемого объекта. Используется нулевой индекс.
-          type:
-            - number
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
-    summary: Получает левую границу.
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly left: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
-    summary: Добавляет в очередь команду для загрузки указанных свойств объекта. `context.sync()`Перед чтением свойств необходимо вызвать метод.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
-    summary: Получает правую границу.
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly right: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
-    summary: Получает верхнюю границу.
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly top: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-references:
-  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
-    name: ConditionalRangeBorder
-    fullName: Excel.ConditionalRangeBorder
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem~0:complex'
-    name: |-
-      | ConditionalRangeBorderIndex
+### YamlMime:TSType
+name: Excel.ConditionalRangeBorderCollection
+uid: excel!Excel.ConditionalRangeBorderCollection:interface
+package: excel!
+fullName: Excel.ConditionalRangeBorderCollection
+summary: Представляет объекты границ, из которых состоит граница диапазона.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bottom
+  uid: excel!Excel.ConditionalRangeBorderCollection#bottom:member
+  package: excel!
+  fullName: bottom
+  summary: Получает нижнюю границу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly bottom: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+- name: count
+  uid: excel!Excel.ConditionalRangeBorderCollection#count:member
+  package: excel!
+  fullName: count
+  summary: Количество объектов границы в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+- name: left
+  uid: excel!Excel.ConditionalRangeBorderCollection#left:member
+  package: excel!
+  fullName: left
+  summary: Получает левую границу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly left: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+- name: right
+  uid: excel!Excel.ConditionalRangeBorderCollection#right:member
+  package: excel!
+  fullName: right
+  summary: Получает правую границу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly right: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+- name: top
+  uid: excel!Excel.ConditionalRangeBorderCollection#top:member
+  package: excel!
+  fullName: top
+  summary: Получает верхнюю границу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly top: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+methods:
+- name: getItem(index)
+  uid: excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(index)
+  summary: Возвращает объект границы по его имени.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getItem(
+                  index:
+                      | ConditionalRangeBorderIndex
                       | "EdgeTop"
                       | "EdgeBottom"
                       | "EdgeLeft"
                       | "EdgeRight"
-    fullName: |-
-      | Excel.ConditionalRangeBorderIndex
-                      | "EdgeTop"
-                      | "EdgeBottom"
-                      | "EdgeLeft"
-                      | "EdgeRight"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
-        name: ConditionalRangeBorderIndex
-        fullName: Excel.ConditionalRangeBorderIndex
-      - name: |2-
-
-                          | "EdgeTop"
-                          | "EdgeBottom"
-                          | "EdgeLeft"
-                          | "EdgeRight"
-                  
-        fullName: |2-
-
-                          | "EdgeTop"
-                          | "EdgeBottom"
-                          | "EdgeLeft"
-                          | "EdgeRight"
+              ): ConditionalRangeBorder;
+    parameters:
+    - id: index
+      description: Значение индекса получаемого объекта границы. Дополнительные сведения см. в статье Excel. Кондитионалранжебордериндекс.
+      type: "| <xref uid=\"excel!Excel.ConditionalRangeBorderIndex:enum\" />\n                | \"EdgeTop\"\n                | \"EdgeBottom\"\n                | \"EdgeLeft\"\n                | \"EdgeRight\"\n        "
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: Возвращает объект границы по его индексу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): ConditionalRangeBorder;'
+    parameters:
+    - id: index
+      description: Значение индекса получаемого объекта. Используется нулевой индекс.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ConditionalRangeBorderCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Добавляет в очередь команду для загрузки указанных свойств объекта. Перед чтением свойств требуется вызвать метод `context.sync()`.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Строка, разделенная запятыми, или массив строк, указывающий свойства для загрузки.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 0110d5aacf9c092e4aa0037ec45851818754c73f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414183"

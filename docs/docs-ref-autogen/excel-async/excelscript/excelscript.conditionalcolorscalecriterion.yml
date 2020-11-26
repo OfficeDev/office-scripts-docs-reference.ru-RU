@@ -1,103 +1,71 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
-    summary: 'Представляет критерий цветовой шкалы, который содержит тип, значение и цвет.'
-    name: Excel.ConditionalColorScaleCriterion
-    fullName: Excel.ConditionalColorScaleCriterion
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalColorScaleCriterion#color:member'
-      - 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
-      - 'excel!Excel.ConditionalColorScaleCriterion#type:member'
-  - uid: 'excel!Excel.ConditionalColorScaleCriterion#color:member'
-    summary: 'Представление цветового кода HTML цвета цветовой шкалы (например, \# FF0000 представляет собой красный цвет).'
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
-    summary: 'Число, формула или значение NULL (если указан тип LowestValue).'
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula?: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ConditionalColorScaleCriterion#type:member'
-    summary: Какова должна основываться Условная формула условия.
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        type:
-                    | ConditionalFormatColorCriterionType
+### YamlMime:TSType
+name: Excel.ConditionalColorScaleCriterion
+uid: excel!Excel.ConditionalColorScaleCriterion:interface
+package: excel!
+fullName: Excel.ConditionalColorScaleCriterion
+summary: Представляет критерий цветовой шкалы, который содержит тип, значение и цвет.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.ConditionalColorScaleCriterion#color:member
+  package: excel!
+  fullName: color
+  summary: Представление цветового кода HTML цвета цветовой шкалы (например, \# FF0000 представляет собой красный цвет).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: formula
+  uid: excel!Excel.ConditionalColorScaleCriterion#formula:member
+  package: excel!
+  fullName: formula
+  summary: Число, формула или значение NULL (если указан тип LowestValue).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula?: string;'
+    return:
+      type: string
+- name: type
+  uid: excel!Excel.ConditionalColorScaleCriterion#type:member
+  package: excel!
+  fullName: type
+  summary: Какова должна основываться Условная формула условия.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      type:
+                  | ConditionalFormatColorCriterionType
+                  | "Invalid"
+                  | "LowestValue"
+                  | "HighestValue"
+                  | "Number"
+                  | "Percent"
+                  | "Formula"
+                  | "Percentile";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ConditionalFormatColorCriterionType:enum" />
                     | "Invalid"
                     | "LowestValue"
                     | "HighestValue"
                     | "Number"
                     | "Percent"
                     | "Formula"
-                    | "Percentile";
-      return:
-        type:
-          - 'excel!Excel.ConditionalColorScaleCriterion#type~0:complex'
-references:
-  - uid: 'excel!Excel.ConditionalColorScaleCriterion#type~0:complex'
-    name: |-
-      | ConditionalFormatColorCriterionType
-                  | "Invalid"
-                  | "LowestValue"
-                  | "HighestValue"
-                  | "Number"
-                  | "Percent"
-                  | "Formula"
-                  | "Percentile"
-    fullName: |-
-      | Excel.ConditionalFormatColorCriterionType
-                  | "Invalid"
-                  | "LowestValue"
-                  | "HighestValue"
-                  | "Number"
-                  | "Percent"
-                  | "Formula"
-                  | "Percentile"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
-        name: ConditionalFormatColorCriterionType
-        fullName: Excel.ConditionalFormatColorCriterionType
-      - name: |2-
-
-                      | "Invalid"
-                      | "LowestValue"
-                      | "HighestValue"
-                      | "Number"
-                      | "Percent"
-                      | "Formula"
-                      | "Percentile"
-        fullName: |2-
-
-                      | "Invalid"
-                      | "LowestValue"
-                      | "HighestValue"
-                      | "Number"
-                      | "Percent"
-                      | "Formula"
-                      | "Percentile"
+                    | "Percentile"
+metadata:
+  ms.openlocfilehash: 33e1aec7a2354656697c7d8f95b47ca524072444
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414693"

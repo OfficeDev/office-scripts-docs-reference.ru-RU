@@ -1,90 +1,87 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
-    summary: Представляет настраиваемое свойство.
-    name: ExcelScript.CustomProperty
-    fullName: ExcelScript.CustomProperty
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CustomProperty#delete:member(1)'
-      - 'ExcelScript!ExcelScript.CustomProperty#getKey:member(1)'
-      - 'ExcelScript!ExcelScript.CustomProperty#getType:member(1)'
-      - 'ExcelScript!ExcelScript.CustomProperty#getValue:member(1)'
-      - 'ExcelScript!ExcelScript.CustomProperty#setValue:member(1)'
-  - uid: 'ExcelScript!ExcelScript.CustomProperty#delete:member(1)'
-    summary: Удаляет настраиваемое свойство.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CustomProperty#getKey:member(1)'
-    summary: Ключ настраиваемого свойства. Ключ ограничен 255 символами за пределом Excel в Интернете (крупные ключи автоматически обрезаются до 255 символов на других платформах).
-    name: getKey()
-    fullName: getKey()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getKey(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CustomProperty#getType:member(1)'
-    summary: 'Тип значения, используемого для настраиваемого свойства.'
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): DocumentPropertyType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DocumentPropertyType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CustomProperty#getValue:member(1)'
-    summary: Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
-    name: getValue()
-    fullName: getValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValue(): any;'
-      return:
-        type:
-          - any
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CustomProperty#setValue:member(1)'
-    summary: Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
-    name: setValue(value)
-    fullName: setValue(value)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValue(value: any): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: value
-          description: ''
-          type:
-            - any
-references:
-  - uid: 'ExcelScript!ExcelScript.DocumentPropertyType:enum'
-    name: DocumentPropertyType
-    fullName: ExcelScript.DocumentPropertyType
+### YamlMime:TSType
+name: ExcelScript.CustomProperty
+uid: ExcelScript!ExcelScript.CustomProperty:interface
+package: ExcelScript!
+fullName: ExcelScript.CustomProperty
+summary: Представляет настраиваемое свойство.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.CustomProperty#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Удаляет настраиваемое свойство.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getKey()
+  uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
+  package: ExcelScript!
+  fullName: getKey()
+  summary: Ключ настраиваемого свойства. Ключ ограничен 255 символами за пределом Excel в Интернете (крупные ключи автоматически обрезаются до 255 символов на других платформах).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getKey(): string;'
+    return:
+      type: string
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.CustomProperty#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Тип значения, используемого для настраиваемого свойства.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): DocumentPropertyType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DocumentPropertyType:enum" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): any;'
+    return:
+      type: any
+      description: ''
+- name: setValue(value)
+  uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
+  package: ExcelScript!
+  fullName: setValue(value)
+  summary: Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValue(value: any): void;'
+    parameters:
+    - id: value
+      description: ''
+      type: any
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: c1a2f549413c7c33b66a60e232fb80bfeb60658a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415605"

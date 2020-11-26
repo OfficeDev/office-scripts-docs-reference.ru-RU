@@ -1,1894 +1,1300 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    summary: "Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т.\_д."
-    name: ExcelScript.Worksheet
-    fullName: ExcelScript.Worksheet
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Worksheet#activate:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addChart:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addComment:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addGroup:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addHorizontalPageBreak:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addImage:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addLine:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addSlicer:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#copy:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#findAll:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getCell:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getChart:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getCharts:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getComment:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getComments:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getName:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getNames:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getNext:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getPivotTables:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getPosition:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getProtection:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getRanges:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getShape:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getShapes:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getShowGridlines:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getShowHeadings:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getSlicers:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getStandardHeight:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getTable:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getTables:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#replaceAll:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setName:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setShowHeadings:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#setVisibility:member(1)'
-      - 'ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#activate:member(1)'
-    summary: Активация листа в пользовательском интерфейсе Excel.
-    name: activate()
-    fullName: activate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'activate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addChart:member(1)'
-    summary: Создает диаграмму.
-    name: 'addChart(type, sourceData, seriesBy)'
-    fullName: 'addChart(type, sourceData, seriesBy)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addChart(
-                    type: ChartType,
-                    sourceData: Range,
-                    seriesBy?: ChartSeriesBy
-                ): Chart;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Chart:interface'
-        description: ''
-      parameters:
-        - id: type
-          description: Представляет тип диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
-          type:
-            - 'ExcelScript!ExcelScript.ChartType:enum'
-        - id: sourceData
-          description: 'Объект Range, соответствующий исходным данным.'
-          type:
-            - 'ExcelScript!ExcelScript.Range:interface'
-        - id: seriesBy
-          description: Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Для получения дополнительных сведений см. Ексцелскрипт. Чартсериесби.
-          type:
-            - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addComment:member(1)'
-    summary: 'Создает новое примечание с указанным содержимым в определенной ячейке. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.'
-    name: 'addComment(cellAddress, content, contentType)'
-    fullName: 'addComment(cellAddress, content, contentType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addComment(
-                    cellAddress: Range | string,
-                    content: CommentRichContent | string,
-                    contentType?: ContentType
-                ): Comment;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: cellAddress
-          description: 'Ячейка, к которой добавляется комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addComment~0:complex'
-        - id: content
-          description: 'Содержимое комментария. Это может быть объект String или Комментричконтент. Строки используются для обычного текста. Объекты Комментричконтент позволяют использовать другие функции комментариев, например упоминания.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addComment~1:complex'
-        - id: contentType
-          description: 'Необязательное свойство. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.'
-          type:
-            - 'ExcelScript!ExcelScript.ContentType:enum'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
-    summary: 'Добавляет геометрическую фигуру на лист. Возвращает объект Shape, представляющий новую фигуру.'
-    name: addGeometricShape(geometricShapeType)
-    fullName: addGeometricShape(geometricShapeType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-      parameters:
-        - id: geometricShapeType
-          description: Представляет тип геометрической фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Жеометрикшапетипе.
-          type:
-            - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addGroup:member(1)'
-    summary: 'Группирует подмножество фигур на листе этой коллекции. Возвращает объект Shape, представляющий новую группу фигур.'
-    name: addGroup(values)
-    fullName: addGroup(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addGroup(values: Array<string | Shape>): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-      parameters:
-        - id: values
-          description: Массив ИДЕНТИФИКАТОРов фигуры или объектов Shape.
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addGroup~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addHorizontalPageBreak:member(1)'
-    summary: Добавляет разрыв страницы перед левой верхней ячейкой указанного диапазона.
-    name: addHorizontalPageBreak(pageBreakRange)
-    fullName: addHorizontalPageBreak(pageBreakRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addHorizontalPageBreak(pageBreakRange: Range | string): PageBreak;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PageBreak:interface'
-        description: ''
-      parameters:
-        - id: pageBreakRange
-          description: 'Диапазон, непосредственно после добавления разрыва страницы.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addHorizontalPageBreak~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addImage:member(1)'
-    summary: 'Создает изображение из строки в кодировке base64 и добавляет его на лист. Возвращает объект Shape, представляющий новое изображение.'
-    name: addImage(base64ImageString)
-    fullName: addImage(base64ImageString)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addImage(base64ImageString: string): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-      parameters:
-        - id: base64ImageString
-          description: 'Строка в кодировке Base64, представляющая изображение в формате JPEG или PNG.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addLine:member(1)'
-    summary: 'Добавляет линию на лист. Возвращает объект Shape, представляющий новую линию.'
-    name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
-    fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addLine(
-                    startLeft: number,
-                    startTop: number,
-                    endLeft: number,
-                    endTop: number,
-                    connectorType?: ConnectorType
-                ): Shape;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-      parameters:
-        - id: startLeft
-          description: Расстояние от начала линии до левого края листа (в пунктах).
-          type:
-            - number
-        - id: startTop
-          description: Расстояние (в пунктах) от начала линии до верхней границы листа.
-          type:
-            - number
-        - id: endLeft
-          description: Расстояние в пунктах от конца строки до левого края листа.
-          type:
-            - number
-        - id: endTop
-          description: Расстояние в пунктах от конца линии до верхней границы листа.
-          type:
-            - number
-        - id: connectorType
-          description: Представляет тип соединителя. Для получения дополнительных сведений см. Ексцелскрипт. Коннектортипе.
-          type:
-            - 'ExcelScript!ExcelScript.ConnectorType:enum'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)'
-    summary: Добавляет новое имя в определенную коллекцию.
-    name: 'addNamedItem(name, reference, comment)'
-    fullName: 'addNamedItem(name, reference, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addNamedItem(
-                    name: string,
-                    reference: Range | string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Имя именованного элемента.
-          type:
-            - string
-        - id: reference
-          description: 'Формула или диапазон, на который будет ссылаться имя.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addNamedItem~0:complex'
-        - id: comment
-          description: 'Необязательное свойство. Комментарий, связанный с именованным элементом.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)'
-    summary: 'Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.'
-    name: 'addNamedItemFormulaLocal(name, formula, comment)'
-    fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addNamedItemFormulaLocal(
-                    name: string,
-                    formula: string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Имя именованного элемента.
-          type:
-            - string
-        - id: formula
-          description: 'Формула на языке пользователя, на которую будет ссылаться имя.'
-          type:
-            - string
-        - id: comment
-          description: 'Необязательное свойство. Комментарий, связанный с именованным элементом.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)'
-    summary: Добавьте сводную таблицу на основе указанных исходных данных и вставьте ее в верхнюю левую ячейку конечного диапазона.
-    name: 'addPivotTable(name, source, destination)'
-    fullName: 'addPivotTable(name, source, destination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addPivotTable(
-                    name: string,
-                    source: Range | string | Table,
-                    destination: Range | string
-                ): PivotTable;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Имя новой сводной таблицы.
-          type:
-            - string
-        - id: source
-          description: 'Исходные данные для новой сводной таблицы, может быть диапазоном (или строковым адресом, включая имя листа) или таблицей.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addPivotTable~0:complex'
-        - id: destination
-          description: 'Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы (диапазон на листе, на котором будет помещен итоговый отчет).'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addPivotTable~1:complex'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addSlicer:member(1)'
-    summary: Добавляет новый срез в книгу.
-    name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
-    fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addSlicer(
-                    slicerSource: string | PivotTable | Table,
-                    sourceField: string | PivotField | number | TableColumn,
-                    slicerDestination?: string | Worksheet
-                ): Slicer;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Slicer:interface'
-        description: ''
-      parameters:
-        - id: slicerSource
-          description: 'Источник данных, на котором будет основан новый срез. Это может быть объект PivotTable, объект Table или строка. Когда объект сводной таблицы передается, источником данных является источник объекта сводной таблицы. Когда передается объект Table, источником данных является объект Table. Когда строка передается, она интерпретируется как имя/идентификатор сводной таблицы или таблицы.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addSlicer~0:complex'
-        - id: sourceField
-          description: 'Поле в источнике данных, по которому выполняется фильтрация. Это может быть объект PivotField, объект TableColumn, идентификатор PivotField или идентификатор и имя TableColumn.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addSlicer~1:complex'
-        - id: slicerDestination
-          description: 'Необязательное свойство. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addSlicer~2:complex'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
-    summary: 'Создание таблицы. Объект или исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если добавить таблицу не удается (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.'
-    name: 'addTable(address, hasHeaders)'
-    fullName: 'addTable(address, hasHeaders)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```javascript
-          /**
-           * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Create a table with the used cells.
-            let usedRange = selectedSheet.getUsedRange();
-            let newTable = selectedSheet.addTable(usedRange, true);
-
-            // Sort the table using the first column.
-            newTable.getSort().apply([{ key: 0, ascending: true }]);
-          }
-          ```
-      parameters:
-        - id: address
-          description: 'Объект Range, строковый адрес или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addTable~0:complex'
-        - id: hasHeaders
-          description: 'Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
-    summary: 'Добавляет текстовое поле на лист с указанным текстом в качестве содержимого. Возвращает объект Shape, представляющий новое текстовое поле.'
-    name: addTextBox(text)
-    fullName: addTextBox(text)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addTextBox(text?: string): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-      parameters:
-        - id: text
-          description: 'Представляет текст, который будет отображаться в созданном текстовом поле.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)'
-    summary: Добавляет разрыв страницы перед левой верхней ячейкой указанного диапазона.
-    name: addVerticalPageBreak(pageBreakRange)
-    fullName: addVerticalPageBreak(pageBreakRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addVerticalPageBreak(pageBreakRange: Range | string): PageBreak;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PageBreak:interface'
-        description: ''
-      parameters:
-        - id: pageBreakRange
-          description: 'Диапазон, непосредственно после добавления разрыва страницы.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
-    summary: 'Добавляет новое настраиваемое свойство, которое сопоставляется с предоставленным ключом. При этом существующие настраиваемые свойства перезаписываются с помощью этого раздела.'
-    name: 'addWorksheetCustomProperty(key, value)'
-    fullName: 'addWorksheetCustomProperty(key, value)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addWorksheetCustomProperty(
-                    key: string,
-                    value: string
-                ): WorksheetCustomProperty;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 'Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр. Ключ имеет ограничение в 255 символов (большие значения приведут к возникновению ошибки "InvalidArgument").'
-          type:
-            - string
-        - id: value
-          description: Значение этого настраиваемого свойства.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
-    summary: Вычисляет все ячейки на листе.
-    name: calculate(markAllDirty)
-    fullName: calculate(markAllDirty)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(markAllDirty: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markAllDirty
-          description: 'Значение true, чтобы пометить все как "грязный".'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#copy:member(1)'
-    summary: Копирует лист и размещает его в указанной позиции.
-    name: 'copy(positionType, relativeTo)'
-    fullName: 'copy(positionType, relativeTo)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copy(
-                    positionType?: WorksheetPositionType,
-                    relativeTo?: Worksheet
-                ): Worksheet;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: positionType
-          description: 'Расположение в книге, в которое будет помещен созданный лист. Значение по умолчанию — "None", которое вставляет лист в начало листа.'
-          type:
-            - 'ExcelScript!ExcelScript.WorksheetPositionType:enum'
-        - id: relativeTo
-          description: 'Существующий лист, который определяет положение вновь созданного листа. Это необходимо, только если `positionType` это "до" или "после".'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet:interface'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#delete:member(1)'
-    summary: 'Удаляет лист из книги. Обратите внимание, что если для отображения листа задано значение "Верихидден", операция удаления завершится с `InvalidOperation` исключением. Прежде чем удалять его, необходимо сначала изменить его видимость на скрытую или видимую.'
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```javascript
-          /**
-           * The following scripts removes the first worksheet in the workbook.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the first worksheet.
-            let sheet = workbook.getWorksheets()[0];
-
-            // Remove that worksheet from the workbook.
-            sheet.delete();
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Worksheet#findAll:member(1)'
-    summary: 'Находит все вхождения определенной строки на основе указанных условий и возвращает их в виде объекта RangeAreas, состоящего из одного или нескольких прямоугольных диапазонов.'
-    name: 'findAll(text, criteria)'
-    fullName: 'findAll(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: text
-          description: Строка для поиска.
-          type:
-            - string
-        - id: criteria
-          description: 'Дополнительные условия поиска, в том числе поиск соответствия требованиям к ячейкам целиком или с учетом регистра.'
-          type:
-            - 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)'
-    summary: Представляет объект AutoFilter листа.
-    name: getAutoFilter()
-    fullName: getAutoFilter()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAutoFilter(): AutoFilter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.AutoFilter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCell:member(1)'
-    summary: 'Получает объект диапазона, содержащий одну ячейку, по номеру строки и столбца. Ячейка может находиться вне границ родительского диапазона, пока она остается в сетке листа.'
-    name: 'getCell(row, column)'
-    fullName: 'getCell(row, column)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCell(row: number, column: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: 'Номер строки ячейки, которую требуется извлечь. Используется нулевой индекс.'
-          type:
-            - number
-        - id: column
-          description: 'Номер столбца ячейки, которую требуется извлечь. Используется нулевой индекс.'
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getChart:member(1)'
-    summary: 'Возвращает диаграмму по ее имени. Если одно и то же имя принадлежит нескольким диаграммам, будет возвращена первая из них. Если диаграмма не существует, вернет пустой объект.'
-    name: getChart(name)
-    fullName: getChart(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getChart(name: string): Chart | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getChart~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Имя получаемой диаграммы.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCharts:member(1)'
-    summary: 'Возвращает коллекцию диаграмм, которые являются частью листа.'
-    name: getCharts()
-    fullName: getCharts()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCharts(): Chart[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getCharts~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getComment:member(1)'
-    summary: Получает примечание из коллекции на основе его идентификатора.
-    name: getComment(commentId)
-    fullName: getComment(commentId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getComment(commentId: string): Comment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: commentId
-          description: Идентификатор комментария.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)'
-    summary: Получает примечание из указанной ячейки.
-    name: getCommentByCell(cellAddress)
-    fullName: getCommentByCell(cellAddress)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCommentByCell(cellAddress: Range | string): Comment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: cellAddress
-          description: 'Ячейка, в которой находится комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.'
-          type:
-            - 'ExcelScript!ExcelScript.Worksheet#getCommentByCell~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
-    summary: 'Получает комментарий, к которому подключен данный ответ.'
-    name: getCommentByReplyId(replyId)
-    fullName: getCommentByReplyId(replyId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCommentByReplyId(replyId: string): Comment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: replyId
-          description: Идентификатор ответа на комментарий.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getComments:member(1)'
-    summary: Возвращает коллекцию всех объектов Comments на листе.
-    name: getComments()
-    fullName: getComments()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getComments(): Comment[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getComments~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
-    summary: Возвращает коллекцию настраиваемых свойств на уровне листа.
-    name: getCustomProperties()
-    fullName: getCustomProperties()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCustomProperties(): WorksheetCustomProperty[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
-    summary: 'Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.'
-    name: getEnableCalculation()
-    fullName: getEnableCalculation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEnableCalculation(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)'
-    summary: 'Получает объект, который можно использовать для работы с замороженными областями на листе.'
-    name: getFreezePanes()
-    fullName: getFreezePanes()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFreezePanes(): WorksheetFreezePanes;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)'
-    summary: Получает коллекцию горизонтальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
-    name: getHorizontalPageBreaks()
-    fullName: getHorizontalPageBreaks()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHorizontalPageBreaks(): PageBreak[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getId:member(1)'
-    summary: 'Возвращает значение, однозначно идентифицирующее лист в данной книге. Значение идентификатора остается прежним, даже если переименовать или переместить лист.'
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getName:member(1)'
-    summary: Отображаемое имя листа.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```javascript
-          /**
-           * This sample gets all the worksheet names in the workbook.
-           * It then logs those names to the console.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-              // Create an array to hold the worksheet names.
-              let worksheetNames = [];
-
-              // Iterate over the worksheet collection in the workbook.
-              for (let worksheet of workbook.getWorksheets()) {
-                  worksheetNames.push(worksheet.getName());
-              }
-
-              // Log the array of worksheet names.
-              console.log(worksheetNames);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)'
-    summary: 'Возвращает объект NamedItem, используя его имя. Если объект nameditem не существует, возвращает пустой объект.'
-    name: getNamedItem(name)
-    fullName: getNamedItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNamedItem(name: string): NamedItem | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getNamedItem~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Имя NamedItem.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getNames:member(1)'
-    summary: 'Коллекция имен, относящих к текущему листу.'
-    name: getNames()
-    fullName: getNames()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNames(): NamedItem[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getNames~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getNext:member(1)'
-    summary: 'Получает лист, следующий по отношению к элементу. Если после этого листа нет ни одного листа, этот метод возвратит нулевой объект.'
-    name: getNext(visibleOnly)
-    fullName: getNext(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNext(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Необязательное свойство. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)'
-    summary: Получает объект PageLayout листа.
-    name: getPageLayout()
-    fullName: getPageLayout()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPageLayout(): PageLayout;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PageLayout:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)'
-    summary: 'Получает сводную таблицу по имени. Если сводная таблица не существует, возвращает пустой объект.'
-    name: getPivotTable(name)
-    fullName: getPivotTable(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTable(name: string): PivotTable | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getPivotTable~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Имя получаемой сводной таблицы.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getPivotTables:member(1)'
-    summary: Коллекция сводных таблиц на листе.
-    name: getPivotTables()
-    fullName: getPivotTables()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTables(): PivotTable[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getPivotTables~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getPosition:member(1)'
-    summary: Положение листа (начиная с нуля) в книге.
-    name: getPosition()
-    fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPosition(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)'
-    summary: 'Получает лист, который предшествует этому. Если нет предыдущих листов, этот метод возвратит значение NULL обжет.'
-    name: getPrevious(visibleOnly)
-    fullName: getPrevious(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Необязательное свойство. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getProtection:member(1)'
-    summary: Возвращает объект защиты листа.
-    name: getProtection()
-    fullName: getProtection()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getProtection(): WorksheetProtection;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.WorksheetProtection:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getRange:member(1)'
-    summary: 'Получает объект Range, представляющий отдельный прямоугольный блок ячеек, заданный по адресу или имени.'
-    name: getRange(address)
-    fullName: getRange(address)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(address?: string): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```javascript
-          /**
-           * This sample reads the value of A1 and prints it to the console.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Get the value of cell A1.
-            let range = selectedSheet.getRange("A1");
-            
-            // Print the value of A1.
-            console.log(range.getValue());
-          }
-          ```
-      parameters:
-        - id: address
-          description: 'Необязательное свойство. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)'
-    summary: 'Получает объект диапазона, начинающегося с определенных строки и столбца и занимающего определенное количество строк и столбцов.'
-    name: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getRangeByIndexes(
-                    startRow: number,
-                    startColumn: number,
-                    rowCount: number,
-                    columnCount: number
-                ): Range;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: startRow
-          description: Строка начала (с нулевым индексированием).
-          type:
-            - number
-        - id: startColumn
-          description: Столбец "начало" (с нулевым индексом).
-          type:
-            - number
-        - id: rowCount
-          description: 'Количество строк, включаемых в диапазон.'
-          type:
-            - number
-        - id: columnCount
-          description: 'Число столбцов, включаемых в диапазон.'
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getRanges:member(1)'
-    summary: 'Получает объект RangeAreas, представляющий один или несколько блоков прямоугольных диапазонов, указанных по адресу или имени.'
-    name: getRanges(address)
-    fullName: getRanges(address)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRanges(address?: string): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: address
-          description: 'Необязательное свойство. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getShape:member(1)'
-    summary: Получает фигуру по имени или идентификатору.
-    name: getShape(key)
-    fullName: getShape(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShape(key: string): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Имя или Идентификатор извлекаемой фигуры.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getShapes:member(1)'
-    summary: Возвращает коллекцию всех объектов Shape на листе.
-    name: getShapes()
-    fullName: getShapes()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShapes(): Shape[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getShapes~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getShowGridlines:member(1)'
-    summary: 'Указывает, видимы ли линии сетки для пользователя.'
-    name: getShowGridlines()
-    fullName: getShowGridlines()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowGridlines(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getShowHeadings:member(1)'
-    summary: 'Указывает, видимы ли заголовки для пользователя.'
-    name: getShowHeadings()
-    fullName: getShowHeadings()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowHeadings(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)'
-    summary: 'Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.'
-    name: getSlicer(key)
-    fullName: getSlicer(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSlicer(key: string): Slicer | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getSlicer~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: 'Имя или идентификатор среза, который требуется получить.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getSlicers:member(1)'
-    summary: 'Возвращает коллекцию срезов, которые входят в состав рабочего листа.'
-    name: getSlicers()
-    fullName: getSlicers()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSlicers(): Slicer[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getSlicers~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getStandardHeight:member(1)'
-    summary: Возвращает стандартную (по умолчанию) высоту всех строк на листе (в пунктах).
-    name: getStandardHeight()
-    fullName: getStandardHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStandardHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)'
-    summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
-    name: getStandardWidth()
-    fullName: getStandardWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStandardWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)'
-    summary: 'Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.'
-    name: getTabColor()
-    fullName: getTabColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTabColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getTable:member(1)'
-    summary: 'Получает таблицу по имени или ИД. Если таблица не существует, возвращает пустой объект.'
-    name: getTable(key)
-    fullName: getTable(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTable(key: string): Table | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getTable~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: Имя или ИД получаемой таблицы.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getTables:member(1)'
-    summary: 'Коллекция таблиц, имеющихся на листе.'
-    name: getTables()
-    fullName: getTables()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(): Table[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getTables~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
-    summary: "Используемый диапазон\_— это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если весь лист пустой, эта функция возвращает пустой объект."
-    name: getUsedRange(valuesOnly)
-    fullName: getUsedRange(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRange(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: Необязательный параметр. Учитывает только ячейки со значениями.
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)'
-    summary: Получает коллекцию вертикальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
-    name: getVerticalPageBreaks()
-    fullName: getVerticalPageBreaks()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVerticalPageBreaks(): PageBreak[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)'
-    summary: Видимость листа.
-    name: getVisibility()
-    fullName: getVisibility()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisibility(): SheetVisibility;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SheetVisibility:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
-    summary: 'Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Возвращает нулевой объект, если настраиваемое свойство не существует.'
-    name: getWorksheetCustomProperty(key)
-    fullName: getWorksheetCustomProperty(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getWorksheetCustomProperty(
-                    key: string
-                ): WorksheetCustomProperty | undefined;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: 'Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
-    summary: Обновляет все сводные таблицы в коллекции.
-    name: refreshAllPivotTables()
-    fullName: refreshAllPivotTables()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'refreshAllPivotTables(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)'
-    summary: Сбрасывает все добавленные вручную разрывы страниц в коллекции.
-    name: removeAllHorizontalPageBreaks()
-    fullName: removeAllHorizontalPageBreaks()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeAllHorizontalPageBreaks(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)'
-    summary: Сбрасывает все добавленные вручную разрывы страниц в коллекции.
-    name: removeAllVerticalPageBreaks()
-    fullName: removeAllVerticalPageBreaks()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeAllVerticalPageBreaks(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Worksheet#replaceAll:member(1)'
-    summary: 'Находит и заменяет определенную строку на основе условий, указанных в текущем листе.'
-    name: 'replaceAll(text, replacement, criteria)'
-    fullName: 'replaceAll(text, replacement, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        replaceAll(
-                    text: string,
-                    replacement: string,
-                    criteria: ReplaceCriteria
-                ): number;
-      return:
-        type:
-          - number
-        description: ''
-      parameters:
-        - id: text
-          description: Строка для поиска.
-          type:
-            - string
-        - id: replacement
-          description: Строка для замены оригинала на.
-          type:
-            - string
-        - id: criteria
-          description: Дополнительные условия замены.
-          type:
-            - 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)'
-    summary: 'Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.'
-    name: setEnableCalculation(enableCalculation)
-    fullName: setEnableCalculation(enableCalculation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEnableCalculation(enableCalculation: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: enableCalculation
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setName:member(1)'
-    summary: Отображаемое имя листа.
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setPosition:member(1)'
-    summary: Положение листа (начиная с нуля) в книге.
-    name: setPosition(position)
-    fullName: setPosition(position)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(position: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: position
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)'
-    summary: 'Указывает, видимы ли линии сетки для пользователя.'
-    name: setShowGridlines(showGridlines)
-    fullName: setShowGridlines(showGridlines)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowGridlines(showGridlines: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showGridlines
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setShowHeadings:member(1)'
-    summary: 'Указывает, видимы ли заголовки для пользователя.'
-    name: setShowHeadings(showHeadings)
-    fullName: setShowHeadings(showHeadings)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowHeadings(showHeadings: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showHeadings
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)'
-    summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
-    name: setStandardWidth(standardWidth)
-    fullName: setStandardWidth(standardWidth)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStandardWidth(standardWidth: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: standardWidth
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)'
-    summary: 'Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.'
-    name: setTabColor(tabColor)
-    fullName: setTabColor(tabColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTabColor(tabColor: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Примеры
-
-          ```javascript
-          /**
-           * This script sets the tab color of every worksheet in the workbook to red.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get all the worksheets in the workbook. 
-            let sheets = workbook.getWorksheets();
-            
-            // Set the tab color of each worksheet to a random color.
-            for (let sheet of sheets) {    
-              // Set the color of the current worksheet's tab to red.
-              sheet.setTabColor("red");
-            }
-          }
-          ```
-      parameters:
-        - id: tabColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Worksheet#setVisibility:member(1)'
-    summary: Видимость листа.
-    name: setVisibility(visibility)
-    fullName: setVisibility(visibility)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisibility(visibility: SheetVisibility): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visibility
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.SheetVisibility:enum'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)'
-    summary: 'Отображает группы строк или столбцов по их уровням структуры. Группирование и суммирование списка данных на листе. `rowLevels`Параметры и `columnLevels` определяют, сколько уровней структуры будет отображаться. Допустимый диапазон аргументов находится в пределах от 0 до 8. Значение 0 не изменяет текущее отображение. Значение, превышающее текущее число уровней, отображает все уровни.'
-    name: 'showOutlineLevels(rowLevels, columnLevels)'
-    fullName: 'showOutlineLevels(rowLevels, columnLevels)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rowLevels
-          description: Количество отображаемых уровней строк в структуре.
-          type:
-            - number
-        - id: columnLevels
-          description: Число уровней столбцов структуры для отображения.
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.Chart:interface'
-    name: Chart
-    fullName: ExcelScript.Chart
-  - uid: 'ExcelScript!ExcelScript.ChartType:enum'
-    name: ChartType
-    fullName: ExcelScript.ChartType
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
-    name: ChartSeriesBy
-    fullName: ExcelScript.ChartSeriesBy
-  - uid: 'ExcelScript!ExcelScript.Comment:interface'
-    name: Comment
-    fullName: ExcelScript.Comment
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addComment~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addComment~1:complex'
-    name: CommentRichContent | string
-    fullName: ExcelScript.CommentRichContent | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
-        name: CommentRichContent
-        fullName: ExcelScript.CommentRichContent
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
-    name: ContentType
-    fullName: ExcelScript.ContentType
-  - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    name: Shape
-    fullName: ExcelScript.Shape
-  - uid: 'ExcelScript!ExcelScript.GeometricShapeType:enum'
-    name: GeometricShapeType
-    fullName: ExcelScript.GeometricShapeType
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addGroup~0:complex'
-    name: Array<string | Shape>
-    fullName: Array<string | ExcelScript.Shape>
-    spec.typeScript:
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: '<string | '
-        fullName: '<string | '
-      - uid: 'ExcelScript!ExcelScript.Shape:interface'
-        name: Shape
-        fullName: ExcelScript.Shape
-      - name: '>'
-        fullName: '>'
-  - uid: 'ExcelScript!ExcelScript.PageBreak:interface'
-    name: PageBreak
-    fullName: ExcelScript.PageBreak
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addHorizontalPageBreak~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.ConnectorType:enum'
-    name: ConnectorType
-    fullName: ExcelScript.ConnectorType
-  - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
-    name: NamedItem
-    fullName: ExcelScript.NamedItem
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItem~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-    name: PivotTable
-    fullName: ExcelScript.PivotTable
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addPivotTable~0:complex'
-    name: Range | string | Table
-    fullName: ExcelScript.Range | string | ExcelScript.Table
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string | '
-        fullName: ' | string | '
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addPivotTable~1:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: |2-
-           | string
-                  
-        fullName: |2-
-           | string
-                  
-  - uid: 'ExcelScript!ExcelScript.Slicer:interface'
-    name: Slicer
-    fullName: ExcelScript.Slicer
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addSlicer~0:complex'
-    name: string | PivotTable | Table
-    fullName: string | ExcelScript.PivotTable | ExcelScript.Table
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addSlicer~1:complex'
-    name: string | PivotField | number | TableColumn
-    fullName: string | ExcelScript.PivotField | number | ExcelScript.TableColumn
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-        name: PivotField
-        fullName: ExcelScript.PivotField
-      - name: ' | number | '
-        fullName: ' | number | '
-      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-        name: TableColumn
-        fullName: ExcelScript.TableColumn
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addSlicer~2:complex'
-    name: string | Worksheet
-    fullName: string | ExcelScript.Worksheet
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-        name: Worksheet
-        fullName: ExcelScript.Worksheet
-  - uid: 'ExcelScript!ExcelScript.Table:interface'
-    name: Table
-    fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addTable~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
-    name: WorksheetCustomProperty
-    fullName: ExcelScript.WorksheetCustomProperty
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
-  - uid: 'ExcelScript!ExcelScript.WorksheetPositionType:enum'
-    name: WorksheetPositionType
-    fullName: ExcelScript.WorksheetPositionType
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
-    name: WorksheetSearchCriteria
-    fullName: ExcelScript.WorksheetSearchCriteria
-  - uid: 'ExcelScript!ExcelScript.AutoFilter:interface'
-    name: AutoFilter
-    fullName: ExcelScript.AutoFilter
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getChart~0:complex'
-    name: Chart | undefined
-    fullName: ExcelScript.Chart | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Chart:interface'
-        name: Chart
-        fullName: ExcelScript.Chart
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCharts~0:complex'
-    name: 'Chart[]'
-    fullName: 'ExcelScript.Chart[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Chart:interface'
-        name: Chart
-        fullName: ExcelScript.Chart
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCommentByCell~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getComments~0:complex'
-    name: 'Comment[]'
-    fullName: 'ExcelScript.Comment[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Comment:interface'
-        name: Comment
-        fullName: ExcelScript.Comment
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
-    name: 'WorksheetCustomProperty[]'
-    fullName: 'ExcelScript.WorksheetCustomProperty[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
-        name: WorksheetCustomProperty
-        fullName: ExcelScript.WorksheetCustomProperty
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
-    name: WorksheetFreezePanes
-    fullName: ExcelScript.WorksheetFreezePanes
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks~0:complex'
-    name: 'PageBreak[]'
-    fullName: 'ExcelScript.PageBreak[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PageBreak:interface'
-        name: PageBreak
-        fullName: ExcelScript.PageBreak
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getNamedItem~0:complex'
-    name: NamedItem | undefined
-    fullName: ExcelScript.NamedItem | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
-        name: NamedItem
-        fullName: ExcelScript.NamedItem
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getNames~0:complex'
-    name: 'NamedItem[]'
-    fullName: 'ExcelScript.NamedItem[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
-        name: NamedItem
-        fullName: ExcelScript.NamedItem
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PageLayout:interface'
-    name: PageLayout
-    fullName: ExcelScript.PageLayout
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getPivotTable~0:complex'
-    name: PivotTable | undefined
-    fullName: ExcelScript.PivotTable | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getPivotTables~0:complex'
-    name: 'PivotTable[]'
-    fullName: 'ExcelScript.PivotTable[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtection:interface'
-    name: WorksheetProtection
-    fullName: ExcelScript.WorksheetProtection
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getShapes~0:complex'
-    name: 'Shape[]'
-    fullName: 'ExcelScript.Shape[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Shape:interface'
-        name: Shape
-        fullName: ExcelScript.Shape
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getSlicer~0:complex'
-    name: Slicer | undefined
-    fullName: ExcelScript.Slicer | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
-        name: Slicer
-        fullName: ExcelScript.Slicer
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getSlicers~0:complex'
-    name: 'Slicer[]'
-    fullName: 'ExcelScript.Slicer[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
-        name: Slicer
-        fullName: ExcelScript.Slicer
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getTable~0:complex'
-    name: Table | undefined
-    fullName: ExcelScript.Table | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getTables~0:complex'
-    name: 'Table[]'
-    fullName: 'ExcelScript.Table[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks~0:complex'
-    name: 'PageBreak[]'
-    fullName: 'ExcelScript.PageBreak[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PageBreak:interface'
-        name: PageBreak
-        fullName: ExcelScript.PageBreak
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
-    name: SheetVisibility
-    fullName: ExcelScript.SheetVisibility
-  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
-    name: WorksheetCustomProperty | undefined
-    fullName: ExcelScript.WorksheetCustomProperty | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
-        name: WorksheetCustomProperty
-        fullName: ExcelScript.WorksheetCustomProperty
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: ExcelScript.ReplaceCriteria
+### YamlMime:TSType
+name: ExcelScript.Worksheet
+uid: ExcelScript!ExcelScript.Worksheet:interface
+package: ExcelScript!
+fullName: ExcelScript.Worksheet
+summary: Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: activate()
+  uid: ExcelScript!ExcelScript.Worksheet#activate:member(1)
+  package: ExcelScript!
+  fullName: activate()
+  summary: Активация листа в пользовательском интерфейсе Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: addChart(type, sourceData, seriesBy)
+  uid: ExcelScript!ExcelScript.Worksheet#addChart:member(1)
+  package: ExcelScript!
+  fullName: addChart(type, sourceData, seriesBy)
+  summary: Создает диаграмму.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addChart(
+                  type: ChartType,
+                  sourceData: Range,
+                  seriesBy?: ChartSeriesBy
+              ): Chart;
+    parameters:
+    - id: type
+      description: Представляет тип диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
+      type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
+    - id: sourceData
+      description: Объект Range, соответствующий исходным данным.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+    - id: seriesBy
+      description: Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Для получения дополнительных сведений см. Ексцелскрипт. Чартсериесби.
+      type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
+      description: ''
+- name: addComment(cellAddress, content, contentType)
+  uid: ExcelScript!ExcelScript.Worksheet#addComment:member(1)
+  package: ExcelScript!
+  fullName: addComment(cellAddress, content, contentType)
+  summary: Создает новое примечание с указанным содержимым в определенной ячейке. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addComment(
+                  cellAddress: Range | string,
+                  content: CommentRichContent | string,
+                  contentType?: ContentType
+              ): Comment;
+    parameters:
+    - id: cellAddress
+      description: Ячейка, к которой добавляется комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: content
+      description: Содержимое комментария. Это может быть объект String или Комментричконтент. Строки используются для обычного текста. Объекты Комментричконтент позволяют использовать другие функции комментариев, например упоминания.
+      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
+    - id: contentType
+      description: Необязательный параметр. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.
+      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: addGeometricShape(geometricShapeType)
+  uid: ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)
+  package: ExcelScript!
+  fullName: addGeometricShape(geometricShapeType)
+  summary: Добавляет геометрическую фигуру на лист. Возвращает объект Shape, представляющий новую фигуру.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
+    parameters:
+    - id: geometricShapeType
+      description: Представляет тип геометрической фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Жеометрикшапетипе.
+      type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: addGroup(values)
+  uid: ExcelScript!ExcelScript.Worksheet#addGroup:member(1)
+  package: ExcelScript!
+  fullName: addGroup(values)
+  summary: Группирует подмножество фигур на листе этой коллекции. Возвращает объект Shape, представляющий новую группу фигур.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addGroup(values: Array<string | Shape>): Shape;'
+    parameters:
+    - id: values
+      description: Массив ИДЕНТИФИКАТОРов фигуры или объектов Shape.
+      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.Shape:interface" />&gt;
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: addHorizontalPageBreak(pageBreakRange)
+  uid: ExcelScript!ExcelScript.Worksheet#addHorizontalPageBreak:member(1)
+  package: ExcelScript!
+  fullName: addHorizontalPageBreak(pageBreakRange)
+  summary: Добавляет разрыв страницы перед левой верхней ячейкой указанного диапазона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addHorizontalPageBreak(pageBreakRange: Range | string): PageBreak;'
+    parameters:
+    - id: pageBreakRange
+      description: Диапазон, непосредственно после добавления разрыва страницы.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
+      description: ''
+- name: addImage(base64ImageString)
+  uid: ExcelScript!ExcelScript.Worksheet#addImage:member(1)
+  package: ExcelScript!
+  fullName: addImage(base64ImageString)
+  summary: Создает изображение из строки в кодировке base64 и добавляет его на лист. Возвращает объект Shape, представляющий новое изображение.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addImage(base64ImageString: string): Shape;'
+    parameters:
+    - id: base64ImageString
+      description: Строка в кодировке Base64, представляющая изображение в формате JPEG или PNG.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: addLine(startLeft, startTop, endLeft, endTop, connectorType)
+  uid: ExcelScript!ExcelScript.Worksheet#addLine:member(1)
+  package: ExcelScript!
+  fullName: addLine(startLeft, startTop, endLeft, endTop, connectorType)
+  summary: Добавляет линию на лист. Возвращает объект Shape, представляющий новую линию.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addLine(
+                  startLeft: number,
+                  startTop: number,
+                  endLeft: number,
+                  endTop: number,
+                  connectorType?: ConnectorType
+              ): Shape;
+    parameters:
+    - id: startLeft
+      description: Расстояние от начала линии до левого края листа (в пунктах).
+      type: number
+    - id: startTop
+      description: Расстояние (в пунктах) от начала линии до верхней границы листа.
+      type: number
+    - id: endLeft
+      description: Расстояние в пунктах от конца строки до левого края листа.
+      type: number
+    - id: endTop
+      description: Расстояние в пунктах от конца линии до верхней границы листа.
+      type: number
+    - id: connectorType
+      description: Представляет тип соединителя. Для получения дополнительных сведений см. Ексцелскрипт. Коннектортипе.
+      type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: addNamedItem(name, reference, comment)
+  uid: ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)
+  package: ExcelScript!
+  fullName: addNamedItem(name, reference, comment)
+  summary: Добавляет новое имя в определенную коллекцию.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addNamedItem(
+                  name: string,
+                  reference: Range | string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: Имя именованного элемента.
+      type: string
+    - id: reference
+      description: Формула или диапазон, на который будет ссылаться имя.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: comment
+      description: Необязательный параметр. Комментарий, связанный с именованным элементом.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
+      description: ''
+- name: addNamedItemFormulaLocal(name, formula, comment)
+  uid: ExcelScript!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)
+  package: ExcelScript!
+  fullName: addNamedItemFormulaLocal(name, formula, comment)
+  summary: Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addNamedItemFormulaLocal(
+                  name: string,
+                  formula: string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: Имя именованного элемента.
+      type: string
+    - id: formula
+      description: Формула на языке пользователя, на которую будет ссылаться имя.
+      type: string
+    - id: comment
+      description: Необязательный параметр. Комментарий, связанный с именованным элементом.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
+      description: ''
+- name: addPivotTable(name, source, destination)
+  uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
+  package: ExcelScript!
+  fullName: addPivotTable(name, source, destination)
+  summary: Добавьте сводную таблицу на основе указанных исходных данных и вставьте ее в верхнюю левую ячейку конечного диапазона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addPivotTable(
+                  name: string,
+                  source: Range | string | Table,
+                  destination: Range | string
+              ): PivotTable;
+    parameters:
+    - id: name
+      description: Имя новой сводной таблицы.
+      type: string
+    - id: source
+      description: Исходные данные для новой сводной таблицы, может быть диапазоном (или строковым адресом, включая имя листа) или таблицей.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
+    - id: destination
+      description: Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы (диапазон на листе, на котором будет помещен итоговый отчет).
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
+      description: ''
+- name: addSlicer(slicerSource, sourceField, slicerDestination)
+  uid: ExcelScript!ExcelScript.Worksheet#addSlicer:member(1)
+  package: ExcelScript!
+  fullName: addSlicer(slicerSource, sourceField, slicerDestination)
+  summary: Добавляет новый срез в книгу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addSlicer(
+                  slicerSource: string | PivotTable | Table,
+                  sourceField: string | PivotField | number | TableColumn,
+                  slicerDestination?: string | Worksheet
+              ): Slicer;
+    parameters:
+    - id: slicerSource
+      description: Источник данных, на котором будет основан новый срез. Это может быть объект PivotTable, объект Table или строка. Когда объект сводной таблицы передается, источником данных является источник объекта сводной таблицы. Когда передается объект Table, источником данных является объект Table. Когда строка передается, она интерпретируется как имя/идентификатор сводной таблицы или таблицы.
+      type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
+    - id: sourceField
+      description: Поле в источнике данных, по которому выполняется фильтрация. Это может быть объект PivotField, объект TableColumn, идентификатор PivotField или идентификатор и имя TableColumn.
+      type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
+    - id: slicerDestination
+      description: Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.
+      type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
+      description: ''
+- name: addTable(address, hasHeaders)
+  uid: ExcelScript!ExcelScript.Worksheet#addTable:member(1)
+  package: ExcelScript!
+  fullName: addTable(address, hasHeaders)
+  summary: Создание таблицы. Объект или исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если добавить таблицу не удается (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
+    parameters:
+    - id: address
+      description: Объект Range, строковый адрес или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: hasHeaders
+      description: Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
+- name: addTextBox(text)
+  uid: ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)
+  package: ExcelScript!
+  fullName: addTextBox(text)
+  summary: Добавляет текстовое поле на лист с указанным текстом в качестве содержимого. Возвращает объект Shape, представляющий новое текстовое поле.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addTextBox(text?: string): Shape;'
+    parameters:
+    - id: text
+      description: Представляет текст, который будет отображаться в созданном текстовом поле.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: addVerticalPageBreak(pageBreakRange)
+  uid: ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)
+  package: ExcelScript!
+  fullName: addVerticalPageBreak(pageBreakRange)
+  summary: Добавляет разрыв страницы перед левой верхней ячейкой указанного диапазона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addVerticalPageBreak(pageBreakRange: Range | string): PageBreak;'
+    parameters:
+    - id: pageBreakRange
+      description: Диапазон, непосредственно после добавления разрыва страницы.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
+      description: ''
+- name: addWorksheetCustomProperty(key, value)
+  uid: ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)
+  package: ExcelScript!
+  fullName: addWorksheetCustomProperty(key, value)
+  summary: Добавляет новое настраиваемое свойство, которое сопоставляется с предоставленным ключом. При этом существующие настраиваемые свойства перезаписываются с помощью этого раздела.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addWorksheetCustomProperty(
+                  key: string,
+                  value: string
+              ): WorksheetCustomProperty;
+    parameters:
+    - id: key
+      description: Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр. Ключ имеет ограничение в 255 символов (большие значения приведут к возникновению ошибки "InvalidArgument").
+      type: string
+    - id: value
+      description: Значение этого настраиваемого свойства.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" />
+      description: ''
+- name: calculate(markAllDirty)
+  uid: ExcelScript!ExcelScript.Worksheet#calculate:member(1)
+  package: ExcelScript!
+  fullName: calculate(markAllDirty)
+  summary: Вычисляет все ячейки на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(markAllDirty: boolean): void;'
+    parameters:
+    - id: markAllDirty
+      description: Значение true, чтобы пометить все как "грязный".
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: copy(positionType, relativeTo)
+  uid: ExcelScript!ExcelScript.Worksheet#copy:member(1)
+  package: ExcelScript!
+  fullName: copy(positionType, relativeTo)
+  summary: Копирует лист и размещает его в указанной позиции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copy(
+                  positionType?: WorksheetPositionType,
+                  relativeTo?: Worksheet
+              ): Worksheet;
+    parameters:
+    - id: positionType
+      description: Расположение в книге, в которое будет помещен созданный лист. Значение по умолчанию — "None", которое вставляет лист в начало листа.
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
+    - id: relativeTo
+      description: Существующий лист, который определяет положение вновь созданного листа. Это необходимо, только если `positionType` это "до" или "после".
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Удаляет лист из книги. Обратите внимание, что если для отображения листа задано значение "Верихидден", операция удаления завершится с `InvalidOperation` исключением. Прежде чем удалять его, необходимо сначала изменить его видимость на скрытую или видимую.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
+- name: findAll(text, criteria)
+  uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
+  package: ExcelScript!
+  fullName: findAll(text, criteria)
+  summary: Находит все вхождения определенной строки на основе указанных условий и возвращает их в виде объекта RangeAreas, состоящего из одного или нескольких прямоугольных диапазонов.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
+    parameters:
+    - id: text
+      description: Строка для поиска.
+      type: string
+    - id: criteria
+      description: Дополнительные условия поиска, в том числе поиск соответствия требованиям к ячейкам целиком или с учетом регистра.
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getAutoFilter()
+  uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
+  package: ExcelScript!
+  fullName: getAutoFilter()
+  summary: Представляет объект AutoFilter листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoFilter(): AutoFilter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
+      description: ''
+- name: getCell(row, column)
+  uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
+  package: ExcelScript!
+  fullName: getCell(row, column)
+  summary: Получает объект диапазона, содержащий одну ячейку, по номеру строки и столбца. Ячейка может находиться вне границ родительского диапазона, пока она остается в сетке листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCell(row: number, column: number): Range;'
+    parameters:
+    - id: row
+      description: Номер строки ячейки, которую требуется извлечь. Используется нулевой индекс.
+      type: number
+    - id: column
+      description: Номер столбца ячейки, которую требуется извлечь. Используется нулевой индекс.
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getChart(name)
+  uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
+  package: ExcelScript!
+  fullName: getChart(name)
+  summary: Возвращает диаграмму по ее имени. Если одно и то же имя принадлежит нескольким диаграммам, будет возвращена первая из них. Если диаграмма не существует, вернет пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getChart(name: string): Chart | undefined;'
+    parameters:
+    - id: name
+      description: Имя получаемой диаграммы.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Chart:interface" /> | undefined
+      description: ''
+- name: getCharts()
+  uid: ExcelScript!ExcelScript.Worksheet#getCharts:member(1)
+  package: ExcelScript!
+  fullName: getCharts()
+  summary: Возвращает коллекцию диаграмм, которые являются частью листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCharts(): Chart[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />[]
+      description: ''
+- name: getComment(commentId)
+  uid: ExcelScript!ExcelScript.Worksheet#getComment:member(1)
+  package: ExcelScript!
+  fullName: getComment(commentId)
+  summary: Получает примечание из коллекции на основе его идентификатора.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getComment(commentId: string): Comment;'
+    parameters:
+    - id: commentId
+      description: Идентификатор комментария.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: getCommentByCell(cellAddress)
+  uid: ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)
+  package: ExcelScript!
+  fullName: getCommentByCell(cellAddress)
+  summary: Получает примечание из указанной ячейки.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCommentByCell(cellAddress: Range | string): Comment;'
+    parameters:
+    - id: cellAddress
+      description: Ячейка, в которой находится комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: getCommentByReplyId(replyId)
+  uid: ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)
+  package: ExcelScript!
+  fullName: getCommentByReplyId(replyId)
+  summary: Получает комментарий, к которому подключен данный ответ.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCommentByReplyId(replyId: string): Comment;'
+    parameters:
+    - id: replyId
+      description: Идентификатор ответа на комментарий.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: getComments()
+  uid: ExcelScript!ExcelScript.Worksheet#getComments:member(1)
+  package: ExcelScript!
+  fullName: getComments()
+  summary: Возвращает коллекцию всех объектов Comments на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getComments(): Comment[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />[]
+      description: ''
+- name: getCustomProperties()
+  uid: ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)
+  package: ExcelScript!
+  fullName: getCustomProperties()
+  summary: Возвращает коллекцию настраиваемых свойств на уровне листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomProperties(): WorksheetCustomProperty[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" />[]
+      description: ''
+- name: getEnableCalculation()
+  uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
+  package: ExcelScript!
+  fullName: getEnableCalculation()
+  summary: Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEnableCalculation(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getFreezePanes()
+  uid: ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)
+  package: ExcelScript!
+  fullName: getFreezePanes()
+  summary: Получает объект, который можно использовать для работы с замороженными областями на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFreezePanes(): WorksheetFreezePanes;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetFreezePanes:interface" />
+      description: ''
+- name: getHorizontalPageBreaks()
+  uid: ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalPageBreaks()
+  summary: Получает коллекцию горизонтальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalPageBreaks(): PageBreak[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />[]
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Worksheet#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Возвращает значение, однозначно идентифицирующее лист в данной книге. Значение идентификатора остается прежним, даже если переименовать или переместить лист.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.Worksheet#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Отображаемое имя листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * This sample gets all the worksheet names in the workbook.\n * It then logs those names to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Create an array to hold the worksheet names.\n    let worksheetNames = [];\n\n    // Iterate over the worksheet collection in the workbook.\n    for (let worksheet of workbook.getWorksheets()) {\n        worksheetNames.push(worksheet.getName());\n    }\n\n    // Log the array of worksheet names.\n    console.log(worksheetNames);\n}\n```"
+- name: getNamedItem(name)
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
+  package: ExcelScript!
+  fullName: getNamedItem(name)
+  summary: Возвращает объект NamedItem, используя его имя. Если объект nameditem не существует, возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedItem(name: string): NamedItem | undefined;'
+    parameters:
+    - id: name
+      description: Имя NamedItem.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
+      description: ''
+- name: getNames()
+  uid: ExcelScript!ExcelScript.Worksheet#getNames:member(1)
+  package: ExcelScript!
+  fullName: getNames()
+  summary: Коллекция имен, относящих к текущему листу.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNames(): NamedItem[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />[]
+      description: ''
+- name: getNext(visibleOnly)
+  uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
+  package: ExcelScript!
+  fullName: getNext(visibleOnly)
+  summary: Получает лист, следующий по отношению к элементу. Если после этого листа нет ни одного листа, этот метод возвратит нулевой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNext(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getPageLayout()
+  uid: ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)
+  package: ExcelScript!
+  fullName: getPageLayout()
+  summary: Получает объект PageLayout листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPageLayout(): PageLayout;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PageLayout:interface" />
+      description: ''
+- name: getPivotTable(name)
+  uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
+  package: ExcelScript!
+  fullName: getPivotTable(name)
+  summary: Получает сводную таблицу по имени. Если сводная таблица не существует, возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTable(name: string): PivotTable | undefined;'
+    parameters:
+    - id: name
+      description: Имя получаемой сводной таблицы.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | undefined
+      description: ''
+- name: getPivotTables()
+  uid: ExcelScript!ExcelScript.Worksheet#getPivotTables:member(1)
+  package: ExcelScript!
+  fullName: getPivotTables()
+  summary: Коллекция сводных таблиц на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTables(): PivotTable[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.Worksheet#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: Положение листа (начиная с нуля) в книге.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): number;'
+    return:
+      type: number
+      description: ''
+- name: getPrevious(visibleOnly)
+  uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
+  package: ExcelScript!
+  fullName: getPrevious(visibleOnly)
+  summary: Получает лист, который предшествует этому. Если нет предыдущих листов, этот метод возвратит значение NULL обжет.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getProtection()
+  uid: ExcelScript!ExcelScript.Worksheet#getProtection:member(1)
+  package: ExcelScript!
+  fullName: getProtection()
+  summary: Возвращает объект защиты листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtection(): WorksheetProtection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetProtection:interface" />
+      description: ''
+- name: getRange(address)
+  uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange(address)
+  summary: Получает объект Range, представляющий отдельный прямоугольный блок ячеек, заданный по адресу или имени.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(address?: string): Range;'
+    parameters:
+    - id: address
+      description: 'Необязательный параметр. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
+- name: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
+  uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
+  package: ExcelScript!
+  fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
+  summary: Получает объект диапазона, начинающегося с определенных строки и столбца и занимающего определенное количество строк и столбцов.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeByIndexes(
+                  startRow: number,
+                  startColumn: number,
+                  rowCount: number,
+                  columnCount: number
+              ): Range;
+    parameters:
+    - id: startRow
+      description: Строка начала (с нулевым индексированием).
+      type: number
+    - id: startColumn
+      description: Столбец "начало" (с нулевым индексом).
+      type: number
+    - id: rowCount
+      description: Количество строк, включаемых в диапазон.
+      type: number
+    - id: columnCount
+      description: Число столбцов, включаемых в диапазон.
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRanges(address)
+  uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
+  package: ExcelScript!
+  fullName: getRanges(address)
+  summary: Получает объект RangeAreas, представляющий один или несколько блоков прямоугольных диапазонов, указанных по адресу или имени.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRanges(address?: string): RangeAreas;'
+    parameters:
+    - id: address
+      description: 'Необязательный параметр. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getShape(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getShape:member(1)
+  package: ExcelScript!
+  fullName: getShape(key)
+  summary: Получает фигуру по имени или идентификатору.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShape(key: string): Shape;'
+    parameters:
+    - id: key
+      description: Имя или Идентификатор извлекаемой фигуры.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: getShapes()
+  uid: ExcelScript!ExcelScript.Worksheet#getShapes:member(1)
+  package: ExcelScript!
+  fullName: getShapes()
+  summary: Возвращает коллекцию всех объектов Shape на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShapes(): Shape[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />[]
+      description: ''
+- name: getShowGridlines()
+  uid: ExcelScript!ExcelScript.Worksheet#getShowGridlines:member(1)
+  package: ExcelScript!
+  fullName: getShowGridlines()
+  summary: Указывает, видимы ли линии сетки для пользователя.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowGridlines(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowHeadings()
+  uid: ExcelScript!ExcelScript.Worksheet#getShowHeadings:member(1)
+  package: ExcelScript!
+  fullName: getShowHeadings()
+  summary: Указывает, видимы ли заголовки для пользователя.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowHeadings(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSlicer(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
+  package: ExcelScript!
+  fullName: getSlicer(key)
+  summary: Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSlicer(key: string): Slicer | undefined;'
+    parameters:
+    - id: key
+      description: Имя или идентификатор среза, который требуется получить.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" /> | undefined
+      description: ''
+- name: getSlicers()
+  uid: ExcelScript!ExcelScript.Worksheet#getSlicers:member(1)
+  package: ExcelScript!
+  fullName: getSlicers()
+  summary: Возвращает коллекцию срезов, которые входят в состав рабочего листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSlicers(): Slicer[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />[]
+      description: ''
+- name: getStandardHeight()
+  uid: ExcelScript!ExcelScript.Worksheet#getStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: getStandardHeight()
+  summary: Возвращает стандартную (по умолчанию) высоту всех строк на листе (в пунктах).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStandardHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getStandardWidth()
+  uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: getStandardWidth()
+  summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStandardWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTabColor()
+  uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
+  package: ExcelScript!
+  fullName: getTabColor()
+  summary: Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTabColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTable(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
+  package: ExcelScript!
+  fullName: getTable(key)
+  summary: Получает таблицу по имени или ИД. Если таблица не существует, возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTable(key: string): Table | undefined;'
+    parameters:
+    - id: key
+      description: Имя или ИД получаемой таблицы.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" /> | undefined
+      description: ''
+- name: getTables()
+  uid: ExcelScript!ExcelScript.Worksheet#getTables:member(1)
+  package: ExcelScript!
+  fullName: getTables()
+  summary: Коллекция таблиц, имеющихся на листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(): Table[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
+      description: ''
+- name: getUsedRange(valuesOnly)
+  uid: ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)
+  package: ExcelScript!
+  fullName: getUsedRange(valuesOnly)
+  summary: Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если весь лист пустой, эта функция возвращает пустой объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: Необязательный параметр. Учитывает только ячейки со значениями.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getVerticalPageBreaks()
+  uid: ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)
+  package: ExcelScript!
+  fullName: getVerticalPageBreaks()
+  summary: Получает коллекцию вертикальных разрывов страницы для листа. Эта коллекция содержит только добавленные вручную разрывы страниц.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalPageBreaks(): PageBreak[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />[]
+      description: ''
+- name: getVisibility()
+  uid: ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)
+  package: ExcelScript!
+  fullName: getVisibility()
+  summary: Видимость листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisibility(): SheetVisibility;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SheetVisibility:enum" />
+      description: ''
+- name: getWorksheetCustomProperty(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
+  package: ExcelScript!
+  fullName: getWorksheetCustomProperty(key)
+  summary: Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Возвращает нулевой объект, если настраиваемое свойство не существует.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getWorksheetCustomProperty(
+                  key: string
+              ): WorksheetCustomProperty | undefined;
+    parameters:
+    - id: key
+      description: Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined
+      description: ''
+- name: refreshAllPivotTables()
+  uid: ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)
+  package: ExcelScript!
+  fullName: refreshAllPivotTables()
+  summary: Обновляет все сводные таблицы в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAllPivotTables(): void;'
+    return:
+      type: void
+      description: ''
+- name: removeAllHorizontalPageBreaks()
+  uid: ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)
+  package: ExcelScript!
+  fullName: removeAllHorizontalPageBreaks()
+  summary: Сбрасывает все добавленные вручную разрывы страниц в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'removeAllHorizontalPageBreaks(): void;'
+    return:
+      type: void
+      description: ''
+- name: removeAllVerticalPageBreaks()
+  uid: ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)
+  package: ExcelScript!
+  fullName: removeAllVerticalPageBreaks()
+  summary: Сбрасывает все добавленные вручную разрывы страниц в коллекции.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'removeAllVerticalPageBreaks(): void;'
+    return:
+      type: void
+      description: ''
+- name: replaceAll(text, replacement, criteria)
+  uid: ExcelScript!ExcelScript.Worksheet#replaceAll:member(1)
+  package: ExcelScript!
+  fullName: replaceAll(text, replacement, criteria)
+  summary: Находит и заменяет определенную строку на основе условий, указанных в текущем листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      replaceAll(
+                  text: string,
+                  replacement: string,
+                  criteria: ReplaceCriteria
+              ): number;
+    parameters:
+    - id: text
+      description: Строка для поиска.
+      type: string
+    - id: replacement
+      description: Строка для замены оригинала на.
+      type: string
+    - id: criteria
+      description: Дополнительные условия замены.
+      type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
+    return:
+      type: number
+      description: ''
+- name: setEnableCalculation(enableCalculation)
+  uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
+  package: ExcelScript!
+  fullName: setEnableCalculation(enableCalculation)
+  summary: Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEnableCalculation(enableCalculation: boolean): void;'
+    parameters:
+    - id: enableCalculation
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.Worksheet#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Отображаемое имя листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.Worksheet#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: Положение листа (начиная с нуля) в книге.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: number): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShowGridlines(showGridlines)
+  uid: ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)
+  package: ExcelScript!
+  fullName: setShowGridlines(showGridlines)
+  summary: Указывает, видимы ли линии сетки для пользователя.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowGridlines(showGridlines: boolean): void;'
+    parameters:
+    - id: showGridlines
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowHeadings(showHeadings)
+  uid: ExcelScript!ExcelScript.Worksheet#setShowHeadings:member(1)
+  package: ExcelScript!
+  fullName: setShowHeadings(showHeadings)
+  summary: Указывает, видимы ли заголовки для пользователя.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowHeadings(showHeadings: boolean): void;'
+    parameters:
+    - id: showHeadings
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setStandardWidth(standardWidth)
+  uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: setStandardWidth(standardWidth)
+  summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStandardWidth(standardWidth: number): void;'
+    parameters:
+    - id: standardWidth
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTabColor(tabColor)
+  uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
+  package: ExcelScript!
+  fullName: setTabColor(tabColor)
+  summary: Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTabColor(tabColor: string): void;'
+    parameters:
+    - id: tabColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * This script sets the tab color of every worksheet in the workbook to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n  \n  // Set the tab color of each worksheet to a random color.\n  for (let sheet of sheets) {    \n    // Set the color of the current worksheet's tab to red.\n    sheet.setTabColor(\"red\");\n  }\n}\n```"
+- name: setVisibility(visibility)
+  uid: ExcelScript!ExcelScript.Worksheet#setVisibility:member(1)
+  package: ExcelScript!
+  fullName: setVisibility(visibility)
+  summary: Видимость листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisibility(visibility: SheetVisibility): void;'
+    parameters:
+    - id: visibility
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.SheetVisibility:enum" />
+    return:
+      type: void
+      description: ''
+- name: showOutlineLevels(rowLevels, columnLevels)
+  uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
+  package: ExcelScript!
+  fullName: showOutlineLevels(rowLevels, columnLevels)
+  summary: Отображает группы строк или столбцов по их уровням структуры. Группирование и суммирование списка данных на листе. `rowLevels`Параметры и `columnLevels` определяют, сколько уровней структуры будет отображаться. Допустимый диапазон аргументов находится в пределах от 0 до 8. Значение 0 не изменяет текущее отображение. Значение, превышающее текущее число уровней, отображает все уровни.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
+    parameters:
+    - id: rowLevels
+      description: Количество отображаемых уровней строк в структуре.
+      type: number
+    - id: columnLevels
+      description: Число уровней столбцов структуры для отображения.
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: c647b16d668a36d1fe00a7b6c3422e9cd1d9a5c7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415150"

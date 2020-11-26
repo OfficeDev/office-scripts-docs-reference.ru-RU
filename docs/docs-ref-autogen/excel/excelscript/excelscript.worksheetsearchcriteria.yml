@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
-    summary: 'Представляет критерии поиска листа, которые необходимо использовать.'
-    name: ExcelScript.WorksheetSearchCriteria
-    fullName: ExcelScript.WorksheetSearchCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-    summary: 'Указывает, должно ли соответствие быть полным или частичным. Полное совпадение соответствует всему содержимому ячейки. Частичное совпадение соответствует подстроке в пределах содержимого ячейки (например, `cat` частичное совпадение `caterpillar` и`scatter`<!-- -->). Значение по умолчанию: false (частичное).'
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-    summary: 'Указывает, учитывается ли регистр в выражении. Значение по умолчанию: false (без учета регистра).'
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.WorksheetSearchCriteria
+uid: ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetSearchCriteria
+summary: Представляет критерии поиска листа, которые необходимо использовать.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: 'Указывает, должно ли соответствие быть полным или частичным. Полное совпадение соответствует всему содержимому ячейки. Частичное совпадение соответствует подстроке в пределах содержимого ячейки (например, `cat` частичное совпадение `caterpillar` и `scatter`<!-- -->). Значение по умолчанию: false (частичное).'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: 'Указывает, учитывается ли регистр в выражении. Значение по умолчанию: false (без учета регистра).'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 56003b6e099d7730216a7a57188780d6b966aeea
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415129"
