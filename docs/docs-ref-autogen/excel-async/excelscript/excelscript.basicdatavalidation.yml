@@ -1,52 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.BasicDataValidation:interface'
-    summary: Представляет критерии проверки данных базового типа.
-    name: Excel.BasicDataValidation
-    fullName: Excel.BasicDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.BasicDataValidation#formula1:member'
-      - 'excel!Excel.BasicDataValidation#formula2:member'
-      - 'excel!Excel.BasicDataValidation#operator:member'
-  - uid: 'excel!Excel.BasicDataValidation#formula1:member'
-    summary: 'Задает правый операнд, если для свойства operator задан бинарный оператор, такой как GreaterThan (левый операнд — это значение, которое пользователь пытается ввести в ячейку). С помощью операторов тернарного между и Нотбетвин задает нижнюю границу операнда. Например, если задать для параметра Formula1 значение 10, а для оператора GreaterThan — допустимые данные для этого диапазона должны быть больше 10. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
-    name: formula1
-    fullName: formula1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula1: string | number | Range;'
-      return:
-        type:
-          - 'excel!Excel.BasicDataValidation#formula1~0:complex'
-  - uid: 'excel!Excel.BasicDataValidation#formula2:member'
-    summary: 'С помощью операторов тернарного между и Нотбетвин указывает верхнюю границу операнда. Не используется с двоичными операторами, например GreaterThan. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
-    name: formula2
-    fullName: formula2
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula2?: string | number | Range;'
-      return:
-        type:
-          - 'excel!Excel.BasicDataValidation#formula2~0:complex'
-  - uid: 'excel!Excel.BasicDataValidation#operator:member'
-    summary: 'Оператор, используемый для проверки данных.'
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        operator:
-                    | DataValidationOperator
+### YamlMime:TSType
+name: Excel.BasicDataValidation
+uid: excel!Excel.BasicDataValidation:interface
+package: excel!
+fullName: Excel.BasicDataValidation
+summary: Представляет критерии проверки данных базового типа.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula1
+  uid: excel!Excel.BasicDataValidation#formula1:member
+  package: excel!
+  fullName: formula1
+  summary: 'Задает правый операнд, если для свойства operator задан бинарный оператор, такой как GreaterThan (левый операнд — это значение, которое пользователь пытается ввести в ячейку). С помощью операторов тернарного между и Нотбетвин задает нижнюю границу операнда. Например, если задать для параметра Formula1 значение 10, а для оператора GreaterThan — допустимые данные для этого диапазона должны быть больше 10. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string | number | Range;'
+    return:
+      type: string | number | <xref uid="excel!Excel.Range:interface" />
+- name: formula2
+  uid: excel!Excel.BasicDataValidation#formula2:member
+  package: excel!
+  fullName: formula2
+  summary: 'С помощью операторов тернарного между и Нотбетвин указывает верхнюю границу операнда. Не используется с двоичными операторами, например GreaterThan. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string | number | Range;'
+    return:
+      type: string | number | <xref uid="excel!Excel.Range:interface" />
+- name: operator
+  uid: excel!Excel.BasicDataValidation#operator:member
+  package: excel!
+  fullName: operator
+  summary: Оператор, используемый для проверки данных.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      operator:
+                  | DataValidationOperator
+                  | "Between"
+                  | "NotBetween"
+                  | "EqualTo"
+                  | "NotEqualTo"
+                  | "GreaterThan"
+                  | "LessThan"
+                  | "GreaterThanOrEqualTo"
+                  | "LessThanOrEqualTo";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.DataValidationOperator:enum" />
                     | "Between"
                     | "NotBetween"
                     | "EqualTo"
@@ -54,73 +63,11 @@ items:
                     | "GreaterThan"
                     | "LessThan"
                     | "GreaterThanOrEqualTo"
-                    | "LessThanOrEqualTo";
-      return:
-        type:
-          - 'excel!Excel.BasicDataValidation#operator~0:complex'
-references:
-  - uid: 'excel!Excel.BasicDataValidation#formula1~0:complex'
-    name: string | number | Range
-    fullName: string | number | Excel.Range
-    spec.typeScript:
-      - name: 'string | number | '
-        fullName: 'string | number | '
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-  - uid: 'excel!Excel.BasicDataValidation#formula2~0:complex'
-    name: string | number | Range
-    fullName: string | number | Excel.Range
-    spec.typeScript:
-      - name: 'string | number | '
-        fullName: 'string | number | '
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-  - uid: 'excel!Excel.BasicDataValidation#operator~0:complex'
-    name: |-
-      | DataValidationOperator
-                  | "Between"
-                  | "NotBetween"
-                  | "EqualTo"
-                  | "NotEqualTo"
-                  | "GreaterThan"
-                  | "LessThan"
-                  | "GreaterThanOrEqualTo"
-                  | "LessThanOrEqualTo"
-    fullName: |-
-      | Excel.DataValidationOperator
-                  | "Between"
-                  | "NotBetween"
-                  | "EqualTo"
-                  | "NotEqualTo"
-                  | "GreaterThan"
-                  | "LessThan"
-                  | "GreaterThanOrEqualTo"
-                  | "LessThanOrEqualTo"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.DataValidationOperator:enum'
-        name: DataValidationOperator
-        fullName: Excel.DataValidationOperator
-      - name: |2-
-
-                      | "Between"
-                      | "NotBetween"
-                      | "EqualTo"
-                      | "NotEqualTo"
-                      | "GreaterThan"
-                      | "LessThan"
-                      | "GreaterThanOrEqualTo"
-                      | "LessThanOrEqualTo"
-        fullName: |2-
-
-                      | "Between"
-                      | "NotBetween"
-                      | "EqualTo"
-                      | "NotEqualTo"
-                      | "GreaterThan"
-                      | "LessThan"
-                      | "GreaterThanOrEqualTo"
-                      | "LessThanOrEqualTo"
+                    | "LessThanOrEqualTo"
+metadata:
+  ms.openlocfilehash: 50a8dbaa0970178d0bbe98b7b6df0853c8802970
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414477"
