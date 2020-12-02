@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ReadingOrder.context:member
   package: excel!
   summary: Порядок чтения определяется языком первого введенного знака. Если сначала вводится символ языка с письмом справа налево, порядок чтения справа налево. Если сначала вводится символ языка с письмом слева направо, порядок чтения слева направо.
+  value: "\"Context\""
 - name: leftToRight
   uid: excel!Excel.ReadingOrder.leftToRight:member
   package: excel!
   summary: Порядок чтения слева направо
+  value: "\"LeftToRight\""
 - name: rightToLeft
   uid: excel!Excel.ReadingOrder.rightToLeft:member
   package: excel!
   summary: Порядок чтения справа налево
+  value: "\"RightToLeft\""
 metadata:
-  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fd53fe7af6e6a01fa2192edc5252082824fd4e8e
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418669"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554379"

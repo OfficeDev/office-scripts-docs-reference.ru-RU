@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Возвращает объект Range, представляющий диапазон, к которому применяется автофильтр. Если с автофильтром не связан объект Range, этот метод возвращает пустой объект.
+  summary: Возвращает `Range` объект, представляющий диапазон, к которому `AutoFilter` применяется. Если `Range` объект, связанный с `AutoFilter`<!-- -->, то этот метод возвращает объект, `isNullObject` свойству которого присвоено значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 04782cf770a672d83c99ad823019460512cb8b07
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1dbc1c191f25e138a30a64923da20b27f0f1d6d8
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418095"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554669"

@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ProtectionSelectionMode.none:member
   package: excel!
   summary: Выбор не разрешен для всех ячеек.
+  value: "\"None\""
 - name: normal
   uid: excel!Excel.ProtectionSelectionMode.normal:member
   package: excel!
   summary: Выбор разрешен для всех ячеек.
+  value: "\"Normal\""
 - name: unlocked
   uid: excel!Excel.ProtectionSelectionMode.unlocked:member
   package: excel!
   summary: Выбор допускается только для незаблокированных ячеек.
+  value: "\"Unlocked\""
 metadata:
-  ms.openlocfilehash: ec525d4df9d640a805c48e21844f09eaf190da1a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6208058d4e5e0a9634a70cefbdcda0f799bfe166
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413295"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554281"

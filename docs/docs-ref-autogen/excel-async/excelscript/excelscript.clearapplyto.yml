@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ClearApplyTo.all:member
   package: excel!
   summary: ''
+  value: "\"All\""
 - name: contents
   uid: excel!Excel.ClearApplyTo.contents:member
   package: excel!
   summary: Очищает содержимое диапазона.
+  value: "\"Contents\""
 - name: formats
   uid: excel!Excel.ClearApplyTo.formats:member
   package: excel!
   summary: Удаляет все параметры форматирования для диапазона.
+  value: "\"Formats\""
 - name: hyperlinks
   uid: excel!Excel.ClearApplyTo.hyperlinks:member
   package: excel!
   summary: Удаляет все гиперссылки, но оставляет все содержимое и форматирование без изменений.
+  value: "\"Hyperlinks\""
 - name: removeHyperlinks
   uid: excel!Excel.ClearApplyTo.removeHyperlinks:member
   package: excel!
   summary: Удаляет гиперссылки и форматирование ячейки, но оставляет содержимое, условные форматы и проверку данных без изменений.
+  value: "\"RemoveHyperlinks\""
 metadata:
-  ms.openlocfilehash: fdfc571c1c3ee7c55ec3835c9514449505f3db94
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 70531d6e40e192020d239376532636c37ba15992
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414721"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553090"

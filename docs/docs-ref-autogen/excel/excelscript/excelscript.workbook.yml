@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: Получает текущую активную диаграмму в книге. Если нет активной диаграммы, возвращается нулевой объект.
+  summary: Получает текущую активную диаграмму в книге. При отсутствии активной диаграммы эта функция возвращает объект, `isNullObject` свойству которого присвоено значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: Получает текущий активный срез в книге. Если активный срез отсутствует, возвращается пустой объект.
+  summary: Получает текущий активный срез в книге. При отсутствии активного среза эта функция возвращает объект со `isNullObject` свойством, для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -462,7 +462,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: Получает объект привязки по идентификатору. Если объект привязки не существует, возвращает пустой объект.
+  summary: Возвращает объект привязки по идентификатору. Если объект Binding не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -599,7 +599,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPartByNamespace(namespaceUri)
-  summary: Получает новую ограниченную коллекцию пользовательских XML-частей, пространства имен которых совпадают с указанным пространством имен.
+  summary: Получает новую коллекцию настраиваемых XML-частей, пространства имен которых совпадают с заданным пространством имен.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -741,7 +741,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Возвращает объект NamedItem, используя его имя. Если объект nameditem не существует, возвращает пустой объект.
+  summary: Получает `NamedItem` объект, используя его имя. Если объект не существует, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: Получает объект PivotTableStyle по имени. Если объект PivotTableStyle не существует, возвращает пустой объект.
+  summary: Получает объект PivotTableStyle по имени. Если Пивоттаблестиле не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -939,7 +939,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Получает срез по его имени или ИД. Если срез не существует, возвращает пустой объект.
+  summary: Получает срез, используя его имя или идентификатор. Если срез не существует, эта функция возвращает объект, `isNullObject` свойству которого присвоено значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -969,7 +969,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: Получает объект SlicerStyle по имени. Если объект SlicerStyle не существует, возвращает пустой объект.
+  summary: Получает объект SlicerStyle по имени. Если Слицерстиле не существует, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -999,7 +999,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Получает таблицу по имени или ИД. Если таблица не существует, возвращает пустой объект.
+  summary: Получает таблицу по имени или идентификатору. Если таблица не существует, то эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1029,7 +1029,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: Получает объект TableStyle по имени. Если объект TableStyle не существует, возвращает пустой объект.
+  summary: Получает объект TableStyle по имени. Если TableStyle не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1059,7 +1059,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: Получает объект TimelineStyle по имени. Если объект TimelineStyle не существует, возвращает пустой объект.
+  summary: Получает объект TimelineStyle по имени. Если Тимелинестиле не существует, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1102,7 +1102,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Получает объект листа по его имени или ИД. Если лист не существует, возвращает пустой объект.
+  summary: Получает объект листа по его имени или ИД. Если лист не существует, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1277,9 +1277,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 63c89957d0a69f7f4c53440e74567153a98cc4bb
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 23e4276bec55df7612e4bb11dfab3aec59ee5cfa
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419252"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554738"
