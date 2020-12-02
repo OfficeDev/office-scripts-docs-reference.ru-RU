@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, возвращает пустой объект.
+  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: Получает DataPivotHierarchy по имени. Если DataPivotHierarchy не существует, возвращает пустой объект.
+  summary: Получает DataPivotHierarchy по имени. Если DataPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: Получает FilterPivotHierarchy по имени. Если FilterPivotHierarchy не существует, возвращает пустой объект.
+  summary: Получает FilterPivotHierarchy по имени. Если FilterPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: Получает PivotHierarchy по имени. Если PivotHierarchy не существует, возвращает пустой объект.
+  summary: Получает PivotHierarchy по имени. Если PivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, возвращает пустой объект.
+  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e6ae4214e6ddb923ba268f247c5088421dbac94
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416717"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554610"

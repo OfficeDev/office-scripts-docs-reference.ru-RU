@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.HeaderFooterState.default:member
   package: excel!
   summary: Для всех печатаемых страниц используется только один общий заголовок и нижний колонтитул.
+  value: "\"Default\""
 - name: firstAndDefault
   uid: excel!Excel.HeaderFooterState.firstAndDefault:member
   package: excel!
   summary: Существует отдельная первая страница верхнего или нижнего колонтитула, а также общий заголовок и нижний колонтитул для всех остальных страниц.
+  value: "\"FirstAndDefault\""
 - name: firstOddAndEven
   uid: excel!Excel.HeaderFooterState.firstOddAndEven:member
   package: excel!
   summary: Существует отдельная первая страница верхнего и нижнего колонтитула, а для четных и нечетных страниц — отдельные колонтитулы.
+  value: "\"FirstOddAndEven\""
 - name: oddAndEven
   uid: excel!Excel.HeaderFooterState.oddAndEven:member
   package: excel!
   summary: Для четных и нечетных страниц существует другой колонтитул.
+  value: "\"OddAndEven\""
 metadata:
-  ms.openlocfilehash: 1a8c7b34c962f89abd69eb6516c42cdd74de7bfa
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d569d6574f6014a14dd41cf0df5d76b5e7f33005
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419115"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553782"
