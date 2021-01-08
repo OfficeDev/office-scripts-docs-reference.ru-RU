@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
-  summary: Добавляет новое условное форматирование в коллекцию по первому или верхнему приоритету.
+  summary: Добавляет новый условный формат в коллекцию с приоритетом "первый/верхний".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
-      description: Тип добавляемого условного форматирования. Для получения дополнительных сведений см. Ексцелскрипт. Кондитионалформаттипе.
+      description: Тип добавляемого условного формата. Подробные сведения см. в excelScript.ConditionalFormatType.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Заполняет диапазон от текущего диапазона до конечного диапазона, используя указанную логику автозаполнения. Конечный диапазон может иметь значение null или расширять источник как по горизонтали, так и по вертикали. Несмежные диапазоны не поддерживаются.
+  summary: Заливка в диапазоне от текущего диапазона до диапазона назначения с использованием указанной логики автозаполнеия. Диапазон назначения может иметь нулевую или горизонтальную или вертикальную линию. Неуявные диапазоны не поддерживаются.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -42,10 +42,10 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: Целевой диапазон для автозаполнения. Если конечный диапазон равен null, данные заполняются на основе окружающих ячеек (поведение при двойном щелчке маркера заполнения диапазона пользовательского интерфейса).
+      description: Диапазон назначения для автозаполнеия. Если диапазон назначения имеет null, данные заполняются в зависимости от окружающей ячейки (это поведение при двойном щелчке по окну заливки диапазона пользовательского интерфейса).
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
-      description: Тип автозаполнения. Задает способ заполнения конечного диапазона на основе содержимого текущего диапазона. Значение по умолчанию — "Филлдефаулт".
+      description: Тип автозаполнеия. Указывает, как должен заполняться диапазон назначения в зависимости от содержимого текущего диапазона. Значение по умолчанию — FillDefault.
       type: <xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />
     return:
       type: void
@@ -75,7 +75,7 @@ methods:
     content: 'clear(applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
-      description: Необязательный параметр. Определяет тип действия очистки. Для получения дополнительных сведений см. Ексцелскрипт. Клеарапплито.
+      description: Необязательный параметр. Определяет тип действия очистки. Подробные сведения см. в excelScript.ClearApplyTo.
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
@@ -110,7 +110,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: Копирует данные ячейки или форматирование из исходного диапазона или объекта RangeAreas в текущий диапазон. Конечный диапазон может отличаться от размера исходного диапазона или RangeAreas. Назначение будет автоматически развернуто, если оно меньше исходного.
+  summary: Копирует данные ячейки или форматирование из исходного диапазона или объекта RangeAreas в текущий диапазон. Диапазон назначения может быть разных размеров, чем исходный диапазон или RangeAreas. Назначение будет расширено автоматически, если оно меньше источника.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,16 +124,16 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Исходный диапазон или RangeAreas, из которого производится копирование. Если исходный RangeAreas имеет несколько диапазонов, их форма должна быть создана путем удаления полных строк или столбцов из прямоугольного диапазона.
+      description: Исходный диапазон или RangeAreas для копирования. Если исходный rangeAreas имеет несколько диапазонов, их форму необходимо создать, удалив полные строки или столбцы из прямоугольного диапазона.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
-      description: Тип данных или форматирования ячеек, которые необходимо скопировать. Значение по умолчанию — "ALL".
+      description: Тип данных ячейки или форматирования для копирования. Значение по умолчанию— "All".
       type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
     - id: skipBlanks
-      description: 'Значение true, если необходимо пропускать пустые ячейки в исходном диапазоне. Значение по умолчанию: false.'
+      description: 'True, если пропускать пустые ячейки в диапазоне источника. Значение по умолчанию: false.'
       type: boolean
     - id: transpose
-      description: 'Значение true, если требуется переставить ячейки в целевом диапазоне. Значение по умолчанию: false.'
+      description: 'True, если перезапоставить ячейки в диапазоне назначения. Значение по умолчанию: false.'
       type: boolean
     return:
       type: void
@@ -150,7 +150,7 @@ methods:
     content: 'delete(shift: DeleteShiftDirection): void;'
     parameters:
     - id: shift
-      description: Определяет способ сдвига ячеек. Для получения дополнительных сведений см. Ексцелскрипт. Делетешифтдиректион.
+      description: Определяет способ сдвига ячеек. Подробные сведения см. в excelScript.DeleteShiftDirection.
       type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
     return:
       type: void
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Находит определенную строку на основе указанных условий. Если текущий диапазон больше, чем одна ячейка, то поиск будет ограничен этим диапазоном, в ином случае поиск будет охватывать весь лист, начиная с этой ячейки. Если совпадений нет, то эта функция возвращает объект, `isNullObject` свойству которого присвоено значение `true`<!-- -->.
+  summary: Находит определенную строку на основе указанных условий. Если текущий диапазон больше одной ячейки, поиск будет ограничен этим диапазоном, иначе поиск будет охватывать весь лист, начиная с этой ячейки. Если совпадений нет, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
       description: Строка для поиска.
       type: string
     - id: criteria
-      description: Дополнительные критерии поиска, в том числе направление поиска и то, должны ли поисковые данные совпадать с ячейкой целиком или с учетом регистра.
+      description: Дополнительные условия поиска, в том числе направление поиска и то, должен ли поиск соответствовать всей ячейке или быть чувствительным к делу.
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -200,10 +200,10 @@ methods:
     content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
     parameters:
     - id: numRows
-      description: Число строк нового размера диапазона.
+      description: Количество строк нового размера диапазона.
       type: number
     - id: numColumns
-      description: Число столбцов нового размера диапазона.
+      description: Количество столбцов нового размера диапазона.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: 'Указывает ссылку на диапазон в стиле a1. Значение Address будет содержать ссылку на лист (например, "Лист1! A1: B4).'
+  summary: Указывает ссылку на диапазон в стиле A1. Значение адреса будет содержать ссылку на лист (например, "Sheet1! A1:B4").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Получает объект диапазона, содержащий одну ячейку, по номеру строки и столбца. Ячейка может находиться вне границ родительского диапазона, пока она остается в сетке листа. Возвращаемая ячейка располагается относительно верхней левой ячейки диапазона.
+  summary: Получает объект диапазона, содержащий одну ячейку, по номеру строки и столбца. Ячейка может находиться за пределами родительского диапазона, если она остается в сетке таблицы. Возвращаемая ячейка располагается относительно верхней левой ячейки диапазона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -275,7 +275,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getCellCount:member(1)
   package: ExcelScript!
   fullName: getCellCount()
-  summary: Задает количество ячеек в диапазоне. Этот API возвращает значение -1, если количество ячеек превышает 2^31-1 (2,147,483,647).
+  summary: Указывает количество ячеек в диапазоне. Этот API возвращает значение -1, если количество ячеек превышает 2^31-1 (2,147,483,647).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -305,7 +305,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnCount:member(1)
   package: ExcelScript!
   fullName: getColumnCount()
-  summary: Задает общее количество столбцов в диапазоне.
+  summary: Указывает общее число столбцов в диапазоне.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -331,7 +331,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnIndex:member(1)
   package: ExcelScript!
   fullName: getColumnIndex()
-  summary: Задает номер столбца первой ячейки в диапазоне. Используется нулевой индекс.
+  summary: Указывает номер столбца первой ячейки в диапазоне. Используется нулевой индекс.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
     content: 'getConditionalFormat(id: string): ConditionalFormat;'
     parameters:
     - id: id
-      description: Идентификатор условного форматирования.
+      description: ИД условного формата.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -395,7 +395,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: Коллекция объектов Кондитионалформатс, пересекающих диапазон.
+  summary: Коллекция условных форм, пересекает диапазон.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -421,7 +421,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
   package: ExcelScript!
   fullName: getDirectPrecedents()
-  summary: Возвращает объект Воркбукранжеареас, который представляет диапазон, содержащий все прямые и непосредственные ячейки в ячейке на одном листе или на нескольких листах.
+  summary: Возвращает объект WorkbookRangeAreas, который представляет диапазон, содержащий все непосредственные заметок ячейки на одном или нескольких электронных таблицах.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: 'Получает объект, представляющий весь столбец диапазона (например, если текущий диапазон представляет ячейки "B4: E11", `getEntireColumn` а — диапазон, представляющий столбцы "б:е").'
+  summary: Получает объект, который представляет весь столбец диапазона (например, если текущий диапазон представляет ячейки "B4:E11", то он представляет собой диапазон, который представляет столбцы `getEntireColumn` "B:E").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: 'Получает объект, представляющий всю строку диапазона (например, если текущий диапазон представляет ячейки "B4: E11", `GetEntireRow` а — диапазон, представляющий строки "4:11").'
+  summary: Получает объект, который представляет всю строку диапазона (например, если текущий диапазон представляет ячейки "B4:E11", то он представляет собой диапазон, который представляет строки `GetEntireRow` "4:11").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Представляет формулу ячейки в нотации в стиле a1. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет формулу ячейки в нотации в стиле A1. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -486,7 +486,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: Представляет формулу ячейки в нотации стиля a1 в языке пользователя и в языковом стандарте форматирования чисел. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет формулу ячейки в нотации в стиле A1 на языке пользователя и языковом языке форматирования номеров. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,7 +499,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: Представляет формулу ячейки в нотации стиля R1C1. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет формулу ячейки в нотации в стиле R1C1. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,7 +512,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: Представляет формулу в формате A1. Если ячейка не имеет формулы, вместо нее возвращается значение.
+  summary: Представляет формулу в формате A1. Если в ячейке нет формулы, возвращается ее значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -525,7 +525,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: Представляет формулу в нотации стиля A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если ячейка не имеет формулы, вместо нее возвращается значение.
+  summary: Представляет формулу в нотации стиля A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если в ячейке нет формулы, возвращается ее значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -538,7 +538,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: Представляет формулу в формате R1C1. Если ячейка не имеет формулы, вместо нее возвращается значение.
+  summary: Представляет формулу в формате R1C1. Если в ячейке нет формулы, возвращается ее значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -551,7 +551,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: Указывает, есть ли во всех ячейках граница переноса. Возвращает значение true, если все ячейки имеют границу Spill, или false, если для всех ячеек не задано свойство Spill. Возвращает значение null, если в диапазоне есть ячейки с границами и без них.
+  summary: Указывает, есть ли во всех ячейках граница переноса. Возвращает true, если все ячейки имеют границу утечки, или false, если все ячейки не имеют границу утечки. Возвращает null, если в диапазоне есть ячейки как с границами, так и без них.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -590,7 +590,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHyperlink:member(1)
   package: ExcelScript!
   fullName: getHyperlink()
-  summary: Представляет гиперссылку для текущего диапазона.
+  summary: Представляет гиперссылки для текущего диапазона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -603,7 +603,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: Отрисовывает диапазон в виде PNG-изображения в кодировке Base64. **Важно!** в настоящее время этот API не поддерживается в Excel для Mac. Посетите \[ OfficeDev/Office-JS Issue \# 235 \] ( https://github.com/OfficeDev/office-js/issues/235) для текущего состояния).
+  summary: Отрисовка диапазона в качестве изображения png в коде base64. **Важно!** Этот API в настоящее время не работает в Excel для Mac. Посетите \[ сайт OfficeDev/office-js Issue \# 235 \] ( для https://github.com/OfficeDev/office-js/issues/235) текущего состояния.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -616,7 +616,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Возвращает объект диапазона, представляющий прямоугольное пересечение заданных диапазонов. Если пересечение не найдено, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Возвращает объект диапазона, представляющий прямоугольное пересечение заданных диапазонов. Если пересечение не найдено, эта функция возвращает объект с `isNullObject` его свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -737,7 +737,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: Возвращает объект RangeAreas, представляющий Объединенные области в этом диапазоне. Обратите внимание, что если число Объединенных областей в этом диапазоне превышает 512, API не будет возвращать результат.
+  summary: Возвращает объект RangeAreas, который представляет объединенные области в этом диапазоне. Обратите внимание, что если количество объединенных областей в этом диапазоне превышает 512, API не сможет вернуть результат.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -750,7 +750,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Представляет код числового формата ячеек Excel для заданного диапазона. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет код формата номера ячейки Excel для заданного диапазона. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -763,7 +763,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategories()
-  summary: Представляет категорию числового формата для каждой ячейки.
+  summary: Представляет категорию числовых форматов каждой ячейки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -776,7 +776,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Представляет код числового формата Excel в ячейке для заданного диапазона в соответствии с языковыми параметрами пользователя. При извлечении или задании свойства Excel не выполняет приведение форматирования `numberFormatLocal` . Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет код формата номера ячейки Excel для заданного диапазона в зависимости от языковых параметров пользователя. Excel не выполняет принудительные действия с языком или форматом при получении или настройке `numberFormatLocal` свойства. Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -789,7 +789,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
   package: ExcelScript!
   fullName: getNumberFormats()
-  summary: Представляет код числового формата Excel для заданного диапазона.
+  summary: Представляет код формата номера Excel для заданного диапазона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -802,7 +802,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: Представляет код числового формата Excel для заданного диапазона в соответствии с языковыми параметрами пользователя. При извлечении или задании свойства Excel не выполняет приведение форматирования `numberFormatLocal` . Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы.
+  summary: Представляет код формата номера Excel для заданного диапазона в зависимости от языковых параметров пользователя. Excel не выполняет принудительные действия с языком или форматом при получении или настройке `numberFormatLocal` свойства. Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -835,7 +835,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
   fullName: getPivotTables(fullyContained)
-  summary: Возвращает ограниченную коллекцию сводных таблиц, которые перекрывают диапазон.
+  summary: Получает коллекцию с затеняемых областей с помощью совмесс, перекрывающихся с диапазоном.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
     content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
     parameters:
     - id: fullyContained
-      description: "Если этот параметр имеет значение true, возвращаются только сводные таблицы, полностью содержащиеся в границах диапазона. Значение по умолчанию \x97 false."
+      description: "Если засвеяно, возвращается только списоная информация, которая полностью содержится в границах диапазона. Значение по умолчанию \x97 false."
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
@@ -852,7 +852,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Представляет стиль текущего диапазона. Если стили ячеек противоречивы, возвращается значение null. Для пользовательских стилей будет возвращено имя стиля. Для встроенных стилей возвращается строка, представляющая значение в перечислении Буилтинстиле.
+  summary: Представляет стиль текущего диапазона. Если стили ячеек несогласованны, возвращается null. Для пользовательских стилей возвращается имя стиля. Для встроенных стилей возвращается строка, представляющая значение в enum BuiltInStyle.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -876,7 +876,7 @@ methods:
       description: Количество строк, добавляемых в правый нижний угол, относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.
       type: number
     - id: deltaColumns
-      description: Количество столбцов, по которым разворачивается нижний правый угол относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.
+      description: Число столбцов, с помощью которых можно развернуть нижний правый угол относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -975,7 +975,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: Указывает, следует ли сохранять все ячейки в виде формулы массива. Возвращает значение true, если все ячейки будут сохранены как формула массива, или false, если все ячейки не будут сохранены как формула массива. Возвращает значение null, если некоторые ячейки были сохранены в виде формулы массива, а другие — нет.
+  summary: Представляет, будут ли все ячейки сохранены в качестве формулы массива. Возвращает true, если все ячейки будут сохранены в качестве формулы массива, или false, если ВСЕ ячейки НЕ будут сохранены в качестве формулы массива. Возвращает null, если некоторые ячейки будут сохранены в качестве формулы массива, а другие — нет.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1001,7 +1001,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Получает объект RangeAreas, состоящий из одного или нескольких диапазонов, представляющих все ячейки, которые соответствуют указанному типу и значению. Если специальные ячейки не найдены, эта функция возвращает объект, `isNullObject` свойству которого присвоено значение `true`<!-- -->.
+  summary: Получает объект RangeAreas, состоящий из одного или нескольких диапазонов, представляющих все ячейки, которые соответствуют указанному типу и значению. Если специальные ячейки не найдены, эта функция возвращает объект с `isNullObject` его свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1013,19 +1013,19 @@ methods:
               ): RangeAreas;
     parameters:
     - id: cellType
-      description: Тип ячеек, которые необходимо включить в список.
+      description: Тип ячеек, которые необходимо включить.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Если cellType является константами или формулами, этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединять, чтобы возвратить более одного типа. По умолчанию выбираются все константы или формулы независимо от типа.
+      description: Если cellType — константы или формулы, этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединить для возврата более одного типа. По умолчанию выбираются все константы или формулы независимо от типа.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * This sample gets all the blank cells in the current worksheet's used range. It then highlights all those cells with a yellow background.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Get the current used range.\n    let range = workbook.getActiveWorksheet().getUsedRange();\n    \n    // Get all the blank cells.\n    let blankCells = range.getSpecialCells(ExcelScript.SpecialCellType.blanks);\n    // Highlight the blank cells with a yellow background.\n    blankCells.getFormat().getFill().setColor(\"yellow\");\n}\n```"
 - name: getSpillingToRange()
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Получает объект range, содержащий диапазон переноса при вызове для базовой ячейки. Если диапазон не является ячейкой привязки или не удается найти диапазон переноса, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает объект range, содержащий диапазон переноса при вызове для базовой ячейки. Если диапазон не является ячейкой привязки или не найден диапазон утечки, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1038,7 +1038,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Возвращает объект Range, содержащий ячейку привязки для ячейки, которую следует перенести в. Если ячейка не была перенесена или в нее задано несколько ячеек, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает объект диапазона, содержащий ячейку привязки для влияемой ячейки. Если это не пролилась ячейка или задано более одной ячейки, эта функция возвращает объект со своим `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1072,7 +1072,7 @@ methods:
     content: 'getTables(fullyContained?: boolean): Table[];'
     parameters:
     - id: fullyContained
-      description: "Если этот параметр имеет значение true, возвращаются только таблицы, полностью содержащиеся в границах диапазона. Значение по умолчанию \x97 false."
+      description: "Если засвеяно, возвращаются только таблицы, полностью содержащиеся в границах диапазона. Значение по умолчанию \x97 false."
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
@@ -1081,7 +1081,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Представляет текстовое значение указанного диапазона. Текстовое значение не зависит от ширины ячейки. \#Подстановка знаков, которая происходит в пользовательском интерфейсе Excel, не влияет на текстовое значение, возвращенное API. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет текстовое значение указанного диапазона. Текстовое значение не зависит от ширины ячейки. Замена знака, которая происходит в пользовательском интерфейсе Excel, не повлияет на текстовое значение, \# возвращаемую API. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1094,7 +1094,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: Текстовые значения указанного диапазона. Текстовое значение не зависит от ширины ячейки. \#Подстановка знаков, которая происходит в пользовательском интерфейсе Excel, не влияет на текстовое значение, возвращенное API.
+  summary: Текстовые значения указанного диапазона. Текстовое значение не зависит от ширины ячейки. Замена знака, которая происходит в пользовательском интерфейсе Excel, не повлияет на текстовое значение, \# возвращаемую API.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1120,7 +1120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Возвращает используемый диапазон заданного объекта диапазона. Если в диапазоне нет используемых ячеек, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Возвращает используемый диапазон заданного объекта диапазона. Если в диапазоне нет используемых ячеек, эта функция возвращает объект с `isNullObject` его свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1137,7 +1137,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: Представляет необработанное значение указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1163,7 +1163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
-  summary: Представляет тип данных в ячейке. Если диапазон содержит несколько ячеек, будут возвращены данные из первой ячейки (представленные с помощью индекса строки 0 и индекса столбца 0).
+  summary: Представляет тип данных в ячейке. Если диапазон содержит несколько ячеек, возвращаются данные из первой ячейки (представленные индексом строки 0 и индексом столбца 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1228,7 +1228,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#group:member(1)
   package: ExcelScript!
   fullName: group(groupOption)
-  summary: Группирует столбцы и строки для структуры.
+  summary: Группные столбцы и строки для контура.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1236,7 +1236,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Указывает, как диапазон может группироваться по строкам или столбцам. `InvalidArgument`Ошибка возникает, если параметр Group отличается от `isEntireRow` `isEntireColumn` значения свойства Range (то есть, `range.isEntireRow` имеет значение true и `groupOption` равно "биколумнс") или имеет `range.isEntireColumn` значение true и `groupOption` равно "бировс").
+      description: Указывает, как диапазон можно сгруппить по строкам или столбцам. Ошибка происходит, когда параметр группы отличается от свойства или диапазона (то есть имеет true и имеет `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` "ByColumns" или true `range.isEntireColumn` и `groupOption` имеет "ByRows").
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1245,7 +1245,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)
   package: ExcelScript!
   fullName: hideGroupDetails(groupOption)
-  summary: Скрытие сведений о группе строк или столбцов.
+  summary: Скрытие сведений о строке или группе столбцов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1253,7 +1253,7 @@ methods:
     content: 'hideGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Указывает, следует ли скрыть сведения о сгруппированных строках или столбцах группировки.
+      description: Указывает, следует ли скрывать сведения о сгруппных строках или сгруппных столбцах.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1270,7 +1270,7 @@ methods:
     content: 'insert(shift: InsertShiftDirection): Range;'
     parameters:
     - id: shift
-      description: Определяет способ сдвига ячеек. Для получения дополнительных сведений см. Ексцелскрипт. Инсертшифтдиректион.
+      description: Определяет способ сдвига ячеек. Подробные сведения см. в excelScript.InsertShiftDirection.
       type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1296,7 +1296,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
   package: ExcelScript!
   fullName: moveTo(destinationRange)
-  summary: Перемещает значения ячеек, форматирование и формулы из текущего диапазона в конечный диапазон, заменяя старые сведения в этих ячейках. Конечный диапазон будет расширен автоматически, если он меньше текущего диапазона. Все ячейки в диапазоне назначения, расположенные вне области исходного диапазона, не меняются.
+  summary: Перемещает значения, форматирование и формулы ячеек из текущего диапазона в диапазон назначения, заменяя старую информацию в этих ячейках. Диапазон назначения будет расширен автоматически, если он меньше текущего диапазона. Ячейки в конечном диапазоне, которые находятся за пределами исходного диапазона, не меняются.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1304,7 +1304,7 @@ methods:
     content: 'moveTo(destinationRange: Range | string): void;'
     parameters:
     - id: destinationRange
-      description: Дестинатионранже указывает диапазон, в который будут перемещены сведения из этого диапазона.
+      description: destinationRange указывает диапазон, в который будут перемещены сведения в этом диапазоне.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -1325,10 +1325,10 @@ methods:
               ): RemoveDuplicatesResult;
     parameters:
     - id: columns
-      description: Столбцы в диапазоне, которые могут содержать дубликаты. Необходимо указать по крайней мере один столбец. Используется нулевой индекс.
+      description: Столбцы в диапазоне, которые могут содержать дубликаты. Должен быть указан по крайней мере один столбец. Используется нулевой индекс.
       type: number[]
     - id: includesHeader
-      description: 'Значение true, если входные данные содержат заголовок. Значение по умолчанию: false.'
+      description: 'Имеет true, если входные данные содержат заголок. Значение по умолчанию: false.'
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
@@ -1353,7 +1353,7 @@ methods:
       description: Строка для поиска.
       type: string
     - id: replacement
-      description: Строка для замены оригинала на.
+      description: Строка для замены исходного.
       type: string
     - id: criteria
       description: Дополнительные условия замены.
@@ -1408,7 +1408,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Задает формулу ячейки в нотации в стиле a1. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
+  summary: Задает формулу ячейки в нотации в стиле A1. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1425,7 +1425,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
-  summary: Задайте формулу ячейки в нотации в стиле a1 на языке пользователя и в языковом стандарте форматирования чисел. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
+  summary: За set the cell formula in A1-style notation, in the user's language and number-formatting locale. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1442,7 +1442,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulaR1C1(formulaR1C1)
-  summary: Задает формулу ячейки в нотации стиля R1C1. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
+  summary: Задает формулу ячейки в нотации в стиле R1C1. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1459,7 +1459,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: Представляет формулу в формате A1. Если ячейка не имеет формулы, вместо нее возвращается значение.
+  summary: Представляет формулу в формате A1. Если в ячейке нет формулы, возвращается ее значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1476,7 +1476,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: Представляет формулу в нотации стиля A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если ячейка не имеет формулы, вместо нее возвращается значение.
+  summary: Представляет формулу в нотации стиля A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке. Если в ячейке нет формулы, возвращается ее значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1493,7 +1493,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: Представляет формулу в формате R1C1. Если ячейка не имеет формулы, вместо нее возвращается значение.
+  summary: Представляет формулу в формате R1C1. Если в ячейке нет формулы, возвращается ее значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1510,7 +1510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setHyperlink:member(1)
   package: ExcelScript!
   fullName: setHyperlink(hyperlink)
-  summary: Представляет гиперссылку для текущего диапазона.
+  summary: Представляет гиперссылки для текущего диапазона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1527,7 +1527,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Задает код числового формата Excel в ячейке для заданного диапазона. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
+  summary: Задает код формата номера ячейки Excel для заданного диапазона. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1544,7 +1544,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Задает код числового формата Excel в ячейке для заданного диапазона в зависимости от языковых параметров пользователя. При извлечении или задании свойства Excel не выполняет приведение форматирования `numberFormatLocal` . Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
+  summary: Задает код формата номера ячейки Excel для заданного диапазона в зависимости от языковых параметров пользователя. Excel не выполняет принудительные действия с языком или форматом при получении или настройке `numberFormatLocal` свойства. Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы. Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1561,7 +1561,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
   fullName: setNumberFormats(numberFormats)
-  summary: Представляет код числового формата Excel для заданного диапазона.
+  summary: Представляет код формата номера Excel для заданного диапазона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1578,7 +1578,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Представляет код числового формата Excel для заданного диапазона в соответствии с языковыми параметрами пользователя. При извлечении или задании свойства Excel не выполняет приведение форматирования `numberFormatLocal` . Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы.
+  summary: Представляет код формата номера Excel для заданного диапазона в зависимости от языковых параметров пользователя. Excel не выполняет принудительные действия с языком или форматом при получении или настройке `numberFormatLocal` свойства. Любой возвращенный текст использует локально отформатированные строки на основе языка, указанного в параметрах системы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1595,7 +1595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Представляет стиль текущего диапазона. Если стили ячеек противоречивы, возвращается значение null. Для пользовательских стилей будет возвращено имя стиля. Для встроенных стилей возвращается строка, представляющая значение в перечислении Буилтинстиле.
+  summary: Представляет стиль текущего диапазона. Если стили ячеек несогласованны, возвращается null. Для пользовательских стилей возвращается имя стиля. Для встроенных стилей возвращается строка, представляющая значение в enum BuiltInStyle.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1629,7 +1629,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Задает необработанное значение указанного диапазона. Заданные значения могут иметь тип String, number или Boolean. `null` значение будет игнорироваться (не задано или перезаписано в Excel). Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
+  summary: Задает необработанные значения указанного диапазона. Заданные данные могут иметь тип строки, числа или типа boolean. `null` значение будет игнорироваться (не за установлено или перезаписано в Excel). Если диапазон содержит несколько ячеек, каждая ячейка в заданном диапазоне будет обновлена входными данными.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1676,7 +1676,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#showGroupDetails:member(1)
   package: ExcelScript!
   fullName: showGroupDetails(groupOption)
-  summary: Отображение сведений о группе строк или столбцов.
+  summary: Показать сведения о строке или группе столбцов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1684,7 +1684,7 @@ methods:
     content: 'showGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Указывает, следует ли отображать сведения о сгруппированных строках или столбцах в группировке.
+      description: Указывает, следует ли показывать сведения о сгруппных строках или сгруппных столбцах.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1693,7 +1693,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#ungroup:member(1)
   package: ExcelScript!
   fullName: ungroup(groupOption)
-  summary: Разгруппирование столбцов и строк для структуры.
+  summary: Разгруппировка столбцов и строк для контура.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1701,7 +1701,7 @@ methods:
     content: 'ungroup(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Указывает, как диапазон можно разгруппировать по строкам или столбцам.
+      description: Указывает, как можно разгруппировать диапазон по строкам или столбцам.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1720,9 +1720,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 2727f3b8ce8b578719e8f5496ee9c1a4cbe40a44
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
+  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554582"
+  ms.lasthandoff: 01/08/2021
+  ms.locfileid: "49784459"
