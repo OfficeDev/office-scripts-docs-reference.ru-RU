@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
-  summary: Добавляет новый условный формат в коллекцию с приоритетом "первый/верхний".
+  summary: Добавляет новый условный формат в коллекцию с первого и верхнего приоритета.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -42,7 +42,7 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: Диапазон назначения для автозаполнеия. Если диапазон назначения имеет null, данные заполняются в зависимости от окружающей ячейки (это поведение при двойном щелчке по окну заливки диапазона пользовательского интерфейса).
+      description: Диапазон назначения для автозаполнеия. Если диапазон назначения имеет null, данные заполняются на основе окружающей ячейки (что поведение при двойном щелчке по окну заливки диапазона пользовательского интерфейса).
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
       description: Тип автозаполнеия. Указывает, как должен заполняться диапазон назначения в зависимости от содержимого текущего диапазона. Значение по умолчанию — FillDefault.
@@ -512,7 +512,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: Представляет формулу в формате A1. Если в ячейке нет формулы, возвращается ее значение.
+  summary: Представляет формулу в формате A1. Если ячейка не имеет формулы, возвращается ее значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -551,7 +551,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: Указывает, есть ли во всех ячейках граница переноса. Возвращает true, если все ячейки имеют границу утечки, или false, если все ячейки не имеют границу утечки. Возвращает null, если в диапазоне есть ячейки как с границами, так и без них.
+  summary: Указывает, есть ли во всех ячейках граница переноса. Возвращает true, если у всех ячеек есть граница утечки, или false, если у всех ячеек нет границы утечки. Возвращает null, если в диапазоне есть ячейки как с границами, так и без них.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -772,6 +772,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
       description: ''
+- name: getNumberFormatCategory()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategory()
+  summary: Указывает категорию числовых форматов первой ячейки в диапазоне (представлена индексом строки 0 и индексом столбца 0).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
+      description: ''
 - name: getNumberFormatLocal()
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
@@ -835,7 +848,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
   fullName: getPivotTables(fullyContained)
-  summary: Получает коллекцию с затеняемых областей с помощью совмесс, перекрывающихся с диапазоном.
+  summary: Получает коллекцию с затеняемых областей с помощью совмессов, перекрывающих диапазон.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1001,7 +1014,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Получает объект RangeAreas, состоящий из одного или нескольких диапазонов, представляющих все ячейки, которые соответствуют указанному типу и значению. Если специальные ячейки не найдены, эта функция возвращает объект с `isNullObject` его свойством `true`<!-- -->.
+  summary: Получает объект RangeAreas, состоящий из одного или нескольких диапазонов, представляющих все ячейки, которые соответствуют указанному типу и значению. Если специальные ячейки не найдены, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1038,7 +1051,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Получает объект диапазона, содержащий ячейку привязки для влияемой ячейки. Если это не пролилась ячейка или задано более одной ячейки, эта функция возвращает объект со своим `isNullObject` свойством `true`<!-- -->.
+  summary: Получает объект диапазона, содержащий ячейку привязки для влияемой ячейки. Если это не пролилась ячейка или задано более одной ячейки, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1236,7 +1249,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Указывает, как диапазон можно сгруппить по строкам или столбцам. Ошибка происходит, когда параметр группы отличается от свойства или диапазона (то есть имеет true и имеет `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` "ByColumns" или true `range.isEntireColumn` и `groupOption` имеет "ByRows").
+      description: Указывает, как диапазон можно сгруппить по строкам или столбцам. Ошибка происходит, когда параметр группы отличается от свойства или диапазона (например, имеет true и имеет свойство ByColumns или true и имеет свойство `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` `range.isEntireColumn` `groupOption` ByRows).
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1296,7 +1309,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
   package: ExcelScript!
   fullName: moveTo(destinationRange)
-  summary: Перемещает значения, форматирование и формулы ячеек из текущего диапазона в диапазон назначения, заменяя старую информацию в этих ячейках. Диапазон назначения будет расширен автоматически, если он меньше текущего диапазона. Ячейки в конечном диапазоне, которые находятся за пределами исходного диапазона, не меняются.
+  summary: Перемещает значения, форматирование и формулы ячеек из текущего диапазона в диапазон назначения, заменяя старую информацию в этих ячейках. Диапазон назначения будет расширяться автоматически, если он меньше текущего диапазона. Ячейки в конечном диапазоне, которые находятся за пределами исходного диапазона, не меняются.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1720,9 +1733,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
-  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
+  ms.openlocfilehash: 0f16a00124cd360f9a0ac72ab7a7bcf96af7930a
+  ms.sourcegitcommit: 2224b5a1c9da58cc58b310ccbdc0b58c63ab501b
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "49784459"
+  ms.lasthandoff: 02/03/2021
+  ms.locfileid: "50091817"
