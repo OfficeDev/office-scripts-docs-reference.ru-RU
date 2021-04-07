@@ -21,7 +21,7 @@ methods:
     content: 'calculate(calculationType: CalculationType): void;'
     parameters:
     - id: calculationType
-      description: Определяет тип расчета, который нужно использовать. Для получения дополнительных сведений см. Ексцелскрипт. Калкулатионтипе.
+      description: Определяет тип расчета, который нужно использовать. Подробные `ExcelScript.CalculationType` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
     return:
       type: void
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
   package: ExcelScript!
   fullName: getCalculationMode()
-  summary: 'Возвращает режим вычислений, используемый в книге в соответствии с константами в Ексцелскрипт. Калкулатионмоде. Возможные значения: `Automatic`<!-- -->, где Excel управляет пересчетом; `AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах; `Manual`<!-- -->, где выполняется расчет, когда пользователь запрашивает его.'
+  summary: 'Возвращает режим вычисления, используемый в книге, как это определено константами в `ExcelScript.CalculationMode`<!-- -->. Возможные значения: `Automatic`<!-- -->, где Excel контролирует пересчет; `AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах; `Manual`<!-- -->, где вычисление делается, когда пользователь запрашивает его.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
   package: ExcelScript!
   fullName: getCalculationState()
-  summary: Возвращает состояние вычисления приложения. Для получения дополнительных сведений см. Ексцелскрипт. Калкулатионстате.
+  summary: Возвращает состояние вычисления приложения. Подробные `ExcelScript.CalculationState` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
   package: ExcelScript!
   fullName: getCultureInfo()
-  summary: Предоставляет сведения, основанные на текущих параметрах языковых параметров системы. Сюда входят имена культур, форматирование чисел и другие параметры, зависящие от культуры.
+  summary: Предоставляет сведения, основанные на текущих параметрах культуры системы. Это включает имена культур, форматирование номеров и другие параметры, зависящие от культуры.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getDecimalSeparator()
-  summary: Получает строку, используемую в качестве десятичного разделителя для числовых значений. Это основано на локальных параметрах Excel.
+  summary: Получает строку, используемую в качестве десятичных сепараторов для числевых значений. Это основано на локальных параметрах Excel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
   package: ExcelScript!
   fullName: getIterativeCalculation()
-  summary: Возвращает параметры итеративных вычислений. В Excel для Windows и Mac параметры будут применены к приложению Excel. В Excel на веб-сайте и других платформах параметры будут применены к активной книге.
+  summary: Возвращает параметры итеративных вычислений. В Excel на Windows и Mac параметры будут применяться к приложению Excel. В Excel на веб-и других платформах параметры будут применяться к активной книге.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
   package: ExcelScript!
   fullName: getThousandsSeparator()
-  summary: Получает строку, используемую для разделения групп цифр слева от десятичного разделителя для числовых значений. Это основано на локальных параметрах Excel.
+  summary: Получает строку, используемую для отдельных групп цифр слева от десятичной для числимых значений. Это основано на локальных параметрах Excel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)
   package: ExcelScript!
   fullName: getUseSystemSeparators()
-  summary: Указывает, включены ли системные разделители Excel. К системным разделителям относятся разделитель целой и дробной части, а также разделитель групп разрядов.
+  summary: Указывает, включены ли системные сепараторы Excel. Системные сепараторы включают десятичной сепаратор и тысячный сепаратор.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
   package: ExcelScript!
   fullName: setCalculationMode(calculationMode)
-  summary: 'Возвращает режим вычислений, используемый в книге в соответствии с константами в Ексцелскрипт. Калкулатионмоде. Возможные значения: `Automatic`<!-- -->, где Excel управляет пересчетом; `AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах; `Manual`<!-- -->, где выполняется расчет, когда пользователь запрашивает его.'
+  summary: 'Возвращает режим вычисления, используемый в книге, как это определено константами в `ExcelScript.CalculationMode`<!-- -->. Возможные значения: `Automatic`<!-- -->, где Excel контролирует пересчет; `AutomaticExceptTables`<!-- -->, где Excel контролирует пересчет, но игнорирует изменения в таблицах; `Manual`<!-- -->, где вычисление делается, когда пользователь запрашивает его.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -148,9 +148,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3bb99af272686a3303d2564bbed7e972f6cde6e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdcd7a220d23bc540129c9547789a241c15fd3b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418130"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606637"

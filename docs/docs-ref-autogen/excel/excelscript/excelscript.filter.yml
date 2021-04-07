@@ -81,7 +81,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)
   package: ExcelScript!
   fullName: applyCustomFilter(criteria1, criteria2, oper)
-  summary: Примените к столбцу фильтр "Icon" для заданной строки условий.
+  summary: Применить фильтр "Icon" в столбце для заданных строк критериев.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)
   package: ExcelScript!
   fullName: applyIconFilter(icon)
-  summary: Примените к столбцу фильтр "Icon" для данного значка.
+  summary: Нанесите фильтр "Icon" на столбец для данного значка.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
     content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
     parameters:
     - id: values
-      description: Список значений, которые должны отображаться. Это должен быть массив строк или массив объектов Ексцелскрипт. FilterDateTime.
+      description: Список значений, которые должны отображаться. Это должен быть массив строк или массив `ExcelScript.FilterDateTime` объектов.
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
     return:
       type: void
@@ -234,9 +234,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 342de2634a064df6aaca42af8d6d475321ca9c0c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6e78989be8f08913ef4f140e12f158a4dfe02bba
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412582"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607034"

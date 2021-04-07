@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: Массив критериев и IconSets для правил и потенциальных настраиваемых значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, в то время как тип, формула и оператор будут игнорироваться при установке.
+  summary: Набор критериев и наборов значков для правил и потенциальных пользовательских значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, а тип, формула и оператор будут игнорироваться при наборе.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: getReverseIconOrder()
-  summary: Если этот параметр имеет значение true, отменяет порядок значков для набора значков. Обратите внимание, что этот параметр невозможно задать при использовании настраиваемых значков.
+  summary: Если `true`<!-- -->, отменяет заказы значка для набора значков. Обратите внимание, что это невозможно установить, если используются настраиваемые значки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
   package: ExcelScript!
   fullName: getShowIconOnly()
-  summary: Значение true скрывает значения и показывает только значки.
+  summary: Если `true`<!-- -->, скрывает значения и показывает только значки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Если этот параметр установлен, отображается параметр "набор значков" для условного форматирования.
+  summary: Если установлено, отображается параметр набора значков для условного формата.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: Массив критериев и IconSets для правил и потенциальных настраиваемых значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, в то время как тип, формула и оператор будут игнорироваться при установке.
+  summary: Набор критериев и наборов значков для правил и потенциальных пользовательских значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, а тип, формула и оператор будут игнорироваться при наборе.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: setReverseIconOrder(reverseIconOrder)
-  summary: Если этот параметр имеет значение true, отменяет порядок значков для набора значков. Обратите внимание, что этот параметр невозможно задать при использовании настраиваемых значков.
+  summary: Если `true`<!-- -->, отменяет заказы значка для набора значков. Обратите внимание, что это невозможно установить, если используются настраиваемые значки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
   package: ExcelScript!
   fullName: setShowIconOnly(showIconOnly)
-  summary: Значение true скрывает значения и показывает только значки.
+  summary: Если `true`<!-- -->, скрывает значения и показывает только значки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Если этот параметр установлен, отображается параметр "набор значков" для условного форматирования.
+  summary: Если установлено, отображается параметр набора значков для условного формата.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 097baba5d4e77c03e543300da7c48c70638dd62c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0fd12949aad6fc518834dfe02a0fd9aa01dae20a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412330"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607230"

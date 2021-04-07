@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowAxisFieldButtons()
-  summary: Указывает, следует ли отображать кнопки поля оси в сводной диаграмме. Свойство ShowAxisFieldButtons соответствует команде "Показать кнопки поля оси" в раскрывающемся списке "Кнопки полей" вкладки "Анализировать", доступной при выделении сводной диаграммы.
+  summary: Указывает, следует ли отображать кнопки поля оси на сводная диаграмма. Свойство соответствует команде "Показать кнопки поля оси" в выпадаемом списке "Кнопки поля" вкладки "Анализ", которая доступна при сводная диаграмма `showAxisFieldButtons` выбрана.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowLegendFieldButtons()
-  summary: Указывает, следует ли отображать кнопки поля условных обозначений в сводной диаграмме.
+  summary: Указывает, следует ли отображать кнопки поля легенды на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowReportFilterFieldButtons()
-  summary: Указывает, следует ли отображать кнопки поля фильтра отчета в сводной диаграмме.
+  summary: Указывает, следует ли отображать кнопки поля фильтрации отчетов на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowValueFieldButtons()
-  summary: Указывает, следует ли отображать кнопки поля Показать значение в сводной диаграмме.
+  summary: Указывает, следует ли отображать кнопки поля отображения значения на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowAxisFieldButtons(showAxisFieldButtons)
-  summary: Указывает, следует ли отображать кнопки поля оси в сводной диаграмме. Свойство ShowAxisFieldButtons соответствует команде "Показать кнопки поля оси" в раскрывающемся списке "Кнопки полей" вкладки "Анализировать", доступной при выделении сводной диаграммы.
+  summary: Указывает, следует ли отображать кнопки поля оси на сводная диаграмма. Свойство соответствует команде "Показать кнопки поля оси" в выпадаемом списке "Кнопки поля" вкладки "Анализ", которая доступна при сводная диаграмма `showAxisFieldButtons` выбрана.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowLegendFieldButtons(showLegendFieldButtons)
-  summary: Указывает, следует ли отображать кнопки поля условных обозначений в сводной диаграмме.
+  summary: Указывает, следует ли отображать кнопки поля легенды на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  summary: Указывает, следует ли отображать кнопки поля фильтра отчета в сводной диаграмме.
+  summary: Указывает, следует ли отображать кнопки поля фильтрации отчетов на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -119,7 +119,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowValueFieldButtons(showValueFieldButtons)
-  summary: Указывает, следует ли отображать кнопки поля Показать значение в сводной диаграмме.
+  summary: Указывает, следует ли отображать кнопки поля отображения значения на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,9 +133,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5e94255c9725007c9ba6c5d53a78e68ff0187988
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0ca2455781d883ab28bf8116c67068e82d4ba043
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416126"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606887"

@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#addChartSeries:member(1)
   package: ExcelScript!
   fullName: addChartSeries(name, index)
-  summary: Добавляет новый ряд в коллекцию. Новый добавленный ряд не виден, пока не будут заданы значения/оси x и размеры пузырьков (в зависимости от типа диаграммы).
+  summary: Добавляет новый ряд в коллекцию. Новая добавленная серия не будет видна до тех пор, пока не будут установлены значения, x-axis значения или размеры пузырьков для нее (в зависимости от типа диаграммы).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,10 +34,10 @@ methods:
     content: 'addChartSeries(name?: string, index?: number): ChartSeries;'
     parameters:
     - id: name
-      description: Необязательный параметр. Имя ряда.
+      description: Необязательно. Имя серии.
       type: string
     - id: index
-      description: Необязательный параметр. Значение индекса добавляемого ряда. Используется нулевой индекс.
+      description: Необязательно. Значение индекса для добавляемой серии. Используется нулевой индекс.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartSeries:interface" />
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: getCategoryLabelLevel()
-  summary: Указывает константу перечисления Чарткатегорилабеллевел, ссылающуюся на уровень, с которого исправляются метки категорий.
+  summary: Указывает константу индексации уровня метки категорий диаграммы, ссылаясь на уровень меток исходных категорий.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: Указывает тип диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
+  summary: Указывает тип диаграммы. Подробные `ExcelScript.ChartType` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getDisplayBlanksAs:member(1)
   package: ExcelScript!
   fullName: getDisplayBlanksAs()
-  summary: Задает способ отображения пустых ячеек на диаграмме.
+  summary: Указывает, как пустые ячейки заданы на диаграмме.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Задает высоту объекта диаграммы (в пунктах).
+  summary: Указывает высоту в точках объекта диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Уникальный идентификатор диаграммы.
+  summary: Уникальный ID диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getImage:member(1)
   package: ExcelScript!
   fullName: getImage(width, height, fittingMode)
-  summary: Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером. Пропорции сохраняются в процессе изменения размера.
+  summary: Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером. Соотношение аспектов сохраняется как часть размеров.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,13 +176,13 @@ methods:
               ): string;
     parameters:
     - id: width
-      description: (Необязательно) Нужная ширина создаваемого изображения.
+      description: Необязательный. Нужная ширина создаваемого изображения.
       type: number
     - id: height
-      description: (Необязательно) Нужная высота создаваемого изображения.
+      description: Необязательный. Нужная высота создаваемого изображения.
       type: number
     - id: fittingMode
-      description: Необязательно Метод, используемый для масштабирования диаграммы в соответствии с указанными размерами (если заданы и высота, и ширина).
+      description: Необязательно. Метод, используемый для масштабирования диаграммы до указанного измерения (если заданы как высота, так и ширина).
       type: <xref uid="ExcelScript!ExcelScript.ImageFittingMode:enum" />
     return:
       type: string
@@ -217,7 +217,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Задает имя объекта диаграммы.
+  summary: Указывает имя объекта диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +243,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getPlotArea:member(1)
   package: ExcelScript!
   fullName: getPlotArea()
-  summary: Представляет plotArea для диаграммы.
+  summary: Представляет область сюжета для диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: getSeriesNameLevel()
-  summary: Указывает константу перечисления Чартсериеснамелевел, ссылающуюся на уровень, с которого исправляются имена рядов.
+  summary: Указывает константу индексации имен на уровне серии диаграмм, ссылаясь на уровень имен исходных серий.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getShowAllFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowAllFieldButtons()
-  summary: Указывает, следует ли отображать все кнопки полей в сводной диаграмме.
+  summary: Указывает, следует ли отображать все кнопки поля на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: getShowDataLabelsOverMaximum()
-  summary: Указывает, следует ли отображать метки данных, если значение больше максимального значения на оси значений. Если ось значений меньше, чем размер точек данных, то можно использовать это свойство, чтобы указать, показывать ли метки данных. Это свойство применяется только к плоским диаграммам.
+  summary: Указывает, следует ли показывать метки данных, если значение превышает максимальное значение оси значения. Если ось значения становится меньше размера точек данных, вы можете использовать это свойство, чтобы определить, показывать ли метки данных. Это свойство применяется только к 2-D диаграммам.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -334,7 +334,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Задает стиль диаграммы для диаграммы.
+  summary: Указывает стиль диаграммы для диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: Задает название указанной диаграммы, включая текст, видимость, положение и форматирование заголовка.
+  summary: Представляет заголовок указанной диаграммы, включая его текст, видимость, положение и форматирование.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Задает расстояние от верхнего края объекта до верха строки 1 (на рабочем листе) или в верхней части области диаграммы (на диаграмме).
+  summary: Указывает расстояние в точках от верхнего края объекта до верхней строки 1 (на таблице) или верхней части области диаграммы (на диаграмме).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Задает ширину объекта диаграммы (в пунктах).
+  summary: Указывает ширину объекта диаграммы в точках.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: setCategoryLabelLevel(categoryLabelLevel)
-  summary: Указывает константу перечисления Чарткатегорилабеллевел, ссылающуюся на уровень, с которого исправляются метки категорий.
+  summary: Указывает константу индексации уровня метки категорий диаграммы, ссылаясь на уровень меток исходных категорий.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: Указывает тип диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
+  summary: Указывает тип диаграммы. Подробные `ExcelScript.ChartType` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -441,10 +441,10 @@ methods:
     content: 'setData(sourceData: Range, seriesBy?: ChartSeriesBy): void;'
     parameters:
     - id: sourceData
-      description: Объект Range, соответствующий источнику данных.
+      description: Объект диапазона, соответствующий исходным данным.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: 'Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), Rows и Columns. Для получения дополнительных сведений см. Ексцелскрипт. Чартсериесби.'
+      description: 'Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Может быть одним из следующих: Auto (по умолчанию), Строки и Столбцы. Подробные `ExcelScript.ChartSeriesBy` сведения см. в материале.'
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: void
@@ -453,7 +453,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)
   package: ExcelScript!
   fullName: setDisplayBlanksAs(displayBlanksAs)
-  summary: Задает способ отображения пустых ячеек на диаграмме.
+  summary: Указывает, как пустые ячейки заданы на диаграмме.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -470,7 +470,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Задает высоту объекта диаграммы (в пунктах).
+  summary: Указывает высоту в точках объекта диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -504,7 +504,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Задает имя объекта диаграммы.
+  summary: Указывает имя объекта диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
       description: Начальная ячейка. Место, куда будет перемещена диаграмма. Начальная ячейка — это верхняя левая или верхняя правая ячейка (это зависит от того, использует ли пользователь параметры отображения справа налево).
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: endCell
-      description: Конечная ячейка (необязательно указывать). Если указан данный параметр, значения ширины и высоты диаграммы будут установлены так, чтобы полностью покрыть эту ячейку или диапазон.
+      description: Необязательный параметр. Конечная ячейка. Если указан этот параметр, значения ширины и высоты диаграммы будут заданы так, чтобы полностью покрыть данную ячейку или диапазон.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: setSeriesNameLevel(seriesNameLevel)
-  summary: Указывает константу перечисления Чартсериеснамелевел, ссылающуюся на уровень, с которого исправляются имена рядов.
+  summary: Указывает константу индексации имен на уровне серии диаграмм, ссылаясь на уровень имен исходных серий.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -592,7 +592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setShowAllFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowAllFieldButtons(showAllFieldButtons)
-  summary: Указывает, следует ли отображать все кнопки полей в сводной диаграмме.
+  summary: Указывает, следует ли отображать все кнопки поля на сводная диаграмма.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -609,7 +609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
-  summary: Указывает, следует ли отображать метки данных, если значение больше максимального значения на оси значений. Если ось значений меньше, чем размер точек данных, то можно использовать это свойство, чтобы указать, показывать ли метки данных. Это свойство применяется только к плоским диаграммам.
+  summary: Указывает, следует ли показывать метки данных, если значение превышает максимальное значение оси значения. Если ось значения становится меньше размера точек данных, вы можете использовать это свойство, чтобы определить, показывать ли метки данных. Это свойство применяется только к 2-D диаграммам.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -626,7 +626,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Задает стиль диаграммы для диаграммы.
+  summary: Указывает стиль диаграммы для диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -643,7 +643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Задает расстояние от верхнего края объекта до верха строки 1 (на рабочем листе) или в верхней части области диаграммы (на диаграмме).
+  summary: Указывает расстояние в точках от верхнего края объекта до верхней строки 1 (на таблице) или верхней части области диаграммы (на диаграмме).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -660,7 +660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Задает ширину объекта диаграммы (в пунктах).
+  summary: Указывает ширину объекта диаграммы в точках.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -674,9 +674,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 16db85eee5fc6327494e016ddfc9584f3d263d5c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 622f7bc0491202803f57b7644468ee49e2787d89
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420162"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606957"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getAutoText:member(1)
   package: ExcelScript!
   fullName: getAutoText()
-  summary: Указывает, должны ли метки данных автоматически создавать соответствующий текст на основе контекста.
+  summary: Указывает, автоматически ли метки данных создают соответствующий текст на основе контекста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Задает формат подписей данных диаграммы, включающий форматирование текста и заливки.
+  summary: Указывает формат меток данных диаграммы, включающий заполнение и форматирование шрифтов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Задает горизонтальное выравнивание для метки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекссоризонталалигнмент. Это свойство является допустимым, только если значение параметра TextOrientation метки данных равно 0.
+  summary: Указывает горизонтальное выравнивание для метки данных диаграммы. Подробные `ExcelScript.ChartTextHorizontalAlignment` сведения см. в материале. Это свойство допустимо только в том случае, `TextOrientation` если метка данных имеет 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Указывает, связан ли числовой формат с ячейками. Если указано значение True, числовой формат изменяется в подписях при его изменении в ячейках.
+  summary: Указывает, связан ли формат номеров с ячейками. Если `true`<!-- -->формат номеров будет изменяться в метки при изменении в ячейках.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Задает код формата для меток данных.
+  summary: Указывает код формата для меток данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Значение DataLabelPosition, которое представляет положение метки данных. Для получения дополнительных сведений см. Ексцелскрипт. Чартдаталабелпоситион.
+  summary: Значение, которое представляет положение метки данных. Подробные `ExcelScript.ChartDataLabelPosition` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowBubbleSize:member(1)
   package: ExcelScript!
   fullName: getShowBubbleSize()
-  summary: Указывает, отображается ли размер пузырька метки данных.
+  summary: Указывает, виден ли размер пузыря метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowCategoryName:member(1)
   package: ExcelScript!
   fullName: getShowCategoryName()
-  summary: Указывает, отображается ли имя категории меток данных.
+  summary: Указывает, отображается ли имя категории метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowLegendKey:member(1)
   package: ExcelScript!
   fullName: getShowLegendKey()
-  summary: Указывает, является ли ключ условных обозначений метки данных видимым.
+  summary: Указывает, виден ли ключ легенды метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowPercentage:member(1)
   package: ExcelScript!
   fullName: getShowPercentage()
-  summary: Указывает, отображается ли процент меток данных.
+  summary: Указывает, виден ли процент метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowSeriesName:member(1)
   package: ExcelScript!
   fullName: getShowSeriesName()
-  summary: Указывает, отображается ли имя ряда подписей данных.
+  summary: Указывает, отображается ли имя серии меток данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Представляет угол, к которому текст ориентирован для меток данных. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  summary: Представляет угол, на который ориентирован текст для меток данных. Значение должно быть либо в целом от -90 до 90, либо в целом 180 для вертикально ориентированного текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Представляет вертикальное выравнивание для метки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент. Это свойство является допустимым только в том случае, если TextOrientation имеет значение-90, 90 или 180.
+  summary: Представляет вертикальное выравнивание для метки данных диаграммы. Подробные `ExcelScript.ChartTextVerticalAlignment` сведения см. в материале. Это свойство допустимо только в том случае, если метка данных `TextOrientation` — —90, 90 или 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setAutoText:member(1)
   package: ExcelScript!
   fullName: setAutoText(autoText)
-  summary: Указывает, должны ли метки данных автоматически создавать соответствующий текст на основе контекста.
+  summary: Указывает, автоматически ли метки данных создают соответствующий текст на основе контекста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Задает горизонтальное выравнивание для метки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекссоризонталалигнмент. Это свойство является допустимым, только если значение параметра TextOrientation метки данных равно 0.
+  summary: Указывает горизонтальное выравнивание для метки данных диаграммы. Подробные `ExcelScript.ChartTextHorizontalAlignment` сведения см. в материале. Это свойство допустимо только в том случае, `TextOrientation` если метка данных имеет 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Указывает, связан ли числовой формат с ячейками. Если указано значение True, числовой формат изменяется в подписях при его изменении в ячейках.
+  summary: Указывает, связан ли формат номеров с ячейками. Если `true`<!-- -->формат номеров будет изменяться в метки при изменении в ячейках.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Задает код формата для меток данных.
+  summary: Указывает код формата для меток данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Значение DataLabelPosition, которое представляет положение метки данных. Для получения дополнительных сведений см. Ексцелскрипт. Чартдаталабелпоситион.
+  summary: Значение, которое представляет положение метки данных. Подробные `ExcelScript.ChartDataLabelPosition` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -313,7 +313,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowBubbleSize:member(1)
   package: ExcelScript!
   fullName: setShowBubbleSize(showBubbleSize)
-  summary: Указывает, отображается ли размер пузырька метки данных.
+  summary: Указывает, виден ли размер пузыря метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -330,7 +330,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowCategoryName:member(1)
   package: ExcelScript!
   fullName: setShowCategoryName(showCategoryName)
-  summary: Указывает, отображается ли имя категории меток данных.
+  summary: Указывает, отображается ли имя категории метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowLegendKey:member(1)
   package: ExcelScript!
   fullName: setShowLegendKey(showLegendKey)
-  summary: Указывает, является ли ключ условных обозначений метки данных видимым.
+  summary: Указывает, виден ли ключ легенды метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,7 +364,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowPercentage:member(1)
   package: ExcelScript!
   fullName: setShowPercentage(showPercentage)
-  summary: Указывает, отображается ли процент меток данных.
+  summary: Указывает, виден ли процент метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -381,7 +381,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowSeriesName:member(1)
   package: ExcelScript!
   fullName: setShowSeriesName(showSeriesName)
-  summary: Указывает, отображается ли имя ряда подписей данных.
+  summary: Указывает, отображается ли имя серии меток данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -415,7 +415,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Представляет угол, к которому текст ориентирован для меток данных. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  summary: Представляет угол, на который ориентирован текст для меток данных. Значение должно быть либо в целом от -90 до 90, либо в целом 180 для вертикально ориентированного текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -432,7 +432,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Представляет вертикальное выравнивание для метки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент. Это свойство является допустимым только в том случае, если TextOrientation имеет значение-90, 90 или 180.
+  summary: Представляет вертикальное выравнивание для метки данных диаграммы. Подробные `ExcelScript.ChartTextVerticalAlignment` сведения см. в материале. Это свойство допустимо только в том случае, если метка данных `TextOrientation` — —90, 90 или 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -449,9 +449,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 87f3332eb1117170cf55d85aa4d78ec99c04d964
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 37ac26179da2d14e0172d354ecaac9be23fda9fd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416941"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606908"

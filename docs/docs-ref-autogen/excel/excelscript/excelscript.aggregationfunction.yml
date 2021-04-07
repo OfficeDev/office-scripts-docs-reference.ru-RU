@@ -3,7 +3,7 @@ name: ExcelScript.AggregationFunction
 uid: ExcelScript!ExcelScript.AggregationFunction:enum
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
-summary: Статистическая функция для поля сводной данных.
+summary: Функция агрегации для DataPivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,59 +11,59 @@ fields:
 - name: automatic
   uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
   package: ExcelScript!
-  summary: Excel автоматически выберет агрегирование на основе элементов данных.
+  summary: Excel автоматически выбирает агрегацию на основе элементов данных.
 - name: average
   uid: ExcelScript!ExcelScript.AggregationFunction.average:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием среднего значения данных, эквивалентного функции СРЗНАЧ.
+  summary: Совокупное использование среднего значения данных, эквивалентного функции AVERAGE.
 - name: count
   uid: ExcelScript!ExcelScript.AggregationFunction.count:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием числа элементов в данных, эквивалентного функции COUNT.
+  summary: Агрегировать с помощью подсчета элементов в данных, эквивалентных функции COUNTA.
 - name: countNumbers
   uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием числа чисел в данных, эквивалентного функции COUNT.
+  summary: Совокупное использование количества чисел в данных, эквивалентных функции COUNT.
 - name: max
   uid: ExcelScript!ExcelScript.AggregationFunction.max:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием максимального значения данных, эквивалентного функции MAX.
+  summary: Совокупное использование максимального значения данных, эквивалентного функции MAX.
 - name: min
   uid: ExcelScript!ExcelScript.AggregationFunction.min:member
   package: ExcelScript!
-  summary: Статистическая функция, использующая минимальное значение данных, эквивалентное функции MIN.
+  summary: Совокупное использование минимального значения данных, эквивалентного функции MIN.
 - name: product
   uid: ExcelScript!ExcelScript.AggregationFunction.product:member
   package: ExcelScript!
-  summary: Статистическая функция, использующая продукт данных, эквивалент функции PRODUCT.
+  summary: Агрегировать с помощью продукта данных, эквивалентного функции PRODUCT.
 - name: standardDeviation
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием стандартного отклонения данных, эквивалентного функции СТАНДОТКЛОН.
+  summary: Совокупное использование стандартного отклонения данных, эквивалентного функции STDEV.
 - name: standardDeviationP
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием стандартного отклонения данных, эквивалентного функции СТАНДОТКЛОНП.
+  summary: Сводка с использованием стандартного отклонения данных, эквивалентного функции STDEVP.
 - name: sum
   uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием суммы данных, эквивалентной функции SUM.
+  summary: Совокупное использование суммы данных, эквивалентной функции SUM.
 - name: unknown
   uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
   package: ExcelScript!
-  summary: Статистическая функция неизвестна или не поддерживается.
+  summary: Функция агрегации неизвестна или неподтверчена.
 - name: variance
   uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
   package: ExcelScript!
-  summary: Статистическое вычисление с использованием дисперсии данных, эквивалентной функции ДИСП.
+  summary: Совокупное использование дисперсии данных, эквивалентной функции VAR.
 - name: varianceP
   uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
   package: ExcelScript!
-  summary: Статистическая функция, использующая дисперсию данных, эквивалентную функции ДИСПР.
+  summary: Совокупное использование дисперсии данных, эквивалентной функции VARP.
 metadata:
-  ms.openlocfilehash: fd80d4534a8db2e7a409a6b8e45e529b9bfcaddc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e7c0e255ebfdaf6446c2c8cca20171cff0fdcbcf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417374"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606698"

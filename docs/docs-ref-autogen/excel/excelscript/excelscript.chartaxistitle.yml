@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Задает формат заголовка оси диаграммы.
+  summary: Указывает форматирование названия оси диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Указывает название оси.
+  summary: Указывает заголовок оси.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Задает угол, по которому текст будет ориентирован на название оси диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  summary: Указывает угол, на который ориентирован текст для заголовка оси диаграммы. Значение должно быть либо в целом от -90 до 90, либо в целом 180 для вертикально ориентированного текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Указывает, является ли название оси Visible.
+  summary: Указывает, является ли заголовок оси visibile.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
     content: 'setFormula(formula: string): void;'
     parameters:
     - id: formula
-      description: Строка, представляющая формулу, которую необходимо задать
+      description: Строка, представляютив формулу для набора.
       type: string
     return:
       type: void
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)
   package: ExcelScript!
   fullName: setText(text)
-  summary: Указывает название оси.
+  summary: Указывает заголовок оси.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Задает угол, по которому текст будет ориентирован на название оси диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  summary: Указывает угол, на который ориентирован текст для заголовка оси диаграммы. Значение должно быть либо в целом от -90 до 90, либо в целом 180 для вертикально ориентированного текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Указывает, является ли название оси Visible.
+  summary: Указывает, является ли заголовок оси visibile.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cc90d8c96c4846a97eb80b1c44317def1d5a9e51
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3ac4a54e34535c1f4198a7ea2f714ef83f0e45b1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417011"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606936"

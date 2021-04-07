@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalDataBarPositiveFormat
 uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarPositiveFormat
-summary: Представляет формат гистограмма условного форматирования для положительной стороны панели данных.
+summary: Представляет условный формат для положительной стороны панели данных.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)
   package: ExcelScript!
   fullName: getBorderColor()
-  summary: HTML-код цвета, представляющий цвет линии границы для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин"). "" (пустая строка), если граница отсутствует или не задана.
+  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)
   package: ExcelScript!
   fullName: getFillColor()
-  summary: HTML-код цвета, представляющий цвет заливки для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  summary: ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)
   package: ExcelScript!
   fullName: getGradientFill()
-  summary: Указывает, имеет ли гистограмма градиент.
+  summary: Указывает, есть ли в панели данных градиент.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)
   package: ExcelScript!
   fullName: setBorderColor(borderColor)
-  summary: HTML-код цвета, представляющий цвет линии границы для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин"). "" (пустая строка), если граница отсутствует или не задана.
+  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)
   package: ExcelScript!
   fullName: setFillColor(fillColor)
-  summary: HTML-код цвета, представляющий цвет заливки для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  summary: ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)
   package: ExcelScript!
   fullName: setGradientFill(gradientFill)
-  summary: Указывает, имеет ли гистограмма градиент.
+  summary: Указывает, есть ли в панели данных градиент.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,9 +100,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e2477aab79cb1074e976aa71eb0748a362c1cda3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 14b0d49be1628d431e11f9eeb3b2534ab09bbeb2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420687"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607104"

@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть примитивными именами Objects (как показано в приведенном ниже типе), объектом Range или ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
+summary: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть примитивными объектами с именем (как по видно в приведенном ниже типу), объектом диапазона или ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
   package: ExcelScript!
   fullName: getComment()
-  summary: Задает комментарий, связанный с этим именем.
+  summary: Указывает комментарий, связанный с этим именем.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Формула именованного элемента. Формула всегда начинается со знака "=".
+  summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Возвращает объект Range, сопоставленный с именем. Если тип именованного элемента не является диапазоном, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Возвращает объект Range, сопоставленный с именем. Если тип имени элемента не является диапазоном, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 'Указывает, ограничивается ли имя книгой или определенным листом. Возможные значения: лист, книга.'
+  summary: 'Указывает, задано ли имя в книге или в определенной таблице. Возможные значения: таблица, книга.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Указывает тип значения, возвращаемого формулой имени. Для получения дополнительных сведений см. Ексцелскрипт. Намедитемтипе.
+  summary: Указывает тип значения, возвращаемого по формуле имени. Подробные `ExcelScript.NamedItemType` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Указывает, является ли объект видимым.
+  summary: Указывает, виден ли объект.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Возвращает лист, на который распространяется именованный элемент. Если вместо этого элемент находится в рабочей области, то эта функция возвращает объект, свойству которого присвоено `isNullObject` значение `true`<!-- -->.
+  summary: Возвращает таблицу, в которую область действия именуемой номенклатуры. Если элемент имеет область действия в книге, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
   package: ExcelScript!
   fullName: setComment(comment)
-  summary: Задает комментарий, связанный с этим именем.
+  summary: Указывает комментарий, связанный с этим именем.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Формула именованного элемента. Формула всегда начинается со знака "=".
+  summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Указывает, является ли объект видимым.
+  summary: Указывает, виден ли объект.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 64b38b2371d79f40394f2bfb6db981b9f56f740b
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 03b2b429178a6d8ad6d13a13c28271340d8c23ef
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554759"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606422"

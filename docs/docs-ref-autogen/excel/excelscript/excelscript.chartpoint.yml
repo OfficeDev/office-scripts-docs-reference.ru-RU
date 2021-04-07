@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)
   package: ExcelScript!
   fullName: getHasDataLabel()
-  summary: Указывает, имеет ли точка данных метку данных. Неприменимо для поверхностных диаграмм.
+  summary: Представляет, имеет ли точка данных метку данных. Неприменимо для поверхностных диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerBackgroundColor()
-  summary: HTML-код цвета цвета фона маркера точки данных (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML фонового цвета маркера точки данных (например, \# FF0000 представляет красный цвет).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerForegroundColor()
-  summary: HTML-код цвета, представляющий цвет переднего плана маркера точки данных (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML для маркера переднего плана точки данных (например, \# FF0000 представляет красный).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: Представляет стиль маркера точки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чартмаркерстиле.
+  summary: Представляет стиль маркера точки данных диаграммы. Подробные `ExcelScript.ChartMarkerStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)
   package: ExcelScript!
   fullName: setHasDataLabel(hasDataLabel)
-  summary: Указывает, имеет ли точка данных метку данных. Неприменимо для поверхностных диаграмм.
+  summary: Представляет, имеет ли точка данных метку данных. Неприменимо для поверхностных диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerBackgroundColor(markerBackgroundColor)
-  summary: HTML-код цвета цвета фона маркера точки данных (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML фонового цвета маркера точки данных (например, \# FF0000 представляет красный цвет).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerForegroundColor(markerForegroundColor)
-  summary: HTML-код цвета, представляющий цвет переднего плана маркера точки данных (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML для маркера переднего плана точки данных (например, \# FF0000 представляет красный).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: Представляет стиль маркера точки данных диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чартмаркерстиле.
+  summary: Представляет стиль маркера точки данных диаграммы. Подробные `ExcelScript.ChartMarkerStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,9 +199,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d11ca64902c23c50ed0f8ae592d26c935e90319d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: aad9a80594512307275935c6921b43f74220bd16
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419623"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606866"

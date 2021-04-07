@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: Задает одно или несколько текущих PivotFilters поля и применяет их к полю. Если предоставленные фильтры являются недопустимыми или не могут быть применены, возникает исключение.
+  summary: Задает один или несколько текущих pivotFilters поля и применяет их к полю. Если предоставленные фильтры являются недействительными или не могут быть применены, выброшено исключение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: Настроенный определенный PivotFilter или интерфейс PivotFilters, содержащий несколько настроенных фильтров.
+      description: Настроенный определенный pivotFilter или интерфейс PivotFilters, содержащий несколько настроенных фильтров.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: Удаляет все условия из всех фильтров полей. При этом будет удалена любая активная фильтрация для поля.
+  summary: Очищает все критерии от всех фильтров поля. Это удаляет активную фильтрацию на поле.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: Удаляет все существующие критерии из фильтра поля данного типа (если он в настоящее время применяется).
+  summary: Очищает все существующие критерии от фильтра поля данного типа (если он применяется в настоящее время).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -51,7 +51,7 @@ methods:
     content: 'clearFilter(filterType: PivotFilterType): void;'
     parameters:
     - id: filterType
-      description: Тип фильтра для поля, для которого нужно очистить все условия.
+      description: Тип фильтра, на поле которого необходимо очистить все критерии.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: void
@@ -60,7 +60,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
   package: ExcelScript!
   fullName: getFilters()
-  summary: Получает все фильтры, применяемые в данный момент для поля.
+  summary: Получает все фильтры, применяемые в настоящее время на поле.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Идентификатор сводного поля.
+  summary: ID of the PivotField.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: Получает PivotItem по имени. Если PivotItem не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает PivotItem по имени. Если pivotItem не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
   package: ExcelScript!
   fullName: isFiltered(filterType)
-  summary: Проверяет, применены ли фильтры к полю.
+  summary: Проверяет, есть ли на поле примененные фильтры.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: Проверяемый тип фильтра. Если тип не указан, этот метод проверит, применен ли какой-либо фильтр.
+      description: Тип фильтра для проверки. Если тип не предоставлен, этот метод проверит, применяется ли какой-либо фильтр.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -231,7 +231,7 @@ methods:
     content: 'sortByLabels(sortBy: SortBy): void;'
     parameters:
     - id: sortBy
-      description: Указывает, выполняется ли сортировка в возрастающем или убывающем порядке.
+      description: Указывает, делается ли сортировка в порядке по возрастанию или убыванию.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     return:
       type: void
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: Сортирует сводную таблицу по указанным значениям в определенной области. Область определяет, какие конкретные значения будут использоваться для сортировки при наличии нескольких значений из одного и того же DataPivotHierarchy.
+  summary: Сортирует сводную таблицу по указанным значениям в определенной области. Область определяет, какие конкретные значения будут использоваться для сортировки при нескольких значениях из одной и той же DataPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,21 +253,21 @@ methods:
               ): void;
     parameters:
     - id: sortBy
-      description: Указывает, выполняется ли сортировка в возрастающем или убывающем порядке.
+      description: Указывает, делается ли сортировка в порядке по возрастанию или убыванию.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
       description: Указывает иерархию значений на оси данных, которая будет использоваться для сортировки.
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: Элементы, которые следует использовать для области сортировки. Это будут элементы, составляющие строку или столбец, по которым необходимо выполнить сортировку. Если вместо объекта PivotItem используется строка, строка представляет идентификатор PivotItem. Если на оси, для которой необходимо выполнить сортировку, нет элементов, отличных от иерархии данных, это значение может быть пустым.
+      description: Элементы, которые необходимо использовать для области сортировки. Это будут элементы, которые составляют строку или столбец, которые необходимо сортировать. Если строка используется вместо PivotItem, строка представляет ID PivotItem. Если на оси нет элементов, кроме иерархии данных, которые необходимо сортировать, это может быть пустым.
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f9bc753c30f6ec8c165cdf9966aab8c5be2040cc
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 4228e7c2e7435e23e1566b570c05a7c18505e14e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554617"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606401"

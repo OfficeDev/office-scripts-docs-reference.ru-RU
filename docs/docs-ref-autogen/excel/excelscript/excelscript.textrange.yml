@@ -3,7 +3,7 @@ name: ExcelScript.TextRange
 uid: ExcelScript!ExcelScript.TextRange:interface
 package: ExcelScript!
 fullName: ExcelScript.TextRange
-summary: Содержит текст, который присоединяется к фигуре, в дополнение к свойствам и методам для управления текстом.
+summary: Содержит текст, присоединенный к фигуре, в дополнение к свойствам и методам для управления текстом.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Возвращает объект ShapeFont, представляющий атрибуты шрифта для диапазона текста.
+  summary: Возвращает `ShapeFont` объект, который представляет атрибуты шрифта для диапазона текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,10 +34,10 @@ methods:
     content: 'getSubstring(start: number, length?: number): TextRange;'
     parameters:
     - id: start
-      description: Отсчитываемый от нуля индекс первого символа, который требуется получить из диапазона текста.
+      description: Нулевой индекс первого символа, получаемого из диапазона текста.
       type: number
     - id: length
-      description: Необязательный параметр. Число символов, возвращаемых в новом диапазоне текста. Если параметр length опущен, возвращаются все символы от начала до конца последнего абзаца диапазона текста.
+      description: Необязательно. Количество символов, которые будут возвращены в новом текстовом диапазоне. Если длина опущена, все символы от начала до конца последнего абзаца диапазона текста будут возвращены.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
@@ -73,9 +73,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6a02ebe67d08adff8c825586a96ada8c4177a1d4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b83f4e4ba30aafab3008fd7370d17230213f13f3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420239"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605285"

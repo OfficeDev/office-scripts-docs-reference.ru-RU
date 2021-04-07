@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
   package: ExcelScript!
   fullName: inCellDropDown
-  summary: Отображает или не отображает список в раскрывающемся меню ячейки, по умолчанию используется значение true.
+  summary: Указывает, следует ли отображать список в выпадаемой ячейке. По умолчанию `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#source:member
   package: ExcelScript!
   fullName: source
-  summary: Источник списка для проверки данных при задании значения его можно передать в качестве объекта диапазона Excel или строку, содержащую разделенный запятыми номер, Boolean или Date.
+  summary: Источник списка для проверки данных При настройке значения его можно передать в качестве объекта или строки, которая содержит разделенный запятой `Range` номер, boolean или дату.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
 metadata:
-  ms.openlocfilehash: cf8940b22ffc0ff1b79c1a55297fc2f97e4b43ea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 9b241254b4ff28826e267a10e68a801a7535d4bf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412183"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607223"

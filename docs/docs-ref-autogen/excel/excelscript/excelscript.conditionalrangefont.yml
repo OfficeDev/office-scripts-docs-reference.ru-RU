@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFont
 uid: ExcelScript!ExcelScript.ConditionalRangeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFont
-summary: Этот объект представляет атрибуты шрифта (начертание, цвет и т. д.) для объекта.
+summary: Этот объект представляет атрибуты шрифта (стиль шрифта, цвет и т. д.) для объекта.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Указывает, является ли шрифт полужирным.
+  summary: Указывает, является ли шрифт смелым.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Код цвета HTML цвета текста (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML в текстовом цвете (например, \# FF0000 представляет красный).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Указывает, является ли шрифт курсивом.
+  summary: Указывает, является ли шрифт italic.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Указывает состояние зачеркивания шрифта.
+  summary: Указывает состояние забастовки шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Тип подчеркивания, примененный к шрифту. Для получения дополнительных сведений см. Ексцелскрипт. Кондитионалранжефонтундерлинестиле.
+  summary: Тип подчеркнутого, примененного к шрифту. Подробные `ExcelScript.ConditionalRangeFontUnderlineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Указывает, является ли шрифт полужирным.
+  summary: Указывает, является ли шрифт смелым.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Код цвета HTML цвета текста (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML в текстовом цвете (например, \# FF0000 представляет красный).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Указывает, является ли шрифт курсивом.
+  summary: Указывает, является ли шрифт italic.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Указывает состояние зачеркивания шрифта.
+  summary: Указывает состояние забастовки шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Тип подчеркивания, примененный к шрифту. Для получения дополнительных сведений см. Ексцелскрипт. Кондитионалранжефонтундерлинестиле.
+  summary: Тип подчеркнутого, примененного к шрифту. Подробные `ExcelScript.ConditionalRangeFontUnderlineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4b59e433ac3535d4aa352158485d17289731760a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0baa0c9251cd94135e208c7592d45e78dace77ca
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419371"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606712"

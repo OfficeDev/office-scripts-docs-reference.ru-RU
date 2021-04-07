@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFill#clear:member(1)
   package: ExcelScript!
   fullName: clear()
-  summary: Очищает цвет заливки элемента диаграммы.
+  summary: Очищает цвет заполнения элемента диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,15 +34,15 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: HTML-код цвета, представляющий цвет фона в виде \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+      description: ЦВЕТОВой код HTML, представляющий цвет фона, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
       type: string
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d33b09062079157785b412603d9f36f7736e6d92
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e90710f2f898cebee541ca3eb4eb9923eb8dfe14
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416892"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606588"

@@ -3,7 +3,7 @@ name: ExcelScript.PivotLabelFilter
 uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
-summary: Настраиваемый шаблон для фильтра меток, применяемого к PivotField. Определение критериев, которые необходимо `condition` задать для работы фильтра.
+summary: Настраиваемый шаблон для фильтра меток для применения к PivotField. Определяет, какие критерии необходимо установить для `condition` работы фильтра.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Задает условие фильтра, которое определяет необходимые критерии фильтрации.
+  summary: Указывает условие фильтра, которое определяет необходимые критерии фильтрации.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Если задано значение true, фильтр *исключает* элементы, соответствующие условиям. По умолчанию используется значение false (Filter для включения элементов, соответствующих условиям).
+  summary: Если `true`<!-- -->фильтр исключает *элементы,* которые соответствуют критериям. По умолчанию `false` (фильтр для включения элементов, которые соответствуют критериям).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: 'Нижняя граница диапазона между условиями фильтра. Note: числовая строка считается числом при сравнении с другими числовыми строками.'
+  summary: Нижний предел диапазона для состояния `between` фильтра. Примечание. Числовая строка рассматривается как число при сравнении с другими числовые строки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
   package: ExcelScript!
   fullName: substring
-  summary: Подстрока, используемая для `BeginsWith`<!-- -->, `EndsWith`<!-- -->и `Contains` условия фильтра.
+  summary: Подстройка, используемая для `beginsWith`<!-- -->, `endsWith`<!-- -->и `contains` условия фильтрации.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: 'Верхняя граница диапазона между условиями фильтра. Note: числовая строка считается числом при сравнении с другими числовыми строками.'
+  summary: Верхний предел диапазона для состояния `between` фильтра. Примечание. Числовая строка рассматривается как число при сравнении с другими числовые строки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -70,9 +70,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: d030957f0b9d36c810d4e9b9016f5ec9ba5f704a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6080eb33854c086d20c526e506de43a898f0463
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412057"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606387"

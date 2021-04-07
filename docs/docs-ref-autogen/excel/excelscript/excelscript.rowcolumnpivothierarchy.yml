@@ -3,7 +3,7 @@ name: ExcelScript.RowColumnPivotHierarchy
 uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.RowColumnPivotHierarchy
-summary: Представляет RowColumnPivotHierarchy Excel.
+summary: Представляет Excel RowColumnPivotHierarchy.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Идентификатор RowColumnPivotHierarchy.
+  summary: ID of the RowColumnPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: Получает PivotField по имени. Если PivotField не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает PivotField по имени. Если PivotField не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -126,9 +126,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5a134274f2e2e795189bda817df67130072ea113
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 9a12efdc954ddec358bb105966562175906974f0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554533"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606090"

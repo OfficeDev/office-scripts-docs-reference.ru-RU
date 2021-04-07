@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: Критерии цветовой шкалы. При использовании цветовой шкалы с двумя координатами средняя точка является необязательной.
+  summary: Критерии цветовой шкалы. Midpoint необязательный при использовании двухконечной цветовой шкалы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)
   package: ExcelScript!
   fullName: getThreeColorScale()
-  summary: Если задано значение true, цветовая шкала будет иметь три точки (минимальная, средняя, максимальная), в противном случае будет существовать два (минимум, максимум).
+  summary: Если `true`<!-- -->, цветовая шкала будет иметь три точки (минимальная, midpoint, maximum), в противном случае она будет иметь два (минимум, максимум).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: Критерии цветовой шкалы. При использовании цветовой шкалы с двумя координатами средняя точка является необязательной.
+  summary: Критерии цветовой шкалы. Midpoint необязательный при использовании двухконечной цветовой шкалы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 205bac27656484bc9e52d59f40d9d0dc4b826a8b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d8ddc5ccca6eb6fec86803edb68e9f3c917a47b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416822"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606773"

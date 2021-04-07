@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#ascending:member
   package: ExcelScript!
   fullName: ascending
-  summary: Указывает, выполняется ли сортировка по возрастанию.
+  summary: Указывает, делается ли сортировка восходящим способом.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#color:member
   package: ExcelScript!
   fullName: color
-  summary: Указывает цвет, который является целевым для условия, если сортировка применяется к шрифту или цвету ячейки.
+  summary: Указывает цвет, который является целью условия, если сортировка находится на шрифте или цвете ячейки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#icon:member
   package: ExcelScript!
   fullName: icon
-  summary: Задает значок, который является целевым для условия, если сортировка находится на значке ячейки.
+  summary: Указывает значок, который является целью условия, если сортировка находится на значке ячейки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#key:member
   package: ExcelScript!
   fullName: key
-  summary: Задает столбец (или строку, в зависимости от ориентации сортировки), в котором находится условие. Представляется в виде расстояния от первого столбца (или строки).
+  summary: Указывает столбец (или строку, в зависимости от ориентации сортировки), на который установлено условие. Представляется в виде расстояния от первого столбца (или строки).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#subField:member
   package: ExcelScript!
   fullName: subField
-  summary: Задает подполе, которое является именем целевого свойства форматированного значения для сортировки.
+  summary: Указывает подполе, которое является целевым именем свойства для сортировки с богатым значением.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -94,9 +94,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: ebc6a6627cee8a97f7f156534f43fb99f731efa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e357fd813e45dcb01b36c18a57e930c7b07708da
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420386"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605999"

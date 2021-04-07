@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: HTML-код цвета, представляющий цвет линии границы для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500"), или в виде имени HTML-цвета (например, "оранжевый").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)
   package: ExcelScript!
   fullName: getSideIndex()
-  summary: Постоянное значение, указывающее определенную сторону границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордериндекс.
+  summary: Постоянное значение, указывающее определенную сторону границы. Подробные `ExcelScript.BorderIndex` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Одна из констант стиля линии, определяющая стиль линии границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордерлинестиле.
+  summary: Одна из констант стиля линии, определяющая стиль линии границы. Подробные `ExcelScript.BorderLineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Задает двойное значение, которое осветляет или затемняет цвет границы диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что граница не имеет универсального параметра Тинтандшаде.
+  summary: Указывает двойной, который осветляет или темнеет цвет для границы диапазона, значение между -1 (самый темный) и 1 (самый яркий), с 0 для исходного цвета. Значение `null` указывает, что граница не имеет единого `tintAndShade` параметра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: Определяет толщину границы вокруг диапазона. Для получения дополнительных сведений см. Ексцелскрипт. Бордервеигхт.
+  summary: Определяет толщину границы вокруг диапазона. Подробные `ExcelScript.BorderWeight` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: HTML-код цвета, представляющий цвет линии границы для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500"), или в виде имени HTML-цвета (например, "оранжевый").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Одна из констант стиля линии, определяющая стиль линии границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордерлинестиле.
+  summary: Одна из констант стиля линии, определяющая стиль линии границы. Подробные `ExcelScript.BorderLineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Задает двойное значение, которое осветляет или затемняет цвет границы диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что граница не имеет универсального параметра Тинтандшаде.
+  summary: Указывает двойной, который осветляет или темнеет цвет для границы диапазона, значение между -1 (самый темный) и 1 (самый яркий), с 0 для исходного цвета. Значение `null` указывает, что граница не имеет единого `tintAndShade` параметра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: Определяет толщину границы вокруг диапазона. Для получения дополнительных сведений см. Ексцелскрипт. Бордервеигхт.
+  summary: Определяет толщину границы вокруг диапазона. Подробные `ExcelScript.BorderWeight` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,9 +143,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5f8e2551cc91dde4ada9a6226243454c3213a1d6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c807283501f63bac9e10c3d2e16e3b91ea5be940
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411959"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607181"

@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFormat
 uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
-summary: Объект Format, который инкапсулирует шрифт, заливку, границы и другие свойства диапазона условного форматирования.
+summary: Объект формата, инкапсулирующий шрифт, заполнение, границы и другие свойства диапазона условных форматов.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: Коллекция объектов Border, которые применяются к общему диапазону условного форматирования.
+  summary: Коллекция пограничных объектов, применимых к общему диапазону условного формата.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ methods:
               ): ConditionalRangeBorder;
     parameters:
     - id: index
-      description: Значение индекса получаемого объекта границы. Для получения дополнительных сведений см. Ексцелскрипт. Кондитионалранжебордериндекс.
+      description: Значение индекса получаемого объекта границы. Подробные `ExcelScript.ConditionalRangeBorderIndex` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Возвращает объект Fill, определенный в общем диапазоне условного форматирования.
+  summary: Возвращает объект заполнения, определенный в общем диапазоне условного формата.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Возвращает объект Font, определенный в общем диапазоне условного форматирования.
+  summary: Возвращает объект шрифта, определенный в общем диапазоне условного формата.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Представляет код числового формата Excel для заданного диапазона. Очищается, если передается значение null.
+  summary: Представляет код формата номеров Excel для данного диапазона. Очищается, `null` если передается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Представляет код числового формата Excel для заданного диапазона. Очищается, если передается значение null.
+  summary: Представляет код формата номеров Excel для данного диапазона. Очищается, `null` если передается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,9 +151,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: be58369049f9a2cb9cd0fe4054310f143edad700
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e63b2c2a317b000595bc16de7e43ca89a08fa57a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419378"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606705"

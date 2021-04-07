@@ -3,7 +3,7 @@ name: ExcelScript.PivotDateFilter
 uid: ExcelScript!ExcelScript.PivotDateFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotDateFilter
-summary: Настраиваемый шаблон для фильтра дат, применяемого к PivotField. Определение критериев, которые необходимо `condition` задать для работы фильтра.
+summary: Настраиваемый шаблон для фильтра дат для применения к PivotField. Определяет, какие критерии необходимо установить для `condition` работы фильтра.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#comparator:member
   package: ExcelScript!
   fullName: comparator
-  summary: Оператор сравнения — это статическое значение, с которым сравниваются другие значения. Тип сравнения определяется условием.
+  summary: Компаратор — это статическое значение, с которым сравниваются другие значения. Тип сравнения определяется условием.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Задает условие фильтра, которое определяет необходимые критерии фильтрации.
+  summary: Указывает условие фильтра, которое определяет необходимые критерии фильтрации.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Если задано значение true, фильтр *исключает* элементы, соответствующие условиям. По умолчанию используется значение false (Filter для включения элементов, соответствующих условиям).
+  summary: Если `true`<!-- -->фильтр исключает *элементы,* которые соответствуют критериям. По умолчанию `false` (фильтр для включения элементов, которые соответствуют критериям).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: Нижняя граница диапазона `Between` условия фильтра.
+  summary: Нижний предел диапазона для состояния `between` фильтра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: Верхняя граница диапазона `Between` условия фильтра.
+  summary: Верхний предел диапазона для состояния `between` фильтра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
   package: ExcelScript!
   fullName: wholeDays
-  summary: Дополнительные `Equals`<!-- -->, `Before`<!-- -->, `After`<!-- -->и `Between` условия фильтра указывает, следует ли производить сравнение в течение целых дней.
+  summary: For `equals`<!-- -->, `before`<!-- -->, `after`<!-- -->и условия фильтрации указывают, следует ли сравнивать `between` целые дни.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,9 +82,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 50b2f14b12d33ae4786ce8fd4838d8c8ade4a3bd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 905fcb75ff1228a38409d7e7d9d860ac4725350d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415276"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607216"
