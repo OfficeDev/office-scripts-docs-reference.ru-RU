@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: Указывает, отображается ли отступ текста автоматически, если для выравнивания текста в ячейке задано равное равномерное распределение.
+  summary: Указывает, будет ли текст автоматически отступным, если выравнивание текста в ячейке задано на равное распределение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: Коллекция Border из четырех объектов Border, представляющих стиль четырех границ.
+  summary: Коллекция из четырех пограничных объектов, которые представляют стиль четырех границ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBuiltIn:member(1)
   package: ExcelScript!
   fullName: getBuiltIn()
-  summary: Указывает, является ли этот стиль встроенным.
+  summary: Указывает, является ли стиль встроенным.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Заливка стиля.
+  summary: Заполнение стиля.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Объект Font, представляющий шрифт стиля.
+  summary: Объект, `Font` который представляет шрифт стиля.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFormulaHidden:member(1)
   package: ExcelScript!
   fullName: getFormulaHidden()
-  summary: Указывает, будет ли скрыта формула при защите листа.
+  summary: Указывает, будет ли формула скрыта при защите таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Представляет горизонтальное выравнивание для стиля. Для получения дополнительных сведений см. Ексцелскрипт. HorizontalAlignment.
+  summary: Представляет горизонтальное выравнивание для стиля. Подробные `ExcelScript.HorizontalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: getIncludeAlignment()
-  summary: Указывает, содержит ли стиль свойства Indent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel и TextOrientation.
+  summary: Указывает, включает ли стиль свойства автоотступа, горизонтальное выравнивание, вертикальное выравнивание, текст упаковки, уровень отступа и свойства ориентации текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)
   package: ExcelScript!
   fullName: getIncludeBorder()
-  summary: Указывает, включают ли стиль свойства границы цвета, ColorIndex, LineStyle и Weight.
+  summary: Указывает, включает ли стиль свойства цвета, индекса цвета, стиля строки и весовых границ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)
   package: ExcelScript!
   fullName: getIncludeFont()
-  summary: Указывает, содержит ли стиль фон, полужирный, цвет, ColorIndex, FontStyle, курсив, имя, размер, зачеркивание, подстрочный знак, Надстрочный знак и подчеркивание шрифта.
+  summary: Указывает, включает ли стиль фон, жирный цвет, цвет, индекс цвета, стиль шрифта, italic, имя, размер, strikethrough, subscript, superscript и underline font properties.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)
   package: ExcelScript!
   fullName: getIncludeNumber()
-  summary: Указывает, содержит ли стиль свойство NumberFormat.
+  summary: Указывает, включает ли стиль свойство формата номеров.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)
   package: ExcelScript!
   fullName: getIncludePatterns()
-  summary: Указывает, включены ли в стиль внутренние свойства Color, ColorIndex, InvertIfNegative, pattern, PatternColor и PatternColorIndex.
+  summary: Указывает, включает ли стиль свойства цвета, индекса цвета, инверта, если отрицательный, шаблон, цвет шаблона и свойства индекса цвета шаблона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)
   package: ExcelScript!
   fullName: getIncludeProtection()
-  summary: Указывает, содержит ли стиль свойства FormulaHidden и locked Protection.
+  summary: Указывает, включает ли стиль скрытые и заблокированные свойства защиты формулы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getLocked:member(1)
   package: ExcelScript!
   fullName: getLocked()
-  summary: Указывает, блокируется ли объект, когда лист защищен.
+  summary: Указывает, заблокирован ли объект при защите таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: Значение индекса получаемого объекта границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордериндекс.
+      description: Значение индекса получаемого объекта границы. Подробные `ExcelScript.BorderIndex` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -277,7 +277,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: Задает двойное значение, которое осветляет или затемняет цвет границ диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.
+  summary: Указывает двойник, который осветляет или темнеет цвет для границ диапазона. Значение между -1 (самое темное) и 1 (самое яркое), с 0 для исходного цвета. Значение `null` указывает, что вся коллекция границ не имеет единого `tintAndShade` параметра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)
   package: ExcelScript!
   fullName: getShrinkToFit()
-  summary: Указывает, сжимается ли текст автоматически в соответствии с шириной доступной ширины столбца.
+  summary: Указывает, если текст автоматически сокращается, чтобы соответствовать ширине доступных столбцов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Задает вертикальное выравнивание для стиля. Для получения дополнительных сведений см. Ексцелскрипт. VerticalAlignment.
+  summary: Указывает вертикальное выравнивание для стиля. Подробные `ExcelScript.VerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -342,7 +342,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: Указывает, переносит ли Excel текст в объекте.
+  summary: Указывает, завербует ли Excel текст в объекте.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: Указывает, отображается ли отступ текста автоматически, если для выравнивания текста в ячейке задано равное равномерное распределение.
+  summary: Указывает, будет ли текст автоматически отступным, если выравнивание текста в ячейке задано на равное распределение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -372,7 +372,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setFormulaHidden:member(1)
   package: ExcelScript!
   fullName: setFormulaHidden(formulaHidden)
-  summary: Указывает, будет ли скрыта формула при защите листа.
+  summary: Указывает, будет ли формула скрыта при защите таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Представляет горизонтальное выравнивание для стиля. Для получения дополнительных сведений см. Ексцелскрипт. HorizontalAlignment.
+  summary: Представляет горизонтальное выравнивание для стиля. Подробные `ExcelScript.HorizontalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -406,7 +406,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: setIncludeAlignment(includeAlignment)
-  summary: Указывает, содержит ли стиль свойства Indent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel и TextOrientation.
+  summary: Указывает, включает ли стиль свойства автоотступа, горизонтальное выравнивание, вертикальное выравнивание, текст упаковки, уровень отступа и свойства ориентации текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)
   package: ExcelScript!
   fullName: setIncludeBorder(includeBorder)
-  summary: Указывает, включают ли стиль свойства границы цвета, ColorIndex, LineStyle и Weight.
+  summary: Указывает, включает ли стиль свойства цвета, индекса цвета, стиля строки и весовых границ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -440,7 +440,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)
   package: ExcelScript!
   fullName: setIncludeFont(includeFont)
-  summary: Указывает, содержит ли стиль фон, полужирный, цвет, ColorIndex, FontStyle, курсив, имя, размер, зачеркивание, подстрочный знак, Надстрочный знак и подчеркивание шрифта.
+  summary: Указывает, включает ли стиль фон, жирный цвет, цвет, индекс цвета, стиль шрифта, italic, имя, размер, strikethrough, subscript, superscript и underline font properties.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -457,7 +457,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)
   package: ExcelScript!
   fullName: setIncludeNumber(includeNumber)
-  summary: Указывает, содержит ли стиль свойство NumberFormat.
+  summary: Указывает, включает ли стиль свойство формата номеров.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -474,7 +474,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)
   package: ExcelScript!
   fullName: setIncludePatterns(includePatterns)
-  summary: Указывает, включены ли в стиль внутренние свойства Color, ColorIndex, InvertIfNegative, pattern, PatternColor и PatternColorIndex.
+  summary: Указывает, включает ли стиль свойства цвета, индекса цвета, инверта, если отрицательный, шаблон, цвет шаблона и свойства индекса цвета шаблона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -491,7 +491,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)
   package: ExcelScript!
   fullName: setIncludeProtection(includeProtection)
-  summary: Указывает, содержит ли стиль свойства FormulaHidden и locked Protection.
+  summary: Указывает, включает ли стиль скрытые и заблокированные свойства защиты формулы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -525,7 +525,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setLocked:member(1)
   package: ExcelScript!
   fullName: setLocked(locked)
-  summary: Указывает, блокируется ли объект, когда лист защищен.
+  summary: Указывает, заблокирован ли объект при защите таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -576,7 +576,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: Задает двойное значение, которое осветляет или затемняет цвет границ диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.
+  summary: Указывает двойник, который осветляет или темнеет цвет для границ диапазона. Значение между -1 (самое темное) и 1 (самое яркое), с 0 для исходного цвета. Значение `null` указывает, что вся коллекция границ не имеет единого `tintAndShade` параметра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)
   package: ExcelScript!
   fullName: setShrinkToFit(shrinkToFit)
-  summary: Указывает, сжимается ли текст автоматически в соответствии с шириной доступной ширины столбца.
+  summary: Указывает, если текст автоматически сокращается, чтобы соответствовать ширине доступных столбцов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Задает вертикальное выравнивание для стиля. Для получения дополнительных сведений см. Ексцелскрипт. VerticalAlignment.
+  summary: Указывает вертикальное выравнивание для стиля. Подробные `ExcelScript.VerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -661,7 +661,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: Указывает, переносит ли Excel текст в объекте.
+  summary: Указывает, завербует ли Excel текст в объекте.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,9 +675,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5969a129dc30629684c79765be7c43892cf87600
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 90d16417266aad48b871faec7c48f2fd03d52985
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416703"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607447"

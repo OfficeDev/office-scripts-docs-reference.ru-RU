@@ -3,7 +3,7 @@ name: ExcelScript.TimelineStyle
 uid: ExcelScript!ExcelScript.TimelineStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.TimelineStyle
-summary: Представляет стиль временной шкалы, который определяет элементы стиля по регионам на временной шкале.
+summary: Представляет `TimelineStyle`<!-- -->, которая определяет элементы стиля по регионам в временной шкале.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Удаляет объект TableStyle.
+  summary: Удаляет стиль таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: Создает дубликат объекта TimelineStyle с копиями всех элементов стиля.
+  summary: Создает дубликат этого стиля временной шкалы с копиями всех элементов стиля.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Получает имя объекта TimelineStyle.
+  summary: Получает имя стиля timeline.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: Указывает, предназначен ли объект TimelineStyle только для чтения.
+  summary: Указывает, является ли `TimelineStyle` этот объект только для чтения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Получает имя объекта TimelineStyle.
+  summary: Получает имя стиля timeline.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a4d97d4186cb7205120ef385bc86dc38baaccdd3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a671d8ba98954f11ace4057a0918a04c88feb0a0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411735"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607307"

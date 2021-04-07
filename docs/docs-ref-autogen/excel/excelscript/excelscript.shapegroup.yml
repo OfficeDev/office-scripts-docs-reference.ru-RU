@@ -3,7 +3,7 @@ name: ExcelScript.ShapeGroup
 uid: ExcelScript!ExcelScript.ShapeGroup:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeGroup
-summary: Представляет группу фигур в рабочем листе. Чтобы получить соответствующий объект Shape, используйте `ShapeGroup.shape`<!-- -->.
+summary: Представляет группу фигур внутри таблицы. Чтобы получить соответствующий `Shape` объект, используйте `ShapeGroup.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
   package: ExcelScript!
   fullName: getGroupShape()
-  summary: Возвращает объект Shape, связанный с группой.
+  summary: Возвращает `Shape` объект, связанный с группой.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Задает идентификатор фигуры.
+  summary: Указывает идентификатор формы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)
   package: ExcelScript!
   fullName: getShape(key)
-  summary: Получает фигуру по имени или идентификатору.
+  summary: Получает фигуру с ее именем или ИД.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -47,7 +47,7 @@ methods:
     content: 'getShape(key: string): Shape;'
     parameters:
     - id: key
-      description: Имя или Идентификатор извлекаемой фигуры.
+      description: Имя или ID фигуры, которая должна быть извлечена.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
   package: ExcelScript!
   fullName: getShapes()
-  summary: Возвращает коллекцию объектов Shape.
+  summary: Возвращает коллекцию `Shape` объектов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7aa8ade3b8eb551378ae316ced0864f037bee30f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cc1e9a9a08dfbf3710f374a5e254984a8314df9c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420638"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607377"

@@ -3,7 +3,7 @@ name: ExcelScript.TextFrame
 uid: ExcelScript!ExcelScript.TextFrame:interface
 package: ExcelScript!
 fullName: ExcelScript.TextFrame
-summary: Представляет текстовый фрейм объекта Shape.
+summary: Представляет текстовую рамку объекта фигуры.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: getAutoSizeSetting()
-  summary: Параметры автоматической настройки размера для текстового фрейма. Для рамки с текстом можно настроить автоматический подбор размера текста в соответствии с размером рамки, автоматический подбор размера рамки в соответствии с содержимым или не выполнять автоматический подбор размера.
+  summary: Автоматические параметры размеров для текстового кадра. Для рамки с текстом можно настроить автоматический подбор размера текста в соответствии с размером рамки, автоматический подбор размера рамки в соответствии с содержимым или не выполнять автоматический подбор размера.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHasText:member(1)
   package: ExcelScript!
   fullName: getHasText()
-  summary: Указывает, содержит ли текстовая рамка текст.
+  summary: Указывает, содержит ли текстовый кадр текст.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Представляет горизонтальное выравнивание рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекссоризонталалигнмент.
+  summary: Представляет горизонтальное выравнивание рамки с текстом. Подробные `ExcelScript.ShapeTextHorizontalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: getHorizontalOverflow()
-  summary: Представляет действие горизонтального переполнения рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекссоризонталоверфлов.
+  summary: Представляет действие горизонтального переполнения рамки с текстом. Подробные `ExcelScript.ShapeTextHorizontalOverflow` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: Представляет угол, на который текст ориентирован для текстового фрейма. Для получения дополнительных сведений см. Ексцелскрипт. Шапетексториентатион.
+  summary: Представляет угол, на который ориентирован текст для текстового кадра. Подробные `ExcelScript.ShapeTextOrientation` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getReadingOrder:member(1)
   package: ExcelScript!
   fullName: getReadingOrder()
-  summary: Представляет направление чтения рамки с текстом (слева направо или справа налево). Для получения дополнительных сведений см. Ексцелскрипт. Шапетекстреадингордер.
+  summary: Представляет направление чтения рамки с текстом (слева направо или справа налево). Подробные `ExcelScript.ShapeTextReadingOrder` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getTextRange:member(1)
   package: ExcelScript!
   fullName: getTextRange()
-  summary: Представляет текст, присоединенный к фигуре в текстовой рамке, а также свойства и методы для операций с текстом. Дополнительные сведения см. в Ексцелскрипт. TextRange.
+  summary: Представляет текст, присоединенный к фигуре в текстовой рамке, а также свойства и методы для операций с текстом. Подробные `ExcelScript.TextRange` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Представляет вертикальное выравнивание для рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекствертикалалигнмент.
+  summary: Представляет вертикальное выравнивание для рамки с текстом. Подробные `ExcelScript.ShapeTextVerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: getVerticalOverflow()
-  summary: Представляет действие вертикального переполнения рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекствертикаловерфлов.
+  summary: Представляет действие вертикального переполнения рамки с текстом. Подробные `ExcelScript.ShapeTextVerticalOverflow` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: setAutoSizeSetting(autoSizeSetting)
-  summary: Параметры автоматической настройки размера для текстового фрейма. Для рамки с текстом можно настроить автоматический подбор размера текста в соответствии с размером рамки, автоматический подбор размера рамки в соответствии с содержимым или не выполнять автоматический подбор размера.
+  summary: Автоматические параметры размеров для текстового кадра. Для рамки с текстом можно настроить автоматический подбор размера текста в соответствии с размером рамки, автоматический подбор размера рамки в соответствии с содержимым или не выполнять автоматический подбор размера.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Представляет горизонтальное выравнивание рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекссоризонталалигнмент.
+  summary: Представляет горизонтальное выравнивание рамки с текстом. Подробные `ExcelScript.ShapeTextHorizontalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: setHorizontalOverflow(horizontalOverflow)
-  summary: Представляет действие горизонтального переполнения рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекссоризонталоверфлов.
+  summary: Представляет действие горизонтального переполнения рамки с текстом. Подробные `ExcelScript.ShapeTextHorizontalOverflow` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: Представляет угол, на который текст ориентирован для текстового фрейма. Для получения дополнительных сведений см. Ексцелскрипт. Шапетексториентатион.
+  summary: Представляет угол, на который ориентирован текст для текстового кадра. Подробные `ExcelScript.ShapeTextOrientation` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setReadingOrder:member(1)
   package: ExcelScript!
   fullName: setReadingOrder(readingOrder)
-  summary: Представляет направление чтения рамки с текстом (слева направо или справа налево). Для получения дополнительных сведений см. Ексцелскрипт. Шапетекстреадингордер.
+  summary: Представляет направление чтения рамки с текстом (слева направо или справа налево). Подробные `ExcelScript.ShapeTextReadingOrder` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -354,7 +354,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Представляет вертикальное выравнивание для рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекствертикалалигнмент.
+  summary: Представляет вертикальное выравнивание для рамки с текстом. Подробные `ExcelScript.ShapeTextVerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -374,7 +374,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: setVerticalOverflow(verticalOverflow)
-  summary: Представляет действие вертикального переполнения рамки с текстом. Для получения дополнительных сведений см. Ексцелскрипт. Шапетекствертикаловерфлов.
+  summary: Представляет действие вертикального переполнения рамки с текстом. Подробные `ExcelScript.ShapeTextVerticalOverflow` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -388,9 +388,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ecc8ca404ec0d89960a592962c74e1f4e0fd5ce
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cea8dceea74129d42e754dfb4acde0c1518acd90
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419266"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607314"
