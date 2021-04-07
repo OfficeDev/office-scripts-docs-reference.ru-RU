@@ -3,7 +3,7 @@ name: ExcelScript.WorkbookRangeAreas
 uid: ExcelScript!ExcelScript.WorkbookRangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.WorkbookRangeAreas
-summary: Представляет коллекцию из одного или нескольких прямоугольных диапазонов на нескольких листах.
+summary: Представляет коллекцию из одного или нескольких прямоугольных диапазонов в нескольких таблицах.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
   package: ExcelScript!
   fullName: getAddresses()
-  summary: 'Возвращает массив адресов в стиле a1. Значение Address будет содержать имя листа для каждого прямоугольного блока ячеек (например, "Лист1! A1: B4, Лист1! D1: D4 "). Только для чтения.'
+  summary: Возвращает массив адресов в стиле A1. Значения адресов содержат имя листа для каждого прямоугольного блока ячеек (например, "Sheet1! A1:B4, Sheet1! D1:D4"). Только для чтения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
   package: ExcelScript!
   fullName: getAreas()
-  summary: Возвращает объект Ранжеареасколлектион, каждый RangeAreas в коллекции представляет один или несколько диапазонов прямоугольников в одном листе.
+  summary: Возвращает `RangeAreasCollection` объект. Каждый из них в коллекции представляет один или несколько диапазонов прямоугольника `RangeAreas` в одной таблице.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: Возвращает объект RangeAreas на основе имени листа или идентификатора в коллекции. Если лист не существует, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Возвращает объект на основе имени или ИД таблицы `RangeAreas` в коллекции. Если таблицы не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -47,7 +47,7 @@ methods:
     content: 'getRangeAreasBySheet(key: string): RangeAreas;'
     parameters:
     - id: key
-      description: Имя или идентификатор листа.
+      description: Имя или ID таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: Возвращает диапазоны, составляющие этот объект, в объекте Ранжеколлектион
+  summary: Возвращает диапазоны, составляющие этот объект в `RangeCollection` объекте.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 314209691b999d9cbfe9b31caec70a30bb490d93
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 2a4a022464cf1f54246d451331da6d84f2d57ec3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554752"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605306"

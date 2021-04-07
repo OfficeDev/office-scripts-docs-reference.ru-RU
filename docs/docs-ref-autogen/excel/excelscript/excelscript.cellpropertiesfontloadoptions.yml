@@ -3,7 +3,7 @@ name: ExcelScript.CellPropertiesFontLoadOptions
 uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.CellPropertiesFontLoadOptions
-summary: Указывает, какие свойства следует загружать для `format.font` объекта.
+summary: Указывает, какие свойства нужно загрузить на `format.font` объект.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -130,9 +130,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 20b3d4cc2181d279a9f8453648d2eed1300d1016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a98813f764c076b1ee587c32fab9b81c9c2775a7
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417130"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606971"

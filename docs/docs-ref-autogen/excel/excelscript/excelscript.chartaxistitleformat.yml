@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Задает формат границы названия оси диаграммы, включающий цвет, lineStyle и толщину.
+  summary: Указывает пограничный формат заголовка оси диаграммы, который включает цвет, листил и вес.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Задает форматирование заливки для названия оси диаграммы.
+  summary: Указывает форматирование заполнения заголовок оси диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Задает атрибуты шрифта названия оси диаграммы, такие как имя шрифта, размер шрифта, цвет и т. д. объект заголовка оси диаграммы.
+  summary: Указывает атрибуты шрифта заголовок оси диаграммы, такие как имя шрифта, размер шрифта или цвет объекта заголовок оси диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: aa3d5e5f80de2db848dd49faa79439f0a0490d45
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a8b4cfada09ede9adb3bf5501b9032ad26247ea
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420064"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606602"

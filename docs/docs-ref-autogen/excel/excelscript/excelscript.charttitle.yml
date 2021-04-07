@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Возвращает высоту заголовка диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  summary: Возвращает высоту заголовка диаграммы (в пунктах). Значение, `null` если заголовок диаграммы не виден.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Задает горизонтальное выравнивание для заголовка диаграммы.
+  summary: Указывает горизонтальное выравнивание для заголовка диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Задает расстояние от левого края заголовка диаграммы до левого края области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  summary: Указывает расстояние в точках от левого края заголовка диаграммы до левого края области диаграммы. Значение, `null` если заголовок диаграммы не виден.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)
   package: ExcelScript!
   fullName: getOverlay()
-  summary: Указывает, будет ли название диаграммы накладываться на диаграмму.
+  summary: Указывает, будет ли заголовок диаграммы наложением диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Представляет положение заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттитлепоситион.
+  summary: Представляет положение заголовка диаграммы. Подробные `ExcelScript.ChartTitlePosition` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)
   package: ExcelScript!
   fullName: getSubstring(start, length)
-  summary: Получение подстроки заголовка диаграммы. Разрыв строки '<!-- -->\\<!-- -->n также подсчитывает один символ.
+  summary: Получите подстройку заголовка диаграммы. Разрыв строки '<!-- -->\\<!-- -->n' подсчитываю один символ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,10 +112,10 @@ methods:
     content: 'getSubstring(start: number, length: number): ChartFormatString;'
     parameters:
     - id: start
-      description: Начальное положение подстроки, которую необходимо получить. Позиция начинается с 0.
+      description: Начало позиции подстройки, которая должна быть извлечена. Используется нулевой индекс.
       type: number
     - id: length
-      description: Длина извлекаемой подстроки.
+      description: Длина подстройки, которая должна быть извлечена.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartFormatString:interface" />
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Задает текст заголовка диаграммы.
+  summary: Указывает текст заголовка диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Задает угол, на который будет ориентирован текст для заголовка диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  summary: Указывает угол, на который ориентирован текст для заголовка диаграммы. Значение должно быть либо в целом от -90 до 90, либо в целом 180 для вертикально ориентированного текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Задает расстояние от верхнего края заголовка диаграммы до верха области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  summary: Указывает расстояние в точках от верхнего края заголовка диаграммы до верхней части области диаграммы. Значение, `null` если заголовок диаграммы не виден.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Задает вертикальное выравнивание заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент.
+  summary: Указывает вертикальное выравнивание заголовка диаграммы. Подробные `ExcelScript.ChartTextVerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Указывает, является ли название диаграммы Visible.
+  summary: Указывает, является ли заголовок диаграммы visibile.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -189,7 +189,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Задает ширину заголовка диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  summary: Указывает ширину в точках заголовка диаграммы. Значение, `null` если заголовок диаграммы не виден.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
     content: 'setFormula(formula: string): void;'
     parameters:
     - id: formula
-      description: Строка, представляющая формулу, которую требуется задать.
+      description: Строка, представляютив формулу для набора.
       type: string
     return:
       type: void
@@ -219,7 +219,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Задает горизонтальное выравнивание для заголовка диаграммы.
+  summary: Указывает горизонтальное выравнивание для заголовка диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Задает расстояние от левого края заголовка диаграммы до левого края области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  summary: Указывает расстояние в точках от левого края заголовка диаграммы до левого края области диаграммы. Значение, `null` если заголовок диаграммы не виден.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -256,7 +256,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)
   package: ExcelScript!
   fullName: setOverlay(overlay)
-  summary: Указывает, будет ли название диаграммы накладываться на диаграмму.
+  summary: Указывает, будет ли заголовок диаграммы наложением диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Представляет положение заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттитлепоситион.
+  summary: Представляет положение заголовка диаграммы. Подробные `ExcelScript.ChartTitlePosition` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -307,7 +307,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setText:member(1)
   package: ExcelScript!
   fullName: setText(text)
-  summary: Задает текст заголовка диаграммы.
+  summary: Указывает текст заголовка диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -324,7 +324,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Задает угол, на который будет ориентирован текст для заголовка диаграммы. Значение должно быть целым числом от – 90 до 90 или целым числом 180 для вертикально ориентированного текста.
+  summary: Указывает угол, на который ориентирован текст для заголовка диаграммы. Значение должно быть либо в целом от -90 до 90, либо в целом 180 для вертикально ориентированного текста.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -341,7 +341,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Задает расстояние от верхнего края заголовка диаграммы до верха области диаграммы (в пунктах). Значение null, если заголовок диаграммы не отображается.
+  summary: Указывает расстояние в точках от верхнего края заголовка диаграммы до верхней части области диаграммы. Значение, `null` если заголовок диаграммы не виден.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -358,7 +358,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Задает вертикальное выравнивание заголовка диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чарттекствертикалалигнмент.
+  summary: Указывает вертикальное выравнивание заголовка диаграммы. Подробные `ExcelScript.ChartTextVerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -378,7 +378,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Указывает, является ли название диаграммы Visible.
+  summary: Указывает, является ли заголовок диаграммы visibile.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -392,9 +392,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 068cdd5d4997a8dcbd9b8aa9c66996f10ec1078f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a11e3c2b3d30f2807b1e5385eadc6d355bfbecf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416864"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606838"

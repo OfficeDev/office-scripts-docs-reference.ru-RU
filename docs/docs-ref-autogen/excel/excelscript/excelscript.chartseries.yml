@@ -21,7 +21,7 @@ methods:
     content: 'addChartTrendline(type?: ChartTrendlineType): ChartTrendline;'
     parameters:
     - id: type
-      description: Указывает тип линии тренда. Значение по умолчанию — "линейный". Для получения дополнительных сведений см. Ексцелскрипт. Чарттрендлине.
+      description: Указывает тип trendline. Значение по умолчанию — линейное. Подробные `ExcelScript.ChartTrendline` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getAxisGroup:member(1)
   package: ExcelScript!
   fullName: getAxisGroup()
-  summary: Задает группу для указанного ряда.
+  summary: Указывает группу для указанной серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartTrendline:member(1)
   package: ExcelScript!
   fullName: getChartTrendline(index)
-  summary: Получает объект линии тренда по индексу, который является порядком вставки в массиве элементов.
+  summary: Получает объект trendline по индексу, который является порядком вставки в массиве элементов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -103,7 +103,7 @@ methods:
     content: 'getChartTrendline(index: number): ChartTrendline;'
     parameters:
     - id: index
-      description: Представляет порядок вставки в массиве Items.
+      description: Представляет порядок вставки в массиве элементов.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: Представляет тип диаграммы для ряда. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
+  summary: Представляет тип диаграммы для ряда. Подробные `ExcelScript.ChartType` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDataLabels:member(1)
   package: ExcelScript!
   fullName: getDataLabels()
-  summary: Представляет коллекцию всех dataLabels в ряду.
+  summary: Представляет коллекцию всех меток данных в серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)
   package: ExcelScript!
   fullName: getDimensionValues(dimension)
-  summary: Получает значения из одного измерения ряда диаграммы. Это могут быть значения категории или значения данных, в зависимости от указанного измерения и способа сопоставления данных для ряда диаграммы.
+  summary: Получает значения из одного измерения серии диаграмм. Это могут быть либо значения категорий, либо значения данных в зависимости от заданного измерения и от того, как данные соо-
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -146,7 +146,7 @@ methods:
     content: 'getDimensionValues(dimension: ChartSeriesDimension): string[];'
     parameters:
     - id: dimension
-      description: измерение оси, в которой данные из
+      description: Размер оси, откуда данные.
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesDimension:enum" />
     return:
       type: string[]
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: getDoughnutHoleSize()
-  summary: Представляет размер отверстия ряда кольцевой диаграммы. Допустимо только в doughnutExploded и кольцевых диаграммах. Создает исключение недопустимого аргумента на недопустимых диаграммах.
+  summary: Представляет размер отверстия ряда кольцевой диаграммы. Только допустимые на пончик и пончик взорвались диаграммы. Бросает `InvalidArgument` ошибку на недействительных диаграммах.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getExplosion:member(1)
   package: ExcelScript!
   fullName: getExplosion()
-  summary: Задает значение развертывания для круговой диаграммы или сектора кольцевой диаграммы. Возвращает нуль (0) при отсутствии развертывания (верхушка сектора — в центре круговой диаграммы).
+  summary: Указывает значение взрыва для среза круговой диаграммы или пончик-диаграммы. Возвращает нуль (0) при отсутствии развертывания (верхушка сектора — в центре круговой диаграммы).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -181,7 +181,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFiltered:member(1)
   package: ExcelScript!
   fullName: getFiltered()
-  summary: Указывает, фильтруется ли ряд. Неприменимо для поверхностных диаграмм.
+  summary: Указывает, фильтруется ли серия. Неприменимо для поверхностных диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: getFirstSliceAngle()
-  summary: Задает угол первого сектора круговой диаграммы или кольцевой диаграммы в градусах (по часовой стрелке вертикально). Применяется только к круговым, объемным круговым и кольцевым диаграммам. Может находиться в диапазоне от 0 до 360.
+  summary: Указывает угол первого среза круговой диаграммы или пончик-диаграммы в градусах (по часовой стрелке от вертикальной). Применяется только к круговым, объемным круговым и кольцевым диаграммам. Может находиться в диапазоне от 0 до 360.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGapWidth:member(1)
   package: ExcelScript!
   fullName: getGapWidth()
-  summary: Представляет ширину разрывов рядов диаграммы. Допустимы только на линейчатых диаграммах и гистограммах, а также определенных классах линий и круговых диаграмм. Создает исключение недопустимого аргумента на недопустимых диаграммах.
+  summary: Представляет ширину разрывов рядов диаграммы. Допустимы только на диаграммах строк и столбцов, а также определенных классах диаграмм строки и пирога. Бросает исключение недействительных аргументов на недействительных диаграммах.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumColor()
-  summary: Задает цвет для максимального значения ряда диаграммы карты областей.
+  summary: Указывает цвет для максимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -246,7 +246,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumType()
-  summary: Указывает тип максимального значения ряда диаграммы карты областей.
+  summary: Указывает тип для максимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumValue()
-  summary: Указывает максимальное значение ряда диаграмм с картой областей.
+  summary: Указывает максимальное значение серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -272,7 +272,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointColor()
-  summary: Указывает цвет для среднего значения ряда диаграммы карты областей.
+  summary: Указывает цвет для значения средней точки серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -285,7 +285,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointType()
-  summary: Указывает тип среднего значения для ряда диаграммы карты областей.
+  summary: Указывает тип для значения средней точки серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -298,7 +298,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointValue()
-  summary: Указывает среднее значение ряда диаграммы карты областей.
+  summary: Указывает значение средней точки серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumColor()
-  summary: Задает цвет для минимального значения ряда диаграммы карты областей.
+  summary: Указывает цвет для минимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -324,7 +324,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumType()
-  summary: Указывает тип для минимального значения ряда диаграммы карты областей.
+  summary: Указывает тип для минимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -337,7 +337,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumValue()
-  summary: Указывает минимальное значение ряда диаграммы карты областей.
+  summary: Указывает минимальное значение серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -350,7 +350,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientStyle:member(1)
   package: ExcelScript!
   fullName: getGradientStyle()
-  summary: Задает стиль градиента ряда в диаграмме с картой областей.
+  summary: Указывает стиль градиента серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getHasDataLabels:member(1)
   package: ExcelScript!
   fullName: getHasDataLabels()
-  summary: Указывает, есть ли в рядах метки данных.
+  summary: Указывает, есть ли в серии метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -376,7 +376,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertColor:member(1)
   package: ExcelScript!
   fullName: getInvertColor()
-  summary: Задает цвет заливки для отрицательных точек данных в ряду.
+  summary: Указывает цвет заполнения для отрицательных точек данных в серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: getInvertIfNegative()
-  summary: Значение true, если Excel инвертирует шаблон элемента, если он соответствует отрицательному числу.
+  summary: Верно, если Excel инвертит шаблон в элементе, если он соответствует отрицательному номеру.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -415,7 +415,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerBackgroundColor()
-  summary: Задает цвет фона маркеров для ряда диаграммы.
+  summary: Указывает фоновый цвет маркера серии диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -428,7 +428,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerForegroundColor()
-  summary: Задает цвет переднего плана маркеров ряда диаграммы.
+  summary: Указывает цвет маркера переднего плана серии диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -441,7 +441,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerSize:member(1)
   package: ExcelScript!
   fullName: getMarkerSize()
-  summary: Задает размер маркера для ряда диаграммы.
+  summary: Указывает размер маркера серии диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -454,7 +454,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: Задает стиль маркера для ряда диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чартмаркерстиле.
+  summary: Указывает стиль маркера серии диаграмм. Подробные `ExcelScript.ChartMarkerStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -467,7 +467,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Задает имя ряда в диаграмме. Длина имени не должна превышать 255 символов.
+  summary: Указывает имя серии на диаграмме. Длина имени не должна быть больше 255 символов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -480,7 +480,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getOverlap:member(1)
   package: ExcelScript!
   fullName: getOverlap()
-  summary: Указывает на расположение строк и столбцов. Может принимать значение от – 100 до 100. Применяется только к двумерным диаграммам и гистограммам.
+  summary: Указывает на расположение строк и столбцов. Может быть значением от -100 до 100. Применяется только к двумерным диаграммам и гистограммам.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: getParentLabelStrategy()
-  summary: Задает область схемы родительской метки ряда для диаграммы эта.
+  summary: Указывает область стратегии родительской метки серии для диаграммы treemap.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -506,7 +506,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getPlotOrder:member(1)
   package: ExcelScript!
   fullName: getPlotOrder()
-  summary: Указывает порядок построения рядов диаграммы в группе диаграммы.
+  summary: Указывает порядок сюжета серии диаграмм в группе диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -519,7 +519,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getPoints:member(1)
   package: ExcelScript!
   fullName: getPoints()
-  summary: Возвращает коллекцию всех точек ряда.
+  summary: Возвращает коллекцию всех точек в серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: getSecondPlotSize()
-  summary: Задает размер вторичного раздела круговой диаграммы или круговой диаграммы в процентном соотношении от размера основной круговой диаграммы. Может находиться в диапазоне от 5 до 200.
+  summary: Указывает размер вторичного раздела диаграммы пирога или диаграммы с круговым пирогом в процентах от размера первичного пирога. Может находиться в диапазоне от 5 до 200.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -545,7 +545,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: getShowConnectorLines()
-  summary: Указывает, отображаются ли соединительные линии в каскадных диаграммах.
+  summary: Указывает, показаны ли линии соединители в диаграммах водопада.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -558,7 +558,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: getShowLeaderLines()
-  summary: Указывает, отображаются ли линии выноски для каждой подписи данных в ряду.
+  summary: Указывает, отображаются ли строки лидеров для каждой метки данных в серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -571,7 +571,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowShadow:member(1)
   package: ExcelScript!
   fullName: getShowShadow()
-  summary: Указывает, есть ли теневая копия ряда.
+  summary: Указывает, есть ли в серии тень.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -584,7 +584,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSmooth:member(1)
   package: ExcelScript!
   fullName: getSmooth()
-  summary: Указывает, является ли ряд гладким. Применяется только к графикам и точечным диаграммам.
+  summary: Указывает, является ли серия гладкой. Применимо только к диаграммам строки и разброса.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -597,7 +597,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitType:member(1)
   package: ExcelScript!
   fullName: getSplitType()
-  summary: Указывает способ разделения двух разделов круговой диаграммы круговой диаграммы или круговой диаграммы.
+  summary: Указывает способ разделения двух разделов диаграммы "пирог-пирог" или диаграммы "планка пирога".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitValue:member(1)
   package: ExcelScript!
   fullName: getSplitValue()
-  summary: Задает пороговое значение, которое разделяет два раздела круговой диаграммы или гистограммы.
+  summary: Указывает пороговое значение, которое разделяет два раздела диаграммы пирога или диаграммы "окантовка пирога".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -623,7 +623,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getTrendlines:member(1)
   package: ExcelScript!
   fullName: getTrendlines()
-  summary: Коллекция линий тренда в ряду.
+  summary: Коллекция трендовых линий в серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -636,7 +636,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getVaryByCategories:member(1)
   package: ExcelScript!
   fullName: getVaryByCategories()
-  summary: Значение true, если Excel назначает разные цвета или узор для каждого маркера данных. Диаграмма должна содержать только один ряд.
+  summary: True, если Excel назначит каждому маркеру данных другой цвет или шаблон. Диаграмма должна содержать только один ряд.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,7 +675,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setAxisGroup:member(1)
   package: ExcelScript!
   fullName: setAxisGroup(axisGroup)
-  summary: Задает группу для указанного ряда.
+  summary: Указывает группу для указанной серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -709,7 +709,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setBubbleSizes:member(1)
   package: ExcelScript!
   fullName: setBubbleSizes(sourceData)
-  summary: Задает размеры пузырьков для ряда диаграммы. Применяется только для пузырьковых диаграмм.
+  summary: Задает размеры пузыря для серии диаграмм. Применяется только для пузырьковых диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -717,7 +717,7 @@ methods:
     content: 'setBubbleSizes(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Объект Range, соответствующий исходным данным.
+      description: Объект, `Range` соответствующий исходным данным.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -726,7 +726,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: Представляет тип диаграммы для ряда. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
+  summary: Представляет тип диаграммы для ряда. Подробные `ExcelScript.ChartType` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -743,7 +743,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: setDoughnutHoleSize(doughnutHoleSize)
-  summary: Представляет размер отверстия ряда кольцевой диаграммы. Допустимо только в doughnutExploded и кольцевых диаграммах. Создает исключение недопустимого аргумента на недопустимых диаграммах.
+  summary: Представляет размер отверстия ряда кольцевой диаграммы. Только допустимые на пончик и пончик взорвались диаграммы. Бросает `InvalidArgument` ошибку на недействительных диаграммах.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -760,7 +760,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setExplosion:member(1)
   package: ExcelScript!
   fullName: setExplosion(explosion)
-  summary: Задает значение развертывания для круговой диаграммы или сектора кольцевой диаграммы. Возвращает нуль (0) при отсутствии развертывания (верхушка сектора — в центре круговой диаграммы).
+  summary: Указывает значение взрыва для среза круговой диаграммы или пончик-диаграммы. Возвращает нуль (0) при отсутствии развертывания (верхушка сектора — в центре круговой диаграммы).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -777,7 +777,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setFiltered:member(1)
   package: ExcelScript!
   fullName: setFiltered(filtered)
-  summary: Указывает, фильтруется ли ряд. Неприменимо для поверхностных диаграмм.
+  summary: Указывает, фильтруется ли серия. Неприменимо для поверхностных диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -794,7 +794,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: setFirstSliceAngle(firstSliceAngle)
-  summary: Задает угол первого сектора круговой диаграммы или кольцевой диаграммы в градусах (по часовой стрелке вертикально). Применяется только к круговым, объемным круговым и кольцевым диаграммам. Может находиться в диапазоне от 0 до 360.
+  summary: Указывает угол первого среза круговой диаграммы или пончик-диаграммы в градусах (по часовой стрелке от вертикальной). Применяется только к круговым, объемным круговым и кольцевым диаграммам. Может находиться в диапазоне от 0 до 360.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -811,7 +811,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGapWidth:member(1)
   package: ExcelScript!
   fullName: setGapWidth(gapWidth)
-  summary: Представляет ширину разрывов рядов диаграммы. Допустимы только на линейчатых диаграммах и гистограммах, а также определенных классах линий и круговых диаграмм. Создает исключение недопустимого аргумента на недопустимых диаграммах.
+  summary: Представляет ширину разрывов рядов диаграммы. Допустимы только на диаграммах строк и столбцов, а также определенных классах диаграмм строки и пирога. Бросает исключение недействительных аргументов на недействительных диаграммах.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -828,7 +828,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumColor(gradientMaximumColor)
-  summary: Задает цвет для максимального значения ряда диаграммы карты областей.
+  summary: Указывает цвет для максимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumType(gradientMaximumType)
-  summary: Указывает тип максимального значения ряда диаграммы карты областей.
+  summary: Указывает тип для максимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -865,7 +865,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumValue(gradientMaximumValue)
-  summary: Указывает максимальное значение ряда диаграмм с картой областей.
+  summary: Указывает максимальное значение серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -882,7 +882,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointColor(gradientMidpointColor)
-  summary: Указывает цвет для среднего значения ряда диаграммы карты областей.
+  summary: Указывает цвет для значения средней точки серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -899,7 +899,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointType(gradientMidpointType)
-  summary: Указывает тип среднего значения для ряда диаграммы карты областей.
+  summary: Указывает тип для значения средней точки серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -919,7 +919,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointValue(gradientMidpointValue)
-  summary: Указывает среднее значение ряда диаграммы карты областей.
+  summary: Указывает значение средней точки серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -936,7 +936,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumColor(gradientMinimumColor)
-  summary: Задает цвет для минимального значения ряда диаграммы карты областей.
+  summary: Указывает цвет для минимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -953,7 +953,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumType(gradientMinimumType)
-  summary: Указывает тип для минимального значения ряда диаграммы карты областей.
+  summary: Указывает тип для минимального значения серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -973,7 +973,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumValue(gradientMinimumValue)
-  summary: Указывает минимальное значение ряда диаграммы карты областей.
+  summary: Указывает минимальное значение серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -990,7 +990,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientStyle:member(1)
   package: ExcelScript!
   fullName: setGradientStyle(gradientStyle)
-  summary: Задает стиль градиента ряда в диаграмме с картой областей.
+  summary: Указывает стиль градиента серии диаграммы карты региона.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1007,7 +1007,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setHasDataLabels:member(1)
   package: ExcelScript!
   fullName: setHasDataLabels(hasDataLabels)
-  summary: Указывает, есть ли в рядах метки данных.
+  summary: Указывает, есть ли в серии метки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1024,7 +1024,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertColor:member(1)
   package: ExcelScript!
   fullName: setInvertColor(invertColor)
-  summary: Задает цвет заливки для отрицательных точек данных в ряду.
+  summary: Указывает цвет заполнения для отрицательных точек данных в серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1041,7 +1041,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: setInvertIfNegative(invertIfNegative)
-  summary: Значение true, если Excel инвертирует шаблон элемента, если он соответствует отрицательному числу.
+  summary: Верно, если Excel инвертит шаблон в элементе, если он соответствует отрицательному номеру.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1058,7 +1058,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerBackgroundColor(markerBackgroundColor)
-  summary: Задает цвет фона маркеров для ряда диаграммы.
+  summary: Указывает фоновый цвет маркера серии диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1075,7 +1075,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerForegroundColor(markerForegroundColor)
-  summary: Задает цвет переднего плана маркеров ряда диаграммы.
+  summary: Указывает цвет маркера переднего плана серии диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1092,7 +1092,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerSize:member(1)
   package: ExcelScript!
   fullName: setMarkerSize(markerSize)
-  summary: Задает размер маркера для ряда диаграммы.
+  summary: Указывает размер маркера серии диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1109,7 +1109,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: Задает стиль маркера для ряда диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. Чартмаркерстиле.
+  summary: Указывает стиль маркера серии диаграмм. Подробные `ExcelScript.ChartMarkerStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1126,7 +1126,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Задает имя ряда в диаграмме. Длина имени не должна превышать 255 символов.
+  summary: Указывает имя серии на диаграмме. Длина имени не должна быть больше 255 символов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1143,7 +1143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setOverlap:member(1)
   package: ExcelScript!
   fullName: setOverlap(overlap)
-  summary: Указывает на расположение строк и столбцов. Может принимать значение от – 100 до 100. Применяется только к двумерным диаграммам и гистограммам.
+  summary: Указывает на расположение строк и столбцов. Может быть значением от -100 до 100. Применяется только к двумерным диаграммам и гистограммам.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1160,7 +1160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: setParentLabelStrategy(parentLabelStrategy)
-  summary: Задает область схемы родительской метки ряда для диаграммы эта.
+  summary: Указывает область стратегии родительской метки серии для диаграммы treemap.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1180,7 +1180,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setPlotOrder:member(1)
   package: ExcelScript!
   fullName: setPlotOrder(plotOrder)
-  summary: Указывает порядок построения рядов диаграммы в группе диаграммы.
+  summary: Указывает порядок сюжета серии диаграмм в группе диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1197,7 +1197,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: setSecondPlotSize(secondPlotSize)
-  summary: Задает размер вторичного раздела круговой диаграммы или круговой диаграммы в процентном соотношении от размера основной круговой диаграммы. Может находиться в диапазоне от 5 до 200.
+  summary: Указывает размер вторичного раздела диаграммы пирога или диаграммы с круговым пирогом в процентах от размера первичного пирога. Может находиться в диапазоне от 5 до 200.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1214,7 +1214,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: setShowConnectorLines(showConnectorLines)
-  summary: Указывает, отображаются ли соединительные линии в каскадных диаграммах.
+  summary: Указывает, показаны ли линии соединители в диаграммах водопада.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1231,7 +1231,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: setShowLeaderLines(showLeaderLines)
-  summary: Указывает, отображаются ли линии выноски для каждой подписи данных в ряду.
+  summary: Указывает, отображаются ли строки лидеров для каждой метки данных в серии.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1248,7 +1248,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowShadow:member(1)
   package: ExcelScript!
   fullName: setShowShadow(showShadow)
-  summary: Указывает, есть ли теневая копия ряда.
+  summary: Указывает, есть ли в серии тень.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1265,7 +1265,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSmooth:member(1)
   package: ExcelScript!
   fullName: setSmooth(smooth)
-  summary: Указывает, является ли ряд гладким. Применяется только к графикам и точечным диаграммам.
+  summary: Указывает, является ли серия гладкой. Применимо только к диаграммам строки и разброса.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1282,7 +1282,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitType:member(1)
   package: ExcelScript!
   fullName: setSplitType(splitType)
-  summary: Указывает способ разделения двух разделов круговой диаграммы круговой диаграммы или круговой диаграммы.
+  summary: Указывает способ разделения двух разделов диаграммы "пирог-пирог" или диаграммы "планка пирога".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1299,7 +1299,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitValue:member(1)
   package: ExcelScript!
   fullName: setSplitValue(splitValue)
-  summary: Задает пороговое значение, которое разделяет два раздела круговой диаграммы или гистограммы.
+  summary: Указывает пороговое значение, которое разделяет два раздела диаграммы пирога или диаграммы "окантовка пирога".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1316,7 +1316,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(sourceData)
-  summary: Задает значения для ряда диаграммы. Для точечной диаграммы это соответствует значениям оси Y.
+  summary: Задает значения для серии диаграмм. Для диаграмм рассеяния это относится к значениям y-axis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1324,7 +1324,7 @@ methods:
     content: 'setValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Объект Range, соответствующий исходным данным.
+      description: Объект, `Range` соответствующий исходным данным.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setVaryByCategories:member(1)
   package: ExcelScript!
   fullName: setVaryByCategories(varyByCategories)
-  summary: Значение true, если Excel назначает разные цвета или узор для каждого маркера данных. Диаграмма должна содержать только один ряд.
+  summary: True, если Excel назначит каждому маркеру данных другой цвет или шаблон. Диаграмма должна содержать только один ряд.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setXAxisValues:member(1)
   package: ExcelScript!
   fullName: setXAxisValues(sourceData)
-  summary: Задает значения оси X для ряда диаграммы. Применяется только для точечных диаграмм.
+  summary: Задает значения x-axis для серии диаграмм. Применяется только для точечных диаграмм.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1358,15 +1358,15 @@ methods:
     content: 'setXAxisValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Объект Range, соответствующий исходным данным.
+      description: Объект, `Range` соответствующий исходным данным.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8b9c62141ae265c4c4435ac88caf93de77fd4d84
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 81c5a9a881511db17fcc6ac1650410ef94dc472d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419602"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606852"

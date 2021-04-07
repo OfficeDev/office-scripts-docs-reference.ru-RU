@@ -3,7 +3,7 @@ name: ExcelScript.PageLayoutZoomOptions
 uid: ExcelScript!ExcelScript.PageLayoutZoomOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayoutZoomOptions
-summary: Представляет свойства масштаба страницы.
+summary: Представляет свойства масштабирования страницы.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member
   package: ExcelScript!
   fullName: horizontalFitToPages
-  summary: Количество страниц, размещаемых по горизонтали. Это значение может быть равно null, если используется процентный масштаб.
+  summary: Количество страниц, размещаемых по горизонтали. Это значение может `null` быть, если используется процентная шкала.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member
   package: ExcelScript!
   fullName: scale
-  summary: Значение масштаба печатной страницы может быть равным от 10 до 400. Это значение может быть равно null, если указано размещение по высоте или ширине страницы.
+  summary: Значение масштаба печатной страницы может быть равным от 10 до 400. Это значение может быть, `null` если задано значение высотой или шириной страницы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member
   package: ExcelScript!
   fullName: verticalFitToPages
-  summary: Количество страниц, размещаемых по вертикали. Это значение может быть равно null, если используется процентный масштаб.
+  summary: Количество страниц, размещаемых по вертикали. Это значение может `null` быть, если используется процентная шкала.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: number
 metadata:
-  ms.openlocfilehash: 2a2da1f74156c03a28170a94b0d2fc9aabfd960f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 745f7759380e98af90f43cb3a032629642bed648
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412176"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606408"

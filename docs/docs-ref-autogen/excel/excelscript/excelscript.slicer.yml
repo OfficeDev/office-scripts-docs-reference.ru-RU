@@ -3,7 +3,7 @@ name: ExcelScript.Slicer
 uid: ExcelScript!ExcelScript.Slicer:interface
 package: ExcelScript!
 fullName: ExcelScript.Slicer
-summary: Представляет объект среза в книге.
+summary: Представляет объект `Slicer` в книге.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Представляет высоту среза (в пунктах). Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если задано отрицательное значение или ноль в качестве входных данных.
+  summary: Представляет высоту среза (в пунктах). Бросает исключение `InvalidArgument` при наборе с отрицательным значением или нулем в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Представляет уникальный идентификатор среза.
+  summary: Представляет уникальный ID среза.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)
   package: ExcelScript!
   fullName: getIsFilterCleared()
-  summary: Значение true, если удалены все фильтры, примененные к срезу.
+  summary: Значение, `true` если все фильтры, применяемые в настоящее время на срезе, будут очищены.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если в качестве входных данных задано отрицательное значение.
+  summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: Получает элемент среза по ключу или имени. Если элемент среза не существует, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает элемент среза по ключу или имени. Если элемента среза не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
     content: 'getSlicerItem(key: string): SlicerItem | undefined;'
     parameters:
     - id: key
-      description: Ключ или имя среза, который требуется получить.
+      description: Ключ или имя извлекаемого среза.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerItem:interface" /> | undefined
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)
   package: ExcelScript!
   fullName: getSlicerItems()
-  summary: Представляет коллекцию объектов SlicerItem, которые являются частью среза.
+  summary: Представляет коллекцию элементов slicer, которые являются частью среза.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSortBy:member(1)
   package: ExcelScript!
   fullName: getSortBy()
-  summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "Датасаурцеордер", "Ascending", "Descending".'
+  summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "DataSourceOrder", "Ascending", "Descending".'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 'Постоянное значение, представляющее стиль среза. Возможные значения: "SlicerStyleLight1", "SlicerStyleLight6", "TableStyleOther1", "TableStyleOther2", "SlicerStyleDark1" и "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+  summary: 'Постоянное значение, представляю которое представляет стиль среза. Возможные значения: "SlicerStyleLight1" через "SlicerStyleLight6", "TableStyleOther1" через "TableStyleOther2", "SlicerStyleDark1" через "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если в качестве входных данных задано отрицательное значение.
+  summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Представляет ширину среза (в пунктах). Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если задано отрицательное значение или ноль в качестве входных данных.
+  summary: Представляет ширину среза (в пунктах). Бросает `InvalidArgument` ошибку при наборе с отрицательным значением или нулем в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#selectItems:member(1)
   package: ExcelScript!
   fullName: selectItems(items)
-  summary: Выбирает элементы срезов на основе их ключей. Предыдущие выбранные элементы очищаются. Все элементы будут выбраны по умолчанию, если массив пуст.
+  summary: Выбирает элементы среза на основе ключей. Предыдущие выборы очищаются. Все элементы будут выбраны по умолчанию, если массив пуст.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
     content: 'selectItems(items?: string[]): void;'
     parameters:
     - id: items
-      description: Необязательный параметр. Указанные имена выбранных элементов среза.
+      description: Необязательно. Указанные имена элементов среза, которые необходимо выбрать.
       type: string[]
     return:
       type: void
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Представляет высоту среза (в пунктах). Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если задано отрицательное значение или ноль в качестве входных данных.
+  summary: Представляет высоту среза (в пунктах). Бросает исключение `InvalidArgument` при наборе с отрицательным значением или нулем в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,7 +276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если в качестве входных данных задано отрицательное значение.
+  summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,7 +310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setSortBy:member(1)
   package: ExcelScript!
   fullName: setSortBy(sortBy)
-  summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "Датасаурцеордер", "Ascending", "Descending".'
+  summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "DataSourceOrder", "Ascending", "Descending".'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -327,7 +327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 'Постоянное значение, представляющее стиль среза. Возможные значения: "SlicerStyleLight1", "SlicerStyleLight6", "TableStyleOther1", "TableStyleOther2", "SlicerStyleDark1" и "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+  summary: 'Постоянное значение, представляю которое представляет стиль среза. Возможные значения: "SlicerStyleLight1" через "SlicerStyleLight6", "TableStyleOther1" через "TableStyleOther2", "SlicerStyleDark1" через "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если в качестве входных данных задано отрицательное значение.
+  summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Представляет ширину среза (в пунктах). Создает исключение "аргумент является недопустимым или отсутствует или имеет неправильный формат". исключение, если задано отрицательное значение или ноль в качестве входных данных.
+  summary: Представляет ширину среза (в пунктах). Бросает `InvalidArgument` ошибку при наборе с отрицательным значением или нулем в качестве ввода.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4136caf5e44c73d4f4a4ef5d7379a80e370d5ef9
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: e77939566a567014410472a3a707d5c624220469
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554773"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606013"

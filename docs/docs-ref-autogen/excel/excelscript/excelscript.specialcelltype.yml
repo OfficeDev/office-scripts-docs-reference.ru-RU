@@ -11,11 +11,11 @@ fields:
 - name: blanks
   uid: ExcelScript!ExcelScript.SpecialCellType.blanks:member
   package: ExcelScript!
-  summary: Ячейки без содержимого.
+  summary: Ячейки без контента.
 - name: conditionalFormats
   uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
   package: ExcelScript!
-  summary: Все ячейки с условным форматированием
+  summary: Все ячейки с условными форматами.
 - name: constants
   uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
   package: ExcelScript!
@@ -23,7 +23,7 @@ fields:
 - name: dataValidations
   uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
   package: ExcelScript!
-  summary: Ячейки, имеющие условия проверки.
+  summary: Ячейки с критериями проверки.
 - name: formulas
   uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
   package: ExcelScript!
@@ -31,19 +31,19 @@ fields:
 - name: sameConditionalFormat
   uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
   package: ExcelScript!
-  summary: Ячейки с одинаковым условным форматированием, что и первая ячейка в диапазоне.
+  summary: Ячейки с тем же условным форматом, что и первая ячейка в диапазоне.
 - name: sameDataValidation
   uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
   package: ExcelScript!
-  summary: Ячейки, имеющие те же условия проверки данных, что и первая ячейка в диапазоне.
+  summary: Ячейки с тем же критерием проверки данных, что и первая ячейка в диапазоне.
 - name: visible
   uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
   package: ExcelScript!
   summary: Видимые ячейки.
 metadata:
-  ms.openlocfilehash: e267008031fc63a772a4410ae996daf5b1352f86
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abfcbb551319211b6da5a509bc9ab75e2f24dea8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420351"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605992"

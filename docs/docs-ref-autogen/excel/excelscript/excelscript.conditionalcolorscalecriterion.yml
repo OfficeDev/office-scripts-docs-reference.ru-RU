@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalColorScaleCriterion
 uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriterion
-summary: Представляет критерий цветовой шкалы, который содержит тип, значение и цвет.
+summary: Представляет критерий цветовой шкалы, содержащий тип, значение и цвет.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
   package: ExcelScript!
   fullName: color
-  summary: Представление цветового кода HTML цвета цветовой шкалы (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML цвета цвета (например, \# FF0000 представляет красный).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: Число, формула или значение NULL (если указан тип LowestValue).
+  summary: Число, формула или `null` (если `type``lowestValue`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
   package: ExcelScript!
   fullName: type
-  summary: Какова должна основываться Условная формула условия.
+  summary: На чем должна основываться условная формула критерия.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
 metadata:
-  ms.openlocfilehash: 25bac1cb6537ddbb319c9a9371c7e8dbcfd0ba2b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 25ed1beb5905b9dc3fe38a118f5191b51cdfabcb
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419490"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607118"

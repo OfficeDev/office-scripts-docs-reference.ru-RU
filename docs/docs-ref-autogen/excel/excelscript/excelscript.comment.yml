@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#addCommentReply:member(1)
   package: ExcelScript!
   fullName: addCommentReply(content, contentType)
-  summary: Создает ответ на примечание.
+  summary: Создает ответ на комментарий для комментария.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,10 +25,10 @@ methods:
               ): CommentReply;
     parameters:
     - id: content
-      description: Содержимое комментария. Это может быть строка или интерфейс Комментричконтент (например, для комментариев с упоминаниями).
+      description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект (например, для комментариев с упоминаниями).
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательный параметр. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.
+      description: Необязательно. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getContent:member(1)
   package: ExcelScript!
   fullName: getContent()
-  summary: Содержимое комментария. Строка является обычным текстом.
+  summary: Содержимое комментария. Строка — это простой текст.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -119,7 +119,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Получает время создания примечания. Возвращает значение null, если примечание было преобразовано из заметки, так как у примечания нет даты создания.
+  summary: Получает время создания примечания. Возвращается, если комментарий был преобразован из заметки, так как у комментария `null` нет даты создания.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Задает идентификатор комментария.
+  summary: Указывает идентификатор комментария.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Получает ячейку, в которой находится этот комментарий.
+  summary: Получает ячейку, в которой расположен этот комментарий.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -158,7 +158,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getMentions:member(1)
   package: ExcelScript!
   fullName: getMentions()
-  summary: Получает объекты (например, людей), которые упоминаются в комментариях.
+  summary: Получает объекты (например, люди), указанные в комментариях.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -184,7 +184,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: Состояние цепочки комментариев. Значение "true" означает, что поток комментариев разрешается.
+  summary: Состояние потока комментариев. Значение `true` означает, что поток комментариев разрешен.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -197,7 +197,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: Получает содержимое форматированного комментария (например, упоминание в комментариях). Эта строка не предназначена для отображения конечным пользователям. Надстройка должна использовать эту надстройку только для анализа форматированного содержимого комментариев.
+  summary: Получает богатое содержимое комментариев (например, упоминания в комментариях). Эта строка не предназначена для отображения конечным пользователям. Ваша надстройка должна использовать это только для размывки контента комментариев.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setContent:member(1)
   package: ExcelScript!
   fullName: setContent(content)
-  summary: Содержимое комментария. Строка является обычным текстом.
+  summary: Содержимое комментария. Строка — это простой текст.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -227,7 +227,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setResolved:member(1)
   package: ExcelScript!
   fullName: setResolved(resolved)
-  summary: Состояние цепочки комментариев. Значение "true" означает, что поток комментариев разрешается.
+  summary: Состояние потока комментариев. Значение `true` означает, что поток комментариев разрешен.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,15 +252,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: Содержимое комментария. Содержит особую отформатированную строку и список упоминаний, которые будут проанализированы в строку при их отображении в Excel.
+      description: Содержимое для комментария. Это содержит специально отформатированную строку и список упоминаний, которые будут разобрано в строку при отобращении в Excel.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 99f2cf48b37e0d1b0db82fa78492b823e4d5eee7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3417d9212461ffdd5ba0314f41491575206a4e65
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415976"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606780"

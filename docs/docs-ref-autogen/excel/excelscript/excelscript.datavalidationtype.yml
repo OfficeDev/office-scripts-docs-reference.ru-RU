@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationType
 uid: ExcelScript!ExcelScript.DataValidationType:enum
 package: ExcelScript!
 fullName: ExcelScript.DataValidationType
-summary: Представляет перечисление типа проверки данных.
+summary: Представляет код проверки данных.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,47 +11,47 @@ fields:
 - name: custom
   uid: ExcelScript!ExcelScript.DataValidationType.custom:member
   package: ExcelScript!
-  summary: Настраиваемый тип проверки данных
+  summary: Тип проверки пользовательских данных.
 - name: date
   uid: ExcelScript!ExcelScript.DataValidationType.date:member
   package: ExcelScript!
-  summary: Тип проверки данных даты
+  summary: Тип проверки данных даты.
 - name: decimal
   uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
   package: ExcelScript!
-  summary: Тип проверки данных Decimal
+  summary: Тип десятичной проверки данных.
 - name: inconsistent
   uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
   package: ExcelScript!
-  summary: Несогласованность означает, что диапазон содержит несогласованную проверку данных (в разных ячейках существуют разные правила)
+  summary: Несогласованное означает, что диапазон имеет несогласованную проверку данных, что указывает на то, что существуют различные правила для различных ячеек.
 - name: list
   uid: ExcelScript!ExcelScript.DataValidationType.list:member
   package: ExcelScript!
-  summary: Тип проверки данных списка
+  summary: Тип проверки данных списка.
 - name: mixedCriteria
   uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
   package: ExcelScript!
-  summary: Микседкритериа означает, что диапазон содержит проверку данных в некоторых ячейках, но не во всех ячейках
+  summary: Смешанные критерии означает, что диапазон имеет проверку данных на некоторых, но не всех ячейках.
 - name: none
   uid: ExcelScript!ExcelScript.DataValidationType.none:member
   package: ExcelScript!
-  summary: None означает, что допускается любое значение, и в диапазоне не выполняется проверка данных.
+  summary: Никакие средства не позволяют использовать любое значение, указывающее на отсутствие проверки данных в диапазоне.
 - name: textLength
   uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
   package: ExcelScript!
-  summary: Тип проверки данных длины текста
+  summary: Тип проверки длины текста.
 - name: time
   uid: ExcelScript!ExcelScript.DataValidationType.time:member
   package: ExcelScript!
-  summary: Тип проверки данных времени
+  summary: Тип проверки данных времени.
 - name: wholeNumber
   uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
   package: ExcelScript!
-  summary: Тип проверки данных для целого числа
+  summary: Весь тип проверки данных номеров.
 metadata:
-  ms.openlocfilehash: a8c45f27ff01ae3d2cdd162b58f74388bdb1484a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f812a19bb9b22a0f84176ac9dbf8dc92c6086f75
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415458"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607146"

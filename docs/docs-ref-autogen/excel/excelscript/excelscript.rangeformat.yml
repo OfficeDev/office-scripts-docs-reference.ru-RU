@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
   package: ExcelScript!
   fullName: adjustIndent(amount)
-  summary: Настраивает отступ для форматирования диапазона. Значение отступа лежит в диапазоне от 0 до 250 и измеряется в символах.
+  summary: Регулирует отступ форматирования диапазона. Отступное значение колеблется от 0 до 250 и измеряется символами.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'adjustIndent(amount: number): void;'
     parameters:
     - id: amount
-      description: 'Количество символьных пространств, на которое регулируется текущий отступ. Это значение должно находиться в пределах от – 250 до 250. **Note**: если сумма приведет к увеличению уровня отступа выше 250, уровень отступа остается в 250. Аналогично, если значение меньше уровня отступа ниже 0, уровень отступа остается равным 0.'
+      description: Количество пробелов символов, с помощью которых корректируется текущий отступ. Это значение должно быть от -250 до 250. **Примечание.** Если сумма подняла бы отступный уровень выше 250, то отступный уровень остается с 250. Аналогичным образом, если сумма понизит уровень отступа ниже 0, то вмятина остается 0.
       type: number
     return:
       type: void
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: Указывает, отображается ли отступ текста автоматически, если для выравнивания текста задано равномерное распределение.
+  summary: Указывает, будет ли текст автоматически отступным, если выравнивание текста задано для равного распространения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
   package: ExcelScript!
   fullName: getColumnWidth()
-  summary: Задает ширину всех колумс в диапазоне. Если столбцы разной ширины, будет возвращено значение NULL.
+  summary: Указывает ширину всех колумов в диапазоне. Если ширина столбца не однородна, `null` возвращается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Представляет выравнивание по горизонтали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. HorizontalAlignment.
+  summary: Представляет выравнивание по горизонтали для указанного объекта. Подробные `ExcelScript.HorizontalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: Значение индекса получаемого объекта границы. Для получения дополнительных сведений см. Ексцелскрипт. Бордериндекс.
+      description: Значение индекса получаемого объекта границы. Подробные `ExcelScript.BorderIndex` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: Задает двойное значение, которое осветляет или затемняет цвет границ диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.
+  summary: Указывает двойник, который осветляет или темнеет цвет для границ диапазона. Значение между -1 (самое темное) и 1 (самое яркое), с 0 для исходного цвета. Значение `null` указывает, что вся коллекция границ не имеет единого `tintAndShade` параметра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
   package: ExcelScript!
   fullName: getRowHeight()
-  summary: Высота всех строк в диапазоне. Если высота строк не одинакова, возвращается значение null.
+  summary: Высота всех строк в диапазоне. Если высота строки не однородна, `null` возвращается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,7 +216,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
   package: ExcelScript!
   fullName: getShrinkToFit()
-  summary: Указывает, сжимается ли текст автоматически в соответствии с шириной доступной ширины столбца.
+  summary: Указывает, если текст автоматически сокращается, чтобы соответствовать ширине доступных столбцов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Ориентация текста для всех ячеек в диапазоне. Ориентация текста должна быть целым числом от – 90 до 90 или 180 для вертикально ориентированного текста. Если ориентация в диапазоне не одинакова, возвращается значение null.
+  summary: Текстовая ориентация всех ячеек в диапазоне. Текстовая ориентация должна быть в целом от -90 до 90 или 180 для вертикально ориентированного текста. Если ориентация в диапазоне не является однородной, `null` возвращается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: getUseStandardHeight()
-  summary: Определяет, равна ли высота строки объекта Range стандартной высоте листа. Возвращает значение true, если высота строки объекта Range равна стандартной высоте листа. Возвращает значение null, если диапазон содержит более одной строки, а строки имеют одинаковую высоту. Возвращает false в противном случае.
+  summary: Определяет, равна ли высота строки объекта `Range` стандартной высоте листа. `true`Возвращается, если высота строки объекта `Range` равна стандартной высоте листа. Возвращается, если диапазон содержит несколько строк, а строки не являются `null` одинаковой высотой. Возвращает `false` обратное. Примечание. Это свойство предназначено только для `true`<!-- -->. Настройка не `false` имеет эффекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: getUseStandardWidth()
-  summary: Указывает, совпадает ли ширина столбца объекта Range со стандартной шириной листа. Возвращает значение true, если ширина столбца объекта Range равна стандартной ширине листа. Возвращает значение null, если диапазон содержит более одного столбца, а столбцы имеют одинаковую высоту. Возвращает false в противном случае.
+  summary: Указывает, равна ли ширина столбца объекту `Range` стандартную ширину листа. Возвращается, если ширина столбца объекта равна `true` `Range` стандартной ширине листа. Возвращается, если диапазон содержит несколько столбцов, а столбцы `null` не одинаковой высоты. Возвращает `false` обратное. Примечание. Это свойство предназначено только для `true`<!-- -->. Настройка не `false` имеет эффекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Представляет выравнивание по вертикали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. VerticalAlignment.
+  summary: Представляет выравнивание по вертикали для указанного объекта. Подробные `ExcelScript.VerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -281,7 +281,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: Указывает, переносит ли Excel текст в объекте. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.
+  summary: Указывает, завербует ли Excel текст в объекте. Значение указывает на то, что весь диапазон не имеет `null` единого параметра обертки
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -294,7 +294,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: Указывает, отображается ли отступ текста автоматически, если для выравнивания текста задано равномерное распределение.
+  summary: Указывает, будет ли текст автоматически отступным, если выравнивание текста задано для равного распространения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
   package: ExcelScript!
   fullName: setColumnWidth(columnWidth)
-  summary: Задает ширину всех колумс в диапазоне. Если столбцы разной ширины, будет возвращено значение NULL.
+  summary: Указывает ширину всех колумов в диапазоне. Если ширина столбца не однородна, `null` возвращается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -328,7 +328,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Представляет выравнивание по горизонтали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. HorizontalAlignment.
+  summary: Представляет выравнивание по горизонтали для указанного объекта. Подробные `ExcelScript.HorizontalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -362,7 +362,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: Задает двойное значение, которое осветляет или затемняет цвет границ диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что в семействе границ для всех семейств границ не задан параметр Тинтандшаде.
+  summary: Указывает двойник, который осветляет или темнеет цвет для границ диапазона. Значение между -1 (самое темное) и 1 (самое яркое), с 0 для исходного цвета. Значение `null` указывает, что вся коллекция границ не имеет единого `tintAndShade` параметра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -396,7 +396,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
   package: ExcelScript!
   fullName: setRowHeight(rowHeight)
-  summary: Высота всех строк в диапазоне. Если высота строк не одинакова, возвращается значение null.
+  summary: Высота всех строк в диапазоне. Если высота строки не однородна, `null` возвращается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -413,7 +413,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
   package: ExcelScript!
   fullName: setShrinkToFit(shrinkToFit)
-  summary: Указывает, сжимается ли текст автоматически в соответствии с шириной доступной ширины столбца.
+  summary: Указывает, если текст автоматически сокращается, чтобы соответствовать ширине доступных столбцов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -430,7 +430,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Ориентация текста для всех ячеек в диапазоне. Ориентация текста должна быть целым числом от – 90 до 90 или 180 для вертикально ориентированного текста. Если ориентация в диапазоне не одинакова, возвращается значение null.
+  summary: Текстовая ориентация всех ячеек в диапазоне. Текстовая ориентация должна быть в целом от -90 до 90 или 180 для вертикально ориентированного текста. Если ориентация в диапазоне не является однородной, `null` возвращается.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: setUseStandardHeight(useStandardHeight)
-  summary: Определяет, равна ли высота строки объекта Range стандартной высоте листа. Возвращает значение true, если высота строки объекта Range равна стандартной высоте листа. Возвращает значение null, если диапазон содержит более одной строки, а строки имеют одинаковую высоту. Возвращает false в противном случае.
+  summary: Определяет, равна ли высота строки объекта `Range` стандартной высоте листа. `true`Возвращается, если высота строки объекта `Range` равна стандартной высоте листа. Возвращается, если диапазон содержит несколько строк, а строки не являются `null` одинаковой высотой. Возвращает `false` обратное. Примечание. Это свойство предназначено только для `true`<!-- -->. Настройка не `false` имеет эффекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: setUseStandardWidth(useStandardWidth)
-  summary: Указывает, совпадает ли ширина столбца объекта Range со стандартной шириной листа. Возвращает значение true, если ширина столбца объекта Range равна стандартной ширине листа. Возвращает значение null, если диапазон содержит более одного столбца, а столбцы имеют одинаковую высоту. Возвращает false в противном случае.
+  summary: Указывает, равна ли ширина столбца объекту `Range` стандартную ширину листа. Возвращается, если ширина столбца объекта равна `true` `Range` стандартной ширине листа. Возвращается, если диапазон содержит несколько столбцов, а столбцы `null` не одинаковой высоты. Возвращает `false` обратное. Примечание. Это свойство предназначено только для `true`<!-- -->. Настройка не `false` имеет эффекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Представляет выравнивание по вертикали для указанного объекта. Для получения дополнительных сведений см. Ексцелскрипт. VerticalAlignment.
+  summary: Представляет выравнивание по вертикали для указанного объекта. Подробные `ExcelScript.VerticalAlignment` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -498,7 +498,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: Указывает, переносит ли Excel текст в объекте. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.
+  summary: Указывает, завербует ли Excel текст в объекте. Значение указывает на то, что весь диапазон не имеет `null` единого параметра обертки
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,9 +512,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 427882c57a1da4adab9f1e74ed60f018af3fd110
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d1ab7aaf1d0c3966e7137f58c35b5fc3d0d9e557
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411924"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607167"

@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: Указывает, разрешена ли в сводной таблице возможность применения нескольких PivotFilters к заданному PivotField в таблице.
+  summary: Указывает, разрешает ли pivotTable применение нескольких pivotFilters в заданной pivotField в таблице.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
     content: 'getColumnHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Имя извлекаемого RowColumnPivotHierarchy.
+      description: Имя извлекаемой строки RowColumnPivotHierarchy.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: Получает DataPivotHierarchy по имени. Если DataPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает DataPivotHierarchy по имени. Если DataPivotHierarchy не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,7 +167,7 @@ methods:
     content: 'getDataHierarchy(name: string): DataPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Имя извлекаемого DataPivotHierarchy.
+      description: Имя извлекаемой dataPivotHierarchy.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" /> | undefined
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: Указывает, позволяет ли Сводная таблица изменять значения в основном тексте данных пользователем.
+  summary: Указывает, разрешается ли пользователю изменять значения в теле данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: Получает FilterPivotHierarchy по имени. Если FilterPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает FilterPivotHierarchy по имени. Если filterPivotHierarchy не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
     content: 'getFilterHierarchy(name: string): FilterPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Имя извлекаемого FilterPivotHierarchy.
+      description: Имя извлекаемой filterPivotHierarchy.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.FilterPivotHierarchy:interface" /> | undefined
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: Получает PivotHierarchy по имени. Если PivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает PivotHierarchy по имени. Если pivotHierarchy не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -240,7 +240,7 @@ methods:
     content: 'getHierarchy(name: string): PivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Имя извлекаемого PivotHierarchy.
+      description: Имя извлекаемой pivotHierarchy.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" /> | undefined
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Идентификатор сводной таблицы.
+  summary: ID of the PivotTable.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает RowColumnPivotHierarchy по имени. Если RowColumnPivotHierarchy не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -309,7 +309,7 @@ methods:
     content: 'getRowHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Имя извлекаемого RowColumnPivotHierarchy.
+      description: Имя извлекаемой строки RowColumnPivotHierarchy.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: getUseCustomSortLists()
-  summary: Указывает, используются ли в сводной таблице настраиваемые списки при сортировке.
+  summary: Указывает, использует ли pivotTable настраиваемые списки при сортировке.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: Указывает, разрешена ли в сводной таблице возможность применения нескольких PivotFilters к заданному PivotField в таблице.
+  summary: Указывает, разрешает ли pivotTable применение нескольких pivotFilters в заданной pivotField в таблице.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: Указывает, позволяет ли Сводная таблица изменять значения в основном тексте данных пользователем.
+  summary: Указывает, разрешается ли пользователю изменять значения в теле данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -485,7 +485,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: setUseCustomSortLists(useCustomSortLists)
-  summary: Указывает, используются ли в сводной таблице настраиваемые списки при сортировке.
+  summary: Указывает, использует ли pivotTable настраиваемые списки при сортировке.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 46b240d2029153fbbc2cbcfca1d15f2e54430414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554610"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606380"

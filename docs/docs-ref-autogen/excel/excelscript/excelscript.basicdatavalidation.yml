@@ -3,7 +3,7 @@ name: ExcelScript.BasicDataValidation
 uid: ExcelScript!ExcelScript.BasicDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.BasicDataValidation
-summary: Представляет критерии проверки данных базового типа.
+summary: Представляет основные критерии проверки данных типа.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.BasicDataValidation#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 'Задает правый операнд, если для свойства operator задан бинарный оператор, такой как GreaterThan (левый операнд — это значение, которое пользователь пытается ввести в ячейку). С помощью операторов тернарного между и Нотбетвин задает нижнюю границу операнда. Например, если задать для параметра Formula1 значение 10, а для оператора GreaterThan — допустимые данные для этого диапазона должны быть больше 10. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
+  summary: 'Указывает операнд правой руки, когда свойство оператора задано двоичному оператору, такому как GreaterThan (левая операнд — это значение, в который пользователь пытается ввести в ячейку). С помощью ternary operators Between and NotBetween указывается нижний связанный операнд. Например, настройка формулы 1 до 10 и оператора в GreaterThan означает, что допустимые данные для диапазона должны быть больше 10. При настройке значения его можно передать в качестве числа, объекта диапазона или строковой формулы (где строка — это строка строки, ссылка ячейки типа "=A1" или формула типа "=MIN(A1, B1)"). При возврате значения оно всегда возвращается в качестве строки, например: "=10", "=A1", "=SUM(A1:B5)" и т.д.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.BasicDataValidation#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: 'С помощью операторов тернарного между и Нотбетвин указывает верхнюю границу операнда. Не используется с двоичными операторами, например GreaterThan. При задании значения его можно передать в виде числа, объекта Range или строкового формулы (где строка является преобразованного числом, ссылкой на ячейку, например "= a1"), или формулой, например "= MIN (a1, B1)"). При получении значения он всегда будет возвращен в виде строкового значения, например: "= 10", "= a1", "= SUM (a1: B5)" и т. д.'
+  summary: 'С помощью ternary operators Between and NotBetween указывается верхний операнд. Не используется с двоичными операторами, такими как GreaterThan. При настройке значения его можно передать в качестве числа, объекта диапазона или строковой формулы (где строка — это строка строки, ссылка ячейки типа "=A1" или формула типа "=MIN(A1, B1)"). При возврате значения оно всегда возвращается в качестве строки, например: "=10", "=A1", "=SUM(A1:B5)" и т.д.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
 metadata:
-  ms.openlocfilehash: 2838d9862880de654555b397ba920d1eb4f30619
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 698ac0ea4a88c50a3297755a09bc30f79077d21d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417294"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606623"

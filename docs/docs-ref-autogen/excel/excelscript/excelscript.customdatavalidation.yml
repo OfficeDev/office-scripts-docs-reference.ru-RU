@@ -3,7 +3,7 @@ name: ExcelScript.CustomDataValidation
 uid: ExcelScript!ExcelScript.CustomDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.CustomDataValidation
-summary: Представляет критерии проверки настраиваемых данных.
+summary: Представляет настраиваемые критерии проверки данных.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: Формула проверки настраиваемых данных. При этом создаются специальные правила ввода, такие как предотвращение дублирования или ограничение суммы в диапазоне ячеек.
+  summary: Формула проверки настраиваемых данных. Это создает специальные правила ввода, такие как предотвращение дубликатов или ограничение общей суммы в диапазоне ячеек.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 00ca951e7f8db10335c4f605a4b8d1e9a44d1a0a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abceba6296f70e4098ed3fd999ce8e04638d3048
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415640"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607153"

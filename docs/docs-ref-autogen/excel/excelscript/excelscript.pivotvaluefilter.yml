@@ -3,7 +3,7 @@ name: ExcelScript.PivotValueFilter
 uid: ExcelScript!ExcelScript.PivotValueFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotValueFilter
-summary: Настраиваемый шаблон для фильтра значений, применяемого к PivotField. Определение критериев, которые необходимо `condition` задать для работы фильтра.
+summary: Настраиваемый шаблон для фильтра значений для применения к PivotField. Определяет, какие критерии необходимо установить для `condition` работы фильтра.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#comparator:member
   package: ExcelScript!
   fullName: comparator
-  summary: Оператор сравнения — это статическое значение, с которым сравниваются другие значения. Тип сравнения определяется условием. Например, если оператор сравнения имеет значение "50", а условие имеет значение "GreaterThan", то все значения элементов, не превышающие 50, будут удалены фильтром.
+  summary: Компаратор — это статическое значение, с которым сравниваются другие значения. Тип сравнения определяется условием. Например, если сопоставитель "50" и условие "greaterThan", все значения элементов, не более 50, будут удалены фильтром.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Задает условие фильтра, которое определяет необходимые критерии фильтрации.
+  summary: Указывает условие фильтра, которое определяет необходимые критерии фильтрации.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Если задано значение true, фильтр *исключает* элементы, соответствующие условиям. По умолчанию используется значение false (Filter для включения элементов, соответствующих условиям).
+  summary: Если `true`<!-- -->фильтр исключает *элементы,* которые соответствуют критериям. По умолчанию `false` (фильтр для включения элементов, которые соответствуют критериям).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: Нижняя граница диапазона `Between` условия фильтра.
+  summary: Нижний предел диапазона для состояния `between` фильтра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#selectionType:member
   package: ExcelScript!
   fullName: selectionType
-  summary: Указывает, используется ли фильтр для верхних и нижних N элементов, а также для первых и последних N процентов, а также для верхней и нижней N сумм.
+  summary: Указывает, является ли фильтр для элементов верхнего и нижнего N, верхнего и нижнего N-процентов или суммы N верхнего или нижнего.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#threshold:member
   package: ExcelScript!
   fullName: threshold
-  summary: Пороговое значение "N" элементов, процентов или SUM, фильтруемое для условия фильтра Top/Bottom.
+  summary: Пороговое число элементов , процентов или сумм, которые необходимо отфильтровать для состояния верхнего или нижнего фильтра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: Верхняя граница диапазона `Between` условия фильтра.
+  summary: Верхний предел диапазона для состояния `between` фильтра.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#value:member
   package: ExcelScript!
   fullName: value
-  summary: Имя выбранного "значения" в поле, по которому будет осуществляться фильтрация.
+  summary: Имя выбранного "значения" в поле для фильтрации.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -106,9 +106,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 3c35fae98f6ae6e897b205b57d818601ad71a0cc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2f788cd8ae30fd40cb31cdb383b7929a79c40ca4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416710"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606212"
