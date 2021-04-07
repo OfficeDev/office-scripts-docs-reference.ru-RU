@@ -3,7 +3,7 @@ name: ExcelScript.ShapeFill
 uid: ExcelScript!ExcelScript.ShapeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeFill
-summary: Представляет форматирование заливки объекта Shape.
+summary: Представляет форматирование заполнения объекта формы.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
   package: ExcelScript!
   fullName: getForegroundColor()
-  summary: Представляет цвет переднего плана заливки фигуры в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного HTML-цвета (например, "Апельсин")
+  summary: Представляет цвет переднего плана заполнения фигуры в формате HTML-цвета, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: Задает процент прозрачности заливки в виде значения от 0,0 (непрозрачный) до 1,0 (Clear). Возвращает значение null, если тип фигуры не поддерживает прозрачность или заливка фигуры имеет несогласованную прозрачность, например при использовании градиентной заливки.
+  summary: Указывает процент прозрачности заполнения как значение от 0.0 (непрозрачная) до 1.0 (clear). Возвращается, если тип формы не поддерживает прозрачность или заполнение фигуры имеет несогласованную прозрачность, например с типом `null` заполнения градиента.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Возвращает тип заливки фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Шапефиллтипе.
+  summary: Возвращает тип заливки фигуры. Подробные `ExcelScript.ShapeFillType` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
   package: ExcelScript!
   fullName: setForegroundColor(foregroundColor)
-  summary: Представляет цвет переднего плана заливки фигуры в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного HTML-цвета (например, "Апельсин")
+  summary: Представляет цвет переднего плана заполнения фигуры в формате HTML-цвета, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -90,7 +90,7 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: Строка, представляющая цвет заливки в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+      description: Строка, которая представляет цвет заполнения в формате HTML-цвета, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
       type: string
     return:
       type: void
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: Задает процент прозрачности заливки в виде значения от 0,0 (непрозрачный) до 1,0 (Clear). Возвращает значение null, если тип фигуры не поддерживает прозрачность или заливка фигуры имеет несогласованную прозрачность, например при использовании градиентной заливки.
+  summary: Указывает процент прозрачности заполнения как значение от 0.0 (непрозрачная) до 1.0 (clear). Возвращается, если тип формы не поддерживает прозрачность или заполнение фигуры имеет несогласованную прозрачность, например с типом `null` заполнения градиента.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,9 +113,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 48b38d153693b4ffc41e670286c67f362dd83c89
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5c00db0f8c8884c051c570938f1141d2c08bbd94
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420659"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607391"

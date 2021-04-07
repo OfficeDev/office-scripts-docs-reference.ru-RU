@@ -39,13 +39,13 @@ methods:
               ): Chart;
     parameters:
     - id: type
-      description: Представляет тип диаграммы. Для получения дополнительных сведений см. Ексцелскрипт. ChartType.
+      description: Представляет тип диаграммы. Подробные `ExcelScript.ChartType` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
     - id: sourceData
-      description: Объект Range, соответствующий исходным данным.
+      description: Объект, `Range` соответствующий исходным данным.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Для получения дополнительных сведений см. Ексцелскрипт. Чартсериесби.
+      description: Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Подробные `ExcelScript.ChartSeriesBy` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
@@ -54,7 +54,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addComment:member(1)
   package: ExcelScript!
   fullName: addComment(cellAddress, content, contentType)
-  summary: Создает новое примечание с указанным содержимым в определенной ячейке. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.
+  summary: Создает новое примечание с указанным содержимым в определенной ячейке. Ошибка `InvalidArgument` будет выброшена, если предоставленный диапазон превышает одну ячейку.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -67,13 +67,13 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: Ячейка, к которой добавляется комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.
+      description: Ячейка, в которую добавляется комментарий. Это может быть `Range` объект или строка. Если это строка, она должна содержать полный адрес, включая имя листа. Ошибка `InvalidArgument` будет выброшена, если предоставленный диапазон превышает одну ячейку.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: Содержимое комментария. Это может быть объект String или Комментричконтент. Строки используются для обычного текста. Объекты Комментричконтент позволяют использовать другие функции комментариев, например упоминания.
+      description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательный параметр. Тип контента, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.
+      description: Необязательно. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)
   package: ExcelScript!
   fullName: addGeometricShape(geometricShapeType)
-  summary: Добавляет геометрическую фигуру на лист. Возвращает объект Shape, представляющий новую фигуру.
+  summary: Добавляет геометрическую фигуру на лист. Возвращает `Shape` объект, который представляет новую фигуру.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -90,7 +90,7 @@ methods:
     content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
     parameters:
     - id: geometricShapeType
-      description: Представляет тип геометрической фигуры. Для получения дополнительных сведений см. Ексцелскрипт. Жеометрикшапетипе.
+      description: Представляет тип геометрической фигуры. Подробные `ExcelScript.GeometricShapeType` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addGroup:member(1)
   package: ExcelScript!
   fullName: addGroup(values)
-  summary: Группирует подмножество фигур на листе этой коллекции. Возвращает объект Shape, представляющий новую группу фигур.
+  summary: Группирует подмножество фигур на листе этой коллекции. Возвращает `Shape` объект, который представляет новую группу фигур.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -107,7 +107,7 @@ methods:
     content: 'addGroup(values: Array<string | Shape>): Shape;'
     parameters:
     - id: values
-      description: Массив ИДЕНТИФИКАТОРов фигуры или объектов Shape.
+      description: Массив ID или объектов фигуры.
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.Shape:interface" />&gt;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -124,7 +124,7 @@ methods:
     content: 'addHorizontalPageBreak(pageBreakRange: Range | string): PageBreak;'
     parameters:
     - id: pageBreakRange
-      description: Диапазон, непосредственно после добавления разрыва страницы.
+      description: Диапазон сразу после перерыва страницы, который необходимо добавить.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
@@ -133,7 +133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addImage:member(1)
   package: ExcelScript!
   fullName: addImage(base64ImageString)
-  summary: Создает изображение из строки в кодировке base64 и добавляет его на лист. Возвращает объект Shape, представляющий новое изображение.
+  summary: Создает изображение из строки в кодировке base64 и добавляет его на лист. Возвращает `Shape` объект, который представляет новое изображение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -141,7 +141,7 @@ methods:
     content: 'addImage(base64ImageString: string): Shape;'
     parameters:
     - id: base64ImageString
-      description: Строка в кодировке Base64, представляющая изображение в формате JPEG или PNG.
+      description: Строка с кодом base64, представляющая изображение в формате JPEG или PNG.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addLine:member(1)
   package: ExcelScript!
   fullName: addLine(startLeft, startTop, endLeft, endTop, connectorType)
-  summary: Добавляет линию на лист. Возвращает объект Shape, представляющий новую линию.
+  summary: Добавляет линию на лист. Возвращает `Shape` объект, который представляет новую строку.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -165,19 +165,19 @@ methods:
               ): Shape;
     parameters:
     - id: startLeft
-      description: Расстояние от начала линии до левого края листа (в пунктах).
+      description: Расстояние в точках от начала строки до левой стороны таблицы.
       type: number
     - id: startTop
-      description: Расстояние (в пунктах) от начала линии до верхней границы листа.
+      description: Расстояние в точках от начала строки до верхней части таблицы.
       type: number
     - id: endLeft
-      description: Расстояние в пунктах от конца строки до левого края листа.
+      description: Расстояние в точках от конца строки до левой части таблицы.
       type: number
     - id: endTop
-      description: Расстояние в пунктах от конца линии до верхней границы листа.
+      description: Расстояние в точках от конца строки до верхней части таблицы.
       type: number
     - id: connectorType
-      description: Представляет тип соединителя. Для получения дополнительных сведений см. Ексцелскрипт. Коннектортипе.
+      description: Представляет тип соединитетеля. Подробные `ExcelScript.ConnectorType` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательный параметр. Комментарий, связанный с именованным элементом.
+      description: Необязательно. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательный параметр. Комментарий, связанный с именованным элементом.
+      description: Необязательно. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: Добавьте сводную таблицу на основе указанных исходных данных и вставьте ее в верхнюю левую ячейку конечного диапазона.
+  summary: Добавьте pivotTable на основе указанных исходных данных и вставьте его в верхней левой ячейке диапазона назначения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,13 +255,13 @@ methods:
               ): PivotTable;
     parameters:
     - id: name
-      description: Имя новой сводной таблицы.
+      description: Имя нового pivotTable.
       type: string
     - id: source
-      description: Исходные данные для новой сводной таблицы, может быть диапазоном (или строковым адресом, включая имя листа) или таблицей.
+      description: Исходными данными для нового pivotTable могут быть диапазон (или адрес строки, включая имя таблицы) или таблица.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
-      description: Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы (диапазон на листе, на котором будет помещен итоговый отчет).
+      description: Ячейка в верхнем левом углу диапазона назначения отчетов PivotTable (диапазон на таблице, где будет размещен итоговой отчет).
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
@@ -283,13 +283,13 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: Источник данных, на котором будет основан новый срез. Это может быть объект PivotTable, объект Table или строка. Когда объект сводной таблицы передается, источником данных является источник объекта сводной таблицы. Когда передается объект Table, источником данных является объект Table. Когда строка передается, она интерпретируется как имя/идентификатор сводной таблицы или таблицы.
+      description: Источник данных, на основе который будет основан новый срез. Это может быть `PivotTable` объект, `Table` объект или строка. Когда объект PivotTable передается, источником данных является `PivotTable` источник объекта. Когда объект `Table` передается, источником данных является `Table` объект. Когда строка передается, она интерпретируется как имя или ID pivotTable или таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: Поле в источнике данных, по которому выполняется фильтрация. Это может быть объект PivotField, объект TableColumn, идентификатор PivotField или идентификатор и имя TableColumn.
+      description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательный параметр. Лист, в котором будет создан новый срез. Это может быть объект листа или имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.
+      description: Необязательно. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -298,7 +298,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addTable:member(1)
   package: ExcelScript!
   fullName: addTable(address, hasHeaders)
-  summary: Создание таблицы. Объект или исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если добавить таблицу не удается (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.
+  summary: Создает таблицу. Объект или исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если добавить таблицу не удается (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -306,10 +306,10 @@ methods:
     content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
     parameters:
     - id: address
-      description: Объект Range, строковый адрес или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.
+      description: Объект `Range` или адрес строки или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.
+      description: Значение boolean, которое указывает, есть ли импортируемые данные, метки столбцов. Если источник не содержит заглавные `false`<!-- -->), Excel автоматически создает загон и перемещает данные вниз на одну строку.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)
   package: ExcelScript!
   fullName: addTextBox(text)
-  summary: Добавляет текстовое поле на лист с указанным текстом в качестве содержимого. Возвращает объект Shape, представляющий новое текстовое поле.
+  summary: Добавляет текстовое поле на лист с указанным текстом в качестве содержимого. Возвращает `Shape` объект, который представляет новое текстовое поле.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -326,7 +326,7 @@ methods:
     content: 'addTextBox(text?: string): Shape;'
     parameters:
     - id: text
-      description: Представляет текст, который будет отображаться в созданном текстовом поле.
+      description: Представляет текст, который будет показан в созданном текстовом окне.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -343,7 +343,7 @@ methods:
     content: 'addVerticalPageBreak(pageBreakRange: Range | string): PageBreak;'
     parameters:
     - id: pageBreakRange
-      description: Диапазон, непосредственно после добавления разрыва страницы.
+      description: Диапазон сразу после перерыва страницы, который необходимо добавить.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
@@ -352,7 +352,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: addWorksheetCustomProperty(key, value)
-  summary: Добавляет новое настраиваемое свойство, которое сопоставляется с предоставленным ключом. При этом существующие настраиваемые свойства перезаписываются с помощью этого раздела.
+  summary: Добавляет новое настраиваемую свойство, которое сопополяет с предоставленным ключом. Это переоценка существующих пользовательских свойств с помощью этого ключа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,7 +364,7 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр. Ключ имеет ограничение в 255 символов (большие значения приведут к возникновению ошибки "InvalidArgument").
+      description: Ключ, определяемый объектом настраиваемой свойства. Это нечувствительно. Клавиша ограничена 255 символами (более крупные значения вызывают ошибку, `InvalidArgument` которая будет выброшена.)
       type: string
     - id: value
       description: Значение этого настраиваемого свойства.
@@ -384,7 +384,7 @@ methods:
     content: 'calculate(markAllDirty: boolean): void;'
     parameters:
     - id: markAllDirty
-      description: Значение true, чтобы пометить все как "грязный".
+      description: Правда, чтобы пометить все как грязные.
       type: boolean
     return:
       type: void
@@ -393,7 +393,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#copy:member(1)
   package: ExcelScript!
   fullName: copy(positionType, relativeTo)
-  summary: Копирует лист и размещает его в указанной позиции.
+  summary: Копирует таблицу и помещает ее в указанное положение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -405,10 +405,10 @@ methods:
               ): Worksheet;
     parameters:
     - id: positionType
-      description: Расположение в книге, в которое будет помещен созданный лист. Значение по умолчанию — "None", которое вставляет лист в начало листа.
+      description: Расположение в книге для размещения недавно созданного таблицы. По умолчанию значение "Нет", которое вставляет таблицу в начале таблицы.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
-      description: Существующий лист, который определяет положение вновь созданного листа. Это необходимо, только если `positionType` это "до" или "после".
+      description: Существующий таблица, определяющая положение вновь созданного таблицы. Это необходимо только в том `positionType` случае, если это "До" или "После".
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -417,7 +417,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Удаляет лист из книги. Обратите внимание, что если для отображения листа задано значение "Верихидден", операция удаления завершится с `InvalidOperation` исключением. Прежде чем удалять его, необходимо сначала изменить его видимость на скрытую или видимую.
+  summary: Удаляет лист из книги. Обратите внимание, что если видимость таблицы установлена на "VeryHidden", операция удаления будет сбой с `InvalidOperation` исключением. Перед удалением сначала необходимо изменить его видимость на скрытую или видимую.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -430,7 +430,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: Находит все вхождения определенной строки на основе указанных условий и возвращает их в виде объекта RangeAreas, состоящего из одного или нескольких прямоугольных диапазонов.
+  summary: Находит все вхождения данной строки на основе указанных критериев и возвращает их как объект, состоящий из одного или `RangeAreas` нескольких прямоугольных диапазонов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -441,7 +441,7 @@ methods:
       description: Строка для поиска.
       type: string
     - id: criteria
-      description: Дополнительные условия поиска, в том числе поиск соответствия требованиям к ячейкам целиком или с учетом регистра.
+      description: Дополнительные критерии поиска, включая, должен ли поиск соответствовать всей ячейке или быть чувствительным к делу.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -450,7 +450,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: Представляет объект AutoFilter листа.
+  summary: Представляет объект `AutoFilter` таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -463,7 +463,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Получает объект диапазона, содержащий одну ячейку, по номеру строки и столбца. Ячейка может находиться вне границ родительского диапазона, пока она остается в сетке листа.
+  summary: Получает `Range` объект, содержащий одну ячейку на основе номеров строки и столбцов. Ячейка может находиться за пределами родительского диапазона, если она находится в сетке таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -483,7 +483,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: Возвращает диаграмму по ее имени. Если одно и то же имя принадлежит нескольким диаграммам, будет возвращена первая из них. Если диаграмма не существует, то эта функция возвратит объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Возвращает диаграмму по ее имени. Если одно и то же имя принадлежит нескольким диаграммам, будет возвращена первая из них. Если диаграммы не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -500,7 +500,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCharts:member(1)
   package: ExcelScript!
   fullName: getCharts()
-  summary: Возвращает коллекцию диаграмм, которые являются частью листа.
+  summary: Возвращает коллекцию диаграмм, которые являются частью таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -521,7 +521,7 @@ methods:
     content: 'getComment(commentId: string): Comment;'
     parameters:
     - id: commentId
-      description: Идентификатор комментария.
+      description: Идентификатор для комментария.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -538,7 +538,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: Ячейка, в которой находится комментарий. Это может быть объект Range или строка. Если это строка, она должна содержать полный адрес, включая имя листа. `InvalidArgument`Если указанный диапазон превышает одну ячейку, возникает ошибка.
+      description: Ячейка, в которой находится комментарий. Это может быть `Range` объект или строка. Если это строка, она должна содержать полный адрес, включая имя листа. Ошибка `InvalidArgument` будет выброшена, если предоставленный диапазон превышает одну ячейку.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -577,7 +577,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)
   package: ExcelScript!
   fullName: getCustomProperties()
-  summary: Возвращает коллекцию настраиваемых свойств на уровне листа.
+  summary: Получает коллекцию пользовательских свойств на уровне таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -590,7 +590,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
   package: ExcelScript!
   fullName: getEnableCalculation()
-  summary: Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.
+  summary: Определяет, следует ли в Excel пересчитать таблицу при необходимости. True, если Excel пересчитает таблицу при необходимости. False, если Excel не пересчитает лист.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -603,7 +603,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)
   package: ExcelScript!
   fullName: getFreezePanes()
-  summary: Получает объект, который можно использовать для работы с замороженными областями на листе.
+  summary: Получает объект, который можно использовать для управления замороженными стемнами на таблице.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -655,7 +655,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Получает `NamedItem` объект, используя его имя. Если объект не существует, функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает объект `NamedItem` с его именем. Если объекта не существует, эта функция возвращает объект с его `isNullObject` свойством, `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -663,7 +663,7 @@ methods:
     content: 'getNamedItem(name: string): NamedItem | undefined;'
     parameters:
     - id: name
-      description: Имя NamedItem.
+      description: Nameitem.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
@@ -685,7 +685,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Получает лист, следующий по отношению к элементу. Если следующие листы не подписаны, этот метод возвращает объект со `isNullObject` свойством, для свойства которого задано значение `true`<!-- -->.
+  summary: Получает таблицу, которая следует за этим. Если после этого нет таблиц, этот метод возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -693,7 +693,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -702,7 +702,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)
   package: ExcelScript!
   fullName: getPageLayout()
-  summary: Получает объект PageLayout листа.
+  summary: Получает `PageLayout` объект таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -715,7 +715,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Получает сводную таблицу по имени. Если сводная таблица не существует, возвращает пустой объект.
+  summary: Получает сводную таблицу по имени. Если pivotTable не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -758,7 +758,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: Получает лист, который предшествует этому. Если нет предыдущих листов, этот метод возвратит значение NULL обжет.
+  summary: Получает таблицу, предшествующего этому. Если предыдущих таблиц нет, этот метод возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -766,7 +766,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный параметр. Если задано значение true, учитываются только видимые листы, пропуская все скрытые.
+      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -775,7 +775,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getProtection:member(1)
   package: ExcelScript!
   fullName: getProtection()
-  summary: Возвращает объект защиты листа.
+  summary: Возвращает объект защиты листа для листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -788,7 +788,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
   package: ExcelScript!
   fullName: getRange(address)
-  summary: Получает объект Range, представляющий отдельный прямоугольный блок ячеек, заданный по адресу или имени.
+  summary: Получает `Range` объект, представляющий один прямоугольный блок ячеек, указанный адресом или именем.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -796,7 +796,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: 'Необязательный параметр. Строка, представляющая адрес или имя диапазона. Например, "a1: B2". Если аргумент не указан, возвращается весь диапазон листа.'
+      description: Необязательно. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -805,7 +805,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: Получает объект диапазона, начинающегося с определенных строки и столбца и занимающего определенное количество строк и столбцов.
+  summary: Получает объект, начиная с определенного индекса строки и индекса столбцов, и охватывает определенное количество `Range` строк и столбцов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -819,16 +819,16 @@ methods:
               ): Range;
     parameters:
     - id: startRow
-      description: Строка начала (с нулевым индексированием).
+      description: Начните строку (с нулевой индекса).
       type: number
     - id: startColumn
-      description: Столбец "начало" (с нулевым индексом).
+      description: Столбец Начните (с нулевой индекса).
       type: number
     - id: rowCount
-      description: Количество строк, включаемых в диапазон.
+      description: Количество строк, которые необходимо включить в диапазон.
       type: number
     - id: columnCount
-      description: Число столбцов, включаемых в диапазон.
+      description: Количество столбцов, которые необходимо включить в диапазон.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -837,7 +837,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges(address)
-  summary: Получает объект RangeAreas, представляющий один или несколько блоков прямоугольных диапазонов, указанных по адресу или имени.
+  summary: Получает объект, представляющий один или несколько блоков прямоугольных диапазонов, указанных `RangeAreas` по адресу или имени.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: 'Необязательный параметр. Строка, содержащая разделенные запятыми адреса или имена отдельных диапазонов. Например, "a1: B2, A5: B5". Если этот параметр не указан, возвращается объект Ранжеареа для всего листа.'
+      description: Необязательно. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -854,7 +854,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getShape:member(1)
   package: ExcelScript!
   fullName: getShape(key)
-  summary: Получает фигуру по имени или идентификатору.
+  summary: Получает фигуру с ее именем или ИД.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -862,7 +862,7 @@ methods:
     content: 'getShape(key: string): Shape;'
     parameters:
     - id: key
-      description: Имя или Идентификатор извлекаемой фигуры.
+      description: Имя или ID фигуры, которая должна быть извлечена.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -884,7 +884,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getShowGridlines:member(1)
   package: ExcelScript!
   fullName: getShowGridlines()
-  summary: Указывает, видимы ли линии сетки для пользователя.
+  summary: Указывает, видны ли линии сетки пользователю.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -897,7 +897,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getShowHeadings:member(1)
   package: ExcelScript!
   fullName: getShowHeadings()
-  summary: Указывает, видимы ли заголовки для пользователя.
+  summary: Указывает, видны ли заголовки пользователю.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -910,7 +910,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Получает срез, используя его имя или идентификатор. Если срез не существует, эта функция возвращает объект, `isNullObject` свойству которого присвоено значение `true`<!-- -->.
+  summary: Получает срез с его именем или ИД. Если среза не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -918,7 +918,7 @@ methods:
     content: 'getSlicer(key: string): Slicer | undefined;'
     parameters:
     - id: key
-      description: Имя или идентификатор среза, который требуется получить.
+      description: Имя или ID среза, который будет извлечен.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" /> | undefined
@@ -927,7 +927,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicers:member(1)
   package: ExcelScript!
   fullName: getSlicers()
-  summary: Возвращает коллекцию срезов, которые входят в состав рабочего листа.
+  summary: Возвращает коллекцию срезов, которые являются частью таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -953,7 +953,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
   package: ExcelScript!
   fullName: getStandardWidth()
-  summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
+  summary: Указывает стандартную (по умолчанию) ширину всех столбцов в таблице. Одна единица ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина символа 0 (ноль).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -966,7 +966,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.
+  summary: Цвет таблицы вкладок. При ирисовке цвета вкладки, если таблица невидима, значение будет `null`<!-- -->. Если таблица видна, но цвет вкладки установлен на авто, будет возвращена пустая строка. В противном случае свойство будет задано цвету в форме \# RRGGBB (например, "FFA500"). При настройке цвета используйте пустую строку, чтобы установить цвет "авто" или реальный цвет в противном случае.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -979,7 +979,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Получает таблицу по имени или идентификатору. Если таблица не существует, то эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Получает таблицу по имени или ИД. Если таблицы не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Если настраиваемое свойство не существует, эта функция возвращает объект, `isNullObject` для свойства которого задано значение `true`<!-- -->.
+  summary: Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Если настраиваемой свойства не существует, эта функция возвращает объект с его `isNullObject` свойством, заданной для `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1063,7 +1063,7 @@ methods:
               ): WorksheetCustomProperty | undefined;
     parameters:
     - id: key
-      description: Ключ, который определяет объект настраиваемого свойства. Он не учитывает регистр.
+      description: Ключ, определяемый объектом настраиваемой свойства. Это нечувствительно.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined
@@ -1124,13 +1124,13 @@ methods:
               ): number;
     parameters:
     - id: text
-      description: Строка для поиска.
+      description: Строка, чтобы найти.
       type: string
     - id: replacement
-      description: Строка для замены оригинала на.
+      description: Строка, которая заменяет исходную строку.
       type: string
     - id: criteria
-      description: Дополнительные условия замены.
+      description: Дополнительные критерии замены.
       type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
     return:
       type: number
@@ -1139,7 +1139,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
   package: ExcelScript!
   fullName: setEnableCalculation(enableCalculation)
-  summary: Определяет, должен ли Excel пересчитывать лист при необходимости. Имеет значение true, если Excel пересчитывает лист при необходимости. False, если Excel не пересчитывает лист.
+  summary: Определяет, следует ли в Excel пересчитать таблицу при необходимости. True, если Excel пересчитает таблицу при необходимости. False, если Excel не пересчитает лист.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1190,7 +1190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)
   package: ExcelScript!
   fullName: setShowGridlines(showGridlines)
-  summary: Указывает, видимы ли линии сетки для пользователя.
+  summary: Указывает, видны ли линии сетки пользователю.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1207,7 +1207,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setShowHeadings:member(1)
   package: ExcelScript!
   fullName: setShowHeadings(showHeadings)
-  summary: Указывает, видимы ли заголовки для пользователя.
+  summary: Указывает, видны ли заголовки пользователю.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1224,7 +1224,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
   package: ExcelScript!
   fullName: setStandardWidth(standardWidth)
-  summary: Задает стандартную (по умолчанию) ширину всех столбцов в рабочем листе. Одна единица измерения ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина знака 0 (ноль).
+  summary: Указывает стандартную (по умолчанию) ширину всех столбцов в таблице. Одна единица ширины столбца равна ширине одного символа в стиле Normal. Для пропорциональных шрифтов используется ширина символа 0 (ноль).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1241,7 +1241,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: Цвет вкладки листа. При получении цвета вкладки, если лист невидим, значение будет равно null. Если лист является видимым, но для цвета вкладки задано значение Авто, возвращается пустая строка. В противном случае для свойства задается цвет, в виде " \# 123456" при задании цвета используйте пустую строку для установки "Авто" или "реальный цвет" в противном случае.
+  summary: Цвет таблицы вкладок. При ирисовке цвета вкладки, если таблица невидима, значение будет `null`<!-- -->. Если таблица видна, но цвет вкладки установлен на авто, будет возвращена пустая строка. В противном случае свойство будет задано цвету в форме \# RRGGBB (например, "FFA500"). При настройке цвета используйте пустую строку, чтобы установить цвет "авто" или реальный цвет в противном случае.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1275,7 +1275,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Отображает группы строк или столбцов по их уровням структуры. Группирование и суммирование списка данных на листе. `rowLevels`Параметры и `columnLevels` определяют, сколько уровней структуры будет отображаться. Допустимый диапазон аргументов находится в пределах от 0 до 8. Значение 0 не изменяет текущее отображение. Значение, превышающее текущее число уровней, отображает все уровни.
+  summary: Показывает группы строк или столбцов по уровням контура. Обрисовка групп и обобщение списка данных в листе. Параметры и параметры указывают, сколько уровней `rowLevels` `columnLevels` контура будет отображаться. Допустимый диапазон аргументов — от 0 до 8. Значение 0 не меняет текущий дисплей. Значение, большее, чем текущее число уровней, отображает все уровни.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1283,18 +1283,18 @@ methods:
     content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
     parameters:
     - id: rowLevels
-      description: Количество отображаемых уровней строк в структуре.
+      description: Количество уровней строк в контуре для отображения.
       type: number
     - id: columnLevels
-      description: Число уровней столбцов структуры для отображения.
+      description: Количество уровней столбцов для отображения контура.
       type: number
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 76406c9a40bad3c850c09cdb198eabdad4a2b1c3
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 821018eb13c005fc3de20385737536175e4686e4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554064"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607286"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Указывает, является ли шрифт полужирным.
+  summary: Представляет смелый статус шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Код цвета HTML цвета текста (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML в текстовом цвете (например, \# FF0000 представляет красный).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Задает курсивное начертание шрифта.
+  summary: Указывает italic состояние шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Имя шрифта (например, "Calibri"). Длина имени не должна превышать 31 символ.
+  summary: Имя шрифта (например, "Калибри"). Длина имени не должна быть больше 31 символа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Указывает состояние зачеркивания шрифта. Значение null указывает, что для всего диапазона не применяется единый параметр зачеркивания.
+  summary: Указывает состояние забастовки шрифта. Значение указывает, что весь диапазон не имеет единого параметра `null` strikethrough.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)
   package: ExcelScript!
   fullName: getSubscript()
-  summary: Задает состояние подстрочного шрифта. Возвращает значение true, если все шрифты диапазона являются подстрочными. Возвращает значение false, если все шрифты диапазона являются надстрочными или обычными (ни надстрочный, ни подстрочный знак). Возвращает значение NULL в противном случае.
+  summary: Указывает состояние подписки шрифта. `true`Возвращается, если все шрифты диапазона являются подскриптумом. Возвращается, если все шрифты диапазона являются суперскриптумом или нормальным `false` (ни суперскриптом, ни подскриптом). Возвращает `null` обратное.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)
   package: ExcelScript!
   fullName: getSuperscript()
-  summary: Задает состояние шрифта в виде надстрочного знака. Возвращает значение true, если все шрифты диапазона являются надстрочными. Возвращает значение false, если все шрифты диапазона являются подстрочными или обычными (ни надстрочный, ни подстрочный знак). Возвращает значение NULL в противном случае.
+  summary: Указывает состояние суперсписка шрифта. `true`Возвращается, если все шрифты диапазона являются суперскриптумом. Возвращается, если все шрифты диапазона являются подскриптумом или нормальным `false` (ни суперскриптом, ни подписком). Возвращает `null` обратное.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Задает двойное значение, которое осветляет или затемняет цвет шрифта диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шрифта Тинтандшаде.
+  summary: Указывает двойную, которая осветляет или темнеет цвет шрифта диапазона. Значение между -1 (самое темное) и 1 (самое яркое), с 0 для исходного цвета. Значение `null` указывает, что весь диапазон не имеет единого параметра `tintAndShade` шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Тип подчеркивания, применяемый для шрифта. Для получения дополнительных сведений см. Ексцелскрипт. Ранжеундерлинестиле.
+  summary: Тип подчеркивания, применяемый для шрифта. Подробные `ExcelScript.RangeUnderlineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Указывает, является ли шрифт полужирным.
+  summary: Представляет смелый статус шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Код цвета HTML цвета текста (например, \# FF0000 представляет собой красный цвет).
+  summary: Представление цветового кода HTML в текстовом цвете (например, \# FF0000 представляет красный).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Задает курсивное начертание шрифта.
+  summary: Указывает italic состояние шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Имя шрифта (например, "Calibri"). Длина имени не должна превышать 31 символ.
+  summary: Имя шрифта (например, "Калибри"). Длина имени не должна быть больше 31 символа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Указывает состояние зачеркивания шрифта. Значение null указывает, что для всего диапазона не применяется единый параметр зачеркивания.
+  summary: Указывает состояние забастовки шрифта. Значение указывает, что весь диапазон не имеет единого параметра `null` strikethrough.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)
   package: ExcelScript!
   fullName: setSubscript(subscript)
-  summary: Задает состояние подстрочного шрифта. Возвращает значение true, если все шрифты диапазона являются подстрочными. Возвращает значение false, если все шрифты диапазона являются надстрочными или обычными (ни надстрочный, ни подстрочный знак). Возвращает значение NULL в противном случае.
+  summary: Указывает состояние подписки шрифта. `true`Возвращается, если все шрифты диапазона являются подскриптумом. Возвращается, если все шрифты диапазона являются суперскриптумом или нормальным `false` (ни суперскриптом, ни подскриптом). Возвращает `null` обратное.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)
   package: ExcelScript!
   fullName: setSuperscript(superscript)
-  summary: Задает состояние шрифта в виде надстрочного знака. Возвращает значение true, если все шрифты диапазона являются надстрочными. Возвращает значение false, если все шрифты диапазона являются подстрочными или обычными (ни надстрочный, ни подстрочный знак). Возвращает значение NULL в противном случае.
+  summary: Указывает состояние суперсписка шрифта. `true`Возвращается, если все шрифты диапазона являются суперскриптумом. Возвращается, если все шрифты диапазона являются подскриптумом или нормальным `false` (ни суперскриптом, ни подписком). Возвращает `null` обратное.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Задает двойное значение, которое осветляет или затемняет цвет шрифта диапазона, значение находится в диапазоне от-1 (самая темная) и 1 (самое яркое) с 0 для исходного цвета. Значение NULL указывает на то, что весь диапазон не имеет параметра универсального шрифта Тинтандшаде.
+  summary: Указывает двойную, которая осветляет или темнеет цвет шрифта диапазона. Значение между -1 (самое темное) и 1 (самое яркое), с 0 для исходного цвета. Значение `null` указывает, что весь диапазон не имеет единого параметра `tintAndShade` шрифта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -296,7 +296,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Тип подчеркивания, применяемый для шрифта. Для получения дополнительных сведений см. Ексцелскрипт. Ранжеундерлинестиле.
+  summary: Тип подчеркивания, применяемый для шрифта. Подробные `ExcelScript.RangeUnderlineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,9 +310,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 781829703544f58260b7c42b429af492f6d99846
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7f26828af5dee973e65c3e48089a1c2ce1b2ebd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416619"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607433"

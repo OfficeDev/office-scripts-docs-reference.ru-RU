@@ -3,7 +3,7 @@ name: ExcelScript.Subtotals
 uid: ExcelScript!ExcelScript.Subtotals:interface
 package: ExcelScript!
 fullName: ExcelScript.Subtotals
-summary: Промежуточные итоги для поля сводной таблицы.
+summary: Subtotals for the Pivot Field.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#automatic:member
   package: ExcelScript!
   fullName: automatic
-  summary: Если для свойства Automatic установлено значение true, все остальные значения будут игнорироваться при настройке промежуточных итогов.
+  summary: Если `Automatic` установлено, что `true`<!-- -->затем все остальные значения будут игнорироваться при настройке `Subtotals`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#countNumbers:member
   package: ExcelScript!
   fullName: countNumbers
-  summary: каунтнумберс
+  summary: CountNumbers
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#standardDeviation:member
   package: ExcelScript!
   fullName: standardDeviation
-  summary: стандарддевиатион
+  summary: StandardDeviation
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,7 +109,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#standardDeviationP:member
   package: ExcelScript!
   fullName: standardDeviationP
-  summary: стандарддевиатионп
+  summary: StandardDeviationP
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#variance:member
   package: ExcelScript!
   fullName: variance
-  summary: Различ
+  summary: Отклонение
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#varianceP:member
   package: ExcelScript!
   fullName: varianceP
-  summary: варианцеп
+  summary: VarianceP
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,9 +154,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: c75a609fc36f6b00544f4d9437c9c149bcb64848
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c34f149472ce8c2cde19ce23c5f3cb1e84c2a28a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419329"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607335"

@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: 'Указывает, должно ли соответствие быть полным или частичным. Полное совпадение соответствует всему содержимому ячейки. Частичное совпадение соответствует подстроке в пределах содержимого ячейки (например, `cat` частичное совпадение `caterpillar` и `scatter`<!-- -->). Значение по умолчанию: false (частичное).'
+  summary: Указывает, должен ли совпадение быть полным или частичным. Полное совпадение совпадает со всем содержимым ячейки. Частичное совпадение совпадает с подстройки в содержимом ячейки (например, частично совпадает и `cat` `caterpillar``scatter`<!-- -->). По умолчанию `false` (частично).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
   package: ExcelScript!
   fullName: matchCase
-  summary: 'Указывает, учитывается ли регистр в выражении. Значение по умолчанию: false (без учета регистра).'
+  summary: Указывает, является ли совпадение чувствительным к делу. По умолчанию `false` (нечувствительный к делу).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
   package: ExcelScript!
   fullName: searchDirection
-  summary: 'Указывает направление поиска. Значение по умолчанию: вперед. Обратитесь к разделу Ексцелскрипт. Сеарчдиректион.'
+  summary: 'Указывает направление поиска. Значение по умолчанию: вперед. См. `ExcelScript.SearchDirection`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
 metadata:
-  ms.openlocfilehash: d89bc86f6e879e686895008e09b83f2c36780279
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4a5a44cf76a45689d6c5f0c38356a3700f188890
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420673"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607405"

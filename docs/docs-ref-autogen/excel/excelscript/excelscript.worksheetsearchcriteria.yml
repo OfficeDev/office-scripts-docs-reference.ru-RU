@@ -3,7 +3,7 @@ name: ExcelScript.WorksheetSearchCriteria
 uid: ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetSearchCriteria
-summary: Представляет критерии поиска листа, которые необходимо использовать.
+summary: Представляет используемые критерии поиска таблицы.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: 'Указывает, должно ли соответствие быть полным или частичным. Полное совпадение соответствует всему содержимому ячейки. Частичное совпадение соответствует подстроке в пределах содержимого ячейки (например, `cat` частичное совпадение `caterpillar` и `scatter`<!-- -->). Значение по умолчанию: false (частичное).'
+  summary: Указывает, должен ли совпадение быть полным или частичным. Полное совпадение совпадает со всем содержимым ячейки. Частичное совпадение совпадает с подстройки в содержимом ячейки (например, частично совпадает и `cat` `caterpillar``scatter`<!-- -->). По умолчанию `false` (частично).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
   package: ExcelScript!
   fullName: matchCase
-  summary: 'Указывает, учитывается ли регистр в выражении. Значение по умолчанию: false (без учета регистра).'
+  summary: Указывает, является ли совпадение чувствительным к делу. По умолчанию `false` (нечувствительный к делу).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 56003b6e099d7730216a7a57188780d6b966aeea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 393ff5521f0413ca8b03d8013cf6735fa24696bc
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415129"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607265"

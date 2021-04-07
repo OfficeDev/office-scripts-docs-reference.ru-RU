@@ -3,7 +3,7 @@ name: ExcelScript.ShapeLineFormat
 uid: ExcelScript!ExcelScript.ShapeLineFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineFormat
-summary: Представляет форматирование линий для объекта Shape. Для изображений и геометрических фигур форматирование линий представляет границу фигуры.
+summary: Представляет форматирование строки для объекта формы. Для изображений и геометрических фигур форматирование строки представляет границу фигуры.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Представляет цвет линии в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  summary: Представляет цвет строки в формате HTML-цветов, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)
   package: ExcelScript!
   fullName: getDashStyle()
-  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  summary: Представляет тип линии фигуры. `null`Возвращается, когда строка не видна или существуют несовместимые стили тире. Подробные `ExcelScript.ShapeLineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  summary: Представляет тип линии фигуры. `null`Возвращается, когда строка не видна или существуют несовместимые стили. Подробные `ExcelScript.ShapeLineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). Возвращает значение null, если в фигуре используются несогласованные параметры прозрачности.
+  summary: Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). `null`Возвращается, когда форма имеет несогласованную прозрачность.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Указывает, отображается ли форматирование линии элемента фигуры. Возвращает значение null, если в фигуре используются несогласованные параметры видимости.
+  summary: Указывает, отображается ли форматирование строки элемента фигуры. `null`Возвращается, когда фигура имеет несогласованную видимость.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: Представляет толщину линии (в пунктах). Возвращает значение null, если линия является невидимой или используются линии с несогласованной толщиной.
+  summary: Представляет толщину линии (в пунктах). `null`Возвращается, когда строка не видна или имеются несовместимые весы строки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Представляет цвет линии в формате HTML для формы \# RRGGBB (например, "FFA500") или в виде именованного цвета HTML (например, "Апельсин").
+  summary: Представляет цвет строки в формате HTML-цветов, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)
   package: ExcelScript!
   fullName: setDashStyle(dashStyle)
-  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные типы штриха. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  summary: Представляет тип линии фигуры. `null`Возвращается, когда строка не видна или существуют несовместимые стили тире. Подробные `ExcelScript.ShapeLineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Представляет тип линии фигуры. Возвращает значение null, если линия является невидимой или используются несогласованные стили. Для получения дополнительных сведений см. Ексцелскрипт. Шапелинестиле.
+  summary: Представляет тип линии фигуры. `null`Возвращается, когда строка не видна или существуют несовместимые стили. Подробные `ExcelScript.ShapeLineStyle` сведения см. в материале.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). Возвращает значение null, если в фигуре используются несогласованные параметры прозрачности.
+  summary: Представляет степень прозрачности указанной линии как значение от 0,0 (непрозрачная) до 1,0 (полностью прозрачная). `null`Возвращается, когда форма имеет несогласованную прозрачность.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Указывает, отображается ли форматирование линии элемента фигуры. Возвращает значение null, если в фигуре используются несогласованные параметры видимости.
+  summary: Указывает, отображается ли форматирование строки элемента фигуры. `null`Возвращается, когда фигура имеет несогласованную видимость.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: Представляет толщину линии (в пунктах). Возвращает значение null, если линия является невидимой или используются линии с несогласованной толщиной.
+  summary: Представляет толщину линии (в пунктах). `null`Возвращается, когда строка не видна или имеются несовместимые весы строки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: bad1df9e2238ca401ec4f8ca3d3e30198db219d8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2ea61848a51fe162e684d79d1b1439a1ffdf5356
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420631"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607370"

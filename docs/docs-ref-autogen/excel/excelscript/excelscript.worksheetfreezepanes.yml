@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
   package: ExcelScript!
   fullName: freezeAt(frozenRange)
-  summary: Задает закрепленные ячейки в представлении активного листа. Указанный диапазон соответствует ячейкам, которые будут заморожены в верхней и левой области.
+  summary: Задает закрепленные ячейки в представлении активного листа. Предоставленный диапазон соответствует ячейкам, которые будут заморожены в верхней и левой области.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'freezeAt(frozenRange: Range | string): void;'
     parameters:
     - id: frozenRange
-      description: Диапазон, представляющий ячейки, которые должны быть заморожены, или значение NULL для удаления всех замороженных областей.
+      description: Диапазон, который представляет замороженные ячейки или удаляет `null` все замороженные области.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
   package: ExcelScript!
   fullName: freezeColumns(count)
-  summary: Закрепление первого столбца или столбцов листа на месте.
+  summary: Замораживание первого столбца или столбцов таблицы на месте.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: Необязательное количество столбцов для закрепления или ноль для освобождения всех столбцов
+      description: Необязательный номер столбцов для замораживания или нулевой разморозки всех столбцов
       type: number
     return:
       type: void
@@ -47,7 +47,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
   package: ExcelScript!
   fullName: freezeRows(count)
-  summary: Закрепите верхнюю строку или строки листа на месте.
+  summary: Замораживание верхней строки или строки таблицы на месте.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: Необязательное количество строк для закрепления или ноль для разморозки всех строк
+      description: Необязательное количество строк для замораживания или нулевое, чтобы разморозить все строки
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Получает диапазон, описывающий закрепленные ячейки в представлении активного листа. Замороженный диапазон соответствует ячейкам, замороженным в верхней и левой области. Если замороженная область отсутствует, то эта функция возвращает объект, свойству которого присвоено `isNullObject` значение `true`<!-- -->.
+  summary: Получает диапазон, описывающий закрепленные ячейки в представлении активного листа. Замороженный диапазон соответствует ячейкам, замороженным в области верхнего и левого большинства. Если нет замороженной области, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e5fbac54802cd580aee48a168245ddc3f4bb59a
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 3ee4e99a62a7adfff3ab84a75424673c3cb9f59c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554050"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607279"
