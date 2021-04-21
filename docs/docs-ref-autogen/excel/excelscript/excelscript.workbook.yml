@@ -108,7 +108,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательно. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательный атрибут. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -153,7 +153,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательно. Комментарий, связанный с именем элемента.
+      description: Необязательный атрибут. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -181,7 +181,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательно. Комментарий, связанный с именем элемента.
+      description: Необязательный атрибут. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Уникальное имя для нового стиля PivotTable. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
@@ -278,7 +278,7 @@ methods:
       description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательно. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательный атрибут. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -298,7 +298,7 @@ methods:
       description: Уникальное имя для нового стиля среза. Бросит `InvalidArgument` исключение, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
@@ -338,7 +338,7 @@ methods:
       description: Уникальное имя для нового стиля таблицы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
@@ -358,7 +358,7 @@ methods:
       description: Уникальное имя для нового стиля временной шкалы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
@@ -689,7 +689,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательный атрибут. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -719,7 +719,7 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательный атрибут. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -1277,9 +1277,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3c47f41ccf1eb1ea70d0c867a592e5182d4f2277
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: ef603379751d75e1a554bd8a4bb630adf4e66c6a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605222"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914609"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Представляет формат границы области диаграммы, включающий цвет, lineStyle и толщину.
+  summary: Представляет пограничный формат области диаграммы, включаю в себя цвет, литейный стиль и вес.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getColorScheme:member(1)
   package: ExcelScript!
   fullName: getColorScheme()
-  summary: Задает цветовую схему диаграммы.
+  summary: Указывает цветовую схему диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Представляет атрибуты шрифта (имя, размер шрифта, цвет и т. д.) для текущего объекта.
+  summary: Представляет атрибуты шрифта (имя шрифта, размер шрифта, цвет и т. д.) для текущего объекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getRoundedCorners:member(1)
   package: ExcelScript!
   fullName: getRoundedCorners()
-  summary: Указывает, содержит ли область диаграммы скругленные углы.
+  summary: Указывает, имеет ли область диаграммы закругленные углы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#setColorScheme:member(1)
   package: ExcelScript!
   fullName: setColorScheme(colorScheme)
-  summary: Задает цветовую схему диаграммы.
+  summary: Указывает цветовую схему диаграммы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#setRoundedCorners:member(1)
   package: ExcelScript!
   fullName: setRoundedCorners(roundedCorners)
-  summary: Указывает, содержит ли область диаграммы скругленные углы.
+  summary: Указывает, имеет ли область диаграммы закругленные углы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,9 +109,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6894650c0e66dcdef8411a1877aa0f7eb2d96c06
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eac32298d707fb25dc7fb8584ba83799ac279453
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417109"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913268"

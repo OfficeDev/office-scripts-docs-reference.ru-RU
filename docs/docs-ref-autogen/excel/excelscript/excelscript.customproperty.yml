@@ -3,7 +3,7 @@ name: ExcelScript.CustomProperty
 uid: ExcelScript!ExcelScript.CustomProperty:interface
 package: ExcelScript!
 fullName: ExcelScript.CustomProperty
-summary: Представляет настраиваемое свойство.
+summary: Представляет настраиваемую свойство.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: Ключ настраиваемого свойства. Ключ ограничен 255 символами за пределом Excel в Интернете (крупные ключи автоматически обрезаются до 255 символов на других платформах).
+  summary: Ключ настраиваемого свойства. Клавиша ограничена 255 символами за пределами Excel в Интернете (более крупные клавиши автоматически обрезаются до 255 символов на других платформах).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
+  summary: Значение настраиваемого свойства. Значение ограничивается 255 символами за пределами Excel в Интернете (более крупные значения автоматически обрезаются до 255 символов на других платформах).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Значение настраиваемого свойства. Значение не может превышать 255 символов вне Excel в Интернете (большие значения автоматически обрезаются до 255 символов на других платформах).
+  summary: Значение настраиваемого свойства. Значение ограничивается 255 символами за пределами Excel в Интернете (более крупные значения автоматически обрезаются до 255 символов на других платформах).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c1a2f549413c7c33b66a60e232fb80bfeb60658a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415605"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914494"

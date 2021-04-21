@@ -19,19 +19,19 @@ fields:
 - name: formats
   uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
   package: ExcelScript!
-  summary: Удаляет все параметры форматирования для диапазона.
+  summary: Очищает все форматирование для диапазона.
 - name: hyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
   package: ExcelScript!
-  summary: Удаляет все гиперссылки, но оставляет все содержимое и форматирование без изменений.
+  summary: Очищает все гиперссылки, но оставляет все содержимое и форматирование нетронутыми.
 - name: removeHyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
   package: ExcelScript!
-  summary: Удаляет гиперссылки и форматирование ячейки, но оставляет содержимое, условные форматы и проверку данных без изменений.
+  summary: Удаляет гиперссылки и форматирование для ячейки, но оставляет содержимое, условные форматы и проверку данных нетронутыми.
 metadata:
-  ms.openlocfilehash: ac23bc453e0ec416e0d2f4bde26e0f69a7270ccf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415983"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913910"

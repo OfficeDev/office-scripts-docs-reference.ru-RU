@@ -3,7 +3,7 @@ name: ExcelScript.ShapeZOrder
 uid: ExcelScript!ExcelScript.ShapeZOrder:enum
 package: ExcelScript!
 fullName: ExcelScript.ShapeZOrder
-summary: Задает расположение фигуры по оси z для перемещения фигуры относительно других фигур.
+summary: Указывает, где в Z-порядке фигура должна быть перемещена относительно других фигур.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,9 +25,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: 2c4b4cff96696d70fbbceae8a434fe0ab1166dcc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 94a3d882aaecfe2405b162a967f6babb45388f79
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420526"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913379"

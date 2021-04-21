@@ -3,7 +3,7 @@ name: ExcelScript.DatetimeFormatInfo
 uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
-summary: Определяет формат отображения чисел, соответствующий культуре. Это основано на текущих параметрах языковых параметров системы.
+summary: Определяет культурный формат отображения номеров. Это основано на текущих параметрах культуры системы.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
   package: ExcelScript!
   fullName: getDateSeparator()
-  summary: Получает строку, используемую в качестве разделителя даты. Это основано на текущих параметрах системы.
+  summary: Получает строку, используемую в качестве сепаратора дат. Это основано на текущих параметрах системы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
   package: ExcelScript!
   fullName: getLongTimePattern()
-  summary: Получает строку формата для длинного значения времени. Это основано на текущих параметрах системы.
+  summary: Получает строку формата в течение длительного времени. Это основано на текущих параметрах системы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
   package: ExcelScript!
   fullName: getTimeSeparator()
-  summary: Получает строку, используемую в качестве разделителя времени. Это основано на текущих параметрах системы.
+  summary: Получает строку, используемую в качестве сепаратора времени. Это основано на текущих параметрах системы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -75,9 +75,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: a0ef9ff40580d0e29330b73b2f05c382fd73f777
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415437"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914473"

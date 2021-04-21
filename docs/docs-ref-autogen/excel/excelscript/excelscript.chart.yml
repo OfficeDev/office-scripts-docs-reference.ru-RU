@@ -34,10 +34,10 @@ methods:
     content: 'addChartSeries(name?: string, index?: number): ChartSeries;'
     parameters:
     - id: name
-      description: Необязательно. Имя серии.
+      description: Необязательный атрибут. Имя серии.
       type: string
     - id: index
-      description: Необязательно. Значение индекса для добавляемой серии. Используется нулевой индекс.
+      description: Необязательный атрибут. Значение индекса для добавляемой серии. Используется нулевой индекс.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartSeries:interface" />
@@ -182,7 +182,7 @@ methods:
       description: Необязательный. Нужная высота создаваемого изображения.
       type: number
     - id: fittingMode
-      description: Необязательно. Метод, используемый для масштабирования диаграммы до указанного измерения (если заданы как высота, так и ширина).
+      description: Необязательный атрибут. Метод, используемый для масштабирования диаграммы до указанного измерения (если заданы как высота, так и ширина).
       type: <xref uid="ExcelScript!ExcelScript.ImageFittingMode:enum" />
     return:
       type: string
@@ -674,9 +674,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 622f7bc0491202803f57b7644468ee49e2787d89
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 5f6d556e22ff92709cebcee0980ebbd48b50e6d7
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606957"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913275"

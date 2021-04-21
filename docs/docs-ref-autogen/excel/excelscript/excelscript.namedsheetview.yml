@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: ExcelScript.NamedSheetView
+uid: ExcelScript!ExcelScript.NamedSheetView:interface
+package: ExcelScript!
+fullName: ExcelScript.NamedSheetView
+summary: Представляет имя листа. Представление листа сохраняет правила сортировки и фильтрации для определенного листа. Каждое представление листа (даже временное представление листа) имеет уникальное имя с объемом листа, используемое для доступа к представлению.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: activate()
+  uid: ExcelScript!ExcelScript.NamedSheetView#activate:member(1)
+  package: ExcelScript!
+  fullName: activate()
+  summary: Активирует это представление листа. Это эквивалентно использованию "Switch To" в пользовательском интерфейсе Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.NamedSheetView#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Удаляет представление листа из листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate(name)
+  summary: Создает копию этого представления листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(name?: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: Имя дубликатного представления листа. Если не будет предоставлено имя, он будет создан.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.NamedSheetView#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Получает или задает имя представления листа. Временное имя представления листа — пустая строка (""). Переименование представления с помощью свойства имени приводит к сэкономлению представления листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Получает или задает имя представления листа. Временное имя представления листа — пустая строка (""). Переименование представления с помощью свойства имени приводит к сэкономлению представления листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1db6ac57a9824763fd56594c4d8e94abb9ad9211
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913686"
