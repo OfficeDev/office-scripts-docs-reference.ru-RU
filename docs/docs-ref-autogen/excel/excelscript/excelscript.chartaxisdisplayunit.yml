@@ -11,51 +11,51 @@ fields:
 - name: billions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member
   package: ExcelScript!
-  summary: При этом будет задана ось единиц.
+  summary: Это позволит установить ось в единицах миллиардов.
 - name: custom
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member
   package: ExcelScript!
-  summary: При этом будет задана ось в единицах настраиваемого значения.
+  summary: Это позволит установить ось в единицах настраиваемого значения.
 - name: hundredMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member
   package: ExcelScript!
-  summary: При этом будет задана ось из сотен миллионов миллионов.
+  summary: Это позволит установить ось в единицах сотен миллионов.
 - name: hundreds
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member
   package: ExcelScript!
-  summary: При этом будет задана ось сотен.
+  summary: Это позволит установить ось в единицах из сотен.
 - name: hundredThousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member
   package: ExcelScript!
-  summary: При этом будет задана ось из сотен тысяч.
+  summary: Это позволит установить ось в единицах из сотен тысяч.
 - name: millions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member
   package: ExcelScript!
-  summary: При этом будет задана ось миллионов.
+  summary: Это позволит установить ось в единицах миллионов.
 - name: none
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member
   package: ExcelScript!
-  summary: Параметр по умолчанию. Это приведет к сбросу отображения единицы измерения на ось и невидимой метке единицы.
+  summary: Параметр по умолчанию. Это сбросит блок отображения в ось и застановит метку блока невидимой.
 - name: tenMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member
   package: ExcelScript!
-  summary: При этом будет задана ось из десятков миллионов.
+  summary: Это позволит установить ось в единицах в десятки миллионов.
 - name: tenThousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member
   package: ExcelScript!
-  summary: При этом будет задана ось из десятков тысяч.
+  summary: Это позволит установить ось в единицах в десятки тысяч.
 - name: thousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member
   package: ExcelScript!
-  summary: При этом будет задана ось в тысячах.
+  summary: Это позволит установить ось в единицах тысяч.
 - name: trillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member
   package: ExcelScript!
-  summary: При этом будет задана ось в единицах триллионс.
+  summary: Это позволит установить ось в единицах триллионов.
 metadata:
-  ms.openlocfilehash: ce73f608460520b055d6e811a4691fc16517df76
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 08e418c2cfe3a94b7d9293a1c4fa239af1044b0e
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417088"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913261"

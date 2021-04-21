@@ -11,19 +11,19 @@ fields:
 - name: context
   uid: ExcelScript!ExcelScript.ReadingOrder.context:member
   package: ExcelScript!
-  summary: Порядок чтения определяется языком первого введенного знака. Если сначала вводится символ языка с письмом справа налево, порядок чтения справа налево. Если сначала вводится символ языка с письмом слева направо, порядок чтения слева направо.
+  summary: Порядок чтения определяется языком введенного первого символа. Если сначала вошел символ языка справа налево, справа налево — порядок чтения. Если сначала вошел символ языка слева направо, порядок чтения слева направо.
 - name: leftToRight
   uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
   package: ExcelScript!
-  summary: Порядок чтения слева направо
+  summary: Слева направо порядок чтения
 - name: rightToLeft
   uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
   package: ExcelScript!
-  summary: Порядок чтения справа налево
+  summary: Справа налево порядок чтения
 metadata:
-  ms.openlocfilehash: 391ae0ad91303544e478b18cf04e6fcfbee4cec3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 364d838721992c4fb52488de1652cc03750a8eaa
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416563"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914232"

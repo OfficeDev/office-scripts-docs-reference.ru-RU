@@ -11,19 +11,19 @@ fields:
 - name: compact
   uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
   package: ExcelScript!
-  summary: Горизонтально сжатая форма с подписями из следующего поля в том же столбце.
+  summary: Горизонтально сжатая форма с метами из следующего поля в том же столбце.
 - name: outline
   uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
   package: ExcelScript!
-  summary: Внутренние поля элементы находятся в той же строке, что и внешние поля, в нижней части всегда есть элементы и промежуточные итоги.
+  summary: Элементы внутренних полей находятся в одной строке с элементами внешних полей, а подтаталы всегда находятся в нижней части.
 - name: tabular
   uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
   package: ExcelScript!
-  summary: Элементы Fields всегда расположены на новой строке относительно элементов внешних полей.
+  summary: Элементы внутренних полей всегда находятся на новой строке относительно элементов внешних полей.
 metadata:
-  ms.openlocfilehash: 2c698c1cea3b728857723dbdd00474d8723b9569
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 00e8342cd618db35b9f2f4a49bf8ab454be15c58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415178"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913542"

@@ -28,7 +28,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект (например, для комментариев с упоминаниями).
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательно. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательный атрибут. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -258,9 +258,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3417d9212461ffdd5ba0314f41491575206a4e65
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 64ea728bdbff9c555710e4a04342ad81a879fc3c
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606780"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914515"

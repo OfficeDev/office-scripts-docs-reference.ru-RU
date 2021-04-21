@@ -37,7 +37,7 @@ methods:
       description: Указывает тип оси. Подробные `ExcelScript.ChartAxisType` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
     - id: group
-      description: Необязательно. Указывает группу осей. Подробные `ExcelScript.ChartAxisGroup` сведения см. в материале.
+      description: Необязательный атрибут. Указывает группу осей. Подробные `ExcelScript.ChartAxisGroup` сведения см. в материале.
       type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
@@ -69,9 +69,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 3e931303394e4db4ad29430321ba35ee32ca4018
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 73e2396224adde7351299c69b73758091ba00aa1
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606950"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913282"

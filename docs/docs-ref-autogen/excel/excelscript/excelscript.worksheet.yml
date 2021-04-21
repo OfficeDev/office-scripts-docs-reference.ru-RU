@@ -73,7 +73,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательно. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательный атрибут. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательно. Комментарий, связанный с именем элемента.
+      description: Необязательный атрибут. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,10 +233,27 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательно. Комментарий, связанный с именем элемента.
+      description: Необязательный атрибут. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
+      description: ''
+- name: addNamedSheetView(name)
+  uid: ExcelScript!ExcelScript.Worksheet#addNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: addNamedSheetView(name)
+  summary: Создает новое представление листа с заданным именем.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addNamedSheetView(name: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: Имя создаемого представления листа. Ошибка, если предоставленное имя уже существует, пуста или является именем, зарезервированным в таблице.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
       description: ''
 - name: addPivotTable(name, source, destination)
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
@@ -289,7 +306,7 @@ methods:
       description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательно. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательный атрибут. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -426,6 +443,32 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
+- name: enterTemporaryNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: enterTemporaryNamedSheetView()
+  summary: Создает и активирует новое временное представление листа. Временные представления удаляются при закрытии приложения, выходе из временного представления методом выхода или переходе на другое представление листа. Временное представление листа также может быть присоединено к пустой строке (""), если временное представление существует.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enterTemporaryNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: exitActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: exitActiveNamedSheetView()
+  summary: Выходит из действующего представления листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exitActiveNamedSheetView(): void;'
+    return:
+      type: void
+      description: ''
 - name: findAll(text, criteria)
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
@@ -445,6 +488,19 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getActiveNamedSheetView()
+  summary: Получает в настоящее время активное представление листа.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
       description: ''
 - name: getAutoFilter()
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
@@ -668,6 +724,36 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
       description: ''
+- name: getNamedSheetView(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetView(key)
+  summary: Получает представление листа с его именем.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetView(key: string): NamedSheetView;'
+    parameters:
+    - id: key
+      description: Чувствительное к делу имя представления листа. Если временное представление существует, используйте пустую строку ("") для получения представления временного листа.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getNamedSheetViews()
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetViews:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetViews()
+  summary: Возвращает коллекцию представлений листов, присутствующих в листе.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetViews(): NamedSheetView[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />[]
+      description: ''
 - name: getNames()
   uid: ExcelScript!ExcelScript.Worksheet#getNames:member(1)
   package: ExcelScript!
@@ -693,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательный атрибут. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -766,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательный атрибут. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -796,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: Необязательно. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
+      description: Необязательный атрибут. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -845,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: Необязательно. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
+      description: Необязательный атрибут. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1292,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 821018eb13c005fc3de20385737536175e4686e4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 0264cc15d8a8218728682ed849333c8b5222960a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607286"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914665"

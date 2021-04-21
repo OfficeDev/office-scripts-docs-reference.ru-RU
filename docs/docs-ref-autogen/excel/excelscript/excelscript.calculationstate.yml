@@ -11,7 +11,7 @@ fields:
 - name: calculating
   uid: ExcelScript!ExcelScript.CalculationState.calculating:member
   package: ExcelScript!
-  summary: Выполняется расчеты.
+  summary: Вычисления в процессе.
 - name: done
   uid: ExcelScript!ExcelScript.CalculationState.done:member
   package: ExcelScript!
@@ -19,11 +19,11 @@ fields:
 - name: pending
   uid: ExcelScript!ExcelScript.CalculationState.pending:member
   package: ExcelScript!
-  summary: Изменения, выполняемые при вычислении триггера, но пересчет еще не выполнялся.
+  summary: Были внесены изменения, которые вызывают вычисление, но перерасчет еще не выполнен.
 metadata:
-  ms.openlocfilehash: c9b0c55e213af980d82164b7fb282eaf4a34f78f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e9a1951d22a2108e21da0eb9eb873c921968ba9a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420211"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913289"
