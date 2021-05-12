@@ -108,7 +108,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательный атрибут. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательно. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -153,7 +153,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательный атрибут. Комментарий, связанный с именем элемента.
+      description: Необязательно. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -181,7 +181,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательный атрибут. Комментарий, связанный с именем элемента.
+      description: Необязательно. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Уникальное имя для нового стиля PivotTable. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
@@ -278,7 +278,7 @@ methods:
       description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательный атрибут. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательно. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -298,7 +298,7 @@ methods:
       description: Уникальное имя для нового стиля среза. Бросит `InvalidArgument` исключение, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
@@ -338,7 +338,7 @@ methods:
       description: Уникальное имя для нового стиля таблицы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
@@ -358,7 +358,7 @@ methods:
       description: Уникальное имя для нового стиля временной шкалы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный атрибут. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательно. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
@@ -392,7 +392,7 @@ methods:
     content: 'getActiveCell(): Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
 - name: getActiveChart()
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
@@ -689,7 +689,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный атрибут. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -719,7 +719,7 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный атрибут. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательно. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -736,7 +736,7 @@ methods:
     content: 'getName(): string;'
     return:
       type: string
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script logs the name of the workbook without the \".xlsx\" extension.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the workbook's name.\n  let name = workbook.getName();\n\n  // Remove the file extension.\n  name = name.substring(0, name.lastIndexOf(\".xlsx\"));\n\n  // Display the name in the console.\n  console.log(name);\n}\n```"
 - name: getNamedItem(name)
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
@@ -1127,7 +1127,7 @@ methods:
     content: 'getWorksheets(): Worksheet[];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />[]
-      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```javascript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
 - name: refreshAllDataConnections()
   uid: ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)
   package: ExcelScript!
@@ -1277,9 +1277,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef603379751d75e1a554bd8a4bb630adf4e66c6a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 5ba82a40b51a08dec4e026d99bcd69f4783fe59d
+  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914609"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52330371"
