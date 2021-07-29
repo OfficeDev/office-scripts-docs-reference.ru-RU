@@ -18,7 +18,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+    content: 'addConditionalFormat (тип: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
       description: Тип добавляемого условного формата. Подробные `ExcelScript.ConditionalFormatType` сведения см. в материале.
@@ -26,7 +26,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
-- name: autoFill(destinationRange, autoFillType)
+- name: autoFill (destinationRange, autoFillType)
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
@@ -35,11 +35,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      autoFill(
-                  destinationRange?: Range | string,
-                  autoFillType?: AutoFillType
-              ): void;
+    content: 'autoFill (destinationRange?: Range | string, autoFillType?: AutoFillType ): void;'
     parameters:
     - id: destinationRange
       description: Диапазон назначения для AutoFill. Если диапазон назначения `null`<!-- -->, данные заполняются на основе окружающих ячеек (это поведение при двойном нажатии ручки заполнения диапазона пользовательского интерфейса).
@@ -63,7 +59,7 @@ methods:
     return:
       type: void
       description: ''
-- name: clear(applyTo)
+- name: clear (applyTo)
   uid: ExcelScript!ExcelScript.Range#clear:member(1)
   package: ExcelScript!
   fullName: clear(applyTo)
@@ -72,7 +68,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'clear(applyTo?: ClearApplyTo): void;'
+    content: 'clear (applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
       description: Необязательный параметр. Определяет тип действия очистки. Подробные `ExcelScript.ClearApplyTo` сведения см. в материале.
@@ -89,7 +85,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'clearAllConditionalFormats(): void;'
+    content: 'clearAllConditionalFormats(): недействительным;'
     return:
       type: void
       description: ''
@@ -102,11 +98,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'convertDataTypeToText(): void;'
+    content: 'convertDataTypeToText(): недействительным;'
     return:
       type: void
       description: ''
-- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+- name: copyFrom (sourceRange, copyType, skipBlanks, transpose)
   uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
@@ -115,13 +111,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      copyFrom(
-                  sourceRange: Range | RangeAreas | string,
-                  copyType?: RangeCopyType,
-                  skipBlanks?: boolean,
-                  transpose?: boolean
-              ): void;
+    content: 'copyFrom(sourceRange: Range | RangeAreas | строка, copyType?: RangeCopyType, skipBlanks?: boolean, transpose?: boolean ): void;'
     parameters:
     - id: sourceRange
       description: Диапазон источника или `RangeAreas` копирование. Если источник имеет несколько диапазонов, их форму необходимо создать путем удаления полных рядов или столбцов `RangeAreas` из прямоугольного диапазона.
@@ -138,7 +128,7 @@ methods:
     return:
       type: void
       description: ''
-- name: delete(shift)
+- name: delete (shift)
   uid: ExcelScript!ExcelScript.Range#delete:member(1)
   package: ExcelScript!
   fullName: delete(shift)
@@ -147,7 +137,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'delete(shift: DeleteShiftDirection): void;'
+    content: 'delete (shift: DeleteShiftDirection): void;'
     parameters:
     - id: shift
       description: Определяет способ сдвига ячеек. Подробные `ExcelScript.DeleteShiftDirection` сведения см. в материале.
@@ -155,7 +145,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This sample creates a sample range, then deletes\n * \"A1\" using different DeleteShiftDirection values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add sample data to better visualize the delete changes.\n  const currentSheet = workbook.getActiveWorksheet();\n  currentSheet.getRange(\"A1:D4\").setValues([\n    [1,2,3,4],\n    [5,6,7,8],\n    [9,10,11,12],\n    [13,14,15,16]]);\n\n  // Delete A1 and shift the cells from the right to fill the space.\n  // The value being deleted is 1.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.left);\n\n  // Delete A1 and shift the cells from the bottom to fill the space.\n  // The value being deleted is 2.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.up);\n\n  // Log the sample range. The values should be:\n  /*\n    5, 3, 4, \"\",\n    9, 6, 7, 8,\n    13, 10, 11, 12,\n    \"\", 14, 15, 16\n  */\n  console.log(currentSheet.getRange(\"A1:D4\").getValues()); \n}\n```"
-- name: find(text, criteria)
+- name: find (text, criteria)
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
@@ -184,11 +174,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'flashFill(): void;'
+    content: 'flashFill(): недействительным;'
     return:
       type: void
       description: ''
-- name: getAbsoluteResizedRange(numRows, numColumns)
+- name: getAbsoluteResizedRange (numRows, numColumns)
   uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
   package: ExcelScript!
   fullName: getAbsoluteResizedRange(numRows, numColumns)
@@ -197,7 +187,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
+    content: 'getAbsoluteResizedRange (numRows: number, numColumns: number): Range;'
     parameters:
     - id: numRows
       description: Количество строк нового размера диапазона.
@@ -230,11 +220,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getAddressLocal(): string;'
+    content: 'getAddressLocal(): строка;'
     return:
       type: string
       description: ''
-- name: getBoundingRect(anotherRange)
+- name: getBoundingRect (anotherRange)
   uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
   package: ExcelScript!
   fullName: getBoundingRect(anotherRange)
@@ -243,7 +233,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getBoundingRect(anotherRange: Range | string): Range;'
+    content: 'getBoundingRect (anotherRange: Range | string): Range;'
     parameters:
     - id: anotherRange
       description: Имя объекта диапазона, адреса или диапазона.
@@ -251,7 +241,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getCell(row, column)
+- name: getCell (строка, столбец)
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
@@ -260,7 +250,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getCell(row: number, column: number): Range;'
+    content: 'getCell (строка: номер, столбец: номер): Диапазон;'
     parameters:
     - id: row
       description: Номер строки ячейки, которую требуется извлечь. Используется нулевой индекс.
@@ -280,7 +270,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getCellCount(): number;'
+    content: 'getCellCount(): номер;'
     return:
       type: number
       description: ''
@@ -293,7 +283,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumn(column: number): Range;'
+    content: 'getColumn (столбец: номер): Диапазон;'
     parameters:
     - id: column
       description: Номер столбца диапазона, который требуется извлечь. Используется нулевой индекс.
@@ -310,7 +300,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnCount(): number;'
+    content: 'getColumnCount(): номер;'
     return:
       type: number
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
@@ -336,11 +326,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnIndex(): number;'
+    content: 'getColumnIndex(): номер;'
     return:
       type: number
       description: ''
-- name: getColumnsAfter(count)
+- name: getColumnsAfter (count)
   uid: ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)
   package: ExcelScript!
   fullName: getColumnsAfter(count)
@@ -349,7 +339,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnsAfter(count?: number): Range;'
+    content: 'getColumnsAfter (count?: number): Range;'
     parameters:
     - id: count
       description: Необязательный. Количество столбцов, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.
@@ -357,7 +347,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getColumnsBefore(count)
+- name: getColumnsBefore (count)
   uid: ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)
   package: ExcelScript!
   fullName: getColumnsBefore(count)
@@ -366,7 +356,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnsBefore(count?: number): Range;'
+    content: 'getColumnsBefore (count?: number): Range;'
     parameters:
     - id: count
       description: Необязательный. Количество столбцов, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.
@@ -374,7 +364,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getConditionalFormat(id)
+- name: getConditionalFormat (id)
   uid: ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)
   package: ExcelScript!
   fullName: getConditionalFormat(id)
@@ -383,7 +373,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getConditionalFormat(id: string): ConditionalFormat;'
+    content: 'getConditionalFormat (id: string): ConditionalFormat;'
     parameters:
     - id: id
       description: ID условного формата.
@@ -456,7 +446,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getExtendedRange(direction, activeCell)
+- name: getExtendedRange (направление, activeCell)
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
@@ -465,11 +455,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getExtendedRange(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getExtendedRange (направление: KeyboardDirection, activeCell?: Range | string ): Range;'
     parameters:
     - id: direction
       description: Направление от активной ячейки.
@@ -593,7 +579,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHeight(): number;'
+    content: 'getHeight(): номер;'
     return:
       type: number
       description: ''
@@ -636,7 +622,7 @@ methods:
     return:
       type: string
       description: ''
-- name: getIntersection(anotherRange)
+- name: getIntersection (anotherRange)
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
@@ -645,7 +631,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIntersection(anotherRange: Range | string): Range;'
+    content: 'getIntersection (anotherRange: Range | string): Range;'
     parameters:
     - id: anotherRange
       description: Объект диапазона или адрес диапазона, который будет использоваться для определения пересечения диапазонов.
@@ -683,7 +669,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLastCell:member(1)
   package: ExcelScript!
   fullName: getLastCell()
-  summary: Возвращает последнюю ячейку в диапазоне. Например, последняя ячейка диапазона B2:D5 — D5.
+  summary: Возвращает последнюю ячейку в диапазоне. Например, последняя ячейка диапазона B2:D5 — D5.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -696,7 +682,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLastColumn:member(1)
   package: ExcelScript!
   fullName: getLastColumn()
-  summary: Возвращает последний столбец в диапазоне. Например, последний столбец диапазона B2:D5 — D2:D5.
+  summary: Возвращает последний столбец в диапазоне. Например, последний столбец диапазона B2:D5 — D2:D5.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -709,12 +695,12 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLastRow:member(1)
   package: ExcelScript!
   fullName: getLastRow()
-  summary: Возвращает последнюю строку в диапазоне. Например, последняя строка в диапазоне "B2:D5" — "B5:D5".
+  summary: Возвращает последнюю строку в диапазоне. Например, последняя строка в диапазоне "B2:D5" — "B5:D5".
   remarks: ''
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLastRow(): Range;'
+    content: 'getLastRow(): Диапазон;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -727,7 +713,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLeft(): number;'
+    content: 'getLeft(): номер;'
     return:
       type: number
       description: ''
@@ -792,7 +778,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+    content: 'getNumberFormatCategories(): NumberFormatCategory[];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
       description: ''
@@ -831,7 +817,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormats(): string[][];'
+    content: 'getNumberFormats(): string[]];'
     return:
       type: string[][]
       description: ''
@@ -848,7 +834,7 @@ methods:
     return:
       type: string[][]
       description: ''
-- name: getOffsetRange(rowOffset, columnOffset)
+- name: getOffsetRange (rowOffset, columnOffset)
   uid: ExcelScript!ExcelScript.Range#getOffsetRange:member(1)
   package: ExcelScript!
   fullName: getOffsetRange(rowOffset, columnOffset)
@@ -857,7 +843,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
+    content: 'getOffsetRange (rowOffset: number, columnOffset: number): Range;'
     parameters:
     - id: rowOffset
       description: Количество строк (положительное, отрицательное или нулевое), на которое необходимо сместить диапазон. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.
@@ -877,7 +863,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
+    content: 'getPivotTables (fullyContained?: boolean): PivotTable[];'
     parameters:
     - id: fullyContained
       description: Если `true`<!-- -->возвращает только pivotTables, которые полностью содержатся в пределах диапазона. Значение по умолчанию `false`<!-- -->.
@@ -898,7 +884,7 @@ methods:
     return:
       type: string
       description: ''
-- name: getRangeEdge(direction, activeCell)
+- name: getRangeEdge (направление, activeCell)
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
@@ -907,11 +893,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getRangeEdge(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getRangeEdge (направление: KeyboardDirection, activeCell?: Range | строка ): Range;'
     parameters:
     - id: direction
       description: Направление от активной ячейки.
@@ -922,7 +904,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getResizedRange(deltaRows, deltaColumns)
+- name: getResizedRange (deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
   fullName: getResizedRange(deltaRows, deltaColumns)
@@ -931,7 +913,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+    content: 'getResizedRange (deltaRows: number, deltaColumns: number): Range;'
     parameters:
     - id: deltaRows
       description: Количество строк, добавляемых в правый нижний угол, относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.
@@ -942,7 +924,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n  );\n}\n```"
-- name: getRow(row)
+- name: getRow (row)
   uid: ExcelScript!ExcelScript.Range#getRow:member(1)
   package: ExcelScript!
   fullName: getRow(row)
@@ -951,7 +933,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRow(row: number): Range;'
+    content: 'getRow (строка: номер): Диапазон;'
     parameters:
     - id: row
       description: Номер строки диапазона, который требуется извлечь. Используется нулевой индекс.
@@ -968,7 +950,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowCount(): number;'
+    content: 'getRowCount(): номер;'
     return:
       type: number
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
@@ -994,11 +976,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowIndex(): number;'
+    content: 'getRowIndex(): номер;'
     return:
       type: number
       description: ''
-- name: getRowsAbove(count)
+- name: getRowsAbove (count)
   uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
   package: ExcelScript!
   fullName: getRowsAbove(count)
@@ -1007,7 +989,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowsAbove(count?: number): Range;'
+    content: 'getRowsAbove (count?: number): Range;'
     parameters:
     - id: count
       description: Необязательный. Количество строк, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.
@@ -1015,7 +997,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getRowsBelow(count)
+- name: getRowsBelow (count)
   uid: ExcelScript!ExcelScript.Range#getRowsBelow:member(1)
   package: ExcelScript!
   fullName: getRowsBelow(count)
@@ -1058,7 +1040,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeSort:interface" />
       description: ''
-- name: getSpecialCells(cellType, cellValueType)
+- name: getSpecialCells (cellType, cellValueType)
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
@@ -1067,11 +1049,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getSpecialCells(
-                  cellType: SpecialCellType,
-                  cellValueType?: SpecialCellValueType
-              ): RangeAreas;
+    content: 'getSpecialCells (cellType: SpecialCellType, cellValueType?: SpecialCellValueType): RangeAreas;'
     parameters:
     - id: cellType
       description: Тип ячеек, которые необходимо включить.
@@ -1091,7 +1069,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSpillingToRange(): Range;'
+    content: 'getSpillingToRange(): Диапазон;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -1104,7 +1082,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSpillParent(): Range;'
+    content: 'getSpillParent(): Диапазон;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -1130,7 +1108,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getTables(fullyContained?: boolean): Table[];'
+    content: 'getTables (fullyContained?: boolean): Table[];'
     parameters:
     - id: fullyContained
       description: Если `true`<!-- -->возвращает только таблицы, полностью содержащиеся в пределах диапазона. Значение по умолчанию `false`<!-- -->.
@@ -1173,11 +1151,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getTop(): number;'
+    content: 'getTop(): номер;'
     return:
       type: number
       description: ''
-- name: getUsedRange(valuesOnly)
+- name: getUsedRange (valuesOnly)
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
@@ -1186,7 +1164,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    content: 'getUsedRange (valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
       description: Учитывает только ячейки со значениями.
@@ -1203,7 +1181,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): string | number | boolean;'
+    content: 'getValue(): строковая | номер | boolean;'
     return:
       type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
@@ -1216,7 +1194,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): (string | number | boolean)[][];'
+    content: 'getValues(): (строка | | boolean)[];'
     return:
       type: (string | number | boolean)[][]
       description: ''
@@ -1268,7 +1246,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getWidth(): number;'
+    content: 'getWidth(): номер;'
     return:
       type: number
       description: ''
@@ -1281,7 +1259,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getWorksheet(): Worksheet;'
+    content: 'getWorksheet(): таблица;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: ''
@@ -1294,7 +1272,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'group(groupOption: GroupOption): void;'
+    content: 'group(groupOption: GroupOption): недействительным;'
     parameters:
     - id: groupOption
       description: Указывает, как диапазон можно сгруппить по строкам или столбцам. Ошибка выброшена, если групповой параметр отличается от диапазона или свойства (например, является верным и является "ByColumns" или является true и является `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` `range.isEntireColumn` `groupOption` "ByRows").
@@ -1302,7 +1280,7 @@ methods:
     return:
       type: void
       description: ''
-- name: hideGroupDetails(groupOption)
+- name: hideGroupDetails (groupOption)
   uid: ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)
   package: ExcelScript!
   fullName: hideGroupDetails(groupOption)
@@ -1311,7 +1289,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'hideGroupDetails(groupOption: GroupOption): void;'
+    content: 'hideGroupDetails (groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
       description: Указывает, следует ли скрывать сведения о сгруппных строках или сгруппивных столбцах.
@@ -1336,7 +1314,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: merge(across)
+- name: слияние (поперек)
   uid: ExcelScript!ExcelScript.Range#merge:member(1)
   package: ExcelScript!
   fullName: merge(across)
@@ -1362,7 +1340,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'moveTo(destinationRange: Range | string): void;'
+    content: 'moveTo (destinationRange: Range | string): void;'
     parameters:
     - id: destinationRange
       description: destinationRange указывает диапазон, куда будут перемещены сведения в этом диапазоне.
@@ -1379,11 +1357,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      removeDuplicates(
-                  columns: number[],
-                  includesHeader: boolean
-              ): RemoveDuplicatesResult;
+    content: 'removeDuplicates (столбцы: number[], includesHeader: boolean ): RemoveDuplicatesResult;'
     parameters:
     - id: columns
       description: Столбцы внутри диапазона, которые могут содержать дубликаты. Необходимо у указывается по крайней мере один столбец. Используется нулевой индекс.
@@ -1394,7 +1368,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
       description: ''
-- name: replaceAll(text, replacement, criteria)
+- name: replaceAll (текст, замена, критерии)
   uid: ExcelScript!ExcelScript.Range#replaceAll:member(1)
   package: ExcelScript!
   fullName: replaceAll(text, replacement, criteria)
@@ -1403,12 +1377,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
+    content: 'replaceAll(текст: строка, замена: строка, критерии: ReplaceCriteria ): номер;'
     parameters:
     - id: text
       description: Строка, чтобы найти.
@@ -1435,7 +1404,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setColumnHidden(columnHidden)
+- name: setColumnHidden (columnHidden)
   uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
   package: ExcelScript!
   fullName: setColumnHidden(columnHidden)
@@ -1444,7 +1413,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setColumnHidden(columnHidden: boolean): void;'
+    content: 'setColumnHidden (columnHidden: boolean): void;'
     parameters:
     - id: columnHidden
       description: ''
@@ -1482,7 +1451,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
-- name: setFormulaLocal(formulaLocal)
+- name: setFormulaLocal (formulaLocal)
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
@@ -1491,7 +1460,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulaLocal(formulaLocal: string): void;'
+    content: 'setFormulaLocal (formulaLocal: string): void;'
     parameters:
     - id: formulaLocal
       description: ''
@@ -1499,7 +1468,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setFormulaR1C1(formulaR1C1)
+- name: setFormulaR1C1 (formulaR1C1)
   uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulaR1C1(formulaR1C1)
@@ -1508,7 +1477,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulaR1C1(formulaR1C1: string): void;'
+    content: 'setFormulaR1C1 (formulaR1C1: string): void;'
     parameters:
     - id: formulaR1C1
       description: ''
@@ -1525,7 +1494,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulas(formulas: string[][]): void;'
+    content: 'setFormulas(formulas: string[]]): void;'
     parameters:
     - id: formulas
       description: ''
@@ -1533,7 +1502,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setFormulasLocal(formulasLocal)
+- name: setFormulasLocal (formulasLocal)
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
@@ -1542,7 +1511,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+    content: 'setFormulasLocal (formulasLocal: string[]]): void;'
     parameters:
     - id: formulasLocal
       description: ''
@@ -1550,7 +1519,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setFormulasR1C1(formulasR1C1)
+- name: setFormulasR1C1 (formulasR1C1)
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
@@ -1559,7 +1528,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+    content: 'setFormulasR1C1 (formulasR1C1: string[]]): void;'
     parameters:
     - id: formulasR1C1
       description: ''
@@ -1567,7 +1536,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setHyperlink(hyperlink)
+- name: setHyperlink (гиперссылка)
   uid: ExcelScript!ExcelScript.Range#setHyperlink:member(1)
   package: ExcelScript!
   fullName: setHyperlink(hyperlink)
@@ -1576,7 +1545,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
+    content: 'setHyperlink (гиперссылка: RangeHyperlink): недействительна;'
     parameters:
     - id: hyperlink
       description: ''
@@ -1584,7 +1553,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
-- name: setNumberFormat(numberFormat)
+- name: setNumberFormat (numberFormat)
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
@@ -1593,7 +1562,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
+    content: 'setNumberFormat (numberFormat: string): void;'
     parameters:
     - id: numberFormat
       description: ''
@@ -1601,7 +1570,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setNumberFormatLocal(numberFormatLocal)
+- name: setNumberFormatLocal (numberFormatLocal)
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
@@ -1610,7 +1579,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
+    content: 'setNumberFormatLocal (numberFormatLocal: string): void;'
     parameters:
     - id: numberFormatLocal
       description: ''
@@ -1618,7 +1587,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setNumberFormats(numberFormats)
+- name: setNumberFormats (numberFormats)
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
   fullName: setNumberFormats(numberFormats)
@@ -1627,7 +1596,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormats(numberFormats: string[][]): void;'
+    content: 'setNumberFormats (numberFormats: string[]]): void;'
     parameters:
     - id: numberFormats
       description: ''
@@ -1635,7 +1604,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setNumberFormatsLocal(numberFormatsLocal)
+- name: setNumberFormatsLocal (numberFormatsLocal)
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
@@ -1644,7 +1613,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
+    content: 'setNumberFormatsLocal (numberFormatsLocal: string[]]): void;'
     parameters:
     - id: numberFormatsLocal
       description: ''
@@ -1669,7 +1638,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setRowHidden(rowHidden)
+- name: setRowHidden (rowHidden)
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
@@ -1678,7 +1647,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setRowHidden(rowHidden: boolean): void;'
+    content: 'setRowHidden (rowHidden: boolean): void;'
     parameters:
     - id: rowHidden
       description: ''
@@ -1695,7 +1664,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValue(value: any): void;'
+    content: 'setValue (значение: любое): недействительным;'
     parameters:
     - id: value
       description: ''
@@ -1707,12 +1676,12 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Представляет необработанные значения указанного диапазона. Возвращенные данные могут быть строкой, номером или boolean. Ячейки, содержащие ошибку, вернут строку ошибки. Если возвращенное значение начинается с плюса ("+"), минуса ("-"), или равного знака ("="), Excel интерпретирует это значение как формулу.
+  summary: Задает необработанные значения указанного диапазона. Предоставленные данные могут быть строкой, номером или boolean. Если предоставленное значение начинается с плюса ("+"), минуса ("-"), или равного знака ("="), Excel интерпретирует это значение как формулу.
   remarks: ''
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValues(values: (string | number | boolean)[][]): void;'
+    content: 'setValues(values: (string | number | boolean)[]] void;'
     parameters:
     - id: values
       description: ''
@@ -1729,11 +1698,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'showCard(): void;'
+    content: 'showCard(): недействительным;'
     return:
       type: void
       description: ''
-- name: showGroupDetails(groupOption)
+- name: showGroupDetails (groupOption)
   uid: ExcelScript!ExcelScript.Range#showGroupDetails:member(1)
   package: ExcelScript!
   fullName: showGroupDetails(groupOption)
@@ -1742,7 +1711,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'showGroupDetails(groupOption: GroupOption): void;'
+    content: 'showGroupDetails(groupOption: GroupOption): недействительным;'
     parameters:
     - id: groupOption
       description: Указывает, следует ли показывать сведения о сгруппных строках или сгруппивных столбцах.
@@ -1759,7 +1728,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'ungroup(groupOption: GroupOption): void;'
+    content: 'ungroup(groupOption: GroupOption): недействительным;'
     parameters:
     - id: groupOption
       description: Указывает, как диапазон можно разгруппировать по строкам или столбцам.
@@ -1781,9 +1750,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
+  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068287"
+  ms.lasthandoff: 07/28/2021
+  ms.locfileid: "53617915"
