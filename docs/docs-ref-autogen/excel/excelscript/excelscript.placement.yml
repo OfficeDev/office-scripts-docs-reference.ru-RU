@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.Placement
-uid: ExcelScript!ExcelScript.Placement:enum
+uid: 'ExcelScript!ExcelScript.Placement:enum'
 package: ExcelScript!
 fullName: ExcelScript.Placement
-summary: Указывает способ присоединения объекта к базовым ячейкам.
+summary: Указывает способ прикрепления объекта к его ячейкам.
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: absolute
-  uid: ExcelScript!ExcelScript.Placement.absolute:member
-  package: ExcelScript!
-  summary: Объект находится в свободном плавающем виде.
-- name: oneCell
-  uid: ExcelScript!ExcelScript.Placement.oneCell:member
-  package: ExcelScript!
-  summary: Объект перемещается и задается по размеру ячейкам.
-- name: twoCell
-  uid: ExcelScript!ExcelScript.Placement.twoCell:member
-  package: ExcelScript!
-  summary: Объект перемещается вместе с ячейками.
-metadata:
-  ms.openlocfilehash: bed1f80265c46b02b792cd5f423cc864dc1c7d76
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412050"
+  - name: absolute
+    uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
+    package: ExcelScript!
+    summary: Объект находится в свободном плавачем режиме.
+  - name: oneCell
+    uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
+    package: ExcelScript!
+    summary: Объект перемещается и размером с ячейками.
+  - name: twoCell
+    uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
+    package: ExcelScript!
+    summary: Объект перемещается с помощью ячеек.

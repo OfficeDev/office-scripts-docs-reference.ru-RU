@@ -1,87 +1,80 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotTableStyle
-uid: ExcelScript!ExcelScript.PivotTableStyle:interface
+uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotTableStyle
-summary: Представляет стиль PivotTable, который определяет элементы стиля по области PivotTable.
+summary: 'Представляет стиль PivotTable, который определяет элементы стиля по области PivotTable.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Удаляет стиль PivotTable.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate()
-  summary: Создает дубликат этого стиля PivotTable с копиями всех элементов стиля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(): PivotTableStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Получает имя стиля PivotTable.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getReadOnly()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)
-  package: ExcelScript!
-  fullName: getReadOnly()
-  summary: Указывает, является ли `PivotTableStyle` этот объект только для чтения.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReadOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Получает имя стиля PivotTable.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 2d6d006c9e198241b5ff4ebd75cc58b992ef2e43
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914281"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Удаляет стиль PivotTable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate()
+    summary: Создает дубликат этого стиля PivotTable с копиями всех элементов стиля.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(): PivotTableStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Получает имя стиля PivotTable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getReadOnly()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)'
+    package: ExcelScript!
+    fullName: getReadOnly()
+    summary: 'Указывает, является ли `PivotTableStyle` этот объект только для чтения.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Получает имя стиля PivotTable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

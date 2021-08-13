@@ -1,41 +1,34 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeFillType
-uid: ExcelScript!ExcelScript.ShapeFillType:enum
+uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFillType
-summary: Задает тип заливки фигуры.
+summary: Указывает тип заполнения формы.
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: gradient
-  uid: ExcelScript!ExcelScript.ShapeFillType.gradient:member
-  package: ExcelScript!
-  summary: Градиентная заливка.
-- name: mixed
-  uid: ExcelScript!ExcelScript.ShapeFillType.mixed:member
-  package: ExcelScript!
-  summary: Смешанная заливка.
-- name: noFill
-  uid: ExcelScript!ExcelScript.ShapeFillType.noFill:member
-  package: ExcelScript!
-  summary: Нет заливки.
-- name: pattern
-  uid: ExcelScript!ExcelScript.ShapeFillType.pattern:member
-  package: ExcelScript!
-  summary: Узорная заливка.
-- name: pictureAndTexture
-  uid: ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member
-  package: ExcelScript!
-  summary: Рисунок и Текстурная заливка.
-- name: solid
-  uid: ExcelScript!ExcelScript.ShapeFillType.solid:member
-  package: ExcelScript!
-  summary: Сплошная заливка.
-metadata:
-  ms.openlocfilehash: 45fe6ba829de5ab95a7aaa2fb1bb37750f649038
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411798"
+  - name: gradient
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+    package: ExcelScript!
+    summary: Заполнение Gradient.
+  - name: mixed
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+    package: ExcelScript!
+    summary: Смешанная заливка.
+  - name: noFill
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+    package: ExcelScript!
+    summary: Нет заполнения.
+  - name: pattern
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+    package: ExcelScript!
+    summary: Заполнение шаблона.
+  - name: pictureAndTexture
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+    package: ExcelScript!
+    summary: Заполнение изображения и текстуры.
+  - name: solid
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+    package: ExcelScript!
+    summary: Сплошное заполнение.

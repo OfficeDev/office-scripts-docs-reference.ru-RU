@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxisTitleFormat
-uid: ExcelScript!ExcelScript.ChartAxisTitleFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisTitleFormat
 summary: Представляет форматирование для названий осей диаграммы.
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: Указывает пограничный формат заголовка оси диаграммы, который включает цвет, листил и вес.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Указывает форматирование заполнения заголовок оси диаграммы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Указывает атрибуты шрифта заголовок оси диаграммы, такие как имя шрифта, размер шрифта или цвет объекта заголовок оси диаграммы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 42b8d34e3ee493766513a731bd71e1660aff9de8
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913959"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 'Указывает пограничный формат заголовка оси диаграммы, который включает цвет, листил и вес.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: Указывает форматирование заполнения заголовок оси диаграммы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Указывает атрибуты шрифта заголовок оси диаграммы, такие как имя шрифта, размер шрифта или цвет объекта заголовок оси диаграммы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

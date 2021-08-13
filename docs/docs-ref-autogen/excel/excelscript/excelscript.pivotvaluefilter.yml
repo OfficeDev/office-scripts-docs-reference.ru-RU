@@ -1,114 +1,107 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotValueFilter
-uid: ExcelScript!ExcelScript.PivotValueFilter:interface
+uid: 'ExcelScript!ExcelScript.PivotValueFilter:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotValueFilter
-summary: Настраиваемый шаблон для фильтра значений для применения к PivotField. Определяет, какие критерии необходимо установить для `condition` работы фильтра.
+summary: 'Настраиваемый шаблон для фильтра значений для применения к PivotField. Определяет, какие критерии необходимо установить для `condition` работы фильтра.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: comparator
-  uid: ExcelScript!ExcelScript.PivotValueFilter#comparator:member
-  package: ExcelScript!
-  fullName: comparator
-  summary: Компаратор — это статическое значение, с которым сравниваются другие значения. Тип сравнения определяется условием. Например, если сопоставитель "50" и условие "greaterThan", все значения элементов, не более 50, будут удалены фильтром.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'comparator?: number;'
-    return:
-      type: number
-- name: condition
-  uid: ExcelScript!ExcelScript.PivotValueFilter#condition:member
-  package: ExcelScript!
-  fullName: condition
-  summary: Указывает условие фильтра, которое определяет необходимые критерии фильтрации.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'condition: ValueFilterCondition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ValueFilterCondition:enum" />
-- name: exclusive
-  uid: ExcelScript!ExcelScript.PivotValueFilter#exclusive:member
-  package: ExcelScript!
-  fullName: exclusive
-  summary: Если `true`<!-- -->фильтр исключает *элементы,* которые соответствуют критериям. По умолчанию `false` (фильтр для включения элементов, которые соответствуют критериям).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'exclusive?: boolean;'
-    return:
-      type: boolean
-- name: lowerBound
-  uid: ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member
-  package: ExcelScript!
-  fullName: lowerBound
-  summary: Нижний предел диапазона для состояния `between` фильтра.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'lowerBound?: number;'
-    return:
-      type: number
-- name: selectionType
-  uid: ExcelScript!ExcelScript.PivotValueFilter#selectionType:member
-  package: ExcelScript!
-  fullName: selectionType
-  summary: Указывает, является ли фильтр для элементов верхнего и нижнего N, верхнего и нижнего N-процентов или суммы N верхнего или нижнего.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'selectionType?: TopBottomSelectionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TopBottomSelectionType:enum" />
-- name: threshold
-  uid: ExcelScript!ExcelScript.PivotValueFilter#threshold:member
-  package: ExcelScript!
-  fullName: threshold
-  summary: Пороговое число элементов , процентов или сумм, которые необходимо отфильтровать для состояния верхнего или нижнего фильтра.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'threshold?: number;'
-    return:
-      type: number
-- name: upperBound
-  uid: ExcelScript!ExcelScript.PivotValueFilter#upperBound:member
-  package: ExcelScript!
-  fullName: upperBound
-  summary: Верхний предел диапазона для состояния `between` фильтра.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'upperBound?: number;'
-    return:
-      type: number
-- name: value
-  uid: ExcelScript!ExcelScript.PivotValueFilter#value:member
-  package: ExcelScript!
-  fullName: value
-  summary: Имя выбранного "значения" в поле для фильтрации.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'value: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: 3480e4e21c9e4b13b4e3edc8713434765a9f2e90
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913456"
+  - name: comparator
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#comparator:member'
+    package: ExcelScript!
+    fullName: comparator
+    summary: 'Компаратор — это статическое значение, с которым сравниваются другие значения. Тип сравнения определяется условием. Например, если сопоставитель "50" и условие "greaterThan", все значения элементов, не более 50, будут удалены фильтром.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'comparator?: number;'
+      return:
+        type: number
+  - name: condition
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#condition:member'
+    package: ExcelScript!
+    fullName: condition
+    summary: 'Указывает условие фильтра, которое определяет необходимые критерии фильтрации.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'condition: ValueFilterCondition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ValueFilterCondition:enum" />'
+  - name: exclusive
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#exclusive:member'
+    package: ExcelScript!
+    fullName: exclusive
+    summary: 'Если `true`<!-- -->фильтр исключает *элементы,* которые соответствуют критериям. По умолчанию `false` (фильтр для включения элементов, которые соответствуют критериям).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type: boolean
+  - name: lowerBound
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member'
+    package: ExcelScript!
+    fullName: lowerBound
+    summary: Нижний предел диапазона для состояния `between` фильтра.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lowerBound?: number;'
+      return:
+        type: number
+  - name: selectionType
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#selectionType:member'
+    package: ExcelScript!
+    fullName: selectionType
+    summary: 'Указывает, является ли фильтр для элементов верхнего и нижнего N, верхнего и нижнего N-процентов или суммы N верхнего или нижнего.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionType?: TopBottomSelectionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TopBottomSelectionType:enum" />'
+  - name: threshold
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#threshold:member'
+    package: ExcelScript!
+    fullName: threshold
+    summary: 'Пороговое число элементов , процентов или сумм, которые необходимо отфильтровать для состояния верхнего или нижнего фильтра.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'threshold?: number;'
+      return:
+        type: number
+  - name: upperBound
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#upperBound:member'
+    package: ExcelScript!
+    fullName: upperBound
+    summary: Верхний предел диапазона для состояния `between` фильтра.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upperBound?: number;'
+      return:
+        type: number
+  - name: value
+    uid: 'ExcelScript!ExcelScript.PivotValueFilter#value:member'
+    package: ExcelScript!
+    fullName: value
+    summary: Имя выбранного "значения" в поле для фильтрации.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: string;'
+      return:
+        type: string

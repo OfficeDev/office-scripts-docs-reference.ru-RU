@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.HeaderFooterState
-uid: ExcelScript!ExcelScript.HeaderFooterState:enum
+uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
 package: ExcelScript!
 fullName: ExcelScript.HeaderFooterState
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: default
-  uid: ExcelScript!ExcelScript.HeaderFooterState.default:member
-  package: ExcelScript!
-  summary: Для всех напечатанных страниц используется только один общий заглавный/футулер.
-- name: firstAndDefault
-  uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
-  package: ExcelScript!
-  summary: Для всех остальных страниц используется отдельный заглавный/пейдер первой страницы и общий загот.
-- name: firstOddAndEven
-  uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
-  package: ExcelScript!
-  summary: Существует отдельная первая страница заглавная страница / подножка, то есть отдельный загон / подножка для нечетных и четных страниц.
-- name: oddAndEven
-  uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
-  package: ExcelScript!
-  summary: Существует другой загон/подножка для нечетных и четных страниц.
-metadata:
-  ms.openlocfilehash: 56adb02d9f1d03352bfb5382c00767ba553f376f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913620"
+  - name: default
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
+    package: ExcelScript!
+    summary: Для всех напечатанных страниц используется только один общий заглавный/футулер.
+  - name: firstAndDefault
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
+    package: ExcelScript!
+    summary: Для всех остальных страниц используется отдельный заглавный/пейдер первой страницы и общий загот.
+  - name: firstOddAndEven
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+    package: ExcelScript!
+    summary: 'Существует отдельная первая страница заглавная страница / подножка, то есть отдельный загон / подножка для нечетных и четных страниц.'
+  - name: oddAndEven
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
+    package: ExcelScript!
+    summary: Существует другой загон/подножка для нечетных и четных страниц.
