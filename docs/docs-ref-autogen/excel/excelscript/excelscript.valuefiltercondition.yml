@@ -1,85 +1,70 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ValueFilterCondition
-uid: ExcelScript!ExcelScript.ValueFilterCondition:enum
+uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
 package: ExcelScript!
 fullName: ExcelScript.ValueFilterCondition
-summary: Enum, представляющий все принятые условия, с помощью которых можно применить фильтр значений. Используется для настройки типа PivotFilter, который применяется к полю. `PivotFilter.exclusive` может быть `true` установлено, чтобы инвертировать многие из этих условий.
+summary: 'Enum, представляющий все принятые условия, с помощью которых можно применить фильтр значений. Используется для настройки типа PivotFilter, который применяется к полю. `PivotFilter.exclusive` может быть `true` установлено, чтобы инвертировать многие из этих условий.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: between
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.between:member
-  package: ExcelScript!
-  summary: >-
-    Между `lowerBound` и `upperBound` критериями.
+  - name: between
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+    package: ExcelScript!
+    summary: |-
+      Между `lowerBound` и `upperBound` критериями.
 
+      Необходимые критерии: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
+  - name: bottomN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+    package: ExcelScript!
+    summary: |-
+      В нижней части N (`threshold`<!-- -->) \[ элементы, проценты, \] сумма категории значения.
 
-    Необходимые критерии: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
-- name: bottomN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member
-  package: ExcelScript!
-  summary: >-
-    В нижней части N (`threshold`<!-- -->) \[ элементы, проценты, \] сумма категории значения.
+      Необходимые критерии: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: equals
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+    package: ExcelScript!
+    summary: |-
+      Равняется критерию компаратора.
 
+      Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
+  - name: greaterThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+    package: ExcelScript!
+    summary: |-
+      Больше, чем критерий компаратора.
 
-    Необходимые критерии: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: equals
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.equals:member
-  package: ExcelScript!
-  summary: >-
-    Равняется критерию компаратора.
+      Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: greaterThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Больше или равно критерию компаратора.
 
+      Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+    package: ExcelScript!
+    summary: |-
+      Меньше, чем критерий компаратора.
 
-    Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
-- name: greaterThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member
-  package: ExcelScript!
-  summary: >-
-    Больше, чем критерий компаратора.
+      Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Меньше или меньше, чем критерий компаратора.
 
+      Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: topN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+    package: ExcelScript!
+    summary: |-
+      В верхней части N (`threshold`<!-- -->) \[ элементы, проценты, \] сумма категории значения.
 
-    Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: greaterThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Больше или равно критерию компаратора.
-
-
-    Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member
-  package: ExcelScript!
-  summary: >-
-    Меньше, чем критерий компаратора.
-
-
-    Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Меньше или меньше, чем критерий компаратора.
-
-
-    Необходимые критерии: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: topN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.topN:member
-  package: ExcelScript!
-  summary: >-
-    В верхней части N (`threshold`<!-- -->) \[ элементы, проценты, \] сумма категории значения.
-
-
-    Необходимые критерии: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: unknown
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
-  package: ExcelScript!
-  summary: '`ValueFilterCondition` неизвестно или неподтверчено.'
-metadata:
-  ms.openlocfilehash: 74b546f8625a2e025318666956c019507d604c3e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914616"
+      Необходимые критерии: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+    package: ExcelScript!
+    summary: '`ValueFilterCondition` неизвестно или неподтверчено.'

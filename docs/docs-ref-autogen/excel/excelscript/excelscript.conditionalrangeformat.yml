@@ -1,159 +1,152 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalRangeFormat
-uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
-summary: Объект формата, инкапсулирующий шрифт, заполнение, границы и другие свойства диапазона условных форматов.
+summary: 'Объект формата, инкапсулирующий шрифт, заполнение, границы и другие свойства диапазона условных форматов.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorders()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
-  package: ExcelScript!
-  fullName: getBorders()
-  summary: Коллекция пограничных объектов, применимых к общему диапазону условного формата.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorders(): ConditionalRangeBorder[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]
-      description: ''
-- name: getConditionalRangeBorder(index)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorder(index)
-  summary: Возвращает объект границы по его имени.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      getConditionalRangeBorder(
-                  index: ConditionalRangeBorderIndex
-              ): ConditionalRangeBorder;
-    parameters:
-    - id: index
-      description: Значение индекса получаемого объекта границы. Подробные `ExcelScript.ConditionalRangeBorderIndex` сведения см. в материале.
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderBottom()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderBottom()
-  summary: Получает нижнюю границу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderLeft()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderLeft()
-  summary: Получает левую границу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderRight()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderRight()
-  summary: Получает правую границу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderTop()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderTop()
-  summary: Получает верхнюю границу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Возвращает объект заполнения, определенный в общем диапазоне условного формата.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ConditionalRangeFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Возвращает объект шрифта, определенный в общем диапазоне условного формата.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ConditionalRangeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: Представляет код формата номеров Excel для данного диапазона. Очищается, `null` если передается.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: Представляет код формата номеров Excel для данного диапазона. Очищается, `null` если передается.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: fa181e54c3f71c44ba2e1bb08a890674d7e6f027
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913733"
+  - name: getBorders()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)'
+    package: ExcelScript!
+    fullName: getBorders()
+    summary: 'Коллекция пограничных объектов, применимых к общему диапазону условного формата.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorders(): ConditionalRangeBorder[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]'
+        description: ''
+  - name: getConditionalRangeBorder(index)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorder(index)
+    summary: Возвращает объект границы по его имени.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getConditionalRangeBorder(
+                    index: ConditionalRangeBorderIndex
+                ): ConditionalRangeBorder;
+      parameters:
+        - id: index
+          description: Значение индекса получаемого объекта границы. Подробные `ExcelScript.ConditionalRangeBorderIndex` сведения см. в материале.
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderBottom()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderBottom()
+    summary: Получает нижнюю границу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderLeft()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderLeft()
+    summary: Получает левую границу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderRight()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderRight()
+    summary: Получает правую границу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderTop()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderTop()
+    summary: Получает верхнюю границу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 'Возвращает объект заполнения, определенный в общем диапазоне условного формата.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ConditionalRangeFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Возвращает объект шрифта, определенный в общем диапазоне условного формата.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ConditionalRangeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />'
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 'Представляет Excel формата номеров для данного диапазона. Очищается, `null` если передается.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: 'Представляет Excel формата номеров для данного диапазона. Очищается, `null` если передается.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

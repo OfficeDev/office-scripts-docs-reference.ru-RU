@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotFilterType
-uid: ExcelScript!ExcelScript.PivotFilterType:enum
+uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotFilterType
-summary: Простой переумыв, который представляет тип фильтра для PivotField.
+summary: 'Простой переумыв, который представляет тип фильтра для PivotField.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: date
-  uid: ExcelScript!ExcelScript.PivotFilterType.date:member
-  package: ExcelScript!
-  summary: Фильтрует PivotItems с датой на месте метки. Примечание. В PivotField не может одновременно применяться фильтр меток и фильтр дат.
-- name: label
-  uid: ExcelScript!ExcelScript.PivotFilterType.label:member
-  package: ExcelScript!
-  summary: Фильтрует PivotItems на основе их меток. Примечание. В PivotField не может одновременно применяться фильтр меток и фильтр дат.
-- name: manual
-  uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
-  package: ExcelScript!
-  summary: Фильтрует определенные вручную выбранные PivotItems из PivotTable.
-- name: unknown
-  uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
-  package: ExcelScript!
-  summary: '`PivotFilterType` неизвестно или неподтверчено.'
-- name: value
-  uid: ExcelScript!ExcelScript.PivotFilterType.value:member
-  package: ExcelScript!
-  summary: Фильтры, основанные на значении PivotItem в отношении `DataPivotHierarchy`<!-- -->.
-metadata:
-  ms.openlocfilehash: f070c217d5b4a7958666c25a9971c8c8eaffb8f4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914309"
+  - name: date
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    package: ExcelScript!
+    summary: Фильтрует PivotItems с датой на месте метки. Примечание. В PivotField не может одновременно применяться фильтр меток и фильтр дат.
+  - name: label
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    package: ExcelScript!
+    summary: Фильтрует PivotItems на основе их меток. Примечание. В PivotField не может одновременно применяться фильтр меток и фильтр дат.
+  - name: manual
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    package: ExcelScript!
+    summary: Фильтрует определенные вручную выбранные PivotItems из PivotTable.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    package: ExcelScript!
+    summary: '`PivotFilterType` неизвестно или неподтверчено.'
+  - name: value
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    package: ExcelScript!
+    summary: 'Фильтры, основанные на значении PivotItem в отношении `DataPivotHierarchy`<!-- -->.'

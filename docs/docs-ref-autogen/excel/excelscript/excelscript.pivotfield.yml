@@ -1,273 +1,268 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotField
-uid: ExcelScript!ExcelScript.PivotField:interface
+uid: 'ExcelScript!ExcelScript.PivotField:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotField
-summary: Представляет PivotField Excel.
+summary: Представляет Excel PivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: applyFilter(filter)
-  uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
-  package: ExcelScript!
-  fullName: applyFilter(filter)
-  summary: Задает один или несколько текущих pivotFilters поля и применяет их к полю. Если предоставленные фильтры являются недействительными или не могут быть применены, выброшено исключение.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'applyFilter(filter: PivotFilters): void;'
-    parameters:
-    - id: filter
-      description: Настроенный определенный pivotFilter или интерфейс PivotFilters, содержащий несколько настроенных фильтров.
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
-    return:
-      type: void
-      description: ''
-- name: clearAllFilters()
-  uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
-  package: ExcelScript!
-  fullName: clearAllFilters()
-  summary: Очищает все критерии от всех фильтров поля. Это удаляет активную фильтрацию на поле.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearAllFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: clearFilter(filterType)
-  uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
-  package: ExcelScript!
-  fullName: clearFilter(filterType)
-  summary: Очищает все существующие критерии от фильтра поля данного типа (если он применяется в настоящее время).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearFilter(filterType: PivotFilterType): void;'
-    parameters:
-    - id: filterType
-      description: Тип фильтра, на поле которого необходимо очистить все критерии.
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
-    return:
-      type: void
-      description: ''
-- name: getFilters()
-  uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
-  package: ExcelScript!
-  fullName: getFilters()
-  summary: Получает все фильтры, применяемые в настоящее время на поле.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFilters(): PivotFilters;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: ID of the PivotField.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getItems()
-  uid: ExcelScript!ExcelScript.PivotField#getItems:member(1)
-  package: ExcelScript!
-  fullName: getItems()
-  summary: Возвращает сводные поля, связанные со сводным полем.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getItems(): PivotItem[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />[]
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.PivotField#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Имя сводного поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPivotItem(name)
-  uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
-  package: ExcelScript!
-  fullName: getPivotItem(name)
-  summary: Получает PivotItem по имени. Если pivotItem не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotItem(name: string): PivotItem | undefined;'
-    parameters:
-    - id: name
-      description: Имя извлекаемого PivotItem.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
-      description: ''
-- name: getShowAllItems()
-  uid: ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)
-  package: ExcelScript!
-  fullName: getShowAllItems()
-  summary: Определяет, следует ли отображать все элементы сводного поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowAllItems(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSubtotals()
-  uid: ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)
-  package: ExcelScript!
-  fullName: getSubtotals()
-  summary: Промежуточные итоги сводного поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubtotals(): Subtotals;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
-      description: ''
-- name: isFiltered(filterType)
-  uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
-  package: ExcelScript!
-  fullName: isFiltered(filterType)
-  summary: Проверяет, есть ли на поле примененные фильтры.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'isFiltered(filterType?: PivotFilterType): boolean;'
-    parameters:
-    - id: filterType
-      description: Тип фильтра для проверки. Если тип не предоставлен, этот метод проверит, применяется ли какой-либо фильтр.
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.PivotField#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Имя сводного поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setShowAllItems(showAllItems)
-  uid: ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)
-  package: ExcelScript!
-  fullName: setShowAllItems(showAllItems)
-  summary: Определяет, следует ли отображать все элементы сводного поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowAllItems(showAllItems: boolean): void;'
-    parameters:
-    - id: showAllItems
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setSubtotals(subtotals)
-  uid: ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)
-  package: ExcelScript!
-  fullName: setSubtotals(subtotals)
-  summary: Промежуточные итоги сводного поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSubtotals(subtotals: Subtotals): void;'
-    parameters:
-    - id: subtotals
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
-    return:
-      type: void
-      description: ''
-- name: sortByLabels(sortBy)
-  uid: ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)
-  package: ExcelScript!
-  fullName: sortByLabels(sortBy)
-  summary: Сортирует сводное поле. Если указан параметр DataPivotHierarchy, то сортировка будет применяться на его основе, в ином случае сортировка будет основана на самом сводном поле.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'sortByLabels(sortBy: SortBy): void;'
-    parameters:
-    - id: sortBy
-      description: Указывает, делается ли сортировка в порядке по возрастанию или убыванию.
-      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
-    return:
-      type: void
-      description: ''
-- name: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
-  package: ExcelScript!
-  fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: Сортирует сводную таблицу по указанным значениям в определенной области. Область определяет, какие конкретные значения будут использоваться для сортировки при нескольких значениях из одной и той же DataPivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      sortByValues(
-                  sortBy: SortBy,
-                  valuesHierarchy: DataPivotHierarchy,
-                  pivotItemScope?: Array<PivotItem | string>
-              ): void;
-    parameters:
-    - id: sortBy
-      description: Указывает, делается ли сортировка в порядке по возрастанию или убыванию.
-      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
-    - id: valuesHierarchy
-      description: Указывает иерархию значений на оси данных, которая будет использоваться для сортировки.
-      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
-    - id: pivotItemScope
-      description: Элементы, которые необходимо использовать для области сортировки. Это будут элементы, которые составляют строку или столбец, которые необходимо сортировать. Если строка используется вместо PivotItem, строка представляет ID PivotItem. Если на оси нет элементов, кроме иерархии данных, которые необходимо сортировать, это может быть пустым.
-      type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 093b593da92ac24585132f9c9b2da2dea2dcb1db
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913563"
+  - name: applyFilter(filter)
+    uid: 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
+    package: ExcelScript!
+    fullName: applyFilter(filter)
+    summary: 'Задает один или несколько текущих pivotFilters поля и применяет их к полю. Если предоставленные фильтры являются недействительными или не могут быть применены, выброшено исключение.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyFilter(filter: PivotFilters): void;'
+      parameters:
+        - id: filter
+          description: 'Настроенный определенный pivotFilter или интерфейс PivotFilters, содержащий несколько настроенных фильтров.'
+          type: '<xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: clearAllFilters()
+    uid: 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
+    package: ExcelScript!
+    fullName: clearAllFilters()
+    summary: Очищает все критерии от всех фильтров поля. Это удаляет активную фильтрацию на поле.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearAllFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: clearFilter(filterType)
+    uid: 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
+    package: ExcelScript!
+    fullName: clearFilter(filterType)
+    summary: Очищает все существующие критерии от фильтра поля данного типа (если он применяется в настоящее время).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearFilter(filterType: PivotFilterType): void;'
+      parameters:
+        - id: filterType
+          description: 'Тип фильтра, на поле которого необходимо очистить все критерии.'
+          type: '<xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: getFilters()
+    uid: 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
+    package: ExcelScript!
+    fullName: getFilters()
+    summary: 'Получает все фильтры, применяемые в настоящее время на поле.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFilters(): PivotFilters;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: ID of the PivotField.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getItems()
+    uid: 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
+    package: ExcelScript!
+    fullName: getItems()
+    summary: 'Возвращает сводные поля, связанные со сводным полем.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItems(): PivotItem[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotItem:interface" />[]'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Имя сводного поля.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPivotItem(name)
+    uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
+    package: ExcelScript!
+    fullName: getPivotItem(name)
+    summary: 'Получает PivotItem по имени. Если pivotItem не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotItem(name: string): PivotItem | undefined;'
+      parameters:
+        - id: name
+          description: Имя извлекаемого PivotItem.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined'
+        description: ''
+  - name: getShowAllItems()
+    uid: 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
+    package: ExcelScript!
+    fullName: getShowAllItems()
+    summary: 'Определяет, следует ли отображать все элементы сводного поля.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowAllItems(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSubtotals()
+    uid: 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
+    package: ExcelScript!
+    fullName: getSubtotals()
+    summary: Промежуточные итоги сводного поля.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubtotals(): Subtotals;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Subtotals:interface" />'
+        description: ''
+  - name: isFiltered(filterType)
+    uid: 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
+    package: ExcelScript!
+    fullName: isFiltered(filterType)
+    summary: 'Проверяет, есть ли на поле примененные фильтры.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isFiltered(filterType?: PivotFilterType): boolean;'
+      parameters:
+        - id: filterType
+          description: 'Тип фильтра для проверки. Если тип не предоставлен, этот метод проверит, применяется ли какой-либо фильтр.'
+          type: '<xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Имя сводного поля.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setShowAllItems(showAllItems)
+    uid: 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
+    package: ExcelScript!
+    fullName: setShowAllItems(showAllItems)
+    summary: 'Определяет, следует ли отображать все элементы сводного поля.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowAllItems(showAllItems: boolean): void;'
+      parameters:
+        - id: showAllItems
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setSubtotals(subtotals)
+    uid: 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
+    package: ExcelScript!
+    fullName: setSubtotals(subtotals)
+    summary: Промежуточные итоги сводного поля.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSubtotals(subtotals: Subtotals): void;'
+      parameters:
+        - id: subtotals
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.Subtotals:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: sortByLabels(sortBy)
+    uid: 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
+    package: ExcelScript!
+    fullName: sortByLabels(sortBy)
+    summary: 'Сортирует сводное поле. Если указан параметр DataPivotHierarchy, то сортировка будет применяться на его основе, в ином случае сортировка будет основана на самом сводном поле.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortByLabels(sortBy: SortBy): void;'
+      parameters:
+        - id: sortBy
+          description: 'Указывает, делается ли сортировка в порядке по возрастанию или убыванию.'
+          type: '<xref uid="ExcelScript!ExcelScript.SortBy:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    uid: 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
+    package: ExcelScript!
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    summary: 'Сортирует сводную таблицу по указанным значениям в определенной области. Область определяет, какие конкретные значения будут использоваться для сортировки при нескольких значениях из одной и той же DataPivotHierarchy.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        sortByValues(
+                    sortBy: SortBy,
+                    valuesHierarchy: DataPivotHierarchy,
+                    pivotItemScope?: Array<PivotItem | string>
+                ): void;
+      parameters:
+        - id: sortBy
+          description: 'Указывает, делается ли сортировка в порядке по возрастанию или убыванию.'
+          type: '<xref uid="ExcelScript!ExcelScript.SortBy:enum" />'
+        - id: valuesHierarchy
+          description: 'Указывает иерархию значений на оси данных, которая будет использоваться для сортировки.'
+          type: '<xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />'
+        - id: pivotItemScope
+          description: 'Элементы, которые необходимо использовать для области сортировки. Это будут элементы, которые составляют строку или столбец, которые необходимо сортировать. Если строка используется вместо PivotItem, строка представляет ID PivotItem. Если на оси нет элементов, кроме иерархии данных, которые необходимо сортировать, это может быть пустым.'
+          type: |-
+            Array&lt;<xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | string&gt;
+                    
+      return:
+        type: void
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.IconSetConditionalFormat
-uid: ExcelScript!ExcelScript.IconSetConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.IconSetConditionalFormat
 summary: Представляет критерии набора значков для условного форматирования.
@@ -9,130 +9,123 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCriteria()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
-  package: ExcelScript!
-  fullName: getCriteria()
-  summary: Набор критериев и наборов значков для правил и потенциальных пользовательских значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, а тип, формула и оператор будут игнорироваться при наборе.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCriteria(): ConditionalIconCriterion[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]
-      description: ''
-- name: getReverseIconOrder()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
-  package: ExcelScript!
-  fullName: getReverseIconOrder()
-  summary: Если `true`<!-- -->, отменяет заказы значка для набора значков. Обратите внимание, что это невозможно установить, если используются настраиваемые значки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReverseIconOrder(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowIconOnly()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
-  package: ExcelScript!
-  fullName: getShowIconOnly()
-  summary: Если `true`<!-- -->, скрывает значения и показывает только значки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowIconOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getStyle()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
-  package: ExcelScript!
-  fullName: getStyle()
-  summary: Если установлено, отображается параметр набора значков для условного формата.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStyle(): IconSet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.IconSet:enum" />
-      description: ''
-- name: setCriteria(criteria)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
-  package: ExcelScript!
-  fullName: setCriteria(criteria)
-  summary: Набор критериев и наборов значков для правил и потенциальных пользовательских значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, а тип, формула и оператор будут игнорироваться при наборе.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCriteria(criteria: ConditionalIconCriterion[]): void;'
-    parameters:
-    - id: criteria
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]
-    return:
-      type: void
-      description: ''
-- name: setReverseIconOrder(reverseIconOrder)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
-  package: ExcelScript!
-  fullName: setReverseIconOrder(reverseIconOrder)
-  summary: Если `true`<!-- -->, отменяет заказы значка для набора значков. Обратите внимание, что это невозможно установить, если используются настраиваемые значки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setReverseIconOrder(reverseIconOrder: boolean): void;'
-    parameters:
-    - id: reverseIconOrder
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowIconOnly(showIconOnly)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
-  package: ExcelScript!
-  fullName: setShowIconOnly(showIconOnly)
-  summary: Если `true`<!-- -->, скрывает значения и показывает только значки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowIconOnly(showIconOnly: boolean): void;'
-    parameters:
-    - id: showIconOnly
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setStyle(style)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
-  package: ExcelScript!
-  fullName: setStyle(style)
-  summary: Если установлено, отображается параметр набора значков для условного формата.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStyle(style: IconSet): void;'
-    parameters:
-    - id: style
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.IconSet:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 64ddd6ea51b31eb962d1edebd1e0f48015daf8dd
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913613"
+  - name: getCriteria()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)'
+    package: ExcelScript!
+    fullName: getCriteria()
+    summary: 'Набор критериев и наборов значков для правил и потенциальных пользовательских значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, а тип, формула и оператор будут игнорироваться при наборе.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCriteria(): ConditionalIconCriterion[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]'
+        description: ''
+  - name: getReverseIconOrder()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)'
+    package: ExcelScript!
+    fullName: getReverseIconOrder()
+    summary: 'Если `true`<!-- -->, отменяет заказы значка для набора значков. Обратите внимание, что это невозможно установить, если используются настраиваемые значки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReverseIconOrder(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowIconOnly()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)'
+    package: ExcelScript!
+    fullName: getShowIconOnly()
+    summary: 'Если `true`<!-- -->, скрывает значения и показывает только значки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowIconOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getStyle()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)'
+    package: ExcelScript!
+    fullName: getStyle()
+    summary: 'Если установлено, отображается параметр набора значков для условного формата.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStyle(): IconSet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.IconSet:enum" />'
+        description: ''
+  - name: setCriteria(criteria)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)'
+    package: ExcelScript!
+    fullName: setCriteria(criteria)
+    summary: 'Набор критериев и наборов значков для правил и потенциальных пользовательских значков для условных значков. Обратите внимание, что для первого критерия можно изменить только настраиваемый значок, а тип, формула и оператор будут игнорироваться при наборе.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCriteria(criteria: ConditionalIconCriterion[]): void;'
+      parameters:
+        - id: criteria
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]'
+      return:
+        type: void
+        description: ''
+  - name: setReverseIconOrder(reverseIconOrder)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)'
+    package: ExcelScript!
+    fullName: setReverseIconOrder(reverseIconOrder)
+    summary: 'Если `true`<!-- -->, отменяет заказы значка для набора значков. Обратите внимание, что это невозможно установить, если используются настраиваемые значки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setReverseIconOrder(reverseIconOrder: boolean): void;'
+      parameters:
+        - id: reverseIconOrder
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowIconOnly(showIconOnly)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)'
+    package: ExcelScript!
+    fullName: setShowIconOnly(showIconOnly)
+    summary: 'Если `true`<!-- -->, скрывает значения и показывает только значки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowIconOnly(showIconOnly: boolean): void;'
+      parameters:
+        - id: showIconOnly
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setStyle(style)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)'
+    package: ExcelScript!
+    fullName: setStyle(style)
+    summary: 'Если установлено, отображается параметр набора значков для условного формата.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStyle(style: IconSet): void;'
+      parameters:
+        - id: style
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.IconSet:enum" />'
+      return:
+        type: void
+        description: ''

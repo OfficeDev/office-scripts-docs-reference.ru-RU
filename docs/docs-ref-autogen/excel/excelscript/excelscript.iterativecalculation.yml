@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.IterativeCalculation
-uid: ExcelScript!ExcelScript.IterativeCalculation:interface
+uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
 package: ExcelScript!
 fullName: ExcelScript.IterativeCalculation
 summary: Представляет параметры итеративных вычислений.
@@ -9,100 +9,93 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getEnabled()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)
-  package: ExcelScript!
-  fullName: getEnabled()
-  summary: Значение true, если в Excel используется итерация для разрешения циклических ссылок.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEnabled(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMaxChange()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)
-  package: ExcelScript!
-  fullName: getMaxChange()
-  summary: Указывает максимальное количество изменений между каждой итерацией, так как Excel устраняет круговые ссылки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxChange(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMaxIteration()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: getMaxIteration()
-  summary: Указывает максимальное количество итераций, которые Excel может использовать для решения круговой ссылки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxIteration(): number;'
-    return:
-      type: number
-      description: ''
-- name: setEnabled(enabled)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)
-  package: ExcelScript!
-  fullName: setEnabled(enabled)
-  summary: Значение true, если в Excel используется итерация для разрешения циклических ссылок.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEnabled(enabled: boolean): void;'
-    parameters:
-    - id: enabled
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setMaxChange(maxChange)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)
-  package: ExcelScript!
-  fullName: setMaxChange(maxChange)
-  summary: Указывает максимальное количество изменений между каждой итерацией, так как Excel устраняет круговые ссылки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxChange(maxChange: number): void;'
-    parameters:
-    - id: maxChange
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMaxIteration(maxIteration)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: setMaxIteration(maxIteration)
-  summary: Указывает максимальное количество итераций, которые Excel может использовать для решения круговой ссылки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxIteration(maxIteration: number): void;'
-    parameters:
-    - id: maxIteration
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9cd7e98544d85bb18748059ba1ab5c8d382aab7f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913605"
+  - name: getEnabled()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)'
+    package: ExcelScript!
+    fullName: getEnabled()
+    summary: 'Значение true, если в Excel используется итерация для разрешения циклических ссылок.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEnabled(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMaxChange()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: getMaxChange()
+    summary: 'Указывает максимальное количество изменений между каждой итерацией, Excel устраняет круговые ссылки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxChange(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMaxIteration()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: getMaxIteration()
+    summary: 'Указывает максимальное количество итераций, Excel можно использовать для решения круговой ссылки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxIteration(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setEnabled(enabled)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)'
+    package: ExcelScript!
+    fullName: setEnabled(enabled)
+    summary: 'Значение true, если в Excel используется итерация для разрешения циклических ссылок.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEnabled(enabled: boolean): void;'
+      parameters:
+        - id: enabled
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setMaxChange(maxChange)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: setMaxChange(maxChange)
+    summary: 'Указывает максимальное количество изменений между каждой итерацией, Excel устраняет круговые ссылки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxChange(maxChange: number): void;'
+      parameters:
+        - id: maxChange
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMaxIteration(maxIteration)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: setMaxIteration(maxIteration)
+    summary: 'Указывает максимальное количество итераций, Excel можно использовать для решения круговой ссылки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxIteration(maxIteration: number): void;'
+      parameters:
+        - id: maxIteration
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

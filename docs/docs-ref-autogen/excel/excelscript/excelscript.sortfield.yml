@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SortField
-uid: ExcelScript!ExcelScript.SortField:interface
+uid: 'ExcelScript!ExcelScript.SortField:interface'
 package: ExcelScript!
 fullName: ExcelScript.SortField
 summary: Представляет условие в операции сортировки.
@@ -9,94 +9,87 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: ascending
-  uid: ExcelScript!ExcelScript.SortField#ascending:member
-  package: ExcelScript!
-  fullName: ascending
-  summary: Указывает, делается ли сортировка восходящим способом.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'ascending?: boolean;'
-    return:
-      type: boolean
-- name: color
-  uid: ExcelScript!ExcelScript.SortField#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: Указывает цвет, который является целью условия, если сортировка находится на шрифте или цвете ячейки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: dataOption
-  uid: ExcelScript!ExcelScript.SortField#dataOption:member
-  package: ExcelScript!
-  fullName: dataOption
-  summary: Представляет дополнительные параметры сортировки для этого поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'dataOption?: SortDataOption;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />
-- name: icon
-  uid: ExcelScript!ExcelScript.SortField#icon:member
-  package: ExcelScript!
-  fullName: icon
-  summary: Указывает значок, который является целью условия, если сортировка находится на значке ячейки.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'icon?: Icon;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
-- name: key
-  uid: ExcelScript!ExcelScript.SortField#key:member
-  package: ExcelScript!
-  fullName: key
-  summary: Указывает столбец (или строку, в зависимости от ориентации сортировки), на который установлено условие. Представляется в виде расстояния от первого столбца (или строки).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'key: number;'
-    return:
-      type: number
-- name: sortOn
-  uid: ExcelScript!ExcelScript.SortField#sortOn:member
-  package: ExcelScript!
-  fullName: sortOn
-  summary: Указывает тип сортировки этого условия.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'sortOn?: SortOn;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SortOn:enum" />
-- name: subField
-  uid: ExcelScript!ExcelScript.SortField#subField:member
-  package: ExcelScript!
-  fullName: subField
-  summary: Указывает подполе, которое является целевым именем свойства для сортировки с богатым значением.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'subField?: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: c5db98a57482b252606bcdc7ae88fe5810f26103
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913358"
+  - name: ascending
+    uid: 'ExcelScript!ExcelScript.SortField#ascending:member'
+    package: ExcelScript!
+    fullName: ascending
+    summary: 'Указывает, делается ли сортировка восходящим способом.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ascending?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'ExcelScript!ExcelScript.SortField#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: 'Указывает цвет, который является целью условия, если сортировка находится на шрифте или цвете ячейки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: dataOption
+    uid: 'ExcelScript!ExcelScript.SortField#dataOption:member'
+    package: ExcelScript!
+    fullName: dataOption
+    summary: Представляет дополнительные параметры сортировки для этого поля.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataOption?: SortDataOption;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />'
+  - name: icon
+    uid: 'ExcelScript!ExcelScript.SortField#icon:member'
+    package: ExcelScript!
+    fullName: icon
+    summary: 'Указывает значок, который является целью условия, если сортировка находится на значке ячейки.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'icon?: Icon;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
+  - name: key
+    uid: 'ExcelScript!ExcelScript.SortField#key:member'
+    package: ExcelScript!
+    fullName: key
+    summary: 'Указывает столбец (или строку, в зависимости от ориентации сортировки), на который установлено условие. Представляется в виде расстояния от первого столбца (или строки).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key: number;'
+      return:
+        type: number
+  - name: sortOn
+    uid: 'ExcelScript!ExcelScript.SortField#sortOn:member'
+    package: ExcelScript!
+    fullName: sortOn
+    summary: Указывает тип сортировки этого условия.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortOn?: SortOn;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SortOn:enum" />'
+  - name: subField
+    uid: 'ExcelScript!ExcelScript.SortField#subField:member'
+    package: ExcelScript!
+    fullName: subField
+    summary: 'Указывает подполе, которое является целевым именем свойства для сортировки с богатым значением.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type: string

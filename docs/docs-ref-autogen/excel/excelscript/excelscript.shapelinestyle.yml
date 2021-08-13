@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeLineStyle
-uid: ExcelScript!ExcelScript.ShapeLineStyle:enum
+uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineStyle
 summary: Стиль для строки.
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: single
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.single:member
-  package: ExcelScript!
-  summary: Одна строка.
-- name: thickBetweenThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member
-  package: ExcelScript!
-  summary: Толстая линия с тонкой линией с каждой стороны.
-- name: thickThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member
-  package: ExcelScript!
-  summary: Толстая линия рядом с тонкой линией. Для горизонтальных линий толстая линия находится над тонкой линией. Для вертикальных линий толстая линия находится слева от тонкой линии.
-- name: thinThick
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member
-  package: ExcelScript!
-  summary: Толстая линия рядом с тонкой линией. Для горизонтальных линий толстая линия находится ниже тонкой линии. Для вертикальных линий толстая линия находится справа от тонкой линии.
-- name: thinThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member
-  package: ExcelScript!
-  summary: Две тонкие линии.
-metadata:
-  ms.openlocfilehash: 05c9927a86ac3301390897d4f09c15ccdb49606a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913400"
+  - name: single
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+    package: ExcelScript!
+    summary: Одна строка.
+  - name: thickBetweenThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+    package: ExcelScript!
+    summary: Толстая линия с тонкой линией с каждой стороны.
+  - name: thickThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+    package: ExcelScript!
+    summary: Толстая линия рядом с тонкой линией. Для горизонтальных линий толстая линия находится над тонкой линией. Для вертикальных линий толстая линия находится слева от тонкой линии.
+  - name: thinThick
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+    package: ExcelScript!
+    summary: Толстая линия рядом с тонкой линией. Для горизонтальных линий толстая линия находится ниже тонкой линии. Для вертикальных линий толстая линия находится справа от тонкой линии.
+  - name: thinThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+    package: ExcelScript!
+    summary: Две тонкие линии.

@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartSeriesBy
-uid: ExcelScript!ExcelScript.ChartSeriesBy:enum
+uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesBy
-summary: Указывает, являются ли серии строками или столбцами. В Excel на рабочем столе параметр "авто" проверяет форму исходных данных, чтобы автоматически угадать, являются ли данные строками или столбцами. В Excel в Интернете "авто" по умолчанию будет просто "столбцов".
+summary: 'Указывает, являются ли серии строками или столбцами. В Excel на рабочем столе параметр "авто" проверяет форму исходных данных, чтобы автоматически угадать, являются ли данные строками или столбцами. В Excel в Интернете "авто" по умолчанию будет просто "столбцы".'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: auto
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.auto:member
-  package: ExcelScript!
-  summary: В Excel на рабочем столе параметр "авто" проверяет форму исходных данных, чтобы автоматически угадать, являются ли данные строками или столбцами. В Excel в Интернете "авто" по умолчанию будет просто "столбцов".
-- name: columns
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.columns:member
-  package: ExcelScript!
-  summary: ''
-- name: rows
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.rows:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: e41eaae1d2ca390388775c565331243e7ea95ae5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914543"
+  - name: auto
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+    package: ExcelScript!
+    summary: 'В Excel на рабочем столе параметр "авто" проверяет форму исходных данных, чтобы автоматически угадать, являются ли данные строками или столбцами. В Excel в Интернете "авто" по умолчанию будет просто "столбцы".'
+  - name: columns
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+    package: ExcelScript!
+    summary: ''
+  - name: rows
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+    package: ExcelScript!
+    summary: ''

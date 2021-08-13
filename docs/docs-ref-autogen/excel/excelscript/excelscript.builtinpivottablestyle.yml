@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BuiltInPivotTableStyle
-uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum
+uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.BuiltInPivotTableStyle
 summary: Представляет встроенный стиль PivotTable
@@ -8,350 +8,343 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: dark1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела."
-- name: dark10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей."
-- name: dark11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей."
-- name: dark12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей."
-- name: dark13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей."
-- name: dark14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей."
-- name: dark15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками."
-- name: dark16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками."
-- name: dark17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками."
-- name: dark18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый в теме \"Office\" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками."
-- name: dark19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками."
-- name: dark2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненным заголовщиком, полосатыми строками и затененных корпусом."
-- name: dark20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками."
-- name: dark21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме Office \"Office\") с заполненным загонщиком, заполненной подножкой и полосатыми строками."
-- name: dark22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с затененым телом и белыми границами."
-- name: dark23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с затеняемой частью корпуса и белыми границами."
-- name: dark24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с затененым телом и белыми границами."
-- name: dark25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый цвет в теме \"Office\" по умолчанию) с затененым телом и белыми границами."
-- name: dark26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с затеняемой частью тела и белыми границами."
-- name: dark27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с затененым телом и белыми границами."
-- name: dark28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" по умолчанию) с затеняемой частью корпуса и белыми границами."
-- name: dark3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела."
-- name: dark4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый цвет в теме \"Office\" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела."
-- name: dark5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела."
-- name: dark6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела."
-- name: dark7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела."
-- name: dark8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей."
-- name: dark9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и внешней границей."
-- name: light1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с границами и границами подножки."
-- name: light10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками."
-- name: light11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый цвет в теме \"Office\" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками."
-- name: light12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками."
-- name: light13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками."
-- name: light14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" с границами загона, границами колонок, границей первых столбцов и полосатыми строками."
-- name: light15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненными загонами и полосатыми граничаными строками."
-- name: light16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненными загонами и полосатыми граничаными строками."
-- name: light17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненными загонами и полосатыми граничаными строками."
-- name: light18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый цвет в теме Office\") с заполненным загонщиком и полосатыми граничаными строками."
-- name: light19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненными загонами и полосатыми граничаными строками."
-- name: light2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с границами загона и границами подножки."
-- name: light20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненными загонами и полосатыми граничаными строками."
-- name: light21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый в теме \"Office\" по умолчанию) с заполненными загонами и полосатыми граничаными строками."
-- name: light22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заглавными границами, границами колонок и пограничными столбцами."
-- name: light23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с границами загона, границами колонок и пограничными столбцами."
-- name: light24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с границами загона, границами колонок и пограничными столбцами."
-- name: light25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый в теме \"Office\" по умолчанию) с границами загона, границами колонок и пограничными столбцами."
-- name: light26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с границами загонщиков, границами колонок и пограничными столбцами."
-- name: light27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заглавными границами, границами колонок и пограничными столбцами."
-- name: light28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" по умолчанию) с границами загона, границами колонок и пограничными столбцами."
-- name: light3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с границами и границами подножки."
-- name: light4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый в теме \"Office\" по умолчанию) с границами загонщиков и границами подножки."
-- name: light5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый цвет в теме Office\" с границами и границами подножки."
-- name: light6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с границами загона и границами подножки."
-- name: light7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" с границами и границами подножки."
-- name: light8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками."
-- name: light9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками."
-- name: medium1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и границей подножки."
-- name: medium10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строки."
-- name: medium11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и общей границей строк."
-- name: medium12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строки."
-- name: medium13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строк."
-- name: medium14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строк."
-- name: medium15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненным заголовщиком, заполненным подножным и затененым телом."
-- name: medium16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненным заголовщиком, заполненным подножным и затеняемой частью тела."
-- name: medium17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненным заголовщиком, заполненным подножным ногой и затененым телом."
-- name: medium18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый цвет в теме \"Office\" по умолчанию) с заполненным заголовщиком, заполненным подножщиком и затеняемой частью кузова."
-- name: medium19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненным заголовщиком, заполненной подголовником и затененым телом."
-- name: medium2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки."
-- name: medium20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненным заголовщиком, заполненным подножщиком и затеняемой частью кузова."
-- name: medium21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" по умолчанию) с заполненным заголовщиком, заполненной подножкой и затеняемой частью тела."
-- name: medium22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненным первым столбцом и затеняемой частью."
-- name: medium23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненным первым столбцом и затеняемой частью."
-- name: medium24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненным первым столбцом и затеняемой частью."
-- name: medium25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый в теме \"Office\" по умолчанию) с заполненным первым столбцом и затеняемой частью."
-- name: medium26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненным первым столбцом и затеняемой частью."
-- name: medium27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненной первой колонкой и затеняемой частью."
-- name: medium28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме Office\") с заполненным первым столбцом и затеняемой частью."
-- name: medium3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (оранжевый в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки."
-- name: medium4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member
-  package: ExcelScript!
-  summary: "\"Accent 3\" (серый в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки."
-- name: medium5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (желтый в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и границей подножки."
-- name: medium6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (светло-синий цвет в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки."
-- name: medium7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member
-  package: ExcelScript!
-  summary: "\"Accent 6\" (зеленый цвет в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки."
-- name: medium8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member
-  package: ExcelScript!
-  summary: "\"Dark 1\" (черный в теме \"Office\" по умолчанию) с заполненными загонами, полосатыми строками и общей границей строк."
-- name: medium9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member
-  package: ExcelScript!
-  summary: "\"Accent 1\" (синий в теме \"Office\" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строк."
-- name: none
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member
-  package: ExcelScript!
-  summary: Нет
-metadata:
-  ms.openlocfilehash: 3d3c366ae0a5114c1cf82f16bf4dd37bc476d202
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068302"
+  - name: dark1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела.'
+  - name: dark10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей.'
+  - name: dark11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей.'
+  - name: dark12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей.'
+  - name: dark13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей.'
+  - name: dark14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей.'
+  - name: dark15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками.'
+  - name: dark16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками.'
+  - name: dark17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками.'
+  - name: dark18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый в теме "Office" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками.'
+  - name: dark19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками.'
+  - name: dark2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненным заголовщиком, полосатыми строками и затененных корпусом.'
+  - name: dark20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненным загонщиком, заполненной подножкой и полосатыми строками.'
+  - name: dark21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме Office "Office") с заполненным загонщиком, заполненной подножкой и полосатыми строками.'
+  - name: dark22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с затененым телом и белыми границами.'
+  - name: dark23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с затеняемой частью корпуса и белыми границами.'
+  - name: dark24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с затененым телом и белыми границами.'
+  - name: dark25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый цвет в теме "Office" по умолчанию) с затененым телом и белыми границами.'
+  - name: dark26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с затеняемой частью тела и белыми границами.'
+  - name: dark27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с затененым телом и белыми границами.'
+  - name: dark28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" по умолчанию) с затеняемой частью корпуса и белыми границами.'
+  - name: dark3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела.'
+  - name: dark4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый цвет в теме "Office" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела.'
+  - name: dark5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела.'
+  - name: dark6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела.'
+  - name: dark7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" по умолчанию) с заполненным заголовщиком, полосатыми строками и затеняемой частью тела.'
+  - name: dark8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и внешней границей.'
+  - name: dark9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и внешней границей.'
+  - name: light1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с границами и границами подножки.'
+  - name: light10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками.'
+  - name: light11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый цвет в теме "Office" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками.'
+  - name: light12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками.'
+  - name: light13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками.'
+  - name: light14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" с границами загона, границами колонок, границей первых столбцов и полосатыми строками.'
+  - name: light15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненными загонами и полосатыми граничаными строками.'
+  - name: light16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненными загонами и полосатыми граничаными строками.'
+  - name: light17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненными загонами и полосатыми граничаными строками.'
+  - name: light18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый цвет в теме Office") с заполненным загонщиком и полосатыми граничаными строками.'
+  - name: light19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненными загонами и полосатыми граничаными строками.'
+  - name: light2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с границами загона и границами подножки.'
+  - name: light20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненными загонами и полосатыми граничаными строками.'
+  - name: light21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый в теме "Office" по умолчанию) с заполненными загонами и полосатыми граничаными строками.'
+  - name: light22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заглавными границами, границами колонок и пограничными столбцами.'
+  - name: light23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с границами загона, границами колонок и пограничными столбцами.'
+  - name: light24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с границами загона, границами колонок и пограничными столбцами.'
+  - name: light25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый в теме "Office" по умолчанию) с границами загона, границами колонок и пограничными столбцами.'
+  - name: light26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с границами загонщиков, границами колонок и пограничными столбцами.'
+  - name: light27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заглавными границами, границами колонок и пограничными столбцами.'
+  - name: light28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" по умолчанию) с границами загона, границами колонок и пограничными столбцами.'
+  - name: light3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с границами и границами подножки.'
+  - name: light4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый в теме "Office" по умолчанию) с границами загонщиков и границами подножки.'
+  - name: light5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый цвет в теме Office" с границами и границами подножки.'
+  - name: light6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с границами загона и границами подножки.'
+  - name: light7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" с границами и границами подножки.'
+  - name: light8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками.'
+  - name: light9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с границами загона, границами колонок, границей первых столбцов и полосатыми строками.'
+  - name: medium1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и границей подножки.'
+  - name: medium10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строки.'
+  - name: medium11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и общей границей строк.'
+  - name: medium12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строки.'
+  - name: medium13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строк.'
+  - name: medium14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строк.'
+  - name: medium15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненным заголовщиком, заполненным подножным и затененым телом.'
+  - name: medium16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненным заголовщиком, заполненным подножным и затеняемой частью тела.'
+  - name: medium17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненным заголовщиком, заполненным подножным ногой и затененым телом.'
+  - name: medium18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый цвет в теме "Office" по умолчанию) с заполненным заголовщиком, заполненным подножщиком и затеняемой частью кузова.'
+  - name: medium19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненным заголовщиком, заполненной подголовником и затененым телом.'
+  - name: medium2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки.'
+  - name: medium20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненным заголовщиком, заполненным подножщиком и затеняемой частью кузова.'
+  - name: medium21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" по умолчанию) с заполненным заголовщиком, заполненной подножкой и затеняемой частью тела.'
+  - name: medium22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненным первым столбцом и затеняемой частью.'
+  - name: medium23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненным первым столбцом и затеняемой частью.'
+  - name: medium24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненным первым столбцом и затеняемой частью.'
+  - name: medium25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый в теме "Office" по умолчанию) с заполненным первым столбцом и затеняемой частью.'
+  - name: medium26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненным первым столбцом и затеняемой частью.'
+  - name: medium27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненной первой колонкой и затеняемой частью.'
+  - name: medium28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме Office") с заполненным первым столбцом и затеняемой частью.'
+  - name: medium3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (оранжевый в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки.'
+  - name: medium4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member'
+    package: ExcelScript!
+    summary: '"Accent 3" (серый в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки.'
+  - name: medium5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member'
+    package: ExcelScript!
+    summary: '"Accent 4" (желтый в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и границей подножки.'
+  - name: medium6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (светло-синий цвет в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки.'
+  - name: medium7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member'
+    package: ExcelScript!
+    summary: '"Accent 6" (зеленый цвет в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и границей подножки.'
+  - name: medium8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member'
+    package: ExcelScript!
+    summary: '"Dark 1" (черный в теме "Office" по умолчанию) с заполненными загонами, полосатыми строками и общей границей строк.'
+  - name: medium9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member'
+    package: ExcelScript!
+    summary: '"Accent 1" (синий в теме "Office" по умолчанию) с заполненным загонщиком, полосатыми строками и общей границей строк.'
+  - name: none
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member'
+    package: ExcelScript!
+    summary: Нет

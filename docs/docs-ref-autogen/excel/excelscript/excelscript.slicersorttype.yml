@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SlicerSortType
-uid: ExcelScript!ExcelScript.SlicerSortType:enum
+uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SlicerSortType
 summary: Указывает поведение сортировки среза для `Slicer.sortBy`<!-- -->.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: ascending
-  uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
-  package: ExcelScript!
-  summary: Сортировка элементов среза в порядке по возрастанию подписями элементов.
-- name: dataSourceOrder
-  uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
-  package: ExcelScript!
-  summary: Сортировка элементов среза в порядке, предоставляемом источником данных.
-- name: descending
-  uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
-  package: ExcelScript!
-  summary: Сортировка элементов среза в порядке убывания подписями элементов.
-metadata:
-  ms.openlocfilehash: db45ddcb1ff4913f4f4d76e9303660517f95a4a4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606006"
+  - name: ascending
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+    package: ExcelScript!
+    summary: Сортировка элементов среза в порядке по возрастанию подписями элементов.
+  - name: dataSourceOrder
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+    package: ExcelScript!
+    summary: 'Сортировка элементов среза в порядке, предоставляемом источником данных.'
+  - name: descending
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+    package: ExcelScript!
+    summary: Сортировка элементов среза в порядке убывания подписями элементов.

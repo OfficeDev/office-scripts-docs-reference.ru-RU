@@ -1,81 +1,74 @@
 ### YamlMime:TSType
 name: ExcelScript.TextRange
-uid: ExcelScript!ExcelScript.TextRange:interface
+uid: 'ExcelScript!ExcelScript.TextRange:interface'
 package: ExcelScript!
 fullName: ExcelScript.TextRange
-summary: Содержит текст, присоединенный к фигуре, в дополнение к свойствам и методам для управления текстом.
+summary: 'Содержит текст, присоединенный к фигуре, в дополнение к свойствам и методам для управления текстом.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Возвращает `ShapeFont` объект, который представляет атрибуты шрифта для диапазона текста.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ShapeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />
-      description: ''
-- name: getSubstring(start, length)
-  uid: ExcelScript!ExcelScript.TextRange#getSubstring:member(1)
-  package: ExcelScript!
-  fullName: getSubstring(start, length)
-  summary: Возвращает объект TextRange для подстроки в указанном диапазоне.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubstring(start: number, length?: number): TextRange;'
-    parameters:
-    - id: start
-      description: Нулевой индекс первого символа, получаемого из диапазона текста.
-      type: number
-    - id: length
-      description: Необязательный атрибут. Количество символов, которые будут возвращены в новом текстовом диапазоне. Если длина опущена, все символы от начала до конца последнего абзаца диапазона текста будут возвращены.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.TextRange#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: Представляет содержимое с обычным текстом в диапазоне текста.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.TextRange#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: Представляет содержимое с обычным текстом в диапазоне текста.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 330faf3cabf13b2c07016407ca922173c1e66519
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913320"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Возвращает `ShapeFont` объект, который представляет атрибуты шрифта для диапазона текста.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ShapeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />'
+        description: ''
+  - name: 'getSubstring(start, length)'
+    uid: 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
+    package: ExcelScript!
+    fullName: 'getSubstring(start, length)'
+    summary: Возвращает объект TextRange для подстроки в указанном диапазоне.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubstring(start: number, length?: number): TextRange;'
+      parameters:
+        - id: start
+          description: 'Нулевой индекс первого символа, получаемого из диапазона текста.'
+          type: number
+        - id: length
+          description: 'Необязательный. Количество символов, которые будут возвращены в новом текстовом диапазоне. Если длина опущена, все символы от начала до конца последнего абзаца диапазона текста будут возвращены.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TextRange:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: Представляет содержимое с обычным текстом в диапазоне текста.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: Представляет содержимое с обычным текстом в диапазоне текста.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

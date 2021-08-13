@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorkbookRangeAreas
-uid: ExcelScript!ExcelScript.WorkbookRangeAreas:interface
+uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorkbookRangeAreas
 summary: Представляет коллекцию из одного или нескольких прямоугольных диапазонов в нескольких таблицах.
@@ -9,66 +9,59 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAddresses()
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
-  package: ExcelScript!
-  fullName: getAddresses()
-  summary: Возвращает массив адресов в стиле A1. Значения адресов содержат имя листа для каждого прямоугольного блока ячеек (например, "Sheet1! A1:B4, Sheet1! D1:D4"). Только для чтения.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAddresses(): string[];'
-    return:
-      type: string[]
-      description: ''
-- name: getAreas()
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
-  package: ExcelScript!
-  fullName: getAreas()
-  summary: Возвращает `RangeAreasCollection` объект. Каждый из них в коллекции представляет один или несколько диапазонов прямоугольника `RangeAreas` в одной таблице.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAreas(): RangeAreas[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />[]
-      description: ''
-- name: getRangeAreasBySheet(key)
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
-  package: ExcelScript!
-  fullName: getRangeAreasBySheet(key)
-  summary: Возвращает объект на основе имени или ИД таблицы `RangeAreas` в коллекции. Если таблицы не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRangeAreasBySheet(key: string): RangeAreas;'
-    parameters:
-    - id: key
-      description: Имя или ID таблицы.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getRanges()
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
-  package: ExcelScript!
-  fullName: getRanges()
-  summary: Возвращает диапазоны, составляющие этот объект в `RangeCollection` объекте.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRanges(): Range[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
-      description: ''
-metadata:
-  ms.openlocfilehash: a56a6dbb72129b429a514e511ad1f7227222c0df
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914602"
+  - name: getAddresses()
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)'
+    package: ExcelScript!
+    fullName: getAddresses()
+    summary: 'Возвращает массив адресов в стиле A1. Значения адресов содержат имя листа для каждого прямоугольного блока ячеек (например, "Sheet1! A1:B4, Sheet1! D1:D4"). Только для чтения.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAddresses(): string[];'
+      return:
+        type: 'string[]'
+        description: ''
+  - name: getAreas()
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)'
+    package: ExcelScript!
+    fullName: getAreas()
+    summary: Возвращает `RangeAreasCollection` объект. Каждый из них в коллекции представляет один или несколько диапазонов прямоугольника `RangeAreas` в одной таблице.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAreas(): RangeAreas[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />[]'
+        description: ''
+  - name: getRangeAreasBySheet(key)
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
+    package: ExcelScript!
+    fullName: getRangeAreasBySheet(key)
+    summary: 'Возвращает объект на основе имени или ИД таблицы `RangeAreas` в коллекции. Если таблицы не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeAreasBySheet(key: string): RangeAreas;'
+      parameters:
+        - id: key
+          description: Имя или ID таблицы.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getRanges()
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)'
+    package: ExcelScript!
+    fullName: getRanges()
+    summary: 'Возвращает диапазоны, составляющие этот объект в `RangeCollection` объекте.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRanges(): Range[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />[]'
+        description: ''

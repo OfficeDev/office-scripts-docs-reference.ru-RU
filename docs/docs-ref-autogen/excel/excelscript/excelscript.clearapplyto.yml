@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ClearApplyTo
-uid: ExcelScript!ExcelScript.ClearApplyTo:enum
+uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
 package: ExcelScript!
 fullName: ExcelScript.ClearApplyTo
 summary: ''
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.ClearApplyTo.all:member
-  package: ExcelScript!
-  summary: ''
-- name: contents
-  uid: ExcelScript!ExcelScript.ClearApplyTo.contents:member
-  package: ExcelScript!
-  summary: Очищает содержимое диапазона.
-- name: formats
-  uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
-  package: ExcelScript!
-  summary: Очищает все форматирование для диапазона.
-- name: hyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
-  package: ExcelScript!
-  summary: Очищает все гиперссылки, но оставляет все содержимое и форматирование нетронутыми.
-- name: removeHyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
-  package: ExcelScript!
-  summary: Удаляет гиперссылки и форматирование для ячейки, но оставляет содержимое, условные форматы и проверку данных нетронутыми.
-metadata:
-  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913910"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.all:member'
+    package: ExcelScript!
+    summary: ''
+  - name: contents
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.contents:member'
+    package: ExcelScript!
+    summary: Очищает содержимое диапазона.
+  - name: formats
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.formats:member'
+    package: ExcelScript!
+    summary: Очищает все форматирование для диапазона.
+  - name: hyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member'
+    package: ExcelScript!
+    summary: 'Очищает все гиперссылки, но оставляет все содержимое и форматирование нетронутыми.'
+  - name: removeHyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member'
+    package: ExcelScript!
+    summary: 'Удаляет гиперссылки и форматирование для ячейки, но оставляет содержимое, условные форматы и проверку данных нетронутыми.'

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.NumberFormatInfo
-uid: ExcelScript!ExcelScript.NumberFormatInfo:interface
+uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatInfo
 summary: Определяет культурный формат отображения номеров. Это основано на текущих параметрах культуры системы.
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getNumberDecimalSeparator()
-  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)
-  package: ExcelScript!
-  fullName: getNumberDecimalSeparator()
-  summary: Получает строку, используемую в качестве десятичных сепараторов для числевых значений. Это основано на текущих параметрах системы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberDecimalSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getNumberGroupSeparator()
-  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)
-  package: ExcelScript!
-  fullName: getNumberGroupSeparator()
-  summary: Получает строку, используемую для отдельных групп цифр слева от десятичной для числимых значений. Это основано на текущих параметрах системы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberGroupSeparator(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: a789fa3e10f31daa00bcc359f7bfd09f4d87121a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913584"
+  - name: getNumberDecimalSeparator()
+    uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getNumberDecimalSeparator()
+    summary: 'Получает строку, используемую в качестве десятичных сепараторов для числевых значений. Это основано на текущих параметрах системы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberDecimalSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getNumberGroupSeparator()
+    uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getNumberGroupSeparator()
+    summary: 'Получает строку, используемую для отдельных групп цифр слева от десятичной для числимых значений. Это основано на текущих параметрах системы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberGroupSeparator(): string;'
+      return:
+        type: string
+        description: ''

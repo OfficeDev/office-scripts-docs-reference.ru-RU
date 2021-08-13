@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationType
-uid: ExcelScript!ExcelScript.CalculationType:enum
+uid: 'ExcelScript!ExcelScript.CalculationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.CalculationType
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: full
-  uid: ExcelScript!ExcelScript.CalculationType.full:member
-  package: ExcelScript!
-  summary: " Пометка всех ячеек как \"грязных\" и их пересчет."
-- name: fullRebuild
-  uid: ExcelScript!ExcelScript.CalculationType.fullRebuild:member
-  package: ExcelScript!
-  summary: Это восстановит всю цепочку зависимостей, пометит все ячейки как грязные, а затем пересчитает их.
-- name: recalculate
-  uid: ExcelScript!ExcelScript.CalculationType.recalculate:member
-  package: ExcelScript!
-  summary: Пересчитывает все ячейки, которые Excel отметил как "грязные", то есть зависящие от переменных или измененных данных, и ячейки, программно отмеченные как "грязные".
-metadata:
-  ms.openlocfilehash: 8ea006b639ccac5ebe3f44e5c3cf960973b79665
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913980"
+  - name: full
+    uid: 'ExcelScript!ExcelScript.CalculationType.full:member'
+    package: ExcelScript!
+    summary: ' Пометка всех ячеек как "грязных" и их пересчет.'
+  - name: fullRebuild
+    uid: 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
+    package: ExcelScript!
+    summary: 'Это восстановит всю цепочку зависимостей, пометит все ячейки как грязные, а затем пересчитает их.'
+  - name: recalculate
+    uid: 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
+    package: ExcelScript!
+    summary: 'Пересчитывает все ячейки, которые Excel отметил как "грязные", то есть зависящие от переменных или измененных данных, и ячейки, программно отмеченные как "грязные".'

@@ -1,87 +1,80 @@
 ### YamlMime:TSType
 name: ExcelScript.ShapeGroup
-uid: ExcelScript!ExcelScript.ShapeGroup:interface
+uid: 'ExcelScript!ExcelScript.ShapeGroup:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShapeGroup
-summary: Представляет группу фигур внутри таблицы. Чтобы получить соответствующий `Shape` объект, используйте `ShapeGroup.shape`<!-- -->.
+summary: 'Представляет группу фигур внутри таблицы. Чтобы получить соответствующий `Shape` объект, используйте `ShapeGroup.shape`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getGroupShape()
-  uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
-  package: ExcelScript!
-  fullName: getGroupShape()
-  summary: Возвращает `Shape` объект, связанный с группой.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getGroupShape(): Shape;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.ShapeGroup#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Указывает идентификатор формы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShape(key)
-  uid: ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)
-  package: ExcelScript!
-  fullName: getShape(key)
-  summary: Получает фигуру с ее именем или ИД.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShape(key: string): Shape;'
-    parameters:
-    - id: key
-      description: Имя или ID фигуры, которая должна быть извлечена.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: getShapes()
-  uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
-  package: ExcelScript!
-  fullName: getShapes()
-  summary: Возвращает коллекцию `Shape` объектов.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShapes(): Shape[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />[]
-      description: ''
-- name: ungroup()
-  uid: ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)
-  package: ExcelScript!
-  fullName: ungroup()
-  summary: Отменяет группировку любых сгруппированных фигур в указанной группе фигур.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'ungroup(): void;'
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 0a39bde9d14cfdacde4873f9cac7c01d82861ced
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914190"
+  - name: getGroupShape()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
+    package: ExcelScript!
+    fullName: getGroupShape()
+    summary: 'Возвращает `Shape` объект, связанный с группой.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getGroupShape(): Shape;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Указывает идентификатор формы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShape(key)
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
+    package: ExcelScript!
+    fullName: getShape(key)
+    summary: Получает фигуру с ее именем или ИД.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShape(key: string): Shape;'
+      parameters:
+        - id: key
+          description: 'Имя или ID фигуры, которая должна быть извлечена.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: getShapes()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
+    package: ExcelScript!
+    fullName: getShapes()
+    summary: Возвращает коллекцию `Shape` объектов.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShapes(): Shape[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />[]'
+        description: ''
+  - name: ungroup()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+    package: ExcelScript!
+    fullName: ungroup()
+    summary: Отменяет группировку любых сгруппированных фигур в указанной группе фигур.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type: void
+        description: ''

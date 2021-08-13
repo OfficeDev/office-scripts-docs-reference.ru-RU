@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetSearchCriteria
-uid: ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
+uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorksheetSearchCriteria
 summary: Представляет используемые критерии поиска таблицы.
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: completeMatch
-  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
-  package: ExcelScript!
-  fullName: completeMatch
-  summary: Указывает, должен ли совпадение быть полным или частичным. Полное совпадение совпадает со всем содержимым ячейки. Частичное совпадение совпадает с подстройки в содержимом ячейки (например, частично совпадает и `cat` `caterpillar``scatter`<!-- -->). По умолчанию `false` (частично).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'completeMatch?: boolean;'
-    return:
-      type: boolean
-- name: matchCase
-  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
-  package: ExcelScript!
-  fullName: matchCase
-  summary: Указывает, является ли совпадение чувствительным к делу. По умолчанию `false` (нечувствительный к делу).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'matchCase?: boolean;'
-    return:
-      type: boolean
-metadata:
-  ms.openlocfilehash: 020d601d5494389faa66838d1eea359131917b8f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914644"
+  - name: completeMatch
+    uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+    package: ExcelScript!
+    fullName: completeMatch
+    summary: 'Указывает, должен ли совпадение быть полным или частичным. Полное совпадение совпадает со всем содержимым ячейки. Частичное совпадение совпадает с подстройки в содержимом ячейки (например, частично совпадает и `cat` `caterpillar``scatter`<!-- -->). По умолчанию `false` (частично).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+    package: ExcelScript!
+    fullName: matchCase
+    summary: 'Указывает, является ли совпадение чувствительным к делу. По умолчанию `false` (нечувствительный к делу).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean

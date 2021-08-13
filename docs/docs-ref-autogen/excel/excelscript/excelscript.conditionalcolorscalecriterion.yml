@@ -1,54 +1,47 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalColorScaleCriterion
-uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
+uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriterion
-summary: Представляет критерий цветовой шкалы, содержащий тип, значение и цвет.
+summary: 'Представляет критерий цветовой шкалы, содержащий тип, значение и цвет.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: color
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: Представление цветового кода HTML цвета цвета (например, \# FF0000 представляет красный).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: Число, формула или `null` (если `type``lowestValue`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula?: string;'
-    return:
-      type: string
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: На чем должна основываться условная формула критерия.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalFormatColorCriterionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
-metadata:
-  ms.openlocfilehash: eac56501e1a342e131cf192de81a465659d2c41d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914043"
+  - name: color
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: 'Представление цветового кода HTML цвета цвета (например, \# FF0000 представляет красный).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 'Число, формула или `null` (если `type``lowestValue`<!-- -->).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: На чем должна основываться условная формула критерия.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalFormatColorCriterionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />'

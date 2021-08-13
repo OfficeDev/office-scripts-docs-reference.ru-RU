@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationMode
-uid: ExcelScript!ExcelScript.CalculationMode:enum
+uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
 package: ExcelScript!
 fullName: ExcelScript.CalculationMode
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
-  package: ExcelScript!
-  summary: Поведение пересчета по умолчанию, в котором Excel вычисляет результаты новой формулы каждый раз, когда меняются соответствующие данные.
-- name: automaticExceptTables
-  uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
-  package: ExcelScript!
-  summary: Вычисляет результаты новой формулы каждый раз, когда меняются соответствующие данные, если только формула не находится в таблице данных.
-- name: manual
-  uid: ExcelScript!ExcelScript.CalculationMode.manual:member
-  package: ExcelScript!
-  summary: Вычисления происходят только в том случае, если пользователь или надстройка запрашивает их.
-metadata:
-  ms.openlocfilehash: f7df42bfa4aee3c3bd6e39aabfc1140e64088d58
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913987"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
+    package: ExcelScript!
+    summary: 'Поведение пересчета по умолчанию, Excel вычисляет результаты новой формулы при каждом смене соответствующих данных.'
+  - name: automaticExceptTables
+    uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
+    package: ExcelScript!
+    summary: 'Вычисляет результаты новой формулы каждый раз, когда меняются соответствующие данные, если только формула не находится в таблице данных.'
+  - name: manual
+    uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
+    package: ExcelScript!
+    summary: 'Вычисления происходят только в том случае, если пользователь или надстройка запрашивает их.'

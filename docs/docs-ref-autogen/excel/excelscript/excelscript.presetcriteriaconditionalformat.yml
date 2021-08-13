@@ -1,61 +1,54 @@
 ### YamlMime:TSType
 name: ExcelScript.PresetCriteriaConditionalFormat
-uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.PresetCriteriaConditionalFormat
-summary: Представляет условный формат предустановленных критериев, например, выше среднего, ниже среднего, уникальные значения, содержит пустые, неблагодарные, ошибки и noerror.
+summary: 'Представляет условный формат предустановленных критериев, например, выше среднего, ниже среднего, уникальные значения, содержит пустые, неблагодарные, ошибки и noerror.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Возвращает объект формата, инкапсулируя шрифт условных форматов, заполнять, границы и другие свойства.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ConditionalRangeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
-      description: ''
-- name: getRule()
-  uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)
-  package: ExcelScript!
-  fullName: getRule()
-  summary: Правило условного форматирования.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRule(): ConditionalPresetCriteriaRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />
-      description: ''
-- name: setRule(rule)
-  uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)
-  package: ExcelScript!
-  fullName: setRule(rule)
-  summary: Правило условного форматирования.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRule(rule: ConditionalPresetCriteriaRule): void;'
-    parameters:
-    - id: rule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 693c7a160b439c57a88374b06cc5d155d701cfab
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914274"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 'Возвращает объект формата, инкапсулируя шрифт условных форматов, заполнять, границы и другие свойства.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
+        description: ''
+  - name: getRule()
+    uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
+    package: ExcelScript!
+    fullName: getRule()
+    summary: Правило условного форматирования.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRule(): ConditionalPresetCriteriaRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />'
+        description: ''
+  - name: setRule(rule)
+    uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
+    package: ExcelScript!
+    fullName: setRule(rule)
+    summary: Правило условного форматирования.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRule(rule: ConditionalPresetCriteriaRule): void;'
+      parameters:
+        - id: rule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />'
+      return:
+        type: void
+        description: ''

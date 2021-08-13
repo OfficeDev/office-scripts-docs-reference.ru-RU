@@ -1,30 +1,23 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotManualFilter
-uid: ExcelScript!ExcelScript.PivotManualFilter:interface
+uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotManualFilter
-summary: Настраиваемый шаблон для ручного фильтра для применения к PivotField. Определяет, какие критерии необходимо установить для `condition` работы фильтра.
+summary: 'Настраиваемый шаблон для ручного фильтра для применения к PivotField. Определяет, какие критерии необходимо установить для `condition` работы фильтра.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: selectedItems
-  uid: ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member
-  package: ExcelScript!
-  fullName: selectedItems
-  summary: Список выбранных элементов, которые необходимо фильтровать вручную. Это должны быть существующие и допустимые элементы из выбранного поля.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'selectedItems?: (string | PivotItem)[];'
-    return:
-      type: (string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]
-metadata:
-  ms.openlocfilehash: f6650745d1d034a6a6e5bead877d305905428c5c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914288"
+  - name: selectedItems
+    uid: 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member'
+    package: ExcelScript!
+    fullName: selectedItems
+    summary: 'Список выбранных элементов, которые необходимо фильтровать вручную. Это должны быть существующие и допустимые элементы из выбранного поля.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedItems?: (string | PivotItem)[];'
+      return:
+        type: '(string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]'

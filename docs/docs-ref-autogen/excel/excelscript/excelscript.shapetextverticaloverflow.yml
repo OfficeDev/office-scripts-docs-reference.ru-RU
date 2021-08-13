@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextVerticalOverflow
-uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalOverflow
 summary: Указывает вертикальный переток для текстового кадра в форме.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: clip
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
-  package: ExcelScript!
-  summary: Скрыть текст, не подходящий вертикально в текстовом кадре.
-- name: ellipsis
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
-  package: ExcelScript!
-  summary: Скрыть текст, который не соответствует вертикально в текстовом кадре, и добавить эллипсис (...) в конце видимого текста.
-- name: overflow
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
-  package: ExcelScript!
-  summary: Разрешить тексту переполнить текстовую рамку вертикально (может быть сверху, снизу или в зависимости от выравнивания текста).
-metadata:
-  ms.openlocfilehash: 11a5caa2c4b41de28d80f7ffb202c8c783478acc
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913386"
+  - name: clip
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    package: ExcelScript!
+    summary: 'Скрыть текст, не подходящий вертикально в текстовом кадре.'
+  - name: ellipsis
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    package: ExcelScript!
+    summary: 'Скрыть текст, который не соответствует вертикально в текстовом кадре, и добавить эллипсис (...) в конце видимого текста.'
+  - name: overflow
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    package: ExcelScript!
+    summary: 'Разрешить тексту переполнить текстовую рамку вертикально (может быть сверху, снизу или в зависимости от выравнивания текста).'

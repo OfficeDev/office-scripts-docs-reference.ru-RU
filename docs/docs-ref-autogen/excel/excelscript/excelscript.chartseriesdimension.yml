@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartSeriesDimension
-uid: ExcelScript!ExcelScript.ChartSeriesDimension:enum
+uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesDimension
-summary: Представляет размеры при извлечении значений из ряда диаграммы.
+summary: Представляет размеры при получении значений из серии диаграмм.
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bubbleSizes
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member
-  package: ExcelScript!
-  summary: Ось ряда диаграммы для размера пузырьков в пузырьковых диаграммах.
-- name: categories
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.categories:member
-  package: ExcelScript!
-  summary: Ось ряда диаграммы для категорий.
-- name: values
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.values:member
-  package: ExcelScript!
-  summary: Ось ряда диаграммы для значений.
-- name: xvalues
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member
-  package: ExcelScript!
-  summary: Ось ряда диаграммы для значений оси x в точечных и пузырьковых диаграммах.
-- name: yvalues
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member
-  package: ExcelScript!
-  summary: Ось ряда диаграммы для значений оси y в точечных и пузырьковых диаграммах.
-metadata:
-  ms.openlocfilehash: 62dbf9658e63772b83fed5d065b58bce1c013d89
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419553"
+  - name: bubbleSizes
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+    package: ExcelScript!
+    summary: Ось серии диаграмм для размеров пузырьков в диаграммах пузырьков.
+  - name: categories
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+    package: ExcelScript!
+    summary: Ось ряда диаграмм для категорий.
+  - name: values
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+    package: ExcelScript!
+    summary: Ось ряда диаграмм для значений.
+  - name: xvalues
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+    package: ExcelScript!
+    summary: Ось ряда диаграмм для значений x-axis в диаграммах рассеяния и пузыря.
+  - name: yvalues
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+    package: ExcelScript!
+    summary: Ось ряда диаграмм для значений y-axis в диаграммах рассеяния и пузыря.

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Slicer
-uid: ExcelScript!ExcelScript.Slicer:interface
+uid: 'ExcelScript!ExcelScript.Slicer:interface'
 package: ExcelScript!
 fullName: ExcelScript.Slicer
 summary: Представляет объект `Slicer` в книге.
@@ -9,375 +9,368 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clearFilters()
-  uid: ExcelScript!ExcelScript.Slicer#clearFilters:member(1)
-  package: ExcelScript!
-  fullName: clearFilters()
-  summary: Удаляет все фильтры, примененные к срезу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.Slicer#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Удаляет срез.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getCaption()
-  uid: ExcelScript!ExcelScript.Slicer#getCaption:member(1)
-  package: ExcelScript!
-  fullName: getCaption()
-  summary: Представляет подпись среза.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCaption(): string;'
-    return:
-      type: string
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.Slicer#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: Представляет высоту среза (в пунктах). Бросает исключение `InvalidArgument` при наборе с отрицательным значением или нулем в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Slicer#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Представляет уникальный ID среза.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getIsFilterCleared()
-  uid: ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)
-  package: ExcelScript!
-  fullName: getIsFilterCleared()
-  summary: Значение, `true` если все фильтры, применяемые в настоящее время на срезе, будут очищены.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsFilterCleared(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.Slicer#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.Slicer#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Представляет имя среза.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getSelectedItems()
-  uid: ExcelScript!ExcelScript.Slicer#getSelectedItems:member(1)
-  package: ExcelScript!
-  fullName: getSelectedItems()
-  summary: Возвращает массив имен выбранных ключей элементов.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSelectedItems(): string[];'
-    return:
-      type: string[]
-      description: ''
-- name: getSlicerItem(key)
-  uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
-  package: ExcelScript!
-  fullName: getSlicerItem(key)
-  summary: Получает элемент среза по ключу или имени. Если элемента среза не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSlicerItem(key: string): SlicerItem | undefined;'
-    parameters:
-    - id: key
-      description: Ключ или имя извлекаемого среза.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SlicerItem:interface" /> | undefined
-      description: ''
-- name: getSlicerItems()
-  uid: ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)
-  package: ExcelScript!
-  fullName: getSlicerItems()
-  summary: Представляет коллекцию элементов slicer, которые являются частью среза.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSlicerItems(): SlicerItem[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SlicerItem:interface" />[]
-      description: ''
-- name: getSortBy()
-  uid: ExcelScript!ExcelScript.Slicer#getSortBy:member(1)
-  package: ExcelScript!
-  fullName: getSortBy()
-  summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "DataSourceOrder", "Ascending", "Descending".'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSortBy(): SlicerSortType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SlicerSortType:enum" />
-      description: ''
-- name: getStyle()
-  uid: ExcelScript!ExcelScript.Slicer#getStyle:member(1)
-  package: ExcelScript!
-  fullName: getStyle()
-  summary: 'Постоянное значение, представляю которое представляет стиль среза. Возможные значения: "SlicerStyleLight1" через "SlicerStyleLight6", "TableStyleOther1" через "TableStyleOther2", "SlicerStyleDark1" через "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStyle(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.Slicer#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.Slicer#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: Представляет ширину среза (в пунктах). Бросает `InvalidArgument` ошибку при наборе с отрицательным значением или нулем в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: getWorksheet()
-  uid: ExcelScript!ExcelScript.Slicer#getWorksheet:member(1)
-  package: ExcelScript!
-  fullName: getWorksheet()
-  summary: Представляет лист, содержащий срез.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWorksheet(): Worksheet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: selectItems(items)
-  uid: ExcelScript!ExcelScript.Slicer#selectItems:member(1)
-  package: ExcelScript!
-  fullName: selectItems(items)
-  summary: Выбирает элементы среза на основе ключей. Предыдущие выборы очищаются. Все элементы будут выбраны по умолчанию, если массив пуст.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'selectItems(items?: string[]): void;'
-    parameters:
-    - id: items
-      description: Необязательный атрибут. Указанные имена элементов среза, которые необходимо выбрать.
-      type: string[]
-    return:
-      type: void
-      description: ''
-- name: setCaption(caption)
-  uid: ExcelScript!ExcelScript.Slicer#setCaption:member(1)
-  package: ExcelScript!
-  fullName: setCaption(caption)
-  summary: Представляет подпись среза.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCaption(caption: string): void;'
-    parameters:
-    - id: caption
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setHeight(height)
-  uid: ExcelScript!ExcelScript.Slicer#setHeight:member(1)
-  package: ExcelScript!
-  fullName: setHeight(height)
-  summary: Представляет высоту среза (в пунктах). Бросает исключение `InvalidArgument` при наборе с отрицательным значением или нулем в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHeight(height: number): void;'
-    parameters:
-    - id: height
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setLeft(left)
-  uid: ExcelScript!ExcelScript.Slicer#setLeft:member(1)
-  package: ExcelScript!
-  fullName: setLeft(left)
-  summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLeft(left: number): void;'
-    parameters:
-    - id: left
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.Slicer#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Представляет имя среза.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSortBy(sortBy)
-  uid: ExcelScript!ExcelScript.Slicer#setSortBy:member(1)
-  package: ExcelScript!
-  fullName: setSortBy(sortBy)
-  summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "DataSourceOrder", "Ascending", "Descending".'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSortBy(sortBy: SlicerSortType): void;'
-    parameters:
-    - id: sortBy
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.SlicerSortType:enum" />
-    return:
-      type: void
-      description: ''
-- name: setStyle(style)
-  uid: ExcelScript!ExcelScript.Slicer#setStyle:member(1)
-  package: ExcelScript!
-  fullName: setStyle(style)
-  summary: 'Постоянное значение, представляю которое представляет стиль среза. Возможные значения: "SlicerStyleLight1" через "SlicerStyleLight6", "TableStyleOther1" через "TableStyleOther2", "SlicerStyleDark1" через "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStyle(style: string): void;'
-    parameters:
-    - id: style
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTop(top)
-  uid: ExcelScript!ExcelScript.Slicer#setTop:member(1)
-  package: ExcelScript!
-  fullName: setTop(top)
-  summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTop(top: number): void;'
-    parameters:
-    - id: top
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setWidth(width)
-  uid: ExcelScript!ExcelScript.Slicer#setWidth:member(1)
-  package: ExcelScript!
-  fullName: setWidth(width)
-  summary: Представляет ширину среза (в пунктах). Бросает `InvalidArgument` ошибку при наборе с отрицательным значением или нулем в качестве ввода.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setWidth(width: number): void;'
-    parameters:
-    - id: width
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 52084dc72ba038caa7f5ad210fba2c285cfb33f4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913365"
+  - name: clearFilters()
+    uid: 'ExcelScript!ExcelScript.Slicer#clearFilters:member(1)'
+    package: ExcelScript!
+    fullName: clearFilters()
+    summary: 'Удаляет все фильтры, примененные к срезу.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Slicer#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Удаляет срез.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getCaption()
+    uid: 'ExcelScript!ExcelScript.Slicer#getCaption:member(1)'
+    package: ExcelScript!
+    fullName: getCaption()
+    summary: Представляет подпись среза.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCaption(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.Slicer#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: Представляет высоту среза (в пунктах). Бросает исключение `InvalidArgument` при наборе с отрицательным значением или нулем в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Slicer#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Представляет уникальный ID среза.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getIsFilterCleared()
+    uid: 'ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)'
+    package: ExcelScript!
+    fullName: getIsFilterCleared()
+    summary: 'Значение, `true` если все фильтры, применяемые в настоящее время на срезе, будут очищены.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsFilterCleared(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.Slicer#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.Slicer#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Представляет имя среза.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getSelectedItems()
+    uid: 'ExcelScript!ExcelScript.Slicer#getSelectedItems:member(1)'
+    package: ExcelScript!
+    fullName: getSelectedItems()
+    summary: Возвращает массив имен выбранных ключей элементов.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedItems(): string[];'
+      return:
+        type: 'string[]'
+        description: ''
+  - name: getSlicerItem(key)
+    uid: 'ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)'
+    package: ExcelScript!
+    fullName: getSlicerItem(key)
+    summary: 'Получает элемент среза по ключу или имени. Если элемента среза не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSlicerItem(key: string): SlicerItem | undefined;'
+      parameters:
+        - id: key
+          description: Ключ или имя извлекаемого среза.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SlicerItem:interface" /> | undefined'
+        description: ''
+  - name: getSlicerItems()
+    uid: 'ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)'
+    package: ExcelScript!
+    fullName: getSlicerItems()
+    summary: 'Представляет коллекцию элементов slicer, которые являются частью среза.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSlicerItems(): SlicerItem[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SlicerItem:interface" />[]'
+        description: ''
+  - name: getSortBy()
+    uid: 'ExcelScript!ExcelScript.Slicer#getSortBy:member(1)'
+    package: ExcelScript!
+    fullName: getSortBy()
+    summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "DataSourceOrder", "Ascending", "Descending".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSortBy(): SlicerSortType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SlicerSortType:enum" />'
+        description: ''
+  - name: getStyle()
+    uid: 'ExcelScript!ExcelScript.Slicer#getStyle:member(1)'
+    package: ExcelScript!
+    fullName: getStyle()
+    summary: 'Постоянное значение, представляю которое представляет стиль среза. Возможные значения: "SlicerStyleLight1" через "SlicerStyleLight6", "TableStyleOther1" через "TableStyleOther2", "SlicerStyleDark1" через "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStyle(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.Slicer#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.Slicer#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: Представляет ширину среза (в пунктах). Бросает `InvalidArgument` ошибку при наборе с отрицательным значением или нулем в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getWorksheet()
+    uid: 'ExcelScript!ExcelScript.Slicer#getWorksheet:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheet()
+    summary: 'Представляет лист, содержащий срез.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: selectItems(items)
+    uid: 'ExcelScript!ExcelScript.Slicer#selectItems:member(1)'
+    package: ExcelScript!
+    fullName: selectItems(items)
+    summary: 'Выбирает элементы среза на основе ключей. Предыдущие выборы очищаются. Все элементы будут выбраны по умолчанию, если массив пуст.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectItems(items?: string[]): void;'
+      parameters:
+        - id: items
+          description: 'Необязательное свойство. Указанные имена элементов среза, которые необходимо выбрать.'
+          type: 'string[]'
+      return:
+        type: void
+        description: ''
+  - name: setCaption(caption)
+    uid: 'ExcelScript!ExcelScript.Slicer#setCaption:member(1)'
+    package: ExcelScript!
+    fullName: setCaption(caption)
+    summary: Представляет подпись среза.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCaption(caption: string): void;'
+      parameters:
+        - id: caption
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setHeight(height)
+    uid: 'ExcelScript!ExcelScript.Slicer#setHeight:member(1)'
+    package: ExcelScript!
+    fullName: setHeight(height)
+    summary: Представляет высоту среза (в пунктах). Бросает исключение `InvalidArgument` при наборе с отрицательным значением или нулем в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHeight(height: number): void;'
+      parameters:
+        - id: height
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setLeft(left)
+    uid: 'ExcelScript!ExcelScript.Slicer#setLeft:member(1)'
+    package: ExcelScript!
+    fullName: setLeft(left)
+    summary: Представляет расстояние в пунктах от левого края среза до левого края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLeft(left: number): void;'
+      parameters:
+        - id: left
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.Slicer#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Представляет имя среза.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSortBy(sortBy)
+    uid: 'ExcelScript!ExcelScript.Slicer#setSortBy:member(1)'
+    package: ExcelScript!
+    fullName: setSortBy(sortBy)
+    summary: 'Представляет порядок сортировки элементов в срезе. Возможные значения: "DataSourceOrder", "Ascending", "Descending".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSortBy(sortBy: SlicerSortType): void;'
+      parameters:
+        - id: sortBy
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.SlicerSortType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setStyle(style)
+    uid: 'ExcelScript!ExcelScript.Slicer#setStyle:member(1)'
+    package: ExcelScript!
+    fullName: setStyle(style)
+    summary: 'Постоянное значение, представляю которое представляет стиль среза. Возможные значения: "SlicerStyleLight1" через "SlicerStyleLight6", "TableStyleOther1" через "TableStyleOther2", "SlicerStyleDark1" через "SlicerStyleDark6". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStyle(style: string): void;'
+      parameters:
+        - id: style
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTop(top)
+    uid: 'ExcelScript!ExcelScript.Slicer#setTop:member(1)'
+    package: ExcelScript!
+    fullName: setTop(top)
+    summary: Представляет расстояние в пунктах от верхнего края среза до верхнего края листа. Бросает `InvalidArgument` ошибку при наборе с отрицательным значением в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTop(top: number): void;'
+      parameters:
+        - id: top
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setWidth(width)
+    uid: 'ExcelScript!ExcelScript.Slicer#setWidth:member(1)'
+    package: ExcelScript!
+    fullName: setWidth(width)
+    summary: Представляет ширину среза (в пунктах). Бросает `InvalidArgument` ошибку при наборе с отрицательным значением или нулем в качестве ввода.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setWidth(width: number): void;'
+      parameters:
+        - id: width
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

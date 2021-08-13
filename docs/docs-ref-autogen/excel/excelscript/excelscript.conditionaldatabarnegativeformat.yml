@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalDataBarNegativeFormat
-uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarNegativeFormat
 summary: Представляет условный формат для отрицательной стороны панели данных.
@@ -9,130 +9,123 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorderColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)
-  package: ExcelScript!
-  fullName: getBorderColor()
-  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorderColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFillColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)
-  package: ExcelScript!
-  fullName: getFillColor()
-  summary: ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFillColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getMatchPositiveBorderColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)
-  package: ExcelScript!
-  fullName: getMatchPositiveBorderColor()
-  summary: Указывает, имеет ли отрицательная планка данных тот же цвет границы, что и положительная планка данных.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMatchPositiveBorderColor(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMatchPositiveFillColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)
-  package: ExcelScript!
-  fullName: getMatchPositiveFillColor()
-  summary: Указывает, имеет ли отрицательная планка данных тот же цвет заполнения, что и положительный.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMatchPositiveFillColor(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setBorderColor(borderColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)
-  package: ExcelScript!
-  fullName: setBorderColor(borderColor)
-  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBorderColor(borderColor: string): void;'
-    parameters:
-    - id: borderColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFillColor(fillColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)
-  package: ExcelScript!
-  fullName: setFillColor(fillColor)
-  summary: ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFillColor(fillColor: string): void;'
-    parameters:
-    - id: fillColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setMatchPositiveBorderColor(matchPositiveBorderColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)
-  package: ExcelScript!
-  fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
-  summary: Указывает, имеет ли отрицательная планка данных тот же цвет границы, что и положительная планка данных.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
-    parameters:
-    - id: matchPositiveBorderColor
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setMatchPositiveFillColor(matchPositiveFillColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)
-  package: ExcelScript!
-  fullName: setMatchPositiveFillColor(matchPositiveFillColor)
-  summary: Указывает, имеет ли отрицательная планка данных тот же цвет заполнения, что и положительный.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
-    parameters:
-    - id: matchPositiveFillColor
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 29715083641d7ffbc94357a022635db2179ce5d4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913296"
+  - name: getBorderColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: getBorderColor()
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorderColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFillColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
+    package: ExcelScript!
+    fullName: getFillColor()
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFillColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getMatchPositiveBorderColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: getMatchPositiveBorderColor()
+    summary: 'Указывает, имеет ли отрицательная планка данных тот же цвет границы, что и положительная планка данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMatchPositiveBorderColor(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMatchPositiveFillColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
+    package: ExcelScript!
+    fullName: getMatchPositiveFillColor()
+    summary: 'Указывает, имеет ли отрицательная планка данных тот же цвет заполнения, что и положительный.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMatchPositiveFillColor(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setBorderColor(borderColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: setBorderColor(borderColor)
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBorderColor(borderColor: string): void;'
+      parameters:
+        - id: borderColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFillColor(fillColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
+    package: ExcelScript!
+    fullName: setFillColor(fillColor)
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFillColor(fillColor: string): void;'
+      parameters:
+        - id: fillColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    summary: 'Указывает, имеет ли отрицательная планка данных тот же цвет границы, что и положительная планка данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
+      parameters:
+        - id: matchPositiveBorderColor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setMatchPositiveFillColor(matchPositiveFillColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
+    package: ExcelScript!
+    fullName: setMatchPositiveFillColor(matchPositiveFillColor)
+    summary: 'Указывает, имеет ли отрицательная планка данных тот же цвет заполнения, что и положительный.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
+      parameters:
+        - id: matchPositiveFillColor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

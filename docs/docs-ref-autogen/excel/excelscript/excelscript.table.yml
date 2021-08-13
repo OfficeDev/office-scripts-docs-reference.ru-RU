@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Table
-uid: ExcelScript!ExcelScript.Table:interface
+uid: 'ExcelScript!ExcelScript.Table:interface'
 package: ExcelScript!
 fullName: ExcelScript.Table
 summary: Представляет таблицу Excel.
@@ -9,631 +9,624 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: addColumn(index, values, name)
-  uid: ExcelScript!ExcelScript.Table#addColumn:member(1)
-  package: ExcelScript!
-  fullName: addColumn(index, values, name)
-  summary: Добавляет новый столбец в таблицу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addColumn(
-                  index?: number,
-                  values?: (boolean | string | number)[],
-                  name?: string
-              ): TableColumn;
-    parameters:
-    - id: index
-      description: Необязательный. Определяет относительную позицию нового столбца. Если задано значение null или -1, столбец добавляется в конце. Столбцы с более высокими значениями индекса смещаются в сторону. Используется нулевой индекс.
-      type: number
-    - id: values
-      description: Необязательный. Одномерный массив неформатных значений столбца таблицы.
-      type: (boolean | string | number)[]
-    - id: name
-      description: Необязательный параметр. Задает имя нового столбца. Если значение пустое, используется имя по умолчанию.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
-      description: ''
-- name: addRow(index, values)
-  uid: ExcelScript!ExcelScript.Table#addRow:member(1)
-  package: ExcelScript!
-  fullName: addRow(index, values)
-  summary: Добавляет одну строку в таблицу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
-    parameters:
-    - id: index
-      description: Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.
-      type: number
-    - id: values
-      description: Необязательный параметр. Одномерный массив неформатных значений строки таблицы.
-      type: (boolean | string | number)[]
-    return:
-      type: void
-      description: ''
-- name: addRows(index, values)
-  uid: ExcelScript!ExcelScript.Table#addRows:member(1)
-  package: ExcelScript!
-  fullName: addRows(index, values)
-  summary: Добавляет одну или несколько строк в таблицу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
-    parameters:
-    - id: index
-      description: Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.
-      type: number
-    - id: values
-      description: Необязательный параметр. Двухмерный массив неформатированных значений строки таблицы.
-      type: (boolean | string | number)[][]
-    return:
-      type: void
-      description: ''
-- name: clearFilters()
-  uid: ExcelScript!ExcelScript.Table#clearFilters:member(1)
-  package: ExcelScript!
-  fullName: clearFilters()
-  summary: Удаляет все фильтры, примененные к таблице.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: convertToRange()
-  uid: ExcelScript!ExcelScript.Table#convertToRange:member(1)
-  package: ExcelScript!
-  fullName: convertToRange()
-  summary: Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'convertToRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.Table#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Удаляет таблицу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: deleteRowsAt(index, count)
-  uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
-  package: ExcelScript!
-  fullName: deleteRowsAt(index, count)
-  summary: Удаление указанного количества строк в заданном индексе.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'deleteRowsAt(index: number, count?: number): void;'
-    parameters:
-    - id: index
-      description: 'Значение индекса строки, которая должна быть удалена. Предостережение: индекс строки может быть перемещен с того времени, когда вы определили значение, используемого для удаления.'
-      type: number
-    - id: count
-      description: Количество строк, которые необходимо удалить. По умолчанию будет удалена одна строка. Примечание. Удаление одновременно более 1000 строк может привести к периоду времени работы power Automate.
-      type: number
-    return:
-      type: void
-      description: ''
-- name: getAutoFilter()
-  uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
-  package: ExcelScript!
-  fullName: getAutoFilter()
-  summary: Представляет объект `AutoFilter` таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAutoFilter(): AutoFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
-- name: getColumn(key)
-  uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
-  package: ExcelScript!
-  fullName: getColumn(key)
-  summary: Возвращает объект столбца по имени или идентификатору. Если столбец не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumn(key: number | string): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: Имя столбца или ID.
-      type: number | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumnById(key)
-  uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
-  package: ExcelScript!
-  fullName: getColumnById(key)
-  summary: Получает объект столбца по ID. Если столбец не существует, возвращается неопределенный.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnById(key: number): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: ID столбца.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumnByName(key)
-  uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
-  package: ExcelScript!
-  fullName: getColumnByName(key)
-  summary: Получает объект столбца по имени. Если столбец не существует, возвращается неопределенный.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnByName(key: string): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: Имя столбца.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumns()
-  uid: ExcelScript!ExcelScript.Table#getColumns:member(1)
-  package: ExcelScript!
-  fullName: getColumns()
-  summary: Представляет коллекцию всех столбцов в таблице.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumns(): TableColumn[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />[]
-      description: ''
-- name: getHeaderRowRange()
-  uid: ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)
-  package: ExcelScript!
-  fullName: getHeaderRowRange()
-  summary: Получает объект диапазона, связанный со строкой заголовка таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeaderRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getHighlightFirstColumn()
-  uid: ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)
-  package: ExcelScript!
-  fullName: getHighlightFirstColumn()
-  summary: Указывает, содержит ли первый столбец специальный форматирование.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHighlightFirstColumn(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getHighlightLastColumn()
-  uid: ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)
-  package: ExcelScript!
-  fullName: getHighlightLastColumn()
-  summary: Указывает, содержит ли последний столбец специальный форматирование.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHighlightLastColumn(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Table#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLegacyId()
-  uid: ExcelScript!ExcelScript.Table#getLegacyId:member(1)
-  package: ExcelScript!
-  fullName: getLegacyId()
-  summary: Возвращает числимый ID.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLegacyId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.Table#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Имя таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPredefinedTableStyle()
-  uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
-  package: ExcelScript!
-  fullName: getPredefinedTableStyle()
-  summary: 'Постоянное значение, представляю которое представляет стиль таблицы. Возможные значения: "TableStyleLight1" через "TableStyleLight21", "TableStyleMedium1" через "TableStyleMedium28", "TableStyleDark1" через "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPredefinedTableStyle(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.Table#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: Получает объект диапазона, связанный со всей таблицей.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRangeBetweenHeaderAndTotal()
-  uid: ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)
-  package: ExcelScript!
-  fullName: getRangeBetweenHeaderAndTotal()
-  summary: Получает объект диапазона, связанный с основными данными таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRangeBetweenHeaderAndTotal(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRowCount()
-  uid: ExcelScript!ExcelScript.Table#getRowCount:member(1)
-  package: ExcelScript!
-  fullName: getRowCount()
-  summary: Получает количество строк в таблице.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowCount(): number;'
-    return:
-      type: number
-      description: ''
-- name: getShowBandedColumns()
-  uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
-  package: ExcelScript!
-  fullName: getShowBandedColumns()
-  summary: Указывает, показывают ли столбцы полосатую форматирование, в котором нечетные столбцы выделены иначе, чем даже, чтобы облегчить чтение таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBandedColumns(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowBandedRows()
-  uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
-  package: ExcelScript!
-  fullName: getShowBandedRows()
-  summary: Указывает, показывают ли строки полосы форматирования, в которых нечетные строки выделяются иначе, чем четные, чтобы облегчить чтение таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBandedRows(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowFilterButton()
-  uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
-  package: ExcelScript!
-  fullName: getShowFilterButton()
-  summary: Указывает, видны ли кнопки фильтра в верхней части каждого загона столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowFilterButton(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowHeaders()
-  uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
-  package: ExcelScript!
-  fullName: getShowHeaders()
-  summary: Указывает, видна ли строка заглавной строки. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowHeaders(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowTotals()
-  uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
-  package: ExcelScript!
-  fullName: getShowTotals()
-  summary: Указывает, видна ли общая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowTotals(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSort()
-  uid: ExcelScript!ExcelScript.Table#getSort:member(1)
-  package: ExcelScript!
-  fullName: getSort()
-  summary: Представляет сортировку для таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSort(): TableSort;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableSort:interface" />
-      description: ''
-- name: getTotalRowRange()
-  uid: ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)
-  package: ExcelScript!
-  fullName: getTotalRowRange()
-  summary: Получает объект диапазона, связанный со строкой итогов таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTotalRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getWorksheet()
-  uid: ExcelScript!ExcelScript.Table#getWorksheet:member(1)
-  package: ExcelScript!
-  fullName: getWorksheet()
-  summary: Лист, содержащий текущую таблицу.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWorksheet(): Worksheet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: reapplyFilters()
-  uid: ExcelScript!ExcelScript.Table#reapplyFilters:member(1)
-  package: ExcelScript!
-  fullName: reapplyFilters()
-  summary: Повторно применяет все текущие фильтры к таблице.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'reapplyFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: resize(newRange)
-  uid: ExcelScript!ExcelScript.Table#resize:member(1)
-  package: ExcelScript!
-  fullName: resize(newRange)
-  summary: Resize the table to the new range. Новый диапазон должен совпадать с исходным диапазоном таблицы, а заглавные (или верхние части таблицы) должны быть в одной строке.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'resize(newRange: Range | string): void;'
-    parameters:
-    - id: newRange
-      description: Объект диапазона или адрес диапазона, которые будут использоваться для определения нового размера таблицы.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: void
-      description: ''
-- name: setHighlightFirstColumn(highlightFirstColumn)
-  uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
-  package: ExcelScript!
-  fullName: setHighlightFirstColumn(highlightFirstColumn)
-  summary: Указывает, содержит ли первый столбец специальный форматирование.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
-    parameters:
-    - id: highlightFirstColumn
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setHighlightLastColumn(highlightLastColumn)
-  uid: ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)
-  package: ExcelScript!
-  fullName: setHighlightLastColumn(highlightLastColumn)
-  summary: Указывает, содержит ли последний столбец специальный форматирование.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
-    parameters:
-    - id: highlightLastColumn
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.Table#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Имя таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPredefinedTableStyle(predefinedTableStyle)
-  uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
-  package: ExcelScript!
-  fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 'Постоянное значение, представляю которое представляет стиль таблицы. Возможные значения: "TableStyleLight1" через "TableStyleLight21", "TableStyleMedium1" через "TableStyleMedium28", "TableStyleDark1" через "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
-    parameters:
-    - id: predefinedTableStyle
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setShowBandedColumns(showBandedColumns)
-  uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
-  package: ExcelScript!
-  fullName: setShowBandedColumns(showBandedColumns)
-  summary: Указывает, показывают ли столбцы полосатую форматирование, в котором нечетные столбцы выделены иначе, чем даже, чтобы облегчить чтение таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
-    parameters:
-    - id: showBandedColumns
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowBandedRows(showBandedRows)
-  uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
-  package: ExcelScript!
-  fullName: setShowBandedRows(showBandedRows)
-  summary: Указывает, показывают ли строки полосы форматирования, в которых нечетные строки выделяются иначе, чем четные, чтобы облегчить чтение таблицы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBandedRows(showBandedRows: boolean): void;'
-    parameters:
-    - id: showBandedRows
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowFilterButton(showFilterButton)
-  uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
-  package: ExcelScript!
-  fullName: setShowFilterButton(showFilterButton)
-  summary: Указывает, видны ли кнопки фильтра в верхней части каждого загона столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowFilterButton(showFilterButton: boolean): void;'
-    parameters:
-    - id: showFilterButton
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowHeaders(showHeaders)
-  uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
-  package: ExcelScript!
-  fullName: setShowHeaders(showHeaders)
-  summary: Указывает, видна ли строка заглавной строки. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowHeaders(showHeaders: boolean): void;'
-    parameters:
-    - id: showHeaders
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowTotals(showTotals)
-  uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
-  package: ExcelScript!
-  fullName: setShowTotals(showTotals)
-  summary: Указывает, видна ли общая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowTotals(showTotals: boolean): void;'
-    parameters:
-    - id: showTotals
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9b5569c566237ce34403752541bc7ebcfc4f4f17
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913344"
+  - name: 'addColumn(index, values, name)'
+    uid: 'ExcelScript!ExcelScript.Table#addColumn:member(1)'
+    package: ExcelScript!
+    fullName: 'addColumn(index, values, name)'
+    summary: Добавляет новый столбец в таблицу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addColumn(
+                    index?: number,
+                    values?: (boolean | string | number)[],
+                    name?: string
+                ): TableColumn;
+      parameters:
+        - id: index
+          description: 'Необязательный. Определяет относительную позицию нового столбца. Если задано значение null или -1, столбец добавляется в конце. Столбцы с более высокими значениями индекса смещаются в сторону. Используется нулевой индекс.'
+          type: number
+        - id: values
+          description: Необязательный. Одномерный массив неформатных значений столбца таблицы.
+          type: '(boolean | string | number)[]'
+        - id: name
+          description: 'Необязательный параметр. Задает имя нового столбца. Если значение пустое, используется имя по умолчанию.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" />'
+        description: ''
+  - name: 'addRow(index, values)'
+    uid: 'ExcelScript!ExcelScript.Table#addRow:member(1)'
+    package: ExcelScript!
+    fullName: 'addRow(index, values)'
+    summary: Добавляет одну строку в таблицу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
+      parameters:
+        - id: index
+          description: 'Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.'
+          type: number
+        - id: values
+          description: Необязательный параметр. Одномерный массив неформатных значений строки таблицы.
+          type: '(boolean | string | number)[]'
+      return:
+        type: void
+        description: ''
+  - name: 'addRows(index, values)'
+    uid: 'ExcelScript!ExcelScript.Table#addRows:member(1)'
+    package: ExcelScript!
+    fullName: 'addRows(index, values)'
+    summary: Добавляет одну или несколько строк в таблицу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
+      parameters:
+        - id: index
+          description: 'Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.'
+          type: number
+        - id: values
+          description: Необязательный параметр. Двухмерный массив неформатированных значений строки таблицы.
+          type: '(boolean | string | number)[][]'
+      return:
+        type: void
+        description: ''
+  - name: clearFilters()
+    uid: 'ExcelScript!ExcelScript.Table#clearFilters:member(1)'
+    package: ExcelScript!
+    fullName: clearFilters()
+    summary: 'Удаляет все фильтры, примененные к таблице.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: convertToRange()
+    uid: 'ExcelScript!ExcelScript.Table#convertToRange:member(1)'
+    package: ExcelScript!
+    fullName: convertToRange()
+    summary: Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'convertToRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Table#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Удаляет таблицу.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'deleteRowsAt(index, count)'
+    uid: 'ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)'
+    package: ExcelScript!
+    fullName: 'deleteRowsAt(index, count)'
+    summary: Удаление указанного количества строк в заданном индексе.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteRowsAt(index: number, count?: number): void;'
+      parameters:
+        - id: index
+          description: 'Значение индекса строки, которая должна быть удалена. Предостережение: индекс строки может быть перемещен с того времени, когда вы определили значение, используемого для удаления.'
+          type: number
+        - id: count
+          description: 'Количество строк, которые необходимо удалить. По умолчанию будет удалена одна строка. Примечание. Удаление одновременно более 1000 строк может привести к Power Automate времени.'
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: getAutoFilter()
+    uid: 'ExcelScript!ExcelScript.Table#getAutoFilter:member(1)'
+    package: ExcelScript!
+    fullName: getAutoFilter()
+    summary: Представляет объект `AutoFilter` таблицы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAutoFilter(): AutoFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />'
+        description: ''
+  - name: getColumn(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumn:member(1)'
+    package: ExcelScript!
+    fullName: getColumn(key)
+    summary: 'Возвращает объект столбца по имени или идентификатору. Если столбец не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumn(key: number | string): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: Имя столбца или ID.
+          type: number | string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumnById(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumnById:member(1)'
+    package: ExcelScript!
+    fullName: getColumnById(key)
+    summary: 'Получает объект столбца по ID. Если столбец не существует, возвращается неопределенный.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnById(key: number): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: ID столбца.
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumnByName(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumnByName:member(1)'
+    package: ExcelScript!
+    fullName: getColumnByName(key)
+    summary: 'Получает объект столбца по имени. Если столбец не существует, возвращается неопределенный.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnByName(key: string): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: Имя столбца.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumns()
+    uid: 'ExcelScript!ExcelScript.Table#getColumns:member(1)'
+    package: ExcelScript!
+    fullName: getColumns()
+    summary: Представляет коллекцию всех столбцов в таблице.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumns(): TableColumn[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" />[]'
+        description: ''
+  - name: getHeaderRowRange()
+    uid: 'ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getHeaderRowRange()
+    summary: 'Получает объект диапазона, связанный со строкой заголовка таблицы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeaderRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getHighlightFirstColumn()
+    uid: 'ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)'
+    package: ExcelScript!
+    fullName: getHighlightFirstColumn()
+    summary: 'Указывает, содержит ли первый столбец специальный форматирование.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHighlightFirstColumn(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getHighlightLastColumn()
+    uid: 'ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)'
+    package: ExcelScript!
+    fullName: getHighlightLastColumn()
+    summary: 'Указывает, содержит ли последний столбец специальный форматирование.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHighlightLastColumn(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Table#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 'Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLegacyId()
+    uid: 'ExcelScript!ExcelScript.Table#getLegacyId:member(1)'
+    package: ExcelScript!
+    fullName: getLegacyId()
+    summary: Возвращает числимый ID.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLegacyId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.Table#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Имя таблицы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPredefinedTableStyle()
+    uid: 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
+    package: ExcelScript!
+    fullName: getPredefinedTableStyle()
+    summary: 'Постоянное значение, представляю которое представляет стиль таблицы. Возможные значения: "TableStyleLight1" через "TableStyleLight21", "TableStyleMedium1" через "TableStyleMedium28", "TableStyleDark1" через "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPredefinedTableStyle(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.Table#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: 'Получает объект диапазона, связанный со всей таблицей.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRangeBetweenHeaderAndTotal()
+    uid: 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
+    package: ExcelScript!
+    fullName: getRangeBetweenHeaderAndTotal()
+    summary: 'Получает объект диапазона, связанный с основными данными таблицы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeBetweenHeaderAndTotal(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRowCount()
+    uid: 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
+    package: ExcelScript!
+    fullName: getRowCount()
+    summary: Получает количество строк в таблице.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getShowBandedColumns()
+    uid: 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
+    package: ExcelScript!
+    fullName: getShowBandedColumns()
+    summary: 'Указывает, показывают ли столбцы полосатую форматирование, в котором нечетные столбцы выделены иначе, чем даже, чтобы облегчить чтение таблицы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBandedColumns(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowBandedRows()
+    uid: 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
+    package: ExcelScript!
+    fullName: getShowBandedRows()
+    summary: 'Указывает, показывают ли строки полосы форматирования, в которых нечетные строки выделяются иначе, чем четные, чтобы облегчить чтение таблицы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBandedRows(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowFilterButton()
+    uid: 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
+    package: ExcelScript!
+    fullName: getShowFilterButton()
+    summary: 'Указывает, видны ли кнопки фильтра в верхней части каждого загона столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowFilterButton(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowHeaders()
+    uid: 'ExcelScript!ExcelScript.Table#getShowHeaders:member(1)'
+    package: ExcelScript!
+    fullName: getShowHeaders()
+    summary: 'Указывает, видна ли строка заглавной строки. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowHeaders(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowTotals()
+    uid: 'ExcelScript!ExcelScript.Table#getShowTotals:member(1)'
+    package: ExcelScript!
+    fullName: getShowTotals()
+    summary: 'Указывает, видна ли общая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowTotals(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSort()
+    uid: 'ExcelScript!ExcelScript.Table#getSort:member(1)'
+    package: ExcelScript!
+    fullName: getSort()
+    summary: Представляет сортировку для таблицы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSort(): TableSort;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableSort:interface" />'
+        description: ''
+  - name: getTotalRowRange()
+    uid: 'ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getTotalRowRange()
+    summary: 'Получает объект диапазона, связанный со строкой итогов таблицы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTotalRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getWorksheet()
+    uid: 'ExcelScript!ExcelScript.Table#getWorksheet:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheet()
+    summary: 'Лист, содержащий текущую таблицу.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: reapplyFilters()
+    uid: 'ExcelScript!ExcelScript.Table#reapplyFilters:member(1)'
+    package: ExcelScript!
+    fullName: reapplyFilters()
+    summary: Повторно применяет все текущие фильтры к таблице.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reapplyFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: resize(newRange)
+    uid: 'ExcelScript!ExcelScript.Table#resize:member(1)'
+    package: ExcelScript!
+    fullName: resize(newRange)
+    summary: 'Resize the table to the new range. Новый диапазон должен совпадать с исходным диапазоном таблицы, а заглавные (или верхние части таблицы) должны быть в одной строке.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resize(newRange: Range | string): void;'
+      parameters:
+        - id: newRange
+          description: 'Объект диапазона или адрес диапазона, которые будут использоваться для определения нового размера таблицы.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: void
+        description: ''
+  - name: setHighlightFirstColumn(highlightFirstColumn)
+    uid: 'ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)'
+    package: ExcelScript!
+    fullName: setHighlightFirstColumn(highlightFirstColumn)
+    summary: 'Указывает, содержит ли первый столбец специальный форматирование.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
+      parameters:
+        - id: highlightFirstColumn
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setHighlightLastColumn(highlightLastColumn)
+    uid: 'ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)'
+    package: ExcelScript!
+    fullName: setHighlightLastColumn(highlightLastColumn)
+    summary: 'Указывает, содержит ли последний столбец специальный форматирование.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
+      parameters:
+        - id: highlightLastColumn
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.Table#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Имя таблицы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPredefinedTableStyle(predefinedTableStyle)
+    uid: 'ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)'
+    package: ExcelScript!
+    fullName: setPredefinedTableStyle(predefinedTableStyle)
+    summary: 'Постоянное значение, представляю которое представляет стиль таблицы. Возможные значения: "TableStyleLight1" через "TableStyleLight21", "TableStyleMedium1" через "TableStyleMedium28", "TableStyleDark1" через "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
+      parameters:
+        - id: predefinedTableStyle
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setShowBandedColumns(showBandedColumns)
+    uid: 'ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)'
+    package: ExcelScript!
+    fullName: setShowBandedColumns(showBandedColumns)
+    summary: 'Указывает, показывают ли столбцы полосатую форматирование, в котором нечетные столбцы выделены иначе, чем даже, чтобы облегчить чтение таблицы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
+      parameters:
+        - id: showBandedColumns
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowBandedRows(showBandedRows)
+    uid: 'ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)'
+    package: ExcelScript!
+    fullName: setShowBandedRows(showBandedRows)
+    summary: 'Указывает, показывают ли строки полосы форматирования, в которых нечетные строки выделяются иначе, чем четные, чтобы облегчить чтение таблицы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBandedRows(showBandedRows: boolean): void;'
+      parameters:
+        - id: showBandedRows
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowFilterButton(showFilterButton)
+    uid: 'ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)'
+    package: ExcelScript!
+    fullName: setShowFilterButton(showFilterButton)
+    summary: 'Указывает, видны ли кнопки фильтра в верхней части каждого загона столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowFilterButton(showFilterButton: boolean): void;'
+      parameters:
+        - id: showFilterButton
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowHeaders(showHeaders)
+    uid: 'ExcelScript!ExcelScript.Table#setShowHeaders:member(1)'
+    package: ExcelScript!
+    fullName: setShowHeaders(showHeaders)
+    summary: 'Указывает, видна ли строка заглавной строки. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowHeaders(showHeaders: boolean): void;'
+      parameters:
+        - id: showHeaders
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowTotals(showTotals)
+    uid: 'ExcelScript!ExcelScript.Table#setShowTotals:member(1)'
+    package: ExcelScript!
+    fullName: setShowTotals(showTotals)
+    summary: 'Указывает, видна ли общая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowTotals(showTotals: boolean): void;'
+      parameters:
+        - id: showTotals
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

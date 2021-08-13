@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalDataBarPositiveFormat
-uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarPositiveFormat
 summary: Представляет условный формат для положительной стороны панели данных.
@@ -9,100 +9,93 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorderColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)
-  package: ExcelScript!
-  fullName: getBorderColor()
-  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorderColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFillColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)
-  package: ExcelScript!
-  fullName: getFillColor()
-  summary: ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFillColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getGradientFill()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)
-  package: ExcelScript!
-  fullName: getGradientFill()
-  summary: Указывает, есть ли в панели данных градиент.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getGradientFill(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setBorderColor(borderColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)
-  package: ExcelScript!
-  fullName: setBorderColor(borderColor)
-  summary: ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBorderColor(borderColor: string): void;'
-    parameters:
-    - id: borderColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFillColor(fillColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)
-  package: ExcelScript!
-  fullName: setFillColor(fillColor)
-  summary: ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFillColor(fillColor: string): void;'
-    parameters:
-    - id: fillColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setGradientFill(gradientFill)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)
-  package: ExcelScript!
-  fullName: setGradientFill(gradientFill)
-  summary: Указывает, есть ли в панели данных градиент.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setGradientFill(gradientFill: boolean): void;'
-    parameters:
-    - id: gradientFill
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 05ba702cb56d5db18a6b70a5beff46dfb063b8de
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913846"
+  - name: getBorderColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: getBorderColor()
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorderColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFillColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)'
+    package: ExcelScript!
+    fullName: getFillColor()
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFillColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getGradientFill()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)'
+    package: ExcelScript!
+    fullName: getGradientFill()
+    summary: 'Указывает, есть ли в панели данных градиент.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getGradientFill(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setBorderColor(borderColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: setBorderColor(borderColor)
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет пограничной строки, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если граница не присутствует или не установлена.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBorderColor(borderColor: string): void;'
+      parameters:
+        - id: borderColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFillColor(fillColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)'
+    package: ExcelScript!
+    fullName: setFillColor(fillColor)
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет заполнения, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFillColor(fillColor: string): void;'
+      parameters:
+        - id: fillColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setGradientFill(gradientFill)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)'
+    package: ExcelScript!
+    fullName: setGradientFill(gradientFill)
+    summary: 'Указывает, есть ли в панели данных градиент.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setGradientFill(gradientFill: boolean): void;'
+      parameters:
+        - id: gradientFill
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

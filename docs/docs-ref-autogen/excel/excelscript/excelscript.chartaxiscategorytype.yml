@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisCategoryType
-uid: ExcelScript!ExcelScript.ChartAxisCategoryType:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisCategoryType
-summary: Указывает тип оси категорий.
+summary: Указывает тип оси категории.
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member
-  package: ExcelScript!
-  summary: Excel управляет типом оси.
-- name: dateAxis
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member
-  package: ExcelScript!
-  summary: Ось группирует данные в шкале времени.
-- name: textAxis
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member
-  package: ExcelScript!
-  summary: Ось группирует данные по произвольному набору категорий.
-metadata:
-  ms.openlocfilehash: b9018475b15766a4fcf66dad2be5353812923ef5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420106"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+    package: ExcelScript!
+    summary: Excel управляет типом оси.
+  - name: dateAxis
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+    package: ExcelScript!
+    summary: Данные групп Axis по шкале времени.
+  - name: textAxis
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+    package: ExcelScript!
+    summary: Данные групп Axis по произвольному набору категорий.

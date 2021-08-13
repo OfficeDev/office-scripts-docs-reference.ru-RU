@@ -1,44 +1,37 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedItemArrayValues
-uid: ExcelScript!ExcelScript.NamedItemArrayValues:interface
+uid: 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
 package: ExcelScript!
 fullName: ExcelScript.NamedItemArrayValues
-summary: Представляет объект, содержащий значения и типы именованного элемента.
+summary: 'Представляет объект, содержащий значения и типы имени элемента.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getTypes()
-  uid: ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)
-  package: ExcelScript!
-  fullName: getTypes()
-  summary: Представляет типы для каждого элемента в именованном массиве элементов
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTypes(): RangeValueType[][];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
-      description: ''
-- name: getValues()
-  uid: ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)
-  package: ExcelScript!
-  fullName: getValues()
-  summary: Представляет значения каждого элемента в массиве именованных элементов.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValues(): (string | number | boolean)[][];'
-    return:
-      type: (string | number | boolean)[][]
-      description: ''
-metadata:
-  ms.openlocfilehash: 3df4b339e499dad6a5e1bd1bc43586d0ca1d8ab9
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554641"
+  - name: getTypes()
+    uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)'
+    package: ExcelScript!
+    fullName: getTypes()
+    summary: Представляет типы для каждого элемента в массиве именуемого элемента
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTypes(): RangeValueType[][];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]'
+        description: ''
+  - name: getValues()
+    uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)'
+    package: ExcelScript!
+    fullName: getValues()
+    summary: Представляет значения каждого элемента в массиве именованных элементов.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValues(): (string | number | boolean)[][];'
+      return:
+        type: '(string | number | boolean)[][]'
+        description: ''

@@ -1,198 +1,191 @@
 ### YamlMime:TSType
 name: ExcelScript.ShapeFont
-uid: ExcelScript!ExcelScript.ShapeFont:interface
+uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFont
-summary: Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта и цвет для объекта `TextRange` фигуры.
+summary: 'Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта и цвет для объекта `TextRange` фигуры.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBold()
-  uid: ExcelScript!ExcelScript.ShapeFont#getBold:member(1)
-  package: ExcelScript!
-  fullName: getBold()
-  summary: Указывает, является ли шрифт полужирным. Возвращается, если в текст включены как жирные, так и `null` нежирные `TextRange` текстовые фрагменты.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBold(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ShapeFont#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: Представление цветового кода HTML текстового цвета (например, \# "FF0000" представляет красный цвет). `null`Возвращается, если в текст включены `TextRange` фрагменты с разными цветами.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getItalic()
-  uid: ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)
-  package: ExcelScript!
-  fullName: getItalic()
-  summary: Указывает, применяется ли курсив. Возвращается, если в текст включены как фрагменты текста, так и `null` `TextRange` неиталические.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getItalic(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.ShapeFont#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Представляет имя шрифта (например, "Калибри"). Если текст является сложным скриптом или восточноазиатским языком, это соответствующее имя шрифта; в противном случае это имя латинского шрифта.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getSize()
-  uid: ExcelScript!ExcelScript.ShapeFont#getSize:member(1)
-  package: ExcelScript!
-  fullName: getSize()
-  summary: Представляет размер шрифта в точках (например, 11). Возвращается, если в текст включены фрагменты с `null` разными `TextRange` размерами шрифта.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSize(): number;'
-    return:
-      type: number
-      description: ''
-- name: getUnderline()
-  uid: ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)
-  package: ExcelScript!
-  fullName: getUnderline()
-  summary: Тип подчеркивания, применяемый для шрифта. Возвращается, если в текст включены фрагменты с `null` разными `TextRange` подчеркнутными стилями. Подробные `ExcelScript.ShapeFontUnderlineStyle` сведения см. в материале.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUnderline(): ShapeFontUnderlineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />
-      description: ''
-- name: setBold(bold)
-  uid: ExcelScript!ExcelScript.ShapeFont#setBold:member(1)
-  package: ExcelScript!
-  fullName: setBold(bold)
-  summary: Указывает, является ли шрифт полужирным. Возвращается, если в текст включены как жирные, так и `null` нежирные `TextRange` текстовые фрагменты.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBold(bold: boolean): void;'
-    parameters:
-    - id: bold
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ShapeFont#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: Представление цветового кода HTML текстового цвета (например, \# "FF0000" представляет красный цвет). `null`Возвращается, если в текст включены `TextRange` фрагменты с разными цветами.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setItalic(italic)
-  uid: ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)
-  package: ExcelScript!
-  fullName: setItalic(italic)
-  summary: Указывает, применяется ли курсив. Возвращается, если в текст включены как фрагменты текста, так и `null` `TextRange` неиталические.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setItalic(italic: boolean): void;'
-    parameters:
-    - id: italic
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.ShapeFont#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Представляет имя шрифта (например, "Калибри"). Если текст является сложным скриптом или восточноазиатским языком, это соответствующее имя шрифта; в противном случае это имя латинского шрифта.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSize(size)
-  uid: ExcelScript!ExcelScript.ShapeFont#setSize:member(1)
-  package: ExcelScript!
-  fullName: setSize(size)
-  summary: Представляет размер шрифта в точках (например, 11). Возвращается, если в текст включены фрагменты с `null` разными `TextRange` размерами шрифта.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSize(size: number): void;'
-    parameters:
-    - id: size
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setUnderline(underline)
-  uid: ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)
-  package: ExcelScript!
-  fullName: setUnderline(underline)
-  summary: Тип подчеркивания, применяемый для шрифта. Возвращается, если в текст включены фрагменты с `null` разными `TextRange` подчеркнутными стилями. Подробные `ExcelScript.ShapeFontUnderlineStyle` сведения см. в материале.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
-    parameters:
-    - id: underline
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: de6feb3a51ce36b6d5744ee0b0ca65837dcd7e26
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914197"
+  - name: getBold()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+    package: ExcelScript!
+    fullName: getBold()
+    summary: 'Указывает, является ли шрифт полужирным. Возвращается, если в текст включены как жирные, так и `null` нежирные `TextRange` текстовые фрагменты.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 'Представление цветового кода HTML текстового цвета (например, \# "FF0000" представляет красный цвет). `null`Возвращается, если в текст включены `TextRange` фрагменты с разными цветами.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getItalic()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+    package: ExcelScript!
+    fullName: getItalic()
+    summary: 'Указывает, применяется ли курсив. Возвращается, если в текст включены как фрагменты текста, так и `null` `TextRange` неиталические.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 'Представляет имя шрифта (например, "Калибри"). Если текст является сложным скриптом или восточноазиатским языком, это соответствующее имя шрифта; в противном случае это имя латинского шрифта.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getSize()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+    package: ExcelScript!
+    fullName: getSize()
+    summary: 'Представляет размер шрифта в точках (например, 11). Возвращается, если в текст включены фрагменты с `null` разными `TextRange` размерами шрифта.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getUnderline()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+    package: ExcelScript!
+    fullName: getUnderline()
+    summary: 'Тип подчеркивания, применяемый для шрифта. Возвращается, если в текст включены фрагменты с `null` разными `TextRange` подчеркнутными стилями. Подробные `ExcelScript.ShapeFontUnderlineStyle` сведения см. в материале.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUnderline(): ShapeFontUnderlineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />'
+        description: ''
+  - name: setBold(bold)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+    package: ExcelScript!
+    fullName: setBold(bold)
+    summary: 'Указывает, является ли шрифт полужирным. Возвращается, если в текст включены как жирные, так и `null` нежирные `TextRange` текстовые фрагменты.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      parameters:
+        - id: bold
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 'Представление цветового кода HTML текстового цвета (например, \# "FF0000" представляет красный цвет). `null`Возвращается, если в текст включены `TextRange` фрагменты с разными цветами.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setItalic(italic)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+    package: ExcelScript!
+    fullName: setItalic(italic)
+    summary: 'Указывает, применяется ли курсив. Возвращается, если в текст включены как фрагменты текста, так и `null` `TextRange` неиталические.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      parameters:
+        - id: italic
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: 'Представляет имя шрифта (например, "Калибри"). Если текст является сложным скриптом или восточноазиатским языком, это соответствующее имя шрифта; в противном случае это имя латинского шрифта.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSize(size)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+    package: ExcelScript!
+    fullName: setSize(size)
+    summary: 'Представляет размер шрифта в точках (например, 11). Возвращается, если в текст включены фрагменты с `null` разными `TextRange` размерами шрифта.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSize(size: number): void;'
+      parameters:
+        - id: size
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setUnderline(underline)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+    package: ExcelScript!
+    fullName: setUnderline(underline)
+    summary: 'Тип подчеркивания, применяемый для шрифта. Возвращается, если в текст включены фрагменты с `null` разными `TextRange` подчеркнутными стилями. Подробные `ExcelScript.ShapeFontUnderlineStyle` сведения см. в материале.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
+      parameters:
+        - id: underline
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />'
+      return:
+        type: void
+        description: ''

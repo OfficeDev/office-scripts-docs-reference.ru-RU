@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.TopBottomSelectionType
-uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
-summary: Простой переумывок для верхних и нижних фильтров, чтобы выбрать, следует ли фильтровать по верхнему или нижнему N процентам, номеру или сумме значений.
+summary: 'Простой переумывок для верхних и нижних фильтров, чтобы выбрать, следует ли фильтровать по верхнему или нижнему N процентам, номеру или сумме значений.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: items
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
-  package: ExcelScript!
-  summary: Фильтр верхнего и нижнего N-числа элементов, измеряемого выбранным значением.
-- name: percent
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
-  package: ExcelScript!
-  summary: Фильтр верхнего и нижнего N процентов элементов, измеряемого выбранным значением.
-- name: sum
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
-  package: ExcelScript!
-  summary: Фильтр верхнего или нижнего N-суммы, измеряемой выбранным значением.
-metadata:
-  ms.openlocfilehash: c58781b98eee7b27807577f9f00af54e048877a9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914672"
+  - name: items
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    package: ExcelScript!
+    summary: 'Фильтр верхнего и нижнего N-числа элементов, измеряемого выбранным значением.'
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    package: ExcelScript!
+    summary: 'Фильтр верхнего и нижнего N процентов элементов, измеряемого выбранным значением.'
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    package: ExcelScript!
+    summary: 'Фильтр верхнего или нижнего N-суммы, измеряемой выбранным значением.'

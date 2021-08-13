@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.NumberFormatCategory
-uid: ExcelScript!ExcelScript.NumberFormatCategory:enum
+uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatCategory
 summary: Представляет категорию форматов номеров.
@@ -8,58 +8,51 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: accounting
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.accounting:member
-  package: ExcelScript!
-  summary: Форматы бухгалтерского учета выстроили символы валюты и десятичных точек в столбце.
-- name: currency
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.currency:member
-  package: ExcelScript!
-  summary: Форматы валюты используются для общих денежных значений. Использование форматов учета для выравнивания десятичных точек в столбце.
-- name: custom
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.custom:member
-  package: ExcelScript!
-  summary: Настраиваемый формат, который не входит ни в какие категории.
-- name: date
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.date:member
-  package: ExcelScript!
-  summary: Форматы дат отображают дату и серийные номера времени в качестве значений даты. Форматы дат, которые начинаются со звездочки (*) реагируют на изменения региональных параметров даты и времени, заданных для операционной системы. Форматы без звездочки не влияют на параметры операционной системы.
-- name: fraction
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.fraction:member
-  package: ExcelScript!
-  summary: Форматы фракций отображают значение ячейки в целом, а остальные округлые до ближайшего значения фракции.
-- name: general
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.general:member
-  package: ExcelScript!
-  summary: Ячейки общего формата не имеют определенного формата номеров.
-- name: number
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.number:member
-  package: ExcelScript!
-  summary: Номер используется для общего отображения чисел. Currency and Accounting offer specialized formatting for monetary value.
-- name: percentage
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.percentage:member
-  package: ExcelScript!
-  summary: В процентах форматы умножают значение ячейки на 100 и отображают результат с символом процента.
-- name: scientific
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.scientific:member
-  package: ExcelScript!
-  summary: В научных форматах отображается значение ячейки в виде числа от 1 до 10, умноженного на мощность 10.
-- name: special
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.special:member
-  package: ExcelScript!
-  summary: Специальные форматы полезны для отслеживания списков и значений баз данных.
-- name: text
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.text:member
-  package: ExcelScript!
-  summary: Ячейки формата текста рассматриваются как текстовые, даже если номер находится в ячейке. Ячейка отображается точно так, как вошел.
-- name: time
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.time:member
-  package: ExcelScript!
-  summary: Форматы времени отображают дату и серийные номера времени в качестве значений даты. Форматы времени, которые начинаются со звездочки (*) реагируют на изменения региональных параметров даты и времени, заданных для операционной системы. Форматы без звездочки не влияют на параметры операционной системы.
-metadata:
-  ms.openlocfilehash: e5918eeb718dd94b8c443a5cfed0b2e537542975
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914337"
+  - name: accounting
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.accounting:member'
+    package: ExcelScript!
+    summary: Форматы бухгалтерского учета выстроили символы валюты и десятичных точек в столбце.
+  - name: currency
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.currency:member'
+    package: ExcelScript!
+    summary: Форматы валюты используются для общих денежных значений. Использование форматов учета для выравнивания десятичных точек в столбце.
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.custom:member'
+    package: ExcelScript!
+    summary: 'Настраиваемый формат, который не входит ни в какие категории.'
+  - name: date
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.date:member'
+    package: ExcelScript!
+    summary: 'Форматы дат отображают дату и серийные номера времени в качестве значений даты. Форматы дат, которые начинаются со звездочки (*) реагируют на изменения региональных параметров даты и времени, заданных для операционной системы. Форматы без звездочки не влияют на параметры операционной системы.'
+  - name: fraction
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.fraction:member'
+    package: ExcelScript!
+    summary: 'Форматы фракций отображают значение ячейки в целом, а остальные округлые до ближайшего значения фракции.'
+  - name: general
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.general:member'
+    package: ExcelScript!
+    summary: Ячейки общего формата не имеют определенного формата номеров.
+  - name: number
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.number:member'
+    package: ExcelScript!
+    summary: Номер используется для общего отображения чисел. Currency and Accounting offer specialized formatting for monetary value.
+  - name: percentage
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.percentage:member'
+    package: ExcelScript!
+    summary: В процентах форматы умножают значение ячейки на 100 и отображают результат с символом процента.
+  - name: scientific
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.scientific:member'
+    package: ExcelScript!
+    summary: 'В научных форматах отображается значение ячейки в виде числа от 1 до 10, умноженного на мощность 10.'
+  - name: special
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.special:member'
+    package: ExcelScript!
+    summary: Специальные форматы полезны для отслеживания списков и значений баз данных.
+  - name: text
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.text:member'
+    package: ExcelScript!
+    summary: 'Ячейки формата текста рассматриваются как текстовые, даже если номер находится в ячейке. Ячейка отображается точно так, как вошел.'
+  - name: time
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.time:member'
+    package: ExcelScript!
+    summary: 'Форматы времени отображают дату и серийные номера времени в качестве значений даты. Форматы времени, которые начинаются со звездочки (*) реагируют на изменения региональных параметров даты и времени, заданных для операционной системы. Форматы без звездочки не влияют на параметры операционной системы.'

@@ -1,22 +1,22 @@
-# <a name="office-scripts-api-reference"></a>Справочник по API скриптов Office
+# <a name="office-scripts-api-reference"></a>Office Ссылка на API скриптов
 
-Добро пожаловать в репозиторий справочной документации по API для сценариев Office. Рекомендуем просматривать эти материалы на сайте [docs.microsoft.com](https://docs.microsoft.com/javascript/api/office-scripts/overview).
+Добро пожаловать в репозиторий справочной документации Office скриптов API. Рекомендуем просматривать эти материалы на сайте [docs.microsoft.com](https://docs.microsoft.com/javascript/api/office-scripts/overview).
 
-> **Примечание**: вы можете найти исходные файлы для документации по сценариям Office, в том числе учебные пособия и пошаговые руководства в репозитории [OfficeDev/Office-Script](https://github.com/OfficeDev/office-scripts-docs) -Files.
+> **Примечание.** В репозитории [OfficeDev/office-scripts-docs](https://github.com/OfficeDev/office-scripts-docs) можно найти исходные файлы для документации Office скриптов, включая учебники и инструкции по управлению.
 
 ## <a name="give-us-your-feedback"></a>Оставьте свой отзыв
 
 Ваше мнение важно для нас.
 
-* Чтобы задать нам вопрос или сообщить о проблемах с документацией, [оставьте сообщение](https://github.com/OfficeDev/office-scripts-docs-reference/issues) на вкладке этого репозитория. Убедитесь, что вы задаете номер версии + номер сборки клиента, который вы используете, и при необходимости предоставляет процедуры воспроизведения, выходные данные консоли и сообщения об ошибках.
+* Чтобы задать нам вопрос или сообщить о проблемах с документацией, [оставьте сообщение](https://github.com/OfficeDev/office-scripts-docs-reference/issues) на вкладке этого репозитория. Убедитесь, что вы задайте версию + число сборки клиента, используемого вами, и при необходимости предостерегаете этапы перепроцесирования, выход консоли и сообщения об ошибках.
 
-* Мы также будем рады Вашим вкладам в эту документацию. Чтобы внести изменения, разработайте этот репозиторий, обновите файлы по мере необходимости и отправьте запрос на включение внесенных изменений. Дополнительные сведения см [в статье участие в этой документации](Contributing.md).
+* Мы также приветствуем ваши вклады в эту документацию. Чтобы внести вклад в этот репозиторий, обновите файлы по мере необходимости и отправьте запрос на тягу с предложенными изменениями. Подробные сведения см. [в материале Contribute to this documentation.](Contributing.md)
 
-    > **Важно!** не изменяйте файлы в папке [/Докс/Докс-реф-аутожен](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) этого репозитория. Все файлы в этой папке создаются автоматически, поэтому их невозможно обновлять с помощью запроса на включение внесенных изменений. Чтобы запросить изменение файлов в папке [/Докс/Докс-реф-аутожен](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) , [отправьте сообщение об ошибке](https://github.com/OfficeDev/office-scripts-docs-reference/issues) в этом репозитории.
+    > **ВАЖНО.** Не изменять файлы в [папке /docs/docs-ref-autogen](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) этого репозитория. Все файлы в этой папке автогенерированы, поэтому их невозможно обновить с помощью запроса на вытягивать. Чтобы запросить изменение любого из файлов в [папке /docs/docs-ref-autogen,](https://github.com/OfficeDev/office-scripts-docs-reference/tree/master/docs/docs-ref-autogen) отправьте проблему [в](https://github.com/OfficeDev/office-scripts-docs-reference/issues) этом репозитории.
 
-* Чтобы сообщить нам о своем интерфейсе программирования, что вы хотели бы видеть в следующих версиях, примерах кода и т. д., [отправьте](https://github.com/OfficeDev/office-scripts-docs-reference/issues) ошибку в этом репозитории.
+* Чтобы узнать о вашем опыте программирования, о том, что вы хотели бы увидеть [](https://github.com/OfficeDev/office-scripts-docs-reference/issues) в будущих версиях, примерах кода и так далее, отправьте проблему в этом репозитории.
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Правила поведения Майкрософт, касающиеся обращения с открытым кодом
+## <a name="microsoft-open-source-code-of-conduct"></a>Правила обращения с открытым исходным кодом Майкрософт
 
-Этот проект соответствует [правилам поведения Майкрософт, касающимся обращения с открытым кодом](https://opensource.microsoft.com/codeofconduct/).
-Для получения дополнительных сведений обратитесь к разделу " [проведение вопросов](https://opensource.microsoft.com/codeofconduct/faq/)" или свяжитесь с [opencode@microsoft.com](mailto:opencode@microsoft.com) с дополнительными вопросами или комментариями.
+Этот проект принял [Правила обращения с открытым исходным кодом Майкрософт](https://opensource.microsoft.com/codeofconduct/).
+Дополнительные сведения см. в [разделе Вопросы](https://opensource.microsoft.com/codeofconduct/faq/)кодекса поведения или свяжитесь с opencode@microsoft.com [дополнительными](mailto:opencode@microsoft.com) вопросами или комментариями.

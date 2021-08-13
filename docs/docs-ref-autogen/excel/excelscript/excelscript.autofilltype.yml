@@ -1,65 +1,58 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AutoFillType
-uid: ExcelScript!ExcelScript.AutoFillType:enum
+uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
-summary: Типы поведения, когда AutoFill используется на диапазоне в книге.
+summary: 'Типы поведения, когда AutoFill используется на диапазоне в книге.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: fillCopy
-  uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
-  package: ExcelScript!
-  summary: Заполняет соседние ячейки данными на основе выбранных данных.
-- name: fillDays
-  uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
-  package: ExcelScript!
-  summary: Версия "FillSeries" для дат, которые базируется шаблон на день месяца или день недели, в зависимости от контекста.
-- name: fillDefault
-  uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
-  package: ExcelScript!
-  summary: Заполняет соседние ячейки на основе окружающих данных (стандартное поведение AutoFill).
-- name: fillFormats
-  uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
-  package: ExcelScript!
-  summary: Заполняет соседние ячейки выбранными формулами.
-- name: fillMonths
-  uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
-  package: ExcelScript!
-  summary: Версия "FillSeries" для дат, на основе шаблона на месяц.
-- name: fillSeries
-  uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
-  package: ExcelScript!
-  summary: Заполняет соседние ячейки данными, которые следуют шаблону в скопированные ячейки.
-- name: fillValues
-  uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
-  package: ExcelScript!
-  summary: Заполняет соседние ячейки выбранными значениями.
-- name: fillWeekdays
-  uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
-  package: ExcelScript!
-  summary: Версия "FillSeries" для дат, на основе шаблона в день недели и включает только будние дни.
-- name: fillYears
-  uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
-  package: ExcelScript!
-  summary: Версия "FillSeries" для дат, на основе шаблона на год.
-- name: flashFill
-  uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
-  package: ExcelScript!
-  summary: Заполняет соседние ячейки с помощью функции Flash Fill в Excel.
-- name: growthTrend
-  uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
-  package: ExcelScript!
-  summary: Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с моделью тренда роста.
-- name: linearTrend
-  uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
-  package: ExcelScript!
-  summary: Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с линейной моделью тренда.
-metadata:
-  ms.openlocfilehash: 2035fcda973e33df938bcfc54db8f110be392f06
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913938"
+  - name: fillCopy
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
+    package: ExcelScript!
+    summary: Заполняет соседние ячейки данными на основе выбранных данных.
+  - name: fillDays
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
+    package: ExcelScript!
+    summary: 'Версия "FillSeries" для дат, которые базируется шаблон на день месяца или день недели, в зависимости от контекста.'
+  - name: fillDefault
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
+    package: ExcelScript!
+    summary: Заполняет соседние ячейки на основе окружающих данных (стандартное поведение AutoFill).
+  - name: fillFormats
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
+    package: ExcelScript!
+    summary: Заполняет соседние ячейки выбранными формулами.
+  - name: fillMonths
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
+    package: ExcelScript!
+    summary: 'Версия "FillSeries" для дат, на основе шаблона на месяц.'
+  - name: fillSeries
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
+    package: ExcelScript!
+    summary: 'Заполняет соседние ячейки данными, которые следуют шаблону в скопированные ячейки.'
+  - name: fillValues
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
+    package: ExcelScript!
+    summary: Заполняет соседние ячейки выбранными значениями.
+  - name: fillWeekdays
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
+    package: ExcelScript!
+    summary: 'Версия "FillSeries" для дат, на основе шаблона в день недели и включает только будние дни.'
+  - name: fillYears
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
+    package: ExcelScript!
+    summary: 'Версия "FillSeries" для дат, на основе шаблона на год.'
+  - name: flashFill
+    uid: 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
+    package: ExcelScript!
+    summary: Заполняет соседние ячейки с помощью Excel flash Fill.
+  - name: growthTrend
+    uid: 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
+    package: ExcelScript!
+    summary: 'Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с моделью тренда роста.'
+  - name: linearTrend
+    uid: 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
+    package: ExcelScript!
+    summary: 'Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с линейной моделью тренда.'

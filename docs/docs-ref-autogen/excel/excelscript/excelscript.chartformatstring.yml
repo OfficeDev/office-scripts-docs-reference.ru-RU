@@ -1,31 +1,24 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFormatString
-uid: ExcelScript!ExcelScript.ChartFormatString:interface
+uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFormatString
-summary: Представляет подразряд в связанных с диаграммой объектах, содержащих текст, например `ChartTitle` объект или `ChartAxisTitle` объект.
+summary: 'Представляет подразряд в связанных с диаграммой объектах, содержащих текст, например `ChartTitle` объект или `ChartAxisTitle` объект.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта и цвет объекта символов диаграммы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 117644700d3730164127e2c31f04b633b42ac244
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914085"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта и цвет объекта символов диаграммы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

@@ -1,91 +1,84 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotHierarchy
-uid: ExcelScript!ExcelScript.PivotHierarchy:interface
+uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotHierarchy
-summary: Представляет PivotHierarchy Excel.
+summary: Представляет Excel PivotHierarchy.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFields()
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)
-  package: ExcelScript!
-  fullName: getFields()
-  summary: Возвращает сводные поля, связанные с PivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFields(): PivotField[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: ID of the PivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Имя PivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPivotField(name)
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)
-  package: ExcelScript!
-  fullName: getPivotField(name)
-  summary: Получает PivotField по имени. Если PivotField не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotField(name: string): PivotField | undefined;'
-    parameters:
-    - id: name
-      description: Имя извлекаемого PivotField.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Имя PivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 1821a35e313b6fea2de130ac34d6b8fec43570be
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913556"
+  - name: getFields()
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+    package: ExcelScript!
+    fullName: getFields()
+    summary: 'Возвращает сводные поля, связанные с PivotHierarchy.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFields(): PivotField[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: ID of the PivotHierarchy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Имя PivotHierarchy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPivotField(name)
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+    package: ExcelScript!
+    fullName: getPivotField(name)
+    summary: 'Получает PivotField по имени. Если PivotField не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotField(name: string): PivotField | undefined;'
+      parameters:
+        - id: name
+          description: Имя извлекаемого PivotField.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined'
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Имя PivotHierarchy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

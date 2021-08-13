@@ -1,57 +1,50 @@
 ### YamlMime:TSType
 name: ExcelScript.Image
-uid: ExcelScript!ExcelScript.Image:interface
+uid: 'ExcelScript!ExcelScript.Image:interface'
 package: ExcelScript!
 fullName: ExcelScript.Image
-summary: Представляет изображение в таблице. Чтобы получить соответствующий `Shape` объект, используйте `Image.shape`<!-- -->.
+summary: 'Представляет изображение в таблице. Чтобы получить соответствующий `Shape` объект, используйте `Image.shape`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.Image#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Возвращает формат изображения.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): PictureFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Image#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Указывает идентификатор формы для объекта изображения.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShape()
-  uid: ExcelScript!ExcelScript.Image#getShape:member(1)
-  package: ExcelScript!
-  fullName: getShape()
-  summary: Возвращает `Shape` объект, связанный с изображением.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShape(): Shape;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 8a5ecbf0dfecbced386c738dcddecd4eeca99aff
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914368"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: Возвращает формат изображения.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): PictureFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Image#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Указывает идентификатор формы для объекта изображения.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShape()
+    uid: 'ExcelScript!ExcelScript.Image#getShape:member(1)'
+    package: ExcelScript!
+    fullName: getShape()
+    summary: 'Возвращает `Shape` объект, связанный с изображением.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShape(): Shape;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''

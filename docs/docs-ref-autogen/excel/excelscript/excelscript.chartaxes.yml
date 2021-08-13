@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxes
-uid: ExcelScript!ExcelScript.ChartAxes:interface
+uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxes
 summary: Представляет оси диаграммы.
@@ -9,69 +9,62 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCategoryAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)
-  package: ExcelScript!
-  fullName: getCategoryAxis()
-  summary: Представляет ось категорий на диаграмме.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCategoryAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getChartAxis(type, group)
-  uid: ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)
-  package: ExcelScript!
-  fullName: getChartAxis(type, group)
-  summary: Возвращает указанную ось, определенную по типу и группе.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
-    parameters:
-    - id: type
-      description: Указывает тип оси. Подробные `ExcelScript.ChartAxisType` сведения см. в материале.
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
-    - id: group
-      description: Необязательный атрибут. Указывает группу осей. Подробные `ExcelScript.ChartAxisGroup` сведения см. в материале.
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getSeriesAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)
-  package: ExcelScript!
-  fullName: getSeriesAxis()
-  summary: Представляет ось серии 3-D диаграммы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSeriesAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getValueAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)
-  package: ExcelScript!
-  fullName: getValueAxis()
-  summary: Представляет ось значений для оси.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValueAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 73e2396224adde7351299c69b73758091ba00aa1
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913282"
+  - name: getCategoryAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+    package: ExcelScript!
+    fullName: getCategoryAxis()
+    summary: Представляет ось категорий на диаграмме.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCategoryAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: 'getChartAxis(type, group)'
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+    package: ExcelScript!
+    fullName: 'getChartAxis(type, group)'
+    summary: 'Возвращает указанную ось, определенную по типу и группе.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      parameters:
+        - id: type
+          description: Указывает тип оси. Подробные `ExcelScript.ChartAxisType` сведения см. в материале.
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />'
+        - id: group
+          description: Необязательное свойство. Указывает группу осей. Подробные `ExcelScript.ChartAxisGroup` сведения см. в материале.
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: getSeriesAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+    package: ExcelScript!
+    fullName: getSeriesAxis()
+    summary: Представляет ось серии 3-D диаграммы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSeriesAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: getValueAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+    package: ExcelScript!
+    fullName: getValueAxis()
+    summary: Представляет ось значений для оси.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValueAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''

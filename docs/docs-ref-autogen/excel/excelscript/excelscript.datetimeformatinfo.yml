@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DatetimeFormatInfo
-uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
+uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
 summary: Определяет культурный формат отображения номеров. Это основано на текущих параметрах культуры системы.
@@ -9,75 +9,68 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getDateSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
-  package: ExcelScript!
-  fullName: getDateSeparator()
-  summary: Получает строку, используемую в качестве сепаратора дат. Это основано на текущих параметрах системы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDateSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongDatePattern()
-  summary: Получает строку формата для длинного значения даты. Это основано на текущих параметрах системы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongTimePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongTimePattern()
-  summary: Получает строку формата в течение длительного времени. Это основано на текущих параметрах системы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongTimePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShortDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getShortDatePattern()
-  summary: Получает строку формата для краткого значения даты. Это основано на текущих параметрах системы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShortDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTimeSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
-  package: ExcelScript!
-  fullName: getTimeSeparator()
-  summary: Получает строку, используемую в качестве сепаратора времени. Это основано на текущих параметрах системы.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTimeSeparator(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914473"
+  - name: getDateSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getDateSeparator()
+    summary: 'Получает строку, используемую в качестве сепаратора дат. Это основано на текущих параметрах системы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDateSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongDatePattern()
+    summary: Получает строку формата для длинного значения даты. Это основано на текущих параметрах системы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongTimePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongTimePattern()
+    summary: Получает строку формата в течение длительного времени. Это основано на текущих параметрах системы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongTimePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShortDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getShortDatePattern()
+    summary: Получает строку формата для краткого значения даты. Это основано на текущих параметрах системы.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShortDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTimeSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getTimeSeparator()
+    summary: 'Получает строку, используемую в качестве сепаратора времени. Это основано на текущих параметрах системы.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTimeSeparator(): string;'
+      return:
+        type: string
+        description: ''

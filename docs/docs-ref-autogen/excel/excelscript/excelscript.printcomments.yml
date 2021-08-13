@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PrintComments
-uid: ExcelScript!ExcelScript.PrintComments:enum
+uid: 'ExcelScript!ExcelScript.PrintComments:enum'
 package: ExcelScript!
 fullName: ExcelScript.PrintComments
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: endSheet
-  uid: ExcelScript!ExcelScript.PrintComments.endSheet:member
-  package: ExcelScript!
-  summary: Комментарии будут распечатаны в виде примечаний в конце листа.
-- name: inPlace
-  uid: ExcelScript!ExcelScript.PrintComments.inPlace:member
-  package: ExcelScript!
-  summary: Комментарии будут распечатаны в том месте, где они были вставлены на листе.
-- name: noComments
-  uid: ExcelScript!ExcelScript.PrintComments.noComments:member
-  package: ExcelScript!
-  summary: Комментарии не будут напечатаны.
-metadata:
-  ms.openlocfilehash: 9345db1600a53ddc874796ab8bbaa060ddb7aaa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416689"
+  - name: endSheet
+    uid: 'ExcelScript!ExcelScript.PrintComments.endSheet:member'
+    package: ExcelScript!
+    summary: Комментарии будут напечатаны в виде конечных заметок в конце таблицы.
+  - name: inPlace
+    uid: 'ExcelScript!ExcelScript.PrintComments.inPlace:member'
+    package: ExcelScript!
+    summary: 'Комментарии будут напечатаны там, где они были вставлены в таблицу.'
+  - name: noComments
+    uid: 'ExcelScript!ExcelScript.PrintComments.noComments:member'
+    package: ExcelScript!
+    summary: Комментарии не будут напечатаны.

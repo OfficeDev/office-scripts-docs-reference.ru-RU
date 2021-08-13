@@ -1,224 +1,217 @@
 ### YamlMime:TSType
 name: ExcelScript.DataBarConditionalFormat
-uid: ExcelScript!ExcelScript.DataBarConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataBarConditionalFormat
-summary: Представляет условный тип панели данных Excel.
+summary: Представляет собой Excel условного типа панели данных.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAxisColor()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)
-  package: ExcelScript!
-  fullName: getAxisColor()
-  summary: ЦВЕТОВой код HTML, представляющий цвет линии Axis, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если нет оси или установлено.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAxisColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getAxisFormat()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)
-  package: ExcelScript!
-  fullName: getAxisFormat()
-  summary: Представление того, как определяется ось для панели данных Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAxisFormat(): ConditionalDataBarAxisFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum" />
-      description: ''
-- name: getBarDirection()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)
-  package: ExcelScript!
-  fullName: getBarDirection()
-  summary: Указывает, в каком направлении должна основываться графика панели данных.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBarDirection(): ConditionalDataBarDirection;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarDirection:enum" />
-      description: ''
-- name: getLowerBoundRule()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)
-  package: ExcelScript!
-  fullName: getLowerBoundRule()
-  summary: Правило для нижней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.lowerBoundRule = {...}` вместо `x.lowerBoundRule.formula = ...`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLowerBoundRule(): ConditionalDataBarRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />
-      description: ''
-- name: getNegativeFormat()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)
-  package: ExcelScript!
-  fullName: getNegativeFormat()
-  summary: Представление всех значений слева от оси в панели данных Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNegativeFormat(): ConditionalDataBarNegativeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface" />
-      description: ''
-- name: getPositiveFormat()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)
-  package: ExcelScript!
-  fullName: getPositiveFormat()
-  summary: Представление всех значений справа от оси в панели данных Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPositiveFormat(): ConditionalDataBarPositiveFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface" />
-      description: ''
-- name: getShowDataBarOnly()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)
-  package: ExcelScript!
-  fullName: getShowDataBarOnly()
-  summary: Если `true`<!-- -->, скрывает значения из ячеек, в которых применяется планка данных.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowDataBarOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getUpperBoundRule()
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)
-  package: ExcelScript!
-  fullName: getUpperBoundRule()
-  summary: Правило для верхней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.upperBoundRule = {...}` вместо `x.upperBoundRule.formula = ...`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUpperBoundRule(): ConditionalDataBarRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />
-      description: ''
-- name: setAxisColor(axisColor)
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)
-  package: ExcelScript!
-  fullName: setAxisColor(axisColor)
-  summary: ЦВЕТОВой код HTML, представляющий цвет линии Axis, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если нет оси или установлено.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAxisColor(axisColor: string): void;'
-    parameters:
-    - id: axisColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setAxisFormat(axisFormat)
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)
-  package: ExcelScript!
-  fullName: setAxisFormat(axisFormat)
-  summary: Представление того, как определяется ось для панели данных Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAxisFormat(axisFormat: ConditionalDataBarAxisFormat): void;'
-    parameters:
-    - id: axisFormat
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum" />
-    return:
-      type: void
-      description: ''
-- name: setBarDirection(barDirection)
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)
-  package: ExcelScript!
-  fullName: setBarDirection(barDirection)
-  summary: Указывает, в каком направлении должна основываться графика панели данных.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBarDirection(barDirection: ConditionalDataBarDirection): void;'
-    parameters:
-    - id: barDirection
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarDirection:enum" />
-    return:
-      type: void
-      description: ''
-- name: setLowerBoundRule(lowerBoundRule)
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)
-  package: ExcelScript!
-  fullName: setLowerBoundRule(lowerBoundRule)
-  summary: Правило для нижней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.lowerBoundRule = {...}` вместо `x.lowerBoundRule.formula = ...`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLowerBoundRule(lowerBoundRule: ConditionalDataBarRule): void;'
-    parameters:
-    - id: lowerBoundRule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />
-    return:
-      type: void
-      description: ''
-- name: setShowDataBarOnly(showDataBarOnly)
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)
-  package: ExcelScript!
-  fullName: setShowDataBarOnly(showDataBarOnly)
-  summary: Если `true`<!-- -->, скрывает значения из ячеек, в которых применяется планка данных.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowDataBarOnly(showDataBarOnly: boolean): void;'
-    parameters:
-    - id: showDataBarOnly
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setUpperBoundRule(upperBoundRule)
-  uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)
-  package: ExcelScript!
-  fullName: setUpperBoundRule(upperBoundRule)
-  summary: Правило для верхней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.upperBoundRule = {...}` вместо `x.upperBoundRule.formula = ...`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setUpperBoundRule(upperBoundRule: ConditionalDataBarRule): void;'
-    parameters:
-    - id: upperBoundRule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 3e9530e484698f334eb4eecdb867a4c045cc4701
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914487"
+  - name: getAxisColor()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)'
+    package: ExcelScript!
+    fullName: getAxisColor()
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет линии Axis, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если нет оси или установлено.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAxisColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getAxisFormat()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)'
+    package: ExcelScript!
+    fullName: getAxisFormat()
+    summary: 'Представление того, как ось определяется для Excel панели данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAxisFormat(): ConditionalDataBarAxisFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum" />'
+        description: ''
+  - name: getBarDirection()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)'
+    package: ExcelScript!
+    fullName: getBarDirection()
+    summary: 'Указывает, в каком направлении должна основываться графика панели данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBarDirection(): ConditionalDataBarDirection;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarDirection:enum" />'
+        description: ''
+  - name: getLowerBoundRule()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)'
+    package: ExcelScript!
+    fullName: getLowerBoundRule()
+    summary: 'Правило для нижней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.lowerBoundRule = {...}` вместо `x.lowerBoundRule.formula = ...`<!-- -->).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLowerBoundRule(): ConditionalDataBarRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />'
+        description: ''
+  - name: getNegativeFormat()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNegativeFormat()
+    summary: Представление всех значений слева от оси в панели Excel данных.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNegativeFormat(): ConditionalDataBarNegativeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface" />'
+        description: ''
+  - name: getPositiveFormat()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)'
+    package: ExcelScript!
+    fullName: getPositiveFormat()
+    summary: Представление всех значений справа от оси в панели Excel данных.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPositiveFormat(): ConditionalDataBarPositiveFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface" />'
+        description: ''
+  - name: getShowDataBarOnly()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)'
+    package: ExcelScript!
+    fullName: getShowDataBarOnly()
+    summary: 'Если `true`<!-- -->, скрывает значения из ячеек, в которых применяется планка данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowDataBarOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getUpperBoundRule()
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)'
+    package: ExcelScript!
+    fullName: getUpperBoundRule()
+    summary: 'Правило для верхней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.upperBoundRule = {...}` вместо `x.upperBoundRule.formula = ...`<!-- -->).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUpperBoundRule(): ConditionalDataBarRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />'
+        description: ''
+  - name: setAxisColor(axisColor)
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)'
+    package: ExcelScript!
+    fullName: setAxisColor(axisColor)
+    summary: 'ЦВЕТОВой код HTML, представляющий цвет линии Axis, в форме \# RRGGBB (например, "FFA500") или в виде имени HTML-цвета (например, "оранжевый"). Значение "" (пустая строка), если нет оси или установлено.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAxisColor(axisColor: string): void;'
+      parameters:
+        - id: axisColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setAxisFormat(axisFormat)
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)'
+    package: ExcelScript!
+    fullName: setAxisFormat(axisFormat)
+    summary: 'Представление того, как ось определяется для Excel панели данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAxisFormat(axisFormat: ConditionalDataBarAxisFormat): void;'
+      parameters:
+        - id: axisFormat
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setBarDirection(barDirection)
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)'
+    package: ExcelScript!
+    fullName: setBarDirection(barDirection)
+    summary: 'Указывает, в каком направлении должна основываться графика панели данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBarDirection(barDirection: ConditionalDataBarDirection): void;'
+      parameters:
+        - id: barDirection
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarDirection:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setLowerBoundRule(lowerBoundRule)
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)'
+    package: ExcelScript!
+    fullName: setLowerBoundRule(lowerBoundRule)
+    summary: 'Правило для нижней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.lowerBoundRule = {...}` вместо `x.lowerBoundRule.formula = ...`<!-- -->).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLowerBoundRule(lowerBoundRule: ConditionalDataBarRule): void;'
+      parameters:
+        - id: lowerBoundRule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: setShowDataBarOnly(showDataBarOnly)
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)'
+    package: ExcelScript!
+    fullName: setShowDataBarOnly(showDataBarOnly)
+    summary: 'Если `true`<!-- -->, скрывает значения из ячеек, в которых применяется планка данных.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowDataBarOnly(showDataBarOnly: boolean): void;'
+      parameters:
+        - id: showDataBarOnly
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setUpperBoundRule(upperBoundRule)
+    uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)'
+    package: ExcelScript!
+    fullName: setUpperBoundRule(upperBoundRule)
+    summary: 'Правило для верхней границы гистограммы (и как ее вычислить). Объект `ConditionalDataBarRule` должен быть настроен как объект JSON (используйте `x.upperBoundRule = {...}` вместо `x.upperBoundRule.formula = ...`<!-- -->).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setUpperBoundRule(upperBoundRule: ConditionalDataBarRule): void;'
+      parameters:
+        - id: upperBoundRule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalDataBarRule:interface" />'
+      return:
+        type: void
+        description: ''

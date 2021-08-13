@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AggregationFunction
-uid: ExcelScript!ExcelScript.AggregationFunction:enum
+uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
 summary: Функция агрегации для DataPivotField.
@@ -8,62 +8,55 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
-  package: ExcelScript!
-  summary: Excel автоматически выбирает агрегацию на основе элементов данных.
-- name: average
-  uid: ExcelScript!ExcelScript.AggregationFunction.average:member
-  package: ExcelScript!
-  summary: Совокупное использование среднего значения данных, эквивалентного функции AVERAGE.
-- name: count
-  uid: ExcelScript!ExcelScript.AggregationFunction.count:member
-  package: ExcelScript!
-  summary: Агрегировать с помощью подсчета элементов в данных, эквивалентных функции COUNTA.
-- name: countNumbers
-  uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
-  package: ExcelScript!
-  summary: Совокупное использование количества чисел в данных, эквивалентных функции COUNT.
-- name: max
-  uid: ExcelScript!ExcelScript.AggregationFunction.max:member
-  package: ExcelScript!
-  summary: Совокупное использование максимального значения данных, эквивалентного функции MAX.
-- name: min
-  uid: ExcelScript!ExcelScript.AggregationFunction.min:member
-  package: ExcelScript!
-  summary: Совокупное использование минимального значения данных, эквивалентного функции MIN.
-- name: product
-  uid: ExcelScript!ExcelScript.AggregationFunction.product:member
-  package: ExcelScript!
-  summary: Агрегировать с помощью продукта данных, эквивалентного функции PRODUCT.
-- name: standardDeviation
-  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
-  package: ExcelScript!
-  summary: Совокупное использование стандартного отклонения данных, эквивалентного функции STDEV.
-- name: standardDeviationP
-  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
-  package: ExcelScript!
-  summary: Сводка с использованием стандартного отклонения данных, эквивалентного функции STDEVP.
-- name: sum
-  uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
-  package: ExcelScript!
-  summary: Совокупное использование суммы данных, эквивалентной функции SUM.
-- name: unknown
-  uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
-  package: ExcelScript!
-  summary: Функция агрегации неизвестна или неподтверчена.
-- name: variance
-  uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
-  package: ExcelScript!
-  summary: Совокупное использование дисперсии данных, эквивалентной функции VAR.
-- name: varianceP
-  uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
-  package: ExcelScript!
-  summary: Совокупное использование дисперсии данных, эквивалентной функции VARP.
-metadata:
-  ms.openlocfilehash: 092cb76f526a517d2395ea21634e90044d9fd05d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914015"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+    package: ExcelScript!
+    summary: Excel автоматически выбирает агрегацию на основе элементов данных.
+  - name: average
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование среднего значения данных, эквивалентного функции AVERAGE.'
+  - name: count
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+    package: ExcelScript!
+    summary: 'Агрегировать с помощью подсчета элементов в данных, эквивалентных функции COUNTA.'
+  - name: countNumbers
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование количества чисел в данных, эквивалентных функции COUNT.'
+  - name: max
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование максимального значения данных, эквивалентного функции MAX.'
+  - name: min
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование минимального значения данных, эквивалентного функции MIN.'
+  - name: product
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+    package: ExcelScript!
+    summary: 'Агрегировать с помощью продукта данных, эквивалентного функции PRODUCT.'
+  - name: standardDeviation
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование стандартного отклонения данных, эквивалентного функции STDEV.'
+  - name: standardDeviationP
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+    package: ExcelScript!
+    summary: 'Сводка с использованием стандартного отклонения данных, эквивалентного функции STDEVP.'
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование суммы данных, эквивалентной функции SUM.'
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+    package: ExcelScript!
+    summary: Функция агрегации неизвестна или неподтверчена.
+  - name: variance
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование дисперсии данных, эквивалентной функции VAR.'
+  - name: varianceP
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+    package: ExcelScript!
+    summary: 'Совокупное использование дисперсии данных, эквивалентной функции VARP.'
