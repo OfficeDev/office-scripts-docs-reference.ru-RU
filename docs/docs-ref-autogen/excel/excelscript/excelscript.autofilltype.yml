@@ -1,58 +1,65 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AutoFillType
-uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
+uid: ExcelScript!ExcelScript.AutoFillType:enum
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
-summary: 'Типы поведения, когда AutoFill используется на диапазоне в книге.'
-remarks: ''
+summary: Типы поведения, когда AutoFill используется на диапазоне в книге.
+remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script uses the autofill feature to complete a table with days of the month.\n * See https://support.microsoft.com/74e31bdd-d993-45da-aa82-35a236c5b5db\n * for examples of autofill scenarios.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let currentWorksheet = workbook.getActiveWorksheet();\n\n  // Get the data range that shows the pattern.\n  let dataRange = currentWorksheet.getRange(\"C2:C3\");\n\n  // Autofill the connected range. C2:C3 are filled in with dates. C4:C54 are blank.\n  dataRange.autoFill(\"C2:C54\", ExcelScript.AutoFillType.fillDays);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: fillCopy
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
-    package: ExcelScript!
-    summary: Заполняет соседние ячейки данными на основе выбранных данных.
-  - name: fillDays
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
-    package: ExcelScript!
-    summary: 'Версия "FillSeries" для дат, которые базируется шаблон на день месяца или день недели, в зависимости от контекста.'
-  - name: fillDefault
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
-    package: ExcelScript!
-    summary: Заполняет соседние ячейки на основе окружающих данных (стандартное поведение AutoFill).
-  - name: fillFormats
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
-    package: ExcelScript!
-    summary: Заполняет соседние ячейки выбранными формулами.
-  - name: fillMonths
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
-    package: ExcelScript!
-    summary: 'Версия "FillSeries" для дат, на основе шаблона на месяц.'
-  - name: fillSeries
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
-    package: ExcelScript!
-    summary: 'Заполняет соседние ячейки данными, которые следуют шаблону в скопированные ячейки.'
-  - name: fillValues
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
-    package: ExcelScript!
-    summary: Заполняет соседние ячейки выбранными значениями.
-  - name: fillWeekdays
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
-    package: ExcelScript!
-    summary: 'Версия "FillSeries" для дат, на основе шаблона в день недели и включает только будние дни.'
-  - name: fillYears
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
-    package: ExcelScript!
-    summary: 'Версия "FillSeries" для дат, на основе шаблона на год.'
-  - name: flashFill
-    uid: 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
-    package: ExcelScript!
-    summary: Заполняет соседние ячейки с помощью Excel flash Fill.
-  - name: growthTrend
-    uid: 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
-    package: ExcelScript!
-    summary: 'Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с моделью тренда роста.'
-  - name: linearTrend
-    uid: 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
-    package: ExcelScript!
-    summary: 'Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с линейной моделью тренда.'
+- name: fillCopy
+  uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
+  package: ExcelScript!
+  summary: Заполняет соседние ячейки данными на основе выбранных данных.
+- name: fillDays
+  uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
+  package: ExcelScript!
+  summary: Версия "FillSeries" для дат, которые базируется шаблон на день месяца или день недели, в зависимости от контекста.
+- name: fillDefault
+  uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
+  package: ExcelScript!
+  summary: Заполняет соседние ячейки на основе окружающих данных (стандартное поведение AutoFill).
+- name: fillFormats
+  uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
+  package: ExcelScript!
+  summary: Заполняет соседние ячейки выбранными формулами.
+- name: fillMonths
+  uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
+  package: ExcelScript!
+  summary: Версия "FillSeries" для дат, на основе шаблона на месяц.
+- name: fillSeries
+  uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
+  package: ExcelScript!
+  summary: Заполняет соседние ячейки данными, которые следуют шаблону в скопированные ячейки.
+- name: fillValues
+  uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
+  package: ExcelScript!
+  summary: Заполняет соседние ячейки выбранными значениями.
+- name: fillWeekdays
+  uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
+  package: ExcelScript!
+  summary: Версия "FillSeries" для дат, на основе шаблона в день недели и включает только будние дни.
+- name: fillYears
+  uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
+  package: ExcelScript!
+  summary: Версия "FillSeries" для дат, на основе шаблона на год.
+- name: flashFill
+  uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
+  package: ExcelScript!
+  summary: Заполняет соседние ячейки с помощью Excel flash Fill.
+- name: growthTrend
+  uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
+  package: ExcelScript!
+  summary: Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с моделью тренда роста.
+- name: linearTrend
+  uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
+  package: ExcelScript!
+  summary: Версия "FillSeries" для чисел, которые заполняют значения в соседних ячейках в соответствии с линейной моделью тренда.
+metadata:
+  ms.openlocfilehash: 1020e7f029e85176b516ccea60452e5fc2ada8db
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003717"

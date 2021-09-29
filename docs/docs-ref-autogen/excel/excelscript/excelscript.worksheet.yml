@@ -73,7 +73,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательное свойство. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательное. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательный. Комментарий, связанный с именем элемента.
+      description: Необязательное. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательный. Комментарий, связанный с именем элемента.
+      description: Необязательное. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -306,7 +306,7 @@ methods:
       description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательное свойство. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательное. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -488,7 +488,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script looks through a worksheet and finds cells containing \"No\". \n * Those cells are filled red.\n * Use Range.find instead of Worksheet.findAll when you want to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let noCells = worksheet.findAll(\"No\", { completeMatch: true });\n\n  // Set the fill color to red.\n  noCells.getFormat().getFill().setColor(\"red\");\n}\n```"
 - name: getActiveNamedSheetView()
   uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
   package: ExcelScript!
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: Необязательное свойство. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
+      description: Необязательное. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: Необязательное свойство. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
+      description: Необязательное. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6abeb2898ae72714b5d8b5d703c43c2c07056a2b
-  ms.sourcegitcommit: b426fa221dc89bd11cd7a2d1204c13a3bf656826
+  ms.openlocfilehash: 26571777e8d9e984b3dea653b3e9e85ed7c41166
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/18/2021
-  ms.locfileid: "58379975"
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003762"
