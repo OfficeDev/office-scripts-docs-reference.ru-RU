@@ -21,7 +21,7 @@ methods:
     content: 'activate(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script switches the active view to a worksheet named \"Data\", if it exists.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet exists.\n  let dataWorksheet = workbook.getWorksheet(\"Data\");\n  if (dataWorksheet) {\n    // Switch to the \"Data\" worksheet.\n    dataWorksheet.activate();\n  } else {\n    console.log(`No worksheet named \"Data\" in this workbook.`);\n  }\n}\n```"
 - name: addChart(type, sourceData, seriesBy)
   uid: ExcelScript!ExcelScript.Worksheet#addChart:member(1)
   package: ExcelScript!
@@ -73,7 +73,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательное. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательное свойство. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательное. Комментарий, связанный с именем элемента.
+      description: Необязательное свойство. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательное. Комментарий, связанный с именем элемента.
+      description: Необязательное свойство. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -306,7 +306,7 @@ methods:
       description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательное. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательное свойство. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -429,7 +429,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script duplicates a worksheet named \"Template\". \n * The new worksheet is added after the template.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the worksheet named \"Template\".\n  let template = workbook.getWorksheet(\"Template\");\n\n  // Copy the worksheet.\n  let newSheet = template.copy(\n    ExcelScript.WorksheetPositionType.after,\n    template\n  );\n\n  // Name the worksheet using the current date.\n  let date = new Date(Date.now());\n  newSheet.setName(`${date.toDateString()}`);\n}\n```"
 - name: delete()
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательное. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательное. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: Необязательное. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
+      description: Необязательное свойство. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: Необязательное. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
+      description: Необязательное свойство. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 26571777e8d9e984b3dea653b3e9e85ed7c41166
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
+  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003762"
+  ms.lasthandoff: 10/14/2021
+  ms.locfileid: "60355737"
