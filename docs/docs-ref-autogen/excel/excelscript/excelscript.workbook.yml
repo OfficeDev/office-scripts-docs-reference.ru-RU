@@ -108,7 +108,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательное свойство. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательное. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -153,7 +153,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательное свойство. Комментарий, связанный с именем элемента.
+      description: Необязательное. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -181,7 +181,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательное свойство. Комментарий, связанный с именем элемента.
+      description: Необязательное. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Уникальное имя для нового стиля PivotTable. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
@@ -278,7 +278,7 @@ methods:
       description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательное свойство. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательное. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -298,7 +298,7 @@ methods:
       description: Уникальное имя для нового стиля среза. Бросит `InvalidArgument` исключение, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
@@ -338,7 +338,7 @@ methods:
       description: Уникальное имя для нового стиля таблицы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
@@ -358,7 +358,7 @@ methods:
       description: Уникальное имя для нового стиля временной шкалы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
@@ -380,6 +380,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script adds a new worksheet named \"Data\" to the workbook.\n * If a worksheet with that name already exists, the script logs a note.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet already exists.\n  if (workbook.getWorksheet(\"Data\")) {\n    console.log(\"The Data worksheet is already in the workbook.\");\n  } else {\n    // Add a new worksheet.\n    let worksheet = workbook.addWorksheet(\"Data\");\n  }\n}\n```"
+- name: breakAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: breakAllLinksToLinkedWorkbooks()
+  summary: Нарушает все ссылки на связанные книги. После слома ссылок все формулы ссылок на книги удаляются полностью и заменяются последними извлеченными значениями.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'breakAllLinksToLinkedWorkbooks(): void;'
+    return:
+      type: void
+      description: ''
 - name: getActiveCell()
   uid: ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)
   package: ExcelScript!
@@ -707,7 +720,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -737,10 +750,53 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getLinkedWorkbookByUrl(key)
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookByUrl(key)
+  summary: Получает сведения о связанной книге по URL-адресу. Если книги не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookByUrl(key: string): LinkedWorkbook | undefined;'
+    parameters:
+    - id: key
+      description: URL-адрес связанной книги.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" /> | undefined
+      description: ''
+- name: getLinkedWorkbookRefreshMode()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookRefreshMode()
+  summary: Представляет режим обновления ссылок на книги. Этот режим является одинаковым для всех ссылок на книги, присутствующих в книге.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookRefreshMode(): WorkbookLinksRefreshMode;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+      description: ''
+- name: getLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbooks()
+  summary: Возвращает коллекцию связанных книг. В формулах ссылки на книги можно использовать для ссылок на данные (значения ячейки и имена) за пределами текущей книги.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbooks(): LinkedWorkbook[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" />[]
       description: ''
 - name: getName()
   uid: ExcelScript!ExcelScript.Workbook#getName:member(1)
@@ -1159,6 +1215,19 @@ methods:
     return:
       type: void
       description: ''
+- name: refreshAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#refreshAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: refreshAllLinksToLinkedWorkbooks()
+  summary: Делает запрос на обновление всех ссылок на книги.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAllLinksToLinkedWorkbooks(): void;'
+    return:
+      type: void
+      description: ''
 - name: refreshAllPivotTables()
   uid: ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)
   package: ExcelScript!
@@ -1277,6 +1346,26 @@ methods:
     return:
       type: void
       description: ''
+- name: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  uid: ExcelScript!ExcelScript.Workbook#setLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  summary: Представляет режим обновления ссылок на книги. Этот режим является одинаковым для всех ссылок на книги, присутствующих в книге.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setLinkedWorkbookRefreshMode(
+                  linkedWorkbookRefreshMode: WorkbookLinksRefreshMode
+              ): void;
+    parameters:
+    - id: linkedWorkbookRefreshMode
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+    return:
+      type: void
+      description: ''
 - name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
   uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
@@ -1295,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1861d589a81d75380b4f92bccb13376a263cf6b6
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: 6639d3d72f5077f3f49c1ad953085ecd684ef599
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355758"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793368"

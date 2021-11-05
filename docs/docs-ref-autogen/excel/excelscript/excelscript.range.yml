@@ -3,7 +3,7 @@ name: ExcelScript.Range
 uid: ExcelScript!ExcelScript.Range:interface
 package: ExcelScript!
 fullName: ExcelScript.Range
-summary: Объект Range представляет собой набор из одной или нескольких смежных ячеек, например ячейку, строку, столбец, блок ячеек и т. д.
+summary: Диапазон представляет собой набор из одной или более состояных ячеек, таких как ячейка, строка, столбец или блок ячеек.
 remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script logs the address of the used range in the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let currentWorksheet = workbook.getActiveWorksheet();\n\n  // Get the range containing all the cells with data or formatting.\n  let usedRange = currentWorksheet.getUsedRange();\n\n  // Log the range's address to the console.\n  console.log(usedRange.getAddress());\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Находит определенную строку на основе указанных условий. Если текущий диапазон больше одной ячейки, поиск будет ограничен этим диапазоном, иначе поиск будет охватывать весь лист, начиная с этой ячейки. Если совпадений нет, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Находит определенную строку на основе указанных условий. Если текущий диапазон больше одной ячейки, поиск будет ограничен этим диапазоном, иначе поиск будет охватывать весь лист, начиная с этой ячейки. Если совпадений нет, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,10 +167,10 @@ methods:
     content: 'find(text: string, criteria: SearchCriteria): Range;'
     parameters:
     - id: text
-      description: Строка для поиска.
+      description: ''
       type: string
     - id: criteria
-      description: Дополнительные критерии поиска, включая направление поиска и соответствие поиска всей ячейке или учет учетных данных.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -640,7 +640,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Возвращает объект диапазона, представляющий прямоугольное пересечение заданных диапазонов. Если пересечение не обнаружено, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Возвращает объект диапазона, представляющий прямоугольное пересечение заданных диапазонов. Если пересечение не обнаружено, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -648,7 +648,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | string): Range;'
     parameters:
     - id: anotherRange
-      description: Объект диапазона или адрес диапазона, который будет использоваться для определения пересечения диапазонов.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1062,7 +1062,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Получает объект, состоящий из одного или нескольких диапазонов, который представляет все ячейки, которые соответствуют указанному `RangeAreas` типу и значению. Если специальные ячейки не найдены, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Получает объект, состоящий из одного или нескольких диапазонов, который представляет все ячейки, которые соответствуют указанному `RangeAreas` типу и значению. Если специальные ячейки не найдены, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1074,10 +1074,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: cellType
-      description: Тип ячеек, которые необходимо включить.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Если `cellType` либо, `constants` либо `formulas`<!-- -->Этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединить, чтобы вернуть несколько типов. По умолчанию необходимо выбрать все константы или формулы независимо от типа.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1086,7 +1086,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Получает объект range, содержащий диапазон переноса при вызове для базовой ячейки. Если диапазон не является якорной ячейкой или диапазон разлива не может быть найден, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Получает объект range, содержащий диапазон переноса при вызове для базовой ячейки. Если диапазон не является якорной ячейкой или диапазон разлива не может быть найден, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1099,7 +1099,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Получает объект диапазона, содержащий якорную ячейку для пролитой ячейки. Если это не разлитая ячейка или не дается несколько ячейк, эта функция возвращает объект с заданным `isNullObject` свойством `true`<!-- -->.
+  summary: Получает объект диапазона, содержащий якорную ячейку для пролитой ячейки. Если это не пролитая ячейка или выдается несколько клеток, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1181,7 +1181,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Возвращает используемый диапазон заданного объекта диапазона. Если в диапазоне нет используемых ячеек, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Возвращает используемый диапазон заданного объекта диапазона. Если в диапазоне нет используемых ячеек, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1189,7 +1189,7 @@ methods:
     content: 'getUsedRange(valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
-      description: Учитывает только ячейки со значениями.
+      description: ''
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1348,7 +1348,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: Необязательное свойство. Установите `true` для объединения ячеек в каждом ряду указанного диапазона в качестве отдельных объединенных ячеек. Значение по умолчанию `false`<!-- -->.
+      description: Необязательное. Установите `true` для объединения ячеек в каждом ряду указанного диапазона в качестве отдельных объединенных ячеек. Значение по умолчанию `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1781,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e44255d9c8f0023ddc124fd4a84f7583ce094a97
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355765"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793382"
