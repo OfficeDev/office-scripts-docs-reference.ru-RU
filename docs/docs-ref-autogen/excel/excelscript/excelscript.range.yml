@@ -627,7 +627,11 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: Отрисовка диапазона в качестве изображения png с кодом base64.
+  summary: >-
+    Отрисовка диапазона в качестве изображения png с кодом base64.
+
+
+    **Примечание.** Существует известная проблема с тем, что вызывает завернутый текст или текст, который превышает ширину ячейки, чтобы отрисовка на одной строке без `Range.getImage` упаковки строки. Это делает итоговое изображение нечитаемым, так как текст переполнен по всей строке. В качестве обхода убедитесь, что данные в диапазоне вписывается в каждую из ячеек в качестве одной строки.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1348,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: Необязательное. Установите `true` для объединения ячеек в каждом ряду указанного диапазона в качестве отдельных объединенных ячеек. Значение по умолчанию `false`<!-- -->.
+      description: Необязательный параметр. Установите `true` для объединения ячеек в каждом ряду указанного диапазона в качестве отдельных объединенных ячеек. Значение по умолчанию `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1781,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793382"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064908"

@@ -1,205 +1,212 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedItem
-uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: 'Представляет определенное имя для диапазона ячеек или значения. Имена могут быть примитивными объектами с именем (как по видно в приведенном ниже типу), объектом диапазона или ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.'
+summary: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть примитивными объектами с именем (как по видно в приведенном ниже типу), объектом диапазона или ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: Удаляет заданное имя.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getArrayValues()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
-    package: ExcelScript!
-    fullName: getArrayValues()
-    summary: 'Возвращает объект, содержащий значения и типы именованного элемента.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getArrayValues(): NamedItemArrayValues;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />'
-        description: ''
-  - name: getComment()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
-    package: ExcelScript!
-    fullName: getComment()
-    summary: 'Указывает комментарий, связанный с этим именем.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getComment(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getFormula()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
-    package: ExcelScript!
-    fullName: getFormula()
-    summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormula(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: Имя объекта.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getRange()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
-    package: ExcelScript!
-    fullName: getRange()
-    summary: 'Возвращает объект Range, сопоставленный с именем. Если тип имени элемента не является диапазоном, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: getScope()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
-    package: ExcelScript!
-    fullName: getScope()
-    summary: 'Указывает, задано ли имя в книге или в определенной таблице. Возможные значения: таблица, книга.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getScope(): NamedItemScope;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />'
-        description: ''
-  - name: getType()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
-    package: ExcelScript!
-    fullName: getType()
-    summary: 'Указывает тип значения, возвращаемого по формуле имени. Подробные `ExcelScript.NamedItemType` сведения см. в материале.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getType(): NamedItemType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />'
-        description: ''
-  - name: getValue()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
-    package: ExcelScript!
-    fullName: getValue()
-    summary: 'Представляет значение, вычисленное по формуле имени. Если задан именованный диапазон, возвращается адрес диапазона.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getValue(): string | number;'
-      return:
-        type: string | number
-        description: ''
-  - name: getVisible()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
-    package: ExcelScript!
-    fullName: getVisible()
-    summary: 'Указывает, виден ли объект.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getWorksheet()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)'
-    package: ExcelScript!
-    fullName: getWorksheet()
-    summary: 'Возвращает таблицу, в которую область действия именуемой номенклатуры. Если элемент имеет область действия в книге, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWorksheet(): Worksheet | undefined;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined'
-        description: ''
-  - name: setComment(comment)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
-    package: ExcelScript!
-    fullName: setComment(comment)
-    summary: 'Указывает комментарий, связанный с этим именем.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setComment(comment: string): void;'
-      parameters:
-        - id: comment
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setFormula(formula)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
-    package: ExcelScript!
-    fullName: setFormula(formula)
-    summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      parameters:
-        - id: formula
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setVisible(visible)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
-    package: ExcelScript!
-    fullName: setVisible(visible)
-    summary: 'Указывает, виден ли объект.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      parameters:
-        - id: visible
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.NamedItem#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Удаляет заданное имя.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getArrayValues()
+  uid: ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)
+  package: ExcelScript!
+  fullName: getArrayValues()
+  summary: Возвращает объект, содержащий значения и типы именованного элемента.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getArrayValues(): NamedItemArrayValues;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />
+      description: ''
+- name: getComment()
+  uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
+  package: ExcelScript!
+  fullName: getComment()
+  summary: Указывает комментарий, связанный с этим именем.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getComment(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFormula()
+  uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
+  package: ExcelScript!
+  fullName: getFormula()
+  summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormula(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.NamedItem#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Имя объекта.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Возвращает объект Range, сопоставленный с именем. Если тип элемента с именем не является диапазоном, эта функция возвращается `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getScope()
+  uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
+  package: ExcelScript!
+  fullName: getScope()
+  summary: 'Указывает, задано ли имя в книге или в определенной таблице. Возможные значения: таблица, книга.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getScope(): NamedItemScope;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Указывает тип значения, возвращаемого по формуле имени. Подробные `ExcelScript.NamedItemType` сведения см. в материале.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): NamedItemType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.NamedItem#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: Представляет значение, вычисленное по формуле имени. Если задан именованный диапазон, возвращается адрес диапазона.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): string | number;'
+    return:
+      type: string | number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Указывает, виден ли объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: Возвращает таблицу, в которую область действия именуемой номенклатуры. Если элемент вместо этого будет областью для книги, эта функция возвращается `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
+      description: ''
+- name: setComment(comment)
+  uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
+  package: ExcelScript!
+  fullName: setComment(comment)
+  summary: Указывает комментарий, связанный с этим именем.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setComment(comment: string): void;'
+    parameters:
+    - id: comment
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Указывает, виден ли объект.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064838"

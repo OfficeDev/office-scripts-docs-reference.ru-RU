@@ -73,7 +73,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательное свойство. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательный параметр. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательное свойство. Комментарий, связанный с именем элемента.
+      description: Необязательный параметр. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательное свойство. Комментарий, связанный с именем элемента.
+      description: Необязательный параметр. Комментарий, связанный с именем элемента.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -306,7 +306,7 @@ methods:
       description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательное свойство. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательный параметр. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -539,7 +539,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: Возвращает диаграмму по ее имени. Если одно и то же имя принадлежит нескольким диаграммам, будет возвращена первая из них. Если диаграммы не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Возвращает диаграмму по ее имени. Если одно и то же имя принадлежит нескольким диаграммам, будет возвращена первая из них. Если диаграммы нет, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Получает объект `NamedItem` с его именем. Если объекта не существует, эта функция возвращает объект с его `isNullObject` свойством, `true`<!-- -->.
+  summary: Получает объект `NamedItem` с его именем. Если объекта не существует, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Получает таблицу, которая следует за этим. Если после этого нет таблиц, этот метод возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Получает таблицу, которая следует за этим. Если после этого нет таблиц, этот метод возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательный параметр. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Получает сводную таблицу по имени. Если pivotTable не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Получает сводную таблицу по имени. Если pivotTable не существует, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -844,7 +844,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: Получает таблицу, предшествующего этому. Если предыдущих таблиц нет, этот метод возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Получает таблицу, предшествующего этому. Если предыдущих таблиц нет, этот метод возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательный параметр. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: Необязательное свойство. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
+      description: Необязательный параметр. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: Необязательное свойство. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
+      description: Необязательный параметр. Строка, содержащая отдельные запятые адреса или имена отдельных диапазонов. Например, "A1:B2, A5:B5". Если не указано, возвращается объект RangeArea для всего таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -996,7 +996,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Получает срез с его именем или ИД. Если среза не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Получает срез с его именем или ИД. Если среза не существует, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1065,7 +1065,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Получает таблицу по имени или ИД. Если таблицы не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Получает таблицу по имени или ИД. Если таблицы не существует, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1138,7 +1138,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Если настраиваемой свойства не существует, эта функция возвращает объект с его `isNullObject` свойством, заданной для `true`<!-- -->.
+  summary: Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Если настраиваемая свойство не существует, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: b57e4675686b008cc43f13043451f1be337f9b23
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355737"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064803"
