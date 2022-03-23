@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeAreas
 summary: '`RangeAreas` представляет коллекцию из одного или более прямоугольных диапазонов в одном и том же таблице.'
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#clear:member(1)
   package: ExcelScript!
   fullName: clear(applyTo)
-  summary: Очищает значения, формат, заполнение, границу и другие свойства в каждом из областей, в которых состоит `RangeAreas` этот объект.
+  summary: Очищает значения, формат, заполнение, границу и другие свойства в каждом из областей, в которых состоит этот `RangeAreas` объект.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 - name: clearAllConditionalFormats()
   uid: ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)
   package: ExcelScript!
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)
   package: ExcelScript!
   fullName: convertDataTypeToText()
-  summary: Преобразует все ячейки в `RangeAreas` типах данных в текст.
+  summary: Преобразует все ячейки в типах `RangeAreas` данных в текст.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,7 +100,7 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Диапазон источника или `RangeAreas` копирование. Если источник имеет несколько диапазонов, их форму необходимо создать путем удаления полных рядов или столбцов `RangeAreas` из прямоугольного диапазона.
+      description: Диапазон источника или `RangeAreas` копирование. Если источник имеет `RangeAreas` несколько диапазонов, их форму необходимо создать путем удаления полных рядов или столбцов из прямоугольного диапазона.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: Тип данных ячейки или форматирование для копирования. По умолчанию это "Все".
@@ -118,7 +118,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: Возвращает `RangeAreas` ссылку в стиле A1. Значение адреса будет содержать имя листа для каждого прямоугольного блока ячеек (например, "Sheet1! A1:B4, Sheet1! D1:D4").
+  summary: Возвращает ссылку `RangeAreas` в стиле A1. Значение адреса будет содержать имя листа для каждого прямоугольного блока ячеек (например, "Sheet1! A1:B4, Sheet1! D1:D4").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
-  summary: Возвращает `RangeAreas` ссылку в локале пользователя.
+  summary: Возвращает ссылку `RangeAreas` в локале пользователя.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)
   package: ExcelScript!
   fullName: getCellCount()
-  summary: Возвращает количество ячеек в объекте, суммирует количество ячеек всех отдельных `RangeAreas` прямоугольных диапазонов. Возвращает значение -1, если количество ячеек превышает 2^31-1 (2 147 483 647).
+  summary: Возвращает количество ячеек `RangeAreas` в объекте, суммирует количество ячеек всех отдельных прямоугольных диапазонов. Возвращает значение -1, если количество ячеек превышает 2^31-1 (2 147 483 647).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -200,7 +200,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: Возвращает коллекцию условных форматов, которые пересекаются с любыми ячейками в этом `RangeAreas` объекте.
+  summary: Возвращает коллекцию условных форматов, которые пересекаются с любыми ячейками в этом объекте `RangeAreas` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -226,7 +226,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Возвращает объект, который представляет целые столбцы (например, если ток представляет ячейки `RangeAreas` `RangeAreas` `RangeAreas` "B4:E11, H2", он возвращает столбцы `RangeAreas` "B:E, H:H").
+  summary: '`RangeAreas` `RangeAreas` Возвращает объект, который представляет целые столбцы (например, `RangeAreas` если ток представляет ячейки "B4:E11, H2", `RangeAreas` он возвращает столбцы "B:E, H:H").'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Возвращает объект, который представляет целые строки (например, если ток представляет ячейки `RangeAreas` `RangeAreas` `RangeAreas` "B4:E11", он возвращает строки `RangeAreas` "4:11").
+  summary: '`RangeAreas` `RangeAreas` Возвращает объект, который представляет целые строки (например, `RangeAreas` если ток представляет ячейки "B4:E11", `RangeAreas` он возвращает строки "4:11").'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,7 +252,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Возвращает объект, инкапсулируя шрифт, заполнять, границы, выравнивание и другие свойства для всех `RangeFormat` диапазонов `RangeAreas` объекта.
+  summary: Возвращает объект `RangeFormat` , инкапсулируя шрифт, заполнять, границы, выравнивание и другие свойства для всех диапазонов объекта `RangeAreas` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,12 +260,12 @@ methods:
     content: 'getFormat(): RangeFormat;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script finds and highlights all the cells in the current worksheet that contain a formula.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula.\n  const formulaCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas);\n\n  // Add a light blue background to the cells containing formulas.\n  formulaCells.getFormat().getFill().setColor(\"#ADD8E6\");\n}\n```"
 - name: getIntersection(anotherRange)
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Возвращает `RangeAreas` объект, который представляет пересечение заданных диапазонов или `RangeAreas`<!-- -->. Если пересечение не обнаружено, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект `RangeAreas` , который представляет пересечение заданных диапазонов или `RangeAreas`<!-- -->. Если пересечение не обнаружено, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
     parameters:
     - id: anotherRange
-      description: Диапазон, `RangeAreas` объект или адрес, который будет использоваться для определения пересечения.
+      description: Диапазон, объект `RangeAreas` или адрес, который будет использоваться для определения пересечения.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -282,7 +282,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)
   package: ExcelScript!
   fullName: getIsEntireColumn()
-  summary: Указывает, представляют ли все диапазоны на этом объекте целые столбцы `RangeAreas` (например, "A:C, Q:Z").
+  summary: Указывает, представляют ли `RangeAreas` все диапазоны на этом объекте целые столбцы (например, "A:C, Q:Z").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)
   package: ExcelScript!
   fullName: getIsEntireRow()
-  summary: Указывает, представляют ли все диапазоны на этом объекте целые строки `RangeAreas` (например, "1:3, 5:7").
+  summary: Указывает, представляют `RangeAreas` ли все диапазоны на этом объекте целые строки (например, "1:3, 5:7").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)
   package: ExcelScript!
   fullName: getOffsetRangeAreas(rowOffset, columnOffset)
-  summary: Возвращает `RangeAreas` объект, смещенный определенной строкой и смещением столбца. Размер возвращенного будет `RangeAreas` соответствовать исходному объекту. Если результат будет принудительно вытеснено за пределы сетки `RangeAreas` таблицы, будет выброшена ошибка.
+  summary: Возвращает объект, `RangeAreas` смещенный определенной строкой и смещением столбца. Размер возвращенного будет соответствовать `RangeAreas` исходному объекту. Если результат будет `RangeAreas` принудительно вытеснено за пределы сетки таблицы, будет выброшена ошибка.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,10 +320,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: rowOffset
-      description: Количество строк (положительных, отрицательных или 0), с помощью которых должно `RangeAreas` быть смещено. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.
+      description: Количество строк (положительных, отрицательных или 0), `RangeAreas` с помощью которых должно быть смещено. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.
       type: number
     - id: columnOffset
-      description: Количество столбцов (положительный, отрицательный или 0), с помощью которых должно `RangeAreas` быть смещено. Положительные значения соответствуют смещению вправо, а отрицательные — влево.
+      description: Количество столбцов (положительный, отрицательный или 0), `RangeAreas` с помощью которых должно быть смещено. Положительные значения соответствуют смещению вправо, а отрицательные — влево.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -332,7 +332,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Представляет стиль для всех диапазонов в этом `RangeAreas` объекте. Если стили ячеек несовместимы, `null` они будут возвращены. Для пользовательских стилей будет возвращено имя стиля. Для встроенных стилей будет возвращена строка, представляющая значение в `BuiltInStyle` enum.
+  summary: Представляет стиль для всех диапазонов в этом объекте `RangeAreas` . Если стили ячеек несовместимы, `null` они будут возвращены. Для пользовательских стилей будет возвращено имя стиля. Для встроенных стилей будет возвращена `BuiltInStyle` строка, представляющая значение в enum.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -345,7 +345,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Возвращает объект, который представляет все ячейки, которые `RangeAreas` соответствуют указанному типу и значению. Если не обнаружено специальных ячеек, которые соответствуют критериям, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект, `RangeAreas` который представляет все ячейки, которые соответствуют указанному типу и значению. Если не обнаружено специальных ячеек, которые соответствуют критериям, эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
       description: Тип ячеек, которые необходимо включить.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Если `cellType` либо, `constants` либо `formulas`<!-- -->Этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединить, чтобы вернуть несколько типов. По умолчанию необходимо выбрать все константы или формулы независимо от типа.
+      description: Если `cellType` либо, либо `constants``formulas`<!-- -->Этот аргумент используется для определения типов ячеек, которые необходимо включить в результат. Эти значения можно объединить, чтобы вернуть несколько типов. По умолчанию необходимо выбрать все константы или формулы независимо от типа.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -369,7 +369,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getTables:member(1)
   package: ExcelScript!
   fullName: getTables(fullyContained)
-  summary: Возвращает объемную коллекцию таблиц, которые перекрываются с любым диапазоном в этом `RangeAreas` объекте.
+  summary: Возвращает объемную коллекцию таблиц, которые перекрываются с любым диапазоном в этом объекте `RangeAreas` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
   package: ExcelScript!
   fullName: getUsedRangeAreas(valuesOnly)
-  summary: Возвращает используемое, которое включает все используемые области отдельных прямоугольных `RangeAreas` диапазонов `RangeAreas` объекта. Если в `RangeAreas`<!-- -->затем эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает используемое, `RangeAreas` которое включает все используемые области отдельных прямоугольных диапазонов объекта `RangeAreas` . Если в `RangeAreas`<!-- -->затем эта функция возвращается `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)
   package: ExcelScript!
   fullName: setDirty()
-  summary: Задает перерасчет при следующем `RangeAreas` пересчете.
+  summary: Задает перерасчет `RangeAreas` при следующем пересчете.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -429,7 +429,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Представляет стиль для всех диапазонов в этом `RangeAreas` объекте. Если стили ячеек несовместимы, `null` они будут возвращены. Для пользовательских стилей будет возвращено имя стиля. Для встроенных стилей будет возвращена строка, представляющая значение в `BuiltInStyle` enum.
+  summary: Представляет стиль для всех диапазонов в этом объекте `RangeAreas` . Если стили ячеек несовместимы, `null` они будут возвращены. Для пользовательских стилей будет возвращено имя стиля. Для встроенных стилей будет возвращена `BuiltInStyle` строка, представляющая значение в enum.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d2379d59b4a588788b4700e9985267e6ddf6a6d7
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 61f1c5d9f766f016055f7398b9ba2bada8b22e0d
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064852"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755972"
