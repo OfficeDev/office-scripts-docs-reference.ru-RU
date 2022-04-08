@@ -1,122 +1,132 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterCriteria
-uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
+uid: ExcelScript!ExcelScript.FilterCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.FilterCriteria
-summary: 'Представляет условия фильтра, применяемые к столбцу.'
+summary: Представляет условия фильтра, применяемые к столбцу.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: color
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#color:member'
-    package: ExcelScript!
-    fullName: color
-    summary: 'Строка цвета HTML, которая используется для фильтрации ячеек. Используется при `cellColor` `fontColor` фильтрации и фильтрации.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'color?: string;'
-      return:
-        type: string
-  - name: criterion1
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion1:member'
-    package: ExcelScript!
-    fullName: criterion1
-    summary: |-
-      Первый критерий фильтрации данных. Используется в качестве оператора в случае `custom` фильтрации. Например "<!-- -->&gt;<!-- -->50" для чисел больше 50 или "=*s" для значений, заканчивающийся в "s".
+- name: color
+  uid: ExcelScript!ExcelScript.FilterCriteria#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: Строка цвета HTML, которая используется для фильтрации ячеек. Используется с и `cellColor` фильтрацией `fontColor` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: criterion1
+  uid: ExcelScript!ExcelScript.FilterCriteria#criterion1:member
+  package: ExcelScript!
+  fullName: criterion1
+  summary: >-
+    Первый критерий фильтрации данных. Используется в качестве оператора в случае фильтрации `custom` . Например, "<!-- -->&gt;<!-- -->50" для чисел больше 50 или "=*s" для значений, заканчивающиеся на "s".
 
-      Используется в качестве числа в случае верхних и нижних элементов/процентов (например, "5" для топ-5 элементов, если `filterOn` задано `topItems`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'criterion1?: string;'
-      return:
-        type: string
-  - name: criterion2
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion2:member'
-    package: ExcelScript!
-    fullName: criterion2
-    summary: Второй критерий фильтрации данных. Используется только в качестве оператора в случае `custom` фильтрации.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'criterion2?: string;'
-      return:
-        type: string
-  - name: dynamicCriteria
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
-    package: ExcelScript!
-    fullName: dynamicCriteria
-    summary: 'Динамические критерии `ExcelScript.DynamicFilterCriteria` из набора, которые необходимо применить в этом столбце. Используется при `dynamic` фильтрации.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'dynamicCriteria?: DynamicFilterCriteria;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />'
-  - name: filterOn
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#filterOn:member'
-    package: ExcelScript!
-    fullName: filterOn
-    summary: 'Свойство, с помощью которого фильтр определяет, следует ли показывать значения.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'filterOn: FilterOn;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterOn:enum" />'
-  - name: icon
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#icon:member'
-    package: ExcelScript!
-    fullName: icon
-    summary: 'Значок, используемый для фильтрации ячеек. Используется при `icon` фильтрации.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'icon?: Icon;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
-  - name: operator
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#operator:member'
-    package: ExcelScript!
-    fullName: operator
-    summary: Оператор использовал для объединения критерия 1 и 2 при использовании `custom` фильтрации.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'operator?: FilterOperator;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />'
-  - name: subField
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#subField:member'
-    package: ExcelScript!
-    fullName: subField
-    summary: 'Свойство, используемее фильтром для фильтрации богатых значений.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'subField?: string;'
-      return:
-        type: string
-  - name: values
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#values:member'
-    package: ExcelScript!
-    fullName: values
-    summary: 'Набор значений, которые будут использоваться в качестве части `values` фильтрации.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'values?: Array<string | FilterDatetime>;'
-      return:
-        type: 'Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;'
+
+    Используется в качестве числа в случае верхних, нижних элементов и процентов (например, "5" для 5 `filterOn` основных элементов, если задано значение `topItems`<!-- -->).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'criterion1?: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script creates an autoFilter on the worksheet that filters out rows based on column values. \n * The autoFilter filters to only include rows that have a value in column C in the lowest 10 values \n * (of column C values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the lowest 10 values in column C\n  // (index 2, assuming the used range spans from at least A:C).\n  const filterCriteria: ExcelScript.FilterCriteria = {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.bottomItems\n  };\n  currentSheet.getAutoFilter().apply(dataRange, 2, filterCriteria);\n}\n```"
+- name: criterion2
+  uid: ExcelScript!ExcelScript.FilterCriteria#criterion2:member
+  package: ExcelScript!
+  fullName: criterion2
+  summary: Второй критерий фильтрации данных. Используется только в качестве оператора в случае фильтрации `custom` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'criterion2?: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script applies a filter to a table so that it only shows rows with \"Needs Review\" in the \"Type\" column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the workbook.\n  const table = workbook.getTables()[0];\n\n  // Apply the filter to the \"Type\" column.\n  const typeColumn = table.getColumnByName(\"Type\");\n  typeColumn.getFilter().applyValuesFilter([\"Needs Review\"]);\n}\n```"
+- name: dynamicCriteria
+  uid: ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member
+  package: ExcelScript!
+  fullName: dynamicCriteria
+  summary: Динамические критерии из набора `ExcelScript.DynamicFilterCriteria` , применяемые к этому столбцу. Используется с фильтрацией `dynamic` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'dynamicCriteria?: DynamicFilterCriteria;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
+- name: filterOn
+  uid: ExcelScript!ExcelScript.FilterCriteria#filterOn:member
+  package: ExcelScript!
+  fullName: filterOn
+  summary: Свойство, с помощью которого фильтр определяет, следует ли показывать значения.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'filterOn: FilterOn;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterOn:enum" />
+- name: icon
+  uid: ExcelScript!ExcelScript.FilterCriteria#icon:member
+  package: ExcelScript!
+  fullName: icon
+  summary: Значок, используемый для фильтрации ячеек. Используется с фильтрацией `icon` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'icon?: Icon;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
+- name: operator
+  uid: ExcelScript!ExcelScript.FilterCriteria#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: Оператор, используемый для объединения критерия 1 и 2 при использовании фильтрации `custom` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator?: FilterOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />
+- name: subField
+  uid: ExcelScript!ExcelScript.FilterCriteria#subField:member
+  package: ExcelScript!
+  fullName: subField
+  summary: Свойство, используемое фильтром для выполнения расширенного фильтра по расширенным значениям.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subField?: string;'
+    return:
+      type: string
+- name: values
+  uid: ExcelScript!ExcelScript.FilterCriteria#values:member
+  package: ExcelScript!
+  fullName: values
+  summary: Набор значений, используемых в процессе фильтрации `values` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'values?: Array<string | FilterDatetime>;'
+    return:
+      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
+metadata:
+  ms.openlocfilehash: 60b92aa11cdd91ddfb0094c33bef414d77d896d8
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64716018"
