@@ -3,7 +3,7 @@ name: ExcelScript.Workbook
 uid: ExcelScript!ExcelScript.Workbook:interface
 package: ExcelScript!
 fullName: ExcelScript.Workbook
-summary: Книга — это объект верхнего уровня, содержащий связанные объекты книги, такие как таблицы, таблицы и диапазоны.
+summary: Книга — это объект верхнего уровня, содержащий связанные объекты книги, такие как листы, таблицы и диапазоны.
 remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script adds a new worksheet to the workbook, then switches to it.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add a new worksheet with the default name.\n  let worksheet = workbook.addWorksheet();\n\n  // Switch focus to the new worksheet.\n  worksheet.activate();\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
               ): Binding;
     parameters:
     - id: range
-      description: Диапазон для привязки. Может быть `Range` объектом или строкой. Строка должна включать полный адрес, включающий имя листа.
+      description: Диапазон для привязки. Может быть объектом `Range` или строкой. Строка должна включать полный адрес, включающий имя листа.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: bindingType
       description: Тип привязки. См. `ExcelScript.BindingType`<!-- -->.
@@ -41,7 +41,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)
   package: ExcelScript!
   fullName: addBindingFromNamedItem(name, bindingType, id)
-  summary: Добавляет новую привязку с учетом именованного элемента в книге. Если названный элемент ссылается на несколько областей, ошибка `InvalidReference` будет возвращена.
+  summary: Добавляет новую привязку с учетом именованного элемента в книге. Если именованный элемент ссылается на несколько областей, `InvalidReference` будет возвращена ошибка.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)
   package: ExcelScript!
   fullName: addBindingFromSelection(bindingType, id)
-  summary: Добавляет новую привязку с учетом выделенного в настоящий момент фрагмента. Если в выборе несколько областей, ошибка `InvalidReference` будет возвращена.
+  summary: Добавляет новую привязку с учетом выделенного в настоящий момент фрагмента. Если выбор имеет несколько областей, будет `InvalidReference` возвращена ошибка.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -89,7 +89,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addComment:member(1)
   package: ExcelScript!
   fullName: addComment(cellAddress, content, contentType)
-  summary: Создает новое примечание с указанным содержимым в определенной ячейке. Ошибка `InvalidArgument` будет выброшена, если предоставленный диапазон превышает одну ячейку.
+  summary: Создает новое примечание с указанным содержимым в определенной ячейке. Если `InvalidArgument` указанный диапазон превышает одну ячейку, возникает ошибка.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -102,13 +102,13 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: Ячейка, в которую добавляется комментарий. Это может быть `Range` объект или строка. Если это строка, она должна содержать полный адрес, включая имя листа. Ошибка `InvalidArgument` будет выброшена, если предоставленный диапазон превышает одну ячейку.
+      description: Ячейка, в которую добавляется комментарий. Это может быть объект `Range` или строка. Если это строка, она должна содержать полный адрес, включая имя листа. Если `InvalidArgument` указанный диапазон превышает одну ячейку, возникает ошибка.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для простого текста. `CommentRichContent` объекты позволяют использовать другие функции комментариев, например упоминания.
+      description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для обычного текста. `CommentRichContent` Объекты  позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательный параметр. Тип контента, содержатого в комментарии. Значение по умолчанию — это enum `ContentType.Plain`<!-- -->.
+      description: Необязательное свойство. Тип содержимого, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -125,7 +125,7 @@ methods:
     content: 'addCustomXmlPart(xml: string): CustomXmlPart;'
     parameters:
     - id: xml
-      description: XML-контент. Должен быть допустимым фрагментом XML.
+      description: XML-содержимое. Должен быть допустимым фрагментом XML.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />
@@ -153,7 +153,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательный параметр. Комментарий, связанный с именем элемента.
+      description: Необязательное свойство. Комментарий, связанный с именованным элементом.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -181,7 +181,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательный параметр. Комментарий, связанный с именем элемента.
+      description: Необязательное свойство. Комментарий, связанный с именованным элементом.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: Добавьте pivotTable на основе указанных исходных данных и вставьте его в верхней левой ячейке диапазона назначения.
+  summary: Добавьте сводную таблицу на основе указанных исходных данных и вставьте ее в левую верхнюю ячейку диапазона назначения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,13 +203,13 @@ methods:
               ): PivotTable;
     parameters:
     - id: name
-      description: Имя нового pivotTable.
+      description: Имя новой сводной таблицы.
       type: string
     - id: source
-      description: Исходными данными для нового pivotTable могут быть диапазон (или адрес строки, включая имя таблицы) или таблица.
+      description: Исходные данные для новой сводной таблицы могут быть диапазоном (или строковым адресом, включая имя листа) или таблицей.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
-      description: Ячейка в верхнем левом углу диапазона назначения отчетов PivotTable (диапазон на таблице, где будет размещен итоговой отчет).
+      description: Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы (диапазон на листе, где будет помещен итоговый отчет).
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
@@ -218,7 +218,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: addPivotTableStyle(name, makeUniqueName)
-  summary: Создает пробел `PivotTableStyle` с указанным именем.
+  summary: Создает пустое поле `PivotTableStyle` с указанным именем.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -230,10 +230,10 @@ methods:
               ): PivotTableStyle;
     parameters:
     - id: name
-      description: Уникальное имя для нового стиля PivotTable. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
+      description: Уникальное имя нового стиля сводной таблицы. Выдаст ошибку `InvalidArgument` , если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный параметр. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, добавляет числа к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
@@ -272,17 +272,17 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: Источник данных, на основе который будет основан новый срез. Это может быть `PivotTable` объект, `Table` объект или строка. Когда объект PivotTable передается, источником данных является `PivotTable` источник объекта. Когда объект `Table` передается, источником данных является `Table` объект. Когда строка передается, она интерпретируется как имя или ID pivotTable или таблицы.
+      description: Источник данных, на котором будет основан новый срез. Это может быть объект `PivotTable` , объект `Table` или строка. При передаче объекта сводной таблицы источник данных является источником `PivotTable` объекта. При передаче `Table` объекта источником данных является `Table` объект. При передаче строки она интерпретируется как имя или идентификатор сводной таблицы или таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: Поле в источнике данных для фильтрации. Он может быть `PivotField` объектом, `TableColumn` объектом, ИД или именем или `PivotField` ИД `TableColumn`<!-- -->.
+      description: Поле в источнике данных для фильтрации. Это может быть объект `PivotField` , объект `TableColumn` , идентификатор или `PivotField` имя или идентификатор `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательный параметр. Таблица, в которой будет создан новый срез. Это может быть объект, имя или `Worksheet` ИД таблицы. Этот параметр может быть опущен, если коллекция срезов будет извлечена из таблицы.
+      description: Необязательное свойство. Лист, на котором будет создан новый срез. Это может быть объект `Worksheet` , имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script adds a slicer for an existing PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable named \"Farm Pivot\".\n  const farmPivot = workbook.getPivotTable(\"Farm Pivot\");\n\n  // Create the slicer. \n  // Note that this assumes \"Type\" is already added as a hierarchy to the PivotTable.\n  const fruitSlicer: ExcelScript.Slicer = workbook.addSlicer(\n    farmPivot, /* The table or PivotTale to be sliced. */\n    farmPivot.getHierarchy(\"Type\").getFields()[0] /* What source field to use as the slicer options. */\n  );\n\n  // Select the items to display.\n  fruitSlicer.selectItems([\"Lemon\", \"Lime\"]);\n\n  // Set the left margin of the slicer.\n  fruitSlicer.setLeft(400);\n}\n```"
 - name: addSlicerStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)
   package: ExcelScript!
@@ -295,10 +295,10 @@ methods:
     content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
     parameters:
     - id: name
-      description: Уникальное имя для нового стиля среза. Бросит `InvalidArgument` исключение, если имя уже используется.
+      description: Уникальное имя нового стиля среза. Выдаст исключение `InvalidArgument` , если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный параметр. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, добавляет числа к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
@@ -315,19 +315,19 @@ methods:
     content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
     parameters:
     - id: address
-      description: Объект `Range` или адрес строки или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.
+      description: Объект `Range` или строковый адрес или имя диапазона, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: Значение boolean, которое указывает, есть ли импортируемые данные, метки столбцов. Если источник не содержит заглавные `false`<!-- -->), Excel автоматически создает загон и перемещает данные вниз на одну строку.
+      description: Логическое значение, указывающее, есть ли у импортируемых данных метки столбцов. Если источник не содержит заголовки (например, если для этого свойства задано значение ). `false`<!-- -->), Excel автоматически создаст заголовок и сдвинет данные вниз на одну строку.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This sample converts the information in the first worksheet\n * into a table with headers.\n*/\nfunction main(workbook: ExcelScript.Workbook) {\n  // This assumes there is one contiguous range in the first worksheet.\n  const dataRange = workbook.getFirstWorksheet().getUsedRange();\n  \n  // Add a table at the workbook level.\n  workbook.addTable(dataRange.getAddress(), true);\n}\n```"
 - name: addTableStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)
   package: ExcelScript!
   fullName: addTableStyle(name, makeUniqueName)
-  summary: Создает пробел `TableStyle` с указанным именем.
+  summary: Создает пустое поле `TableStyle` с указанным именем.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -335,10 +335,10 @@ methods:
     content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
     parameters:
     - id: name
-      description: Уникальное имя для нового стиля таблицы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
+      description: Уникальное имя нового стиля таблицы. Выдаст ошибку `InvalidArgument` , если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный параметр. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, добавляет числа к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)
   package: ExcelScript!
   fullName: addTimelineStyle(name, makeUniqueName)
-  summary: Создает пробел `TimelineStyle` с указанным именем.
+  summary: Создает пустое поле `TimelineStyle` с указанным именем.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,10 +355,10 @@ methods:
     content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
     parameters:
     - id: name
-      description: Уникальное имя для нового стиля временной шкалы. Будет бросать `InvalidArgument` ошибку, если имя уже используется.
+      description: Уникальное имя нового стиля временной шкалы. Выдаст ошибку `InvalidArgument` , если имя уже используется.
       type: string
     - id: makeUniqueName
-      description: Необязательный параметр. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, будет придать номера к имени, чтобы сделать его уникальным, если это необходимо.
+      description: Необязательное свойство. Значение по умолчанию — `false`.<!-- -->. Если `true`<!-- -->, добавляет числа к имени, чтобы сделать его уникальным, если это необходимо.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
@@ -367,7 +367,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)
   package: ExcelScript!
   fullName: addWorksheet(name)
-  summary: Добавляет новый лист в книгу. Лист будет добавлен после существующих листов. Если вы хотите активировать только что добавленный таблицу, `.activate()` позвоните по ней.
+  summary: Добавляет новый лист в книгу. Лист будет добавлен после существующих листов. Если вы хотите активировать только что добавленный лист, вызовите `.activate()` его.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -384,7 +384,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: breakAllLinksToLinkedWorkbooks()
-  summary: Нарушает все ссылки на связанные книги. После слома ссылок все формулы ссылок на книги удаляются полностью и заменяются последними извлеченными значениями.
+  summary: Прерывает все ссылки на связанные книги. После разорванных ссылок все формулы, ссылаемые на ссылки на книги, полностью удаляются и заменяются последними полученными значениями.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: Получает текущую активную диаграмму в книге. Если нет активной диаграммы, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает текущую активную диаграмму в книге. Если нет активной диаграммы, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: Получает текущий активный срез в книге. Если нет активного среза, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает текущий активный срез в книге. Если активный срез отсутствует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -449,7 +449,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getApplication:member(1)
   package: ExcelScript!
   fullName: getApplication()
-  summary: Представляет экземпляр Excel, содержащий эту книгу.
+  summary: Представляет экземпляр Excel, который содержит эту книгу.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -462,7 +462,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)
   package: ExcelScript!
   fullName: getAutoSave()
-  summary: Указывает, находится ли книга в режиме AutoSave.
+  summary: Указывает, находится ли книга в режиме автосохранения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -475,7 +475,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: Возвращает объект привязки по идентификатору. Если объекта привязки не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект привязки по идентификатору. Если объект привязки не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -518,7 +518,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)
   package: ExcelScript!
   fullName: getChartDataPointTrack()
-  summary: Значение true, если все диаграммы в книге отслеживают точки фактических данных, с которыми они связаны. False, если диаграммы отслеживают индекс точек данных.
+  summary: Значение true, если все диаграммы в книге отслеживают точки фактических данных, с которыми они связаны. Значение false, если диаграммы отслеживают индекс точек данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -539,7 +539,7 @@ methods:
     content: 'getComment(commentId: string): Comment;'
     parameters:
     - id: commentId
-      description: Идентификатор для комментария.
+      description: Идентификатор комментария.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -556,7 +556,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: Ячейка, в которой находится комментарий. Это может быть `Range` объект или строка. Если это строка, она должна содержать полный адрес, включая имя листа. Ошибка `InvalidArgument` будет выброшена, если предоставленный диапазон превышает одну ячейку.
+      description: Ячейка, в которой находится комментарий. Это может быть объект `Range` или строка. Если это строка, она должна содержать полный адрес, включая имя листа. Если `InvalidArgument` указанный диапазон превышает одну ячейку, возникает ошибка.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -565,7 +565,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)
   package: ExcelScript!
   fullName: getCommentByReplyId(replyId)
-  summary: Получает комментарий, к которому подключен данный ответ.
+  summary: Возвращает комментарий, к которому подключен заданный ответ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -573,7 +573,7 @@ methods:
     content: 'getCommentByReplyId(replyId: string): Comment;'
     parameters:
     - id: replyId
-      description: Идентификатор ответа на комментарий.
+      description: Идентификатор ответа примечания.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPart(id)
-  summary: Получает пользовательскую XML-часть по идентификатору. Если `CustomXmlPart` не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает пользовательскую XML-часть по идентификатору. Если объект `CustomXmlPart` не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -603,7 +603,7 @@ methods:
     content: 'getCustomXmlPart(id: string): CustomXmlPart | undefined;'
     parameters:
     - id: id
-      description: ID объекта, который будет извлечен.
+      description: Идентификатор извлекаемого объекта.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" /> | undefined
@@ -612,7 +612,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPartByNamespace(namespaceUri)
-  summary: Получает новую коллекцию пользовательских частей XML, чьи пространства имен совпадают с заданным пространством имен.
+  summary: Возвращает новую коллекцию пользовательских XML-частей, пространства имен которых соответствуют заданному пространству имен.
   remarks: ''
   isPreview: false
   isDeprecated: true
@@ -621,7 +621,7 @@ methods:
     content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: Это должна быть полностью квалифицированная схема URI; например, http://schemas.contoso.com/review/1.0 ".
+      description: Это должен быть полный универсальный код ресурса (URI) схемы. Например, "http://schemas.contoso.com/review/1.0".
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -630,7 +630,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)
   package: ExcelScript!
   fullName: getCustomXmlParts()
-  summary: Представляет коллекцию пользовательских частей XML, содержащихся в этой книге.
+  summary: Представляет коллекцию пользовательских XML-частей, содержащихся в этой книге.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -643,7 +643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartsByNamespace:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPartsByNamespace(namespaceUri)
-  summary: Получает новую коллекцию пользовательских частей XML, чьи пространства имен совпадают с заданным пространством имен.
+  summary: Возвращает новую коллекцию пользовательских XML-частей, пространства имен которых соответствуют заданному пространству имен.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -651,7 +651,7 @@ methods:
     content: 'getCustomXmlPartsByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: Это должна быть полностью квалифицированная схема URI; например, http://schemas.contoso.com/review/1.0 ".
+      description: Это должен быть полный универсальный код ресурса (URI) схемы. Например, "http://schemas.contoso.com/review/1.0".
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -660,7 +660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getDefaultPivotTableStyle()
-  summary: Получает стиль PivotTable по умолчанию для области родительского объекта.
+  summary: Возвращает стиль сводной таблицы по умолчанию для области родительского объекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -673,7 +673,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getDefaultSlicerStyle()
-  summary: Получает по `SlicerStyle` умолчанию область родительского объекта.
+  summary: Возвращает значение по умолчанию `SlicerStyle` для области родительского объекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -686,7 +686,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)
   package: ExcelScript!
   fullName: getDefaultTableStyle()
-  summary: Получает стиль таблицы по умолчанию для области родительского объекта.
+  summary: Возвращает стиль таблицы по умолчанию для области родительского объекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -699,7 +699,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getDefaultTimelineStyle()
-  summary: Получает стиль временной шкалы по умолчанию для области родительского объекта.
+  summary: Возвращает стиль временной шкалы по умолчанию для области родительского объекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -720,7 +720,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный параметр. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые листы, пропуская все скрытые листы.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -729,7 +729,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)
   package: ExcelScript!
   fullName: getIsDirty()
-  summary: Указывает, были ли внесены изменения с момента последнего сберегаемого книги. Вы можете настроить это свойство, если вы хотите закрыть измененную книгу без ее сохранения или `true` запроса на ее сохранение.
+  summary: Указывает, были ли внесены изменения с момента последнего сохранения книги. Это свойство можно задать, `true` если вы хотите закрыть измененную книгу, не сохраняя ее или не запрашивая ее сохранение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -750,7 +750,7 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный параметр. Если `true`<!-- -->, рассматривает только видимые таблицы, пропуская все скрытые.
+      description: Необязательное свойство. Если `true`<!-- -->, рассматривает только видимые листы, пропуская все скрытые листы.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -759,7 +759,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookByUrl(key)
-  summary: Получает сведения о связанной книге по URL-адресу. Если книги не существует, эта функция возвращает объект с его `isNullObject` свойством `true`<!-- -->.
+  summary: Возвращает сведения о связанной книге по ее URL-адресу. Если книга не существует, `isNullObject` эта функция вернет объект со своим свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -776,7 +776,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookRefreshMode:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookRefreshMode()
-  summary: Представляет режим обновления ссылок на книги. Этот режим является одинаковым для всех ссылок на книги, присутствующих в книге.
+  summary: Представляет режим обновления ссылок книги. Этот режим одинаковый для всех ссылок книги, присутствующих в книге.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -789,7 +789,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbooks()
-  summary: Возвращает коллекцию связанных книг. В формулах ссылки на книги можно использовать для ссылок на данные (значения ячейки и имена) за пределами текущей книги.
+  summary: Возвращает коллекцию связанных книг. В формулах ссылки на книги можно использовать для ссылки на данные (значения ячеек и имена) за пределами текущей книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -815,7 +815,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Получает объект `NamedItem` с его именем. Если объекта не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект `NamedItem` , используя его имя. Если объект не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -823,7 +823,7 @@ methods:
     content: 'getNamedItem(name: string): NamedItem | undefined;'
     parameters:
     - id: name
-      description: Nameitem.
+      description: Именованное имя.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
@@ -832,7 +832,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNames:member(1)
   package: ExcelScript!
   fullName: getNames()
-  summary: Представляет коллекцию именных элементов с именами книг (именуемого диапазона и констант).
+  summary: Представляет коллекцию именованных элементов с областью действия книги (именованные диапазоны и константы).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Получает сводную таблицу по имени. Если pivotTable не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает сводную таблицу по имени. Если сводная таблица не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -875,7 +875,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: Получает `PivotTableStyle` имя. Если `PivotTableStyle` не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает значение по `PivotTableStyle` имени. Если объект `PivotTableStyle` не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -883,7 +883,7 @@ methods:
     content: 'getPivotTableStyle(name: string): PivotTableStyle | undefined;'
     parameters:
     - id: name
-      description: Имя извлекаемого стиля PivotTable.
+      description: Имя извлекаемого стиля сводной таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" /> | undefined
@@ -905,7 +905,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle(name)
-  summary: Получает `Style` имя.
+  summary: Возвращает значение по `Style` имени.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -935,7 +935,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)
   package: ExcelScript!
   fullName: getPreviouslySaved()
-  summary: Указывает, была ли книга сохранена локально или в Интернете.
+  summary: Указывает, была ли книга сохранена локально или в сети.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -974,7 +974,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: '`true`Возвращается, если книга открыта в режиме только для чтения.'
+  summary: Возвращает значение `true` , если книга открыта в режиме только для чтения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -987,7 +987,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)
   package: ExcelScript!
   fullName: getSelectedRange()
-  summary: Получает выбранный в настоящее время отдельный диапазон из книги. Если выбрано несколько диапазонов, этот метод выкинуть ошибку.
+  summary: Возвращает выбранный в данный момент отдельный диапазон из книги. Если выбрано несколько диапазонов, этот метод вызовет ошибку.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1000,7 +1000,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)
   package: ExcelScript!
   fullName: getSelectedRanges()
-  summary: Получает текущий выделенный диапазон (один или несколько) в книге. В отличие от `getSelectedRange()`<!-- -->, этот метод возвращает `RangeAreas` объект, который представляет все выбранные диапазоны.
+  summary: Получает текущий выделенный диапазон (один или несколько) в книге. Похоже `getSelectedRange()`<!-- -->, этот метод возвращает объект `RangeAreas` , представляющий все выбранные диапазоны.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1013,7 +1013,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Получает срез с его именем или ИД. Если среза не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает срез, используя его имя или идентификатор. Если срез не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1021,7 +1021,7 @@ methods:
     content: 'getSlicer(key: string): Slicer | undefined;'
     parameters:
     - id: key
-      description: Имя или ID среза, который будет извлечен.
+      description: Имя или идентификатор извлекаемого среза.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" /> | undefined
@@ -1043,7 +1043,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: Получает `SlicerStyle` имя. Если стиля среза не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает значение по `SlicerStyle` имени. Если стиль среза не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1073,7 +1073,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Получает таблицу по имени или ИД. Если таблицы не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает таблицу по имени или ИД. Если таблица не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: Получает `TableStyle` имя. Если стиля таблицы не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает значение по `TableStyle` имени. Если стиль таблицы не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1111,7 +1111,7 @@ methods:
     content: 'getTableStyle(name: string): TableStyle | undefined;'
     parameters:
     - id: name
-      description: Имя стиля таблицы, который необходимо получить.
+      description: Имя извлекаемого стиля таблицы.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" /> | undefined
@@ -1133,7 +1133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: Получает `TimelineStyle` имя. Если стиля временной шкалы не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает значение по `TimelineStyle` имени. Если стиль временной шкалы не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1163,7 +1163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
   fullName: getUsePrecisionAsDisplayed()
-  summary: Значение true, если вычисления в книге выполняются только с той точностью чисел, с которой они отображаются. Данные будут постоянно терять точность при переходе этого свойства `false` из `true`<!-- -->.
+  summary: Значение true, если вычисления в книге выполняются только с той точностью чисел, с которой они отображаются. Данные безвозвратно теряют точность при переключении этого свойства с `false``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1176,7 +1176,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Получает объект листа по его имени или ИД. Если таблица не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает объект листа по его имени или ИД. Если лист не существует, эта функция возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1184,7 +1184,7 @@ methods:
     content: 'getWorksheet(key: string): Worksheet | undefined;'
     parameters:
     - id: key
-      description: Имя или ID таблицы.
+      description: Имя или идентификатор листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
@@ -1219,7 +1219,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#refreshAllLinksToLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: refreshAllLinksToLinkedWorkbooks()
-  summary: Делает запрос на обновление всех ссылок на книги.
+  summary: Отправляет запрос на обновление всех ссылок книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1245,7 +1245,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)
   package: ExcelScript!
   fullName: setChartDataPointTrack(chartDataPointTrack)
-  summary: Значение true, если все диаграммы в книге отслеживают точки фактических данных, с которыми они связаны. False, если диаграммы отслеживают индекс точек данных.
+  summary: Значение true, если все диаграммы в книге отслеживают точки фактических данных, с которыми они связаны. Значение false, если диаграммы отслеживают индекс точек данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1262,7 +1262,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: setDefaultPivotTableStyle(newDefaultStyle)
-  summary: Задает стиль PivotTable по умолчанию для использования в области родительского объекта.
+  summary: Задает стиль сводной таблицы по умолчанию для использования в области родительского объекта.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1273,7 +1273,7 @@ methods:
               ): void;
     parameters:
     - id: newDefaultStyle
-      description: Объект или имя объекта должен быть новым `PivotTableStyle` `PivotTableStyle` по умолчанию.
+      description: Объект `PivotTableStyle` или имя объекта `PivotTableStyle` , которое должно быть новым значением по умолчанию.
       type: "<xref uid=\"ExcelScript!ExcelScript.PivotTableStyle:interface\" /> | string\n        "
     return:
       type: void
@@ -1290,7 +1290,7 @@ methods:
     content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: Объект или имя объекта должен быть новым `SlicerStyle` `SlicerStyle` по умолчанию.
+      description: Объект `SlicerStyle` или имя объекта `SlicerStyle` , которое должно быть новым значением по умолчанию.
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" /> | string
     return:
       type: void
@@ -1307,7 +1307,7 @@ methods:
     content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: Объект или имя объекта должен быть новым `TableStyle` `TableStyle` по умолчанию.
+      description: Объект `TableStyle` или имя объекта `TableStyle` , которое должно быть новым значением по умолчанию.
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" /> | string
     return:
       type: void
@@ -1324,7 +1324,7 @@ methods:
     content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: Объект или имя объекта должен быть новым `TimelineStyle` `TimelineStyle` по умолчанию.
+      description: Объект `TimelineStyle` или имя объекта `TimelineStyle` , которое должно быть новым значением по умолчанию.
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" /> | string
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)
   package: ExcelScript!
   fullName: setIsDirty(isDirty)
-  summary: Указывает, были ли внесены изменения с момента последнего сберегаемого книги. Вы можете настроить это свойство, если вы хотите закрыть измененную книгу без ее сохранения или `true` запроса на ее сохранение.
+  summary: Указывает, были ли внесены изменения с момента последнего сохранения книги. Это свойство можно задать, `true` если вы хотите закрыть измененную книгу, не сохраняя ее или не запрашивая ее сохранение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setLinkedWorkbookRefreshMode:member(1)
   package: ExcelScript!
   fullName: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
-  summary: Представляет режим обновления ссылок на книги. Этот режим является одинаковым для всех ссылок на книги, присутствующих в книге.
+  summary: Представляет режим обновления ссылок книги. Этот режим одинаковый для всех ссылок книги, присутствующих в книге.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1370,7 +1370,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
   fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
-  summary: Значение true, если вычисления в книге выполняются только с той точностью чисел, с которой они отображаются. Данные будут постоянно терять точность при переходе этого свойства `false` из `true`<!-- -->.
+  summary: Значение true, если вычисления в книге выполняются только с той точностью чисел, с которой они отображаются. Данные безвозвратно теряют точность при переключении этого свойства с `false``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0cf6be7bea44595eb8cdce4d1000268f330f9073
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 52a3ed7e88d6452aa71cd8efd9bcdb459065dd98
+  ms.sourcegitcommit: 62fb657a306ed43211bc29b7e4ee016260dcc810
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240614"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65076876"
