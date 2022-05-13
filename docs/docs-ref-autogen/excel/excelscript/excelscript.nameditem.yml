@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть примитивными объектами с именем (как по видно в приведенном ниже типу), объектом диапазона или ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
+summary: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть примитивными именованными объектами (как показано в приведенном ниже типе), объектом диапазона или ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
+  summary: Формула именованного элемента. Формулы всегда начинаются со знака равенства ("=").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Возвращает объект Range, сопоставленный с именем. Если тип элемента с именем не является диапазоном, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект Range, сопоставленный с именем. Если тип именованного элемента не является диапазоном, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 'Указывает, задано ли имя в книге или в определенной таблице. Возможные значения: таблица, книга.'
+  summary: 'Указывает, является ли имя областью действия книги или определенного листа. Возможные значения: Worksheet, Workbook.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Указывает тип значения, возвращаемого по формуле имени. Подробные `ExcelScript.NamedItemType` сведения см. в материале.
+  summary: Указывает тип значения, возвращаемого формулой имени. Дополнительные `ExcelScript.NamedItemType` сведения см. здесь.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Указывает, виден ли объект.
+  summary: Указывает, является ли объект видимым.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Возвращает таблицу, в которую область действия именуемой номенклатуры. Если элемент вместо этого будет областью для книги, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает лист, на который заданной областью находится именованный элемент. Если элемент находится в области книги, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Формула названного элемента. Формулы всегда начинаются с равного знака ("=").
+  summary: Формула именованного элемента. Формулы всегда начинаются со знака равенства ("=").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Указывает, виден ли объект.
+  summary: Указывает, является ли объект видимым.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 182f0fc8a5e12d2bc525d28c22f8c6734abbcffd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064838"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394123"

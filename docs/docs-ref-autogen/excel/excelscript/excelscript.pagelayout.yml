@@ -3,7 +3,7 @@ name: ExcelScript.PageLayout
 uid: ExcelScript!ExcelScript.PageLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayout
-summary: Представляет параметры макета и печати, которые не зависят от реализации, определенной для принтера. Эти параметры включают поля, ориентацию, нумерацию страницы, строки заголовков и область печати.
+summary: Представляет параметры макета и печати, которые не зависят от реализации конкретного принтера. Эти параметры включают поля, ориентацию, нумерацию страницы, строки заголовков и область печати.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: getBlackAndWhite()
-  summary: Параметр черной и белой печати таблицы.
+  summary: Черно-белый вариант печати листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getBottomMargin:member(1)
   package: ExcelScript!
   fullName: getBottomMargin()
-  summary: Поля нижней страницы таблицы, которые можно использовать для печати в точках.
+  summary: Нижнее поле страницы листа, используемого для печати в пунктах.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: getCenterHorizontally()
-  summary: Центр таблицы горизонтально флаг. Эта отметка определяет, выравнивается ли лист по горизонтали относительно центра при печати.
+  summary: По горизонтали по центру листа. Эта отметка определяет, выравнивается ли лист по горизонтали относительно центра при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterVertically:member(1)
   package: ExcelScript!
   fullName: getCenterVertically()
-  summary: Центр таблицы вертикально флаг. Эта отметка определяет, выравнивается ли лист по вертикали относительно центра при печати.
+  summary: Пометка центра листа по вертикали. Эта отметка определяет, выравнивается ли лист по вертикали относительно центра при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getDraftMode:member(1)
   package: ExcelScript!
   fullName: getDraftMode()
-  summary: Вариант режима черновика таблицы. Если `true`<!-- -->, лист будет напечатан без графики.
+  summary: Параметр режима черновика листа. Если `true`<!-- -->, лист будет печататься без графики.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: getFirstPageNumber()
-  summary: Номер первой страницы таблицы для печати. Значение `null` представляет номер "авто" страницы.
+  summary: Номер первой страницы листа для печати. Значение `null` представляет нумерованную страницу "auto".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)
   package: ExcelScript!
   fullName: getFooterMargin()
-  summary: Поле для подножки таблицы в точках для использования при печати.
+  summary: Поле нижнего колонтитула листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getHeaderMargin:member(1)
   package: ExcelScript!
   fullName: getHeaderMargin()
-  summary: Поле заглавной таблицы в точках для использования при печати.
+  summary: Поле заголовка листа (в пунктах) для использования при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getLeftMargin:member(1)
   package: ExcelScript!
   fullName: getLeftMargin()
-  summary: Левая маржа таблицы в точках для использования при печати.
+  summary: Левое поле листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: Ориентация таблицы страницы.
+  summary: Ориентация страницы на листе.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
   package: ExcelScript!
   fullName: getPrintArea()
-  summary: Получает объект, состоящий из одного или нескольких прямоугольных диапазонов, который представляет область печати `RangeAreas` для таблицы. Если области печати нет, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект `RangeAreas` , состоящий из одного или нескольких прямоугольных диапазонов, представляющего область печати листа. Если область печати отсутствует, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintComments:member(1)
   package: ExcelScript!
   fullName: getPrintComments()
-  summary: Указывает, должны ли при печати отображаться комментарии таблицы.
+  summary: Указывает, должны ли примечания листа отображаться при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintErrors:member(1)
   package: ExcelScript!
   fullName: getPrintErrors()
-  summary: Параметр ошибки печати таблицы.
+  summary: Параметр ошибок печати листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintGridlines:member(1)
   package: ExcelScript!
   fullName: getPrintGridlines()
-  summary: Указывает, будут ли напечатаны сетки таблицы.
+  summary: Указывает, будут ли печататься линии сетки листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -221,7 +221,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintHeadings:member(1)
   package: ExcelScript!
   fullName: getPrintHeadings()
-  summary: Указывает, будут ли напечатаны заголовки таблицы.
+  summary: Указывает, будут ли напечатаны заголовки листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintOrder:member(1)
   package: ExcelScript!
   fullName: getPrintOrder()
-  summary: Параметр распечатать страницы лист. Определяет порядок, использующийся при обработке распечатываемых номеров страниц.
+  summary: Параметр порядка печати страницы листа. Определяет порядок, использующийся при обработке распечатываемых номеров страниц.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)
   package: ExcelScript!
   fullName: getPrintTitleColumns()
-  summary: Получает объект range, представляющий столбцы заголовков. Если не установлено, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает объект range, представляющий столбцы заголовков. Если значение не задано, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)
   package: ExcelScript!
   fullName: getPrintTitleRows()
-  summary: Получает объект range, представляющий строки заголовков. Если не установлено, эта функция возвращается `undefined`<!-- -->.
+  summary: Получает объект range, представляющий строки заголовков. Если значение не задано, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getRightMargin:member(1)
   package: ExcelScript!
   fullName: getRightMargin()
-  summary: Правое поле таблицы в точках для использования при печати.
+  summary: Правое поле листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getTopMargin:member(1)
   package: ExcelScript!
   fullName: getTopMargin()
-  summary: Верхняя маржа таблицы в точках для использования при печати.
+  summary: Верхнее поле листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getZoom:member(1)
   package: ExcelScript!
   fullName: getZoom()
-  summary: Параметры масштабирования печати таблицы. Объект `PageLayoutZoomOptions` должен быть настроен как объект JSON (используйте `x.zoom = {...}` вместо `x.zoom.scale = ...`<!-- -->).
+  summary: Параметры масштабирования печати листа. Объект `PageLayoutZoomOptions` должен быть задано как объект JSON (используйте `x.zoom = {...}` вместо `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: setBlackAndWhite(blackAndWhite)
-  summary: Параметр черной и белой печати таблицы.
+  summary: Черно-белый вариант печати листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setBottomMargin:member(1)
   package: ExcelScript!
   fullName: setBottomMargin(bottomMargin)
-  summary: Поля нижней страницы таблицы, которые можно использовать для печати в точках.
+  summary: Нижнее поле страницы листа, используемого для печати в пунктах.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -346,7 +346,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: setCenterHorizontally(centerHorizontally)
-  summary: Центр таблицы горизонтально флаг. Эта отметка определяет, выравнивается ли лист по горизонтали относительно центра при печати.
+  summary: По горизонтали по центру листа. Эта отметка определяет, выравнивается ли лист по горизонтали относительно центра при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterVertically:member(1)
   package: ExcelScript!
   fullName: setCenterVertically(centerVertically)
-  summary: Центр таблицы вертикально флаг. Эта отметка определяет, выравнивается ли лист по вертикали относительно центра при печати.
+  summary: Пометка центра листа по вертикали. Эта отметка определяет, выравнивается ли лист по вертикали относительно центра при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -380,7 +380,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setDraftMode:member(1)
   package: ExcelScript!
   fullName: setDraftMode(draftMode)
-  summary: Вариант режима черновика таблицы. Если `true`<!-- -->, лист будет напечатан без графики.
+  summary: Параметр режима черновика листа. Если `true`<!-- -->, лист будет печататься без графики.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: setFirstPageNumber(firstPageNumber)
-  summary: Номер первой страницы таблицы для печати. Значение `null` представляет номер "авто" страницы.
+  summary: Номер первой страницы листа для печати. Значение `null` представляет нумерованную страницу "auto".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -414,7 +414,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)
   package: ExcelScript!
   fullName: setFooterMargin(footerMargin)
-  summary: Поле для подножки таблицы в точках для использования при печати.
+  summary: Поле нижнего колонтитула листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setHeaderMargin:member(1)
   package: ExcelScript!
   fullName: setHeaderMargin(headerMargin)
-  summary: Поле заглавной таблицы в точках для использования при печати.
+  summary: Поле заголовка листа (в пунктах) для использования при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -448,7 +448,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setLeftMargin:member(1)
   package: ExcelScript!
   fullName: setLeftMargin(leftMargin)
-  summary: Левая маржа таблицы в точках для использования при печати.
+  summary: Левое поле листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -465,7 +465,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: Ориентация таблицы страницы.
+  summary: Ориентация страницы на листе.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -516,7 +516,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintComments:member(1)
   package: ExcelScript!
   fullName: setPrintComments(printComments)
-  summary: Указывает, должны ли при печати отображаться комментарии таблицы.
+  summary: Указывает, должны ли примечания листа отображаться при печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -533,7 +533,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)
   package: ExcelScript!
   fullName: setPrintErrors(printErrors)
-  summary: Параметр ошибки печати таблицы.
+  summary: Параметр ошибок печати листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -550,7 +550,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintGridlines:member(1)
   package: ExcelScript!
   fullName: setPrintGridlines(printGridlines)
-  summary: Указывает, будут ли напечатаны сетки таблицы.
+  summary: Указывает, будут ли печататься линии сетки листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -567,7 +567,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintHeadings:member(1)
   package: ExcelScript!
   fullName: setPrintHeadings(printHeadings)
-  summary: Указывает, будут ли напечатаны заголовки таблицы.
+  summary: Указывает, будут ли напечатаны заголовки листа.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -599,7 +599,7 @@ methods:
       description: Единица измерения для предоставленных полей.
       type: <xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />
     - id: marginOptions
-      description: Значения маржи, которые необходимо установить. Не предоставленные поля остаются неизменными.
+      description: Задаваемые значения полей. Поля, которые не указаны, остаются без изменений.
       type: <xref uid="ExcelScript!ExcelScript.PageLayoutMarginOptions:interface" />
     return:
       type: void
@@ -608,7 +608,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintOrder:member(1)
   package: ExcelScript!
   fullName: setPrintOrder(printOrder)
-  summary: Параметр распечатать страницы лист. Определяет порядок, использующийся при обработке распечатываемых номеров страниц.
+  summary: Параметр порядка печати страницы листа. Определяет порядок, использующийся при обработке распечатываемых номеров страниц.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -633,7 +633,7 @@ methods:
     content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
     parameters:
     - id: printTitleColumns
-      description: Столбцы, которые будут повторяться слева от каждой страницы. Диапазон должен охватывать весь столбец, чтобы он был допустимым.
+      description: Столбцы, повторяемые слева от каждой страницы. Диапазон должен охватывать весь столбец, чтобы он был допустимым.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -650,7 +650,7 @@ methods:
     content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
     parameters:
     - id: printTitleRows
-      description: Строки, которые будут повторяться в верхней части каждой страницы. Диапазон должен охватывать всю строку, чтобы быть допустимым.
+      description: Строки, повторяющиеся в верхней части каждой страницы. Диапазон должен охватывать всю строку, чтобы она была допустимой.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setRightMargin:member(1)
   package: ExcelScript!
   fullName: setRightMargin(rightMargin)
-  summary: Правое поле таблицы в точках для использования при печати.
+  summary: Правое поле листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -676,7 +676,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setTopMargin:member(1)
   package: ExcelScript!
   fullName: setTopMargin(topMargin)
-  summary: Верхняя маржа таблицы в точках для использования при печати.
+  summary: Верхнее поле листа (в пунктах) для печати.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -693,7 +693,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setZoom:member(1)
   package: ExcelScript!
   fullName: setZoom(zoom)
-  summary: Параметры масштабирования печати таблицы. Объект `PageLayoutZoomOptions` должен быть настроен как объект JSON (используйте `x.zoom = {...}` вместо `x.zoom.scale = ...`<!-- -->).
+  summary: Параметры масштабирования печати листа. Объект `PageLayoutZoomOptions` должен быть задано как объект JSON (используйте `x.zoom = {...}` вместо `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,9 +707,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7f9a97d565c2be0eb8530d038ffb011c3b272a73
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 3471c7a1cd66390c49f1d211027b97700195aff8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064810"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394228"

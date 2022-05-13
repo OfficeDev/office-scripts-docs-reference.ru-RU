@@ -29,7 +29,7 @@ methods:
       description: Необязательный. Определяет относительную позицию нового столбца. Если задано значение null или -1, столбец добавляется в конце. Столбцы с более высокими значениями индекса смещаются в сторону. Используется нулевой индекс.
       type: number
     - id: values
-      description: Необязательный. Одномерный массив неформатных значений столбца таблицы.
+      description: Необязательный. Одномерный массив неформатированных значений столбца таблицы.
       type: (boolean | string | number)[]
     - id: name
       description: Необязательный параметр. Задает имя нового столбца. Если значение пустое, используется имя по умолчанию.
@@ -52,7 +52,7 @@ methods:
       description: Необязательный параметр. Определяет относительную позицию новой строки. Если задано значение null или -1, столбец добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.
       type: number
     - id: values
-      description: Необязательный параметр. Одномерный массив неформатных значений строки таблицы.
+      description: Необязательный параметр. Одномерный массив неформатированных значений строки таблицы.
       type: (boolean | string | number)[]
     return:
       type: void
@@ -120,7 +120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
   package: ExcelScript!
   fullName: deleteRowsAt(index, count)
-  summary: Удаление указанного количества строк в заданном индексе.
+  summary: Удаление указанного числа строк по заданному индексу.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -128,10 +128,10 @@ methods:
     content: 'deleteRowsAt(index: number, count?: number): void;'
     parameters:
     - id: index
-      description: 'Значение индекса строки, которая должна быть удалена. Предостережение: индекс строки может быть перемещен с того времени, когда вы определили значение, используемого для удаления.'
+      description: Значение индекса удаляемой строки. Внимание! Индекс строки может быть перемещен с того времени, когда вы определили значение, используемое для удаления.
       type: number
     - id: count
-      description: Количество строк, которые необходимо удалить. По умолчанию будет удалена одна строка. Примечание. Удаление одновременно более 1000 строк может привести к Power Automate времени.
+      description: Количество удаляемой строки. По умолчанию удаляется одна строка. Примечание. Удаление более 1000 строк одновременно может привести к Power Automate времени ожидания.
       type: number
     return:
       type: void
@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: Возвращает объект столбца по имени или идентификатору. Если столбец не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект столбца по имени или идентификатору. Если столбец не существует, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -161,7 +161,7 @@ methods:
     content: 'getColumn(key: number | string): TableColumn | undefined;'
     parameters:
     - id: key
-      description: Имя столбца или ID.
+      description: Имя столбца или идентификатор.
       type: number | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
   package: ExcelScript!
   fullName: getColumnById(key)
-  summary: Получает объект столбца по ID. Если столбец не существует, возвращается неопределенный.
+  summary: Возвращает объект столбца по идентификатору. Если столбец не существует, возвращается неопределенное значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -178,7 +178,7 @@ methods:
     content: 'getColumnById(key: number): TableColumn | undefined;'
     parameters:
     - id: key
-      description: ID столбца.
+      description: Идентификатор столбца.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
@@ -187,7 +187,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
   package: ExcelScript!
   fullName: getColumnByName(key)
-  summary: Получает объект столбца по имени. Если столбец не существует, возвращается неопределенный.
+  summary: Возвращает объект столбца по имени. Если столбец не существует, возвращается неопределенное значение.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -230,7 +230,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)
   package: ExcelScript!
   fullName: getHighlightFirstColumn()
-  summary: Указывает, содержит ли первый столбец специальный форматирование.
+  summary: Указывает, содержит ли первый столбец специальное форматирование.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +243,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)
   package: ExcelScript!
   fullName: getHighlightLastColumn()
-  summary: Указывает, содержит ли последний столбец специальный форматирование.
+  summary: Указывает, содержит ли последний столбец специальное форматирование.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -269,7 +269,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getLegacyId:member(1)
   package: ExcelScript!
   fullName: getLegacyId()
-  summary: Возвращает числимый ID.
+  summary: Возвращает числовой идентификатор.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedTableStyle()
-  summary: 'Постоянное значение, представляю которое представляет стиль таблицы. Возможные значения: "TableStyleLight1" через "TableStyleLight21", "TableStyleMedium1" через "TableStyleMedium28", "TableStyleDark1" через "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+  summary: 'Постоянное значение, представляющее стиль таблицы. Возможные значения: "TableStyleLight1" – "TableStyleLight21", "TableStyleMedium1" – "TableStyleMedium28", "TableStyleDark1" – "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: getShowBandedColumns()
-  summary: Указывает, показывают ли столбцы полосатую форматирование, в котором нечетные столбцы выделены иначе, чем даже, чтобы облегчить чтение таблицы.
+  summary: Указывает, отображаются ли в столбцах чередующееся форматирование, в котором нечетные столбцы выделяются иначе, чем четные, чтобы упростить чтение таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
   package: ExcelScript!
   fullName: getShowBandedRows()
-  summary: Указывает, показывают ли строки полосы форматирования, в которых нечетные строки выделяются иначе, чем четные, чтобы облегчить чтение таблицы.
+  summary: Указывает, отображаются ли в строках чередующееся форматирование, в котором нечетные строки выделяются иначе, чем четные, чтобы упростить чтение таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
   package: ExcelScript!
   fullName: getShowFilterButton()
-  summary: Указывает, видны ли кнопки фильтра в верхней части каждого загона столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.
+  summary: Указывает, отображаются ли кнопки фильтра в верхней части заголовка каждого столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
   package: ExcelScript!
   fullName: getShowHeaders()
-  summary: Указывает, видна ли строка заглавной строки. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.
+  summary: Указывает, отображается ли строка заголовка. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
   package: ExcelScript!
   fullName: getShowTotals()
-  summary: Указывает, видна ли общая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.
+  summary: Указывает, отображается ли итоговая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#resize:member(1)
   package: ExcelScript!
   fullName: resize(newRange)
-  summary: Resize the table to the new range. Новый диапазон должен совпадать с исходным диапазоном таблицы, а заглавные (или верхние части таблицы) должны быть в одной строке.
+  summary: Измените размер таблицы на новый диапазон. Новый диапазон должен перекрываться с исходным диапазоном таблиц, а заголовки (или верхняя часть таблицы) должны находиться в одной строке.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -472,7 +472,7 @@ methods:
     content: 'resize(newRange: Range | string): void;'
     parameters:
     - id: newRange
-      description: Объект диапазона или адрес диапазона, которые будут использоваться для определения нового размера таблицы.
+      description: Объект диапазона или адрес диапазона, который будет использоваться для определения нового размера таблицы.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
   package: ExcelScript!
   fullName: setHighlightFirstColumn(highlightFirstColumn)
-  summary: Указывает, содержит ли первый столбец специальный форматирование.
+  summary: Указывает, содержит ли первый столбец специальное форматирование.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -498,7 +498,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)
   package: ExcelScript!
   fullName: setHighlightLastColumn(highlightLastColumn)
-  summary: Указывает, содержит ли последний столбец специальный форматирование.
+  summary: Указывает, содержит ли последний столбец специальное форматирование.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 'Постоянное значение, представляю которое представляет стиль таблицы. Возможные значения: "TableStyleLight1" через "TableStyleLight21", "TableStyleMedium1" через "TableStyleMedium28", "TableStyleDark1" через "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
+  summary: 'Постоянное значение, представляющее стиль таблицы. Возможные значения: "TableStyleLight1" – "TableStyleLight21", "TableStyleMedium1" – "TableStyleMedium28", "TableStyleDark1" – "TableStyleDark11". Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: setShowBandedColumns(showBandedColumns)
-  summary: Указывает, показывают ли столбцы полосатую форматирование, в котором нечетные столбцы выделены иначе, чем даже, чтобы облегчить чтение таблицы.
+  summary: Указывает, отображаются ли в столбцах чередующееся форматирование, в котором нечетные столбцы выделяются иначе, чем четные, чтобы упростить чтение таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
   package: ExcelScript!
   fullName: setShowBandedRows(showBandedRows)
-  summary: Указывает, показывают ли строки полосы форматирования, в которых нечетные строки выделяются иначе, чем четные, чтобы облегчить чтение таблицы.
+  summary: Указывает, отображаются ли в строках чередующееся форматирование, в котором нечетные строки выделяются иначе, чем четные, чтобы упростить чтение таблицы.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -583,7 +583,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
   package: ExcelScript!
   fullName: setShowFilterButton(showFilterButton)
-  summary: Указывает, видны ли кнопки фильтра в верхней части каждого загона столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.
+  summary: Указывает, отображаются ли кнопки фильтра в верхней части заголовка каждого столбца. Это свойство можно использовать, только если таблица содержит строку заголовков.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -600,7 +600,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
   package: ExcelScript!
   fullName: setShowHeaders(showHeaders)
-  summary: Указывает, видна ли строка заглавной строки. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.
+  summary: Указывает, отображается ли строка заголовка. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -617,7 +617,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
   package: ExcelScript!
   fullName: setShowTotals(showTotals)
-  summary: Указывает, видна ли общая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.
+  summary: Указывает, отображается ли итоговая строка. Можно задать это значение, чтобы отобразить или скрыть строку итогов.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6519d6987825c7f3c316f3f153115fb4d83a2bef
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: d257901ee686a182d2891bb7ccf63cba1116a1dd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240656"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394039"

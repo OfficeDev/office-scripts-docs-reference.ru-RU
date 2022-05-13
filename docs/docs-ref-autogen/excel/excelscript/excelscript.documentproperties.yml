@@ -3,7 +3,7 @@ name: ExcelScript.DocumentProperties
 uid: ExcelScript!ExcelScript.DocumentProperties:interface
 package: ExcelScript!
 fullName: ExcelScript.DocumentProperties
-summary: Представляет свойства книг.
+summary: Представляет свойства книги.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Обязательный. Ключ настраиваемого свойства, который является нечувствительным к делу. Клавиша ограничена 255 символами за пределами Excel в Интернете (более крупные клавиши автоматически обрезаются до 255 символов на других платформах).
+      description: Обязательно. Ключ настраиваемого свойства без учета регистра. Длина ключа ограничена 255 символами за пределами Excel в Интернете (более крупные ключи автоматически обрезаются до 255 символов на других платформах).
       type: string
     - id: value
-      description: Обязательный. Значение настраиваемой свойства. Значение ограничено 255 символами за пределами Excel в Интернете (более крупные значения автоматически обрезаются до 255 символов на других платформах).
+      description: Обязательно. Значение пользовательского свойства. Значение ограничено 255 символами за пределами Excel в Интернете (более крупные значения автоматически обрезаются до 255 символов на других платформах).
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)
   package: ExcelScript!
   fullName: getComments()
-  summary: Комментарии книги.
+  summary: Примечания книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Получает дату создания книги. Только для чтения.
+  summary: Получает дату создания книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)
   package: ExcelScript!
   fullName: getCustom()
-  summary: Получает коллекцию настраиваемых свойств книги. Только для чтения.
+  summary: Получает коллекцию настраиваемых свойств книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Если настраиваемая свойство не существует, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает объект настраиваемого свойства по ключу, указываемому без учета регистра. Если пользовательское свойство не существует, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: Обязательный. Ключ, определяемый объектом настраиваемой свойства.
+      description: Обязательно. Ключ, определяющий объект настраиваемого свойства.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -154,7 +154,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)
   package: ExcelScript!
   fullName: getLastAuthor()
-  summary: Получает последнего автора книги. Только для чтения.
+  summary: Получает последнего автора книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,7 +167,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)
   package: ExcelScript!
   fullName: getManager()
-  summary: Менеджер книги.
+  summary: Руководитель книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,7 +180,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)
   package: ExcelScript!
   fullName: getRevisionNumber()
-  summary: Получает номер редакции книги. Только для чтения.
+  summary: Получает номер редакции книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -206,7 +206,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: Название книги.
+  summary: Заголовок книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,7 +253,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)
   package: ExcelScript!
   fullName: setComments(comments)
-  summary: Комментарии книги.
+  summary: Примечания книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)
   package: ExcelScript!
   fullName: setManager(manager)
-  summary: Менеджер книги.
+  summary: Руководитель книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)
   package: ExcelScript!
   fullName: setRevisionNumber(revisionNumber)
-  summary: Получает номер редакции книги. Только для чтения.
+  summary: Получает номер редакции книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)
   package: ExcelScript!
   fullName: setTitle(title)
-  summary: Название книги.
+  summary: Заголовок книги.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 625ea9b1b9ce99a2f4b8e750ba181865016dc6ad
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: b145a889420ad995959a9445c8cd936f8e588d39
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064915"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394142"
