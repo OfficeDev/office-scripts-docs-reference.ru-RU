@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalFormat
 uid: ExcelScript!ExcelScript.ConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormat
-summary: Объект, инкапсулирующий диапазон, формат, правило и другие свойства условного формата.
+summary: Объект, инкапсулирует диапазон, формат, правило и другие свойства условного формата.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
   package: ExcelScript!
   fullName: getCellValue()
-  summary: Возвращает свойства условного формата значения ячейки, если текущий условный формат является `CellValue` типом.
+  summary: Возвращает свойства условного формата значения ячейки, если текущий условный формат является типом `CellValue` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
   package: ExcelScript!
   fullName: getColorScale()
-  summary: Возвращает свойства условного формата цветовой шкалы, если текущий условный формат является `ColorScale` типом.
+  summary: Возвращает свойства условного формата цветовой шкалы, если текущий условный формат является типом `ColorScale` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)
   package: ExcelScript!
   fullName: getDataBar()
-  summary: Возвращает свойства панели данных, если текущий условный формат является панели данных.
+  summary: Возвращает свойства панели данных, если текущий условный формат является панелью данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
   package: ExcelScript!
   fullName: getIconSet()
-  summary: Возвращает свойства условного формата набора значков, если текущий условный формат является `IconSet` типом.
+  summary: Возвращает свойства условного формата набора значков, если текущий условный формат является типом `IconSet` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
   package: ExcelScript!
   fullName: getPreset()
-  summary: Возвращает условный формат предварительных критериев. Дополнительные сведения см. в разделе `ExcelScript.PresetCriteriaConditionalFormat`.
+  summary: Возвращает условный формат предустановки условий. Дополнительные сведения см. в разделе `ExcelScript.PresetCriteriaConditionalFormat`.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
   package: ExcelScript!
   fullName: getPriority()
-  summary: Приоритет (или индекс) в условном наборе форматов, в который в настоящее время существует этот условный формат. Изменение этого также меняет приоритеты других условных форматов, чтобы обеспечить состояющий порядок приоритета. Используйте отрицательный приоритет, чтобы начать со спины. Приоритеты, которые больше границ, будут получаться и устанавливаться до максимального (или минимального, если отрицательного) приоритета. Также обратите внимание, что при изменении приоритета необходимо повторно получить новую копию объекта в новом расположении приоритета, если вы хотите внести в него дополнительные изменения.
+  summary: Приоритет (или индекс) в коллекции условного формата, в котором в настоящее время существует этот условный формат. Изменение этого параметра также изменяет приоритеты других условных форматов, чтобы обеспечить непрерывный порядок приоритетов. Используйте отрицательный приоритет, чтобы начать с обратной части. Приоритеты, превышающее границы, будут получаться и устанавливаться в максимальном (или минимальном, если отрицательном) приоритете. Также обратите внимание, что при изменении приоритета необходимо повторно получить новую копию объекта в этом новом расположении приоритета, если вы хотите внести в него дополнительные изменения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Возвращает диапазон, к которому применяется кондитональный формат. Если условный формат применяется к нескольким диапазонам, эта функция возвращается `undefined`<!-- -->.
+  summary: Возвращает диапазон, к которому применяется кондитональный формат. Если условный формат применяется к нескольким диапазонам, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
   package: ExcelScript!
   fullName: getStopIfTrue()
-  summary: Если выполняются условия этого условного форматирования, форматы с более низким приоритетом не будут применяться в этой ячейке. Значение `null` имеется на столбках данных, наборах значков и цветовых шкалах, так как для них нет `StopIfTrue` понятия.
+  summary: Если выполняются условия этого условного форматирования, форматы с более низким приоритетом не будут применяться в этой ячейке. Значение находится `null` на гистограммах, наборах значков и цветовых шкалах, `StopIfTrue` так как для них нет концепции.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
   package: ExcelScript!
   fullName: getTextComparison()
-  summary: Возвращает определенные свойства условного формата текста, если текущий условный формат — это текстовый тип. Например, форматирование ячеек, совпадающих со словом "Text".
+  summary: Возвращает определенные свойства условного формата текста, если текущий условный формат является текстовым типом. Например, для форматирования ячеек, соответствующих слову "Текст".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
   package: ExcelScript!
   fullName: getTopBottom()
-  summary: Возвращает свойства верхнего и нижнего условного формата, если текущий условный формат является `TopBottom` типом. Например, формат 10% или нижний 10 элементов.
+  summary: Возвращает свойства условного формата верхнего и нижнего значений, если текущий условный формат является типом `TopBottom` . Например, чтобы отформатировать первые 10 % или 10 элементов снизу.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Тип условного формата. Только один может быть установлен одновременно.
+  summary: Тип условного формата. За один раз можно задать только один из них.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
   package: ExcelScript!
   fullName: setPriority(priority)
-  summary: Приоритет (или индекс) в условном наборе форматов, в который в настоящее время существует этот условный формат. Изменение этого также меняет приоритеты других условных форматов, чтобы обеспечить состояющий порядок приоритета. Используйте отрицательный приоритет, чтобы начать со спины. Приоритеты, которые больше границ, будут получаться и устанавливаться до максимального (или минимального, если отрицательного) приоритета. Также обратите внимание, что при изменении приоритета необходимо повторно получить новую копию объекта в новом расположении приоритета, если вы хотите внести в него дополнительные изменения.
+  summary: Приоритет (или индекс) в коллекции условного формата, в котором в настоящее время существует этот условный формат. Изменение этого параметра также изменяет приоритеты других условных форматов, чтобы обеспечить непрерывный порядок приоритетов. Используйте отрицательный приоритет, чтобы начать с обратной части. Приоритеты, превышающее границы, будут получаться и устанавливаться в максимальном (или минимальном, если отрицательном) приоритете. Также обратите внимание, что при изменении приоритета необходимо повторно получить новую копию объекта в этом новом расположении приоритета, если вы хотите внести в него дополнительные изменения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
   package: ExcelScript!
   fullName: setStopIfTrue(stopIfTrue)
-  summary: Если выполняются условия этого условного форматирования, форматы с более низким приоритетом не будут применяться в этой ячейке. Значение `null` имеется на столбках данных, наборах значков и цветовых шкалах, так как для них нет `StopIfTrue` понятия.
+  summary: Если выполняются условия этого условного форматирования, форматы с более низким приоритетом не будут применяться в этой ячейке. Значение находится `null` на гистограммах, наборах значков и цветовых шкалах, `StopIfTrue` так как для них нет концепции.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d76b9ca2141a89c44983f5dda3bd7b0609016220
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 268983e49cd3b24c52841add0c9c6cc39613b7c7
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240579"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394165"
