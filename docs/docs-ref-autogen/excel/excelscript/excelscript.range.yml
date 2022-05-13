@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: 'Заполняет диапазон от текущего диапазона до диапазона назначения с использованием указанной логики автозаполнения. Диапазон назначения может быть: `null`<!-- -->или может расширять источник по горизонтали или по вертикали. Неуявные диапазоны не поддерживаются.'
+  summary: Заполняет диапазон от текущего диапазона до диапазона назначения с помощью указанной логики автозаполнения. Диапазон назначения может быть или `null` расширять исходный диапазон по горизонтали или по вертикали. Неуявные диапазоны не поддерживаются.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Находит определенную строку на основе указанных условий. Если текущий диапазон больше одной ячейки, поиск будет ограничен диапазоном, иначе поиск будет охватывать весь лист, начиная с этой ячейки. Если совпадений нет, эта функция возвращает `undefined`<!-- -->.
+  summary: Находит определенную строку на основе указанных условий. Если текущий диапазон больше одной ячейки, поиск будет ограничен диапазоном, иначе поиск будет охватывать весь лист, начиная с этой ячейки. Если совпадений нет, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Возвращает объект диапазона, представляющий прямоугольное пересечение заданных диапазонов. Если пересечение не найдено, эта функция возвращает `undefined`<!-- -->.
+  summary: Возвращает объект диапазона, представляющий прямоугольное пересечение заданных диапазонов. Если пересечение не найдено, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: Возвращает объект RangeAreas, представляющий объединенные области в этом диапазоне. Обратите внимание, что если число объединенных областей в этом диапазоне превышает 512, API не вернет результат. Если объект RangeAreas не существует, возвращает пустой объект.
+  summary: Возвращает объект, `RangeAreas` представляющий объединенные области в этом диапазоне. Обратите внимание, что если число объединенных областей в этом диапазоне превышает 512, этот метод не вернет результат. Если объект `RangeAreas` не существует, `isNullObject` эта функция вернет объект с его свойством `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1066,7 +1066,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Возвращает объект `RangeAreas` , состоящий из одного или нескольких диапазонов, представляющих все ячейки, соответствующие указанному типу и значению. Если специальные ячейки не найдены, эта функция возвращает `undefined`<!-- -->.
+  summary: Возвращает объект `RangeAreas` , состоящий из одного или нескольких диапазонов, представляющих все ячейки, соответствующие указанному типу и значению. Если специальные ячейки не найдены, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1090,7 +1090,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Получает объект range, содержащий диапазон переноса при вызове для базовой ячейки. Если диапазон не является ячейкой привязки или диапазон сброса не найден, эта функция возвращает `undefined`<!-- -->.
+  summary: Получает объект range, содержащий диапазон переноса при вызове для базовой ячейки. Если диапазон не является ячейкой привязки или диапазон сброса не найден, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Возвращает объект диапазона, содержащий ячейку привязки для переноса ячейки. Если это не пролитая ячейка или задано несколько ячеек, эта функция возвращает `undefined`<!-- -->.
+  summary: Возвращает объект диапазона, содержащий ячейку привязки для переноса ячейки. Если это не пролитая ячейка или задано несколько ячеек, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Возвращает используемый диапазон заданного объекта диапазона. Если в диапазоне нет используемых ячеек, эта функция возвращает `undefined`<!-- -->.
+  summary: Возвращает используемый диапазон заданного объекта диапазона. Если в диапазоне нет используемых ячеек, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1352,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 'Необязательный параметр. Задайте `true` для объединения ячеек в каждой строке указанного диапазона в виде отдельных объединенных ячеек. Значение по умолчанию: `false`<!-- -->.'
+      description: 'Необязательное. Задайте `true` для объединения ячеек в каждой строке указанного диапазона в виде отдельных объединенных ячеек. Значение по умолчанию: `false`<!-- -->.'
       type: boolean
     return:
       type: void
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d30c738908e33ddb292f08f12814d25c0ce30c9
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: 131c648e35d13d5d8bc28d44514f8c893b4250d8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715962"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394151"
