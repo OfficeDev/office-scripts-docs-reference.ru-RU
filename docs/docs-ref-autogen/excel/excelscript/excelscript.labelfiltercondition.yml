@@ -1,77 +1,93 @@
 ### YamlMime:TSEnum
 name: ExcelScript.LabelFilterCondition
-uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
+uid: ExcelScript!ExcelScript.LabelFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.LabelFilterCondition
-summary: 'Enum, представляющий все принятые условия, с помощью которых можно применить фильтр меток. Используется для настройки типа PivotFilter, который применяется к полю. `PivotFilter.criteria.exclusive` может быть `true` установлено, чтобы инвертировать многие из этих условий.'
-remarks: ''
+summary: Перечисление, представляющее все допустимые условия, к которым можно применить фильтр меток. Используется для настройки типа pivotFilter, применяемого к полю. `PivotFilter.criteria.exclusive` можно задать для инверсии `true` многих из этих условий.
+remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script filters items that start with \"L\" from the \"Type\" field\n * of the \"Farm Sales\" PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable.\n  const pivotTable = workbook.getActiveWorksheet().getPivotTable(\"Farm Sales\");\n\n  // Get the \"Type\" field.\n  const field = pivotTable.getHierarchy(\"Type\").getPivotField(\"Type\");\n\n  // Filter out any types that start with \"L\" (such as \"Lemons\" and \"Limes\").\n  const filter: ExcelScript.PivotLabelFilter = {\n    condition: ExcelScript.LabelFilterCondition.beginsWith,\n    substring: \"L\",\n    exclusive: true\n  };\n\n  // Apply the label filter to the field.\n  field.applyFilter({ labelFilter: filter });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: beginsWith
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member'
-    package: ExcelScript!
-    summary: |-
-      Метка начинается с критерия подстройки.
+- name: beginsWith
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member
+  package: ExcelScript!
+  summary: >-
+    Метка начинается с критерия подстроки.
 
-      Необходимые критерии: {`substring`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
-  - name: between
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.between:member'
-    package: ExcelScript!
-    summary: |-
-      Между `lowerBound` и `upperBound` критериями.
 
-      Необходимые критерии: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
-  - name: contains
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.contains:member'
-    package: ExcelScript!
-    summary: |-
-      Метка содержит критерий подстройки.
+    Обязательные условия: {`substring`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
+- name: between
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    Между `lowerBound` условиями `upperBound` и условиями.
 
-      Необходимые критерии: {`substring`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
-  - name: endsWith
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member'
-    package: ExcelScript!
-    summary: |-
-      Метка заканчивается критерием подстройки.
 
-      Необходимые критерии: {`substring`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
-  - name: equals
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.equals:member'
-    package: ExcelScript!
-    summary: |-
-      Равняется критерию компаратора.
+    Обязательные условия: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
+- name: contains
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.contains:member
+  package: ExcelScript!
+  summary: >-
+    Метка содержит критерий подстроки.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
-  - name: greaterThan
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member'
-    package: ExcelScript!
-    summary: |-
-      Больше, чем критерий компаратора.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->.
-  - name: greaterThanOrEqualTo
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      Больше или равно критерию компаратора.
+    Обязательные условия: {`substring`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
+- name: endsWith
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member
+  package: ExcelScript!
+  summary: >-
+    Метка заканчивается условием подстроки.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->.
-  - name: lessThan
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member'
-    package: ExcelScript!
-    summary: |-
-      Меньше, чем критерий компаратора.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->.
-  - name: lessThanOrEqualTo
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      Меньше или меньше, чем критерий компаратора.
+    Обязательные условия: {`substring`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    Равно критерию сравнения.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->.
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.unknown:member'
-    package: ExcelScript!
-    summary: '`LabelFilterCondition` неизвестно или неподтверчено.'
+
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`exclusive`<!-- -->}<!-- -->.
+- name: greaterThan
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member
+  package: ExcelScript!
+  summary: >-
+    Больше, чем критерий сравнения.
+
+
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->.
+- name: greaterThanOrEqualTo
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Больше или равно критерию сравнения.
+
+
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->.
+- name: lessThan
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member
+  package: ExcelScript!
+  summary: >-
+    Меньше критерия сравнения.
+
+
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->.
+- name: lessThanOrEqualTo
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Меньше или равно критерию сравнения.
+
+
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->.
+- name: unknown
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: '`LabelFilterCondition` параметр  неизвестен или не поддерживается.'
+metadata:
+  ms.openlocfilehash: 41094f3d6d1003438bb848187fde74d9baf9df2c
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890356"

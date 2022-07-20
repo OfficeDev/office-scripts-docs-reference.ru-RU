@@ -1,184 +1,197 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DateFilterCondition
-uid: 'ExcelScript!ExcelScript.DateFilterCondition:enum'
+uid: ExcelScript!ExcelScript.DateFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.DateFilterCondition
-summary: 'Enum представляет все принятые условия, с помощью которых можно применить фильтр дат. Используется для настройки типа PivotFilter, который применяется к полю.'
-remarks: ''
+summary: Перечисление, представляющее все допустимые условия, к которым можно применить фильтр дат. Используется для настройки типа pivotFilter, применяемого к полю.
+remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script applies a filter to a PivotTable that filters out rows \n * that aren't from this month.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Date Recorded\" field to filter. \n  // The data in this field must be dates in order for the filter to work.\n  const pivot = workbook.getPivotTables()[0];\n  const rowHierarchy = pivot.getRowHierarchy(\"Date Recorded\");\n  const rowField = rowHierarchy.getFields()[0];\n\n  // Apply the date filter.\n  rowField.applyFilter({\n    dateFilter: {\n      // Setting the condition to `thisMonth` means items that are before or\n      // after this month will not be displayed.\n      condition: ExcelScript.DateFilterCondition.thisMonth\n    }\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: after
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.after:member'
-    package: ExcelScript!
-    summary: |-
-      Дата после даты компаратора.
+- name: after
+  uid: ExcelScript!ExcelScript.DateFilterCondition.after:member
+  package: ExcelScript!
+  summary: >-
+    Дата после даты сравнения.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
-  - name: afterOrEqualTo
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.afterOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      Дата после или равна дате компаратора.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
-  - name: allDatesInPeriodApril
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member'
-    package: ExcelScript!
-    summary: Дата в апреле.
-  - name: allDatesInPeriodAugust
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member'
-    package: ExcelScript!
-    summary: Дата — август.
-  - name: allDatesInPeriodDecember
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member'
-    package: ExcelScript!
-    summary: Дата — декабрь.
-  - name: allDatesInPeriodFebruary
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodFebruary:member'
-    package: ExcelScript!
-    summary: Дата — февраль.
-  - name: allDatesInPeriodJanuary
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJanuary:member'
-    package: ExcelScript!
-    summary: Дата — январь.
-  - name: allDatesInPeriodJuly
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJuly:member'
-    package: ExcelScript!
-    summary: Дата в июле.
-  - name: allDatesInPeriodJune
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJune:member'
-    package: ExcelScript!
-    summary: Дата в июне.
-  - name: allDatesInPeriodMarch
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMarch:member'
-    package: ExcelScript!
-    summary: Дата в марте.
-  - name: allDatesInPeriodMay
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMay:member'
-    package: ExcelScript!
-    summary: Дата в мае.
-  - name: allDatesInPeriodNovember
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodNovember:member'
-    package: ExcelScript!
-    summary: Дата — ноябрь.
-  - name: allDatesInPeriodOctober
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member'
-    package: ExcelScript!
-    summary: Дата в октябре.
-  - name: allDatesInPeriodQuarter1
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member'
-    package: ExcelScript!
-    summary: Дата в квартале 1.
-  - name: allDatesInPeriodQuarter2
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter2:member'
-    package: ExcelScript!
-    summary: Дата в квартале 2.
-  - name: allDatesInPeriodQuarter3
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter3:member'
-    package: ExcelScript!
-    summary: Дата в 3-м квартале.
-  - name: allDatesInPeriodQuarter4
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter4:member'
-    package: ExcelScript!
-    summary: Дата в четвертом квартале.
-  - name: allDatesInPeriodSeptember
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodSeptember:member'
-    package: ExcelScript!
-    summary: Дата — сентябрь.
-  - name: before
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.before:member'
-    package: ExcelScript!
-    summary: |-
-      Дата перед датой компаратора.
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
+- name: afterOrEqualTo
+  uid: ExcelScript!ExcelScript.DateFilterCondition.afterOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Дата после или равна дате сравнения.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
-  - name: beforeOrEqualTo
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.beforeOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      Дата до или равна дате компаратора.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
-  - name: between
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.between:member'
-    package: ExcelScript!
-    summary: |-
-      Между `lowerBound` `upperBound` датами и датами.
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
+- name: allDatesInPeriodApril
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member
+  package: ExcelScript!
+  summary: Дата — апрель.
+- name: allDatesInPeriodAugust
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member
+  package: ExcelScript!
+  summary: Дата — август.
+- name: allDatesInPeriodDecember
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member
+  package: ExcelScript!
+  summary: Дата — декабрь.
+- name: allDatesInPeriodFebruary
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodFebruary:member
+  package: ExcelScript!
+  summary: Дата — февраль.
+- name: allDatesInPeriodJanuary
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJanuary:member
+  package: ExcelScript!
+  summary: Дата — январь.
+- name: allDatesInPeriodJuly
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJuly:member
+  package: ExcelScript!
+  summary: Дата — июль.
+- name: allDatesInPeriodJune
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJune:member
+  package: ExcelScript!
+  summary: Дата — июнь.
+- name: allDatesInPeriodMarch
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMarch:member
+  package: ExcelScript!
+  summary: Дата — март.
+- name: allDatesInPeriodMay
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMay:member
+  package: ExcelScript!
+  summary: Дата — май.
+- name: allDatesInPeriodNovember
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodNovember:member
+  package: ExcelScript!
+  summary: Дата — ноябрь.
+- name: allDatesInPeriodOctober
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member
+  package: ExcelScript!
+  summary: Дата — октябрь.
+- name: allDatesInPeriodQuarter1
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member
+  package: ExcelScript!
+  summary: Дата в квартале 1.
+- name: allDatesInPeriodQuarter2
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter2:member
+  package: ExcelScript!
+  summary: Дата в квартале 2.
+- name: allDatesInPeriodQuarter3
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter3:member
+  package: ExcelScript!
+  summary: Дата в квартале 3.
+- name: allDatesInPeriodQuarter4
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter4:member
+  package: ExcelScript!
+  summary: Дата в квартале 4.
+- name: allDatesInPeriodSeptember
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodSeptember:member
+  package: ExcelScript!
+  summary: Дата — сентябрь.
+- name: before
+  uid: ExcelScript!ExcelScript.DateFilterCondition.before:member
+  package: ExcelScript!
+  summary: >-
+    Дата находится перед датой сравнения.
 
-      Необходимые критерии: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
-  - name: equals
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.equals:member'
-    package: ExcelScript!
-    summary: |-
-      Равняется критерию компаратора.
 
-      Необходимые критерии: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
-  - name: lastMonth
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastMonth:member'
-    package: ExcelScript!
-    summary: Дата последнего месяца.
-  - name: lastQuarter
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastQuarter:member'
-    package: ExcelScript!
-    summary: Дата последнего квартала.
-  - name: lastWeek
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastWeek:member'
-    package: ExcelScript!
-    summary: Дата на прошлой неделе.
-  - name: lastYear
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastYear:member'
-    package: ExcelScript!
-    summary: Дата в прошлом году.
-  - name: nextMonth
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member'
-    package: ExcelScript!
-    summary: Дата следующего месяца.
-  - name: nextQuarter
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextQuarter:member'
-    package: ExcelScript!
-    summary: Дата следующей четверти.
-  - name: nextWeek
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextWeek:member'
-    package: ExcelScript!
-    summary: Дата на следующей неделе.
-  - name: nextYear
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextYear:member'
-    package: ExcelScript!
-    summary: Дата следующего года.
-  - name: thisMonth
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member'
-    package: ExcelScript!
-    summary: Дата в этом месяце.
-  - name: thisQuarter
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisQuarter:member'
-    package: ExcelScript!
-    summary: Дата в этом квартале.
-  - name: thisWeek
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisWeek:member'
-    package: ExcelScript!
-    summary: Дата на этой неделе.
-  - name: thisYear
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisYear:member'
-    package: ExcelScript!
-    summary: Дата в этом году.
-  - name: today
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.today:member'
-    package: ExcelScript!
-    summary: Дата сегодня.
-  - name: tomorrow
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.tomorrow:member'
-    package: ExcelScript!
-    summary: Дата завтра.
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.unknown:member'
-    package: ExcelScript!
-    summary: '`DateFilterCondition` неизвестно или неподтверчено.'
-  - name: yearToDate
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member'
-    package: ExcelScript!
-    summary: Дата в том же году на сегодняшний день.
-  - name: yesterday
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.yesterday:member'
-    package: ExcelScript!
-    summary: Дата вчера.
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
+- name: beforeOrEqualTo
+  uid: ExcelScript!ExcelScript.DateFilterCondition.beforeOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    Дата до или равна дате сравнения.
+
+
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->}<!-- -->.
+- name: between
+  uid: ExcelScript!ExcelScript.DateFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    Между `lowerBound` датами `upperBound` и датами.
+
+
+    Обязательные условия: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.DateFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    Равно критерию сравнения.
+
+
+    Обязательные условия: {`comparator`<!-- -->}<!-- -->. Необязательные критерии: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+- name: lastMonth
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastMonth:member
+  package: ExcelScript!
+  summary: Дата — последний месяц.
+- name: lastQuarter
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastQuarter:member
+  package: ExcelScript!
+  summary: Дата — последний квартал.
+- name: lastWeek
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastWeek:member
+  package: ExcelScript!
+  summary: Дата — последняя неделя.
+- name: lastYear
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastYear:member
+  package: ExcelScript!
+  summary: Дата — последний год.
+- name: nextMonth
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member
+  package: ExcelScript!
+  summary: Дата следующего месяца.
+- name: nextQuarter
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextQuarter:member
+  package: ExcelScript!
+  summary: Дата следующего квартала.
+- name: nextWeek
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextWeek:member
+  package: ExcelScript!
+  summary: Дата — следующая неделя.
+- name: nextYear
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextYear:member
+  package: ExcelScript!
+  summary: Дата следующего года.
+- name: thisMonth
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member
+  package: ExcelScript!
+  summary: Дата — этот месяц.
+- name: thisQuarter
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisQuarter:member
+  package: ExcelScript!
+  summary: Дата — этот квартал.
+- name: thisWeek
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisWeek:member
+  package: ExcelScript!
+  summary: Дата — эта неделя.
+- name: thisYear
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisYear:member
+  package: ExcelScript!
+  summary: Дата — этот год.
+- name: today
+  uid: ExcelScript!ExcelScript.DateFilterCondition.today:member
+  package: ExcelScript!
+  summary: Дата — сегодня.
+- name: tomorrow
+  uid: ExcelScript!ExcelScript.DateFilterCondition.tomorrow:member
+  package: ExcelScript!
+  summary: Дата — завтра.
+- name: unknown
+  uid: ExcelScript!ExcelScript.DateFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: '`DateFilterCondition` параметр  неизвестен или не поддерживается.'
+- name: yearToDate
+  uid: ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member
+  package: ExcelScript!
+  summary: Дата совпадает с текущим годом.
+- name: yesterday
+  uid: ExcelScript!ExcelScript.DateFilterCondition.yesterday:member
+  package: ExcelScript!
+  summary: Дата — вчерашний день.
+metadata:
+  ms.openlocfilehash: 4fe94b8d7054d4ab00102050dc2c0a5803b626a7
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890363"
