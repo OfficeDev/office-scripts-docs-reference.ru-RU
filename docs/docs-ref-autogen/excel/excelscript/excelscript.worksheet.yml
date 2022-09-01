@@ -73,7 +73,7 @@ methods:
       description: Содержимое комментария. Это может быть строка или `CommentRichContent` объект. Строки используются для обычного текста. `CommentRichContent` Объекты  позволяют использовать другие функции комментариев, например упоминания.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Необязательный элемент. Тип содержимого, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.
+      description: Необязательный параметр. Тип содержимого, содержащегося в комментарии. Значение по умолчанию — enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Формула или диапазон, на который будет ссылаться имя.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Необязательный элемент. Комментарий, связанный с именованным элементом.
+      description: Необязательный параметр. Комментарий, связанный с именованным элементом.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Формула на языке пользователя, на которую будет ссылаться имя.
       type: string
     - id: comment
-      description: Необязательный элемент. Комментарий, связанный с именованным элементом.
+      description: Необязательный параметр. Комментарий, связанный с именованным элементом.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: Добавьте сводная таблица на основе указанных исходных данных и вставьте его в левую верхнюю ячейку диапазона назначения.
+  summary: Добавьте сводную таблицу на основе указанных исходных данных и вставьте ее в левую верхнюю ячейку диапазона назначения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -272,13 +272,13 @@ methods:
               ): PivotTable;
     parameters:
     - id: name
-      description: Имя нового сводная таблица.
+      description: Имя новой сводной таблицы.
       type: string
     - id: source
-      description: Исходные данные для нового сводная таблица могут быть диапазоном (или строковым адресом, включая имя листа) или таблицей.
+      description: Исходные данные для новой сводной таблицы могут быть диапазоном (или строковым адресом, включая имя листа) или таблицей.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
-      description: Ячейка в левом верхнем углу конечного сводная таблица отчета (диапазон на листе, где будет помещен результирующий отчет).
+      description: Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы (диапазон на листе, где будет помещен итоговый отчет).
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
@@ -300,13 +300,13 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: Источник данных, на котором будет основан новый срез. Это может быть объект `PivotTable` , объект `Table` или строка. При сводная таблица передается источник данных объекта`PivotTable`. При передаче `Table` объекта источником данных является `Table` объект. При передаче строки она интерпретируется как имя или идентификатор сводная таблица или таблицы.
+      description: Источник данных, на котором будет основан новый срез. Это может быть объект `PivotTable` , объект `Table` или строка. При передаче объекта сводной таблицы источник данных является источником `PivotTable` объекта. При передаче `Table` объекта источником данных является `Table` объект. При передаче строки она интерпретируется как имя или идентификатор сводной таблицы или таблицы.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
       description: Поле в источнике данных для фильтрации. Это может быть объект `PivotField` , объект `TableColumn` , идентификатор или `PivotField` имя или идентификатор `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Необязательный элемент. Лист, на котором будет создан новый срез. Это может быть объект `Worksheet` , имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.
+      description: Необязательный параметр. Лист, на котором будет создан новый срез. Это может быть объект `Worksheet` , имя или идентификатор листа. Этот параметр можно опустить, если коллекция срезов извлекается из листа.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
   fullName: enterTemporaryNamedSheetView()
-  summary: Создает и активирует новое временное представление листа. Временные представления удаляются при закрытии приложения, выходе из временного представления с помощью метода выхода или переключении на другое представление листа. Представление временного листа также может быть обработано пустой строкой (""), если временное представление существует.
+  summary: Создает и активирует новое временное представление листа. Временные представления удаляются при закрытии приложения, выходе из временного представления с помощью метода выхода или переключении на другое представление листа. Доступ к представлению временного листа также можно получить с помощью пустой строки (""), если временное представление существует.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный элемент. Если `true`<!-- -->, рассматривает только видимые листы, пропуская все скрытые листы.
+      description: Необязательный параметр. Если `true`<!-- -->, рассматривает только видимые листы, пропуская все скрытые листы.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Получает сводную таблицу по имени. Если сводная таблица не существует, этот метод возвращает`undefined`<!-- -->.
+  summary: Получает сводную таблицу по имени. Если сводная таблица не существует, этот метод возвращает `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Необязательный элемент. Если `true`<!-- -->, рассматривает только видимые листы, пропуская все скрытые листы.
+      description: Необязательный параметр. Если `true`<!-- -->, рассматривает только видимые листы, пропуская все скрытые листы.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: Необязательный элемент. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
+      description: Необязательный параметр. Строка, представляющая адрес или имя диапазона. Например, "A1:B2". Если аргумент не указан, возвращается весь диапазон листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: Необязательный элемент. Строка, содержащая адреса или имена отдельных диапазонов с разделителями-запятыми или точками с запятой. Например, "A1:B2, A5:B5" или "A1:B2; A5:B5". Если значение не указано, возвращается `RangeAreas` объект для всего листа.
+      description: Необязательный параметр. Строка, содержащая адреса или имена отдельных диапазонов с разделителями-запятыми или точками с запятой. Например, "A1:B2, A5:B5" или "A1:B2; A5:B5". Если значение не указано, возвращается `RangeAreas` объект для всего листа.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b17f068406c43a3314853b12680a1c2ea0ba7e16
-  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.openlocfilehash: feaa88a1fe2186a58f01c79ee3e43d4da1864917
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66767177"
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423864"
