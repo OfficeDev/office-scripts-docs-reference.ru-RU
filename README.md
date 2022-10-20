@@ -1,6 +1,6 @@
 # <a name="office-scripts-api-reference"></a>Справочник по API сценариев Office
 
-Добро пожаловать в репозиторий справочной документации по API сценариев Office. Для оптимальной работы рекомендуется просмотреть это содержимое [на Документация Майкрософт.](https://docs.microsoft.com/javascript/api/office-scripts/overview)
+Добро пожаловать в репозиторий справочной документации по API сценариев Office. Для оптимальной работы рекомендуется просмотреть это содержимое в [Microsoft Learn](https://learn.microsoft.com/javascript/api/office-scripts/overview).
 
 > **ПРИМЕЧАНИЕ**. Исходные файлы для документации по сценариям Office, включая руководства и руководства, можно найти в репозитории [GitHub OfficeDev/office-scripts-docs](https://github.com/OfficeDev/office-scripts-docs) .
 
