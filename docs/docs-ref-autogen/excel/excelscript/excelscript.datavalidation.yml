@@ -3,7 +3,7 @@ name: ExcelScript.DataValidation
 uid: ExcelScript!ExcelScript.DataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
-summary: Представляет проверку данных, примененную к текущему диапазону.
+summary: Представляет проверку данных, применяемую к текущему диапазону.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: getIgnoreBlanks()
-  summary: 'Указывает, будет ли проверка данных выполняться для пустых ячеек. Значение по умолчанию: `true`<!-- -->.'
+  summary: 'Указывает, будет ли выполняться проверка данных в пустых ячейках. Значение по умолчанию: `true`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: Возвращает объект, `RangeAreas` состоящий из одного или нескольких прямоугольных диапазонов с недопустимыми значениями ячеек. Если все значения ячеек допустимы, этот метод вернет `null`<!-- -->.
+  summary: Возвращает объект, состоящий `RangeAreas` из одного или нескольких прямоугольных диапазонов, с недопустимыми значениями ячеек. Если все значения ячеек допустимы, этот метод возвращает `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Правило проверки данных, содержащее критерии проверки данных другого типа.
+  summary: Правило проверки данных, содержащее различные типы критериев проверки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Тип проверки данных см. `ExcelScript.DataValidationType` в дополнительных сведениях.
+  summary: Тип проверки данных см `ExcelScript.DataValidationType` . дополнительные сведения.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: Указывает, являются ли все значения ячеек допустимыми в соответствии с правилами проверки данных. Возвращает значение `true` , если все значения ячеек допустимы или `false` если все значения ячеек недопустимы. Возвращает значение `null` , если в диапазоне есть допустимые и недопустимые значения ячеек.
+  summary: Указывает, являются ли все значения ячеек допустимыми в соответствии с правилами проверки данных. Возвращает значение `true` , если все значения ячейки допустимы или `false` если все значения ячеек недопустимы. Возвращает значение `null` , если в диапазоне имеются допустимые и недопустимые значения ячеек.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: setIgnoreBlanks(ignoreBlanks)
-  summary: 'Указывает, будет ли проверка данных выполняться для пустых ячеек. Значение по умолчанию: `true`<!-- -->.'
+  summary: 'Указывает, будет ли выполняться проверка данных в пустых ячейках. Значение по умолчанию: `true`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: Правило проверки данных, содержащее критерии проверки данных другого типа.
+  summary: Правило проверки данных, содержащее различные типы критериев проверки данных.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,11 +180,11 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
 metadata:
-  ms.openlocfilehash: 3e4285c5bc14bd9323ee70e1481280993e33fbc1
-  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.openlocfilehash: 0c8131bf0d480ce14d4578e6a51a876090f90201
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/24/2022
-  ms.locfileid: "67423871"
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698203"

@@ -1,59 +1,66 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationErrorAlert
-uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
+uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationErrorAlert
-summary: Представляет свойства оповещений об ошибке для проверки данных.
-remarks: ''
+summary: Представляет свойства оповещения об ошибке для проверки данных.
+remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: message
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
-    package: ExcelScript!
-    fullName: message
-    summary: Представляет сообщение оповещений об ошибке.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'message: string;'
-      return:
-        type: string
-  - name: showAlert
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
-    package: ExcelScript!
-    fullName: showAlert
-    summary: 'Указывает, следует ли показывать диалоговое окно оповещения об ошибке при вводе пользователем недействительных данных. По умолчанию `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'showAlert: boolean;'
-      return:
-        type: boolean
-  - name: style
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    package: ExcelScript!
-    fullName: style
-    summary: Тип оповещений о проверке данных см. `ExcelScript.DataValidationAlertStyle` в подробной информации.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'style: DataValidationAlertStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />'
-  - name: title
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
-    package: ExcelScript!
-    fullName: title
-    summary: Представляет название диалоговое окно оповещений об ошибке.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'title: string;'
-      return:
-        type: string
+- name: message
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
+  package: ExcelScript!
+  fullName: message
+  summary: Представляет сообщение об ошибке.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'message: string;'
+    return:
+      type: string
+- name: showAlert
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
+  package: ExcelScript!
+  fullName: showAlert
+  summary: Указывает, следует ли отображать диалоговое окно оповещения об ошибке, когда пользователь вводит недопустимые данные. Значение по умолчанию — `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showAlert: boolean;'
+    return:
+      type: boolean
+- name: style
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
+  package: ExcelScript!
+  fullName: style
+  summary: Тип оповещений о проверке данных см. в этой статье `ExcelScript.DataValidationAlertStyle` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: DataValidationAlertStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />
+- name: title
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
+  package: ExcelScript!
+  fullName: title
+  summary: Представляет заголовок диалогового окна оповещения об ошибке.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'title: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 8d88e8ad6e12b563577d993ee6a6faaed0270f70
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698210"
