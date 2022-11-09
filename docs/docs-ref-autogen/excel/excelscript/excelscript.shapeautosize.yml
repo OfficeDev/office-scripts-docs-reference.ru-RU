@@ -1,26 +1,33 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeAutoSize
-uid: 'ExcelScript!ExcelScript.ShapeAutoSize:enum'
+uid: ExcelScript!ExcelScript.ShapeAutoSize:enum
 package: ExcelScript!
 fullName: ExcelScript.ShapeAutoSize
-summary: Определяет тип разрешенного автоматического определения размеров.
-remarks: ''
+summary: Определяет тип разрешенного автоматического изменения размера.
+remarks: "\n\n#### <a name=\"examples\"></a>Примеры\n\n```TypeScript\n/**\n * This script creates a star shape with the value from cell A1.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the value of A1 from the worksheet named Sheet1.\n  const sheet = workbook.getWorksheet(\"Sheet1\");\n  const value = sheet.getRange(\"A1\").getValue();\n\n  // Create a Shape object that looks like a 5-pointed star.\n  const star = sheet.addGeometricShape(ExcelScript.GeometricShapeType.star5);\n\n  // Set the text of star and make sure the shape fits the text.\n  const textFrame = star.getTextFrame();\n  textFrame.getTextRange().setText(value.toString());\n  textFrame.setAutoSizeSetting(ExcelScript.ShapeAutoSize.autoSizeShapeToFitText);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: autoSizeMixed
-    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
-    package: ExcelScript!
-    summary: Используется сочетание автоматических схем размеров.
-  - name: autoSizeNone
-    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
-    package: ExcelScript!
-    summary: Автозапевка не имеется.
-  - name: autoSizeShapeToFitText
-    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
-    package: ExcelScript!
-    summary: 'Фигура настраивается, чтобы соответствовать тексту.'
-  - name: autoSizeTextToFitShape
-    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
-    package: ExcelScript!
-    summary: 'Текст корректируется, чтобы соответствовать фигуре.'
+- name: autoSizeMixed
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member
+  package: ExcelScript!
+  summary: Используется сочетание схем автоматического изменения размера.
+- name: autoSizeNone
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member
+  package: ExcelScript!
+  summary: Нет автоподбора.
+- name: autoSizeShapeToFitText
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member
+  package: ExcelScript!
+  summary: Фигура настраивается в соответствии с текстом.
+- name: autoSizeTextToFitShape
+  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member
+  package: ExcelScript!
+  summary: Текст корректируется в соответствии с фигурой.
+metadata:
+  ms.openlocfilehash: f32491c26bc3fe0297fdd2e41cd7e4f904db736c
+  ms.sourcegitcommit: bd711a06dd265e3446ede101909916e5d45d7b23
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/09/2022
+  ms.locfileid: "68891393"
